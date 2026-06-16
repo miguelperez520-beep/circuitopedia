@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen V (Referencia) - Capítulo 2 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #ef4444; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen V (Referencia) - Capítulo 2</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen V</h1>
+<h1>Capítulo 2</h1>
+<h1>CÓDIGOS DE COLOR</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid93130"><u>Resistor Color Codes </u></a></li>
+<ul>
+<li><a href="#xtocid93131"><u>Example #1</u></a></li>
+<li><a href="#xtocid93132"><u>Example #2</u></a></li>
+<li><a href="#xtocid93133"><u>Example #3</u></a></li>
+<li><a href="#xtocid93134"><u>Example #4</u></a></li>
+<li><a href="#xtocid93135"><u>Example #5</u></a></li>
+<li><a href="#xtocid93136"><u>Example #6</u></a></li>
+</ul>
+<li><a href="#xtocid93137"><u>Wiring Color Codes </u></a></li>
+<li><a href="#xtocid93138">Bibliography</a></li></ul>
+<h2><u><a name="xtocid93130">Resistor Color Codes </a></u></h2>
+<p>Los componentes y cables están codificados con colores para identificar su valor y función.</p>
+<a name="Resistor color codes"></a>
+<p> <img src="11066.png"/> </p>
+<p>Los colores marrón, rojo, verde, azul y violeta se utilizan como códigos de tolerancia únicamente en resistencias de 5 bandas.  Todas las resistencias de 5 bandas utilizan una banda de tolerancia de color.  La "banda" en blanco (20%) sólo se utiliza con el código de "4 bandas" (3 bandas de colores + una "banda" en blanco).</p>
+<br/>
+<p> <img src="11067.png"/> </p>
+<h3><u><a name="xtocid93131">Example #1</a></u></h3>
+<p> <img src="11012.png"/> </p>
+<p>Una resistencia de color<i>Amarillo-Violeta-Naranja-Oro</i>Sería 47 kΩ con una tolerancia de +/- 5%.</p>
+<h3><u><a name="xtocid93132">Example #2</a></u></h3>
+<p> <img src="11013.png"/> </p>
+<p>Una resistencia de color<i>Verde-Rojo-Oro-Plata</i>sería 5,2 Ω con una tolerancia de +/- 10%.</p>
+<h3><u><a name="xtocid93133">Example #3</a></u></h3>
+<p> <img src="11014.png"/> </p>
+<p>Una resistencia de color<i>Blanco-Violeta-Negro</i>Sería 97 Ω con una tolerancia de +/- 20%.  Cuando ve solo tres bandas de colores en una resistencia, sabe que en realidad es un código de 4 bandas con una banda de tolerancia en blanco (20%).</p>
+<h3><u><a name="xtocid93134">Example #4</a></u></h3>
+<p> <img src="11015.png"/> </p>
+<p>Una resistencia de color<i>Naranja-Naranja-Negro-Marrón-Violeta</i>sería 3,3 kΩ con una tolerancia de +/- 0,1%.</p>
+<h3><u><a name="xtocid93135">Example #5</a></u></h3>
+<p> <img src="11016.png"/> </p>
+<p>Una resistencia de color<i>Marrón-Verde-Gris-Plata-Rojo</i>sería 1,58 Ω con una tolerancia de +/- 2%.</p>
+<h3><u><a name="xtocid93136">Example #6</a></u></h3>
+<p> <img src="11017.png"/> </p>
+<p>Una resistencia de color<i>Azul-Marrón-Verde-Plata-Azul</i>sería 6,15 Ω con una tolerancia de +/- 0,25%.</p>
+<h2><u><a name="xtocid93137">Wiring Color Codes </a></u></h2>
+<p>El cableado para circuitos derivados de distribución de energía de CA y CC está codificado por colores para identificar los cables individuales. En algunas jurisdicciones, todos los colores de los cables se especifican en documentos legales. En otras jurisdicciones, sólo unos pocos colores de conductores están codificados de esta manera. En ese caso, la costumbre local dicta los colores de los cables "opcionales".</p>
+<p>
+<b>CEI, CA:</b>La mayor parte de Europa cumple con los códigos de colores de cableado IEC (Comisión Electrotécnica Internacional) para circuitos derivados de CA. Estos se enumeran en la tabla<a href="#wire.tbl">  below</a>. Los códigos de colores más antiguos de la tabla reflejan el estilo anterior que no tenía en cuenta la rotación de fase adecuada. El cable de tierra de protección (indicado como verde-amarillo) es verde con una franja amarilla.</p>
+<a name="wire.tbl"><p><i>IEC (most of Europe) AC power circuit wiring color codes.</i></p></a>
+<table border="1" style="background-color: #E0FFFF; ">
+<tr>
+<th>Función</th><th>etiqueta</th><th>Color, CEI</th><th>Color, IEC antiguo</th>
+</tr>
+<tr>
+<td>Tierra protectora</td><td>PE</td><td>verde-amarillo</td><td>verde-amarillo</td>
+</tr>
+<tr>
+<td>Neutral</td><td>N</td><td>azul</td><td>azul</td>
+</tr>
+<tr>
+<td>Línea, monofásica</td><td>L</td><td>marrón</td><td>marrón o negro</td>
+</tr>
+<tr>
+<td>Línea, trifásica</td><td>L1</td><td>marrón</td><td>marrón o negro</td>
+</tr>
+<tr>
+<td>Línea, trifásica</td><td>L2</td><td>negro</td><td>marrón o negro</td>
+</tr>
+<tr>
+<td>Línea, trifásica</td><td>L3</td><td>gris</td><td>marrón o negro</td>
+</tr>
+</table>
+<br/>
+<p>
+<b>Reino Unido, CA:</b>El Reino Unido sigue ahora los códigos de color de cableado de CA IEC.  Mesa<a href="#wire2.tbl">  below</a>los enumera junto con los códigos de colores nacionales obsoletos. Para agregar cableado de color nuevo al cableado de color antiguo existente, consulte Cook.<a href="#PCk.bibitem">[PCk]</a>
+</p>
+<a name="wire2.tbl"><p><i>UK AC power circuit wiring color codes.</i></p></a>
+<table border="1" style="background-color: #E0FFFF; ">
+<tr>
+<th>Función</th><th>etiqueta</th><th>Color, CEI</th><th>Color antiguo del Reino Unido</th>
+</tr>
+<tr>
+<td>Tierra protectora</td><td>PE</td><td>verde-amarillo</td><td>verde-amarillo</td>
+</tr>
+<tr>
+<td>Neutral</td><td>N</td><td>azul</td><td>negro</td>
+</tr>
+<tr>
+<td>Línea, monofásica</td><td>L</td><td>marrón</td><td>red</td>
+</tr>
+<tr>
+<td>Línea, trifásica</td><td>L1</td><td>marrón</td><td>red</td>
+</tr>
+<tr>
+<td>Línea, trifásica</td><td>L2</td><td>negro</td><td>amarillo</td>
+</tr>
+<tr>
+<td>Línea, trifásica</td><td>L3</td><td>gris</td><td>azul</td>
+</tr>
+</table>
+<br/>
+<p>
+<b>EE. UU., CA:</b>El Código Eléctrico Nacional de EE. UU. solo exige el color blanco (o gris) para el conductor de alimentación neutro y cobre desnudo, verde o verde con franja amarilla para la tierra de protección. En principio, para los conductores de potencia se pueden utilizar otros colores distintos de estos. Los colores adoptados como práctica local se muestran en la Tabla<a href="#wire3.tbl">  below</a>. El negro, el rojo y el azul se utilizan para 208 VCA trifásicos; marrón, naranja y amarillo se utilizan para 480 VCA. Los conductores de tamaño superior a 6 AWG solo están disponibles en negro y tienen cinta de color en los extremos.</p>
+<a name="wire3.tbl"><p><i>US AC power circuit wiring color codes.</i></p></a>
+<table border="1" style="background-color: #E0FFFF; ">
+<tr>
+<th>Función</th><th>etiqueta</th><th>color, común</th><th>Color, alternativo</th>
+</tr>
+<tr>
+<td>Tierra protectora</td><td>PG</td><td>desnudo, verde o verde-amarillo</td><td>verde</td>
+</tr>
+<tr>
+<td>Neutral</td><td>N</td><td>blanco</td><td>gris</td>
+</tr>
+<tr>
+<td>Línea, monofásica</td><td>L</td><td>negro o rojo (segundo caliente)</td><td> </td>
+</tr>
+<tr>
+<td>Línea, trifásica</td><td>L1</td><td>negro</td><td>marrón</td>
+</tr>
+<tr>
+<td>Línea, trifásica</td><td>L2</td><td>red</td><td>naranja</td>
+</tr>
+<tr>
+<td>Línea, trifásica</td><td>L3</td><td>azul</td><td>amarillo</td>
+</tr>
+</table>
+<p>
+<b>Canadá:</b>El cableado canadiense se rige por el CEC (Código Eléctrico Canadiense).  Ver tabla<a href="#wire6.tbl">  below</a>. La tierra de protección es verde o verde con franja amarilla. El neutro es blanco, los cables monofásicos activos (vivos o activos) son negros y rojos en el caso de un segundo activo. Las líneas trifásicas son rojas, negras y azules.</p>
+<a name="wire6.tbl"><p><i>Canada AC power circuit wiring color codes.</i></p></a>
+<table border="1" style="background-color: #E0FFFF; ">
+<tr>
+<th>Función</th><th>etiqueta</th><th>color, común</th>
+</tr>
+<tr>
+<td>Tierra protectora</td><td>PG</td><td>verde o verde-amarillo</td>
+</tr>
+<tr>
+<td>Neutral</td><td>N</td><td>blanco</td>
+</tr>
+<tr>
+<td>Línea, monofásica</td><td>L</td><td>negro o rojo (segundo caliente)</td>
+</tr>
+<tr>
+<td>Línea, trifásica</td><td>L1</td><td>red</td>
+</tr>
+<tr>
+<td>Línea, trifásica</td><td>L2</td><td>negro</td>
+</tr>
+<tr>
+<td>Línea, trifásica</td><td>L3</td><td>azul</td>
+</tr>
+</table>
+<p>
+<b>CEI, CC:</b>Las instalaciones de energía de CC, por ejemplo, los centros de datos informáticos y de energía solar, utilizan códigos de colores que siguen los estándares de CA. El estándar de color IEC para cables de alimentación de CC se enumera en la Tabla<a href="#wire4.tbl">  below</a>, adaptado de la Tabla 2, Cook.<a href="#PCk.bibitem">[PCk]</a>
+</p>
+<a name="wire4.tbl"><p><i>IEC  DC power circuit wiring color codes.</i></p></a>
+<table border="1" style="background-color: #E0FFFF; ">
+<tr>
+<th>Función</th><th>etiqueta</th><th>Color</th>
+</tr>
+<tr>
+<td>Tierra protectora</td><td>PE</td><td>verde-amarillo</td>
+</tr>
+<tr>
+<th> 2-wire unearthed DC Power System</th><th> </th><th> </th>
+</tr>
+<tr>
+<td>Positivo</td><td>L+</td><td>marrón</td>
+</tr>
+<tr>
+<td>Negativo</td><td>L-</td><td>gris</td>
+</tr>
+<tr>
+<th> 2-wire earthed DC Power System</th><th> </th><th> </th>
+</tr>
+<tr>
+<td>Circuito positivo (de un circuito negativo conectado a tierra)</td><td>L+</td><td>marrón</td>
+</tr>
+<tr>
+<td>Circuito negativo (de un circuito negativo a tierra)</td><td>M</td><td>azul</td>
+</tr>
+<tr>
+<td>Circuito positivo (de un positivo puesto a tierra)</td><td>M</td><td>azul</td>
+</tr>
+<tr>
+<td>Circuito negativo (de un positivo puesto a tierra)</td><td>L-</td><td>gris</td>
+</tr>
+<tr>
+<th> 3-wire earthed DC Power System</th><th> </th><th> </th>
+</tr>
+<tr>
+<td>Positivo</td><td>L+</td><td>marrón</td>
+</tr>
+<tr>
+<td>cable medio</td><td>M</td><td>azul</td>
+</tr>
+<tr>
+<td>Negativo</td><td>L-</td><td>gris</td>
+</tr>
+</table>
+<p>
+<b>Alimentación CC de EE. UU.:</b>El Código Eléctrico Nacional de EE. UU. (tanto para CA como para CC) exige que el conductor neutro a tierra de un sistema de energía sea blanco o gris. La tierra de protección debe estar desnuda y tener rayas verdes o verde-amarillas. Los cables activos (activos) pueden ser de cualquier otro color excepto estos. Sin embargo, la práctica común (según los inspectores eléctricos locales) es que el primer cable activo (vivo o activo) sea negro y el segundo sea rojo. Las recomendaciones en la tabla<a href="#wire5.tbl">  below</a>son de Wiles.<a href="#JWi.bibitem">[JWi]</a>No hace ninguna recomendación para los colores del sistema de energía sin conexión a tierra. Se desaconseja el uso del sistema sin conexión a tierra por motivos de seguridad. Sin embargo, el rojo (+) y el negro (-) siguen el color de los sistemas puestos a tierra en la tabla.</p>
+<a name="wire5.tbl"><p><i>US  recommended DC power circuit wiring color codes.</i></p></a>
+<table border="1" style="background-color: #E0FFFF; ">
+<tr>
+<th>Función</th><th>etiqueta</th><th>Color</th>
+</tr>
+<tr>
+<td>Tierra protectora</td><td>PG</td><td>desnudo, verde o verde-amarillo</td>
+</tr>
+<tr>
+<th> 2-wire ungrounded DC Power System</th><th> </th><th> </th>
+</tr>
+<tr>
+<td>Positivo</td><td>L+</td><td>sin recomendación (rojo)</td>
+</tr>
+<tr>
+<td>Negativo</td><td>L-</td><td>sin recomendación (negro)</td>
+</tr>
+<tr>
+<th> 2-wire grounded DC Power System</th><th> </th><th> </th>
+</tr>
+<tr>
+<td>Circuito positivo (de un circuito negativo conectado a tierra)</td><td>L+</td><td>red</td>
+</tr>
+<tr>
+<td>Circuito negativo (de un circuito negativo conectado a tierra)</td><td>N</td><td>blanco</td>
+</tr>
+<tr>
+<td>Circuito positivo (de un positivo puesto a tierra)</td><td>N</td><td>blanco</td>
+</tr>
+<tr>
+<td>Circuito negativo (de un positivo puesto a tierra)</td><td>L-</td><td>negro</td>
+</tr>
+<tr>
+<th> 3-wire grounded DC Power System</th><th> </th><th> </th>
+</tr>
+<tr>
+<td>Positivo</td><td>L+</td><td>red</td>
+</tr>
+<tr>
+<td>Cable medio (grifo central)</td><td>N</td><td>blanco</td>
+</tr>
+<tr>
+<td>Negativo</td><td>L-</td><td>negro</td>
+</tr>
+</table>
+<h2><a name="xtocid93138">Bibliography</a></h2><br/>
+<ol>
+<li><a name="PCk.bibitem">[PCk]Paul Cook, “Harmonised colours and alphanumeric marking”, IEE Wiring Matters, Spring 2004 at <a href="http://www.iee.org/Publish/WireRegs/IEE_Harmonized_colours.pdf">http://www.iee.org/Publish/WireRegs/IEE_Harmonized_colours.pdf</a></a> </li>
+<li><a name="JWi.bibitem">[JWi]John Wiles, “Photovoltaic Power Systems and the National Electrical Code: Suggested Practices”, Southwest Technology Development Institute, New Mexico State University, March 2001 at <a href="http://www.re.sandia.gov/en/ti/tu/Copy%20of%20NEC2000.pdf">http://www.re.sandia.gov/en/ti/tu/Copy%20of%20NEC2000.pdf</a></a> </li>
+</ol>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="REF_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="REF_10.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="REF_3.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

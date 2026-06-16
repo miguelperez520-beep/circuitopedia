@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 3 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #f59e0b; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 3</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen IV</h1>
+<h1>Capítulo 3</h1>
+<h1>PUERTAS LÓGICAS</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid91600"><u>Digital signals and gates</u></a></li>
+<li><a href="#xtocid91601"><u>The NOT gate</u></a></li>
+<li><a href="#xtocid91602"><u>The "buffer" gate</u></a></li>
+<li><a href="#xtocid91603"><u>Multiple-input gates</u></a></li>
+<ul>
+<li><a href="#xtocid91604"><u>The AND gate</u></a></li>
+<li><a href="#xtocid91605"><u>The NAND gate</u></a></li>
+<li><a href="#xtocid91606"><u>The OR gate</u></a></li>
+<li><a href="#xtocid91607"><u>The NOR gate</u></a></li>
+<li><a href="#xtocid91608"><u>The Negative-AND gate</u></a></li>
+<li><a href="#xtocid91609"><u>The Negative-OR gate</u></a></li>
+<li><a href="#xtocid916010"><u>The Exclusive-OR gate</u></a></li>
+<li><a href="#xtocid916011"><u>The Exclusive-NOR gate</u></a></li>
+</ul>
+<li><a href="#xtocid916012"><u>TTL NAND and AND gates</u></a></li>
+<li><a href="#xtocid916013"><u>TTL NOR and OR gates</u></a></li>
+<li><a href="#xtocid916014"><u>CMOS gate circuitry</u></a></li>
+<li><a href="#xtocid916015"><u>Special-output gates</u></a></li>
+<li><a href="#xtocid916016"><u>Gate universality</u></a></li>
+<ul>
+<li><a href="#xtocid916017"><u>Constructing the NOT function</u></a></li>
+<li><a href="#xtocid916018"><u>Constructing the "buffer" function</u></a></li>
+<li><a href="#xtocid916019"><u>Constructing the AND function</u></a></li>
+<li><a href="#xtocid916020"><u>Constructing the NAND function</u></a></li>
+<li><a href="#xtocid916021"><u>Constructing the OR function</u></a></li>
+<li><a href="#xtocid916022"><u>Constructing the NOR function</u></a></li>
+</ul>
+<li><a href="#xtocid916023"><u>Logic signal voltage levels</u></a></li>
+<li><a href="#xtocid916024"><u>DIP gate packaging</u></a></li>
+<li><a href="#xtocid916025"><u>Contributors</u></a></li></ul>
+<h2><u><a name="xtocid91600">Digital signals and gates</a></u></h2>
+<p>Si bien el sistema de numeración binaria es una abstracción matemática interesante, todavía no hemos visto su aplicación práctica a la electrónica.  Este capítulo está dedicado precisamente a eso: aplicar de forma práctica el concepto de bits binarios a los circuitos.  Lo que hace que la numeración binaria sea tan importante para la aplicación de la electrónica digital es la facilidad con la que los bits pueden representarse en términos físicos.  Debido a que un bit binario sólo puede tener uno de dos valores diferentes, 0 o 1, se puede utilizar cualquier medio físico capaz de cambiar entre dos estados saturados para representar un bit.  En consecuencia, cualquier sistema físico capaz de representar bits binarios es capaz de representar cantidades numéricas y potencialmente tiene la capacidad de manipular esos números.  Este es el concepto básico que subyace a la informática digital.</p>
+<p>Los circuitos electrónicos son sistemas físicos que se prestan bien a la representación de números binarios.  Los transistores, cuando funcionan en sus límites de polarización, pueden estar en uno de dos estados diferentes: corte (sin corriente controlada) o saturación (corriente máxima controlada).  Si un circuito de transistores está diseñado para maximizar la probabilidad de caer en cualquiera de estos estados (y no operar en forma lineal o<i>activo</i>, modo), puede servir como una representación física de un bit binario.  Una señal de voltaje medida en la salida de dicho circuito también puede servir como representación de un solo bit, un voltaje bajo representa un "0" binario y un voltaje (relativamente) alto representa un "1" binario.  Tenga en cuenta el siguiente circuito de transistores:</p>
+<p> <img src="04068.png"/> </p>
+<a name="High, logic level"></a>
+<a name="Low, logic level"></a>
+<a name="Logic level"></a>
+<p>En este circuito, el transistor está en estado de saturación en virtud del voltaje de entrada aplicado (5 voltios) a través del interruptor de dos posiciones.  Debido a que está saturado, el transistor deja caer muy poco voltaje entre el colector y el emisor, lo que resulta en un voltaje de salida de (prácticamente) 0 voltios.  Si usáramos este circuito para representar bits binarios, diríamos que la señal de entrada es un "1" binario y que la señal de salida es un "0" binario.  Cualquier voltaje cercano al voltaje de suministro total (medido en referencia a tierra, por supuesto) se considera un "1" y la falta de voltaje se considera un "0".  Los términos alternativos para estos niveles de voltaje son<i>alto</i>(igual que un "1" binario) y<i>low</i>(igual que un "0" binario).  Un término general para la representación de un bit binario mediante un voltaje de circuito es<i>nivel lógico</i>.
+</p>
+<p>Moviendo el interruptor a la otra posición, aplicamos un "0" binario a la entrada y recibimos un "1" binario en la salida:</p>
+<p> <img src="04069.png"/> </p>
+<a name="Gate, digital"></a>
+<p>Lo que hemos creado aquí con un solo transistor es un circuito generalmente conocido como<i>puerta lógica</i>, o simplemente<i>puerta</i>.  Una puerta es un tipo especial de circuito amplificador diseñado para aceptar y generar señales de voltaje correspondientes a unos y ceros binarios.  Como tales, las puertas no están diseñadas para amplificar señales analógicas (señales de voltaje<i>entre</i> 0 and full voltage).  Used together, multiple gates may be applied to the task of binary number storage (memory circuits) or manipulation (computing circuits), each gate's output representing one bit of a multi-bit binary number.  Just how this is done is a subject for a later chapter.  Right now it is important to focus on the operation of individual gates.
+</p>
+<a name="Inverter gate"></a>
+<a name="NOT gate"></a>
+<p>La puerta que se muestra aquí con un solo transistor se conoce como<i>inversor</i>, o NO puerta, porque emite exactamente la señal digital opuesta a la de entrada.  Por conveniencia, los circuitos de compuerta generalmente se representan con sus propios símbolos en lugar de con los transistores y resistencias que los constituyen.  El siguiente es el símbolo de un inversor:</p>
+<p> <img src="04070.png"/> </p>
+<p>A continuación se muestra un símbolo alternativo para un inversor:</p>
+<p> <img src="04099.png"/> </p>
+<a name="Bubble, gate symbol"></a>
+<p>Observe la forma triangular del símbolo de la puerta, muy parecida a la de un amplificador operacional.  Como se mencionó anteriormente, los circuitos de compuerta en realidad son amplificadores.  El pequeño círculo o "burbuja" que se muestra en el terminal de entrada o de salida es estándar para representar la función de inversión.  Como se puede sospechar, si quitáramos la burbuja del símbolo de la puerta, dejando solo un triángulo, el símbolo resultante ya no indicaría inversión, sino simplemente amplificación directa.  Tal símbolo y tal puerta realmente existen, y se llama<i>buffer</i>, el tema de la siguiente sección.</p>
+<p>Como el símbolo de un amplificador operacional, las conexiones de entrada y salida se muestran como cables individuales, siendo el punto de referencia implícito para cada señal de voltaje "tierra".  En los circuitos de puerta digital, tierra es casi siempre la conexión negativa de una única fuente de voltaje (fuente de alimentación).  Las fuentes de alimentación duales o "divididas" rara vez se utilizan en los circuitos de puerta.  Debido a que los circuitos de compuerta son amplificadores, requieren una fuente de energía para funcionar.  Al igual que los amplificadores operacionales, las conexiones de alimentación para puertas digitales a menudo se omiten en el símbolo por razones de simplicidad.  Si tuviéramos que mostrar<i>all</i>las conexiones necesarias para operar esta puerta, el esquema se vería así:</p>
+<p> <img src="04071.png"/> </p>
+<p>Los conductores de suministro de energía rara vez se muestran en los esquemas del circuito de la puerta, incluso si las conexiones de suministro de energía en cada puerta sí lo son.  Minimizando líneas en nuestro esquema, obtenemos esto:</p>
+<p> <img src="04072.png"/> </p>
+<p>
+"V<sub>cc</sub>" representa el voltaje constante suministrado al colector de un circuito de transistor de unión bipolar, en referencia a tierra. Aquellos puntos en un circuito de compuerta marcados por la etiqueta "V<sub>cc</sub>" están todos conectados al mismo punto, y ese punto es el terminal positivo de una fuente de voltaje CC, generalmente de 5 voltios.</p>
+<p>Como veremos en otras secciones de este capítulo, existen bastantes tipos diferentes de puertas lógicas, la mayoría de las cuales tienen múltiples terminales de entrada para aceptar más de una señal.  La salida de cualquier puerta depende del estado de sus entradas y de su función lógica.</p>
+<a name="Truth table"></a>
+<a name="Table, truth"></a>
+<p>Una forma común de expresar la función particular de un circuito de compuerta se llama<i>tabla de verdad</i>.  Las tablas de verdad muestran todas las combinaciones de condiciones de entrada en términos de estados de nivel lógico (ya sea "alto" o "bajo", "1" o "0" para cada terminal de entrada de la puerta), junto con el nivel lógico de salida correspondiente, ya sea "alto" o "bajo".  Para el circuito inversor, o NO, que se acaba de ilustrar, la tabla de verdad es muy simple:</p>
+<p> <img src="14003.png"/> </p>
+<p>Las tablas de verdad para puertas más complejas son, por supuesto, más grandes que la que se muestra para la puerta NOT.  La tabla de verdad de una puerta debe tener tantas filas como posibilidades haya de combinaciones de entradas únicas.  Para una puerta de una sola entrada como la puerta NOT, sólo hay dos posibilidades, 0 y 1. Para una puerta de dos entradas, hay<i>cuatro</i>posibilidades (00, 01, 10 y 11) y, por tanto, cuatro filas de la tabla de verdad correspondiente.  Para una puerta de tres entradas, hay<i>ocho</i>posibilidades (000, 001, 010, 011, 100, 101, 110 y 111), por lo que se necesita una tabla de verdad con ocho filas.  Los amantes de las matemáticas se darán cuenta de que el número de filas de la tabla de verdad necesarias para una puerta es igual a 2 elevado a la potencia del número de terminales de entrada.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>En los circuitos digitales, los valores de bits binarios de 0 y 1 están representados por señales de voltaje medidas en referencia a un punto común del circuito llamado<i>suelo</i>.  La ausencia de voltaje representa un "0" binario y la presencia de voltaje de suministro de CC total representa un "1" binario.</li>
+<li>A <i>puerta lógica</i>, o simplemente<i>puerta</i>, es una forma especial de circuito amplificador diseñado para entrada y salida<i>nivel lógico</i>voltajes (voltajes destinados a representar bits binarios).  Los circuitos de puerta se representan más comúnmente en un esquema mediante sus propios símbolos únicos en lugar de mediante los transistores y resistencias que los constituyen.</li>
+<li>Al igual que con los amplificadores operacionales, las conexiones de alimentación a las puertas a menudo se omiten en los diagramas esquemáticos en aras de la simplicidad.</li>
+<li>A <i>tabla de verdad</i>es una forma estándar de representar las relaciones de entrada/salida de un circuito de puerta, enumerando todas las posibles combinaciones de niveles lógicos de entrada con sus respectivos niveles lógicos de salida.</li>
+</ul>
+<h2><u><a name="xtocid91601">The NOT gate</a></u></h2>
+<p>El circuito inversor de un solo transistor ilustrado anteriormente es en realidad demasiado tosco para ser de uso práctico como puerta.  Los circuitos inversores reales contienen más de un transistor para maximizar la ganancia de voltaje (para garantizar que el transistor de salida final esté en corte total o en saturación total) y otros componentes diseñados para reducir la posibilidad de daños accidentales.</p>
+<a name="Inverter gate"></a>
+<a name="NOT gate"></a>
+<p>Aquí se muestra un diagrama esquemático de un circuito inversor real, completo con todos los componentes necesarios para un funcionamiento eficiente y confiable:</p>
+<a name="NOT gate, totem pole TTL"></a>
+<a name="Inverter gate, totem pole TTL"></a>
+<p> <img src="04073.png"/> </p>
+<p>Este circuito está compuesto exclusivamente por resistencias, diodos y transistores bipolares.  Tenga en cuenta que otros diseños de circuitos son capaces de realizar la función de puerta NOT, incluidos los diseños que sustituyen los transistores de efecto de campo por transistores bipolares (que se analizan más adelante en este capítulo).</p>
+<p>Analicemos este circuito en busca de la condición en la que la entrada es "alta" o en un estado binario "1".  Podemos simular esto mostrando el terminal de entrada conectado a V<sub>cc</sub>a través de un interruptor:</p>
+<p> <img src="04074.png"/> </p>
+<p>En este caso, el diodo D<sub>1</sub>tendrá polarización inversa y, por lo tanto, no conducirá ninguna corriente.  De hecho, el único propósito de tener D<sub>1</sub>en el circuito es para evitar daños al transistor en el caso de una<i>negativo</i>voltaje que se imprime en la entrada (un voltaje que es negativo, en lugar de positivo, con respecto a tierra).  Sin voltaje entre la base y el emisor del transistor Q<sub>1</sub>, tampoco esperaríamos que pasara corriente a través de él.  Sin embargo, por extraño que parezca, el transistor Q<sub>1</sub>no se utiliza como es habitual en un transistor.  En realidad, Q.<sub>1</sub>se utiliza en este circuito como nada más que un par de diodos consecutivos.  El siguiente esquema muestra la función real de Q.<sub>1</sub>:
+</p>
+<p> <img src="04075.png"/> </p>
+<a name="Diode, steering"></a>
+<a name="Steering diode"></a>
+<p>El propósito de estos diodos es "dirigir" la corriente hacia o lejos de la base del transistor Q.<sub>2</sub>, dependiendo del nivel lógico de la entrada.  Exactamente cómo estos dos diodos son capaces de "dirigir" la corriente no es exactamente obvio en la primera inspección, por lo que puede ser necesario un breve ejemplo para comprenderlo.  Supongamos que tenemos el siguiente circuito de diodo/resistencia, que representa las uniones base-emisor de los transistores Q<sub>2</sub>y q<sub>4</sub>como diodos individuales, eliminando todas las demás partes del circuito para que podamos concentrarnos en la corriente "dirigida" a través de los dos diodos consecutivos:</p>
+<p> <img src="04164.png"/> </p>
+<p>Con el interruptor de entrada en la posición "arriba" (conectado a V<sub>cc</sub>), debería ser obvio que no habrá corriente a través del diodo de dirección izquierdo de Q<sub>1</sub>, porque no hay voltaje en el diodo-interruptor-R<sub>1</sub>-Cambiar bucle para motivar el flujo de electrones.  Sin embargo, hay<i>voluntad</i>ser actual a través del diodo de dirección derecho de Q<sub>1</sub>, así como a través de Q<sub>2</sub>unión base-diodo emisor y Q<sub>4</sub>Unión base-diodo emisor:</p>
+<p> <img src="04165.png"/> </p>
+<p>Esto nos dice que en el circuito de puerta real, los transistores Q<sub>2</sub>y q<sub>4</sub>tendrán corriente de base, que los encenderá para conducir la corriente del colector.  El voltaje total caído entre la base de Q<sub>1</sub>(el nodo que une los dos diodos de dirección espalda con espalda) y tierra será de aproximadamente 2,1 voltios, igual a las caídas de voltaje combinadas de tres uniones PN: el diodo de dirección derecho, Q<sub>2</sub>el diodo emisor de base y Q<sub>4</sub>Diodo emisor de base.</p>
+<p>Ahora, muevamos el interruptor de entrada a la posición "abajo" y veamos qué sucede:</p>
+<p> <img src="04166.png"/> </p>
+<p>Si tuviéramos que medir la corriente en este circuito, encontraríamos que<i>all</i>de la corriente pasa por el diodo de dirección izquierdo de Q<sub>1</sub> and <i>ninguno</i>de él a través del diodo derecho.  ¿Por qué es esto?  Todavía parece que hay un camino completo para la corriente a través de Q<sub>4</sub>diodo de Q<sub>2</sub>El diodo de , el diodo derecho del par y R.<sub>1</sub>Entonces, ¿por qué no habrá corriente por ese camino?</p>
+<a name="Forward voltage, PN junction"></a>
+<a name="Voltage, forward, PN junction"></a>
+<a name="Nonlinearity, PN junction"></a>
+<p>Recuerde que los diodos de unión PN son dispositivos muy no lineales: ni siquiera comienzan a conducir corriente hasta que el voltaje directo aplicado a través de ellos alcanza una cierta cantidad mínima, aproximadamente 0,7 voltios para el silicio y 0,3 voltios para el germanio.  Y luego, cuando comiencen a conducir corriente, no caerán sustancialmente más de 0,7 voltios.  Cuando el interruptor en este circuito está en la posición "hacia abajo", el diodo izquierdo del par de diodos de dirección es completamente conductor, por lo que cae aproximadamente 0,7 voltios a través de él y no más.</p>
+<p> <img src="04167.png"/> </p>
+<p>Recuerde que con el interruptor en la posición "arriba" (transistores Q<sub>2</sub>y q<sub>4</sub>conduciendo), hubo una caída de aproximadamente 2,1 voltios entre esos mismos dos puntos (Q<sub>1</sub>base y suelo), que también resulta ser el<i>mínimo</i>voltaje necesario para polarizar directamente tres uniones PN de silicio conectadas en serie a un estado de conducción.  Los 0,7 voltios proporcionados por la caída de voltaje directo del diodo izquierdo son simplemente insuficientes para permitir que cualquier electrón fluya a través de la cadena en serie del diodo derecho, Q<sub>2</sub>el diodo y el R<sub>3</sub>//Q<sub>4</sub>subcircuito paralelo de diodos, por lo que ningún electrón fluye a través de ese camino.  Sin corriente a través de las bases de ninguno de los transistores Q<sub>2</sub>o Q<sub>4</sub>, ninguno de los dos podrá conducir la corriente del colector: transistores Q<sub>2</sub>y q<sub>4</sub>ambos estarán en un estado de corte.</p>
+<p>En consecuencia, esta configuración de circuito permite una conmutación del 100 por ciento de Q<sub>2</sub>corriente de base (y por lo tanto control sobre el resto del circuito de compuerta, incluido el voltaje en la salida) mediante la desviación de corriente a través del diodo de dirección izquierdo.</p>
+<p>En el caso de nuestro circuito de compuerta de ejemplo, la entrada se mantiene "alta" mediante el interruptor (conectado a V<sub>cc</sub>), formando el diodo de dirección izquierdo (el voltaje cae a cero).  Sin embargo, el diodo de dirección derecho conduce corriente a través de la base de Q.<sub>2</sub>, a través de la resistencia R<sub>1</sub>:
+</p>
+<p> <img src="04076.png"/> </p>
+<p>Con corriente base proporcionada, transistor Q<sub>2</sub>se activará.  Más específicamente, será<i>saturado</i>en virtud de la corriente más que adecuada permitida por R<sub>1</sub>a través de la base.  con q<sub>2</sub>saturado, resistencia R<sub>3</sub>caerá suficiente voltaje para polarizar directamente la unión base-emisor del transistor Q<sub>4</sub>, saturándolo así también:</p>
+<p> <img src="04077.png"/> </p>
+<p>con q<sub>4</sub>saturado, el terminal de salida será casi directamente cortocircuitado a tierra, dejando el terminal de salida a un voltaje (en referencia a tierra) de casi 0 voltios, o un nivel lógico binario "0" ("bajo").  Debido a la presencia del diodo D<sub>2</sub>, no habrá suficiente voltaje entre la base de Q<sub>3</sub>y su emisor para encenderlo, por lo que permanece en corte.</p>
+<p>Veamos ahora qué sucede si invertimos el nivel lógico de la entrada a un "0" binario accionando el interruptor de entrada:</p>
+<p> <img src="04078.png"/> </p>
+<p>Ahora habrá corriente a través del diodo de dirección izquierdo de Q.<sub>1</sub>y no hay corriente a través del diodo de dirección derecho.  Esto elimina la corriente a través de la base de Q.<sub>2</sub>, apagándolo así.  con q<sub>2</sub>apagado, ya no hay un camino para Q<sub>4</sub>corriente base, entonces Q<sub>4</sub>también entra en corte.  q<sub>3</sub>, por otro lado, ahora tiene suficiente voltaje caído entre su base y tierra para polarizar directamente su unión base-emisor y saturarla, elevando así el voltaje del terminal de salida a un estado "alto".  En realidad, el voltaje de salida será de alrededor de 4 voltios dependiendo del grado de saturación y de cualquier corriente de carga, pero aún así será lo suficientemente alto como para ser considerado un nivel lógico "alto" (1).</p>
+<p>Con esto, nuestra simulación del circuito inversor está completa: un "1" de entrada da un "0" de salida, y viceversa.</p>
+<a name="Floating input, defined"></a>
+<p>El observador astuto notará que la entrada de este circuito inversor asumirá un estado "alto" de flotación izquierda (no conectado a ninguno de los V<sub>cc</sub>o tierra).  Con el terminal de entrada desconectado, no habrá corriente a través del diodo de dirección izquierdo de Q<sub>1</sub>, dejando todo R<sub>1</sub>La corriente pasa por Q.<sub>2</sub>la base, saturando así Q<sub>2</sub>y llevar la salida del circuito a un estado "bajo":</p>
+<p> <img src="04079.png"/> </p>
+<a name="TTL"></a>
+<p>La tendencia de un circuito de este tipo a asumir un estado de entrada elevado si se deja flotando es compartida por todos los circuitos de compuerta basados ​​en este tipo de diseño, conocida como<b>T</b>transistor a<b>T</b>resistor<b>L</b>lógica, o<i>TTL</i>.  Esta característica se puede aprovechar para simplificar el diseño de la puerta de una puerta.<i>producción</i>circuitos, sabiendo que las salidas de las compuertas generalmente controlan las entradas de otras compuertas.  Si la entrada de un circuito de puerta TTL asume un estado alto cuando está flotante, entonces la salida de cualquier puerta que impulse una entrada TTL solo necesita proporcionar un camino a tierra para un estado bajo y estar flotante para un estado alto.  Este concepto puede requerir mayor elaboración para una comprensión completa, por lo que lo exploraré en detalle aquí.</p>
+<a name="Current source"></a>
+<a name="Current sink"></a>
+<a name="Source, current"></a>
+<a name="Sink, current"></a>
+<p>Un circuito de puerta como acabamos de analizar tiene la capacidad de manejar la corriente de salida en dos direcciones: entrada y salida.  Técnicamente esto se conoce como<i>abastecimiento</i> and <i>hundimiento</i>actual, respectivamente.  Cuando la salida de la puerta es alta, hay continuidad desde el terminal de salida a V<sub>cc</sub>a través del transistor de salida superior (Q<sub>3</sub>), permitiendo que los electrones fluyan desde tierra, a través de una carga, hacia el terminal de salida de la puerta, a través del emisor de Q<sub>3</sub>, y finalmente hasta la V<sub>cc</sub>terminal de alimentación (lado positivo de la fuente de alimentación CC):</p>
+<p> <img src="04081.png"/> </p>
+<p>Para simplificar este concepto, podemos mostrar la salida de un circuito de compuerta como un interruptor de doble tiro, capaz de conectar el terminal de salida a V<sub>cc</sub>o suelo, dependiendo de su estado.  Para una puerta que genera un nivel lógico "alto", la combinación de Q<sub>3</sub>saturado y Q<sub>4</sub>El corte es análogo a un interruptor de doble tiro en el modo "V".<sub>cc</sub>"posición, que proporciona un camino para la corriente a través de una carga conectada a tierra:</p>
+<p> <img src="04080.png"/> </p>
+<p>Tenga en cuenta que este interruptor de dos posiciones que se muestra dentro del símbolo de la puerta es representativo de los transistores Q<sub>3</sub>y q<sub>4</sub>conectando alternativamente el terminal de salida a V<sub>cc</sub>o tierra,<i>not</i>del interruptor mostrado anteriormente enviando una señal de entrada a la puerta!</p>
+<p>Por el contrario, cuando un circuito de compuerta envía un nivel lógico "bajo" a una carga, es análogo a que el interruptor de doble tiro se coloque en la posición "tierra".  La corriente irá en sentido contrario si la resistencia de carga se conecta a V<sub>cc</sub>: desde tierra, a través del emisor de Q<sub>4</sub>, fuera del terminal de salida, a través de la resistencia de carga, y de regreso a V<sub>cc</sub>.  En esta condición, se dice que la puerta está<i>hundimiento</i>actual:</p>
+<p> <img src="04082.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="04083.png"/> </p>
+<a name="Totem pole output, TTL"></a>
+<p>La combinación de Q<sub>3</sub>y q<sub>4</sub>funcionando como un par de transistores "push-pull" (también conocido como<i>salida del tótem</i>) tiene la capacidad de generar corriente (consumir corriente a V<sub>cc</sub>) o corriente disipadora (corriente de salida desde tierra) a una carga.  Sin embargo, una puerta TTL estándar<i>aporte</i>nunca necesita fuente de corriente, solo hundida.  Es decir, dado que una entrada de puerta TTL naturalmente asume un estado alto si se deja flotando, cualquier salida de puerta que impulse una entrada TTL solo necesita sumidero de corriente para proporcionar una entrada "0" o "baja", y no necesita generar corriente para proporcionar un nivel lógico "1" o "alto" en la entrada de la puerta receptora:</p>
+<p> <img src="04084.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="04085.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="04168.png"/> </p>
+<a name="Open-collector output, TTL"></a>
+<a name="NOT gate, open-collector TTL"></a>
+<a name="Inverter gate, open-collector TTL"></a>
+<p>Esto significa que tenemos la opción de simplificar la etapa de salida de un circuito de compuerta para eliminar Q<sub>3</sub>en total.  El resultado se conoce como<i>salida de colector abierto</i>:
+</p>
+<p> <img src="04086.png"/> </p>
+<p>Para designar circuitos de salida de colector abierto dentro de un símbolo de puerta estándar, se utiliza un marcador especial.  Aquí se muestra el símbolo de una puerta inversora con salida de colector abierto:</p>
+<p> <img src="04319.png"/> </p>
+<p>Tenga en cuenta que la condición predeterminada "alta" de una entrada de puerta flotante solo es cierta para circuitos TTL y no necesariamente para otros tipos, especialmente para puertas lógicas construidas con transistores de efecto de campo.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Una puerta inversora, o NO, es aquella que genera el estado opuesto al de entrada.  Es decir, una entrada "baja" (0) da una salida "alta" (1), y viceversa.</li>
+<li>Los circuitos de puerta construidos con resistencias, diodos y transistores bipolares como se ilustra en esta sección se denominan<i>TTL</i>.  TTL es un acrónimo que significa<i>Lógica transistor a transistor</i>.  Existen otras metodologías de diseño utilizadas en circuitos de compuerta, algunas de las cuales utilizan transistores de efecto de campo en lugar de transistores bipolares.</li>
+<li>Se dice que una puerta es<i>abastecimiento</i>corriente cuando proporciona un camino para la corriente entre el terminal de salida y el lado positivo de la fuente de alimentación de CC (V<sub>cc</sub>).  En otras palabras, está conectando el terminal de salida al<i>fuente de energía</i>(+V).</li>
+<li>Se dice que una puerta es<i>hundimiento</i>corriente cuando proporciona un camino para la corriente entre el terminal de salida y tierra.  En otras palabras, está poniendo a tierra (hundiendo) el terminal de salida.</li>
+<li>Circuitos de puerta con<i>tótem</i>las etapas de salida son capaces de<i>fuente</i> and <i>hundir</i>actual.  Circuitos de puerta con<i>coleccionista abierto</i>las etapas de salida solo pueden absorber corriente y no generar corriente.  Las compuertas de colector abierto son prácticas cuando se usan para controlar entradas de compuerta TTL porque las entradas TTL no requieren fuente de corriente.</li>
+</ul>
+<h2><u><a name="xtocid91602">The "buffer" gate</a></u></h2>
+<p>Si tuviéramos que conectar dos puertas inversoras para que la salida de una alimentara la entrada de la otra, las dos funciones de inversión se "cancelarían" entre sí para que no hubiera inversión desde la entrada hasta la salida final:</p>
+<p> <img src="04087.png"/> </p>
+<p>Si bien esto puede parecer algo inútil, tiene una aplicación práctica.  Recuerde que los circuitos de puerta son señales.<i>amplificadores</i>, independientemente de qué función lógica puedan realizar.  Una fuente de señal débil (una que no es capaz de suministrar o suministrar mucha corriente a una carga) puede reforzarse mediante dos inversores como el par que se muestra en la ilustración anterior.  El nivel lógico no cambia, pero todas las capacidades de suministro o hundimiento de corriente del inversor final están disponibles para impulsar una resistencia de carga si es necesario.</p>
+<a name="Buffer gate"></a>
+<p>Para ello se utiliza una puerta lógica especial llamada<i>buffer</i>Está fabricado para realizar la misma función que dos inversores.  Su símbolo es simplemente un triángulo, sin ninguna "burbuja" invertida en el terminal de salida:</p>
+<p> <img src="04088.png"/> </p>
+<p>El diagrama esquemático interno de un búfer de colector abierto típico no es muy diferente del de un inversor simple: solo se agrega una etapa más de transistor de emisor común para reinvertir la señal de salida.</p>
+<a name="Buffer gate, open-collector TTL"></a>
+<p> <img src="04089.png"/> </p>
+<p>Analicemos este circuito en busca de dos condiciones: un nivel lógico de entrada de "1" y un nivel lógico de entrada de "0".  Primero, una entrada "alta" (1):</p>
+<p> <img src="04090.png"/> </p>
+<p>Como antes con el circuito inversor, la entrada "alta" no provoca conducción a través del diodo de dirección izquierdo de Q<sub>1</sub>(unión PN emisor-base).  Todo R<sub>1</sub>La corriente pasa por la base del transistor Q.<sub>2</sub>, saturándolo:</p>
+<p> <img src="04091.png"/> </p>
+<p>Tener Q<sub>2</sub>saturado causa Q<sub>3</sub>También se satura, lo que provoca una caída de voltaje muy pequeña entre la base y el emisor del transistor de salida final Q.<sub>4</sub>.  Así, Q<sub>4</sub>estará en modo de corte y no conducirá corriente.  El terminal de salida será flotante (ni conectado a tierra ni a V).<sub>cc</sub>), y esto será equivalente a un estado "alto" en la entrada de la siguiente puerta TTL a la que ésta alimenta.  Por lo tanto, una entrada "alta" da una salida "alta".</p>
+<p>Con una señal de entrada "baja" (terminal de entrada conectado a tierra), el análisis se parece a esto:</p>
+<p> <img src="04092.png"/> </p>
+<p>Todo R<sub>1</sub>La corriente de ahora se desvía a través del interruptor de entrada, eliminando así la corriente de base a través de Q<sub>2</sub>.  Esto fuerza al transistor Q<sub>2</sub>en corte para que ninguna corriente base pase por Q<sub>3</sub>cualquiera.  con q<sub>3</sub>corte también, Q<sub>4</sub>Esto será saturado por la corriente a través de la resistencia R.<sub>4</sub>, conectando así el terminal de salida a tierra, convirtiéndolo en un nivel lógico "bajo".  Por lo tanto, una entrada "baja" da una salida "baja".</p>
+<p>El diagrama esquemático de un circuito buffer con transistores de salida de tótem es un poco más complejo, pero los principios básicos, y ciertamente la tabla de verdad, son los mismos que para el circuito de colector abierto:</p>
+<a name="Buffer gate, totem pole TTL"></a>
+<p> <img src="04093.png"/> </p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Dos puertas inversoras, o NO, conectadas en "serie" para invertir y luego volver a invertir, un bit binario realiza la función de un búfer.  Las puertas de búfer simplemente sirven para amplificar la señal: tomar una fuente de señal "débil" que no es capaz de generar o absorber mucha corriente y aumentar la capacidad actual de la señal para poder controlar una carga.</li>
+<li>Los circuitos buffer están simbolizados por un símbolo de triángulo sin "burbuja" de inversor.</li>
+<li>Los buffers, al igual que los inversores, pueden fabricarse en forma de salida de colector abierto o de salida de tótem.</li>
+</ul>
+<h2><u><a name="xtocid91603">Multiple-input gates</a></u></h2>
+<p>Los inversores y buffers agotan las posibilidades de los circuitos de puerta de entrada única.  ¿Qué más se puede hacer con una sola señal lógica sino amortiguarla o invertirla?  Para explorar más posibilidades de puertas lógicas, debemos agregar más terminales de entrada a los circuitos.</p>
+<p>Agregar más terminales de entrada a una puerta lógica aumenta la cantidad de posibilidades de estado de entrada.  Con una puerta de entrada única, como el inversor o el buffer, solo puede haber dos estados de entrada posibles: o la entrada es "alta" (1) o es "baja" (0).  Como se mencionó anteriormente en este capítulo, una puerta de dos entradas tiene<i>cuatro</i>posibilidades (00, 01, 10 y 11).  Una puerta de tres entradas tiene<i>ocho</i>posibilidades (000, 001, 010, 011, 100, 101, 110 y 111) para estados de entrada.  El número de posibles estados de entrada es igual a dos elevado a la potencia del número de entradas:</p>
+<p> <img src="14004.png"/> </p>
+<p>Este aumento en el número de posibles estados de entrada obviamente permite un comportamiento de puerta más complejo.  Ahora, en lugar de simplemente invertir o amplificar (almacenar) un único nivel lógico "alto" o "bajo", la salida de la puerta estará determinada por cualquier<i>combinación</i>de unos y ceros está presente en los terminales de entrada.</p>
+<p>Dado que son posibles tantas combinaciones con solo unos pocos terminales de entrada, existen muchos tipos diferentes de compuertas de entrada múltiple, a diferencia de las compuertas de entrada única que solo pueden ser inversores o buffers.  En esta sección se presentará cada tipo de puerta básica, mostrando su símbolo estándar, tabla de verdad y operación práctica.  Los circuitos TTL reales de estas diferentes puertas se explorarán en secciones posteriores.</p>
+<h3><u><a name="xtocid91604">The AND gate</a></u></h3>
+<a name="AND gate"></a>
+<p>Una de las puertas de entradas múltiples más fáciles de entender es la puerta AND, llamada así porque la salida de esta puerta será "alta" (1) si y sólo si<i>all</i>entradas (primera entrada<i>and</i>la segunda entrada<i>and</i>. . .) son "altos" (1).  Si alguna entrada está "baja" (0), se garantiza que la salida también estará en un estado "bajo".</p>
+<p> <img src="04100.png"/> </p>
+<p>En caso de que se lo esté preguntando, las puertas AND se fabrican con más de tres entradas, pero esto es menos común que la variedad simple de dos entradas.</p>
+<p>La tabla de verdad de una puerta AND de dos entradas se ve así:</p>
+<p> <img src="04101.png"/> </p>
+<a name="LED"></a>
+<a name="Light Emitting Diode"></a>
+<p>Lo que significa esta tabla de verdad en términos prácticos se muestra en la siguiente secuencia de ilustraciones, con la puerta AND de 2 entradas sujeta a todas las posibilidades de niveles lógicos de entrada.  Un LED (diodo emisor de luz) proporciona una indicación visual del nivel lógico de salida:</p>
+<p> <img src="04102.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="04103.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="04104.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="04105.png"/> </p>
+<p>Sólo con todas las entradas elevadas a niveles lógicos "altos" la salida de la puerta AND pasa a "alto", energizando así el LED sólo para uno de los cuatro estados de combinación de entradas.</p>
+<h3><u><a name="xtocid91605">The NAND gate</a></u></h3>
+<a name="NAND gate"></a>
+<p>Una variación de la idea de la puerta AND se llama puerta NAND.  La palabra "NAND" es una contracción verbal de las palabras NOT y AND.  Esencialmente, una puerta NAND se comporta igual que una puerta AND con una puerta NOT (inversora) conectada al terminal de salida.  Para simbolizar esta inversión de la señal de salida, el símbolo de la puerta NAND tiene una burbuja en la línea de salida.  La tabla de verdad para una puerta NAND es, como cabría esperar, exactamente opuesta a la de una puerta AND:</p>
+<p> <img src="04106.png"/> </p>
+<p>Al igual que las puertas AND, las puertas NAND se fabrican con más de dos entradas.  En tales casos, se aplica el mismo principio general: la salida será "baja" (0) si y sólo si todas las entradas son "altas" (1).  Si alguna entrada es "baja" (0), la salida pasará a "alta" (1).</p>
+<h3><u><a name="xtocid91606">The OR gate</a></u></h3>
+<a name="OR gate"></a>
+<p>Nuestra siguiente puerta a investigar es la puerta OR, llamada así porque la salida de esta puerta será "alta" (1) si<i>any</i>de las entradas (primera entrada<i>or</i>la segunda entrada<i>or</i>. . .) son "altos" (1).  La salida de una puerta OR pasa a "baja" (0) si y sólo si todas las entradas son "bajas" (0).</p>
+<p> <img src="04107.png"/> </p>
+<p>La tabla de verdad de una puerta OR de dos entradas se ve así:</p>
+<p> <img src="04108.png"/> </p>
+<p>La siguiente secuencia de ilustraciones demuestra la función de la puerta OR, con las 2 entradas experimentando todos los niveles lógicos posibles.  Un LED (diodo emisor de luz) proporciona una indicación visual del nivel lógico de salida de la puerta:</p>
+<p> <img src="04109.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="04110.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="04111.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="04112.png"/> </p>
+<p>Una condición en la que cualquier entrada se eleva a un nivel lógico "alto" hace que la salida de la puerta OR pase a "alto", energizando así el LED para tres de los cuatro estados de combinación de entrada.</p>
+<h3><u><a name="xtocid91607">The NOR gate</a></u></h3>
+<a name="NOR gate"></a>
+<p>Como habrás sospechado, la puerta NOR es una puerta O con su salida invertida, al igual que una puerta NAND es una puerta Y con una salida invertida.</p>
+<p> <img src="04113.png"/> </p>
+<p>Las puertas NOR, como todas las demás puertas de entradas múltiples vistas hasta ahora, se pueden fabricar con más de dos entradas.  Aun así, se aplica el mismo principio lógico: la salida pasa a "baja" (0) si alguna de las entradas se vuelve "alta" (1).  La salida es "alta" (1) sólo cuando todas las entradas son "bajas" (0).</p>
+<h3><u><a name="xtocid91608">The Negative-AND gate</a></u></h3>
+<a name="Negative-AND gate"></a>
+<p>Una puerta AND negativa funciona igual que una puerta AND con todas sus entradas invertidas (conectadas a través de puertas NOT).  De acuerdo con la convención estándar de símbolos de puerta, estas entradas invertidas se indican mediante burbujas.  Contrariamente al primer instinto de la mayoría de las personas, el comportamiento lógico de una puerta AND Negativa es<i>not</i>Lo mismo que una puerta NAND.  Su tabla de verdad, en realidad, es idéntica a una puerta NOR:</p>
+<p> <img src="04114.png"/> </p>
+<h3><u><a name="xtocid91609">The Negative-OR gate</a></u></h3>
+<a name="Negative-OR gate"></a>
+<p>Siguiendo el mismo patrón, una puerta O negativa funciona igual que una puerta O con todas sus entradas invertidas.  De acuerdo con la convención estándar de símbolos de puerta, estas entradas invertidas se indican mediante burbujas.  El comportamiento y la tabla de verdad de una puerta OR Negativo es el mismo que el de una puerta NAND:</p>
+<p> <img src="04115.png"/> </p>
+<h3><u><a name="xtocid916010">The Exclusive-OR gate</a></u></h3>
+<a name="Exclusive-OR gate"></a>
+<p>Los últimos seis tipos de puertas son variaciones bastante directas de tres funciones básicas: Y, O y NO.  La puerta OR Exclusiva, sin embargo, es algo bastante diferente.</p>
+<a name="XOR gate"></a>
+<p>Las puertas OR exclusivas generan un nivel lógico "alto" (1) si las entradas están en<i>diferente</i>niveles lógicos, ya sea 0 y 1 o 1 y 0. Por el contrario, generan un nivel lógico "bajo" (0) si las entradas están en el<i>mismo</i>niveles lógicos.  La puerta Exclusive-OR (a veces llamada XOR) tiene un símbolo y un patrón de tabla de verdad que es único:</p>
+<p> <img src="04116.png"/> </p>
+<p>Existen circuitos equivalentes para una puerta OR exclusiva formada por puertas AND, OR y NOT, tal como los había para NAND, NOR y las puertas de entrada negativa.  Un enfoque bastante directo para simular una puerta OR exclusiva es comenzar con una puerta OR normal y luego agregar puertas adicionales para inhibir que la salida pase a "alto" (1) cuando ambas entradas son "altas" (1):</p>
+<p> <img src="04117.png"/> </p>
+<p>En este circuito, la puerta AND final actúa como un buffer para la salida de la puerta OR siempre que la salida de la puerta NAND sea alta, que es lo que ocurre con las tres primeras combinaciones de estados de entrada (00, 01 y 10).  Sin embargo, cuando ambas entradas son "altas" (1), la puerta NAND genera un nivel lógico "bajo" (0), lo que obliga a la puerta AND final a producir una salida "baja" (0).</p>
+<p>Otro circuito equivalente para la puerta OR exclusiva utiliza una estrategia de dos puertas AND con inversores, configuradas para generar salidas "altas" (1) para las condiciones de entrada 01 y 10. Una puerta OR final permite que cualquiera de las salidas "altas" de las puertas AND cree una salida "alta" final:</p>
+<p> <img src="04118.png"/> </p>
+<p>Las puertas OR exclusivas son muy útiles para circuitos donde se van a comparar dos o más números binarios bit por bit, y también para la detección de errores (verificación de paridad) y la conversión de códigos (binario a Gray y viceversa).</p>
+<h3><u><a name="xtocid916011">The Exclusive-NOR gate</a></u></h3>
+<a name="Exclusive-NOR gate"></a>
+<a name="XNOR gate"></a>
+<p>Finalmente, nuestra última puerta de análisis es la puerta NOR exclusiva, también conocida como puerta XNOR.  Es equivalente a una puerta OR exclusiva con salida invertida.  La tabla de verdad para esta puerta es exactamente opuesta a la de la puerta OR Exclusivo:</p>
+<p> <img src="04119.png"/> </p>
+<p>Como lo indica la tabla de verdad, el propósito de una puerta NOR exclusiva es generar un nivel lógico "alto" (1) siempre que ambas entradas estén en los mismos niveles lógicos (ya sea 00 u 11).</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Regla para una puerta AND: la salida es "alta" sólo si la primera entrada<i>and</i>La segunda entrada son ambas "altas".</li>
+<li>Regla para una puerta OR: la salida es "alta" si la entrada A<i>or</i>la entrada B son "altas".</li>
+<li>Regla para una puerta NAND: la salida es<i>not</i>"alto" si tanto la primera entrada<i>and</i>la segunda entrada es "alta".</li>
+<li>Regla para una puerta NOR: la salida es<i>not</i>"alto" si la primera entrada<i>or</i>la segunda entrada es "alta".</li>
+<li>Una puerta Y negativa se comporta como una puerta NOR.</li>
+<li>Una puerta O negativo se comporta como una puerta NAND.</li>
+<li>Regla para una puerta OR exclusiva: la salida es "alta" si los niveles lógicos de entrada son<i>diferente</i>.</li>
+<li>Regla para una puerta NOR exclusiva: la salida es "alta" si los niveles lógicos de entrada son los<i>mismo</i>.</li>
+</ul>
+<h2><u><a name="xtocid916012">TTL NAND and AND gates</a></u></h2>
+<p>Supongamos que modificamos nuestro circuito inversor de colector abierto básico, agregando un segundo terminal de entrada como el primero:</p>
+<p> <img src="04094.png"/> </p>
+<p>Este esquema ilustra un circuito real, pero no se llama "inversor de dos entradas".  A través del análisis descubriremos cuál es la función lógica de este circuito y, en consecuencia, cómo debería designarse.</p>
+<a name="Diode, steering"></a>
+<a name="Steering diode"></a>
+<p>Al igual que en el caso del inversor y el buffer, el grupo de diodos de "dirección" marcado con "Q<sub>1</sub>" en realidad tiene la forma de un transistor, aunque no se utiliza con ninguna capacidad de amplificación. Desafortunadamente, una estructura de transistor NPN simple es inadecuada para simular la<i>tres</i>Se necesitan uniones PN en esta red de diodos, por lo que se necesita un transistor (y símbolo) diferente.  Este transistor tiene un colector, una base y<i>two</i>emisores, y en el circuito se ve así:</p>
+<a name="NAND gate, TTL"></a>
+<p> <img src="04095.png"/> </p>
+<p>En el circuito de entrada única (inversor), conectar a tierra la entrada dio como resultado una salida que asumió el estado "alto" (1).  En el caso de la configuración de salida de colector abierto, este estado "alto" era simplemente "flotante".  Permitir que la entrada flote (o se conecte a V<sub>cc</sub>) dio como resultado que la salida se conectara a tierra, que es el estado "bajo" o 0.  Así, un 1 dentro resultó en un 0 fuera, y viceversa.</p>
+<p>Dado que este circuito se parece mucho al circuito inversor simple, la única diferencia es un segundo terminal de entrada conectado de la misma manera a la base del transistor Q.<sub>2</sub>, podemos decir que cada una de las entradas tendrá el mismo efecto en la salida.  Es decir, si cualquiera de las entradas está conectada a tierra, el transistor Q<sub>2</sub>se verá obligado a entrar en una condición de corte, convirtiendo así a Q<sub>3</sub>apagado y flotación de la salida (la salida pasa a "alto").  La siguiente serie de ilustraciones muestra esto para tres estados de entrada (00, 01 y 10):</p>
+<p> <img src="04120.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="04121.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="04122.png"/> </p>
+<p>En cualquier caso donde haya una entrada conectada a tierra ("baja"), se garantiza que la salida será flotante ("alta").  Por el contrario, la única vez que la salida pasará a "baja" es si el transistor Q<sub>3</sub>se enciende, lo que significa transistor Q<sub>2</sub>debe estar encendido (saturado), lo que significa que ninguna entrada puede desviarse R<sub>1</sub>corriente alejada de la base de Q<sub>2</sub>.  La única condición que cumplirá este requisito es cuando ambas entradas sean "altas" (1):</p>
+<p> <img src="04123.png"/> </p>
+<p>Al recopilar y tabular estos resultados en una tabla de verdad, vemos que el patrón coincide con el de la puerta NAND:</p>
+<p> <img src="04124.png"/> </p>
+<a name="AND gate, TTL"></a>
+<p>En la sección anterior sobre puertas NAND, este tipo de puerta se creó tomando una puerta AND y aumentando su complejidad agregando un inversor (NO puerta) a la salida.  Sin embargo, cuando examinamos este circuito, vemos que la función NAND es en realidad el modo de operación más simple y natural para este diseño TTL.  Para crear una función AND usando circuitos TTL, necesitamos<i>aumentar</i>la complejidad de este circuito al agregar una etapa inversora a la salida, al igual que tuvimos que agregar una etapa de transistor adicional al circuito inversor TTL para convertirlo en un búfer:</p>
+<p> <img src="04125.png"/> </p>
+<p>A continuación se muestran la tabla de verdad y el circuito de puerta equivalente (una puerta NAND de salida invertida):</p>
+<p> <img src="04126.png"/> </p>
+<p>Por supuesto, tanto los circuitos de puerta NAND como AND pueden diseñarse con etapas de salida de tótem en lugar de colector abierto.  Opto por mostrar las versiones de coleccionista abierto en aras de la simplicidad.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Se puede crear una puerta TTL NAND tomando un circuito inversor TTL y agregando otra entrada.</li>
+<li>Se puede crear una puerta AND agregando una etapa inversora a la salida del circuito de puerta NAND.</li>
+</ul>
+<h2><u><a name="xtocid916013">TTL NOR and OR gates</a></u></h2>
+<p>Examinemos el siguiente circuito TTL y analicemos su funcionamiento:</p>
+<a name="NOR gate, TTL"></a>
+<p> <img src="04127.png"/> </p>
+<p>Transistores Q<sub>1</sub>y q<sub>2</sub>Ambos están dispuestos de la misma manera que hemos visto para el transistor Q.<sub>1</sub>en todos los demás circuitos TTL.  En lugar de funcionar como amplificadores, Q<sub>1</sub>y q<sub>2</sub>Ambos se utilizan como redes de "dirección" de dos diodos.  Podemos reemplazar Q<sub>1</sub>y q<sub>2</sub>con conjuntos de diodos para ayudar a ilustrar:</p>
+<p> <img src="04128.png"/> </p>
+<p>Si la entrada A se deja flotante (o se conecta a V<sub>cc</sub>), la corriente pasará por la base del transistor Q<sub>3</sub>saturándolo.  Si la entrada A está conectada a tierra, esa corriente se desvía de Q<sub>3</sub>la base a través del diodo de dirección izquierdo de "Q<sub>1</sub>," obligando así a Q<sub>3</sub>en corte.  Lo mismo puede decirse de la entrada B y del transistor Q.<sub>4</sub>: el nivel lógico de la entrada B determina Q<sub>4</sub>Conducción: ya sea saturada o cortada.</p>
+<p>Observe cómo los transistores Q<sub>3</sub>y q<sub>4</sub>están en paralelo en sus terminales colector y emisor.  En esencia, estos dos transistores actúan como interruptores en paralelo, permitiendo que la corriente a través de las resistencias R<sub>3</sub>y r<sub>4</sub>según los niveles lógicos de las entradas A y B. Si<i>any</i>la entrada está en un nivel "alto" (1), entonces al menos uno de los dos transistores (Q<sub>3</sub>y/o Q<sub>4</sub>) se saturará, permitiendo que la corriente pase a través de las resistencias R<sub>3</sub>y r<sub>4</sub>, y encendiendo el transistor de salida final Q<sub>5</sub>para una salida de nivel lógico "bajo" (0).  La única forma en que la salida de este circuito puede asumir un estado "alto" (1) es si<i>ambos</i> Q<sub>3</sub>y q<sub>4</sub>están cortados, lo que significa<i>ambos</i>las entradas tendrían que estar conectadas a tierra o "bajas" (0).</p>
+<p>La tabla de verdad de este circuito, entonces, es equivalente a la de la puerta NOR:</p>
+<p> <img src="04129.png"/> </p>
+<a name="OR gate, TTL"></a>
+<p>Para convertir este circuito de puerta NOR en una puerta OR, tendríamos que invertir el nivel lógico de salida con otra etapa de transistor, tal como lo hicimos con el ejemplo de la puerta NAND a AND:</p>
+<p> <img src="04130.png"/> </p>
+<p>A continuación se muestran la tabla de verdad y el circuito de puerta equivalente (una puerta NOR de salida invertida):</p>
+<p> <img src="04131.png"/> </p>
+<p>Por supuesto, las etapas de salida de tótem también son posibles en circuitos lógicos NOR y OR TTL.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Se puede crear una puerta OR agregando una etapa inversora a la salida del circuito de la puerta NOR.</li>
+</ul>
+<h2><u><a name="xtocid916014">CMOS gate circuitry</a></u></h2>
+<p>Hasta este punto, nuestro análisis de circuitos lógicos de transistores se ha limitado a<i>TTL</i>paradigma de diseño, mediante el cual se utilizan transistores bipolares, y la estrategia general de entradas flotantes es equivalente a "alta" (conectada a V<sub>cc</sub>) entradas y, en consecuencia, se mantiene la asignación de etapas de salida de "colector abierto".  Sin embargo, esta no es la única forma en que podemos construir puertas lógicas.</p>
+<a name="NOT gate, CMOS"></a>
+<a name="Inverter gate, CMOS"></a>
+<p>En el diseño de circuitos de puerta se pueden utilizar transistores de efecto de campo, particularmente los de puerta aislada.  Al ser dispositivos controlados por voltaje en lugar de controlados por corriente, los IGFET tienden a permitir diseños de circuitos muy simples.  Tomemos, por ejemplo, el siguiente circuito inversor construido con IGFET de canal P y N:</p>
+<p> <img src="04132.png"/> </p>
+<a name="V&lt;sub&gt;dd&lt;/sub&gt;, versus V&lt;sub&gt;cc&lt;/sub&gt;"></a>
+<p>Observe la "V<sub>dd</sub>" etiqueta en el terminal positivo de la fuente de alimentación. Esta etiqueta sigue la misma convención que "V<sub>cc</sub>" en circuitos TTL: representa la tensión constante aplicada al drenaje de un transistor de efecto de campo, en referencia a tierra.</p>
+<p>Conectemos este circuito de puerta a una fuente de alimentación y a un interruptor de entrada, y examinemos su funcionamiento.  Tenga en cuenta que estos transistores IGFET son de tipo E (modo de mejora), y también lo son<i>normalmente apagado</i>dispositivos.  Se necesita un voltaje aplicado entre la compuerta y el drenaje (en realidad, entre la compuerta y el sustrato) de la polaridad correcta para polarizarlos.<i>on</i>.
+</p>
+<p> <img src="04133.png"/> </p>
+<p>El transistor superior es un IGFET de canal P.  Cuando el canal (sustrato) se hace más positivo que la puerta (puerta negativa en referencia al sustrato), el canal se mejora y se permite corriente entre la fuente y el drenaje.  Entonces, en la ilustración anterior, el transistor superior está encendido.</p>
+<p>El transistor inferior, que tiene voltaje cero entre la puerta y el sustrato (fuente), está en su modo normal:<i>off</i>.  Por lo tanto, la acción de estos dos transistores es tal que el terminal de salida del circuito de puerta tiene una conexión sólida a V<sub>dd</sub>y una conexión a tierra de muy alta resistencia.  Esto hace que la salida sea "alta" (1) para el estado "bajo" (0) de la entrada.</p>
+<p>A continuación, moveremos el interruptor de entrada a su otra posición y veremos qué sucede:</p>
+<p> <img src="04134.png"/> </p>
+<p>Ahora el transistor inferior (canal N) está saturado porque tiene suficiente voltaje de la polaridad correcta aplicada entre la puerta y el sustrato (canal) para encenderlo (positivo en la puerta, negativo en el canal).  El transistor superior, al que se le aplica voltaje cero entre su puerta y el sustrato, está en su modo normal:<i>off</i>.  Por lo tanto, la salida de este circuito de puerta ahora es "baja" (0).  Claramente, este circuito exhibe el comportamiento de un inversor, o NO de una puerta.</p>
+<a name="MOSFET"></a>
+<a name="CMOS"></a>
+<a name="Current source"></a>
+<a name="Current sink"></a>
+<a name="Source, current"></a>
+<a name="Sink, current"></a>
+<p>El uso de transistores de efecto de campo en lugar de transistores bipolares ha simplificado enormemente el diseño de la puerta del inversor.  Tenga en cuenta que la salida de esta compuerta nunca flota como es el caso del circuito TTL más simple: tiene una configuración natural de "tótem", capaz de generar y hundir corriente de carga.  La clave del elegante diseño de este circuito de puerta es la<i>complementario</i>uso de IGFET de canal P y N.  Dado que los IGFET se conocen más comúnmente como MOSFET (<b>M</b>etal-<b>O</b>xide-<b>S</b>semiconductor<b>F</b>campo<b>E</b>efecto<b>T</b>transistor), y este circuito utiliza transistores de canal P y N juntos, la clasificación general dada a circuitos de puerta como este es<i>CMOS</i>: <b>C</b>complementario<b>M</b>etál<b>O</b>xido<b>S</b>semiconductor.</p>
+<a name="Electrostatic sensitivity, CMOS"></a>
+<a name="Floating inputs, CMOS vs. TTL"></a>
+<p>Los circuitos CMOS no están afectados por las no linealidades inherentes de los transistores de efecto de campo, porque como circuitos digitales sus transistores siempre operan en cualquiera de los dos lados:<i>saturado</i> or <i>cierre</i>modos y nunca en el<i>activo</i>modo.  Sin embargo, sus entradas son sensibles a los altos voltajes generados por fuentes electrostáticas (electricidad estática), e incluso pueden activarse en estados "alto" (1) o "bajo" (0) por fuentes de voltaje espurio si se dejan flotando.  Por esta razón, no es aconsejable permitir que una entrada de puerta lógica CMOS flote bajo ninguna circunstancia.  Tenga en cuenta que esto es muy diferente del comportamiento de una puerta TTL donde una entrada flotante se interpreta de forma segura como un nivel lógico "alto" (1).</p>
+<p>Esto puede causar un problema si la entrada a una puerta lógica CMOS es controlada por un interruptor de un solo paso, donde un estado tiene la entrada sólidamente conectada a V<sub>dd</sub>o tierra y el otro estado tiene la entrada flotante (no conectada a nada):</p>
+<p> <img src="04135.png"/> </p>
+<p>Además, este problema surge si una entrada de puerta CMOS está siendo controlada por un<i>coleccionista abierto</i>Puerta TTL.  Debido a que la salida de dicha puerta TTL flota cuando sube a "alto" (1), la entrada de la puerta CMOS quedará en un estado incierto:</p>
+<p> <img src="04136.png"/> </p>
+<a name="Pullup resistor"></a>
+<a name="Resistor, pullup"></a>
+<p>Afortunadamente, existe una solución fácil a este dilema, una que se utiliza con frecuencia en los circuitos lógicos CMOS.  Siempre que un interruptor de un solo tiro (o cualquier otro tipo de salida de puerta incapaz de<i>ambos</i>corriente de abastecimiento y sumidero) se utiliza para controlar una entrada CMOS, una resistencia conectada a V<sub>dd</sub>o se puede utilizar tierra para proporcionar un nivel lógico estable para el estado en el que la salida del dispositivo impulsor está flotando.  El valor de esta resistencia no es crítico: normalmente 10 kΩ son suficientes.  Cuando se utiliza para proporcionar un nivel lógico "alto" (1) en el caso de una fuente de señal flotante, esta resistencia se conoce como<i>resistencia pull-up</i>:
+</p>
+<p> <img src="04137.png"/> </p>
+<p>Cuando se utiliza una resistencia de este tipo para proporcionar un nivel lógico "bajo" (0) en el caso de una fuente de señal flotante, se conoce como<i>resistencia desplegable</i>.  Nuevamente, el valor de una resistencia desplegable no es crítico:</p>
+<p> <img src="04138.png"/> </p>
+<p>Debido a que las salidas TTL de colector abierto siempre bajan, nunca generan, tiran o generan corriente.<i>up</i>Se necesitan resistencias al conectar una salida de este tipo a una entrada de puerta CMOS:</p>
+<p> <img src="04139.png"/> </p>
+<p>Aunque las puertas CMOS utilizadas en los ejemplos anteriores eran todas inversoras (de entrada única), el mismo principio de resistencias pullup y pulldown se aplica a las puertas CMOS de múltiples entradas.  Por supuesto, se requerirá una resistencia pullup o pulldown separada para cada entrada de puerta:</p>
+<p> <img src="04140.png"/> </p>
+<p>Esto nos lleva a la siguiente pregunta: ¿cómo diseñamos puertas CMOS de múltiples entradas como AND, NAND, OR y NOR?  No es sorprendente que las respuestas a esta pregunta revelen una simplicidad de diseño muy similar a la del inversor CMOS respecto a su equivalente TTL.</p>
+<a name="NAND gate, CMOS"></a>
+<p>Por ejemplo, aquí está el diagrama esquemático de una puerta CMOS NAND:</p>
+<p> <img src="04141.png"/> </p>
+<p>Observe cómo los transistores Q<sub>1</sub>y q<sub>3</sub>se parecen al par complementario conectado en serie del circuito inversor.   Ambos están controlados por la misma señal de entrada (entrada A), el transistor superior se apaga y el transistor inferior se enciende cuando la entrada está "alta" (1), y viceversa.  Observe también cómo los transistores Q<sub>2</sub>y q<sub>4</sub>están controlados de manera similar por la misma señal de entrada (entrada B), y cómo también exhibirán el mismo comportamiento de encendido/apagado para los mismos niveles lógicos de entrada.  Los transistores superiores de ambos pares (Q<sub>1</sub>y q<sub>2</sub>) tienen sus terminales de fuente y drenaje en paralelo, mientras que los transistores inferiores (Q<sub>3</sub>y q<sub>4</sub>) están conectados en serie.  Lo que esto significa es que la salida será "alta" (1) si<i>cualquiera</i>El transistor superior se satura y pasará a "bajo" (0) sólo si<i>ambos</i>Los transistores inferiores se saturan.  La siguiente secuencia de ilustraciones muestra el comportamiento de esta puerta NAND para las cuatro posibilidades de niveles lógicos de entrada (00, 01, 10 y 11):</p>
+<p> <img src="04142.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="04143.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="04144.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="04145.png"/> </p>
+<a name="AND gate, CMOS"></a>
+<p>Al igual que con la puerta TTL NAND, el circuito de puerta CMOS NAND se puede utilizar como punto de partida para la creación de una puerta AND.  Todo lo que hay que agregar es otra etapa de transistores para invertir la señal de salida:</p>
+<p> <img src="04146.png"/> </p>
+<a name="Transistor " sourcing""=""></a>
+<a name="Transistor " sinking""=""></a>
+<a name="NOR gate, CMOS"></a>
+<p>Un circuito de puerta CMOS NOR utiliza cuatro MOSFET al igual que la puerta NAND, excepto que sus transistores están dispuestos de manera diferente.  En lugar de dos paralelos<i>abastecimiento</i>transistores (superiores) conectados a V<sub>dd</sub>y dos conectados en serie<i>hundimiento</i>transistores (inferiores) conectados a tierra, la puerta NOR utiliza dos transistores fuente conectados en serie y dos transistores disipadores conectados en paralelo como este:</p>
+<p> <img src="04147.png"/> </p>
+<p>Al igual que con la puerta NAND, los transistores Q<sub>1</sub>y q<sub>3</sub>funcionan como un par complementario, al igual que los transistores Q<sub>2</sub>y q<sub>4</sub>.  Cada par está controlado por una única señal de entrada.  Si<i>cualquiera</i>entrada A<i>or</i>entrada B son "altas" (1), al menos uno de los transistores inferiores (Q<sub>3</sub>o Q<sub>4</sub>) se saturará, lo que hará que la salida sea "baja" (0).  Sólo en el caso de<i>ambos</i>Si las entradas son "bajas" (0), ambos transistores inferiores estarán en modo de corte y ambos transistores superiores estarán saturados, las condiciones necesarias para que la salida pase a "alta" (1).  Este comportamiento, por supuesto, define la función lógica NOR.</p>
+<a name="OR gate, CMOS"></a>
+<p>La función OR se puede construir a partir de la puerta NOR básica agregando una etapa inversora en la salida:</p>
+<p> <img src="04148.png"/> </p>
+<p>Dado que parece que cualquier puerta posible de construir utilizando tecnología TTL se puede duplicar en CMOS, ¿por qué todavía coexisten estas dos "familias" de diseño lógico?  La respuesta es que tanto TTL como CMOS tienen sus propias ventajas únicas.</p>
+<p>En primer lugar en la lista de comparaciones entre TTL y CMOS está la cuestión del consumo de energía.  En esta medida de rendimiento, CMOS es el vencedor indiscutible.  Debido a que los pares MOSFET de canal P y N complementarios de un circuito de puerta CMOS (idealmente) nunca conducen al mismo tiempo, el circuito extrae poca o ninguna corriente de la V.<sub>dd</sub>fuente de alimentación, excepto la corriente necesaria para suministrar corriente a una carga.  TTL, por otro lado, no puede funcionar sin algo de corriente consumida en todo momento, debido a los requisitos de polarización de los transistores bipolares a partir de los cuales está hecho.</p>
+<p>Sin embargo, hay una advertencia sobre esta ventaja.  Mientras que la disipación de potencia de una puerta TTL permanece bastante constante independientemente de su estado operativo, una puerta CMOS disipa más potencia a medida que aumenta la frecuencia de su señal de entrada.  Si una puerta CMOS se opera en una condición estática (sin cambios), disipa energía cero (idealmente).  Sin embargo, los circuitos de compuerta CMOS consumen corriente transitoria durante cada cambio de estado de salida de "bajo" a "alto" y viceversa.  Entonces, cuanto más a menudo una puerta CMOS cambia de modo, más a menudo consumirá corriente del V<sub>dd</sub>suministro, por lo tanto una mayor disipación de potencia a mayores frecuencias.</p>
+<a name="Fanout"></a>
+<p>Una puerta CMOS también consume mucha menos corriente de la salida de una puerta conductora que una puerta TTL porque los MOSFET son dispositivos controlados por voltaje, no por corriente.  Esto significa que una puerta puede controlar muchas más entradas CMOS que entradas TTL.  La medida de cuántas entradas de compuerta puede controlar una sola salida de compuerta se llama<i>abanico</i>.
+</p>
+<p>Otra ventaja de la que disfrutan los diseños de compuerta CMOS sobre TTL es un rango mucho más amplio permitido de voltajes de fuente de alimentación.  Mientras que las puertas TTL están restringidas al suministro de energía (V<sub>cc</sub>) voltajes entre 4,75 y 5,25 voltios, las compuertas CMOS generalmente pueden funcionar con cualquier voltaje entre 3 y 15 voltios.  La razón detrás de esta disparidad en los voltajes de la fuente de alimentación son los requisitos de polarización respectivos de los transistores MOSFET versus los de unión bipolar.  Los MOSFET están controlados exclusivamente por el voltaje de la puerta (con respecto al sustrato), mientras que los BJT están controlados exclusivamente por el voltaje de la puerta (con respecto al sustrato).<i>controlado por corriente</i>dispositivos.  Las resistencias del circuito de puerta TTL se calculan con precisión para corrientes de polarización adecuadas suponiendo una fuente de alimentación regulada de 5 voltios.  Cualquier variación significativa en el voltaje de la fuente de alimentación dará como resultado que las corrientes de polarización del transistor sean incorrectas, lo que luego resultará en un funcionamiento poco confiable (impredecible).  El único efecto que tienen las variaciones en el voltaje de la fuente de alimentación en una puerta CMOS es la definición de voltaje de un estado "alto" (1).  Para una puerta CMOS que funciona a 15 voltios de tensión de alimentación (V<sub>dd</sub>), una señal de entrada debe estar cerca de 15 voltios para ser considerada "alta" (1).  El umbral de voltaje para una señal "baja" (0) sigue siendo el mismo: cerca de 0 voltios.</p>
+<p>Una clara desventaja de CMOS es su baja velocidad, en comparación con TTL.  Las capacitancias de entrada de una puerta CMOS son mucho, mucho mayores que las de una puerta TTL comparable, debido al uso de MOSFET en lugar de BJT, por lo que una puerta CMOS responderá más lentamente a una transición de señal (de baja a alta o viceversa) que una puerta TTL, siendo todos los demás factores iguales.  La constante de tiempo RC formada por las resistencias del circuito y la capacitancia de entrada de la puerta tienden a impedir los rápidos tiempos de subida y bajada de un nivel lógico digital, degradando así el rendimiento de alta frecuencia.</p>
+<a name="B-series CMOS gates"></a>
+<p>Una estrategia para minimizar esta desventaja inherente de los circuitos de compuerta CMOS es "amortiguar" la señal de salida con etapas de transistores adicionales, para aumentar la ganancia de voltaje general del dispositivo.  Esto proporciona un voltaje de salida de transición más rápida (de alto a bajo o de bajo a alto) para un voltaje de entrada que cambia lentamente de un estado lógico a otro.  Considere este ejemplo, de una puerta NOR "sin búfer" versus una "con búfer" o<i>Serie B</i>, puerta NOR:</p>
+<p> <img src="04308.png"/> </p>
+<p>En esencia, la mejora del diseño de la serie B agrega dos inversores a la salida de un circuito NOR simple.  Esto no sirve de nada desde el punto de vista de la lógica digital, ya que dos inversores en cascada simplemente se anulan:</p>
+<p> <img src="04309.png"/> </p>
+<p>Sin embargo, agregar estas etapas de inversor al circuito sirve para aumentar la ganancia de voltaje general, haciendo que la salida sea más sensible a los cambios en el estado de entrada, trabajando para superar la lentitud inherente causada por la capacitancia de entrada de la puerta CMOS.</p>
+<!--High-speed CMOS (pin-for-pin compatible with TTL)-->
+<!--Noise immunity-->
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Las puertas lógicas CMOS están hechas de transistores IGFET (MOSFET) en lugar de transistores de unión bipolar.</li>
+<li>Las entradas de la puerta CMOS son sensibles a la electricidad estática.  Pueden resultar dañados por altos voltajes y pueden asumir cualquier nivel lógico si se dejan flotando.</li>
+<li><i>dominada</i> and <i>desplegable</i>Las resistencias se utilizan para evitar que la entrada de una puerta CMOS flote si es impulsada por una fuente de señal capaz solo de generar o absorber corriente.</li>
+<li>Las puertas CMOS disipan mucha menos energía que las puertas TTL equivalentes, pero su disipación de potencia aumenta con la frecuencia de la señal, mientras que la disipación de potencia de una puerta TTL es aproximadamente constante en una amplia gama de condiciones operativas.</li>
+<li>Las entradas de compuerta CMOS consumen mucha menos corriente que las entradas TTL, porque los MOSFET son dispositivos controlados por voltaje, no por corriente.</li>
+<li>Las puertas CMOS pueden funcionar con una gama mucho más amplia de voltajes de alimentación que TTL: normalmente de 3 a 15 voltios frente a 4,75 a 5,25 voltios para TTL.</li>
+<li>Las puertas CMOS tienden a tener una frecuencia operativa máxima mucho más baja que las puertas TTL debido a las capacitancias de entrada causadas por las puertas MOSFET.</li>
+<li><i>Serie B</i>Las puertas CMOS tienen salidas "amortiguadas" para aumentar la ganancia de voltaje de entrada a salida, lo que resulta en una respuesta de salida más rápida a los cambios de señal de entrada.  Esto ayuda a superar la lentitud inherente de las puertas CMOS debido a la capacitancia de entrada del MOSFET y la constante de tiempo RC generada por ello.</li>
+</ul>
+<h2><u><a name="xtocid916015">Special-output gates</a></u></h2>
+<a name="Complementary output gate"></a>
+<a name="Gate, complementary output"></a>
+<p>A veces es deseable tener una puerta lógica que proporcione salidas tanto invertidas como no invertidas.  Por ejemplo, una puerta de entrada única que es a la vez buffer e inversor, con un terminal de salida independiente para cada función.  O una puerta de dos entradas que proporciona las funciones AND y NAND en un solo circuito.  Estas puertas existen y se las conoce como<i>salida complementaria</i>puertas.</p>
+<p>La simbología general de dicha puerta es la figura básica de la puerta con una barra y dos líneas de salida que sobresalen de ella.  En la siguiente ilustración se muestra una serie de símbolos de puerta complementarios:</p>
+<p> <img src="04149.png"/> </p>
+<p>Las compuertas complementarias son especialmente útiles en circuitos "abarrotados" donde puede que no haya suficiente espacio físico para montar los chips de circuito integrado adicionales necesarios para proporcionar salidas invertidas y no invertidas utilizando compuertas estándar e inversores adicionales.  También son útiles en aplicaciones donde se necesita una salida complementaria desde una puerta, pero la adición de un inversor introduciría un retraso no deseado en la salida invertida en relación con la salida no invertida.  El circuito interno de las compuertas complementadas es tal que tanto las salidas invertidas como las no invertidas cambian de estado casi exactamente al mismo tiempo:</p>
+<p> <img src="04150.png"/> </p>
+<a name="Tristate output"></a>
+<a name="High-impedance output, tristate"></a>
+<p>Otro tipo de salida de puerta especial se llama<i>triestado</i>, porque tiene la capacidad de proporcionar tres modos de salida diferentes: hundimiento de corriente (nivel lógico "bajo"), suministro de corriente ("alto") y flotante ("Z alto" o<i>alta impedancia</i>).  Las salidas triestado generalmente se encuentran como una característica opcional en las puertas de buffer.  Estas puertas requieren un terminal de entrada adicional para controlar el modo "Z alta", y esta entrada generalmente se denomina<i>permitir</i>.
+</p>
+<p> <img src="04151.png"/> </p>
+<p>Con la entrada de habilitación mantenida en "alto" (1), el búfer actúa como un búfer ordinario con una etapa de salida de tótem: es capaz de generar y absorber corriente.  Sin embargo, el terminal de salida flota (entra en modo "Z alto") si alguna vez la entrada de habilitación está conectada a tierra ("baja"), independientemente del nivel lógico de la señal de datos.  En otras palabras, hacer que el terminal de entrada de habilitación sea "bajo" (0) de manera efectiva<i>desconecta</i>la puerta de cualquier lugar al que esté conectada su salida para que ya no pueda tener ningún efecto.</p>
+<p>Los buffers triestado están marcados en diagramas esquemáticos por un carácter de triángulo dentro del símbolo de la puerta como este:</p>
+<p> <img src="04152.png"/> </p>
+<p>Los buffers triestado también se fabrican con entradas de habilitación invertidas.  Una puerta de este tipo actúa normalmente cuando la entrada de habilitación es "baja" (0) y entra en modo de salida Z alta cuando la entrada de habilitación es "alta" (1):</p>
+<p> <img src="04153.png"/> </p>
+<a name="Bilateral switch"></a>
+<p>Un tipo especial de puerta conocida como<i>interruptor bilateral</i>Utiliza transistores MOSFET controlados por puerta que actúan como interruptores de encendido/apagado para conmutar señales eléctricas, analógicas o digitales.  La resistencia "encendido" de dicho interruptor está en el rango de varios cientos de ohmios, y la resistencia "apagado" está en el rango de varios cientos de ohmios.<i>mega-</i>ohmios.</p>
+<a name="SPST switch"></a>
+<p>Los interruptores bilaterales aparecen en los esquemas como interruptores SPST (unipolares, unidireccionales) dentro de cajas rectangulares, con un terminal de control en uno de los lados largos de la caja:</p>
+<p> <img src="04310.png"/> </p>
+<p>Lo mejor sería concebir un interruptor bilateral como una versión de estado sólido (semiconductor) de un relé electromecánico: un contacto de interruptor accionado por señal que puede usarse para conducir prácticamente cualquier tipo de señal eléctrica.  Por supuesto, al ser de estado sólido, el interruptor bilateral no tiene ninguna de las características indeseables de los relés electromecánicos, como contacto "rebotado", formación de arcos, baja velocidad o susceptibilidad a la vibración mecánica.  Sin embargo, por el contrario, su capacidad de transportar corriente es bastante limitada.  Además, la señal transmitida por el "contacto" no debe exceder los voltajes del "riel" de suministro de energía que alimentan el circuito del interruptor bilateral.</p>
+<p>Cuatro interruptores bilaterales están empaquetados dentro del popular circuito integrado modelo "4066":</p>
+<p> <img src="04311.png"/> </p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li><i>Complementario</i>Las puertas proporcionan señales de salida tanto invertidas como no invertidas, de tal manera que ninguna está retrasada con respecto a la otra.</li>
+<li><i>triestado</i>Las compuertas proporcionan tres estados de salida diferentes: alto, bajo y flotante (High-Z).  Estas puertas son comandadas a sus modos de salida de alta impedancia por un terminal de entrada separado llamado<i>permitir</i>.</li>
+<li><i>Cambios bilaterales</i>son circuitos MOSFET que proporcionan conmutación de encendido/apagado para una variedad de tipos de señales eléctricas (analógicas y digitales), controladas por señales de voltaje de nivel lógico.  En esencia, son relés de estado sólido con muy baja capacidad de manejo de corriente.</li>
+</ul>
+<h2><u><a name="xtocid916016">Gate universality</a></u></h2>
+<p>Las puertas NAND y NOR poseen una propiedad especial: son universales.  Es decir, dadas suficientes puertas, cualquier tipo de puerta es capaz de imitar el funcionamiento de<i>any</i>otro tipo de puerta.  Por ejemplo, es posible construir un circuito que exhiba la función OR utilizando tres puertas NAND interconectadas.  La capacidad de que un solo tipo de puerta pueda imitar cualquier otro tipo de puerta es algo que solo disfrutan NAND y NOR.  De hecho, los sistemas de control digital se han diseñado únicamente en torno a puertas NAND o NOR, y todas las funciones lógicas necesarias se derivan de conjuntos de NAND o NOR interconectados.</p>
+<p>Como prueba de esta propiedad, esta sección se dividirá en subsecciones que muestran cómo se pueden formar todos los tipos de puertas básicas utilizando solo NAND o solo NOR.</p>
+<h3><u><a name="xtocid916017">Constructing the NOT function</a></u></h3>
+<a name="NOT function, from a NOR gate"></a>
+<a name="NOT function, from a NAND gate"></a>
+<p> <img src="04154.png"/> </p>
+<p>Como puede ver, hay dos formas de utilizar una puerta NAND como inversor y dos formas de utilizar una puerta NOR como inversor.  Cualquiera de los métodos funciona, aunque conectar entradas TTL juntas aumenta la cantidad de carga de corriente en la puerta de conducción.  Para las puertas CMOS, los terminales de entrada comunes disminuyen la velocidad de conmutación de la puerta debido al aumento de la capacitancia de entrada.</p>
+<p>Los inversores son la herramienta fundamental para transformar un tipo de función lógica en otro, por lo que se mostrarán muchos inversores en las siguientes ilustraciones.  En esos diagramas, solo mostraré un método de inversión, y será donde la entrada de la puerta NAND no utilizada se conecta a +V (ya sea V<sub>cc</sub>o V<sub>dd</sub>, dependiendo de si el circuito es TTL o CMOS) y donde la entrada no utilizada para la puerta NOR está conectada a tierra.  Tenga en cuenta que el otro método de inversión (conectar ambas entradas NAND o NOR juntas) funciona igual de bien desde un punto de vista lógico (1 y 0), pero no es deseable desde las perspectivas prácticas de mayor carga de corriente para TTL y mayor capacitancia de entrada para CMOS.</p>
+<h3><u><a name="xtocid916018">Constructing the "buffer" function</a></u></h3>
+<p>Dado que es bastante fácil emplear puertas NAND y NOR para realizar la función de inversor (NO), es lógico que dos de estas etapas de puertas darán como resultado una función de búfer, donde la salida tiene el mismo estado lógico que la entrada.</p>
+<a name="Buffer function, from a NOR gate"></a>
+<a name="Buffer function, from a NAND gate"></a>
+<p> <img src="04155.png"/> </p>
+<h3><u><a name="xtocid916019">Constructing the AND function</a></u></h3>
+<p>Para realizar la función AND desde puertas NAND, todo lo que se necesita es una etapa inversora (NO) en la salida de una puerta NAND.  Esta inversión adicional "anula" la primera<i>N</i> in <i>NAND</i>, dejando la función AND.  Se necesita un poco más de trabajo para lograr la misma funcionalidad de las puertas NOR, pero se puede hacer invirtiendo ("NO") todas las entradas a una puerta NOR.</p>
+<a name="AND function, from NOR gates"></a>
+<a name="AND function, from NAND gates"></a>
+<p> <img src="04156.png"/> </p>
+<h3><u><a name="xtocid916020">Constructing the NAND function</a></u></h3>
+<p>Sería inútil mostrarle cómo "construir" la función NAND utilizando una puerta NAND, ya que no hay nada que hacer.  Para que una puerta NOR realice la función NAND, debemos invertir todas las entradas a la puerta NOR así como la salida de la puerta NOR.  Para una puerta de dos entradas, esto requiere tres puertas NOR más conectadas como inversores.</p>
+<a name="NAND function, from NOR gates"></a>
+<p> <img src="04157.png"/> </p>
+<h3><u><a name="xtocid916021">Constructing the OR function</a></u></h3>
+<a name="DeMorgan's Theorem"></a>
+<p>Invertir la salida de una puerta NOR (con otra puerta NOR conectada como inversor) da como resultado la función OR.  La puerta NAND, por otro lado, requiere la inversión de todas las entradas para imitar la función OR, tal como necesitábamos invertir todas las entradas de una puerta NOR para obtener la función AND.  Recuerde que la inversión de todas las entradas a una puerta da como resultado el cambio de la función esencial de esa puerta de Y a O (o viceversa), además de una salida invertida.  Por lo tanto, con todas las entradas invertidas, una NAND se comporta como una OR, una NOR se comporta como una AND, una AND se comporta como una NOR y una OR se comporta como una NAND.  En álgebra booleana, esta transformación se conoce como<i>Teorema de De Morgan</i>, tratado con más detalle en un capítulo posterior de este libro.</p>
+<a name="OR function, from NOR gates"></a>
+<a name="OR function, from NAND gates"></a>
+<p> <img src="04158.png"/> </p>
+<h3><u><a name="xtocid916022">Constructing the NOR function</a></u></h3>
+<p>Al igual que el procedimiento para hacer que una puerta NOR se comporte como una NAND, debemos invertir todas las entradas y la salida para que una puerta NAND funcione como una NOR.</p>
+<a name="NOR function, from NAND gates"></a>
+<p> <img src="04159.png"/> </p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Las puertas NAND y NOR son universales: es decir, tienen la capacidad de imitar cualquier tipo de puerta, si están interconectadas en número suficiente.</li>
+</ul>
+<h2><u><a name="xtocid916023">Logic signal voltage levels</a></u></h2>
+<p>Los circuitos de puerta lógica están diseñados para recibir y emitir solo dos tipos de señales: "alta" (1) y "baja" (0), representadas por un voltaje variable: voltaje de suministro de energía total para un estado "alto" y voltaje cero para un estado "bajo".  En un mundo perfecto, todas las señales del circuito lógico existirían en estos límites de voltaje extremos y nunca se desviarían de ellos (es decir, menos del voltaje total para un "alto" o más de cero voltaje para un "bajo").  Sin embargo, en realidad, los niveles de voltaje de la señal lógica rara vez alcanzan estos límites perfectos debido a caídas de voltaje parásitas en el circuito del transistor, por lo que debemos comprender las limitaciones del nivel de señal de los circuitos de compuerta cuando intentan interpretar los voltajes de señal que se encuentran en algún lugar.<i>entre</i>tensión de alimentación total y cero.</p>
+<p>Las puertas TTL funcionan con una tensión de alimentación nominal de 5 voltios, +/- 0,25 voltios.  Idealmente, una señal TTL "alta" sería exactamente de 5,00 voltios y una señal TTL "baja" de 0,00 voltios exactamente.  Sin embargo, los circuitos de compuerta TTL reales no pueden generar niveles de voltaje tan perfectos y están diseñados para aceptar señales "altas" y "bajas" que se desvían sustancialmente de estos valores ideales.  Los voltajes de señal de entrada "aceptables" varían de 0 voltios a 0,8 voltios para un estado lógico "bajo" y de 2 voltios a 5 voltios para un estado lógico "alto".  Los voltajes de señal de salida "aceptables" (niveles de voltaje garantizados por el fabricante de la puerta en un rango específico de condiciones de carga) varían de 0 voltios a 0,5 voltios para un estado lógico "bajo" y de 2,7 voltios a 5 voltios para un estado lógico "alto":</p>
+<p> <img src="04312.png"/> </p>
+<p>Si se enviara una señal de voltaje entre 0,8 voltios y 2 voltios a la entrada de una puerta TTL, no habría una respuesta segura de la puerta.  Tal señal se consideraría<i>incierto</i>, y ningún fabricante de puertas lógicas garantizaría cómo su circuito de puerta interpretaría dicha señal.</p>
+<a name="Noise margin, logic gate"></a>
+<p>Como puede ver, los rangos tolerables para los niveles de señal de salida son más estrechos que para los niveles de señal de entrada, para garantizar que cualquier puerta TTL que envíe una señal digital a la entrada de otra puerta TTL transmitirá voltajes aceptables para la puerta receptora.  La diferencia entre los rangos tolerables de salida y entrada se llama<i>margen de ruido</i>de la puerta.  Para puertas TTL, el margen de ruido de bajo nivel es la diferencia entre 0,8 voltios y 0,5 voltios (0,3 voltios), mientras que el margen de ruido de alto nivel es la diferencia entre 2,7 voltios y 2 voltios (0,7 voltios).  En pocas palabras, el margen de ruido es la cantidad máxima de voltaje espurio o "ruido" que puede superponerse a una señal de voltaje de salida de puerta débil antes de que la puerta receptora pueda interpretarla incorrectamente:</p>
+<p> <img src="04313.png"/> </p>
+<p>Los circuitos de puerta CMOS tienen especificaciones de señal de entrada y salida que son bastante diferentes de las de TTL.  Para una puerta CMOS que funciona con un voltaje de fuente de alimentación de 5 voltios, los voltajes de señal de entrada aceptables varían de 0 voltios a 1,5 voltios para un estado lógico "bajo" y de 3,5 voltios a 5 voltios para un estado lógico "alto".  Los voltajes de señal de salida "aceptables" (niveles de voltaje garantizados por el fabricante de la puerta en un rango específico de condiciones de carga) varían de 0 voltios a 0,05 voltios para un estado lógico "bajo" y de 4,95 voltios a 5 voltios para un estado lógico "alto":</p>
+<p> <img src="04314.png"/> </p>
+<p>A partir de estas cifras debería resultar obvio que los circuitos de compuerta CMOS tienen márgenes de ruido mucho mayores que los TTL: 1,45 voltios para los márgenes CMOS de bajo y alto nivel, frente a un máximo de 0,7 voltios para TTL.  En otras palabras, los circuitos CMOS pueden tolerar más del doble de voltaje de "ruido" superpuesto en sus líneas de entrada antes de que se produzcan errores en la interpretación de la señal.</p>
+<p>Los márgenes de ruido CMOS se amplían aún más con voltajes operativos más altos.  A diferencia de TTL, que está restringido a un voltaje de fuente de alimentación de 5 voltios, CMOS puede funcionar con voltajes de hasta 15 voltios (algunos circuitos CMOS de hasta 18 voltios).  Aquí se muestran los estados "alto" y "bajo" aceptables, tanto para entrada como para salida, de circuitos integrados CMOS que funcionan a 10 voltios y 15 voltios, respectivamente:</p>
+<p> <img src="04317.png"/> </p>
+<p>
+</p>
+<p> <img src="04318.png"/> </p>
+<p>Los márgenes para señales "altas" y "bajas" aceptables pueden ser mayores que lo que se muestra en las ilustraciones anteriores.  Lo que se muestra representa el rendimiento de la señal de entrada en el "peor de los casos", según las especificaciones del fabricante.  En la práctica, se puede encontrar que un circuito de puerta tolerará señales "altas" de voltaje considerablemente menor y señales "bajas" de voltaje considerablemente mayor que las especificadas aquí.</p>
+<p>Por el contrario, los márgenes de salida extremadamente pequeños que se muestran, que garantizan estados de salida para señales "altas" y "bajas" dentro de 0,05 voltios de los "rieles" de suministro de energía, son optimistas.  Estos niveles de tensión de salida "sólidos" serán válidos sólo en condiciones de carga mínima.  Si la puerta está suministrando o absorbiendo una corriente sustancial a una carga, el voltaje de salida no podrá mantener estos niveles óptimos, debido a la resistencia del canal interno de los MOSFET de salida final de la puerta.</p>
+<p>Dentro del rango "incierto" de cualquier entrada de puerta, habrá algún punto de demarcación que dividirá el rango de señal de entrada "baja" real de la puerta de su rango de señal de entrada "alta" real.  Es decir, en algún lugar entre el nivel de voltaje de señal "alto" más bajo y el nivel de voltaje de señal "bajo" más alto garantizado por el fabricante de la puerta, existe un voltaje umbral al cual la puerta funcionará.<i>de hecho</i>cambiar su interpretación de una señal de "baja" o "alta" o viceversa.  Para la mayoría de los circuitos de compuerta, este voltaje no especificado es un único punto:</p>
+<p> <img src="04325.png"/> </p>
+<p>En presencia de voltaje de "ruido" de CA superpuesto a la señal de entrada de CC, un único punto de umbral en el que la puerta altera su interpretación del nivel lógico dará como resultado una salida errática:</p>
+<p> <img src="04326.png"/> </p>
+<p>Si este escenario le resulta familiar, es porque recuerda un problema similar con los circuitos del amplificador operacional del comparador de voltaje (analógico).  Con un único punto de umbral en el que una entrada hace que la salida cambie entre estados "alto" y "bajo", la presencia de ruido significativo provocará cambios erráticos en la salida:</p>
+<p> <img src="04327.png"/> </p>
+<a name="Feedback, positive"></a>
+<a name="Positive feedback"></a>
+<a name="Schmitt trigger"></a>
+<p>La solución a este problema es un poco<i>comentarios positivos</i>introducido en el circuito amplificador.  Con un amplificador operacional, esto se hace conectando la salida nuevamente a la entrada no inversora (+) a través de una resistencia.  En un circuito de compuerta, esto implica rediseñar el circuito interno de la compuerta, estableciendo la retroalimentación dentro del paquete de compuerta en lugar de a través de conexiones externas.  Una puerta así diseñada se llama<i>gatillo schmitt</i>.  Los disparadores Schmitt interpretan los voltajes de entrada variables según<i>two</i>voltajes umbral: a<i>positivo</i>umbral (V<sub>T+</sub>), y un<i>negativo</i>umbral (V<sub>T-</sub>):
+</p>
+<p> <img src="04328.png"/> </p>
+<p>Las puertas de activación de Schmitt se distinguen en los diagramas esquemáticos por el pequeño símbolo de "histéresis" dibujado en su interior, que recuerda a la curva B-H de un material ferromagnético.  La histéresis generada por la retroalimentación positiva dentro del circuito de la puerta agrega un nivel adicional de inmunidad al ruido al rendimiento de la puerta.  Las puertas de activación Schmitt se utilizan con frecuencia en aplicaciones donde se espera ruido en las líneas de señal de entrada y/o donde una salida errática sería muy perjudicial para el rendimiento del sistema.</p>
+<p>Los diferentes requisitos de nivel de voltaje de la tecnología TTL y CMOS presentan problemas cuando los dos tipos de puertas se utilizan en el mismo sistema.  Aunque operar puertas CMOS con el mismo voltaje de suministro de energía de 5,00 voltios requerido por las puertas TTL no es un problema, los niveles de voltaje de salida TTL no serán compatibles con los requisitos de voltaje de entrada CMOS.</p>
+<p>Tomemos, por ejemplo, una puerta TTL NAND que emite una señal a la entrada de una puerta inversora CMOS.  Ambas puertas funcionan con el mismo suministro de 5,00 voltios (V<sub>cc</sub>).  Si la puerta TTL emite una señal "baja" (que se garantiza que estará entre 0 voltios y 0,5 voltios), la entrada de la puerta CMOS la interpretará correctamente como "baja" (esperando un voltaje entre 0 voltios y 1,5 voltios):</p>
+<p> <img src="04320.png"/> </p>
+<p>Sin embargo, si la puerta TTL emite una señal "alta" (que se garantiza entre 5 voltios y 2,7 ​​voltios),<i>puede que no</i>ser interpretado correctamente por la entrada de la puerta CMOS como "alto" (esperando un voltaje entre 5 voltios y<i>3.5</i>voltios):</p>
+<p> <img src="04321.png"/> </p>
+<p>Dada esta discrepancia, es completamente posible que la puerta TTL emita una señal "alta" válida (válida, es decir, según los estándares para TTL) que se encuentre dentro del rango "incierto" para la entrada CMOS, y puede ser interpretada (falsamente) como "baja" por la puerta receptora.  Una "solución" fácil para este problema es aumentar el nivel de voltaje de señal "alto" de la puerta TTL mediante una resistencia pullup:</p>
+<p> <img src="04322.png"/> </p>
+<p>Sin embargo, se requiere algo más que esto para interconectar una salida TTL con una entrada CMOS, si la puerta CMOS receptora está alimentada por un voltaje de fuente de alimentación mayor:</p>
+<p> <img src="04323.png"/> </p>
+<p>Por supuesto, no habrá ningún problema con que la puerta CMOS interprete la salida "baja" de la puerta TTL, pero una señal "alta" de la puerta TTL es otra cuestión completamente distinta.  El rango de voltaje de salida garantizado de 2,7 voltios a 5 voltios de la salida de la puerta TTL no está ni cerca del rango aceptable de la puerta CMOS de 7 voltios a 10 voltios para una señal "alta".  Si utilizamos un<i>coleccionista abierto</i>Puerta TTL en lugar de una puerta de salida de tótem, sin embargo, una resistencia pullup a los 10 voltios V<sub>dd</sub>El riel de suministro elevará el voltaje de salida "alto" de la puerta TTL al voltaje de fuente de alimentación total que suministra la puerta CMOS.  Dado que una compuerta de colector abierto solo puede absorber corriente, no generar corriente, el nivel de voltaje del estado "alto" está completamente determinado por la fuente de alimentación a la que está conectada la resistencia pullup, resolviendo así claramente el problema de desajuste:</p>
+<p> <img src="04324.png"/> </p>
+<p>Debido a las excelentes características de voltaje de salida de las puertas CMOS, normalmente no hay problemas para conectar una salida CMOS a una entrada TTL.  El único problema importante es la carga actual presentada por las entradas TTL, ya que la salida CMOS debe absorber corriente para cada una de las entradas TTL mientras está en el estado "bajo".</p>
+<p>Cuando la puerta CMOS en cuestión está alimentada por una fuente de voltaje superior a 5 voltios (V<sub>cc</sub>), sin embargo, se producirá un problema.  El estado de salida "alto" de la puerta CMOS, al ser superior a 5 voltios, excederá los límites de entrada aceptables de la puerta TTL para una señal "alta".  Una solución a este problema es crear un circuito inversor de "colector abierto" utilizando un transistor NPN discreto y utilizarlo para interconectar las dos puertas:</p>
+<p> <img src="04329.png"/> </p>
+<p>La "R<sub>pull-up</sub>"La resistencia es opcional, ya que las entradas TTL asumen automáticamente un estado "alto" cuando se dejan flotando, que es lo que sucederá cuando la salida de la puerta CMOS sea "baja" y el transistor se corte. Por supuesto, una consecuencia muy importante de implementar esta solución es la inversión lógica creada por el transistor: cuando la puerta CMOS emite una señal "baja", la puerta TTL ve una entrada "alta"; y cuando la puerta CMOS emite una señal "alta", el transistor se satura y la puerta TTL ve una entrada "baja" Siempre que esta inversión se tenga en cuenta en el esquema lógico del sistema, todo estará bien.</p>
+<h2><u><a name="xtocid916024">DIP gate packaging</a></u></h2>
+<a name="DIP gate packaging"></a>
+<a name="Dual Inline Package"></a>
+<p>Los circuitos de puerta lógica digital se fabrican como circuitos integrados: todos los transistores y resistencias que los constituyen están construidos en una sola pieza de material semiconductor.  El ingeniero, técnico o aficionado que utilice una pequeña cantidad de puertas probablemente encontrará lo que necesita encerrado en un DIP (<b>D</b>ual <b>I</b>en línea<b>P</b>paquete) vivienda.  Los circuitos integrados encapsulados en DIP están disponibles con números pares de pines, ubicados a intervalos de 0,100 pulgadas entre sí para compatibilidad con el diseño de la placa de circuito estándar.  Los recuentos de pines de 8, 14, 16, 18 y 24 son comunes para los "chips" DIP.</p>
+<p>Los números de pieza proporcionados a estos paquetes DIP especifican qué tipo de puertas están incluidas y cuántas.  Estos números de pieza son estándares de la industria, lo que significa que un "74LS02" fabricado por Motorola tendrá una función idéntica a un "74LS02" fabricado por Fairchild o por cualquier otro fabricante.  Los códigos de letras antepuestos al número de pieza son exclusivos del fabricante y no son códigos estándar de la industria.  Por ejemplo, un SN74LS02 es una puerta TTL NOR cuádruple de 2 entradas fabricada por Motorola, mientras que un DM74LS02 es exactamente el mismo circuito fabricado por Fairchild.</p>
+<p>Los números de pieza de los circuitos lógicos que comienzan con "74" son TTL de calidad comercial.  Si el número de pieza comienza con el número "54", el chip es una unidad de grado militar: tiene un mayor rango de temperatura de funcionamiento y, por lo general, es más robusto con respecto a los niveles permitidos de suministro de energía y voltaje de señal.  Las letras "LS" que siguen inmediatamente al prefijo 74/54 indican circuitos "Schottky de baja potencia", que utilizan diodos y transistores de barrera Schottky para disminuir la disipación de energía.  Los circuitos de puerta que no son de Schottky consumen más energía, pero pueden operar a frecuencias más altas debido a sus tiempos de conmutación más rápidos.</p>
+<p>A continuación se muestran como referencia algunos de los paquetes de circuitos TTL "DIP" más comunes:</p>
+<p> <img src="04160.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="04161.png"/> </p>
+<h2><u><a name="xtocid916025">Contributors</a></u></h2>
+<p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>
+<p>
+<b>Jan-Willem Rensman</b>(2 de mayo de 2002): Sugirió la inclusión de activadores Schmitt e histéresis de puerta en este capítulo.</p>
+<!--Future additions:-->
+<!--Discuss HCMOS and its pin-for-pin compatibility with standard TTL.-->
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="DIGI_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="DIGI_2.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="DIGI_4.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

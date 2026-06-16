@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 2 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #f59e0b; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 2</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen IV</h1>
+<h1>Capítulo 2</h1>
+<!--Modified 11/14/2004 (DC) -- Added Paul Stokes name to the contributor's list see contrib.sml for change details-->
+<h1>ARITMÉTICA BINARIA</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid91510"><u>Numbers versus numeration</u></a></li>
+<li><a href="#xtocid91511"><u>Binary addition</u></a></li>
+<li><a href="#xtocid91512"><u>Negative binary numbers</u></a></li>
+<li><a href="#xtocid91513"><u>Subtraction</u></a></li>
+<li><a href="#xtocid91514"><u>Overflow</u></a></li>
+<li><a href="#xtocid91515"><u>Bit groupings</u></a></li></ul>
+<h2><u><a name="xtocid91510">Numbers versus numeration</a></u></h2>
+<a name="Number"></a>
+<a name="Numeration system"></a>
+<p>Es imperativo comprender que el tipo de sistema de numeración utilizado para representar números no tiene impacto en el resultado de ninguna función aritmética (suma, resta, multiplicación, división, raíces, potencias o logaritmos).  Un número es un número es un número; uno más uno siempre será igual a dos (siempre que estemos tratando con<i>real</i>números), no importa cómo simbolices uno, uno y dos.  Un número primo en forma decimal sigue siendo primo si se muestra en forma binaria, octal o hexadecimal.  π sigue siendo la relación entre la circunferencia y el diámetro de un círculo, sin importar qué símbolo utilice para indicar su valor.  Las funciones esenciales y las interrelaciones de las matemáticas no se ven afectadas por el sistema particular de símbolos que podríamos elegir para representar cantidades.  Esta distinción entre<i>números</i> and <i>sistemas de numeración</i>Es fundamental comprenderlo.</p>
+<p>La distinción esencial entre los dos es muy parecida a la que existe entre un objeto y las palabras habladas que asociamos con él.  Una casa sigue siendo una casa independientemente de si la llamamos por su nombre en inglés.<i>casa</i>o su nombre español<i>casa</i>.  El primero es la cosa real, mientras que el segundo es simplemente el símbolo de la cosa.</p>
+<p>Dicho esto, realizar una operación aritmética simple como la suma (a mano) en forma binaria puede resultar confuso para una persona acostumbrada a trabajar únicamente con numeración decimal.  En esta lección, exploraremos las técnicas utilizadas para realizar funciones aritméticas simples en números binarios, ya que estas técnicas se emplearán en el diseño de circuitos electrónicos para hacer lo mismo.  Es posible que dé por sentado la suma y la resta a mano, después de haber usado una calculadora durante tanto tiempo, pero en lo más profundo del circuito de esa calculadora, todas esas operaciones se realizan "a mano", utilizando numeración binaria.  Para comprender cómo se logra esto, debemos repasar los conceptos básicos de la aritmética.</p>
+<h2><u><a name="xtocid91511">Binary addition</a></u></h2>
+<p>Sumar números binarios es una tarea muy sencilla y muy similar a la suma manual de números decimales.  Al igual que con los números decimales, se comienza sumando los bits (dígitos) en una columna, o colocando el peso, a la vez, de derecha a izquierda.  A diferencia de la suma decimal, hay poco que memorizar en cuanto a reglas para la suma de bits binarios:</p>
+<br/>
+<pre>
+0 + 0 = 0
+1 + 0 = 1
+0 + 1 = 1
+1 + 1 = 10
+1 + 1 + 1 = 11
+</pre>
+<br/>
+<p>Al igual que con la suma decimal, cuando la suma en una columna es un número de dos bits (dos dígitos), la cifra menos significativa se escribe como parte de la suma total y la cifra más significativa se "lleva" a la siguiente columna de la izquierda.  Considere los siguientes ejemplos:</p>
+<br/>
+<pre>
+.                          11  1 &lt;--- Carry bits -----&gt;  11
+.     1001101             1001001                     1000111
+.   + 0010010           + 0011001                   + 0010110
+.   ---------           ---------                   ---------
+.     1011111             1100010                     1011101
+</pre>
+<br/>
+<p>El problema de suma de la izquierda no requería que se transportaran bits, ya que la suma de bits en cada columna era 1 o 0, no 10 u 11. En los otros dos problemas, definitivamente había bits que transportar, pero el proceso de suma sigue siendo bastante simple.</p>
+<p>Como veremos más adelante, hay maneras de construir circuitos electrónicos para realizar esta misma tarea de suma, representando cada bit de cada número binario como una señal de voltaje (ya sea "alta" para un 1 o "baja" para un 0).  Ésta es la base misma de toda la aritmética que realizan las computadoras digitales modernas.</p>
+<h2><u><a name="xtocid91512">Negative binary numbers</a></u></h2>
+<p>Como la suma se realiza fácilmente, podemos realizar la operación de resta con la misma técnica simplemente haciendo que uno de los números sea negativo.  Por ejemplo, el problema de resta de 7 - 5 es esencialmente el mismo que el problema de suma 7 + (-5).  Como ya sabemos cómo representar números positivos en binario, todo lo que necesitamos saber ahora es cómo representar sus contrapartes negativas y podremos restar.</p>
+<p>Normalmente representamos un número decimal negativo colocando un signo menos directamente a la izquierda del dígito más significativo, como en el ejemplo anterior, con -5.  Sin embargo, el propósito de usar notación binaria es construir circuitos de encendido/apagado que puedan representar valores de bits en términos de voltaje (2 valores alternativos: "alto" o "bajo").  En este contexto, no podemos darnos el lujo de un tercer símbolo como un signo "menos", ya que estos circuitos sólo pueden estar encendidos o apagados (dos estados posibles).  Una solución es reservar un bit (circuito) que no haga más que representar el signo matemático:</p>
+<br/>
+<pre>
+.                        101<sub>2</sub> = 5<sub>10</sub>    (positive)
+.
+.  Extra bit, representing sign (0=positive, 1=negative)
+.                       |
+.                       0101<sub>2</sub> = 5<sub>10</sub>    (positive)
+.
+.  Extra bit, representing sign (0=positive, 1=negative)
+.                       |
+.                       1101<sub>2</sub> = -5<sub>10</sub>   (negative)
+</pre>
+<br/>
+<p>Como puede ver, debemos tener cuidado cuando comenzamos a utilizar bits para cualquier propósito que no sea el de valores ponderados posicionales estándar.  De lo contrario, 1101<sub>2</sub>podría malinterpretarse como el número trece cuando en realidad queremos representar menos cinco.  Para mantener las cosas claras aquí, primero debemos decidir cuántos bits se necesitarán para representar los números más grandes con los que trataremos, y luego asegurarnos de no exceder la longitud del campo de bits en nuestras operaciones aritméticas.  Para el ejemplo anterior, me he limitado a la representación de números desde menos siete (1111<sub>2</sub>) a siete positivos (0111<sub>2</sub>), y nada más, haciendo que el cuarto bit sea el bit de "signo".  Sólo estableciendo primero estos límites puedo evitar la confusión de un número negativo con un número positivo mayor.</p>
+<a name="Sign-magnitude"></a>
+<p>Representando menos cinco como 1101<sub>2</sub>es un ejemplo de la<i>magnitud de signo</i>sistema de numeración binaria negativa.  Al utilizar el bit más a la izquierda como indicador de signo y no como valor ponderado posicional, estoy sacrificando la forma "pura" de notación binaria por algo que me brinda una ventaja práctica: la representación de números negativos.  El bit más a la izquierda se lee como signo, ya sea positivo o negativo, y los bits restantes se interpretan según la notación binaria estándar: de izquierda a derecha, coloque los pesos en múltiplos de dos.</p>
+<p>Por simple que sea el método signo-magnitud, no es muy práctico para fines aritméticos.  Por ejemplo, ¿cómo sumo cinco menos (1101<sub>2</sub>) a cualquier otro número, usando la técnica estándar de suma binaria?  Tendría que inventar una nueva forma de hacer la suma para que funcione, y si hago eso, también podría hacer el trabajo con la resta a mano; No hay ninguna ventaja aritmética en usar números negativos para realizar restas mediante sumas si tenemos que hacerlo con numeración de signos y magnitudes, ¡y ese era nuestro objetivo!</p>
+<a name="Complementation, numerical"></a>
+<p>Hay otro método para representar números negativos que funciona con nuestra conocida técnica de suma manual y que también tiene más sentido desde el punto de vista de la numeración ponderada por lugares, llamado<i>complementación</i>.  Con esta estrategia, asignamos el bit más a la izquierda para que tenga un propósito especial, tal como lo hicimos con el enfoque de signo-magnitud, definiendo nuestros límites numéricos como antes.  Sin embargo, esta vez, el bit más a la izquierda es más que un simple bit de signo; más bien, posee un valor de peso posicional negativo.  Por ejemplo, un valor de menos cinco se representaría así:</p>
+<br/>
+<pre>
+Extra bit, place weight = negative eight
+.                    |
+.                    1011<sub>2</sub> = 5<sub>10</sub>   (negative)
+.
+.          (1 x -8<sub>10</sub>)  +  (0 x 4<sub>10</sub>)  +  (1 x 2<sub>10</sub>)  +  (1 x 1<sub>10</sub>)  =  -5<sub>10</sub>
+</pre>
+<br/>
+<p>Dado que los tres bits de la derecha pueden representar una magnitud de cero a siete, y el bit más a la izquierda representa cero u menos ocho, podemos representar con éxito cualquier número entero desde menos siete (1001<sub>2</sub>= -8<sub>10</sub> + 1<sub>10</sub>= -7<sub>10</sub>) a siete positivos (0111<sub>2</sub> = 0<sub>10</sub> + 7<sub>10</sub> = 7<sub>10</sub>).
+</p>
+<p>La representación de números positivos en este esquema (con el cuarto bit designado como peso negativo) no es diferente de la notación binaria ordinaria.  Sin embargo, representar números negativos no es tan sencillo:</p>
+<br/>
+<pre>
+zero             0000
+positive one     0001          negative one     1111
+positive two     0010          negative two     1110
+positive three   0011          negative three   1101
+positive four    0100          negative four    1100
+positive five    0101          negative five    1011
+positive six     0110          negative six     1010
+positive seven   0111          negative seven   1001
+.                              negative eight   1000
+</pre>
+<br/>
+<p>Tenga en cuenta que los números binarios negativos en la columna de la derecha, que son la suma del total de los tres bits de la derecha más los ocho negativos del bit más a la izquierda, no "cuentan" en la misma progresión que los números binarios positivos en la columna de la izquierda.  Más bien, los tres bits de la derecha deben establecerse en el valor adecuado para igualar el total deseado (negativo) cuando se suman con el valor negativo de ocho posiciones del bit más a la izquierda.</p>
+<a name="Complement, two's"></a>
+<a name="Two's complement"></a>
+<p>Esos tres bits derechos se conocen como<i>complemento a dos</i>del número positivo correspondiente.  Considere la siguiente comparación:</p>
+<br/>
+<pre>
+positive number       two's complement
+---------------       ----------------
+001                    111
+010                    110
+011                    101
+100                    100
+101                    011
+110                    010
+111                    001
+</pre>
+<br/>
+<a name="Complement, one's"></a>
+<a name="One's complement"></a>
+<p>En este caso, siendo el bit de peso negativo el cuarto bit (valor posicional de ocho negativos), el complemento a dos para cualquier número positivo será cualquier valor necesario para sumar a ocho negativos para obtener el equivalente negativo de ese valor positivo.  Afortunadamente, hay una manera fácil de calcular el complemento a dos de cualquier número binario: simplemente invierta todos los bits de ese número, cambiando todos los unos por ceros y viceversa (para llegar a lo que se llama<i>complemento de uno</i>) y luego agrega uno.  Por ejemplo, para obtener el complemento a dos de cinco (101<sub>2</sub>), primero invertiríamos todos los bits para obtener 010<sub>2</sub>(el "complemento a uno"), luego suma uno para obtener 011<sub>2</sub>, o -5<sub>10</sub>en forma de complemento a dos de tres bits.</p>
+<p>Curiosamente, generar el complemento a dos de un número binario funciona igual si manipulas<i>all</i>los bits, incluido el bit más a la izquierda (signo) al mismo tiempo que los bits de magnitud.  Intentemos esto con el ejemplo anterior, convirtiendo un cinco positivo en un cinco negativo, pero realizando el proceso de complementación en los cuatro bits.  Debemos asegurarnos de incluir el bit de signo 0 (positivo) en el número original, cinco (0101<sub>2</sub>).  Primero, invirtiendo todos los bits para obtener el complemento a uno: 1010<sub>2</sub>.  Luego sumando uno obtenemos la respuesta final: 1011<sub>2</sub>, o -5<sub>10</sub>expresado en forma de complemento a dos de cuatro bits.</p>
+<p>Es de vital importancia recordar que el lugar del bit de peso negativo ya debe estar determinado antes de poder realizar cualquier conversión en complemento a dos.  Si nuestro campo de numeración binaria fuera tal que el octavo bit fuera designado como bit de peso negativo (10000000<sub>2</sub>), tendríamos que determinar el complemento a dos basándose en los siete bits restantes.  Aquí, el complemento a dos de cinco (0000101<sub>2</sub>) sería 1111011<sub>2</sub>.  Un cinco positivo en este sistema se representaría como 00000101<sub>2</sub>y un cinco negativo como 11111011<sub>2</sub>.
+</p>
+<h2><u><a name="xtocid91513">Subtraction</a></u></h2>
+<p>Podemos restar un número binario de otro utilizando las técnicas estándar adaptadas para números decimales (resta de cada par de bits, de derecha a izquierda, "tomar prestado" según sea necesario de los bits de la izquierda).  Sin embargo, si podemos aprovechar la técnica ya familiar (y más sencilla) de la suma binaria para restar, sería mejor.  Como acabamos de aprender, podemos representar números binarios negativos utilizando el método del "complemento a dos" y un bit de peso posicional negativo.  Aquí, usaremos esos números binarios negativos para restar mediante suma.  Aquí hay un problema de muestra:</p>
+<br/>
+<pre>
+Subtraction: 7<sub>10</sub> - 5<sub>10</sub>         Addition equivalent:  7<sub>10</sub> + (-5<sub>10</sub>)
+</pre>
+<br/>
+<p>Si todo lo que necesitamos hacer es representar siete y menos cinco en forma binaria (complementado a dos), todo lo que necesitamos son tres bits más el bit de peso negativo:</p>
+<br/>
+<pre>
+positive seven = 0111<sub>2</sub>
+negative five  = 1011<sub>2</sub>
+</pre>
+<br/>
+<p>Ahora, sumémoslos:</p>
+<br/>
+<pre>
+.                    1111  &lt;--- Carry bits
+.                     0111
+.                   + 1011
+.                   ------
+.                    10010
+.                    |
+.             Discard extra bit
+.
+.            Answer = 0010<sub>2</sub>
+</pre>
+<br/>
+<p>Como ya hemos definido nuestro campo de bits numéricos como tres bits más el bit de peso negativo, el quinto bit de la respuesta (1) se descartará para darnos un resultado de 0010.<sub>2</sub>, o positivo dos, que es la respuesta correcta.</p>
+<p>Otra forma de entender por qué descartamos ese bit extra es recordar que el bit más a la izquierda del número inferior posee un peso negativo, en este caso igual a menos ocho.  Cuando sumamos estos dos números binarios, lo que en realidad estamos haciendo con los MSB es restar el MSB del número inferior del MSB del número superior.  En la resta, nunca se "lleva" un dígito o un bit al siguiente peso posicional izquierdo.</p>
+<p>Probemos con otro ejemplo, esta vez con números mayores.  Si queremos sumar -25<sub>10</sub>a 18<sub>10</sub>, primero debemos decidir qué tan grande debe ser nuestro campo de bits binarios.  Para representar el número más grande (valor absoluto) de nuestro problema, que es veinticinco, necesitamos al menos cinco bits, más un sexto bit para el bit de peso negativo.  Comencemos representando el positivo veinticinco, luego encontremos el complemento a dos y juntemos todo en una sola numeración:</p>
+<br/>
+<pre>
++25<sub>10</sub>  = 011001<sub>2</sub> (showing all six bits)      
+One's complement of 11001<sub>2</sub> = 100110<sub>2</sub>
+One's complement + 1 = two's complement = 100111<sub>2</sub>        
+-25<sub>10</sub> = 100111<sub>2</sub>
+</pre>
+<br/>
+<p>Esencialmente, estamos representando menos veinticinco usando el bit de peso negativo (sexto) con un valor de menos treinta y dos, más siete positivos (binario 111).<sub>2</sub>).
+</p>
+<p>Ahora, representemos dieciocho positivos en forma binaria, mostrando los seis bits:</p>
+<br/>
+<pre>
+.              18<sub>10</sub>  = 010010<sub>2</sub>
+.       
+.       Now, let's add them together and see what we get:
+.
+.                     11   &lt;--- Carry bits
+.                   100111
+.                 + 010010
+.                 --------
+.                   111001
+</pre>
+<br/>
+<p>Como no había bits "extra" a la izquierda, no hay bits que descartar.  El bit más a la izquierda de la respuesta es un 1, lo que significa que la respuesta es negativa, en forma de complemento a dos, como debería ser.  Al convertir la respuesta a forma decimal sumando todos los bits multiplicados por sus respectivos valores de peso, obtenemos:</p>
+<br/>
+<pre>
+(1 x -32<sub>10</sub>)  +  (1 x 16<sub>10</sub>)  +  (1 x 8<sub>10</sub>)  +  (1 x 1<sub>10</sub>)  = -7<sub>10</sub> 
+</pre>
+<br/>
+<p>De hecho -7<sub>10</sub>es la suma adecuada de -25<sub>10</sub>y 18<sub>10</sub>.
+</p>
+<h2><u><a name="xtocid91514">Overflow</a></u></h2>
+<a name="Overflow"></a>
+<p>Una advertencia con los números binarios con signo es la de<i>rebosar</i>, donde la respuesta a un problema de suma o resta excede la magnitud que se puede representar con el número de bits asignado.  Recuerde que el lugar del bit de signo está fijado desde el inicio del problema.  En el último problema de ejemplo, utilizamos cinco bits binarios para representar la magnitud del número y el bit más a la izquierda (sexto) como bit de peso negativo o signo.  Con cinco bits para representar la magnitud, tenemos un rango de representación de 2<sup>5</sup>, o treinta y dos pasos enteros desde 0 hasta el máximo.  Esto significa que podemos representar un número tan alto como +31.<sub>10</sub>(011111<sub>2</sub>), o tan bajo como -32<sub>10</sub>(100000<sub>2</sub>).  Si configuramos un problema de suma con dos números binarios, el sexto bit se usa como signo y el resultado excede +31<sub>10</sub>o es menor que -32<sub>10</sub>, nuestra respuesta será incorrecta.  Intentemos sumar 17<sub>10</sub>y 19<sub>10</sub>Para ver cómo funciona esta condición de desbordamiento para números positivos excesivos:</p>
+<br/>
+<pre>
+.       17<sub>10</sub>  = 10001<sub>2</sub>            19<sub>10</sub>  = 10011<sub>2</sub>
+.
+.                           1  11  &lt;--- Carry bits
+.    (Showing sign bits)    010001
+.                         + 010011
+.                         -------- 
+.                           100100 
+</pre>
+<br/>
+<p>La respuesta (100100<sub>2</sub>), interpretado con el sexto bit como -32<sub>10</sub>lugar, en realidad es igual a -28<sub>10</sub>, no +36<sub>10</sub>como deberíamos llegar con +17<sub>10</sub>y +19<sub>10</sub>¡sumados juntos!  Obviamente, esto no es correcto.  ¿Qué salió mal?  La respuesta está en las restricciones del campo numérico de seis bits dentro del cual estamos trabajando. Desde la magnitud de la suma verdadera y propia (36<sub>10</sub>) excede el límite permitido para nuestro campo de bits designado, tenemos un<i>error de desbordamiento</i>.  En pocas palabras, seis lugares no dan suficientes bits para representar la suma correcta, por lo que cualquier cifra que obtengamos usando la estrategia de descartar el bit "carry" más a la izquierda será incorrecta.</p>
+<p>Se producirá un error similar si sumamos dos números negativos para producir una suma demasiado baja para nuestro campo binario de seis bits.  Intentemos sumar -17<sub>10</sub>y -19<sub>10</sub>juntos para ver cómo funciona esto (¡o no funciona, según sea el caso!):</p>
+<br/>
+<pre>
+.      -17<sub>10</sub>  = 101111<sub>2</sub>           -19<sub>10</sub>  = 101101<sub>2</sub>
+.
+.                          1 1111  &lt;--- Carry bits
+.    (Showing sign bits)    101111
+.                         + 101101
+.                         --------
+.                          1011100 
+.                          |            
+.                  Discard extra bit
+.
+FINAL ANSWER:   011100<sub>2</sub>   = +28<sub>10</sub>
+</pre>
+<br/>
+<p>La respuesta (incorrecta) es una<i>positivo</i>veintiocho.  El hecho de que la suma real de menos diecisiete y menos diecinueve fuera demasiado baja para representarse adecuadamente con un campo de magnitud de cinco bits y un sexto bit de signo es la causa fundamental de esta dificultad.</p>
+<p>Intentemos estos dos problemas nuevamente, excepto que esta vez usamos el séptimo bit como bit de signo y permitimos el uso de 6 bits para representar la magnitud:</p>
+<br/>
+<pre>
+.         17<sub>10</sub> + 19<sub>10</sub>                     (-17<sub>10</sub>) + (-19<sub>10</sub>) 
+.
+.          1  11                           11 1111
+.         0010001                           1101111
+.       + 0010011                         + 1101101
+.       ---------                         ---------
+.         0100100<sub>2</sub>                         11011100<sub>2</sub>
+.                                          |
+.                                  Discard extra bit
+.
+. ANSWERS:  0100100<sub>2</sub> = +36<sub>10</sub>
+.           1011100<sub>2</sub> = -36<sub>10</sub>
+</pre>
+<br/>
+<p>Al utilizar campos de bits suficientemente grandes para manejar la magnitud de las sumas, llegamos a las respuestas correctas.</p>
+<p>En estos problemas de muestra hemos podido detectar errores de desbordamiento al realizar los problemas de suma en forma decimal y comparar los resultados con las respuestas binarias.  Por ejemplo, al agregar +17<sub>10</sub>y +19<sub>10</sub>Juntos supimos que la respuesta era<i>supuesto</i>ser +36<sub>10</sub>, entonces cuando la suma binaria resultó ser -28<sub>10</sub>, sabíamos que algo tenía que estar mal.  Aunque esta es una forma válida de detectar desbordamiento, no es muy eficiente.  Después de todo, la idea de la complementación es poder sumar números binarios de manera confiable y no tener que verificar dos veces el resultado sumando los mismos números en forma decimal.  Esto es especialmente cierto cuando se construyen circuitos electrónicos para sumar cantidades binarias: el circuito debe poder comprobar si se desborda sin la supervisión de un ser humano que ya sepa cuál es la respuesta correcta.</p>
+<p>Lo que necesitamos es un método simple de detección de errores que no requiera ninguna aritmética adicional.  Quizás la solución más elegante sea comprobar la<i>firmar</i>de la suma y compararla con los signos de los números sumados.  Obviamente, dos números positivos sumados deberían dar un resultado positivo, y dos números negativos sumados deberían dar un resultado negativo.  Observe que siempre que tuvimos una condición de desbordamiento en los problemas de ejemplo, el signo de la suma siempre fue<i>opuesto</i>de los dos números sumados: +17<sub>10</sub>más +19<sub>10</sub>dando -28<sub>10</sub>, o -17<sub>10</sub>más -19<sub>10</sub>dando +28<sub>10</sub>.  Sólo con comprobar las señales podemos darnos cuenta de que algo anda mal.</p>
+<p>Pero ¿qué pasa con los casos en los que se suma un número positivo a un número negativo?  ¿Qué signo debe tener la suma para que sea correcta?  O, más precisamente, ¿qué signo de suma indicaría necesariamente un error de desbordamiento?  La respuesta a esto es igualmente elegante: habrá<i>nunca</i>¡Será un error de desbordamiento cuando se sumen dos números de signos opuestos!  La razón de esto es evidente cuando se considera la naturaleza del desbordamiento.  El desbordamiento ocurre cuando la magnitud de un número excede el rango permitido por el tamaño del campo de bits.  La suma de dos números con signos idénticos puede muy bien exceder el rango del campo de bits de esos dos números, por lo que en este caso el desbordamiento es una posibilidad.  Sin embargo, si se suma un número positivo a un número negativo, la suma siempre será más cercana a cero que cualquiera de los dos números sumados: su magnitud<i>debe</i>ser menor que la magnitud de cualquiera de los números originales, por lo que el desbordamiento es imposible.</p>
+<p>Afortunadamente, esta técnica de detección de desbordamiento se implementa fácilmente en circuitos electrónicos y es una característica estándar en los circuitos sumadores digitales: un tema para un capítulo posterior.</p>
+<h2><u><a name="xtocid91515">Bit groupings</a></u></h2>
+<p>La razón singular para aprender y utilizar el sistema de numeración binaria en electrónica es comprender cómo diseñar, construir y solucionar problemas de circuitos que representan y procesan cantidades numéricas en forma digital.  Dado que el sistema bivalente (de dos valores) de numeración de bits binarios se presta tan fácilmente a la representación mediante estados de transistores "encendidos" y "apagados" (saturación y corte, respectivamente), tiene sentido diseñar y construir circuitos aprovechando este principio para realizar cálculos binarios.</p>
+<p>Si tuviéramos que construir un circuito para representar un número binario, tendríamos que asignar suficientes circuitos de transistores para representar tantos bits como deseemos.  En otras palabras, al diseñar un circuito digital, primero debemos decidir cuántos bits (máximo) nos gustaría poder representar, ya que cada bit requiere un circuito de encendido/apagado para representarlo.  Esto es análogo a diseñar un ábaco para representar digitalmente números decimales: debemos decidir cuántos dígitos queremos manejar en este primitivo dispositivo de "calculadora", ya que cada dígito requiere una varilla separada con sus propias cuentas.</p>
+<p> <img src="04315.png"/> </p>
+<p>Un ábaco de diez varillas podría representar un número decimal de diez dígitos, o un valor máximo de 9.999.999.999.  Si quisiéramos representar un número mayor en este ábaco, no podríamos hacerlo, a menos que se le pudieran agregar varillas adicionales.</p>
+<p>En el diseño de computadoras electrónicas digitales, es común diseñar el sistema para un "ancho de bits" común: un número máximo de bits asignados para representar cantidades numéricas.  Las primeras computadoras digitales manejaban bits en grupos de cuatro u ocho.  Los sistemas más modernos manejan números en grupos de 32 bits o más.  Para expresar más convenientemente el "ancho de bits" de dichos grupos en una computadora digital, se aplicaron etiquetas específicas a los grupos más comunes.</p>
+<a name="Byte"></a>
+<p>Ocho bits, agrupados para formar una única cantidad binaria, se conocen como<i>byte</i>.  Cuatro bits, agrupados como un número binario, reciben el jocoso título de<i>picar</i>, a menudo escrito como<i>mordisquear</i>.
+</p>
+<p>Una multitud de términos han seguido a byte y nibble para etiquetar agrupaciones específicas de bits binarios.  La mayoría de los términos que se muestran aquí son informales y ningún grupo de estándares u otro organismo sancionador los ha considerado "autorizados".  Sin embargo, su inclusión en este capítulo está justificada por su aparición ocasional en la literatura técnica, así como por la ligereza que añaden a un tema que de otro modo sería aburrido:</p>
+<a name="Bit"></a>
+<a name="Crumb"></a>
+<a name="Nibble (or Nybble)"></a>
+<a name="Nickle"></a>
+<a name="Byte"></a>
+<a name="Deckle"></a>
+<a name="Playte"></a>
+<a name="Dynner"></a>
+<a name="Word"></a>
+<ul>
+<li><b>Bit</b>: Unidad única y bivalente de notación binaria.  Equivale a un "dígito" decimal.</li>
+<li><b>Miga</b>, <b>Un bocado</b>, o<b>tayste</b>: Dos bits.</li>
+<li><b>Picar</b>, o<b>mordisquear</b>: Cuatro bits.</li>
+<li><b>níquel</b>: Cinco bits.</li>
+<li><b>Byte</b>: Ocho bits.</li>
+<li><b>Usar tímpano</b>: Diez bits.</li>
+<li><b>Playte</b>: Dieciséis bits.</li>
+<li><b>Dinero</b>: Treinta y dos bits.</li>
+<li><b>Palabra</b>: (dependiente del sistema).</li>
+</ul>
+<p>El término más ambiguo con diferencia es<i>palabra</i>, refiriéndose a la agrupación de bits estándar dentro de un sistema digital particular.  Para un sistema informático que utiliza una "ruta de datos" de 32 bits de ancho, una "palabra" significaría 32 bits.  Si el sistema utilizara 16 bits como agrupación estándar para cantidades binarias, una "palabra" significaría 16 bits.  los términos<i>playte</i> and <i>cena</i>, por el contrario, siempre se refieren a 16 y 32 bits, respectivamente, independientemente del contexto del sistema en el que se utilicen.</p>
+<p>La dependencia del contexto también es cierta para los términos derivados de<i>palabra</i>, como<i>doble palabra</i> and <i>palabra larga</i>(ambos significan el doble del ancho de bits estándar),<i>media palabra</i>(la mitad del ancho de bits estándar), y<i>patio</i>(es decir, cuatro veces el ancho de bits estándar).  Una adición divertida a esta colección un tanto aburrida de<i>palabra</i>-derivados es el término<i>champ</i>, que significa lo mismo que<i>media palabra</i>.  Por ejemplo, un<i>champ</i>Serían 16 bits en el contexto de un sistema digital de 32 bits y 18 bits en el contexto de un sistema de 36 bits.  Asimismo, el término<i>charlar</i>a veces es sinónimo de<i>palabra</i>.
+</p>
+<p>Las definiciones de los términos de agrupación de bits se tomaron del "Jargon Lexicon" de Eric S. Raymond, una colección indexada de términos, tanto comunes como oscuros, relacionados con el mundo de la programación informática.</p>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="DIGI_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="DIGI_16.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="DIGI_3.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

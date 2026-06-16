@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 11 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #f59e0b; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 11</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen IV</h1>
+<h1>Capítulo 11</h1>
+<!--Modified 11/01/2010 (DC) -- Added Finite State Machines section, changed title of chapter.-->
+<!--11/01/2010 >chaptertitle>COUNTERS****/chaptertitle>-->
+<h1>CIRCUITOS SECUENCIALES</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid92320"><u>Binary count sequence</u></a></li>
+<li><a href="#xtocid92321"><u>Asynchronous counters</u></a></li>
+<li><a href="#xtocid92322"><u>Synchronous counters</u></a></li>
+<li><a href="#xtocid92323"><u>Counter modulus</u></a></li>
+<li><a href="#xtocid92324"><u>Finite State Machines</u></a></li>
+<li><a href="#xtocid92325"><u>Contributors</u></a></li>
+<li><a href="#xtocid92326">Bibliography</a></li></ul>
+<p>
+<b>*** INCOMPLETO ***</b>
+</p>
+<h2><u><a name="xtocid92320">Binary count sequence</a></u></h2>
+<p>Si examinamos una secuencia de conteo binario de cuatro bits de 0000 a 1111, será evidente un patrón definido en las "oscilaciones" de los bits entre 0 y 1:</p>
+<p> <img src="14052.png"/> </p>
+<p>Observe cómo el bit menos significativo (LSB) alterna entre 0 y 1 en cada paso de la secuencia de conteo, mientras que cada bit siguiente alterna a la mitad de la frecuencia del anterior.  El bit más significativo (MSB) solo alterna una vez durante toda la secuencia de conteo de dieciséis pasos: en la transición entre 7 (0111) y 8 (1000).</p>
+<p>Si quisiéramos diseñar un circuito digital para "contar" en binario de cuatro bits, todo lo que tendríamos que hacer es diseñar una serie de circuitos divisores de frecuencia, cada circuito dividiendo la frecuencia de un pulso de onda cuadrada por un factor de 2:</p>
+<p> <img src="14053.png"/> </p>
+<p>Los flip-flops J-K son ideales para esta tarea, porque tienen la capacidad de "alternar" su estado de salida al comando de un pulso de reloj cuando las entradas J y K están en "alto" (1):</p>
+<p> <img src="04345.png"/> </p>
+<p>Si consideramos que las dos señales (A y B) en este circuito representan dos bits de un número binario, siendo la señal A el LSB y la señal B el MSB, vemos que la secuencia de conteo es hacia atrás: de 11 a 10 a 01 a 00 y nuevamente a 11. Aunque puede que no esté contando en la dirección que podríamos haber asumido, ¡al menos cuenta!</p>
+<p>Las siguientes secciones exploran diferentes tipos de circuitos contadores, todos fabricados con flip-flops J-K y todos basados ​​en la explotación del modo de operación de conmutación de ese flip-flop.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Las secuencias de conteo binario siguen un patrón de división de frecuencia de octava: la frecuencia de oscilación de cada bit, de LSB a MSB, sigue un patrón de división por dos.  En otras palabras, el LSB oscilará a la frecuencia más alta, seguido por el siguiente bit a la mitad de la frecuencia del LSB y el siguiente bit a la mitad de la frecuencia del bit anterior, etc.</li>
+<li>Se pueden construir circuitos que "cuenten" en una secuencia binaria, utilizando flip-flops JK configurados en el modo "alternar".</li>
+</ul>
+<h2><u><a name="xtocid92321">Asynchronous counters</a></u></h2>
+<a name="Asynchronous counter"></a>
+<a name="Counter, asynchronous"></a>
+<p>En la sección anterior, vimos un circuito que usaba un flip-flop J-K que contaba hacia atrás en una secuencia binaria de dos bits, de 11 a 10 a 01 a 00. Dado que sería deseable tener un circuito que pudiera contar<i>adelante</i>Y no sólo hacia atrás, valdría la pena examinar de nuevo una secuencia de conteo directo y buscar más patrones que pudieran indicar cómo construir dicho circuito.</p>
+<p>Como sabemos que las secuencias de conteo binario siguen un patrón de división de frecuencia de octava (factor de 2), y que los multivibradores flip-flop J-K configurados para el modo "alternar" son capaces de realizar este tipo de división de frecuencia, podemos imaginar un circuito formado por varios flip-flops J-K, conectados en cascada para producir cuatro bits de salida.  El principal problema al que nos enfrentamos es determinar<i>how</i>conectar estos flip-flops entre sí para que cambien en el momento correcto para producir la secuencia binaria adecuada.  Examine la siguiente secuencia de conteo binario, prestando atención a los patrones que preceden al "alternamiento" de un bit entre 0 y 1:</p>
+<p> <img src="14052.png"/> </p>
+<p>Tenga en cuenta que cada bit en esta secuencia de cuatro bits alterna cuando el bit anterior (el bit que tiene un menor significado o peso posicional) cambia en una dirección particular: de 1 a 0. Las flechas pequeñas indican aquellos puntos en la secuencia donde un bit alterna, la punta de la flecha apunta al bit anterior pasando de un estado "alto" (1) a un estado "bajo" (0):</p>
+<p> <img src="14054.png"/> </p>
+<p>Comenzando con cuatro flip-flops J-K conectados de tal manera que siempre estén en el modo "alternar", necesitamos determinar cómo conectar las entradas de reloj de tal manera que cada bit sucesivo cambie cuando el bit anterior pase de 1 a 0. Las salidas Q de cada flip-flop servirán como los respectivos bits binarios del conteo final de cuatro bits:</p>
+<p> <img src="04346.png"/> </p>
+<p>Si usáramos flip-flops con disparo de flanco negativo (símbolos de burbuja en las entradas de reloj), simplemente podríamos conectar la entrada de reloj de cada flip-flop a la salida Q del flip-flop anterior, de modo que cuando el bit anterior cambie de 1 a 0, el "flanco descendente" de esa señal "cronometraría" el siguiente flip-flop para alternar el siguiente bit:</p>
+<p> <img src="04347.png"/> </p>
+<p>Este circuito produciría las siguientes formas de onda de salida, cuando sea "sincronizado" por una fuente repetitiva de pulsos de un oscilador:</p>
+<p> <img src="14055.png"/> </p>
+<p>El primer flip-flop (el que tiene la Q<sub>0</sub>salida), tiene una entrada de reloj activada por flanco positivo, por lo que alterna con cada flanco ascendente de la señal de reloj.  Observe cómo la señal de reloj en este ejemplo tiene un ciclo de trabajo inferior al 50%.  He mostrado la señal de esta manera con el propósito de demostrar cómo la señal del reloj no necesita ser simétrica para obtener bits de salida "limpios" confiables en nuestra secuencia binaria de cuatro bits.  En el primer circuito flip-flop que se muestra en este capítulo, utilicé la señal del reloj como uno de los bits de salida.  Sin embargo, esta es una mala práctica en el diseño de contadores, porque requiere el uso de una señal de onda cuadrada con un ciclo de trabajo del 50% (tiempo "alto" = tiempo "bajo") para obtener una secuencia de conteo en la que todos y cada uno de los pasos se detengan durante la misma cantidad de tiempo.  Sin embargo, el uso de un flip-flop J-K para cada bit de salida nos libera de la necesidad de tener una señal de reloj simétrica, lo que permite el uso de prácticamente cualquier variedad de formas de onda altas/bajas para incrementar la secuencia de conteo.</p>
+<p>Como lo indican todas las demás flechas en el diagrama de pulsos, cada bit de salida sucesivo se alterna mediante la acción del bit anterior que pasa de "alto" (1) a "bajo" (0).  Este es el patrón necesario para generar una secuencia de conteo "ascendente".</p>
+<p>Una solución menos obvia para generar una secuencia "arriba" usando flip-flops activados por flanco positivo es "cronometrar" cada flip-flop usando la salida Q' del flip-flop anterior en lugar de la salida Q.  Dado que la salida Q' siempre será exactamente el estado opuesto de la salida Q en un flip-flop J-K (no hay estados inválidos con este tipo de flip-flop), una transición de alto a bajo en la salida Q irá acompañada de una transición de bajo a alto en la salida Q'.  En otras palabras, cada vez que la salida Q de un flip-flop pasa de 1 a 0, la salida Q' del mismo flip-flop pasará de 0 a 1, proporcionando el pulso de reloj positivo que necesitaríamos para alternar un flip-flop activado por flanco positivo en el momento correcto:</p>
+<p> <img src="04348.png"/> </p>
+<p>Una manera de ampliar las capacidades de cualquiera de estos dos circuitos contadores es considerar las salidas Q' como otro conjunto de cuatro bits binarios.  Si examinamos el diagrama de pulsos de dicho circuito, vemos que las salidas Q' generan un<i>abajo</i>secuencia de conteo, mientras que las salidas Q generan una<i>up</i>-secuencia de conteo:</p>
+<p> <img src="04349.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="14056.png"/> </p>
+<a name="Ripple effect"></a>
+<p>Desafortunadamente, todos los circuitos contadores mostrados hasta ahora comparten un problema común: el<i>onda</i>efecto.  Este efecto se observa en ciertos tipos de circuitos sumadores binarios y de conversión de datos, y se debe a retrasos de propagación acumulativos entre puertas en cascada.  Cuando la salida Q de un flip-flop pasa de 1 a 0, ordena al siguiente flip-flop que cambie.  Si el siguiente cambio de flip-flop es una transición de 1 a 0, ordenará al flip-flop siguiente que también cambie, y así sucesivamente.  Sin embargo, dado que siempre hay una pequeña cantidad de retraso de propagación entre el comando para alternar (el pulso del reloj) y la respuesta de conmutación real (las salidas Q y Q' cambian de estado), cualquier flip-flop posterior que se conmute lo hará en algún momento.<i>después</i>el primer flip-flop ha cambiado.  Por lo tanto, cuando se alternan varios bits en una secuencia de conteo binario, no todos se alternarán exactamente al mismo tiempo:</p>
+<p> <img src="14057.png"/> </p>
+<p>Como puede ver, cuantos más bits se alternan con un pulso de reloj determinado, más severo será el tiempo de retardo acumulado de LSB a MSB.  Cuando se produce un pulso de reloj en dicho punto de transición (por ejemplo, en la transición de 0111 a 1000), los bits de salida se "ondularán" en secuencia de LSB a MSB, a medida que cada bit sucesivo alterna y ordena al siguiente bit que cambie también, con una pequeña cantidad de retraso de propagación entre cada cambio de bit.  Si observamos de cerca este efecto durante la transición de 0111 a 1000, podemos ver que habrá<i>FALSO</i>recuentos de producción generados en el breve período de tiempo en que se produce el efecto "dominó":</p>
+<p> <img src="14058.png"/> </p>
+<p>En lugar de realizar una transición limpia de una salida "0111" a una salida "1000", el circuito contador oscilará muy rápidamente de 0111 a 0110 a 0100 a 0000 a 1000, o de 7 a<i>6</i> to <i>4</i> to <i>0</i>y luego a 8. Este comportamiento le otorga al circuito contador el nombre de<i>contador de ondas</i>, o<i>contador asíncrono</i>.  
+</p>
+<p>En muchas aplicaciones, este efecto es tolerable, ya que la onda se produce muy, muy rápidamente (la amplitud de los retrasos se ha exagerado aquí para ayudar a comprender los efectos).  Si todo lo que quisiéramos hacer fuera controlar un conjunto de diodos emisores de luz (LED) con las salidas del contador, por ejemplo, esta breve onda no tendría ninguna consecuencia.  Sin embargo, si quisiéramos utilizar este contador para controlar las entradas "seleccionadas" de un multiplexor, indexar un puntero de memoria en un circuito de microprocesador (computadora) o realizar alguna otra tarea donde salidas falsas pudieran causar errores falsos, no sería aceptable.  Existe una forma de utilizar este tipo de circuito contador en aplicaciones sensibles a salidas falsas generadas por ondulaciones, e implica un principio conocido como<i>estroboscópico</i>.
+</p>
+<a name="Strobing"></a>
+<p>La mayoría de los circuitos decodificadores y multiplexores están equipados con al menos una entrada llamada "habilitación".  Las salidas de dicho circuito estarán activas sólo cuando la entrada de habilitación se active.  Podemos usar esta entrada de habilitación para<i>estroboscópico</i>el circuito que recibe la salida del contador de ondulación de modo que se deshabilite (y por lo tanto no responda a la salida del contador) durante el breve período de tiempo en el que las salidas del contador podrían estar ondulada, y se habilite solo cuando haya pasado suficiente tiempo desde el último pulso de reloj para que toda ondulación haya cesado.  En la mayoría de los casos, la señal estroboscópica puede ser el mismo pulso de reloj que impulsa el circuito contador:</p>
+<p> <img src="04350.png"/> </p>
+<p>Con una entrada de habilitación activa baja, el circuito receptor responderá al conteo binario del circuito contador de cuatro bits solo cuando la señal del reloj esté "baja".  Tan pronto como el pulso del reloj sube, el circuito receptor deja de responder a la salida del circuito contador.  Dado que el circuito contador se activa por flanco positivo (según lo determinado por el<i>primero</i>entrada de reloj flip-flop), toda la acción de conteo tiene lugar en la transición de bajo a alto de la señal de reloj, lo que significa que el circuito receptor se desactivará justo antes de que se produzca cualquier conmutación en los cuatro bits de salida del circuito contador.  El circuito receptor no se habilitará hasta que la señal del reloj vuelva a un estado bajo, lo que debería ser un tiempo suficientemente largo.<i>después</i>todas las ondulaciones han dejado de ser "seguras" para permitir que la nueva cuenta tenga efecto en el circuito receptor.  El parámetro crucial aquí es el tiempo "alto" de la señal del reloj: debe ser al menos tan largo como el período de ondulación máximo esperado del circuito contador.  De lo contrario, la señal del reloj habilitará prematuramente el circuito receptor, mientras todavía se producen algunas ondulaciones.</p>
+<p>Otra desventaja del circuito contador asíncrono u ondulado es la velocidad limitada.  Si bien todos los circuitos de compuerta están limitados en términos de frecuencia máxima de la señal, el diseño de circuitos contadores asíncronos agrava este problema al hacer que los retrasos de propagación sean aditivos.  Por lo tanto, incluso si se utiliza luz estroboscópica en el circuito receptor, un circuito contador asíncrono no puede sincronizarse a ninguna frecuencia superior a la que permite que transcurra el mayor retraso de propagación acumulado posible mucho antes del siguiente pulso.</p>
+<p>La solución a este problema es un circuito contador que evite la ondulación por completo.  Un circuito contador de este tipo eliminaría la necesidad de diseñar una función "estroboscópica" en cualquier circuito digital que utilice la salida del contador como entrada, y también disfrutaría de una velocidad de funcionamiento mucho mayor que su equivalente asíncrono.  Este diseño de circuito contador es el tema de la siguiente sección.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Se puede realizar un contador "ascendente" conectando las entradas de reloj de los flip-flops JK activados por flanco positivo a las salidas Q' de los flip-flops anteriores.  Otra forma es utilizar flip-flops activados por flanco negativo, conectando las entradas del reloj a las salidas Q de los flip-flops anteriores.  En cualquier caso, las entradas J y K de todos los flip-flops están conectadas a V<sub>cc</sub>o V<sub>dd</sub>para estar siempre "alto".</li>
+<li>Los circuitos contadores hechos a partir de flip-flops J-K en cascada donde cada entrada de reloj recibe sus pulsos de la salida del flip-flop anterior invariablemente exhiben un<i>efecto dominó</i>, donde se generan recuentos de salida falsos entre algunos pasos de la secuencia de recuento.  Estos tipos de circuitos contadores se denominan<i>contadores asíncronos</i>, o<i>contadores de ondulación</i>.</li>
+<li><i>estroboscópico</i>es una técnica aplicada a circuitos que reciben la salida de un contador asíncrono (ondulación), de modo que los conteos falsos generados durante el tiempo de ondulación no tendrán ningún efecto negativo.  Esencialmente, el<i>permitir</i>La entrada de dicho circuito está conectada al pulso de reloj del contador de tal manera que se habilita solo cuando las salidas del contador no están cambiando, y se deshabilitará durante aquellos períodos de cambio de salidas del contador donde se produce ondulación.</li>
+</ul>
+<h2><u><a name="xtocid92322">Synchronous counters</a></u></h2>
+<a name="Synchronous counter"></a>
+<a name="Counter, synchronous"></a>
+<p>
+A <i>contador sincrónico</i>, en contraste con un<i>contador asíncrono</i>, es aquel cuyos bits de salida cambian de estado simultáneamente, sin ondulaciones.  La única forma en que podemos construir un circuito contador de este tipo a partir de flip-flops JK es conectar todas las entradas de reloj juntas, de modo que todos y cada uno de los flip-flops reciban exactamente el mismo pulso de reloj exactamente al mismo tiempo:</p>
+<p> <img src="04351.png"/> </p>
+<p>Ahora la pregunta es, ¿qué hacemos con las entradas J y K?  Sabemos que todavía tenemos que mantener el mismo patrón de frecuencia de división por dos para poder contar en una secuencia binaria, y que este patrón se logra mejor utilizando el modo "alternar" del flip-flop, por lo que el hecho de que las entradas J y K deben ser (a veces) "altas" está claro.  Sin embargo, si simplemente conectamos todas las entradas J y K al riel positivo de la fuente de alimentación como lo hicimos en el circuito asíncrono, esto claramente no funcionaría porque todos los flip-flops se alternarían al mismo tiempo: ¡con todos y cada uno de los pulsos de reloj!</p>
+<p> <img src="04352.png"/> </p>
+<p>Examinemos nuevamente la secuencia de conteo binario de cuatro bits y veamos si hay otros patrones que predicen el cambio de un bit.  El diseño del circuito contador asíncrono se basa en el hecho de que cada cambio de bit ocurre al mismo tiempo que el bit anterior cambia de "alto" a "bajo" (de 1 a 0).  Dado que no podemos sincronizar el cambio de un bit basándose en el cambio de un bit anterior en un circuito contador síncrono (hacerlo crearía un efecto dominó), debemos encontrar algún otro patrón en la secuencia de conteo que pueda usarse para activar un cambio de bit:</p>
+<p>Al examinar la secuencia de conteo binario de cuatro bits, se puede ver otro patrón predictivo.  Observe que justo antes de que un bit cambie, todos los bits anteriores son "altos":</p>
+<p> <img src="14059.png"/> </p>
+<p>Este patrón también es algo que podemos explotar al diseñar un circuito contador.  Si permitimos que cada flip-flop J-K cambie en función de si todas las salidas del flip-flop anterior (Q) son "altas" o no, podemos obtener la misma secuencia de conteo que el circuito asíncrono sin el efecto dominó, ya que cada flip-flop en este circuito se sincronizará exactamente al mismo tiempo:</p>
+<p> <img src="04353.png"/> </p>
+<p>El resultado es un cuatro bits.<i>sincrónico</i>contador "arriba".  Cada uno de los flip-flops de orden superior está preparado para alternar (ambas entradas J y K son "altas") si las salidas Q de todos los flip-flops anteriores son "altas". De lo contrario, las entradas J y K para ese flip-flop estarán "bajas", colocándolo en el modo "latch", donde mantendrá su estado de salida actual en el siguiente pulso de reloj.  Dado que el primer flip-flop (LSB) necesita alternar en cada pulso de reloj, sus entradas J y K están conectadas a V<sub>cc</sub>o V<sub>dd</sub>, donde estarán "altos" todo el tiempo.  El siguiente flip-flop sólo necesita "reconocer" que la salida Q del primer flip-flop es alta para estar listo para conmutar, por lo que no se necesita una puerta AND.  Sin embargo, los flip-flops restantes deben estar listos para alternar sólo cuando<i>all</i>los bits de salida de orden inferior son "altos", de ahí la necesidad de puertas AND.</p>
+<p>Para crear un contador "regresivo" sincrónico, necesitamos construir el circuito para reconocer los patrones de bits apropiados que predicen cada estado de conmutación durante la cuenta regresiva.  No es sorprendente que, cuando examinamos la secuencia de conteo binario de cuatro bits, veamos que todos los bits anteriores están "bajos" antes de un cambio (siguiendo la secuencia de abajo hacia arriba):</p>
+<p> <img src="14060.png"/> </p>
+<p>Dado que cada flip-flop J-K viene equipado con una salida Q' así como una salida Q, podemos usar las salidas Q' para habilitar el modo de conmutación en cada flip-flop sucesivo, ya que cada Q' será "alto" cada vez que el Q respectivo sea "bajo":</p>
+<p> <img src="04354.png"/> </p>
+<p>Llevando esta idea un paso más allá, podemos construir un circuito contador con modos de conteo seleccionables entre "ascendente" y "descendente" al tener líneas duales de puertas Y que detectan las condiciones de bits apropiadas para una secuencia de conteo "ascendente" y "descendente", respectivamente, luego usar puertas O para combinar las salidas de la puerta Y con las entradas J y K de cada flip-flop sucesivo:</p>
+<p> <img src="04355.png"/> </p>
+<p>Este circuito no es tan complejo como podría parecer a primera vista.  La línea de entrada de control Arriba/Abajo simplemente permite que la cadena superior o la cadena inferior de puertas AND pasen las salidas Q/Q' a las etapas sucesivas de los flip-flops.  Si la línea de control Arriba/Abajo está "alta", las puertas Y superiores se habilitan y el circuito funciona exactamente igual que el primer circuito contador síncrono ("arriba") que se muestra en esta sección.  Si la línea de control Arriba/Abajo se pone "baja", las puertas Y inferiores se habilitan y el circuito funciona de manera idéntica al segundo circuito ("contador descendente") que se muestra en esta sección.</p>
+<p>Para ilustrar, aquí hay un diagrama que muestra el circuito en el modo de conteo "ascendente" (todos los circuitos deshabilitados se muestran en gris en lugar de negro):</p>
+<p> <img src="04356.png"/> </p>
+<p>Aquí, se muestra en el modo de conteo "regresivo", con el mismo color gris que representa los circuitos deshabilitados:</p>
+<p> <img src="04357.png"/> </p>
+<a name="Encoder, rotary shaft"></a>
+<a name="Rotary shaft encoder"></a>
+<p>Los circuitos de contador ascendente/descendente son dispositivos muy útiles.  Una aplicación común es el control de movimiento de máquinas, donde dispositivos llamados<i>codificadores de eje rotativo</i>convierte la rotación mecánica en una serie de pulsos eléctricos, estos pulsos "cronometran" un circuito contador para rastrear el movimiento total:</p>
+<p> <img src="04358.png"/> </p>
+<p>A medida que la máquina se mueve, gira el eje del codificador, generando y deshaciendo el haz de luz entre el LED y el fototransistor, generando así pulsos de reloj para incrementar el circuito contador.  Así, el contador integra, o acumula, el movimiento total del eje, sirviendo como indicación electrónica de cuánto se ha movido la máquina.  Si lo único que nos importa es seguir el movimiento total y no nos interesa tener en cuenta los cambios en el<i>dirección</i>de movimiento, este arreglo será suficiente.  Sin embargo, si deseamos que el contador<i>incremento</i>con una dirección de movimiento y<i>decremento</i>con la dirección inversa del movimiento, debemos usar un contador ascendente/descendente y un circuito codificador/decodificador que tenga la capacidad de discriminar entre diferentes direcciones.</p>
+<a name="Quadrature output encoder"></a>
+<p>Si rediseñamos el codificador para que tenga dos conjuntos de pares de LED/fototransistor, esos pares se alinearán de manera que sus señales de salida de onda cuadrada sean 90<sup>o</sup>desfasados ​​entre sí, tenemos lo que se conoce como<i>salida en cuadratura</i>codificador (la palabra "cuadratura" simplemente se refiere a un 90<sup>o</sup>separación angular).  Se puede crear un circuito de detección de fase a partir de un flip-flop tipo D, para distinguir una secuencia de pulsos en el sentido de las agujas del reloj de una secuencia de pulsos en el sentido contrario a las agujas del reloj:</p>
+<p> <img src="04359.png"/> </p>
+<p>Cuando el codificador gira en el sentido de las agujas del reloj, la onda cuadrada de la señal de entrada "D" adelantará a la onda cuadrada de la entrada "C", lo que significa que la entrada "D" ya será "alta" cuando la "C" pase de "baja" a "alta", por lo tanto<i>configuración</i>el flip-flop tipo D (haciendo que la salida Q sea "alta") con cada pulso de reloj.  Una salida Q "alta" coloca el contador en el modo de conteo "Ascendente", y cualquier pulso de reloj recibido por el reloj desde el codificador (de cualquiera de los LED) lo incrementará.  Por el contrario, cuando el codificador invierte la rotación, la entrada "D" se retrasará con respecto a la forma de onda de entrada "C", lo que significa que será "baja" cuando la forma de onda "C" pase de "baja" a "alta", forzando al flip-flop tipo D a entrar en la posición "baja" a "alta".<i>reiniciar</i>estado (haciendo que la salida Q sea "baja") con cada pulso de reloj.  Esta señal "baja" ordena al circuito contador que disminuya con cada pulso de reloj del codificador.</p>
+<p>Este circuito, o algo muy parecido, es el núcleo de cualquier circuito de medición de posición basado en un sensor codificador de impulsos.  Estas aplicaciones son muy comunes en robótica, control de máquinas herramienta CNC y otras aplicaciones que implican la medición de movimiento mecánico reversible.</p>
+<h2><u><a name="xtocid92323">Counter modulus</a></u></h2>
+<p>INCOMPLETO</p>
+<h2><u><a name="xtocid92324">Finite State Machines</a></u></h2>
+<p>Hasta ahora, cada circuito presentado era un<i>combinacional</i>circuito. Eso significa que su producción depende únicamente de sus entradas actuales. Las entradas anteriores para ese tipo de circuitos no tienen efecto en la salida.</p>
+<p>Sin embargo, existen muchas aplicaciones donde existe la necesidad de que nuestros circuitos tengan “memoria”; recordar entradas anteriores y calcular sus salidas de acuerdo con ellas. Un circuito cuya salida depende no sólo de la entrada actual sino también del historial de la entrada se llama<i>circuito secuencial</i>.</p>
+<p>En esta sección aprenderemos cómo diseñar y construir dichos circuitos secuenciales. Para ver cómo funciona este procedimiento, usaremos un ejemplo, sobre el cual estudiaremos nuestro tema.</p>
+<p>Entonces, supongamos que tenemos un juego de preguntas digital que funciona con un reloj y lee una entrada de un botón manual. Sin embargo, queremos que el interruptor transmita solo un pulso ALTO al circuito. Si conectamos el botón directamente al circuito del juego, transmitirá ALTO durante la menor cantidad de ciclos de reloj que nuestro dedo pueda lograr. En una frecuencia de reloj común, nuestro dedo nunca puede ser lo suficientemente rápido.</p>
+<p>El procedimiento de diseño tiene pasos específicos que se deben seguir para realizar el trabajo:</p>
+<br/>
+<p><b>Paso 1</b></p>
+<p>El primer paso del procedimiento de diseño es definir con palabras sencillas pero claras qué queremos que haga nuestro circuito:</p>
+<p><i>"Nuestra misión es diseñar un circuito secundario que transmitirá un pulso ALTO con una duración de solo un ciclo cuando se presiona el botón manual, y no transmitirá otro pulso hasta que se presione el botón y se presione nuevamente".</i></p>
+<br/>
+<p><b>Paso 2</b></p>
+<p>El siguiente paso es diseñar un diagrama de estado. Este es un diagrama que está hecho a base de círculos y flechas y describe visualmente el funcionamiento de nuestro circuito. En términos matemáticos, este diagrama que describe el funcionamiento de nuestro circuito secuencial es una Máquina de Estados Finitos.</p>
+<p>Tenga en cuenta que esta es una máquina de estados finitos de Moore. Su salida es función únicamente de su estado actual, no de su entrada. Esto contrasta con la máquina de estados finitos de Mealy, donde la entrada afecta la salida.  En este tutorial, sólo se examinará la máquina de estados finitos de Moore.</p>
+<p>El Diagrama de Estado de nuestro circuito es el siguiente: (Figura<a href="#44001.png">  below</a>)</p>
+<a name="44001.png"></a>
+<p> <img src="44001.png"/> </p>
+<p><i>Un diagrama de estado</i></p>
+<p>Cada círculo representa un "estado", una condición bien definida en la que se puede encontrar nuestra máquina.</p>
+<p>En la mitad superior del círculo describimos esa condición. La descripción nos ayuda a recordar qué se supone que debe hacer nuestro circuito en esa condición.</p>
+<ul>
+<li>El primer círculo es la condición de "espera". Aquí es desde donde comienza nuestro circuito y donde espera que se presione otro botón.</li>
+<li>El segundo círculo es la condición en la que se acaba de presionar el botón y nuestro circuito necesita transmitir un pulso ALTO.</li>
+<li>El tercer círculo es la condición en la que nuestro circuito espera a que se suelte el botón antes de volver a la condición de "espera".</li>
+</ul>
+<p>En la parte inferior del círculo está la salida de nuestro circuito. Si queremos que nuestro circuito transmita un ALTO en un estado específico, ponemos un 1 en ese estado. En caso contrario ponemos un 0.</p>
+<p>Cada flecha representa una "transición" de un estado a otro. Una transición ocurre una vez en cada ciclo de reloj. Dependiendo de la Entrada actual, podremos pasar a un estado diferente cada vez. Observe el número en el medio de cada flecha. Esta es la entrada actual.</p>
+<p>Por ejemplo, cuando estamos en estado "Inicial-Stand by" y "leemos" un 1, el diagrama nos indica que tenemos que pasar al estado "Activar Pulso". Si leemos un 0 debemos permanecer en el estado "Inicial-Stand by".</p>
+<p>Entonces, ¿qué hace exactamente nuestra "Máquina"? Se parte del estado "Inicial - En espera" y espera hasta que se lee un 1 en la Entrada. Luego pasa al estado "Activar pulso" y transmite un pulso ALTO en su salida. Si se sigue presionando el botón, el circuito pasa al tercer estado, el "bucle de espera". Allí espera hasta que se suelta el botón (la entrada pasa a 0) mientras transmite un nivel BAJO en la salida. ¡Entonces todo habrá terminado otra vez!</p>
+<p>Esta es posiblemente la parte más difícil del procedimiento de diseño, porque no se puede describir mediante pasos simples. Se necesita experiencia y un poco de pensamiento agudo para configurar un diagrama de estado, pero el resto es sólo un conjunto de pasos predeterminados.</p>
+<br/>
+<p><b>Paso 3</b></p>
+<p>A continuación, reemplazamos las palabras que describen los diferentes estados del diagrama con<b>binario</b>números. Comenzamos la enumeración desde 0 que se asigna en el estado inicial. Luego continuamos la enumeración con cualquier estado que queramos, hasta que todos los estados tengan su número.</p>
+<p>El resultado se parece a esto: (Figura<a href="#44002.png">  below</a>)</p>
+<a name="44002.png"></a>
+<p> <img src="44002.png"/> </p>
+<p><i>Un diagrama de estado con estados codificados</i></p>
+<br/>
+<p><b>Paso 4</b></p>
+<p>Después llenamos el<i>Tabla de estado</i>. Esta tabla tiene una forma muy específica. Daré la tabla de nuestro ejemplo y la usaré para explicar cómo completarla. (Figura<a href="#44003.png">  below</a>)</p>
+<a name="44003.png"></a>
+<p> <img src="44003.png"/> </p>
+<p><i>Una tabla de estado</i></p>
+<p>Las primeras columnas son tantas como bits del número más alto que asignamos al Diagrama de Estado. Si tuviéramos 5 estados, habríamos usado hasta el número 100, lo que significa que usaríamos 3 columnas. Para nuestro ejemplo, usamos hasta el número 10, por lo que solo serán necesarias 2 columnas. Estas columnas describen la<i>Estado actual</i>de nuestro circuito.</p>
+<p>A la derecha de las columnas Estado actual escribimos el<i>Columnas de entrada</i>. Estos serán tantos como nuestras variables de entrada. Nuestro ejemplo tiene solo una entrada.</p>
+<p>A continuación, escribimos el<i>Siguientes columnas de estado</i>. Estas son tantas como columnas de Estado actual.</p>
+<p>Finalmente escribimos el<i>Columnas de salidas</i>. Estos son tantos como nuestros resultados. Nuestro ejemplo tiene solo una salida.  Dado que hemos construido una máquina de estados más finitos, la salida depende únicamente de los estados de entrada actuales.  Esta es la razón por la que la columna de salidas tiene dos 1: para dar como resultado una función booleana de salida que es independiente de la entrada I. Continúe leyendo para obtener más detalles.</p>
+<p>Las columnas Estado actual y Entrada son las Entradas de nuestra tabla. Los completamos con todos los números binarios del 0 al</p>
+<p> <img src="44012.png"/> </p>
+<!--2<sup>(Number of Current State columns + Number of Input columns)</sup> - 1 -->
+<p>Afortunadamente, es más sencillo de lo que parece. Generalmente habrá más filas que los estados reales que hemos creado en el diagrama de estados, pero está bien.</p>
+<p>Cada fila de las columnas de Siguiente Estado se rellena de la siguiente manera: La rellenamos con el estado al que llegamos cuando, en el Diagrama de Estado, desde el Estado Actual de la misma fila seguimos la Entrada de la misma fila. Si tenemos que completar una fila cuyo número de Estado actual no corresponde a ningún Estado real en el Diagrama de estados, la completamos con términos de No importa (X). Después de todo, no nos importa hacia dónde podemos ir desde un Estado que no existe. ¡No estaríamos allí en primer lugar! De nuevo, es más sencillo de lo que parece.</p>
+<p>La columna de salidas se completa con la salida del estado actual correspondiente en el diagrama de estado.</p>
+<p>¡La Tabla Estatal está completa! Describe el comportamiento de nuestro circuito tan completamente como lo hace el Diagrama de Estado.</p>
+<br/>
+<p><b>Paso 5a</b></p>
+<p>El siguiente paso es tomar esa "Máquina" teórica e implementarla en un circuito. La mayoría de las veces, esta implementación involucra Flip Flops. Esta guía está dedicada a este tipo de implementación y describirá el procedimiento tanto para D - Flip Flops como para JK - Flip Flops. T - No se incluirán las chanclas por ser demasiado similares a los dos casos anteriores.</p>
+<p>La selección del Flip Flop a utilizar es arbitraria y normalmente está determinada por factores de coste. La mejor opción es realizar ambos análisis y decidir qué tipo de Flip Flop da como resultado un número mínimo de puertas lógicas y un menor costo.</p>
+<p>Primero examinaremos cómo implementamos nuestra "Máquina" con D-Flip Flops.</p>
+<p>Necesitaremos tantas D - Flip Flops como columnas de Estado, 2 en nuestro ejemplo. Por cada Flip Flop agregaremos una columna más en nuestra tabla de Estado (Figura<a href="#44004.png">  below</a>) con el nombre de la entrada del Flip Flop, "D" para este caso. La columna que corresponde a cada Flip Flop describe<b>qué entrada debemos darle al Flip Flop para pasar del estado actual al siguiente estado</b>. Para el D - Flip Flop esto es fácil: la entrada necesaria es igual al siguiente estado. En las filas que contienen X, también completamos las X en esta columna.</p>
+<a name="44004.png"></a>
+<p> <img src="44004.png"/> </p>
+<p><i>Una tabla de estados con D - Excitaciones Flip Flop</i></p>
+<br/>
+<p><b>Paso 5b</b></p>
+<p>Podemos hacer los mismos pasos con JK - Flip Flops. Sin embargo, existen algunas diferencias. Un JK - Flip Flop tiene dos entradas, por lo tanto necesitamos agregar dos columnas para cada Flip Flop. El contenido de cada celda está dictado por la tabla de excitación del JK: (Figura<a href="#44005.png">  below</a>)</p>
+<p>JK - Tabla de excitación Flip Flop</p>
+<p> <img src="44013.png"/> </p>
+<br/>
+<p>Esta tabla dice que si queremos pasar del Estado Q al Estado Q<sub>próximo</sub>, necesitamos utilizar la entrada específica para cada terminal. Por ejemplo, para pasar de 0 a 1, necesitamos alimentar a J con 1 y<b>no me importa</b>qué entrada alimentamos al terminal K.</p>
+<a name="44005.png"></a>
+<p> <img src="44005.png"/> </p>
+<p><i>Una tabla de estado con JK - Excitaciones Flip Flop</i></p>
+<br/>
+<p><b>Paso 6</b></p>
+<p>Estamos en la etapa final de nuestro procedimiento. Lo que queda es determinar las funciones booleanas que producen las entradas de nuestros Flip Flops y la Salida. Extraeremos una función booleana para cada entrada de Flip Flop que tengamos. Esto se puede hacer con un mapa de Karnaugh. Las variables de entrada de este mapa son las variables de estado actual.<b>así como</b>las Entradas.</p>
+<p>Dicho esto, las funciones de entrada para nuestras D - Flip Flops son las siguientes: (Figura<a href="#44006.png">  below</a>)</p>
+<a name="44006.png"></a>
+<p> <img src="44006.png"/> </p>
+<p><i>Mapas de Karnaugh para D - Entradas Flip Flop</i></p>
+<p> <img src="44014.png"/> </p>
+<p>Si optamos por utilizar JK - Flip Flops nuestras funciones serían las siguientes: (Figura<a href="#JKff.tbl">  below</a>)</p>
+<br/>
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="DIGI_10.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="DIGI_12.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

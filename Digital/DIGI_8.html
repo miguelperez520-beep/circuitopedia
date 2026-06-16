@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 8 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #f59e0b; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 8</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen IV</h1>
+<h1>Capítulo 8</h1>
+<!--Created 04/27/2004 to 06/30/2004 (DC)-->
+<!--Modified-->
+<!--Modified 11/14/2004 (DC) -- Added Paul Stokes name to the contributor's list see contrib.sml for change details-->
+<!--Modified 11/14/2004 (DC) -- changed logic diagrams to include cross-overs &amp; dots according to Tony's style-->
+<!--Modified 01/13/2005 (DC) -- converted subsections and subsubsections to sections for better html at www.allaboutcircuits.com-->
+<!--Modified 01/30/2005 (DC) -- fixed 14094.eps top of map incorrect double bar, minor corrections 14162.eps, 14163.eps-->
+<!--Modified 06/19/2005 (DC) -- minor near "This migh be easier" -->
+<!--04366.eps re-used from Boolean algebra chapter good for .html bad for printed book-->
+<!--14066.eps re-used from Boolean algebra chapter, as above -->
+<!--first table/equation image 14072.eps-->
+<!--last table/equation image 14163.eps-->
+<h1>MAPEO DE KARNAUGH</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid92050"><u>Introduction</u></a></li>
+<li><a href="#xtocid92051"><u>Venn diagrams and sets</u></a></li>
+<li><a href="#xtocid92052"><u>Boolean Relationships on Venn Diagrams</u></a></li>
+<li><a href="#xtocid92053"><u>Making a Venn diagram look like a Karnaugh map</u></a></li>
+<li><a href="#xtocid92054"><u>Karnaugh maps, truth tables, and Boolean expressions</u></a></li>
+<li><a href="#xtocid92055"><u>Logic simplification with Karnaugh maps</u></a></li>
+<li><a href="#xtocid92056"><u>Larger 4-variable Karnaugh maps</u></a></li>
+<li><a href="#xtocid92057"><u>Minterm vs maxterm  solution</u></a></li>
+<li><a href="#xtocid92058"><u>Σ (sum) and Π (product) notation</u></a></li>
+<li><a href="#xtocid92059"><u>Don't care cells in the Karnaugh map</u></a></li>
+<li><a href="#xtocid920510"><u>Larger 5 &amp; 6-variable Karnaugh maps</u></a></li></ul>
+<p>
+<b>Autor original: Dennis Crunkilton</b>
+</p>
+<br/>
+<p>
+<p> <img src="14093.png"/> </p> <!-- 3-Kmap- real -->
+</p>
+<h2><u><a name="xtocid92050">Introduction</a></u></h2>
+<a name="Karnaugh map"></a>
+<a name="logic simplification"></a>
+<p>¿Por qué aprender sobre<i>karnaugh</i>mapas? El mapa de Karnaugh, al igual que el álgebra de Boole, es una herramienta de simplificación aplicable a la lógica digital. Consulte "Incinerador de desechos tóxicos" en el capítulo de álgebra booleana para ver un ejemplo de simplificación booleana de la lógica digital. El mapa de Karnaugh simplificará la lógica de forma más rápida y sencilla en la mayoría de los casos.</p>
+<a name="CAD"></a>
+<a name="computer automated design"></a>
+<p>La simplificación booleana es en realidad más rápida que el mapa de Karnaugh para una tarea que involucra dos o menos variables booleanas. Todavía es bastante utilizable en tres variables, pero un poco más lento. Con cuatro variables de entrada, el álgebra booleana se vuelve tediosa. Los mapas de Karnaugh son más rápidos y más fáciles. Los mapas de Karnaugh funcionan bien con hasta seis variables de entrada y se pueden utilizar con hasta ocho variables. Para más de seis a ocho variables, la simplificación debe realizarse mediante<i>CAD</i>(diseño automatizado por ordenador).</p>
+<p>
+<p> <img src="14072.png"/> </p><!--table simplification methods-->
+</p>
+<p>En teoría, cualquiera de los tres métodos funcionará. Sin embargo, en la práctica, las directrices anteriores funcionan bien. Normalmente no recurriríamos a la automatización informática para simplificar un bloque lógico de tres entradas. Antes podríamos resolver el problema con lápiz y papel. Sin embargo, si tuviéramos que resolver siete de estos problemas, digamos durante un<i>BCD</i>(Decimal codificado en binario) a<i>decodificador de siete segmentos</i>, es posible que queramos automatizar el proceso. Un decodificador BCD a siete segmentos genera las señales lógicas para controlar una pantalla LED (diodo emisor de luz) de siete segmentos.</p>
+<a name="PALASM"></a>
+<a name="ABEL"></a>
+<a name="Verilog"></a>
+<a name="VHDL"></a>
+<a name="CUPL"></a>
+<p>Ejemplos de lenguajes de diseño automatizados por computadora para la simplificación de la lógica son PALASM, ABEL, CUPL, Verilog y VHDL. Estos programas aceptan un<i>lenguaje descriptivo de hardware</i>archivo de entrada que se basa en ecuaciones booleanas y produce un archivo de salida que describe una<i>reducido</i>(o simplificada) solución booleana. No necesitaremos tales herramientas en este capítulo. Pasemos a los diagramas de Venn como introducción a los mapas de Karnaugh.</p>
+<h2><u><a name="xtocid92051">Venn diagrams and sets</a></u></h2>
+<a name="Venn Diagram"></a>
+<a name="Venn diagram"></a>
+<a name="sets"></a>
+<a name="element of set"></a>
+<a name="members of set"></a>
+<a name="union"></a>
+<a name="intersection"></a>
+<p>Los matemáticos usan<i>diagramas de venn</i>mostrar las relaciones lógicas de<i>conjuntos</i>(colecciones de objetos) entre sí.  Quizás ya hayas visto diagramas de Venn en tus estudios de álgebra u otros estudios de matemáticas.  Si es así, es posible que recuerdes los círculos superpuestos y el<i>unión</i> and <i>intersección</i>de conjuntos. Revisaremos los círculos superpuestos del diagrama de Venn. Adoptaremos los términos OR y AND en lugar de unión e intersección, ya que esa es la terminología utilizada en electrónica digital.</p>
+<p>El diagrama de Venn une el álgebra de Boole de un capítulo anterior con el mapa de Karnaugh.  Relacionaremos lo que ya sabe sobre el álgebra booleana con los diagramas de Venn y luego pasaremos a los mapas de Karnaugh.</p>
+<a name="sets"></a>
+<p>
+A <i>set</i>es una colección de objetos de un universo como se muestra a continuación. El<i>miembros</i>del conjunto son los objetos contenidos dentro del conjunto. Los miembros del conjunto suelen tener algo en común; sin embargo, esto no es un requisito.  Fuera del universo de los números reales, por ejemplo, el conjunto de todos los números enteros positivos {1,2,3...} es un conjunto. El conjunto {3,4,5} es un ejemplo de un conjunto más pequeño, o<i>subconjunto</i>del conjunto de todos los números enteros positivos.  Otro ejemplo es el conjunto de todos los varones fuera del universo de estudiantes universitarios. ¿Puedes pensar en algunos ejemplos más de conjuntos?</p>
+<br/>
+<p>
+<p> <img src="14073.png"/> </p><!--A in A' B in B' 14073-->
+</p>
+<br/>
+<p>Arriba a la izquierda, tenemos un diagrama de Venn que muestra el conjunto A en el círculo dentro del universo U, el área rectangular.  Si todo lo que está dentro del círculo es A, entonces todo lo que está fuera del círculo no es A. Por lo tanto, arriba del centro, etiquetamos el área rectangular fuera del círculo A como A-no en lugar de U. Mostramos B y B-no de manera similar.</p>
+<p>¿Qué sucede si tanto A como B están contenidos dentro del mismo universo?  Mostramos cuatro posibilidades.</p>
+<br/>
+<p>
+<p> <img src="14074.png"/> </p> <!--A,B disjoint, OR, AND 14074-->
+</p>
+<br/>
+<p>Echemos un vistazo más de cerca a cada una de las cuatro posibilidades como se muestra arriba.</p>
+<br/>
+<p>
+<p> <img src="14075.png"/> </p> <!--A,B disjoint-->
+</p>
+<br/>
+<p>El primer ejemplo muestra que el conjunto A y el conjunto B no tienen nada en común según el diagrama de Venn. No hay superposición entre las regiones sombreadas circulares A y B. Por ejemplo, supongamos que los conjuntos A y B contienen los siguientes miembros:</p>
+<blockquote>
+<p>conjunto A = {1,2,3,4}<br/>conjunto B = {5,6,7,8}</p>
+</blockquote>
+<p>Ninguno de los miembros del conjunto A está contenido en el conjunto B, ni ninguno de los miembros de B está contenido en A. Por tanto, no hay superposición de los círculos.</p>
+<br/>
+<p>
+<p> <img src="14076.png"/> </p> <!--A,B subset-->
+</p>
+<br/>
+<p>En el segundo ejemplo del diagrama de Venn anterior, el conjunto A está totalmente contenido dentro del conjunto B. ¿Cómo podemos explicar esta situación? Supongamos que los conjuntos A y B contienen los siguientes miembros:</p>
+<blockquote>
+<p>conjunto A = {1,2}</p> <p>conjunto B = {1,2,3,4,5,6,7,8}</p>
+
+</blockquote>
+<p>Todos los miembros del conjunto A también son miembros del conjunto B. Por lo tanto, el conjunto A es un subconjunto del conjunto B. Dado que todos los miembros del conjunto A son miembros del conjunto B, el conjunto A se dibuja completamente dentro de los límites del conjunto B.</p>
+<p>Hay un quinto caso, no mostrado, con los cuatro ejemplos.  Pista: es similar al último (cuarto) ejemplo. Dibuja un diagrama de Venn para este quinto caso.</p>
+<br/>
+<p>
+<p> <img src="14077.png"/> </p> <!--A,B subset-->
+</p>
+<br/>
+<p>El tercer ejemplo anterior muestra una superposición perfecta entre el conjunto A y el conjunto B. Parece que ambos conjuntos contienen los mismos miembros idénticos. Supongamos que los conjuntos A y B contienen lo siguiente:</p>
+<blockquote>
+<p>conjunto A = {1,2,3,4} conjunto B = {1,2,3,4}</p>
+<br/>
+<p>Por lo tanto,</p>
+<br/>
+<p>Conjunto A = Conjunto B</p>
+</blockquote>
+<p>Los conjuntos Y B son idénticamente iguales porque ambos tienen los mismos miembros idénticos. Las regiones A y B dentro del diagrama de Venn correspondiente anterior se superponen completamente. Si tiene alguna duda sobre lo que representan los patrones anteriores, consulte cualquier figura arriba o abajo para estar seguro de cómo eran las regiones circulares antes de superponerse.</p>
+<br/>
+<p>
+<p> <img src="14078.png"/> </p> <!-- A,B partial overlap -->
+</p>
+<br/>
+<p>El cuarto ejemplo anterior muestra que hay algo en común entre el conjunto A y el conjunto B en la región superpuesta. Por ejemplo, seleccionamos arbitrariamente los siguientes conjuntos para ilustrar nuestro punto:</p>
+<blockquote>
+<p>conjunto A = {1,2,3,4}<br/>conjunto B = {3,4,5,6}</p>
+</blockquote>
+<p>El conjunto A y el conjunto B tienen los elementos 3 y 4 en común. Estos elementos son la razón de la superposición en el centro común a A y B. Necesitamos analizar más de cerca esta situación.</p>
+<h2><u><a name="xtocid92052">Boolean Relationships on Venn Diagrams</a></u></h2>
+<p>El cuarto ejemplo tiene<b>A</b>parcialmente superpuesto<b>B</b>.  Sin embargo, primero veremos toda el área sombreada a continuación y luego solo la región superpuesta. Asignemos algunas expresiones booleanas a las regiones anteriores como se muestra a continuación.
+Abajo a la izquierda hay un área rayada horizontal roja para<b>A</b>. Hay un área rayada vertical azul para<b>B</b>.
+</p>
+<br/>
+<p>
+<p> <img src="14079.png"/> </p> <!-- A,B partial overlap -->
+</p>
+<br/>
+<p>Si observamos el área completa de ambos, independientemente del estilo de sombreado, la suma total de todas las áreas sombreadas, obtenemos la ilustración de arriba a la derecha que corresponde al inclusivo.<b>OR</b>función de A, B. La expresión booleana es<b>A+B</b>. Así lo demuestran los 45<sup>o</sup>área sombreada. Todo lo que esté fuera del área sombreada corresponde a<b>(A+B)-no</b>como se muestra arriba. Pasemos a la siguiente parte del cuarto ejemplo.</p>
+<p>La otra forma de ver un diagrama de Venn con círculos superpuestos es mirar solo la parte común a ambos.<b>A</b> and <b>B</b>, el área de doble trama abajo a la izquierda. La expresión booleana para esta área común correspondiente a la<b>AND</b>la función es<b>AB</b>como se muestra abajo a la derecha. Tenga en cuenta que todo lo que esté fuera del doble sombreado<b>AB</b> is <b>AB-no</b>.
+</p>
+<br/>
+<p>
+<p> <img src="14080.png"/> </p> <!-- A,B partial overlap -->
+</p>
+<br/>
+<p>Tenga en cuenta que algunos de los miembros de<b>A</b>, arriba, son miembros de<b>(AB)'</b>. Algunos de los miembros de<b>B</b>son miembros de<b>(AB)'</b>. Pero ninguno de los miembros de<b>(AB)'</b>están dentro del área doblemente sombreada<b>AB</b>.
+</p>
+<br/>
+<p>
+<p> <img src="14084.png"/> </p> <!-- B/bold> within A 5th example -->
+</p>
+<br/>
+<p>Hemos repetido el segundo ejemplo arriba a la izquierda. Su quinto ejemplo, que esbozó anteriormente, se proporciona arriba a la derecha para comparar. Posteriormente encontraremos algún que otro elemento, o grupo de elementos, totalmente contenido dentro de otro grupo en un mapa de Karnaugh.</p>
+<br/>
+<p>A continuación, mostramos el desarrollo de una expresión booleana que involucra una variable complementada.</p>
+<br/>
+<p>
+<p> <img src="14081.png"/> </p> <!-- A'B  -->
+</p>
+<br/>
+<p>
+<b>Ejemplo:</b>(arriba)</p>
+<br/>
+<p>Muestre un diagrama de Venn para<b>A'B</b>(A-no Y B).</p>
+<br/>
+<p>
+<b>Solución:</b>
+</p>
+<br/>
+<p>Comenzando arriba a la izquierda tenemos un sombreado horizontal rojo.<b>A'</b>(A-no), entonces, arriba a la derecha,<b>B</b>. A continuación, abajo a la izquierda, formamos la función AND<b>A'B</b>superponiendo las dos regiones anteriores. La mayoría de la gente usaría esto como respuesta al ejemplo planteado.  Sin embargo, sólo los dobles eclosionados<b>A'B</b>se muestra en el extremo derecho para mayor claridad. la expresión<b>A'B</b>es la región donde ambos<b>A'</b> and <b>B</b>superposición.  La región clara fuera de<b>A'B</b> is <b>(A'B)'</b>, que no formaba parte del ejemplo planteado.</p>
+<p>Probemos algo similar con el booleano.<b>OR</b>función.</p>
+<br/>
+<p>
+<b>Ejemplo:</b>
+</p>
+<p>Encontrar<b>B'+A</b>
+</p>
+<br/>
+<br/>
+<p>
+<p> <img src="14082.png"/> </p> <!-- A or B' overlap -->
+</p>
+<br/>
+<p><b>Solución:</b></p>
+<br/>
+<p>Arriba a la derecha comenzamos con<b>B</b>que se complementa con<b>B'</b>. Finalmente superponemos<b>A</b>encima de<b>B'</b>. Ya que estamos interesados ​​en formar el<b>OR</b>función, buscaremos todas las áreas sombreadas independientemente del estilo de sombreado.  De este modo,<b>A+B'</b>es toda el área sombreada arriba a la derecha.  Se muestra como una única región rayada abajo a la izquierda para mayor claridad.</p>
+<br/>
+<a name="DeMorgan's theorem"></a>
+<p>
+<p> <img src="14083.png"/> </p> <!-- DeMorgan's -->
+</p>
+<br/>
+<p><b>Ejemplo:</b>
+</p>
+<br/>
+<p>Encontrar<b>(A+B')'</b>
+</p>
+<br/>
+<p>
+<b>Solución:</b>
+</p>
+<br/>
+<p>El verde 45<sup>o</sup> <b>A+B'</b>El área sombreada fue el resultado del ejemplo anterior.  Pasando a un a,<b>(A+B')'</b>En el presente ejemplo, arriba a la izquierda, encontremos el complemento de<b>A+B'</b>, que es el área blanca clara arriba a la izquierda correspondiente a<b>(A+B')'</b>.  Tenga en cuenta que hemos repetido, a la derecha, el<b>AB'</b>resultado de doble rayado de un ejemplo anterior para compararlo con nuestro resultado. Las regiones correspondientes a<b>(A+B')'</b> and <b>AB'</b>arriba, izquierda y derecha, respectivamente, son idénticas. Esto se puede demostrar con el teorema de DeMorgan y la doble negación.</p>
+<p>Esto trae a colación un punto. Los diagramas de Venn en realidad no prueban nada.  Se necesita álgebra booleana para demostraciones formales.  Sin embargo, los diagramas de Venn se pueden utilizar para verificación y visualización.  Hemos verificado y visualizado el teorema de DeMorgan con un diagrama de Venn.</p>
+<br/>
+<p><b>Ejemplo:</b>
+</p>
+<br/>
+<p>¿Qué significa la expresión booleana?<b>A'+B'</b>¿Cómo se ve en un diagrama de Venn?</p>
+<br/>
+<p>
+<p> <img src="14085.png"/> </p> <!-- A'+B'  -->
+</p>
+<br/>
+<p>
+<b>Solución:</b>figura anterior</p>
+<br/>
+<p>Comience con un sombreado horizontal rojo.<b>A'</b>y rayado vertical azul<b>B'</b>arriba. Superponga los diagramas como se muestra. Todavía podemos ver el<b>A'</b>trampilla horizontal roja superpuesta a la otra trampilla. También completa lo que solía ser parte del<b>B</b>círculo (B-verdadero), pero sólo esa parte del<b>B</b>círculo abierto no común a la<b>A</b>círculo abierto. Si sólo miramos el<b>B'</b>trampilla vertical azul, llena esa parte del espacio abierto<b>A</b>círculo no común a<b>B</b>.     Cualquier región con algún sombreado, independientemente del tipo, corresponde a<b>A'+B'</b>. Es decir, todo menos el espacio en blanco abierto en el centro.</p>
+<br/>
+<p>
+<b>Ejemplo:</b>
+</p>
+<br/>
+<p>¿Qué significa la expresión booleana?<b>(A'+B')'</b>¿Cómo se ve en un diagrama de Venn?</p>
+<br/>
+<p>
+<b>Solución:</b>figura arriba, abajo a la izquierda</p>
+<br/>
+<p>Mirando el espacio blanco abierto en el centro, lo es todo.<b>NOT</b>en la solución anterior de<b>A'+B'</b>, que es<b>(A'+B')'</b>.
+</p>
+<br/>
+<p>
+<b>Ejemplo:</b>
+</p>
+<br/>
+<p>mostrar eso<b>(A'+B')' = AB</b>
+</p>
+<br/>
+<p>
+<b>Solución:</b>debajo de la figura, abajo a la izquierda</p>
+<br/>
+<p>
+<p> <img src="14143.png"/> </p> <!-- A'B  -->
+</p>
+<br/>
+<a name="DeMorgan's theorem"></a>
+<p>Anteriormente mostramos en el diagrama de arriba a la derecha que la región abierta blanca es<b>(A'+B')'</b>.  En un ejemplo anterior mostramos una región doblemente sombreada en la intersección (superposición) de<b>AB</b>. Estas son las figuras de la izquierda y del medio que se repiten aquí. Comparando los dos diagramas de Venn, vemos que esta región abierta,<b>(A'+B')'</b>, es lo mismo que la región doblemente sombreada<b>AB</b>(A Y B). También podemos probar que<b>(A'+B')'=AB</b>por el teorema de DeMorgan y la doble negación como se muestra arriba.</p>
+<br/>
+<p>
+<p> <img src="14086.png"/> </p> <!-- DeMorgan's -->
+</p>
+<br/>
+<p>Mostramos un diagrama de Venn de tres variables arriba con regiones<b>A</b>(horizontal rojo),<b>B</b>(vertical azul), y,<b>C</b>(verde 45<sup>o</sup>). En el centro, observe que las tres regiones se superponen y representan una expresión booleana.<b>ABC</b>.  También hay una región más grande en forma de pétalo donde<b>A</b> and <b>B</b>superposición correspondiente a la expresión booleana<b>AB</b>. De manera similar<b>A</b> and <b>C</b>superposición produciendo expresión booleana<b>AC</b>. Y<b>B</b> and <b>C</b>superposición produciendo expresión booleana<b>BC</b>.
+</p>
+<p>Si observamos el tamaño de las regiones descritas por las expresiones AND anteriores, vemos que el tamaño de la región varía con el número de variables en la expresión AND asociada.<ul>
+<li><b>A</b>, 1 variable es una región circular grande.</li>
+<li><b>AB</b>, 2 variables es una región más pequeña con forma de pétalo.</li>
+<li><b>ABC</b>, 3 variables es la región más pequeña.</li>
+<li>Cuantas más variables haya en el término AND, más pequeña será la región.</li>
+</ul>
+</p>
+<a name="Karnaugh map"></a>
+<h2><u><a name="xtocid92053">Making a Venn diagram look like a Karnaugh map</a></u></h2>
+<p>comenzando con el circulo<b>A</b>en un rectangular<b>Un 'universo</b>En la figura (a) a continuación, transformamos un diagrama de Venn en casi un mapa de Karnaugh.</p>
+<br/>
+<p>
+<p> <img src="14087.png"/> </p> <!-- Venn to K-map -->
+</p>
+<br/>
+<p>Ampliamos el circulo<b>A</b>en (b) y (c), se ajustan a la forma rectangular<b>Un 'universo</b>en (d), y cambiar<b>A</b>a un rectángulo en (e).  Cualquier cosa que quede fuera de<b>A</b> is <b>A' </b>.   Le asignamos un rectángulo a<b>A' </b>en (f).  Además, no utilizamos sombreado en los mapas de Karnaugh. Lo que tenemos hasta ahora se parece a un mapa de Karnaugh de 1 variable, pero es de poca utilidad. Necesitamos múltiples variables.</p>
+<br/>
+<p>
+<p> <img src="14088.png"/> </p> <!-- 2-Kmap -->
+</p>
+<br/>
+<p>La figura (a) anterior es la misma que el diagrama de Venn anterior que muestra<b>A</b> and  <b>A'</b>arriba excepto que las etiquetas<b>A</b> and  <b>A'</b>están encima del diagrama en lugar de dentro de las regiones respectivas.  Imaginemos que hemos pasado por un proceso similar al de las figuras (a-f) para obtener un "diagrama de Venn cuadrado" para<b>B</b> and  <b>B'</b>como mostramos en la figura central (b).  Ahora superpondremos los diagramas de las figuras (a) y (b) para obtener el resultado en (c), tal como lo hemos estado haciendo con los diagramas de Venn. La razón por la que hacemos esto es para que podamos observar lo que puede ser común a dos regiones superpuestas: digamos dónde<b>A</b>se superpone<b>B</b>. La celda inferior derecha en la figura (c) corresponde a<b>AB</b>dónde<b>A</b>se superpone<b>B</b>.
+</p>
+<br/>
+<p>
+<p> <img src="14089.png"/> </p> <!-- 2-Kmap -->
+</p>
+<br/>
+<p>No perdemos el tiempo dibujando un mapa de Karnaugh como (c) arriba, sino que dibujamos una versión simplificada como arriba a la izquierda. La columna de dos celdas debajo<b>A'</b>Se entiende que está asociado con<b>A'</b>, y el título<b>A</b>está asociado con la columna de celdas debajo de él. La fila encabezada por<b>B'</b>está asociado con las celdas a su derecha. De manera similar<b>B</b>está asociado con las celdas a su derecha.  En aras de la simplicidad, no delineamos las distintas regiones con tanta claridad como en los diagramas de Venn.</p>
+<p>El mapa de Karnaugh arriba a la derecha es una forma alternativa utilizada en la mayoría de los textos.  Los nombres de las variables se enumeran al lado de la línea diagonal. El<b>A</b>encima de la diagonal indica que la variable<b>A</b>(y<b>A'</b>) se asigna a las columnas. El<b>0</b>es un sustituto de<b>A'</b>, y el<b>1</b>sustitutos de<b>A</b>.  El<b>B</b>debajo de la diagonal está asociado con las filas:<b>0</b> for <b>B'</b>, y<b>1</b> for <b>B</b>
+</p>
+<br/>
+<p>
+<b>Ejemplo:</b>
+</p>
+<br/>
+<p>Marca la celda correspondiente a la expresión booleana.<b>AB</b>en el mapa de Karnaugh de arriba con un<b>1</b>
+</p>
+<br/>
+<p>
+<p> <img src="14090.png"/> </p> <!-- 2-Kmap -->
+</p>
+<br/>
+<p><b>Solución:</b></p>
+<br/>
+<p>Sombrea o encierra en un círculo la región correspondiente a<b>A</b>. Luego, sombree o encierre la región correspondiente a<b>B</b>. La superposición de las dos regiones es<b>AB</b>. Coloque un<b>1</b>en esta celda. No necesariamente incluimos el<b>A</b> and <b>B</b>regiones como arriba a la izquierda.</p>
+<br/>
+<p>
+<p> <img src="14091.png"/> </p> <!-- 3-Kmap -->
+</p>
+<br/>
+<p>Desarrollamos un mapa de Karnaugh de 3 variables arriba, comenzando con regiones similares al diagrama de Venn. El universo (dentro del rectángulo negro) está dividido en dos regiones rectangulares estrechas y estrechas para<b>A'</b> and <b>A</b>. las variables<b>B'</b> and <b>B</b>divide el universo en dos regiones cuadradas.<b>C</b>ocupa una región cuadrada en el medio del rectángulo, con<b>C'</b>dividir en dos rectángulos verticales a cada lado del<b>C</b>cuadrado.</p>
+<p>En la figura final, superponemos las tres variables, intentando etiquetar claramente las distintas regiones. Las regiones son menos obvias sin impresión en color, más obvias en comparación con las otras tres figuras. Esta 3 variables<i>K-Mapa</i>(mapa de Karnaugh) tiene 2<sup>3</sup> = 8 <i>células</i>, los pequeños cuadrados dentro del mapa. Cada célula individual está identificada de forma única por los tres
+Variables booleanas (<b>A, B, C</b>). Por ejemplo,<b>ABECEDARIO'</b>selecciona de forma única la celda situada más abajo a la derecha (*),<b>ABECEDARIO'</b>selecciona la celda superior izquierda (x).</p>
+<br/>
+<p>
+<p> <img src="14092.png"/> </p> <!-- 3-Kmap -->
+</p>
+<br/>
+<a name="Karnaugh map"></a>
+<a name="product term"></a>
+<p>Normalmente no etiquetamos el mapa de Karnaugh como se muestra arriba a la izquierda. Aunque esta figura muestra claramente la cobertura del mapa mediante variables booleanas individuales de una región de 4 celdas. Los mapas de Karnaugh están etiquetados como en la ilustración de la derecha. Cada celda todavía está identificada de forma única por una variable de 3<i>término del producto</i>, un booleano<b>AND</b>expresión. Tomemos, por ejemplo,<b>ABECEDARIO'</b>siguiendo el<b>A</b>fila hacia la derecha y la<b>BC'</b>columna hacia abajo, ambas se cruzan en la celda inferior derecha<b>ABECEDARIO'</b>. Ver (*) figura arriba.</p>
+<br/>
+<p>
+<p> <img src="14093.png"/> </p> <!-- 3-Kmap- real -->
+</p>
+<br/>
+<p>Las dos formas diferentes anteriores de un mapa de Karnaugh de 3 variables son equivalentes y es la forma final que adopta. La versión de la derecha es un poco más fácil de usar, ya que no tenemos que escribir tantos encabezados alfabéticos booleanos y barras de complemento, solo<b>1</b>arena<b>0</b>s Utilice la forma de mapa de la derecha y busque el de la izquierda en algunos textos.  Los encabezados de las columnas de la izquierda.<b>B'C', B'C, BC, BC'</b>son equivalentes a<b>00, 01, 11, 10</b>A la derecha. Los encabezados de fila<b>A, A'</b>son equivalentes a<b>0, 1</b>en el mapa correcto.</p>
+<br/>
+<h2><u><a name="xtocid92054">Karnaugh maps, truth tables, and Boolean expressions</a></u></h2>
+<a name="Karnaugh map"></a>
+<a name="Karnaugh, Maurice"></a>
+<p>Maurice Karnaugh, un ingeniero de telecomunicaciones, desarrolló el mapa de Karnaugh en Bell Labs en 1953 mientras diseñaba circuitos de conmutación telefónica basados ​​en lógica digital.</p>
+<p>Ahora que hemos desarrollado el mapa de Karnaugh con la ayuda de diagramas de Venn, vamos a utilizarlo. mapas de karnaugh<i>reducir</i>funciones lógicas más rápida y fácilmente en comparación con el álgebra booleana. Por reducir queremos decir simplificar, reducir el número de puertas y entradas.  Nos gusta simplificar la lógica a un<i>costo más bajo</i>forma de ahorrar costes mediante la eliminación de componentes.  Definimos el costo más bajo como el menor número de puertas con el menor número de entradas por puerta.</p>
+<p>Si se les da la opción, la mayoría de los estudiantes simplifican la lógica con mapas de Karnaugh en lugar de álgebra booleana una vez que aprenden esta herramienta.</p>
+<a name="truth table to Karnaugh map"></a>
+<p>
+<p> <img src="14094.png"/> </p> <!-- 2-Kmap, 2-TT, gate, RLL, BE -->
+</p>
+<br/>
+<p>Arriba mostramos cinco elementos individuales, que son simplemente diferentes formas de representar la misma cosa: una función lógica digital arbitraria de 2 entradas. Primero está la lógica de escalera de relevos, luego las puertas lógicas, una tabla de verdad, un mapa de Karnaugh y una ecuación booleana. El caso es que cualquiera de estos es equivalente. Dos entradas<b>A</b> and  <b>B</b>puede tomar valores de cualquiera de los dos<b>0</b> or  <b>1</b>, alta o baja, abierta o cerrada, Verdadero o Falso, según sea el caso. hay 2<sup>2 </sup>= 4 combinaciones de insumos que producen un resultado. Esto es aplicable a los cinco ejemplos.</p>
+<p>Estas cuatro salidas se pueden observar en una lámpara en la lógica de escalera de relés, en una sonda lógica en el diagrama de puertas. Estos resultados pueden registrarse en la tabla de verdad o en el mapa de Karnaugh. Mire el mapa de Karnaugh como una tabla de verdad reorganizada.  La salida de la ecuación booleana puede calcularse mediante las leyes del álgebra booleana y transferirse a la tabla de verdad o al mapa de Karnaugh. ¿Cuál de las cinco descripciones lógicas equivalentes deberíamos utilizar?  El que resulta más útil para la tarea a realizar.</p>
+<br/>
+<p>
+<p> <img src="14095.png"/> </p> <!-- 2-Kmap. 2-TT -->
+</p>
+<br/>
+<p>Los resultados de una tabla de verdad corresponden uno a uno a las entradas del mapa de Karnaugh.  Comenzando en la parte superior de la tabla de verdad, las entradas A=0, B=0 producen una salida α.  Tenga en cuenta que esta misma salida α se encuentra en el mapa de Karnaugh en la dirección de celda A=0, B=0, esquina superior izquierda del mapa K donde se cruzan la fila A=0 y la columna B=0. La otra tabla de verdad genera β, χ, δ a partir de las entradas AB=01, 10, 11 y se encuentran en las ubicaciones correspondientes del mapa K.</p>
+<p>A continuación, mostramos las regiones adyacentes de 2 celdas en el mapa K de 2 variables con la ayuda del diagrama de Venn rectangular anterior como regiones booleanas.</p>
+<br/>
+<p>
+<p> <img src="14096.png"/> </p> <!-- 2-Kmap adjacent -->
+</p>
+<br/>
+<p>Las celdas α y χ son adyacentes en el mapa K como elipses en el mapa K más a la izquierda a continuación.  En referencia a la tabla de verdad anterior, este no es el caso. Hay otra entrada de la tabla de verdad (β) entre ellos. Lo que nos lleva al punto de organizar el K-map en una matriz cuadrada: las celdas con variables booleanas en común deben estar cerca unas de otras para presentar un patrón que salte a la vista. Para las celdas α y χ tienen la variable booleana<b>B'</b>en común. Sabemos esto porque<b>B=0</b>(igual que<b>B'</b>) para la columna sobre las celdas α y χ. Compare esto con el diagrama de Venn cuadrado sobre el mapa K.</p>
+<p>Una línea de razonamiento similar muestra que β y δ tienen valores booleanos.<b>B</b>(B=1) en común. Entonces, α y β tienen valores booleanos.<b>A'</b>(A=0) en común.
+Finalmente, χ y δ tienen valores booleanos.<b>A</b>(A=1) en común. Compara los dos últimos mapas con el diagrama de Venn del cuadrado del medio.</p>
+<p>En resumen, buscamos puntos comunes de variables booleanas entre celdas. El mapa de Karnaugh está organizado para que podamos ver esos puntos en común. Probemos algunos ejemplos.</p>
+<br/>
+<p>
+<p> <img src="14097.png"/> </p> <!-- 2-Kmap adjacent -->
+</p>
+<br/>
+<p>
+<b>Ejemplo:</b>
+</p>
+<br/>
+<p>Transfiera el contenido de la tabla de verdad al mapa de Karnaugh de arriba.</p>
+<br/>
+<p>
+<p> <img src="14098.png"/> </p> <!-- 2-Kmap adjacent -->
+</p>
+<br/>
+<p>
+<b>Solución:</b>
+</p>
+<br/>
+<p>La tabla de verdad contiene dos<b>1</b>s. el K-map debe tener ambos.  localizar el primero<b>1</b>en la segunda fila de la tabla de verdad anterior.<ul>
+<li>tenga en cuenta la dirección AB de la tabla de verdad</li>
+<li>localizar la celda en el K-map que tiene la misma dirección</li>
+<li>colocar un<b>1</b>en esa celda</li>
+</ul>Repetir el proceso para el<b>1</b>en la última línea de la tabla de verdad.</p>
+<br/>
+<p>
+<b>Ejemplo:</b>
+</p>
+<br/>
+<p>Para el mapa de Karnaugh del problema anterior, escribe la expresión booleana. La solución está a continuación.</p>
+<br/>
+<p>
+<p> <img src="14099.png"/> </p> <!-- 2-Kmap adjacent  problem -->
+</p>
+<br/>
+<p>
+<b>Solución:</b>
+</p>
+<br/>
+<p>Busque celdas adyacentes, es decir, encima o al lado de una celda. Las celdas diagonales no son adyacentes. Las celdas adyacentes tendrán una o más variables booleanas en común.<ul>
+<li>Agrupa (encierra en un círculo) los dos<b>1</b>s en la columna</li>
+<li>Encuentre las variables superiores y/o laterales que sean iguales para el grupo. Escríbalo como resultado booleano. Es<b>B</b>en nuestro caso.</li>
+<li>Ignore las variables que no sean iguales para un grupo de células. En nuestro caso, A varía, es 1 y 0, ignore el valor booleano A.</li>
+<li>Ignore cualquier variable que no esté asociada con celdas que contengan unos.<b>B'</b>no tiene nadie debajo. Ignorar B'</li>
+<li>Resultado<b>Out = B</b></li>
+</ul>
+</p>
+<p>Esto podría ser más fácil de ver comparándolo con los diagramas de Venn de la derecha, específicamente el<b>B</b>columna.</p>
+<br/>
+<p>
+<b>Ejemplo:</b>
+</p>
+<br/>
+<p>Escribe la expresión booleana para el mapa de Karnaugh a continuación.</p>
+<br/>
+<p>
+<p> <img src="14100.png"/> </p> <!-- 2-Kmap adjacent problem -->
+</p>
+<br/>
+<p>
+<b>Solución:</b>(arriba)<ul>
+<li>Agrupa (encierra en un círculo) los dos<b>1's</b>en la fila</li>
+<li>Encuentre las variables que son iguales para el grupo,<b>Out = A'</b></li>
+</ul>
+</p>
+<p>
+<b>Ejemplo:</b>
+</p>
+<br/>
+<p>Para la siguiente tabla de verdad, transfiera las salidas al Karnaugh y luego escriba la expresión booleana para el resultado.</p>
+<br/>
+<p>
+<p> <img src="14101.png"/> </p> <!-- 2-Kmap adjacent TT problem -->
+</p>
+<br/>
+<p>
+<b>Solución:</b>
+</p>
+<br/>
+<p>Transferir el<b>1</b>s desde las ubicaciones en la tabla de verdad hasta las ubicaciones correspondientes en el K-map.<ul>
+<li>Agrupe (encierre en un círculo) los dos unos en la columna debajo<b>B=1</b></li>
+<li>Agrupe (encierre en un círculo) los dos unos en la fila a la derecha de<b>A=1</b></li>
+<li>Escriba el término del producto para el primer grupo =<b>B</b></li>
+<li>Escriba el término del producto para el segundo grupo =<b>A</b></li>
+<li>Escriba la suma de productos de los dos términos anteriores<b>Output = A+B</b></li>
+</ul>La solución del K-map en el medio es la solución más simple o de menor costo. Una solución menos deseable está en la extrema derecha. Después de agrupar los dos<b>1</b>s, cometemos el error de formar un grupo de 1 celda. La razón por la que esto no es deseable es que:<ul>
+<li>La celda individual tiene un término producto de<b>AB'</b></li>
+<li>La solución correspondiente es<b>Output = AB' + B </b></li>
+<li>Esta no es la solución más sencilla.</li>
+</ul>La forma de recoger este single.<b>1</b>es formar un grupo de dos con el<b>1</b>a la derecha como se muestra en la línea inferior del K-map central, aunque esto<b>1</b>ya se ha incluido en el grupo de columnas (<b>B</b>). Se nos permite reutilizar células para formar grupos más grandes. De hecho, es deseable porque conduce a un resultado más sencillo.</p>
+<p>Debemos señalar que cualquiera de las soluciones anteriores, Salida o Salida incorrecta, son lógicamente correctas. Ambos circuitos producen la misma salida. Se trata de que el circuito anterior sea la solución de menor coste.</p>
+<br/>
+<p>
+<b>Ejemplo:</b>
+</p>
+<br/>
+<p>Complete el mapa de Karnaugh para la expresión booleana a continuación, luego escriba la expresión booleana para el resultado.</p>
+<br/>
+<p>
+<p> <img src="14102.png"/> </p> <!-- 2-Kmap Boolean problem -->
+</p>
+<br/>
+<p>
+<b>Solución:</b>(arriba)</p>
+<br/>
+<p>La expresión booleana tiene tres términos producto. Habrá un<b>1</b>ingresado para cada término de producto. Aunque, en general, el número de<b>1</b>s por término de producto varía con la cantidad de variables en el término de producto en comparación con el tamaño del K-map.  El término del producto es la dirección de la celda donde se encuentra el<b>1</b>se ingresa. El primer término del producto,<b>A'B</b>, corresponde a la<b>01</b>celda en el mapa. A<b>1</b>se ingresa en esta celda. Los otros dos términos P se ingresan para un total de tres<b>1s</b>
+</p>
+<p>A continuación, proceda a agrupar y extraer el resultado simplificado como en el problema de tabla de verdad anterior.</p>
+<br/>
+<p>
+<b>Ejemplo:</b>
+</p>
+<br/>
+<p>Simplifique el siguiente diagrama lógico.</p>
+<br/>
+<p>
+<p> <img src="14103.png"/> </p> <!-- 2-Kmap gate problem -->
+</p>
+<br/>
+<p>
+<b>Solución:</b>(Figura siguiente)<ul>
+<li>Escriba la expresión booleana para el diagrama lógico original como se muestra a continuación.</li>
+<li>Transfiera los términos del producto al mapa de Karnaugh.</li>
+<li>Formar grupos de celdas como en ejemplos anteriores.</li>
+<li>Escriba expresiones booleanas para grupos como en ejemplos anteriores.</li>
+<li>Dibujar diagrama lógico simplificado</li>
+</ul>
+</p>
+<p>
+<p> <img src="14104.png"/> </p> <!-- 2-Kmap gate solution -->
+</p>
+<br/>
+<p>
+<b>Ejemplo:</b>
+</p>
+<br/>
+<p>Simplifique el siguiente diagrama lógico.</p>
+<br/>
+<p>
+<p> <img src="14105.png"/> </p> <!-- 2-Kmap gate solution -->
+</p>
+<br/>
+<p>
+<b>Solución:</b>
+<ul>
+<li>Escriba la expresión booleana para el diagrama lógico original que se muestra arriba.</li>
+<li>Transfiera los términos del producto al mapa de Karnaugh.</li>
+<li>No es posible formar grupos.</li>
+<li>No es posible ninguna simplificación; déjalo como está.</li>
+</ul>
+</p>
+<p>No es posible ninguna simplificación lógica para el diagrama anterior. Esto sucede a veces.  Ni los métodos de los mapas de Karnaugh ni el álgebra de Boole pueden simplificar más esta lógica. Mostramos un símbolo esquemático OR exclusivo arriba; sin embargo, esto no es una simplificación lógica. Simplemente hace que un diagrama esquemático se vea mejor. Dado que no es posible simplificar la lógica OR exclusiva y se usa ampliamente, los fabricantes la proporcionan como un circuito integrado básico (7486).</p>
+<h2><u><a name="xtocid92055">Logic simplification with Karnaugh maps</a></u></h2>
+<a name="Karnaugh map"></a>
+<p>Los ejemplos de simplificación lógica que hemos hecho podrían haberse realizado con álgebra de Boole con la misma rapidez. Los problemas de simplificación lógica del mundo real exigen mapas de Karnaugh más grandes para que podamos realizar un trabajo serio. Trabajaremos algunos ejemplos artificiales en esta sección, dejando la mayoría de las aplicaciones del mundo real para el capítulo de Lógica Combinatoria. Por artificial nos referimos a ejemplos que ilustran técnicas. Este enfoque desarrollará las herramientas que necesitamos para la transición a las aplicaciones más complejas del capítulo de Lógica Combinatoria.</p>
+<p>Mostramos nuestro mapa de Karnaugh desarrollado previamente. Usaremos el formulario de la derecha.</p>
+<br/>
+<p>
+<p> <img src="14093.png"/> </p> <!-- 2-Kmap gate solution -->
+</p>
+<br/>
+<a name="Gray code"></a>
+<p>Observe la secuencia de números en la parte superior del mapa. No está en secuencia binaria, lo que sería<b>00, 01, 10, 11</b>. Es<b>00, 01, 11 10</b>, que es la secuencia de código Gray. La secuencia del código Gray solo cambia un bit binario a medida que pasamos de un número al siguiente en la secuencia, a diferencia del binario. Eso significa que las celdas adyacentes solo variarán en un bit o variable booleana. Esto es lo que necesitamos para organizar las salidas de una función lógica de modo que podamos ver los puntos en común. Además, los encabezados de columnas y filas deben estar en orden de código Gray, o el mapa no funcionará como un mapa de Karnaugh. Las celdas que comparten variables booleanas comunes ya no serían adyacentes ni mostrarían patrones visuales. Las celdas adyacentes varían solo en un bit porque una secuencia de código Gray varía solo en un bit.</p>
+<p>Si dibujamos nuestros propios mapas de Karnaugh, necesitamos generar código Gray para cualquier tamaño de mapa que podamos usar. Así generamos código Gray de cualquier tamaño.</p>
+<br/>
+<p>
+<p> <img src="14106.png"/> </p> <!--Gray code -->
+</p>
+<br/>
+<p>Tenga en cuenta que la secuencia del código Gray, arriba a la derecha, solo varía un bit a medida que avanzamos en la lista, o hacia abajo para completar la lista. Esta propiedad del código Gray suele ser útil en la electrónica digital en general.  En particular, es aplicable a los mapas de Karnaugh.</p>
+<p>Pasemos a algunos ejemplos de simplificación con mapas de Karnaugh de 3 variables.  Mostramos cómo mapear los términos producto de la lógica no simplificada al K-map. Ilustramos cómo identificar grupos de celdas adyacentes, lo que conduce a una simplificación de la lógica digital por suma de productos.</p>
+<br/>
+<p>
+<p> <img src="14107.png"/> </p> <!-- 3-Kmap A'B' -->
+</p>
+<br/>
+<p>Arriba, colocamos los 1 en el mapa K para cada uno de los términos del producto, identificamos un grupo de dos y luego escribimos un<i>término p</i>(término de producto) para el único grupo como nuestro resultado simplificado.</p>
+<br/>
+<p>
+<p> <img src="14108.png"/> </p> <!-- 3-Kmap A'-->
+</p>
+<br/>
+<p>Al mapear los cuatro términos del producto anteriores se obtiene un grupo de cuatro cubiertos por términos booleanos.<b>A'</b>
+</p>
+<br/>
+<p>
+<p> <img src="14109.png"/> </p> <!-- 3-Kmap C -->
+</p>
+<br/>
+<p>Al mapear los cuatro términos p se obtiene un grupo de cuatro, que está cubierto por una variable<b>C</b>.
+</p>
+<br/>
+<p>
+<p> <img src="14110.png"/> </p> <!-- 3-Kmap A'+B -->
+</p>
+<br/>
+<p>Después de mapear los seis términos p anteriores, identifique el grupo superior de cuatro, seleccione las dos celdas inferiores como un grupo de cuatro compartiendo las dos con dos más del otro grupo. Cubrir estos dos con un grupo de cuatro da un resultado más sencillo. Como hay dos grupos, habrá dos términos p en el resultado de la suma de productos<b>A'+B</b>
+</p>
+<br/>
+<p>
+<p> <img src="14111.png"/> </p> <!-- 3-Kmap BC -->
+</p>
+<br/>
+<p>Los dos términos de producto anteriores forman un grupo de dos y se simplifican a<b>BC</b>
+</p>
+<br/>
+<p>
+<p> <img src="14112.png"/> </p> <!-- 3-Kmap B -->
+</p>
+<br/>
+<p>Al mapear los cuatro términos p se obtiene un solo grupo de cuatro, que es<b> B</b>
+</p>
+<br/>
+<p>
+<p> <img src="14113.png"/> </p> <!-- 3-Kmap C' -->
+</p>
+<br/>
+<p>Al mapear los cuatro términos p anteriores se obtiene un grupo de cuatro. Visualice el grupo de cuatro enrollando los extremos del mapa para formar un cilindro, luego las celdas son adyacentes. Normalmente marcamos el grupo de cuatro como arriba a la izquierda. De las variables A, B, C, hay una variable común: C'. C' es un 0 en las cuatro celdas. El resultado final es<b>C'</b>.
+</p>
+<br/>
+<p>
+<p> <img src="14114.png"/> </p> <!-- 3-Kmap A' or C' -->
+</p>
+<br/>
+<p>Las seis celdas anteriores de la ecuación no simplificada se pueden organizar en dos grupos de cuatro. Estos dos grupos deberían darnos dos términos p en nuestro resultado simplificado de<b>A'+C'</b>.
+</p>
+<br/>
+<p>A continuación, revisamos el incinerador de desechos tóxicos del capítulo de álgebra booleana. Consulte el capítulo de álgebra booleana para obtener detalles sobre este ejemplo. Simplificaremos la lógica usando un mapa de Karnaugh.</p>
+<p>
+<p> <img src="14115.png"/> </p> <!-- Toxic waste modified derived from 04364-->
+</p>
+<br/>
+<p>La ecuación booleana para la producción tiene cuatro términos producto. Mapee cuatro unos correspondientes a los términos p. Formando grupos de células, tenemos tres grupos de dos. Habrá tres términos p en el resultado simplificado, uno para cada grupo.  Consulte el capítulo de álgebra booleana "Incinerador de desechos tóxicos" para obtener un diagrama de puerta del resultado, que se reproduce a continuación.</p>
+<br/>
+<p>
+<p> <img src="04366.png"/> </p> <!-- Toxic waste re-used from Boolean algebra chapter-->
+</p>
+<br/>
+<p>A continuación repetimos la simplificación del álgebra booleana del incinerador de desechos tóxicos para comparar.</p>
+<br/>
+<p>
+<p> <img src="14066.png"/> </p> <!-- Toxic waste re-used from Boolean algebra chapter -->
+</p>
+<p>A continuación repetimos la solución del mapa de Karnaugh del incinerador de desechos tóxicos para compararla con la simplificación del álgebra booleana anterior. Este caso ilustra por qué el mapa de Karnaugh se utiliza ampliamente para la simplificación lógica.</p>
+<br/>
+<p>
+<p> <img src="14144.png"/> </p> <!-- Toxic waste K-map-->
+</p>
+<br/>
+<p>El método del mapa de Karnaugh parece más sencillo que la página anterior de
+álgebra booleana.</p>
+<br/>
+<br/>
+<a name="Karnaugh map"></a>
+<h2><u><a name="xtocid92056">Larger 4-variable Karnaugh maps</a></u></h2>
+<p>Saber cómo generar código Gray debería permitirnos construir mapas más grandes. En realidad, todo lo que tenemos que hacer es mirar la secuencia de izquierda a derecha en la parte superior del mapa de 3 variables y copiarla en el lado izquierdo del mapa de 4 variables. Vea abajo.<p>
+<br/>
+<p>
+<p> <img src="14116.png"/> </p> <!-- 4-Kmap empty -->
+</p>
+<br/>
+<p>Los siguientes cuatro mapas de variables de Karnaugh ilustran la reducción de expresiones booleanas demasiado tediosas para el álgebra booleana. Las reducciones se podrían hacer con álgebra de Boole. Sin embargo, el mapa de Karnaugh es más rápido y sencillo, especialmente si hay muchas reducciones lógicas que hacer.</p>
+<br/>
+<p>
+<p> <img src="14117.png"/> </p> <!-- 4-Kmap AB+CD -->
+</p>
+<p>La expresión booleana anterior tiene siete términos producto. Están mapeados de arriba a abajo y de izquierda a derecha en el mapa K de arriba. Por ejemplo, el primer término P<b>A'B'CD</b>es la primera fila, tercera celda, correspondiente a la ubicación del mapa<b>A=0, B=0, C=1, D=1</b>. Los demás términos del producto se colocan de manera similar. Rodeando los grupos más grandes posibles, arriba se muestran dos grupos de cuatro. El grupo horizontal discontinuo corresponde al término de producto simplificado.<b>AB</b>. El grupo vertical corresponde al CD booleano. Como hay dos grupos, habrá dos términos de producto en el resultado de la suma de productos de<b>Out=AB+CD</b>.
+</p>
+<br/>
+<p>Dobla las esquinas del mapa a continuación como si fuera una servilleta para que las cuatro celdas estén físicamente adyacentes.</p>
+<p>
+<p> <img src="14118.png"/> </p><!--4-Kmap B'D'-->
+</p>
+<p>Las cuatro celdas de arriba son un grupo de cuatro porque todas tienen variables booleanas.<b>B'</b> and <b>D'</b>en común. En otras palabras,<b>B=0</b>para las cuatro celdas, y<b>D=0</b>para las cuatro celdas. Las otras variables<b>(A, B)</b> are <b>0</b>en algunos casos,<b>1</b>en otros casos con respecto a las cuatro celdas de las esquinas. Así, estas variables<b>(A, B)</b>no están involucrados con este grupo de cuatro. Este grupo único sale del mapa como un término de producto para el resultado simplificado:<b>Out=B'C'</b>
+</p>
+<br/>
+<p>Para el mapa K a continuación, enrolle los bordes superior e inferior formando un cilindro formando ocho celdas adyacentes.</p>
+<br/>
+<p>
+<p> <img src="14119.png"/> </p> <!-- 4-Kmap B' -->
+</p>
+<br/>
+<p>El grupo de ocho anterior tiene una variable booleana en común:<b>B=0</b>. Por lo tanto, el grupo de ocho está cubierto por un término p:<b>B'</b>. La expresión booleana original de ocho términos se simplifica a<b>Out=B'</b>
+</p>
+<br/>
+<p>La siguiente expresión booleana tiene nueve términos p, tres de los cuales tienen tres booleanos en lugar de cuatro. La diferencia es que mientras cuatro términos booleanos de producto variable cubren una celda, los tres términos p booleanos cubren un par de celdas cada uno.</p>
+<br/>
+<p>
+<p> <img src="14120.png"/> </p> <!--4-Kmap  B'+D' -->
+</p>
+<br/>
+<p>Los seis términos producto de cuatro variables booleanas se asignan de la forma habitual anterior como celdas individuales.  Los tres términos de variables booleanas (tres cada uno) se asignan como pares de celdas, como se muestra arriba. Tenga en cuenta que estamos mapeando términos p en el mapa K, no sacándolos en este punto.</p>
+<p>Para simplificar, formamos dos grupos de ocho. Las celdas de las esquinas se comparten con ambos grupos. Esto está bien. De hecho, esto conduce a una mejor solución que formar un grupo de ocho y un grupo de cuatro sin compartir celdas. La solución final es<b>Out=B'+D'</b>
+</p>
+<br/>
+<p>A continuación asignamos la expresión booleana no simplificada al mapa de Karnaugh.</p>
+<br/>
+<p>
+<p> <img src="14121.png"/> </p> <!--4-Kmap corners-->
+</p>
+<br/>
+<p>Arriba, tres de las células se forman en grupos de dos células. Una cuarta celda no se puede combinar con nada, lo que suele ocurrir en los problemas del "mundo real". En este caso, el término p booleano<b>ABCD</b>no cambia en el proceso de simplificación. Resultado:<b>Out= B'C'D'+A'B'D'+ABCD</b>
+</p>
+<p>Muchas veces existe más de una solución de costo mínimo para un problema de simplificación. Tal es el caso que se ilustra a continuación.</p>
+<br/>
+<p>
+<p> <img src="14122.png"/> </p> <!--4-Kmap  dual solution-->
+</p>
+<br/>
+<a name="minimal cost"></a>
+<p>Ambos resultados anteriores tienen cuatro términos producto de tres variables booleanas cada uno. Ambos son igualmente válidos.<i>costo mínimo</i>soluciones. La diferencia en la solución final se debe a cómo se agrupan las celdas como se muestra arriba. Una solución de costo mínimo es un diseño lógico válido con el número mínimo de puertas y el número mínimo de entradas.</p>
+<br/>
+<p>A continuación, mapeamos la ecuación booleana no simplificada como de costumbre y formamos un grupo de cuatro como primer paso de simplificación. Puede que no sea obvio cómo recoger las células restantes.</p>
+<br/>
+<p>
+<p> <img src="14123.png"/> </p> <!--4-Kmap  4-squares -->
+</p>
+<br/>
+<p>Elija tres celdas más en un grupo de cuatro, en el centro de arriba. Todavía quedan dos celdas. El método de costo mínimo para recogerlos es agruparlos con celdas vecinas como grupos de cuatro como se muestra arriba a la derecha.</p>
+<p>Como nota de advertencia, no intentes formar grupos de tres.  Las agrupaciones deben ser potencias de 2, es decir, 1, 2, 4, 8...</p>
+<br/>
+<p>A continuación tenemos otro ejemplo de dos posibles soluciones de coste mínimo. Comience formando un par de grupos de cuatro después de mapear las celdas.</p>
+<br/>
+<p>
+<p> <img src="14124.png"/> </p> <!--4-Kmap Dual Solution-->
+</p>
+<br/>
+<p>Las dos soluciones dependen de si la única celda restante está agrupada con el primer o segundo grupo de cuatro como un grupo de dos celdas. Esa celda sale como cualquiera<b>ABECEDARIO'</b> or <b>ABD</b>, tu elección. De cualquier manera, esta celda está cubierta por cualquiera de los términos del producto booleano. Los resultados finales se muestran arriba.</p>
+<br/>
+<p>A continuación tenemos un ejemplo de simplificación utilizando el mapa de Karnaugh a la izquierda o el álgebra booleana a la derecha. Trama<b>C'</b>en el mapa como el área de todas las celdas cubiertas por la dirección<b>C=0</b>, las 8 celdas a la izquierda del mapa. Luego, traza el sencillo.<b>ABCD</b>celúla. Esa única celda forma un grupo de 2 celdas como se muestra, lo que se simplifica al término P<b>ABD</b>, para un resultado final de<b>Out = C' + ABD</b>.
+</p>
+<br/>
+<p>
+<p> <img src="14125.png"/> </p> <!--4-Kmap simplification  -->
+</p>
+<br/>
+<p>Este (arriba) es un raro ejemplo de un problema de cuatro variables que se puede reducir con álgebra booleana sin mucho trabajo, suponiendo que recuerdes los teoremas.</p>
+<br/>
+<br/>
+<a name="minterm"></a>
+<a name="maxterm"></a>
+<a name="Sum-Of-Products"></a>
+<a name="Product-Of-Sums"></a>
+<a name="SOP"></a>
+<a name="POS"></a>
+<h2><u><a name="xtocid92057">Minterm vs maxterm  solution</a></u></h2>
+<p>Hasta ahora hemos estado encontrando soluciones de suma de productos (SOP) para problemas de reducción lógica. Para cada una de estas soluciones SOP, también existe una solución de producto de sumas (POS), que podría ser más útil, según la aplicación.  Antes de trabajar en una solución de producto de sumas, debemos introducir alguna terminología nueva. El siguiente procedimiento para mapear términos de productos no es nuevo en este capítulo. Solo queremos establecer un procedimiento formal para minterms para compararlo con el nuevo procedimiento para maxterms.</p>
+<p>
+<p> <img src="14126.png"/> </p> <!--3-Kmap POS-->
+</p>
+<p>
+A <i>mintérmino</i>es una expresión booleana que da como resultado<b>1</b>para la salida de una sola celda, y<b>0</b>s para todas las demás celdas en un mapa de Karnaugh o tabla de verdad. Si un minterm tiene un solo<b>1</b>y las celdas restantes como<b>0</b>s, parecería cubrir un área mínima de<b>1</b>s. La ilustración de arriba a la izquierda muestra el minterm.<b>ABC</b>, un solo término de producto, como un solo<b>1</b>en un mapa que es de otra manera<b>0</b>s. No hemos mostrado el<b>0</b>s en nuestros mapas de Karnaugh hasta este momento, ya que es habitual omitirlos a menos que sea necesario específicamente.  Otro miniterm<b>ABECEDARIO'</b>se muestra arriba a la derecha. El punto a revisar es que la dirección de la celda corresponde directamente al minterm que se está mapeando. Es decir, la celda<b>111</b>corresponde al mintérmino<b>ABC</b>arriba a la izquierda. Arriba a la derecha vemos que el minterm<b>ABECEDARIO'</b>Corresponde directamente a la celda.<b>010</b>.   Una expresión booleana o un mapa pueden tener varios minitérminos.</p>
+<p>Con referencia a la figura anterior, resumamos el procedimiento para colocar un minterm en un K-map:<ul>
+<li>Identifique el término minterm (término del producto) que se asignará.</li>
+<li>Escribe el valor numérico binario correspondiente.</li>
+<li>Utilice un valor binario como dirección para colocar un<b>1</b>en el mapa K</li>
+<li>Repita los pasos para otros minitérminos (términos P dentro de una suma de productos).</li>
+</ul>
+</p>
+<br/>
+<p>
+<p> <img src="14127.png"/> </p> <!--3-Kmap  POS-->
+</p>
+<p>La mayoría de las veces, una expresión booleana constará de múltiples minitérminos correspondientes a múltiples celdas en un mapa de Karnaugh, como se muestra arriba. Los múltiples minterms en este mapa son los minterms individuales que examinamos en la figura anterior. El punto que revisamos como referencia es que el<b>1</b>Los datos salen del K-map como una dirección de celda binaria que se convierte directamente en uno o más términos de producto. Por directamente queremos decir que un<b>0</b>corresponde a una variable complementada, y una<b>1</b>corresponde a una variable verdadera. Ejemplo:<b>010</b>se convierte directamente a<b>ABECEDARIO'</b>. No hubo reducción en este ejemplo.  Sin embargo, tenemos un resultado de suma de productos a partir de los términos mínimos.</p>
+<p>Con referencia a la figura anterior, resumamos el procedimiento para escribir la ecuación booleana reducida de suma de productos a partir de un mapa K:<ul>
+<li>Formar grupos más grandes de<b>1</b>Es posible cubrir todos los minitérminos. Los grupos deben ser una potencia de 2.</li>
+<li>Escribe valores numéricos binarios para grupos.</li>
+<li>Convierta el valor binario en un término de producto.</li>
+<li>Repita los pasos para otros grupos. Cada grupo produce términos p dentro de una suma de productos.</li>
+</ul>
+</p>
+<p>Hasta ahora no hay nada nuevo, se ha redactado un procedimiento formal para tratar los minitérminos. Esto sirve como patrón para tratar con maxterms.</p>
+<p>A continuación atacamos la función booleana que es<b>0</b>para una sola celda y<b>1</b>s para todos los demás.</p>
+<br/>
+<p>
+<p> <img src="14128.png"/> </p> <!--3-Kmap POS A'+B'+C'-->
+</p>
+<br/>
+<p>
+A <i>término máximo</i>es una expresión booleana que da como resultado una<b>0</b>para la salida de una expresión de una sola celda, y<b>1</b>s para todas las demás celdas del mapa de Karnaugh o tabla de verdad. La ilustración de arriba a la izquierda muestra el término máximo.<b>(A+B+C)</b>, un solo término de suma, como un solo<b>0</b>en un mapa que es de otra manera<b>1</b>s. Si un maxterm tiene un solo<b>0</b>y las celdas restantes como<b>1</b>s, parecería cubrir un área máxima de<b>1</b>s.
+</p>
+<p>Hay algunas diferencias ahora que estamos tratando con algo nuevo, maxterms. El término máximo es un<b>0</b>, no un<b>1</b>en el mapa de Karnaugh. Un término máximo es un término de suma,<b>(A+B+C)</b>en nuestro ejemplo, no es un término de producto.</p>
+<p>También parece extraño que<b>(A+B+C)</b>está mapeado en la celda<b>000</b>. Para la ecuación<b>Out=(A+B+C)=0</b>, las tres variables<b>(A, B, C)</b>individualmente debe ser igual a<b>0</b>. Solo<b>(0+0+0)=0</b>será igual<b>0</b>. Así colocamos nuestra suela<b>0</b>para minterm<b>(A+B+C)</b>en la celda<b>A,B,C=000</b>en el K-map, donde todas las entradas están<b>0</b>. Este es el único caso que nos dará una<b>0</b>para nuestro maxterm. Todas las demás células contienen<b>1</b>s porque cualquier valor de entrada distinto de (<b>(0,0,0)</b> for <b>(A+B+C)</b>rendimientos<b>1</b>s tras la evaluación.</p>
+<p>Con referencia a la figura anterior, el procedimiento para colocar un término máximo en el mapa K es:<ul>
+<li>Identifique el término de suma que se asignará.</li>
+<li>Escriba el valor numérico binario correspondiente.</li>
+<li>formar el complemento</li>
+<li>Utilice el complemento como dirección para colocar una<b>0</b>en el mapa K</li>
+<li>Repita lo mismo para otros términos máximos (términos de suma dentro de la expresión Producto de sumas).</li>
+</ul>
+</p>
+<br/>
+<p>
+<p> <img src="14129.png"/> </p> <!--3-Kmap POS A'+B'+C'-->
+</p>
+<br/>
+<p>Otro término máximo<b>A'+B'+C'</b>se muestra arriba. Numérico<b>000</b>corresponde a<b>A'+B'+C'</b>. El complemento es<b>111</b>. Coloque un<b>0</b>para maxterm<b>(A'+B'+C')</b>en esta celda<b>(1,1,1)</b>del K-map como se muestra arriba.</p>
+<p>¿Por qué debería<b>(A'+B'+C')</b>causar un<b>0</b>estar en la celda<b>111</b>?  Cuando<b>A'+B'+C'</b> is <b>(1'+1'+1')</b>, todo<b>1</b>s en, que es<b>(0+0+0)</b>después de tomar complementos, tenemos la única condición que nos dará una<b>0</b>. Mucho<b>1</b>s se complementan con todos<b>0</b>s, que es<b>0</b>cuando<b>OR</b>ed.
+</p>
+<br/>
+<p>
+<p> <img src="14130.png"/> </p> <!--3-Kmap  POS -->
+</p>
+<br/>
+<p>Una expresión o mapa booleano de producto de sumas puede tener varios términos máximos, como se muestra arriba.  maxtérmino<b>(A+B+C)</b>produce valores numéricos<b>111</b>que complementa a<b>000</b>, colocando un<b>0</b>en la celda<b>(0,0,0)</b>. maxtérmino<b>(A+B+C')</b>produce valores numéricos<b>110</b>que complementa a<b>001</b>, colocando un<b>0</b>en la celda<b>(0,0,1)</b>.
+</p>
+<p>Ahora que tenemos la configuración de k-map, lo que realmente nos interesa es mostrar cómo escribir una reducción del producto de sumas.  Formar el<b>0</b>s en grupos. Ese sería un grupo de dos a continuación. Escriba el valor binario correspondiente al término suma que es<b>(0,0,X)</b>. Tanto A como B son<b>0</b>para el grupo. Pero,<b>C</b>son ambos<b>0</b> and <b>1</b>entonces escribimos un<b>X</b>como marcador de posición para<b>C</b>. formar el complemento<b>(1,1,X)</b>. Escribe el término de suma<b>(A+B)</b>descartando el<b>C</b>y el<b>X</b>que ocupó su lugar. En general, espere tener más términos de suma multiplicados en el resultado del Producto de sumas. Sin embargo, aquí tenemos un ejemplo sencillo.</p>
+<p>
+<p> <img src="14131.png"/> </p> <!--3-Kmap  A+B -->
+</p>
+<p>Resumamos el procedimiento para escribir la reducción booleana del producto de sumas para un mapa K:<ul>
+<li>Formar grupos más grandes de<b>0</b>Es posible, cubriendo todos los términos máximos. Los grupos deben ser una potencia de 2.</li>
+<li>Escriba un valor numérico binario para el grupo.</li>
+<li>Complemento del valor numérico binario para el grupo.</li>
+<li>Convierta el valor del complemento en un término de suma.</li>
+<li>Repita los pasos para otros grupos. Cada grupo produce un término de suma dentro de un resultado de Producto de sumas.</li>
+</ul>
+</p>
+<br/>
+<p>
+<b>Ejemplo:</b>
+</p>
+<br/>
+<p>Simplifique la expresión booleana del producto de sumas a continuación y proporcione un resultado en formato POS.</p>
+<br/>
+<p>
+<p> <img src="14132.png"/> </p> <!--POS example-->
+</p>
+<br/>
+<p>
+<b>Solución:</b>
+</p>
+<br/>
+<p>Transfiera los siete maxterms al siguiente mapa como<b>0</b>s. Asegúrese de complementar las variables de entrada para encontrar la ubicación adecuada de la celda.</p>
+<br/>
+<p>
+<p> <img src="14133.png"/> </p> <!--4-Kmap  maxterm-->
+</p>
+<br/>
+<p>Mapeamos el<b>0</b>s tal como aparecen de izquierda a derecha, de arriba a abajo en el mapa de arriba. Ubicamos los últimos tres maxterms con líneas guía.</p>
+<p>Una vez que las celdas estén en su lugar arriba, forme grupos de celdas como se muestra a continuación. Los grupos más grandes darán un término suma con menos entradas. Menos grupos producirán menos términos de suma en el resultado.</p>
+<br/>
+<p>
+<p> <img src="14134.png"/> </p> <!--4-Kmap   -->
+</p>
+<br/>
+<p>Tenemos tres grupos, por lo que esperamos tener tres términos de suma en nuestro resultado POS anterior. El grupo de 4 celdas produce un término suma de 2 variables. Los dos grupos de 2 celdas nos dan dos términos de suma de 3 variables. Se muestran detalles de cómo llegamos a los términos de suma anteriores.  Para un grupo, escriba la dirección de entrada del grupo binario, luego complétela, convirtiéndola en el término de suma booleano.  El resultado final es producto de las tres sumas.</p>
+<br/>
+<p>
+<b>Ejemplo:</b>
+</p>
+<br/>
+<p>Simplifique la siguiente expresión booleana del producto de sumas y proporcione un resultado en formato SOP.</p>
+<br/>
+<p>
+<p> <img src="14132.png"/> </p> <!--4-Kmap   -->
+</p>
+<br/>
+<p>
+<b>Solución:</b>
+</p>
+<br/>
+<p>Esto parece una repetición del último problema.  Excepto que solicitamos una solución de suma de productos en lugar del producto de sumas que acabamos de terminar.  Mapear el término máximo<b>0</b>s del Producto de sumas dado como en el problema anterior, abajo a la izquierda.</p>
+<br/>
+<p>
+<p> <img src="14135.png"/> </p> <!--4-Kmap   -->
+</p>
+<br/>
+<p>Luego complete lo implícito<b>1</b>s en las celdas restantes del mapa de arriba a la derecha.</p>
+<br/>
+<p>
+<p> <img src="14136.png"/> </p> <!--4-Kmap   -->
+</p>
+<br/>
+<p>Formar grupos de<b>1</b>s para cubrir todo<b>1</b>s. Luego escriba el resultado simplificado de la suma de productos como en la sección anterior de este capítulo.  Esto es idéntico a un problema anterior.</p>
+<br/>
+<p>
+<p> <img src="14137.png"/> </p> <!--4-Kmap   -->
+</p>
+<br/>
+<p>Arriba mostramos tanto la solución de Producto de sumas, del ejemplo anterior, como la solución de Suma de productos del problema actual para comparar. ¿Cuál es la solución más sencilla? El POS utiliza puertas 3-O y puerta 1-Y, mientras que el SOP utiliza puertas 3-Y y puerta 1-O. Ambos utilizan cuatro puertas cada uno. Mirando más de cerca, contamos el número de entradas de puerta. El POS utiliza 8 entradas; el SOP utiliza 7 entradas.  Según la definición de solución de costo mínimo, la solución SOP es más simple.  Este es un ejemplo de una respuesta técnicamente correcta que es de poca utilidad en el mundo real.</p>
+<p>La mejor solución depende de la complejidad y de la familia lógica que se utilice.  La solución SOP suele ser mejor si se utiliza la familia lógica TTL, ya que las puertas NAND son el componente básico, que funciona bien con las implementaciones SOP. Por otro lado, una solución POS sería aceptable cuando se utiliza la familia lógica CMOS, ya que están disponibles todos los tamaños de puertas NOR.</p>
+<br/>
+<p>
+<p> <img src="14138.png"/> </p> <!--POS SOP diagram   -->
+</p>
+<br/>
+<p>Los diagramas de puerta para ambos casos se muestran arriba, Producto de sumas a la izquierda y Suma de productos a la derecha.</p>
+<p>A continuación, analizamos más de cerca la versión de suma de productos de nuestra lógica de ejemplo, que se repite a la izquierda.</p>
+<br/>
+<p>
+<p> <img src="14139.png"/> </p> <!--and/or vs NAND-NAND -->
+</p>
+<br/>
+<a name="nand-nand logic"></a>
+<p>Sobre todo, las puertas AND de la izquierda han sido reemplazadas por puertas NAND a la derecha. La puerta OR en la salida se reemplaza por una puerta NAND.  Para demostrar que la lógica AND-OR es equivalente a la lógica NAND-NAND, mueva las burbujas invertidas del inversor en la salida de las puertas 3-NAND a la entrada de la NAND final como se muestra yendo de arriba a la derecha a abajo a la izquierda.</p>
+<br/>
+<p>
+<p> <img src="14140.png"/> </p> <!--gate diagram -->
+</p>
+<br/>
+<a name="DeMorgan's theorem"></a>
+<p>Arriba a la derecha vemos que la puerta NAND de salida con entradas invertidas es lógicamente equivalente a una puerta OR según el teorema de DeMorgan y la doble negación. Esta información es útil para construir lógica digital en un entorno de laboratorio donde las puertas NAND de la familia lógica TTL están más disponibles en una amplia variedad de configuraciones que otros tipos.</p>
+<a name="nand-nand logic"></a>
+<p>El procedimiento para construir la lógica NAND-NAND, en lugar de la lógica AND-OR, es el siguiente:<ul>
+<li>Producir un diseño lógico de suma de productos reducida.</li>
+<li>Al dibujar el diagrama de cableado del SOP, reemplace todas las puertas (tanto AND como OR) con puertas NAND.</li>
+<li>Las entradas no utilizadas deben vincularse a la lógica Alta.</li>
+<li>En caso de resolución de problemas, los nodos internos en el primer nivel de las salidas de la puerta NAND NO coinciden con los niveles lógicos del diagrama Y-O, sino que están invertidos. Utilice el diagrama lógico NAND-NAND. Sin embargo, los insumos y el producto final son idénticos.</li>
+<li>Etiquete los paquetes múltiples U1, U2, etc.</li>
+<li>Utilice la hoja de datos para asignar números de pin a las entradas y salidas de todas las puertas.</li>
+</ul>
+</p>
+<br/>
+<p>
+<b>Ejemplo:</b>
+</p>
+<br/>
+<p>Revisemos un problema anterior que involucra una minimización de SOP. Produzca una solución de producto de sumas. Compare la solución POS con el SOP anterior.</p>
+<br/>
+<p>
+<p> <img src="14141.png"/> </p> <!--SOP POS   -->
+</p>
+<br/>
+<p>
+<b>Solución:</b>
+</p>
+<br/>
+<p>Arriba a la izquierda tenemos el problema original que comienza con una expresión booleana no simplificada de 9 mintérminos. Al revisar, formamos cuatro grupos de 4 celdas para producir un resultado SOP de 4 términos de producto, abajo a la izquierda.</p>
+<p>En la figura del medio, arriba, completamos los espacios vacíos con lo implícito<b>0</b>s. El<b>0</b>Los s forman dos grupos de 4 células. El grupo azul sólido es<b>(A'+B)</b>, el grupo rojo discontinuo es<b>(C'+D)</b>. Esto produce dos términos de suma en el resultado del Producto de sumas, arriba a la derecha<b>Out = (A'+B)(C'+D)</b>
+</p>
+<p>La comparación de la simplificación del SOP anterior (izquierda) con la simplificación del POS (derecha) muestra que el POS es la solución de menor costo. El SOP utiliza 5 puertas en total, el POS utiliza sólo 3 puertas. Esta solución POS incluso parece atractiva cuando se utiliza lógica TTL debido a la simplicidad del resultado. Podemos encontrar puertas AND y una puerta OR con 2 entradas.</p>
+<br/>
+<p>
+<p> <img src="14142.png"/> </p> <!--SOP POS diagram -->
+</p>
+<br/>
+<p>Los diagramas de puerta SOP y POS se muestran arriba para nuestro problema de comparación.</p>
+<p>Dadas las configuraciones de pines para las puertas de circuito integrado de la familia lógica TTL a continuación, etiquete el diagrama de maxterm arriba a la derecha con designadores de circuito (U1-a, U1-b, U2-a, etc.) y números de pines.</p>
+<p>
+<p> <img src="14145.png"/> </p> <!--SOP POS diagram -->
+</p>
+<br/>
+<p>Cada paquete de circuito integrado que utilicemos recibirá un designador de circuito: U1, U2, U3.  Para distinguir entre las puertas individuales dentro del paquete, se identifican como a, b, c, d, etc. El paquete de inversor hexagonal 7404 es U1. Los inversores individuales que contiene son U1-a, U1-b, U1-c, etc. U2 está asignado a la puerta OR cuádruple 7432. U3 está asignado a la puerta AND cuádruple 7408. Con referencia a los números de pin en el diagrama del paquete anterior, asignamos números de pin a todas las entradas y salidas de la puerta en el diagrama esquemático a continuación.</p>
+<p>Ahora podemos construir este circuito en un laboratorio. O podríamos diseñar un<i>placa de circuito impreso</i>por ello. Una placa de circuito impreso contiene "cableado" de lámina de cobre respaldado por un sustrato no conductor de fibra de vidrio fenólica o epoxi. Las placas de circuito impreso se utilizan para producir circuitos electrónicos en masa. Conecte a tierra las entradas de las puertas no utilizadas.</p>
+<br/>
+<p>
+<p> <img src="14146.png"/> </p> <!--SOP POS diagram -->
+</p>
+<br/>
+<p>Etiquete el diagrama de la solución POS anterior arriba a la izquierda (tercera figura atrás) con designadores de circuito y números de pines. Esto será similar a lo que acabamos de hacer.</p>
+<p>
+<p> <img src="14147.png"/> </p> <!--TTL 7400, 7420  -->
+</p>
+<br/>
+<p>Podemos encontrar puertas AND de 2 entradas, 7408 en el ejemplo anterior. Sin embargo, tenemos problemas para encontrar una puerta OR de 4 entradas en nuestro catálogo TTL. El único tipo de puerta con 4 entradas es la puerta NAND 7420 que se muestra arriba a la derecha.</p>
+<p>Podemos convertir la puerta NAND de 4 entradas en una puerta OR de 4 entradas invirtiendo las entradas a la puerta NAND como se muestra a continuación. Entonces usaremos la puerta NAND de 4 entradas 7420 como puerta OR invirtiendo las entradas.</p>
+<br/>
+<p>
+<p> <img src="14148.png"/> </p> <!--SOP DeMorgan's -->
+</p>
+<br/>
+<p>No usaremos inversores discretos para invertir las entradas a la puerta NAND de 4 entradas 7420, sino que la manejaremos con puertas NAND de 2 entradas en lugar de las puertas AND requeridas en la solución SOP, minterm. La inversión en la salida de las puertas NAND de 2 entradas proporciona la inversión para la puerta OR de 4 entradas.</p>
+<br/>
+<p>
+<p> <img src="14149.png"/> </p> <!--SOP  diagram -->
+</p>
+<br/>
+<a name="nand-nand logic"></a>
+<p>El resultado se muestra arriba. Es la única forma práctica de construirlo con puertas TTL mediante el uso de lógica NAND-NAND que reemplaza la lógica AND-OR.</p>
+<br/>
+<h2><u><a name="xtocid92058">Σ (sum) and Π (product) notation</a></u></h2>
+<p>Como referencia, esta sección presenta la terminología utilizada en algunos textos para describir los minterms y maxterms asignados a un mapa de Karnaugh. De lo contrario, no hay material nuevo aquí.</p>
+<a name="minterm sum Σ "></a>
+<p>Σ (sigma) indica suma y "m" minúscula indica mintérminos. Σm indica suma de mintérminos. Se revisa el siguiente ejemplo para ilustrar nuestro punto. En lugar de una descripción de una ecuación booleana de lógica no simplificada, enumeramos los minitérminos.</p>
+<blockquote>
+<p>f(A,B,C,D) = Σ metro(1, 2, 3, 4, 5, 7, 8, 9, 11, 12, 13, 15)</p>
+<br/>
+<p>or</p>
+<br/>
+<p>f(A,B,C,D) = Σ(metro<sub>1</sub>,m<sub>2</sub>,m<sub>3</sub>,m<sub>4</sub>,m<sub>5</sub>,m<sub>7</sub>,m<sub>8</sub>,m<sub>9</sub>,m<sub>11</sub>,m<sub>12</sub>,m<sub>13</sub>,m<sub>15</sub>)
+</p>
+</blockquote>
+<br/>
+<p>Los números indican la ubicación o dirección de la celda dentro de un mapa de Karnaugh como se muestra abajo a la derecha. Esta es sin duda una forma compacta de describir una lista de minitérminos o celdas en un K-map.</p>
+<br/>
+<p>
+<p> <img src="14162.png"/> </p> <!--SOP (sigma) -->
+</p>
+<br/>
+<p>La solución de suma de productos no se ve afectada por la nueva terminología. los minterms,<b>1</b>s, en el mapa se han agrupado como de costumbre y se ha escrito una solución de suma de productos.</p>
+<a name="maxterm product Π "></a>
+<p>A continuación, mostramos la terminología para describir una lista de maxterms. El producto se indica con la letra griega Π (pi) y la "M" mayúscula indica términos máximos. ΠM indica producto de maxterms. El mismo ejemplo ilustra nuestro punto. La descripción de la ecuación booleana de la lógica no simplificada se reemplaza por una lista de términos máximos.</p>
+<blockquote>
+<p>f(A,B,C,D) = ΠM(2, 6, 8, 9, 10, 11, 14)</p>
+<br/>
+<p>or</p>
+<br/>
+<p>f(A,B,C,D) = Π(M<sub>2</sub>, M<sub>6</sub>, M<sub>8</sub>, m<sub>9</sub>, M<sub>10</sub>, M<sub>11</sub>, M<sub>14</sub>)
+</p>
+</blockquote>
+<br/>
+<p>Una vez más, los números indican las ubicaciones de las direcciones de las celdas de K-map. Para maxterms esta es la ubicación de<b>0</b>s, como se muestra a continuación. Una solución de Producto de sumas se completa de la manera habitual.</p>
+<br/>
+<p>
+<p> <img src="14163.png"/> </p> <!--POS PI  -->
+</p>
+<br/>
+<a name="don't cares in Karnaugh map"></a>
+<h2><u><a name="xtocid92059">Don't care cells in the Karnaugh map</a></u></h2>
+<p>Hasta este punto hemos considerado problemas de reducción lógica donde las condiciones de entrada estaban completamente especificadas. Es decir, una tabla de verdad de 3 variables o mapa de Karnaugh tenía 2<sup>n</sup>= 2<sup>3</sup>u 8 entradas, una tabla o mapa completo. No siempre es necesario completar la tabla de verdad completa para algunos problemas del mundo real. Es posible que tengamos la opción de no completar la tabla completa.</p>
+<p>Por ejemplo, cuando trabajamos con números BCD (decimal codificado en binario) codificados como cuatro bits, es posible que no nos importe ningún código por encima del rango BCD de (0, 1, 2...9). Los códigos binarios de 4 bits para números hexadecimales (Ah, Bh, Ch, Eh, Fh) no son códigos BCD válidos. Por lo tanto, no tenemos que completar esos códigos al final de una tabla de verdad, o K-map, si no nos interesa. Normalmente no nos importaría completar esos códigos porque esos códigos (1010, 1011, 1100, 1101, 1110, 1111) nunca existirán mientras tratemos solo con números codificados en BCD.  Estos seis códigos inválidos son<i>no me importa</i>en lo que a nosotros respecta. Es decir, no nos importa qué salida produce nuestro circuito lógico, ya que a estos no les importa.</p>
+<p>No me importa en un mapa de Karnaugh, o en una tabla de verdad, puede ser cualquiera de las dos cosas<b>1</b>s o<b>0</b>s, siempre y cuando no nos importe cuál sea la salida para una condición de entrada que nunca esperamos ver. Trazamos estas celdas con un asterisco, *, entre las normales<b>1</b>arena<b>0</b>s. Al formar grupos de células, trate la célula que no le importa como una<b>1</b>o un<b>0</b>, o ignorar los "no me importa". Esto es útil si nos permite formar un grupo más grande del que sería posible sin el "no me importa". No es necesario agrupar todos o alguno de los "no le importa". Úselos solo en grupo si simplifica la lógica.</p>
+<br/>
+<p>
+<p> <img src="14155.png"/> </p> <!--3 ea 3-Kmap don't care -->
+</p>
+<br/>
+<p>Arriba hay un ejemplo de una función lógica donde la salida deseada es<b>1</b>para entrada<b>ABC = 101</b>sobre el rango de<b>000 to 101</b>. No nos importa cuál sea la salida para las otras posibles entradas (<b>110, 111)</b>. Mapea a esos dos como si no les importara. Mostramos dos soluciones. La solución de la derecha Out = AB'C es la solución más compleja ya que no utilizamos las celdas de no importa. La solución en el medio, Out=AC, es menos compleja porque agrupamos una celda de "no me importa" con la única<b>1</b>para formar un grupo de dos. La tercera solución, un Producto de sumas a la derecha, resulta de agrupar un no me importa con tres ceros formando un grupo de cuatro.<b>0</b>s. Esto es lo mismo, menos complejo,<b>Out=AC</b>. Hemos ilustrado que las celdas de "no importa" pueden usarse como<b>1</b>s o<b>0</b>s, lo que sea útil.</p>
+<br/>
+<p>
+<p> <img src="14156.png"/> </p> <!--bicycle -->
+</p>
+<br/>
+<p>Se pidió a la clase de electrónica de Lightning State College que construyera la lógica de la lámpara para una exhibición de bicicletas estacionarias en el museo de ciencias local. A medida que un ciclista aumenta su velocidad de pedaleo, se encenderán luces en una pantalla de gráfico de barras. Ninguna lámpara se encenderá si no hay movimiento. A medida que aumenta la velocidad, se enciende la lámpara inferior, L1, luego L1 y L2, luego L1, L2 y L3, hasta que todas las lámparas se encienden a la velocidad más alta. Una vez que todas las luces se enciendan, ningún aumento adicional de velocidad tendrá ningún efecto en la pantalla.</p>
+<p>Un pequeño generador de CC acoplado al neumático de la bicicleta genera un voltaje proporcional a la velocidad. Impulsa un tablero de tacómetro que limita el voltaje en el extremo superior de la velocidad donde se encienden todas las luces. Ningún aumento adicional de la velocidad puede aumentar el voltaje más allá de este nivel. Esto es crucial porque el convertidor A a D (Analógico a Digital) genera un código de 3 bits,<b>ABC</b>, 2<sup>3</sup>u 8 códigos, pero solo tenemos cinco lámparas.<b>A</b>es la parte más significativa,<b>C</b>el bit menos significativo.</p>
+<p>La lógica de la lámpara debe responder a los seis códigos de la A a la D. Para<b>ABC=000</b>, no hay movimiento, no hay lámparas encendidas.  Para los cinco códigos<b>(001 a 101)</b>Las lámparas L1, L1 y L2, L1 y L2 y L3 se encenderán hasta todas las lámparas, a medida que aumente la velocidad, el voltaje y el código A a D (ABC). No nos importa la respuesta a los códigos de entrada.<b>(110, 111)</b>porque estos códigos nunca saldrán de la A a la D debido a la limitación en el bloque tacómetro. Necesitamos diseñar cinco circuitos lógicos para accionar las cinco lámparas.</p>
+<br/>
+<p>
+<p> <img src="14157.png"/> </p> <!--tachometer maps -->
+</p>
+<br/>
+<p>Desde entonces, ninguna de las lámparas se enciende durante<b>ABC=000</b>desde la A hasta la D, introduzca un<b>0</b>en todos los K-maps para celular<b>ABC=000</b>.  Ya que no nos importan los códigos que nunca se encontrarán<b>(110, 111)</b>, ingrese asteriscos en esas dos celdas en los cinco K-maps.</p>
+<p>La lámpara L5 solo se encenderá para el código<b>ABC=101</b>. Introduzca un<b>1</b>en esa celda y cinco<b>0</b>s en las celdas vacías restantes de L5 K-map.</p>
+<p>L4 se iluminará inicialmente para el código<b>ABC=100</b>, y permanecerá iluminado para cualquier código mayor,<b>ABC=101</b>, porque todas las lámparas debajo de L5 se encenderán cuando se encienda L5. Ingresar<b>1</b>s en células<b>100</b> and <b>101</b>del mapa L4 para que se encienda para esos códigos. cuatro<b>0</b>Llenamos las celdas L4 restantes.</p>
+<p>L3 se iluminará inicialmente para el código<b>ABC=011</b>. También se iluminará siempre que se iluminen L5 y L4. Introduzca tres<b>1</b>s en células<b>011, 100, 101</b>para el mapa L3. llenar tres<b>0</b>s en las celdas L3 restantes.</p>
+<p>luces L2 para<b>ABC=010</b>y códigos mayores. Llenar<b>1</b>s en células<b>010, 011, 100, 101</b>, y dos<b>0</b>s en las celdas restantes.</p>
+<p>El único momento en que L1 no se enciende es porque no hay movimiento. Ya hay un<b>0</b>en la celda<b>ABC=000</b>. Las otras cinco células reciben<b>1</b>s.
+</p>
+<p>Agrupa el<b>1</b>Es como se muestra arriba, usando don't cares siempre que resulte un grupo más grande. El mapa L1 muestra tres términos de producto, correspondientes a tres grupos de 4 celdas. Usamos ambos "no me importa" en dos de los grupos y uno "no me importa" en el tercer grupo. El don't care nos permitió formar grupos de cuatro.</p>
+<p>De manera similar, los mapas L2 y L4 producen grupos de 4 células con la ayuda de las células que no le importan. La reducción de L4 es sorprendente porque la lámpara L4 está controlada por el bit más significativo del convertidor A a D,<b>L5=A</b>. No se requieren puertas lógicas para la lámpara L4. En los mapas L3 y L5, las celdas individuales forman grupos de dos con celdas que no les importan.  En los cinco mapas, la ecuación booleana reducida es menos compleja que sin la ecuación booleana.</p>
+<br/>
+<p>
+<p> <img src="14158.png"/> </p> <!--tachometer gates -->
+</p>
+<br/>
+<p>El diagrama de puerta para el circuito está arriba. Las salidas de las cinco ecuaciones de K-map impulsan los inversores. Tenga en cuenta que la L1<b>OR</b>La puerta no es una puerta de 3 entradas sino una puerta de 2 entradas que tiene entradas.<b>(A+B), C</b>, salida<b>A+B+C</b> The <i>colector abierto</i>inversores,<b>7406</b>, son deseables para controlar los LED, aunque no forman parte del diseño lógico de K-map. La salida de una compuerta de colector abierto o inversor tiene un circuito abierto en el colector interno del paquete de circuito integrado para que toda la corriente del colector pueda fluir a través de una carga externa. Un nivel alto activo en cualquiera de los inversores reduce la salida, extrayendo corriente a través del LED y la resistencia limitadora de corriente. Los LED probablemente serían parte de un relé de estado sólido que acciona lámparas de 120 VCA para una exhibición de museo, que no se muestra aquí.</p>
+<a name="Karnaugh map"></a>
+<a name="fan-in"></a>
+<h2><u><a name="xtocid920510">Larger 5 &amp; 6-variable Karnaugh maps</a></u></h2>
+<p>Los mapas de Karnaugh más grandes reducen los diseños lógicos más grandes. ¿Qué tan grande es lo suficientemente grande? Eso depende del número de entradas,<i>fanáticos</i>, al circuito lógico considerado. Una de las grandes empresas de lógica programable tiene la respuesta.</p>
+<blockquote>Los propios datos de Altera, extraídos de su biblioteca de diseños de clientes, respaldan el valor de la heterogeneidad. Al examinar los conos lógicos, mapearlos en nodos basados ​​en LUT y ordenarlos por la cantidad de entradas que serían mejores en cada nodo, Altera descubrió que la distribución de fan-ins era casi plana entre dos y seis entradas, con un buen pico en cinco.</blockquote>
+<p>La respuesta es no más de seis entradas para la mayoría de los diseños y cinco entradas para el diseño lógico promedio. A continuación se muestra el mapa de Karnaugh de cinco variables.</p>
+<br/>
+<p>
+<p> <img src="14150.png"/> </p> <!--5-Kmap Gray code -->
+</p>
+<br/>
+<p>Arriba se muestra la versión anterior del mapa K de cinco variables, un mapa de código Gray o mapa de reflexión. La parte superior (y el lado de un mapa de 6 variables) del mapa está numerada en código Gray completo. El código Gray se refleja aproximadamente en la mitad del código. Este mapa de estilo se encuentra en textos más antiguos. El estilo preferido más nuevo se encuentra a continuación.</p>
+<br/>
+<p>
+<p> <img src="14151.png"/> </p> <!--5-Kmap, overlay  -->
+</p>
+<br/>
+<p>La versión superpuesta del mapa de Karnaugh, que se muestra arriba, son simplemente dos (cuatro para un mapa de 6 variables) mapas idénticos, excepto por el bit más significativo de la dirección de 3 bits en la parte superior. Si miramos la parte superior del mapa, veremos que la numeración es diferente al mapa de código Gray anterior. Si ignoramos el dígito más significativo de los números de 3 dígitos, la secuencia<b>00, 01, 11, 10</b>está en el encabezado de ambos submapas del mapa superpuesto. La secuencia de ocho números de 3 dígitos no es código Gray. Aunque la secuencia de cuatro de los dos bits menos significativos sí lo es.</p>
+<br/>
+<p>Pongamos en práctica nuestro mapa de Karnaugh de 5 variables. Diseñe un circuito que tenga una entrada binaria de 5 bits (A, B, C, D, E), siendo A el MSB (bit más significativo).  Debe producir una salida lógica Alta para cualquier número primo detectado en los datos de entrada.</p>
+<br/>
+<p>
+<p> <img src="14152.png"/> </p> <!--5-Kmap, Gery code  -->
+</p>
+<br/>
+<p>Mostramos la solución anterior en el mapa de código Gray (reflexión) anterior como referencia. Los números primos son (1,2,3,5,7,11,13,17,19,23,29,31). Trazar un<b>1</b>en cada celda correspondiente. Luego, proceda con la agrupación de las células. Termine escribiendo el resultado simplificado. Tenga en cuenta que el grupo de 4 celdas A'B'E consta de dos pares de celdas a ambos lados de la línea especular. Lo mismo ocurre con el grupo de dos células AB'DE. Es un grupo de 2 celdas que se reflejan sobre la línea del espejo. Cuando utilice esta versión de K-map, busque imágenes reflejadas en la otra mitad del mapa.</p>
+<br/>
+<p>
+Out = A'B'E + B'C'E + A'C'DE + A'CD'E + ABCE + AB'DE + A'B'C'D
+</p>
+<br/>
+<p>A continuación mostramos la versión más común del mapa de 5 variables, el mapa superpuesto.</p>
+<br/>
+<p>
+<p> <img src="14153.png"/> </p> <!--5-Kmap, overlay  -->
+</p>
+<br/>
+<p>Si comparamos los patrones en los dos mapas, algunas de las celdas en la mitad derecha del mapa se mueven ya que la dirección en la parte superior del mapa es diferente. También debemos adoptar un enfoque diferente para detectar puntos en común entre las dos mitades del mapa. Superponga la mitad del mapa sobre la otra mitad. Cualquier superposición del mapa superior al mapa inferior es un grupo potencial. La siguiente figura muestra que el grupo AB'DE está compuesto por dos celdas apiladas. El grupo A'B'E consta de dos pares de celdas apiladas.</p>
+<p>Para el<b>A'B'E</b>grupo de 4 celdas<b>ABCDE = 00xx1</b>para el grupo. Es decir A,B,E son iguales<b>001</b>respectivamente para el grupo. Y,<b>CD=xx</b>es decir, varía, no hay puntos en común en<b>CD=xx</b>para el grupo de 4 celdas. Desde<b>ABCDE = 00xx1</b>, el grupo de 4 celdas está cubierto por<b>A'B'XXE = A'B'E</b>.
+</p>
+<br/>
+<p>
+<p> <img src="14154.png"/> </p> <!--5-Kmap, overlay 3-D  -->
+</p>
+<br/>
+<p>El mapa superpuesto de 5 variables anterior se muestra apilado.</p>
+<br/>
+<p>A continuación se muestra un ejemplo de un mapa de Karnaugh de seis variables. Hemos apilado mentalmente los cuatro submapas para ver el grupo de 4 celdas correspondientes a<b>Out = C'F'</b>
+<br/>
+<p>
+<p> <img src="14159.png"/> </p> <!--6-Kmap, overlay 3-D  -->
+</p>
+<br/>
+<a name="magnitude comparator"></a>
+<p>Un comparador de magnitud (utilizado para ilustrar un mapa K de 6 variables) compara dos números binarios, indicando si son iguales, mayores o menores entre sí en tres salidas respectivas. Un comparador de magnitud de tres bits tiene dos entradas A<sub>2</sub>A<sub>1</sub>A<sub>0</sub>y B<sub>2</sub>B<sub>1</sub>B<sub>0</sub>Un comparador de magnitud de circuito integrado (7485) en realidad tendría cuatro entradas, pero el siguiente mapa de Karnaugh debe mantenerse en un tamaño razonable. Sólo resolveremos el<b>A&gt;B</b>producción.</p>
+<p>A continuación, un mapa de Karnaugh de 6 variables ayuda a simplificar la lógica de un comparador de magnitud de 3 bits. Este es un tipo de mapa superpuesto. El código de dirección binario en la parte superior e inferior del lado izquierdo del mapa no es un código Gray completo de 3 bits. Aunque los códigos de dirección de 2 bits de los cuatro submapas son códigos Gray. Encuentre expresiones redundantes apilando los cuatro submapas uno encima del otro (como se muestra arriba). Podría haber celdas comunes a los cuatro mapas, aunque no en el ejemplo siguiente. Tiene celdas comunes a pares de submapas.</p>
+<br/>
+<p>
+<p> <img src="14160.png"/> </p> <!--magnitude comparator-->
+</p>
+<br/>
+<p>La salida A&gt;B anterior es ABC&gt;XYZ en el mapa siguiente.</p>
+<p>
+<p> <img src="14161.png"/> </p> <!--6-Kmap, ABC GT XYZ  -->
+</p>
+<br/>
+<p>dondequiera que sea<b>ABC</b>es mayor que<b>XYZ</b>, a <b>1</b>está trazado. en la primera linea<b>ABC=000</b>no puede ser mayor que ninguno de los valores de<b>XYZ</b>. No<b>1</b>s en esta línea. En la segunda línea,<b>ABC=001</b>, solo la primera celda<b>ABCXYZ= 001000</b> is <b>ABC</b>más que<b> XYZ</b>. un solo<b>1</b>se ingresa en la primera celda de la segunda línea. La cuarta línea,<b>ABC=010</b>, tiene un par de<b>1</b>s. La tercera línea,<b>ABC=011</b>tiene tres<b>1</b>s.  Así, el mapa se llena de<b>1</b>s en cualquier celda donde<b>ABC</b>es mayor que<b>XXZ</b>.
+</p>
+<p>Al agrupar celdas, forme grupos con submapas adyacentes si es posible. Todos menos un grupo de 16 celdas involucran celdas de pares de submapas. Busque los siguientes grupos:<ul>
+<li>1 group of 16-cells</li>
+<li>2 groups of 8-cells</li>
+<li>4 groups of 4-cells</li>
+</ul>El grupo de 16 células,<b>AX'</b>ocupa todo el submapa inferior derecho; sin embargo, no lo encerramos en un círculo en la figura de arriba.</p>
+<p>Un grupo de 8 celdas se compone de un grupo de 4 celdas en el submapa superior superpuesto a un grupo similar en el mapa inferior izquierdo.
+El segundo grupo de 8 celdas está compuesto por un grupo similar de 4 celdas en el submapa derecho que se superpone al mismo grupo de 4 celdas en el mapa inferior izquierdo.</p>
+<p>Los cuatro grupos de 4 celdas se muestran en el mapa de Karnaugh de arriba con los términos de producto asociados. Junto con los términos del producto para los dos grupos de 8 celdas y el grupo de 16 celdas, se muestra la reducción final de la suma de productos, los siete términos.  contando el<b>1</b>s en el mapa, hay un total de 16+6+6=28 unos. Antes de la reducción lógica de K-map, habría habido 28 términos de producto en nuestra salida de SOP, cada uno con 6 entradas. El mapa de Karnaugh arrojó siete términos de producto de cuatro o menos entradas.  ¡Esto es realmente de lo que se tratan los mapas de Karnaugh!</p>
+<p>El diagrama de cableado no se muestra. Sin embargo, aquí está la lista de piezas para el comparador de magnitud de 3 bits para ABC&gt;XYZ que utiliza 4 piezas de la familia lógica TTL:<ul>
+<li>1 ea 7410 triple 3-input NAND gate AX', ABY', BX'Y' </li>
+<li>2 ea 7420 dual 4-input NAND gate ABCZ', ACY'Z', BCX'Z', CX'Y'Z'</li>
+<li>1 ea 7430 8-input NAND gate for output of 7-P-terms</li>
+</ul>
+</p>
+<br/>
+<ul>
+<li>
+<b>REVISAR:</b>
+</li>
+<li>El álgebra booleana, los mapas de Karnaugh y el CAD (diseño asistido por computadora) son métodos de simplificación lógica. El objetivo de la simplificación lógica es una solución de costo mínimo.</li>
+<li>Una solución de costo mínimo es una reducción lógica válida con el número mínimo de puertas y el número mínimo de entradas.</li>
+<li>Los diagramas de Venn nos permiten visualizar expresiones booleanas, facilitando la transición a mapas de Karnaugh.</li>
+<li>Las celdas del mapa de Karnaugh están organizadas en orden de código Gray para que podamos visualizar la redundancia en expresiones booleanas, lo que resulta en una simplificación.</li>
+<li>Las expresiones de suma de productos (suma de minters) más comunes se implementan como puertas AND (productos) que alimentan una única puerta OR (suma).</li>
+<li>Las expresiones de suma de productos (lógica Y-O) son equivalentes a una implementación NAND-NAND. Todas las puertas AND y OR se reemplazan por puertas NAND.</li>
+<li>Las expresiones de producto de sumas, que se utilizan con menos frecuencia, se implementan como puertas OR (sumas) que se alimentan de una única puerta AND (producto). Las expresiones de producto de sumas se basan en la<b>0</b>s, maxterms, en un mapa de Karnaugh.</li>
+</ul>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="DIGI_A3.html">CC BY License</a>.
+</p>
+
+
+
+</p></p></p></body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="DIGI_7.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="DIGI_9.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

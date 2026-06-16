@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen I (DC) - Capítulo 4 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #3b82f6; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen I (DC) - Capítulo 4</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen I</h1>
+<h1>Capítulo 4</h1>
+<h1>NOTACIÓN CIENTÍFICA Y PREFIJOS MÉTRICOS</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid87340"><u>Scientific notation</u></a></li>
+<li><a href="#xtocid87341"><u>Arithmetic with scientific notation</u></a></li>
+<li><a href="#xtocid87342"><u>Metric notation</u></a></li>
+<li><a href="#xtocid87343"><u>Metric prefix conversions</u></a></li>
+<li><a href="#xtocid87344"><u>Hand calculator use</u></a></li>
+<li><a href="#xtocid87345"><u>Scientific notation in SPICE</u></a></li>
+<li><a href="#xtocid87346"><u>Contributors</u></a></li></ul>
+<h2><u><a name="xtocid87340">Scientific notation</a></u></h2>
+<a name="Proton"></a>
+<a name="Proton, mass of"></a>
+<p>En muchas disciplinas de la ciencia y la ingeniería se deben gestionar cantidades numéricas muy grandes y muy pequeñas.  Algunas de estas cantidades son alucinantes por su tamaño, ya sean extremadamente pequeñas o extremadamente grandes.  Tomemos, por ejemplo, la masa de un protón, una de las partículas constituyentes del núcleo de un átomo:</p>
+<br/>
+<p>Masa de protones = 0,00000000000000000000000167 gramos</p>
+<br/>
+<a name="Amp"></a>
+<p>O considere la cantidad de electrones que pasan por un punto de un circuito cada segundo con una corriente eléctrica constante de 1 amperio:</p>
+<br/>
+<p>
+1 amp = 6,250,000,000,000,000,000 electrons per second  
+</p>
+<br/>
+<p>Muchos ceros, ¿no?  Obviamente, puede resultar bastante confuso tener que manejar tantos dígitos cero en números como este, incluso con la ayuda de calculadoras y computadoras.</p>
+<a name="Significant digit"></a>
+<a name="Digit, significant"></a>
+<p>Tome nota de esos dos números y de la relativa escasez de dígitos distintos de cero en ellos.  Para la masa del protón, todo lo que tenemos es un "167" precedido por 23 ceros antes del punto decimal.  Para la cantidad de electrones por segundo en 1 amperio, tenemos "625" seguido de 16 ceros.  Llamamos al intervalo de dígitos distintos de cero (del primero al último), más cualquier dígito cero<i>not</i>Se utiliza simplemente para mantener un lugar, los "dígitos significativos" de cualquier número.</p>
+<p>Los dígitos significativos en una medición del mundo real suelen reflejar la precisión de esa medición.  Por ejemplo, si dijéramos que un automóvil pesa 3000 libras, probablemente no queremos decir que el automóvil en cuestión pesa<i>exactamente</i> 3,000 pounds, but that we've rounded its weight to a value more convenient to say and remember.  That rounded figure of 3,000 has only one significant digit: the "3" in front -- the zeros merely serve as placeholders.  However, if we were to say that the car weighed 3,005 pounds, the fact that the weight is not rounded to the nearest thousand pounds tells us that the two zeros in the middle aren't just placeholders, but that all four digits of the number "3,005" are significant to its representative accuracy.  Thus, the number "3,005" is said to have <i>cuatro</i>cifras significativas.</p>
+<a name="Scientific notation"></a>
+<a name="Notation, scientific"></a>
+<p>De la misma manera, los números con muchos dígitos cero no son necesariamente representativos de una cantidad del mundo real hasta el punto decimal.  Cuando se sabe que este es el caso, dicho número se puede escribir en una especie de "taquigrafía" matemática para que sea más fácil de manejar.  Esta "taquigrafía" se llama<i>notación científica</i>.
+</p>
+<p>Con la notación científica, un número se escribe representando sus dígitos significativos como una cantidad entre 1 y 10 (o -1 y -10, para números negativos), y los ceros "marcadores de posición" se representan mediante un multiplicador de potencia de diez.  Por ejemplo:</p>
+<br/>
+<p>
+1 amp = 6,250,000,000,000,000,000 electrons per second    
+</p>
+<br/>
+<p>
+<i>. . . se puede expresar como . . .</i>
+</p>
+<br/>
+<p>
+1 amp = 6.25 x 10<sup>18</sup>electrones por segundo</p>
+<br/>
+<p>
+10 to the 18th power (10<sup>18</sup>) significa 10 multiplicado por sí mismo 18 veces, o un "1" seguido de 18 ceros.  Multiplicado por 6,25, parece "625" seguido de 16 ceros (tome 6,25 y omita el punto decimal 18 lugares a la derecha).  Las ventajas de la notación científica son obvias: el número no es tan difícil de manejar cuando se escribe en papel y los dígitos significativos son fáciles de identificar.</p>
+<p>Pero ¿qué pasa con números muy pequeños, como la masa del protón en gramos?  Todavía podemos usar la notación científica, excepto con una potencia de diez negativa en lugar de positiva, para desplazar el punto decimal hacia la izquierda en lugar de hacia la derecha:</p>
+<br/>
+<p>Masa de protones = 0,00000000000000000000000167 gramos</p>
+<br/>
+<p>. . . se puede expresar como . . .</p>
+<br/>
+<p>Masa del protón = 1,67 x 10<sup>-24</sup>gramos</p>
+<br/>
+<p>
+10 to the -24th power (10<sup>-24</sup>) significa el inverso (1/x) de 10 multiplicado por sí mismo 24 veces, o un "1" precedido por un punto decimal y 23 ceros.  Multiplicado por 1,67, parece "167" precedido por un punto decimal y 23 ceros.  Al igual que con los números muy grandes, al ser humano le resulta mucho más fácil manejar esta notación "taquigráfica".  Al igual que en el caso anterior, los dígitos significativos de esta cantidad están claramente expresados.</p>
+<p>Debido a que los dígitos significativos se representan "por sí solos", lejos del multiplicador de potencia de diez, es fácil mostrar un nivel de precisión incluso cuando el número parece redondo.  Tomando nuestro ejemplo del automóvil de 3000 libras, podríamos expresar el número redondeado de 3000 en notación científica como tal:</p>
+<br/>
+<p>peso del auto = 3 x 10<sup>3</sup>libras</p>
+<br/>
+<p>Si el automóvil realmente pesara 3005 libras (con precisión a la libra más cercana) y quisiéramos poder expresar esa precisión total de la medición, la cifra en notación científica podría escribirse así:</p>
+<br/>
+<p>peso del auto = 3.005 x 10<sup>3</sup>libras</p>
+<br/>
+<p>Sin embargo, ¿qué pasaría si el automóvil realmente pesara exactamente 3000 libras (a la libra más cercana)?  Si tuviéramos que escribir su peso en forma "normal" (3000 libras), no necesariamente estaría claro que este número fuera exacto a la libra más cercana y no simplemente redondeado a las mil libras más cercanas, o a las cien libras más cercanas, o a las diez libras más cercanas.  La notación científica, por otro lado, nos permite demostrar que los cuatro dígitos son significativos sin malentendidos:</p>
+<br/>
+<p>peso del coche = 3.000 x 10<sup>3</sup>libras</p>
+<br/>
+<p>Dado que no tendría sentido agregar ceros adicionales a la derecha del punto decimal (los ceros de reserva son innecesarios con la notación científica), conocemos esos ceros<i>debe</i>ser significativo para la precisión de la figura.</p>
+<h2><u><a name="xtocid87341">Arithmetic with scientific notation</a></u></h2>
+<p>Los beneficios de la notación científica no terminan con la facilidad de escritura y la expresión de precisión.  Esta notación también se presta bien a problemas matemáticos de multiplicación y división.  Digamos que queremos saber cuántos electrones fluirían por un punto en un circuito que transporta 1 amperio de corriente eléctrica en 25 segundos.  Si conocemos la cantidad de electrones por segundo en el circuito (lo cual sabemos), entonces todo lo que tenemos que hacer es multiplicar esa cantidad por la cantidad de segundos (25) para llegar a una respuesta del total de electrones:</p>
+<br/>
+<p>(6.250.000.000.000.000.000 electrones por segundo) x (25 segundos) =</p>
+<p>
+156,250,000,000,000,000,000 electrons passing by in 25 seconds  
+</p>
+<br/>
+<p>Usando notación científica, podemos escribir el problema así:</p>
+<br/>
+<p>(6,25x10<sup>18</sup>electrones por segundo) x (25 segundos)</p>
+<br/>
+<p>Si tomamos el "6,25" y lo multiplicamos por 25, obtenemos 156,25.  Entonces, la respuesta podría escribirse como:</p>
+<br/>
+<p>
+156.25 x 10<sup>18</sup>electrones</p>
+<br/>
+<p>Sin embargo, si queremos cumplir con la convención estándar para la notación científica, debemos representar los dígitos significativos como un número entre 1 y 10. En este caso, diríamos "1,5625" multiplicado por alguna potencia de diez.  Para obtener 1,5625 a partir de 156,25, tenemos que saltarnos la coma decimal dos lugares a la izquierda.  Para compensar esto sin cambiar el valor del número, tenemos que aumentar nuestra potencia dos niveles (10 elevado a la potencia 20 en lugar de 10 a la 18):</p>
+<br/>
+<p>
+1.5625 x 10<sup>20</sup>electrones</p>
+<br/>
+<p>¿Y si quisiéramos ver cuántos electrones pasarían en 3.600 segundos (1 hora)?  Para facilitar nuestro trabajo, también podríamos poner el tiempo en notación científica:</p>
+<br/>
+<p>(6,25x10<sup>18</sup>electrones por segundo) x (3,6 x 10<sup>3</sup>artículos de segunda clase)</p>
+<br/>
+<p>Para multiplicar, debemos tomar los dos conjuntos significativos de dígitos (6,25 y 3,6) y multiplicarlos; y necesitamos tomar las dos potencias de diez y multiplicarlas.  Tomando 6,25 por 3,6, obtenemos 22,5.  Tomando 10<sup>18</sup>veces 10<sup>3</sup>, obtenemos 10<sup>21</sup>(los exponentes con números de base comunes se suman).  Entonces, la respuesta es:</p>
+<br/>
+<p>
+22.5 x 10<sup>21</sup>electrones</p>
+<br/>
+<p>. . . o más propiamente. . .</p>
+<br/>
+<p>
+2.25 x 10<sup>22</sup>electrones</p>
+<br/>
+<p>Para ilustrar cómo funciona la división con notación científica, podríamos calcular el último problema "al revés" para descubrir cuánto tiempo tardarían en pasar tantos electrones con una corriente de 1 amperio:</p>
+<br/>
+<p>(2,25x10<sup>22</sup>electrones) / (6,25 x 10<sup>18</sup>electrones por segundo)</p>
+<br/>
+<p>Al igual que en la multiplicación, podemos manejar los dígitos significativos y las potencias de diez en pasos separados (recuerde que se restan los exponentes de las potencias de diez divididas):</p>
+<br/>
+<p>(2,25 / 6,25) x (10<sup>22</sup>/ 10<sup>18</sup>)
+</p>
+<br/>
+<a name="Slide rule"></a>
+<a name="Rule, slide"></a>
+<p>Y la respuesta es: 0,36 x 10<sup>4</sup>, o 3,6 x 10<sup>3</sup>, segundos.  Puedes ver que llegamos a la misma cantidad de tiempo (3600 segundos).  Ahora bien, quizás te preguntes cuál es el sentido de todo esto cuando tenemos calculadoras electrónicas que pueden manejar los cálculos automáticamente.  Bueno, en la época en que los científicos e ingenieros utilizaban computadoras analógicas con "regla de cálculo", estas técnicas eran indispensables.  La aritmética "dura" (que trata de las cifras de dígitos significativos) se realizaría con la regla de cálculo, mientras que las potencias de diez se podrían calcular sin ninguna ayuda, siendo nada más que simples sumas y restas.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Los dígitos significativos son representativos de la precisión de un número en el mundo real.</li>
+<li>La notación científica es un método "taquigráfico" para representar números muy grandes y muy pequeños en una forma fácil de manejar.</li>
+<li>Al multiplicar dos números en notación científica, puedes multiplicar las dos cifras significativas y llegar a una potencia de diez sumando exponentes.</li>
+<li>Al dividir dos números en notación científica, puedes dividir las dos cifras de dígitos significativos y llegar a una potencia de diez restando exponentes.</li>
+</ul>
+<h2><u><a name="xtocid87342">Metric notation</a></u></h2>
+<a name="Metric system"></a>
+<a name="System, metric"></a>
+<p>El sistema métrico, además de ser un conjunto de unidades de medida para todo tipo de cantidades físicas, se estructura en torno al concepto de notación científica.  La principal diferencia es que las potencias de diez se representan con prefijos alfabéticos en lugar de potencias de diez literales.  La siguiente recta numérica muestra algunos de los prefijos más comunes y sus respectivas potencias de diez:</p>
+<a name="Tera, metric prefix"></a>
+<a name="Giga, metric prefix"></a>
+<a name="Mega, metric prefix"></a>
+<a name="Kilo, metric prefix"></a>
+<a name="Hecto, metric prefix"></a>
+<a name="Deca, metric prefix"></a>
+<a name="Deci, metric prefix"></a>
+<a name="Centi, metric prefix"></a>
+<a name="Milli, metric prefix"></a>
+<a name="Micro, metric prefix"></a>
+<a name="Nano, metric prefix"></a>
+<a name="Pico, metric prefix"></a>
+<p> <img src="00356.png"/> </p>
+<p>Mirando esta escala, podemos ver que 2,5 Gigabytes significarían 2,5 x 10<sup>9</sup>bytes, o 2,5 mil millones de bytes.  Asimismo, 3,21 picoamperios significarían 3,21 x 10<sup>-12</sup>amperios, o 3,21 1/billonésima parte de un amperio.</p>
+<a name="Femto, metric prefix"></a>
+<a name="Atto, metric prefix"></a>
+<a name="Zepto, metric prefix"></a>
+<a name="Yocto, metric prefix"></a>
+<a name="Peta, metric prefix"></a>
+<a name="Exa, metric prefix"></a>
+<a name="Zetta, metric prefix"></a>
+<a name="Yotta, metric prefix"></a>
+<p>Existen otros prefijos métricos para simbolizar potencias de diez para multiplicadores extremadamente pequeños y extremadamente grandes.  En el extremo extremadamente pequeño del espectro,<i>femto</i>(f) = 10<sup>-15</sup>, <i>atto</i>(un) = 10<sup>-18</sup>, <i>zepto</i>(z) = 10<sup>-21</sup>, y<i>yocto</i>(y) = 10<sup>-24</sup>.  En el extremo extremadamente amplio del espectro,<i>peta</i>(P) = 10<sup>15</sup>, <i>Exa</i>(mi) = 10<sup>18</sup>, <i>Zeta</i>(Z) = 10<sup>21</sup>, y<i>yota</i>(Y) = 10<sup>24</sup>.
+</p>
+<p>Debido a que los prefijos principales en el sistema métrico se refieren a potencias de 10 que son múltiplos de 3 (de "kilo" hacia arriba y de "mili" hacia abajo), la notación métrica difiere de la notación científica regular en que la mantisa puede estar entre 1 y 999, dependiendo del prefijo elegido.  Por ejemplo, si una muestra de laboratorio pesa 0,000267 gramos, la notación científica y la notación métrica lo expresarían de manera diferente:</p>
+<br/>
+<p>
+2.67 x 10<sup>-4</sup>gramos (notación científica)</p>
+<br/>
+<p>
+267 µgrams (metric notation) 
+</p>
+<br/>
+<p>La misma cifra también puede expresarse como 0,267 miligramos (0,267 mg), aunque suele ser más común ver los dígitos significativos representados como una cifra mayor que 1.</p>
+<p>En los últimos años ha surgido un nuevo estilo de notación métrica para cantidades eléctricas que busca evitar el uso del punto decimal.  Dado que los puntos decimales ("".") se malinterpretan fácilmente y/o se "pierden" debido a una mala calidad de impresión, cantidades como 4,7 k pueden confundirse con 47 k.  La nueva notación reemplaza el punto decimal con el carácter de prefijo métrico, de modo que "4,7 k" se imprime como "4k7".  Nuestra última cifra del ejemplo anterior, "0,267 m", se expresaría en la nueva notación como "0m267".</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>El sistema métrico de notación utiliza prefijos alfabéticos para representar ciertas potencias de diez en lugar de la notación científica más larga.</li>
+</ul>
+<h2><u><a name="xtocid87343">Metric prefix conversions</a></u></h2>
+<p>Para expresar una cantidad en un prefijo métrico diferente al que tenía originalmente, todo lo que necesitamos hacer es saltar el punto decimal hacia la derecha o hacia la izquierda según sea necesario.  Observe que el prefijo métrico "recta numérica" ​​en la sección anterior se presentó de mayor a menor, de izquierda a derecha.  Este diseño se eligió deliberadamente para que sea más fácil recordar en qué dirección debe omitir el punto decimal para cualquier conversión determinada.</p>
+<p>Problema de ejemplo: expresar 0,000023 amperios en términos de microamperios.</p>
+<br/>
+<p>
+0.000023 amps  (has no prefix, just plain unit of amps) 
+</p>
+<br/>
+<p>De UNIDADES a micro en la recta numérica hay 6 lugares (potencias de diez) a la derecha, por lo que debemos omitir el punto decimal 6 lugares a la derecha:</p>
+<br/>
+<p>
+0.000023 amps  =  23.   ,   or 23 microamps (µA) 
+</p>
+<br/>
+<p>Problema de ejemplo: expresa 304,212 voltios en términos de kilovoltios.</p>
+<br/>
+<p>
+304,212 volts (has no prefix, just plain unit of volts)
+</p>
+<br/>
+<p>Desde<i>(ninguno)</i>lugar para<i>kilo</i>El lugar en la recta numérica está 3 lugares (potencias de diez) a la izquierda, por lo que debemos omitir el punto decimal 3 lugares a la izquierda:</p>
+<br/>
+<p>
+304,212.  =  304.212 kilovolts (kV)
+</p>
+<br/>
+<p>Problema de ejemplo: expresar 50,3 megaohmios en términos de miliohmios.</p>
+<br/>
+<p>
+50.3 M ohms (mega = 10<sup>6</sup>)
+</p>
+<br/>
+<p>De mega a mili hay 9 lugares (potencias de diez) a la derecha (de 10 a la 6ª potencia a 10 a la -3ª potencia), por lo que debemos omitir el punto decimal 9 lugares a la derecha:</p>
+<br/>
+<p>
+50.3 M ohms  =  50,300,000,000 milli-ohms (mΩ)
+</p>
+<br/>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Siga la recta numérica del prefijo métrico para saber en qué dirección omite el punto decimal para fines de conversión.</li>
+<li>Un número sin punto decimal tiene un punto decimal implícito inmediatamente a la derecha del dígito más a la derecha (es decir, para el número 436 el punto decimal está a la derecha del 6, como tal: 436).</li>
+</ul>
+<h2><u><a name="xtocid87344">Hand calculator use</a></u></h2>
+<p>Para ingresar números en notación científica en una calculadora manual, generalmente hay un botón marcado "E" o "EE" que se usa para ingresar la potencia de diez correcta.  Por ejemplo, para ingresar la masa de un protón en gramos (1,67 x 10<sup>-24</sup>gramos) en una calculadora manual, ingresaría las siguientes teclas:</p>
+<br/>
+<pre>
+[1]  [.]  [6]  [7]  [EE]  [2]  [4]  [+/-]                      
+</pre>
+<br/>
+<p>La pulsación de tecla [+/-] cambia el signo de la potencia (24) a -24.  Algunas calculadoras permiten el uso de la tecla de resta [-] para hacer esto, pero yo prefiero la tecla de "cambio de signo" [+/-] porque es más consistente con el uso de esa tecla en otros contextos.</p>
+<p>Si quisiera ingresar un número negativo en notación científica en una calculadora manual, tendría que tener cuidado al usar la tecla [+/-], para no cambiar el signo de la potencia y no el valor del dígito significativo.  Presta atención a este ejemplo:</p>
+<p>Número a introducir: -3.221 x 10<sup>-15</sup>: 
+</p>
+<br/>
+<pre>
+[3]  [.]  [2]  [2]  [1]  [+/-]  [EE]  [1]  [5]  [+/-] 
+</pre>
+<br/>
+<p>La primera pulsación de tecla [+/-] cambia la entrada de 3.221 a -3.221; la segunda pulsación de tecla [+/-] cambia la potencia de 15 a -15.</p>
+<a name="Engineering mode, calculator"></a>
+<p>Mostrar notación métrica y científica en una calculadora manual es un asunto diferente.  Implica cambiar la opción de visualización del modo normal de punto decimal "fijo" al modo "científico" o "de ingeniería".  El manual de su calculadora le indicará cómo configurar cada modo de visualización.</p>
+<p>Estos modos de visualización le indican a la calculadora cómo representar cualquier número en la lectura numérica.  El valor real del número no se ve afectado de ninguna manera por la elección de los modos de visualización, sólo cómo aparece el número al usuario de la calculadora.  Asimismo, el procedimiento para ingresar números en la calculadora tampoco cambia con los diferentes modos de visualización.  Las potencias de diez suelen estar representadas por un par de dígitos en la esquina superior derecha de la pantalla y sólo son visibles en los modos "científico" e "ingeniería".</p>
+<p>La diferencia entre los modos de visualización "científico" e "ingeniería" es la diferencia entre notación científica y métrica.  En el modo "científico", la visualización de potencia de diez está configurada de modo que el número principal en la pantalla sea siempre un valor entre 1 y 10 (o -1 y -10 para números negativos).  En el modo "ingeniería", las potencias de diez están configuradas para mostrarse en múltiplos de 3, para representar los principales prefijos métricos.  Todo lo que el usuario tiene que hacer es memorizar algunas combinaciones de prefijo/potencia, ¡y su calculadora "hablará" métrica!</p>
+<br/>
+<pre>
+POWER       METRIC PREFIX         
+-----       -------------     
+12 ......... Tera  (T)        
+9 .......... Giga  (G)           
+6 .......... Mega  (M)          
+3 .......... Kilo  (k)         
+0 .......... UNITS (plain)      
+-3 ......... milli (m)         
+-6 ......... micro (u)         
+-9 ......... nano  (n)       
+-12 ........ pico  (p)       
+</pre>
+<br/>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Utilice la tecla [EE] para ingresar potencias de diez.</li>
+<li>Utilice "científico" o "ingeniería" para mostrar potencias de diez, en notación científica o métrica, respectivamente.</li>
+</ul>
+<h2><u><a name="xtocid87345">Scientific notation in SPICE</a></u></h2>
+<a name="SPICE"></a>
+<p>El programa informático de simulación de circuitos SPICE utiliza notación científica para mostrar su información de salida y puede interpretar tanto la notación científica como los prefijos métricos en los archivos de descripción del circuito.  Si va a poder interpretar con éxito los análisis de SPICE a lo largo de este libro, debe poder comprender la notación utilizada para expresar variables de voltaje, corriente, etc. en el programa.</p>
+<p>Comencemos con un circuito muy simple compuesto por una fuente de voltaje (una batería) y una resistencia:</p>
+<p> <img src="00079.png"/> </p>
+<p>Para simular este circuito usando SPICE, primero tenemos que designar números de nodo para todos los puntos distintos del circuito, luego enumerar los componentes junto con sus respectivos números de nodo para que la computadora sepa qué componente está conectado a cuál y cómo.  Para un circuito de esta simplicidad, el uso de SPICE parece excesivo, pero sirve para demostrar el uso práctico de la notación científica:</p>
+<p> <img src="00080.png"/> </p>
+<a name="Netlist, SPICE"></a>
+<a name="SPICE netlist"></a>
+<p>Escribir un archivo de descripción de circuito, o<i>lista de redes</i>, para este circuito, obtenemos esto:</p>
+<br/>
+<pre>
+simple circuit
+v1 1 0 dc 24 
+r1 1 0 5  
+.end
+</pre>
+<br/>
+<p>La línea "<tt>v1 1 0 pa 24</tt>" describe la batería, situada entre los nodos 1 y 0, con una tensión continua de 24 voltios. La línea "<tt>r1 1 0 5</tt>" describe la resistencia de 5 Ω colocada entre los nodos 1 y 0.</p>
+<p>Usando una computadora para ejecutar un análisis SPICE en este archivo de descripción de circuito, obtenemos los siguientes resultados:</p>
+<br/>
+<pre>
+node   voltage
+(  1)   24.0000
+</pre>
+<br/>
+<pre>
+voltage source currents
+
+name       current
+v1       -4.800E+00
+
+total power dissipation   1.15E+02  watts
+</pre>
+<br/>
+<p>SPICE nos dice que el voltaje "en" el nodo número 1 (en realidad, esto significa el voltaje entre los nodos 1 y 0, siendo el nodo 0 el punto de referencia predeterminado para todas las mediciones de voltaje) es igual a 24 voltios.  La corriente a través de la batería "v1" se muestra como -4.800E+00 amperios.  Este es el método de SPICE para denotar notación científica.  Lo que realmente dice es "-4.800 x 10<sup>0</sup>amperios", o simplemente -4,800 amperios. El valor negativo de la corriente aquí se debe a una peculiaridad de SPICE y no indica nada significativo sobre el circuito en sí. La "disipación de potencia total" se nos proporciona como 1,15E+02 vatios, lo que significa "1,15 x 10<sup>2</sup>vatios", o 115 vatios.</p>
+<p>Modifiquemos nuestro circuito de ejemplo para que tenga una resistencia de 5 kΩ (5 kiloohmios o 5000 ohmios) en lugar de una resistencia de 5 Ω y veamos qué sucede.</p>
+<p> <img src="00081.png"/> </p>
+<p>Una vez más está nuestro archivo de descripción de circuito, o "netlist:"</p>
+<br/>
+<pre>
+simple circuit
+v1 1 0 dc 24 
+r1 1 0 5k   
+.end
+</pre>
+<br/>
+<p>La letra "k" que sigue al número 5 en la línea de la resistencia le dice a SPICE que es una cifra de 5 kΩ, no de 5 Ω.  Veamos qué resultado obtenemos cuando ejecutamos esto a través de la computadora:</p>
+<br/>
+<pre>
+node   voltage
+(  1)   24.0000
+</pre>
+<br/>
+<pre>
+voltage source currents
+
+name       current
+v1        -4.800E-03
+
+total power dissipation   1.15E-01  watts
+</pre>
+<br/>
+<p>El voltaje de la batería, por supuesto, no ha cambiado desde la primera simulación: sigue siendo de 24 voltios.  La corriente del circuito, por otro lado, es mucho menor esta vez porque le hemos dado un valor mayor a la resistencia, lo que dificulta el flujo de electrones.  SPICE nos dice que la corriente esta vez es igual a -4.800E-03 amperios, o -4.800 x 10<sup>-3</sup>amperios.  Esto equivale a tomar el número -4,8 y saltar el punto decimal tres lugares a la izquierda.</p>
+<p>Por supuesto, si reconocemos que 10<sup>-3</sup>es lo mismo que el prefijo métrico "mili", podríamos escribir la cifra como -4,8 miliamperios o -4,8 mA.</p>
+<p>Si observamos la "disipación de potencia total" que nos proporcionó SPICE en esta segunda simulación, vemos que es 1,15E-01 vatios, o 1,15 x 10<sup>-1</sup>vatios.  La potencia de -1 corresponde al prefijo métrico "deci", pero generalmente limitamos nuestro uso de prefijos métricos en electrónica a aquellos asociados con potencias de diez que son múltiplos de tres (diez elevado a la potencia de... -12, -9, -6, -3, 3, 6, 9, 12, etc.).  Entonces, si queremos seguir esta convención, debemos expresar esta cifra de disipación de potencia como 0,115 vatios o 115 milivatios (115 mW) en lugar de 1,15 decivatios (1,15 dW).</p>
+<p>Quizás la forma más sencilla de convertir una cifra de notación científica a prefijos métricos comunes es con una calculadora científica configurada en el modo de visualización "ingeniería" o "métrico".  Simplemente configure la calculadora para ese modo de visualización, escriba cualquier cifra de notación científica usando las teclas adecuadas (consulte el manual del propietario), presione la tecla "igual" o "enter" y debería mostrar la misma cifra en notación de ingeniería/métrica.</p>
+<p>Nuevamente, usaré SPICE como método para demostrar conceptos de circuitos a lo largo de este libro.  En consecuencia, le conviene comprender la notación científica para poder comprender fácilmente su formato de datos de salida.</p>
+<h2><u><a name="xtocid87346">Contributors</a></u></h2>
+<p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>
+<p>
+<b>Jason Stark</b>(Junio ​​de 2000): Formato de documentos HTML, que dio lugar a una segunda edición mucho más atractiva.</p>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="DC_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="DC_3.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="DC_5.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

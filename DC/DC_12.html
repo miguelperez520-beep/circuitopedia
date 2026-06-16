@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen I (DC) - Capítulo 12 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #3b82f6; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen I (DC) - Capítulo 12</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen I</h1>
+<h1>Capítulo 12</h1>
+<h1>FÍSICA DE CONDUCTORES Y AISLADORES</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid88060"><u>Introduction</u></a></li>
+<li><a href="#xtocid88061"><u>Conductor size</u></a></li>
+<li><a href="#xtocid88062"><u>Conductor ampacity</u></a></li>
+<li><a href="#xtocid88063"><u>Fuses</u></a></li>
+<li><a href="#xtocid88064"><u>Specific resistance</u></a></li>
+<li><a href="#xtocid88065"><u>Temperature coefficient of resistance</u></a></li>
+<li><a href="#xtocid88066"><u>Superconductivity</u></a></li>
+<li><a href="#xtocid88067"><u>Insulator breakdown voltage</u></a></li>
+<li><a href="#xtocid88068"><u>Data</u></a></li>
+<li><a href="#xtocid88069"><u>Contributors</u></a></li></ul>
+<h2><u><a name="xtocid88060">Introduction</a></u></h2>
+<a name="Conductor"></a>
+<a name="Insulator"></a>
+<p>A estas alturas ya deberías ser consciente de la correlación entre la conductividad eléctrica y ciertos tipos de materiales.  Los materiales que permiten el paso fácil de electrones libres se denominan<i>conductores</i>, mientras que aquellos materiales que impiden el paso de electrones libres se denominan<i>aisladores</i>.
+</p>
+<a name="Atomic structure"></a>
+<a name="Nucleus"></a>
+<a name="Shell, electron"></a>
+<a name="Physics, quantum"></a>
+<a name="Quantum physics"></a>
+<p>Desafortunadamente, las teorías científicas que explican por qué ciertos materiales conducen y otros no son bastante complejas y se basan en explicaciones de la mecánica cuántica sobre cómo se organizan los electrones alrededor de los núcleos de los átomos.  Contrariamente al conocido modelo "planetario" de electrones que giran alrededor del núcleo de un átomo como trozos de materia bien definidos en órbitas circulares o elípticas, los electrones en "órbita" en realidad no actúan como trozos de materia en absoluto.  Más bien, exhiben las características tanto de partículas como de ondas, y su comportamiento está limitado por su ubicación dentro de distintas zonas alrededor del núcleo denominadas "capas" y "subcapas".  Los electrones pueden ocupar estas zonas sólo en un rango limitado de energías dependiendo de la zona particular y de qué tan ocupada esté esa zona con otros electrones.  Si los electrones realmente actuaran como pequeños planetas mantenidos en órbita alrededor del núcleo por atracción electrostática, y sus acciones estuvieran descritas por las mismas leyes que describen los movimientos de los planetas reales, no podría haber una distinción real entre conductores y aislantes, y los enlaces químicos entre átomos no existirían como existen ahora.  Es la naturaleza discreta y "cuantificada" de la energía y la ubicación de los electrones descrita por la física cuántica lo que da regularidad a estos fenómenos.</p>
+<a name="Electron, free"></a>
+<p>Cuando un electrón es libre de asumir estados de energía más altos alrededor del núcleo de un átomo (debido a su ubicación en una "capa" particular), puede ser libre de separarse del átomo y formar parte de una corriente eléctrica a través de la sustancia.  Sin embargo, si las limitaciones cuánticas impuestas a un electrón le niegan esta libertad, se considera que el electrón está "atado" y no puede separarse (al menos no fácilmente) para constituir una corriente.  El primer escenario es típico de materiales conductores, mientras que el segundo es típico de materiales aislantes.</p>
+<a name="Valence"></a>
+<a name="Semiconductor"></a>
+<p>Algunos libros de texto le dirán que la conductividad o no conductividad de un elemento está determinada exclusivamente por el número de electrones que residen en la "capa" exterior de los átomos (llamada capa).<i>valencia</i>capa), pero esto es una simplificación excesiva, como lo confirmará cualquier examen de la conductividad versus los electrones de valencia en una tabla de elementos.  La verdadera complejidad de la situación se revela aún más cuando se considera la conductividad de las moléculas (colecciones de átomos unidos entre sí por la actividad electrónica).</p>
+<p>Un buen ejemplo de esto es el elemento carbono, que comprende materiales de conductividades muy diferentes: grafito y diamante.  El grafito es un buen conductor de la electricidad, mientras que el diamante es prácticamente un aislante (lo más extraño aún es que técnicamente está clasificado como un<i>semiconductor</i>, que en su forma pura actúa como aislante, pero puede conducir bajo altas temperaturas y/o bajo la influencia de impurezas).  Tanto el grafito como el diamante están compuestos exactamente por el mismo tipo de átomos: carbono, con 6 protones, 6 neutrones y 6 electrones cada uno.  La diferencia fundamental entre el grafito y el diamante es que las moléculas de grafito son agrupaciones planas de átomos de carbono, mientras que las moléculas de diamante son agrupaciones tetraédricas (en forma de pirámide) de átomos de carbono.</p>
+<p>Si los átomos de carbono se unen a otros tipos de átomos para formar compuestos, la conductividad eléctrica vuelve a alterarse.  El carburo de silicio, un compuesto de los elementos silicio y carbono, exhibe un comportamiento no lineal: ¡su resistencia eléctrica disminuye con el aumento del voltaje aplicado!  Los compuestos de hidrocarburos (como las moléculas que se encuentran en los aceites) tienden a ser muy buenos aislantes.  Como puede ver, un simple recuento de los electrones de valencia de un átomo es un mal indicador de la conductividad eléctrica de una sustancia.</p>
+<a name="Electron gas"></a>
+<p>Todos los elementos metálicos son buenos conductores de la electricidad debido a la forma en que los átomos se unen entre sí.  Los electrones de los átomos que componen una masa de metal están tan desinhibidos en sus estados energéticos permisibles que flotan libremente entre los diferentes núcleos de la sustancia, fácilmente motivados por cualquier campo eléctrico.  De hecho, los electrones son tan móviles que a veces los científicos los describen como<i>gas de electrones</i>, o incluso un<i>mar de electrones</i>en el que descansan los núcleos atómicos.  Esta movilidad de electrones explica algunas de las otras propiedades comunes de los metales: buena conductividad térmica, maleabilidad y ductilidad (fácilmente moldeables en diferentes formas) y un acabado brillante cuando están puros.</p>
+<p>Afortunadamente, la física detrás de todo esto es en gran medida irrelevante para nuestros propósitos aquí.  Baste decir que algunos materiales son buenos conductores, otros son malos conductores y otros se encuentran en un punto intermedio.  Por ahora basta con entender simplemente que estas distinciones están determinadas por la configuración de los electrones alrededor de los átomos constituyentes del material.</p>
+<p>Un paso importante para lograr que la electricidad cumpla nuestras órdenes es poder construir caminos para que los electrones fluyan con cantidades controladas de resistencia.  También es de vital importancia que seamos capaces de evitar que los electrones fluyan hacia donde no queremos, mediante el uso de materiales aislantes.  Sin embargo, no todos los conductores son iguales, ni tampoco todos los aislantes.  Necesitamos comprender algunas de las características de los conductores y aisladores comunes y poder aplicar estas características a aplicaciones específicas.</p>
+<p>Casi todos los conductores poseen una resistencia determinada y medible (tipos especiales de materiales llamados<i>superconductores</i>no poseen absolutamente ninguna resistencia eléctrica, pero estos no son materiales comunes y deben mantenerse en condiciones especiales para que sean superconductores).  Normalmente, suponemos que la resistencia de los conductores de un circuito es cero y esperamos que la corriente pase a través de ellos sin producir ninguna caída de voltaje apreciable.  En realidad, sin embargo, casi siempre habrá una caída de voltaje a lo largo de las vías conductoras (normales) de un circuito eléctrico, ya sea que queramos que haya una caída de voltaje o no:</p>
+<p> <img src="00277.png"/> </p>
+<p>Para calcular cuáles serán estas caídas de voltaje en cualquier circuito en particular, debemos poder determinar la resistencia del cable común, conociendo el tamaño y el diámetro del cable.  Algunas de las siguientes secciones de este capítulo abordarán los detalles de cómo hacer esto.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>La conductividad eléctrica de un material está determinada por la configuración de los electrones en los átomos y moléculas de ese material (grupos de átomos unidos).</li>
+<li>Todos los conductores normales poseen resistencia hasta cierto punto.</li>
+<li>Los electrones que fluyen a través de un conductor con (cualquier) resistencia producirán una cierta cantidad de caída de voltaje a lo largo de ese conductor.</li>
+</ul>
+<h2><u><a name="xtocid88061">Conductor size</a></u></h2>
+<p>Debería ser un conocimiento de sentido común que los líquidos fluyen a través de tuberías de gran diámetro más fácilmente que a través de tuberías de pequeño diámetro (si desea un ejemplo práctico, intente beber un líquido a través de pajitas de diferentes diámetros).  El mismo principio general se aplica al flujo de electrones a través de conductores: cuanto más amplia sea la sección transversal (grosor) del conductor, más espacio para que los electrones fluyan y, en consecuencia, más fácil será que se produzca el flujo (menos resistencia).</p>
+<a name="Wire, solid and stranded"></a>
+<p>El cable eléctrico suele tener una sección transversal redonda (aunque existen algunas excepciones únicas a esta regla) y viene en dos variedades básicas: sólido y trenzado.  El alambre de cobre sólido es tal como suena: un solo hilo sólido de cobre a lo largo de toda la longitud del alambre.  El cable trenzado se compone de hebras más pequeñas de alambre de cobre sólido entrelazadas para formar un conductor único y más grande.  El mayor beneficio del cable trenzado es su flexibilidad mecánica, ya que puede resistir dobleces y torsiones repetidas mucho mejor que el cobre sólido (que tiende a fatigarse y romperse con el tiempo).</p>
+<p>El tamaño del cable se puede medir de varias formas.  Podríamos hablar del diámetro de un alambre, pero como realmente es la sección transversal<i>área</i>Lo que más importa con respecto al flujo de electrones, es mejor que designemos el tamaño del cable en términos de área.</p>
+<p> <img src="00278.png"/> </p>
+<p>La imagen de la sección transversal del cable que se muestra arriba, por supuesto, no está dibujada a escala.  El diámetro se muestra como 0,1019 pulgadas.  Calcular el área de la sección transversal con la fórmula Área = πr<sup>2</sup>, obtenemos un área de 0,008155 pulgadas cuadradas:</p>
+<p> <img src="10214.png"/> </p>
+<a name="Mil"></a>
+<a name="Unit, mil"></a>
+<p>Estos son números bastante pequeños con los que trabajar, por lo que los tamaños de los cables a menudo se expresan en medidas de milésimas de pulgada, o<i>milésimas de pulgada</i>.  Para el ejemplo ilustrado, diríamos que el diámetro del alambre era 101,9 mils (0,1019 pulgadas por 1000).  También podríamos, si quisiéramos, expresar el área del alambre en la unidad de mils cuadrados, calculando ese valor con la misma fórmula del área del círculo, Área = πr<sup>2</sup>:
+</p>
+<p> <img src="00279.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="10215.png"/> </p>
+<a name="Circular mil"></a>
+<a name="Cmil"></a>
+<a name="Unit, cmil"></a>
+<a name="Mil, circular"></a>
+<p>Sin embargo, los electricistas y otras personas que suelen preocuparse por el tamaño de los cables utilizan otra unidad de medida de área diseñada específicamente para la sección transversal circular del cable.  Esta unidad especial se llama<i>milésimas circulares</i>(a veces abreviado<i>cmil</i>).  El único propósito de tener esta unidad de medida especial es eliminar la necesidad de invocar el factor π (3,1415927...) en la fórmula para calcular el área, más la necesidad de calcular el cable.<i>radio</i>cuando te han dado<i>diámetro</i>.  La fórmula para calcular el área en mil circulares de un alambre circular es muy simple:</p>
+<p> <img src="10216.png"/> </p>
+<p>Porque esta es una unidad de<i>área</i>medición, el poder matemático de 2 todavía está vigente (duplicar el ancho de un círculo<i>siempre</i>cuadruplicar su área, sin importar qué unidades se utilicen, o si el ancho de ese círculo se expresa en términos de radio o diámetro).  Para ilustrar la diferencia entre medidas en mils cuadrados y medidas en mils circulares, compararé un círculo con un cuadrado, mostrando el área de cada forma en ambas unidades de medida:</p>
+<p> <img src="00280.png"/> </p>
+<p>Y para otro tamaño de cable:</p>
+<p> <img src="00281.png"/> </p>
+<p>Obviamente, el círculo de un diámetro dado tiene menos área de sección transversal que un cuadrado de ancho y alto igual al diámetro del círculo: ambas unidades de medida de área reflejan eso.  Sin embargo, debe quedar claro que la unidad "mil cuadrada" está realmente diseñada para la determinación conveniente del área de un cuadrado, mientras que "mil circular" está diseñada para la determinación conveniente del área de un círculo: es más sencillo trabajar con la fórmula respectiva para cada uno.  Hay que entender que ambas unidades son válidas para medir el área de una forma, sin importar de qué forma sea.  La conversión entre mils circulares y mils cuadrados es una relación simple: hay π (3,1415927...) mils cuadrados por cada 4 mils circulares.</p>
+<a name="Wire Gauge"></a>
+<a name="Gauge, wire size"></a>
+<p>Otra medida del área de la sección transversal del alambre es la<i>indicador</i>.  La escala de calibre se basa en números enteros en lugar de pulgadas fraccionarias o decimales.  Cuanto mayor sea el número de calibre, más delgado será el cable; cuanto menor sea el número de calibre, más grueso será el cable.  Para aquellos familiarizados con las escopetas, esta escala de medición inversamente proporcional les resultará familiar.</p>
+<a name="AWG (American Wire Gauge)"></a>
+<a name="B&amp;S (Brown and Sharpe)"></a>
+<a name="SWG (British Standard Wire Gauge)"></a>
+<a name="MWG (Steel Music Wire Gauge)"></a>
+<p>La tabla al final de esta sección equipara el calibre con pulgadas de diámetro, mils circulares y pulgadas cuadradas para alambre sólido.  Los tamaños más grandes de alambre llegan al final de la escala de calibre común (que naturalmente alcanza un valor máximo de 1) y están representados por una serie de ceros.  "3/0" es otra forma de representar "000" y se pronuncia "triple deber".  Una vez más, quienes estén familiarizados con las escopetas deberían reconocer la terminología, por extraña que parezca.  Para hacer las cosas aún más confusas, hay más de un calibre "estándar" en uso en todo el mundo.  Para el dimensionamiento de conductores eléctricos, el<i>Calibre de alambre americano</i>(AWG), también conocida como<i>marrón y afilado</i>(B&amp;S), es el sistema de medición elegido.  En Canadá y Gran Bretaña, el<i>Calibre de alambre estándar británico</i>(SWG) es el sistema de medida legal para conductores eléctricos.  Existen otros sistemas de calibre de alambre en el mundo para clasificar el diámetro del alambre, como el<i>Talones</i>calibre del alambre de acero y el<i>Calibre de alambre musical de acero</i>(MWG), pero estos sistemas de medición se aplican al uso de cables no eléctricos.</p>
+<p>El sistema de medición American Wire Gauge (AWG), a pesar de sus rarezas, fue diseñado con un propósito: por cada tres pasos en la escala de calibre, el área del cable (y el peso por unidad de longitud) aproximadamente se duplica.  ¡Esta es una regla útil para recordar al realizar estimaciones aproximadas del tamaño de los cables!</p>
+<p>
+For <i>muy</i>Para tamaños de alambre grandes (más gruesos que 4/0), el sistema de calibre de alambre generalmente se abandona para medir el área de la sección transversal en miles de mils circulares (MCM), tomando prestado el antiguo número romano "M" para denotar un múltiplo de "mil" delante de "CM" para "mils circulares".  La siguiente tabla de tamaños de cables no muestra ningún tamaño mayor que el calibre 4/0, porque<i>sólido</i>El alambre de cobre resulta poco práctico de manipular en esos tamaños.  En cambio, se prefiere la construcción con alambre trenzado.</p>
+<br/>
+<p>
+<b>Mesa de alambre de cobre sólido:</b> <a href="#cuwire2.tbl">  below</a>
+</p>
+<a name="cuwire2.tbl"><p><i>Soild copper wire table:</i></p></a>
+<table border="1" style="background-color: #E0FFFF; ">
+<tr>
+<th>Tamaño</th><th>Diámetro</th><th>transversal</th><th>área</th><th>Peso</th>
+</tr>
+<tr>
+<th>AWG</th><th>pulgadas</th><th>cir. milésimas de pulgada</th><th>pulgadas cuadradas</th><th>libras/1000 pies</th>
+</tr>
+<tr>
+<td>4/0</td><td>0.4600</td><td>211,600</td><td>0.1662</td><td>640.5</td>
+</tr>
+<tr>
+<td>3/0</td><td>0.4096</td><td>167,800</td><td>0.1318</td><td>507.9</td>
+</tr>
+<tr>
+<td>2/0</td><td>0.3648</td><td>133,100</td><td>0.1045</td><td>402.8</td>
+</tr>
+<tr>
+<td>1/0</td><td>0.3249</td><td>105,500</td><td>0.08289</td><td>319.5</td>
+</tr>
+<tr>
+<td>1</td><td>0.2893</td><td>83,690</td><td>0.06573</td><td>253.5</td>
+</tr>
+<tr>
+<td>2</td><td>0.2576</td><td>66,370</td><td>0.05213</td><td>200.9</td>
+</tr>
+<tr>
+<td>3</td><td>0.2294</td><td>52,630</td><td>0.04134</td><td>159.3</td>
+</tr>
+<tr>
+<td>4</td><td>0.2043</td><td>41,740</td><td>0.03278</td><td>126.4</td>
+</tr>
+<tr>
+<td>5</td><td>0.1819</td><td>33,100</td><td>0.02600</td><td>100.2</td>
+</tr>
+<tr>
+<td>6</td><td>0.1620</td><td>26,250</td><td>0.02062</td><td>79.46</td>
+</tr>
+<tr>
+<td>7</td><td>0.1443</td><td>20,820</td><td>0.01635</td><td>63.02</td>
+</tr>
+<tr>
+<td>7</td><td>0.1443</td><td>20,820</td><td>0.01635</td><td>63.02</td>
+</tr>
+<tr>
+<td>8</td><td>0.1285</td><td>16,510</td><td>0.01297</td><td>49.97</td>
+</tr>
+<tr>
+<td>9</td><td>0.1144</td><td>13,090</td><td>0.01028</td><td>39.63</td>
+</tr>
+<tr>
+<td>10</td><td>0.1019</td><td>10,380</td><td>0.008155</td><td>31.43</td>
+</tr>
+<tr>
+<td>11</td><td>0.09074</td><td>8,234</td><td>0.006467</td><td>24.92</td>
+</tr>
+<tr>
+<td>12</td><td>0.08081</td><td>6,530</td><td>0.005129</td><td>19.77</td>
+</tr>
+<tr>
+<td>13</td><td>0.07196</td><td>5,178</td><td>0.004067</td><td>15.68</td>
+</tr>
+<tr>
+<td>14</td><td>0.06408</td><td>4,107</td><td>0.003225</td><td>12.43</td>
+</tr>
+<tr>
+<td>15</td><td>0.05707</td><td>3,257</td><td>0.002558</td><td>9.858</td>
+</tr>
+<tr>
+<td>16</td><td>0.05082</td><td>2,583</td><td>0.002028</td><td>7.818</td>
+</tr>
+<tr>
+<td>17</td><td>0.04526</td><td>2,048</td><td>0.001609</td><td>6.200</td>
+</tr>
+<tr>
+<td>18</td><td>0.04030</td><td>1,624</td><td>0.001276</td><td>4.917</td>
+</tr>
+<tr>
+<td>19</td><td>0.03589</td><td>1,288</td><td>0.001012</td><td>3.899</td>
+</tr>
+<tr>
+<td>20</td><td>0.03196</td><td>1,022</td><td>0.0008023</td><td>3.092</td>
+</tr>
+<tr>
+<td>21</td><td>0.02846</td><td>810.1</td><td>0.0006363</td><td>2.452</td>
+</tr>
+<tr>
+<td>22</td><td>0.02535</td><td>642.5</td><td>0.0005046</td><td>1.945</td>
+</tr>
+<tr>
+<td>23</td><td>0.02257</td><td>509.5</td><td>0.0004001</td><td>1.542</td>
+</tr>
+<tr>
+<td>23</td><td>0.02257</td><td>509.5</td><td>0.0004001</td><td>1.542</td>
+</tr>
+<tr>
+<td>24</td><td>0.02010</td><td>404.0</td><td>0.0003173</td><td>1.233</td>
+</tr>
+<tr>
+<td>25</td><td>0.01790</td><td>320.4</td><td>0.0002517</td><td>0.9699</td>
+</tr>
+<tr>
+<td>26</td><td>0.01594</td><td>254.1</td><td>0.0001996</td><td>0.7692</td>
+</tr>
+<tr>
+<td>27</td><td>0.01420</td><td>201.5</td><td>0.0001583</td><td>0.6100</td>
+</tr>
+<tr>
+<td>28</td><td>0.01264</td><td>159.8</td><td>0.0001255</td><td>0.4837</td>
+</tr>
+<tr>
+<td>29</td><td>0.01126</td><td>126.7</td><td>0.00009954</td><td>0.3836</td>
+</tr>
+<tr>
+<td>30</td><td>0.01003</td><td>100.5</td><td>0.00007894</td><td>0.3042</td>
+</tr>
+<tr>
+<td>31</td><td>0.008928</td><td>79.70</td><td>0.00006260</td><td>0.2413</td>
+</tr>
+<tr>
+<td>32</td><td>0.007950</td><td>63.21</td><td>0.00004964</td><td>0.1913</td>
+</tr>
+<tr>
+<td>33</td><td>0.007080</td><td>50.13</td><td>0.00003937</td><td>0.1517</td>
+</tr>
+<tr>
+<td>34</td><td>0.006305</td><td>39.75</td><td>0.00003122</td><td>0.1203</td>
+</tr>
+<tr>
+<td>35</td><td>0.005615</td><td>31.52</td><td>0.00002476</td><td>0.09542</td>
+</tr>
+<tr>
+<td>36</td><td>0.005000</td><td>25.00</td><td>0.00001963</td><td>0.07567</td>
+</tr>
+<tr>
+<td>37</td><td>0.004453</td><td>19.83</td><td>0.00001557</td><td>0.06001</td>
+</tr>
+<tr>
+<td>38</td><td>0.003965</td><td>15.72</td><td>0.00001235</td><td>0.04759</td>
+</tr>
+<tr>
+<td>39</td><td>0.003531</td><td>12.47</td><td>0.000009793</td><td>0.03774</td>
+</tr>
+<tr>
+<td>40</td><td>0.003145</td><td>9.888</td><td>0.000007766</td><td>0.02993</td>
+</tr>
+<tr>
+<td>41</td><td>0.002800</td><td>7.842</td><td>0.000006159</td><td>0.02374</td>
+</tr>
+<tr>
+<td>42</td><td>0.002494</td><td>6.219</td><td>0.000004884</td><td>0.01882</td>
+</tr>
+<tr>
+<td>43</td><td>0.002221</td><td>4.932</td><td>0.000003873</td><td>0.01493</td>
+</tr>
+<tr>
+<td>44</td><td>0.001978</td><td>3.911</td><td>0.000003072</td><td>0.01184</td>
+</tr>
+</table>
+<br/>
+<a name="Busbar"></a>
+<p>Para algunas aplicaciones de alta corriente, se requieren tamaños de conductores que superan el límite de tamaño práctico del cable redondo.  En estos casos, gruesas barras de metal sólido llamadas<i>barras colectoras</i>Se utilizan como conductores.  Las barras colectoras suelen estar hechas de cobre o aluminio y, en la mayoría de los casos, no están aisladas.  Están físicamente sostenidos lejos de cualquier marco o estructura que los sujete mediante soportes aislantes.  Aunque una sección transversal cuadrada o rectangular es muy común para la forma de barra colectora, también se utilizan otras formas.  El área de la sección transversal de las barras colectoras generalmente se clasifica en términos de milésimas de pulgada circulares (¡incluso para barras cuadradas y rectangulares!), muy probablemente por la conveniencia de poder equiparar directamente el tamaño de las barras colectoras con el alambre redondo.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Los electrones fluyen a través de cables de gran diámetro más fácilmente que los de pequeño diámetro, debido a la mayor sección transversal que tienen para moverse.</li>
+<li>En lugar de medir tamaños de alambre pequeños en pulgadas, a menudo se emplea la unidad de "mil" (1/1000 de pulgada).</li>
+<li>El área de la sección transversal de un cable se puede expresar en términos de unidades cuadradas (pulgadas cuadradas o mils cuadradas), mils circulares o escala de "calibre".</li>
+<li>Calcular el área de un cable de unidad cuadrada para un cable circular implica la fórmula del área del círculo:</li>
+<li><p> <img src="10217.png"/> </p></li>
+<li>Calcular el área de un alambre circular en mil para un alambre circular es mucho más simple, debido al hecho de que la unidad de "mil circular" se dimensionó solo para este propósito: eliminar los factores "pi" y d/2 (radio) en la fórmula.</li>
+<li><p> <img src="10218.png"/> </p></li>
+<li>Hay π (3,1416) milésimas cuadradas por cada 4 milésimas circulares.</li>
+<li>The <i>indicador</i>El sistema de dimensionamiento de cables se basa en números enteros; los números más grandes representan cables de área más pequeña y viceversa.  Los cables de calibre superior a 1 se representan con ceros: 0, 00, 000 y 0000 (que se pronuncian como "deber simple", "deber doble", "deber triple" y "deber cuádruple").</li>
+<li>Los tamaños de cables muy grandes están clasificados en miles de mils circulares (MCM), típicos de barras colectoras y tamaños de cables superiores a 4/0.</li>
+<li><i>Barras colectoras</i>Son barras sólidas de cobre o aluminio que se utilizan en la construcción de circuitos de alta corriente.  Las conexiones realizadas a las barras colectoras suelen estar soldadas o atornilladas, y las barras colectoras suelen estar desnudas (sin aislamiento), sostenidas lejos de marcos metálicos mediante el uso de separadores aislantes.</li>
+</ul>
+<h2><u><a name="xtocid88062">Conductor ampacity</a></u></h2>
+<a name="Ampacity"></a>
+<a name="Conductor ampacity"></a>
+<p>Cuanto más pequeño sea el cable, mayor será la resistencia para cualquier longitud dada, siendo todos los demás factores iguales.  Un cable con mayor resistencia disipará una mayor cantidad de energía térmica para cualquier cantidad de corriente dada, siendo la potencia igual a P=I<sup>2</sup>R.
+</p>
+<p>La potencia disipada en una resistencia se manifiesta en forma de calor, y el calor excesivo puede dañar un cable (¡sin mencionar los objetos cerca del cable!), especialmente considerando el hecho de que la mayoría de los cables están aislados con una capa de plástico o caucho, que puede derretirse y quemarse.  Por lo tanto, los cables delgados tolerarán menos corriente que los cables gruesos, en igualdad de condiciones con todos los demás factores.  El límite de corriente de un conductor se conoce como su<i>ampacidad</i>.
+</p>
+<a name="National Electrical Code"></a>
+<a name="NEC"></a>
+<p>Principalmente por razones de seguridad, se han establecido ciertos estándares para el cableado eléctrico en los Estados Unidos y se especifican en el Código Eléctrico Nacional (NEC).  Las tablas típicas de ampacidad de cables de NEC mostrarán las corrientes máximas permitidas para diferentes tamaños y aplicaciones de cables.  Aunque el punto de fusión del cobre impone teóricamente un límite a la ampacidad del cable, los materiales comúnmente empleados para aislar conductores se funden a temperaturas muy por debajo del punto de fusión del cobre, por lo que las clasificaciones prácticas de ampacidad se basan en los límites térmicos.<i>del aislamiento</i>.  La caída de voltaje como resultado de una resistencia excesiva del cable también es un factor al dimensionar los conductores para su uso en circuitos, pero esta consideración se evalúa mejor a través de medios más complejos (que cubriremos en este capítulo).  Se muestra, por ejemplo, una tabla derivada de un listado NEC:</p>
+<br/>
+<p>
+<b>Ampacidades del alambre de cobre:</b> <a href="#ampacity2.tbl">  below</a>
+</p>
+<a name="ampacity2.tbl"><p><i>Ampacities of copper wire, in free air at 30<sup>o</sup> C:</i></p></a>
+<table border="1" style="background-color: #E0FFFF; ">
+<tr>
+<th></th><th></th><th>TIPO DE AISLAMIENTO:</th><th></th>
+</tr>
+<tr>
+<th></th><th>RUW, T.</th><th>THW, THWN</th><th>FEP, FEPB</th>
+</tr>
+<tr>
+<th></th><th>TW</th><th>RUH</th><th>THHN, XHHW</th>
+</tr>
+<tr>
+<th>Tamaño</th><th>Calificación actual</th><th>Calificación actual</th><th>Calificación actual</th>
+</tr>
+<tr>
+<th>AWG</th><th>@ 60 grados C</th><th>@ 75 grados C</th><th>@ 90 grados C</th>
+</tr>
+<tr>
+<td>20</td><td>*9</td><td></td><td>*12.5</td>
+</tr>
+<tr>
+<td>18</td><td>*13</td><td></td><td>18</td>
+</tr>
+<tr>
+<td>16</td><td>*18</td><td></td><td>24</td>
+</tr>
+<tr>
+<td>14</td><td>25</td><td>30</td><td>35</td>
+</tr>
+<tr>
+<td>12</td><td>30</td><td>35</td><td>40</td>
+</tr>
+<tr>
+<td>10</td><td>40</td><td>50</td><td>55</td>
+</tr>
+<tr>
+<td>8</td><td>60</td><td>70</td><td>80</td>
+</tr>
+<tr>
+<td>6</td><td>80</td><td>95</td><td>105</td>
+</tr>
+<tr>
+<td>4</td><td>105</td><td>125</td><td>140</td>
+</tr>
+<tr>
+<td>2</td><td>140</td><td>170</td><td>190</td>
+</tr>
+<tr>
+<td>1</td><td>165</td><td>195</td><td>220</td>
+</tr>
+<tr>
+<td>1/0</td><td>195</td><td>230</td><td>260</td>
+</tr>
+<tr>
+<td>2/0</td><td>225</td><td>265</td><td>300</td>
+</tr>
+<tr>
+<td>3/0</td><td>260</td><td>310</td><td>350</td>
+</tr>
+<tr>
+<td>4/0</td><td>300</td><td>360</td><td>405</td>
+</tr>
+</table>
+<p>* = valores estimados; Normalmente, estos tamaños de cables pequeños no se fabrican con estos tipos de aislamiento.<a href="#ampacity2.tbl">  above</a>.
+</p>
+<br/>
+<p>Observe las diferencias sustanciales de ampacidad entre cables del mismo tamaño con diferentes tipos de aislamiento.  Esto se debe, nuevamente, a los límites térmicos (60<sup>o</sup>, 75<sup>o</sup>, 90<sup>o</sup>) de cada tipo de material aislante.</p>
+<p>Estas clasificaciones de ampacidad se dan para conductores de cobre en "aire libre" (circulación de aire típica máxima), a diferencia de cables colocados en conductos o bandejas de alambre.  Como notará, la tabla no especifica ampacidades para tamaños de cables pequeños. Esto se debe a que el NEC se ocupa principalmente del cableado eléctrico (grandes corrientes, cables grandes) en lugar de los cables comunes a los trabajos electrónicos de baja corriente.</p>
+<p>Hay significado en las secuencias de letras utilizadas para identificar los tipos de conductores, y estas letras generalmente se refieren a las propiedades de las capas aislantes del conductor.  Algunas de estas letras simbolizan propiedades individuales del cable, mientras que otras son simplemente abreviaturas.  Por ejemplo, la letra "T" por sí sola significa "termoplástico" como material aislante, como en "TW" o "THHN".  Sin embargo, la combinación de tres letras "MTW" es una abreviatura de<i>Alambre para máquina herramienta</i>, un tipo de cable cuyo aislamiento está hecho para ser flexible para su uso en máquinas que experimentan movimientos o vibraciones importantes.</p>
+<br/>
+<p>
+<b>Códigos de aislamiento de cables:</b> <a href="#inwirec.tbl">  below</a>
+</p>
+<a name="inwirec.tbl"><p><i>Soild copper wire table:</i></p></a>
+<table border="1" style="background-color: #E0FFFF; ">
+<tr>
+<th>Código</th><th>Material aislante</th>
+</tr>
+<tr>
+<td>C</td><td>Algodón</td>
+</tr>
+<tr>
+<td>FEP</td><td>Etileno propileno fluorado</td>
+</tr>
+<tr>
+<td>MI</td><td>Mineral (óxido de magnesio)</td>
+</tr>
+<tr>
+<td>PFA</td><td>perfluoroalcoxi</td>
+</tr>
+<tr>
+<td>R</td><td>Caucho (a veces neopreno)</td>
+</tr>
+<tr>
+<td>S</td><td>"Goma" de silicona</td>
+</tr>
+<tr>
+<td>SA</td><td>Silicona-amianto</td>
+</tr>
+<tr>
+<td>T</td><td>Termoplástico</td>
+</tr>
+<tr>
+<td>TA</td><td>Termoplástico-amianto</td>
+</tr>
+<tr>
+<td>TFE</td><td>Politetrafluoroetileno ("teflón")</td>
+</tr>
+<tr>
+<td>X</td><td>Polímero sintético reticulado</td>
+</tr>
+<tr>
+<td>Z</td><td>Etileno tetrafluoroetileno modificado</td>
+</tr>
+<tr>
+<th></th><th>Clasificación de calor</th>
+</tr>
+<tr>
+<td>H</td><td>75 degrees Celsius</td>
+</tr>
+<tr>
+<td>HH</td><td> 90 degrees Celsius</td>
+</tr>
+<tr>
+<th></th><th>Revestimiento exterior ("chaqueta")</th>
+</tr>
+<tr>
+<td>N</td><td>Nylon</td>
+</tr>
+<tr>
+<th></th><th>Condiciones especiales de servicio</th>
+</tr>
+<tr>
+<td>U</td><td>Subterráneo</td>
+</tr>
+<tr>
+<td>W</td><td>Wet</td>
+</tr>
+<tr>
+<td>-2</td><td>90 degrees Celsius and wet</td>
+</tr>
+</table>
+<br/>
+<p>Por lo tanto, un conductor "THWN" tiene<b>T</b>aislamiento termoplástico, es<b>H</b>comer resistente a 75<sup>o</sup>Celsius, está clasificado para<b>W</b>Et condiciones, y viene con un<b>N</b>Revestimiento exterior de nailon.</p>
+<p>Los códigos de letras como estos sólo se utilizan para cables de uso general, como los que se utilizan en hogares y empresas.  Para aplicaciones de alta potencia y/o condiciones de servicio severas, la complejidad de la tecnología de conductores desafía la clasificación según unos pocos códigos de letras.  Los conductores de líneas eléctricas aéreas suelen ser de metal desnudo, suspendidos de torres mediante soportes de vidrio, porcelana o cerámica conocidos como aislantes.  Aun así, la construcción real del cable para resistir fuerzas físicas, tanto estáticas (peso muerto) como dinámicas (viento), puede ser compleja, con múltiples capas y diferentes tipos de metales enrollados para formar un solo conductor.  Los grandes conductores de energía subterráneos a veces están aislados con papel y luego encerrados en una tubería de acero llena de nitrógeno o aceite presurizado para evitar la intrusión de agua.  Dichos conductores requieren equipo de soporte para mantener la presión del fluido en toda la tubería.</p>
+<p>Otros materiales aislantes encuentran uso en aplicaciones a pequeña escala.  Por ejemplo, el alambre de pequeño diámetro utilizado para fabricar electroimanes (bobinas que producen un campo magnético a partir del flujo de electrones) suele estar aislado con una fina capa de esmalte.  El esmalte es un excelente material aislante y es muy fino, lo que permite enrollar muchas "vueltas" de alambre en un espacio pequeño.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>La resistencia del cable genera calor en los circuitos operativos.  Este calor es un peligro potencial de ignición de incendio.</li>
+<li>Los alambres delgados tienen una corriente permitida ("ampacidad") más baja que los alambres gruesos, debido a su mayor resistencia por unidad de longitud y, en consecuencia, a una mayor generación de calor por unidad de corriente.</li>
+<li>El Código Eléctrico Nacional (NEC) especifica los amperajes para el cableado eléctrico según la temperatura de aislamiento permitida y la aplicación del cable.</li>
+</ul>
+<h2><u><a name="xtocid88063">Fuses</a></u></h2>
+<a name="Fuse"></a>
+<p>Normalmente, la clasificación de ampacidad de un conductor es un límite de diseño de circuito que nunca debe excederse intencionalmente, pero hay una aplicación en la que se espera exceder la ampacidad: en el caso de<i>fusibles</i>.
+</p>
+<p>Un fusible no es más que un trozo corto de cable diseñado para fundirse y separarse en caso de corriente excesiva.  Los fusibles siempre están conectados en serie con los componentes que se van a proteger contra sobrecorriente, de modo que cuando el fusible<i>golpes</i>(se abre) abrirá todo el circuito y detendrá la corriente a través de los componentes.  Por supuesto, un fusible conectado en una rama de un circuito paralelo no afectaría la corriente a través de ninguna de las otras ramas.</p>
+<p>Normalmente, el trozo delgado de cable fusible está contenido dentro de una funda de seguridad para minimizar los riesgos de explosión de arco si el cable se quema con fuerza violenta, como puede suceder en el caso de sobrecorrientes severas.  En el caso de fusibles pequeños para automóviles, la funda es transparente para que el elemento fusible pueda inspeccionarse visualmente.  El cableado residencial solía emplear fusibles atornillados con cuerpos de vidrio y una tira de lámina metálica delgada y estrecha en el medio.  A continuación se muestra una fotografía que muestra ambos tipos de fusibles:</p>
+<p> <img src="50026.jpg"/> </p>
+<p>Los fusibles tipo cartucho son populares en aplicaciones automotrices y en aplicaciones industriales cuando se construyen con materiales de cubierta distintos al vidrio.  Debido a que los fusibles están diseñados para "fallar" al abrirse cuando se excede su clasificación actual, generalmente están diseñados para reemplazarse fácilmente en un circuito.  Esto significa que se insertarán en algún tipo de soporte en lugar de soldarse o atornillarse directamente a los conductores del circuito.  La siguiente es una fotografía que muestra un par de fusibles de cartucho de vidrio en un portafusibles múltiples:</p>
+<p> <img src="50027.jpg"/> </p>
+<p>Los fusibles se sujetan mediante clips metálicos de resorte, y los propios clips están conectados permanentemente a los conductores del circuito.  El material base del portafusibles (o<i>bloque de fusibles</i>como a veces se les llama) se elige como un buen aislante.</p>
+<p>Otro tipo de portafusibles para fusibles tipo cartucho se usa comúnmente para instalación en paneles de control de equipos, donde es deseable ocultar todos los puntos de contacto eléctrico del contacto humano.  A diferencia del bloque de fusibles que se acaba de mostrar, donde todos los clips metálicos están expuestos abiertamente, este tipo de portafusibles encierra completamente el fusible en una carcasa aislante:</p>
+<p> <img src="50028.jpg"/> </p>
+<a name="Circuit breaker"></a>
+<a name="Bimetallic strip"></a>
+<p>El dispositivo más común que se utiliza hoy en día para la protección contra sobrecorriente en circuitos de alta corriente es el<i>cortacircuitos</i>.  Los disyuntores son interruptores especialmente diseñados que se abren automáticamente para detener la corriente en caso de una condición de sobrecorriente.  Los disyuntores pequeños, como los utilizados en servicios residenciales, comerciales e industriales ligeros, funcionan térmicamente.  Contienen un<i>tira bimetálica</i>(una tira delgada de dos metales unidos espalda con espalda) que transporta corriente de circuito, que se dobla cuando se calienta.  Cuando la tira bimetálica genera suficiente fuerza (debido al calentamiento por sobrecorriente de la tira), se activa el mecanismo de disparo y el disyuntor se abrirá.  Los disyuntores más grandes se activan automáticamente por la fuerza del campo magnético producido por los conductores que transportan corriente dentro del disyuntor, o pueden activarse para dispararse mediante dispositivos externos que monitorean la corriente del circuito (dichos dispositivos se denominan<i>relés de protección</i>).
+</p>
+<p>Debido a que los disyuntores no fallan cuando se los somete a condiciones de sobrecorriente (más bien, simplemente se abren y se pueden volver a cerrar moviendo una palanca), es más probable que se encuentren conectados a un circuito de una manera más permanente que los fusibles.  Aquí se muestra una fotografía de un pequeño disyuntor:</p>
+<p> <img src="50029.jpg"/> </p>
+<p>Desde el exterior, parece nada más que un interruptor.  De hecho, podría usarse como tal.  Sin embargo, su verdadera función es funcionar como dispositivo de protección contra sobrecorriente.</p>
+<a name="Fusible link"></a>
+<p>Cabe señalar que algunos automóviles utilizan dispositivos económicos conocidos como<i>enlaces fusibles</i>para protección contra sobrecorriente en el circuito de carga de la batería, debido al gasto de un fusible y un soporte con la clasificación adecuada.  Un eslabón fusible es un fusible primitivo, que no es más que un trozo corto de cable aislado con goma diseñado para derretirse en caso de sobrecorriente, sin ningún tipo de revestimiento duro.  Estos dispositivos toscos y potencialmente peligrosos nunca se utilizan en la industria o incluso en el uso de energía residencial, principalmente debido a los mayores niveles de voltaje y corriente encontrados.  En lo que respecta a este autor, su aplicación incluso en circuitos de automoción es cuestionable.</p>
+<p>El símbolo del dibujo del esquema eléctrico de un fusible es una curva en forma de S:</p>
+<p> <img src="00282.png"/> </p>
+<p>Los fusibles están clasificados principalmente, como era de esperar, en la unidad para corriente: amperios.  Aunque su funcionamiento depende de la autogeneración de calor en condiciones de corriente excesiva mediante la propia resistencia eléctrica del fusible, están diseñados para aportar una cantidad insignificante de resistencia adicional a los circuitos que protegen.  Esto se logra en gran medida haciendo que el cable del fusible sea lo más corto posible.  Así como la ampacidad de un cable normal no está relacionada con su longitud (el cable de cobre sólido de calibre 10 soportará 40 amperios de corriente en el aire libre, independientemente de qué tan largo o corto sea el trozo), un cable fusible de cierto material y calibre se fundirá con una determinada corriente, sin importar qué tan largo sea.  Dado que la longitud no es un factor en la clasificación actual, cuanto más corto se pueda hacer, menos resistencia tendrá de un extremo a otro.</p>
+<p>Sin embargo, el diseñador de fusibles también debe considerar lo que sucede después de que se funde un fusible: los extremos fundidos del cable que alguna vez fue continuo estarán separados por un espacio de aire, con voltaje de suministro completo entre los extremos.  Si el fusible no tiene la longitud suficiente en un circuito de alto voltaje, es posible que una chispa salte de uno de los extremos del cable derretido al otro, completando el circuito nuevamente:</p>
+<p> <img src="00283.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="00284.png"/> </p>
+<p>En consecuencia, los fusibles se clasifican en términos de su capacidad de voltaje así como del nivel de corriente al que se quemarán.</p>
+<p>Algunos fusibles industriales grandes tienen elementos de alambre reemplazables para reducir el gasto.  El cuerpo del fusible es un cartucho opaco y reutilizable que protege el cable del fusible de la exposición y protege los objetos circundantes del cable del fusible.</p>
+<a name="Inrush current"></a>
+<a name="Current, inrush"></a>
+<a name="Slow-blow fuse"></a>
+<p>La clasificación actual de un fusible implica más que un solo número.  Si se envía una corriente de 35 amperios a través de un fusible de 30 amperios, puede fundirse repentinamente o demorarse antes de fundirse, dependiendo de otros aspectos de su diseño.  Algunos fusibles están pensados ​​para fundirse muy rápido, mientras que otros están diseñados para tiempos de "apertura" más modestos, o incluso para una acción retardada según la aplicación.  Estos últimos fusibles a veces se denominan<i>golpe lento</i>fusibles debido a sus características intencionales de retardo de tiempo.</p>
+<p>Un ejemplo clásico de aplicación de fusibles de acción lenta es la protección de motores eléctricos, donde<i>irrupción</i>Normalmente se experimentan corrientes de hasta diez veces la corriente de funcionamiento normal cada vez que se arranca el motor desde un punto muerto.  Si se utilizaran fusibles de fusión rápida en una aplicación como esta, el motor nunca podría arrancar porque los niveles normales de corriente de entrada quemarían los fusibles inmediatamente.  El diseño de un fusible de fusión lenta es tal que el elemento fusible tiene más masa (pero no más ampacidad) que un fusible de fusión rápida equivalente, lo que significa que se calentará más lentamente (pero hasta la misma temperatura final) para cualquier cantidad de corriente dada.</p>
+<a name="Semiconductor fuse"></a>
+<p>En el otro extremo del espectro de acción de los fusibles se encuentran los llamados<i>fusibles semiconductores</i>Diseñado para abrirse muy rápidamente en caso de una condición de sobrecorriente.  Los dispositivos semiconductores, como los transistores, tienden a ser especialmente intolerantes a las condiciones de sobrecorriente y, como tales, requieren una protección de acción rápida contra sobrecorrientes en aplicaciones de alta potencia.</p>
+<a hot""="" name="Conductor, "></a>
+<a name="Conductor, " neutral""=""></a>
+<p>Se supone que los fusibles siempre deben colocarse en el lado "caliente" de la carga en sistemas conectados a tierra.  La intención de esto es que la carga quede completamente desenergizada en todos los aspectos después de que se abra el fusible.  Para ver la diferencia entre fusionar el lado "caliente" y el lado "neutro" de una carga, compare estos dos circuitos:</p>
+<p> <img src="00285.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="00286.png"/> </p>
+<p>En cualquier caso, el fusible interrumpió con éxito la corriente a la carga, pero el circuito inferior no logra interrumpir el voltaje potencialmente peligroso desde ambos lados de la carga a tierra, donde podría estar parada una persona.  El primer diseño de circuito es mucho más seguro.</p>
+<p>Como se dijo antes, los fusibles no son el único tipo de dispositivo de protección contra sobrecorriente que se utiliza.  Los dispositivos similares a interruptores llamados disyuntores se utilizan a menudo (y más comúnmente) para abrir circuitos con corriente excesiva, y su popularidad se debe al hecho de que no se destruyen a sí mismos en el proceso de romper el circuito como lo hacen los fusibles.  Sin embargo, en cualquier caso, la colocación del dispositivo de protección contra sobrecorriente en un circuito seguirá las mismas pautas generales enumeradas anteriormente: es decir, "fusionar" el lado de la fuente de alimentación.<i>not</i>conectado a tierra.</p>
+<p>Aunque la colocación de la protección contra sobrecorriente en un circuito puede determinar el riesgo relativo de descarga eléctrica de ese circuito bajo diversas condiciones, debe entenderse que dichos dispositivos nunca tuvieron la intención de proteger contra descargas eléctricas.  Ni los fusibles ni los disyuntores fueron diseñados para abrirse en caso de que una persona sufriera una descarga eléctrica; más bien, están destinados a abrirse sólo en condiciones de posible sobrecalentamiento del conductor.  Los dispositivos contra sobrecorriente protegen principalmente a los conductores de un circuito contra daños por sobretemperatura (y los riesgos de incendio asociados con conductores demasiado calientes) y, en segundo lugar, protegen piezas específicas de equipos como cargas y generadores (algunos fusibles de acción rápida están diseñados para proteger dispositivos electrónicos particularmente susceptibles a sobretensiones).  Dado que los niveles de corriente necesarios para una descarga eléctrica o electrocución son mucho más bajos que los niveles de corriente normales de cargas eléctricas comunes, una condición de sobrecorriente no es indicativa de que se esté produciendo una descarga.  Hay otros dispositivos diseñados para detectar ciertas condiciones de choque (los detectores de falla a tierra son los más populares), pero estos dispositivos sirven estrictamente para ese propósito y no están relacionados con la protección de los conductores contra el sobrecalentamiento.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>A <i>fusible</i>Es un conductor pequeño y delgado diseñado para fundirse y separarse en dos pedazos con el fin de romper un circuito en caso de corriente excesiva.</li>
+<li>A <i>cortacircuitos</i>Es un interruptor especialmente diseñado que se abre automáticamente para interrumpir la corriente del circuito en caso de una condición de sobrecorriente.  Pueden "dispararse" (abrirse) térmicamente, mediante campos magnéticos o mediante dispositivos externos llamados "relés de protección", según el diseño del interruptor, su tamaño y la aplicación.</li>
+<li>Los fusibles se clasifican principalmente en términos de corriente máxima, pero también en términos de cuánta caída de voltaje soportarán de manera segura después de interrumpir un circuito.</li>
+<li>Los fusibles pueden diseñarse para quemarse rápido, lento o en cualquier punto intermedio para el mismo nivel máximo de corriente.</li>
+<li>El mejor lugar para instalar un fusible en un sistema de energía conectado a tierra es en la ruta del conductor no conectado a tierra hacia la carga.  De esa manera, cuando se funda el fusible, solo quedará el conductor a tierra (seguro) todavía conectado a la carga, lo que hará que sea más seguro para las personas cerca.</li>
+</ul>
+<h2><u><a name="xtocid88064">Specific resistance</a></u></h2>
+<a name="Specific resistance"></a>
+<a name="Resistance, specific"></a>
+<p>La clasificación de ampacidad del conductor es una evaluación cruda de la resistencia basada en el potencial de la corriente para crear un riesgo de incendio.  Sin embargo, podemos encontrarnos con situaciones en las que la caída de voltaje creada por la resistencia del cable en un circuito plantea preocupaciones distintas a la de evitar incendios.  Por ejemplo, podemos estar diseñando un circuito donde el voltaje a través de un componente es crítico y no debe caer por debajo de cierto límite.  Si este es el caso, las caídas de voltaje resultantes de la resistencia del cable pueden causar un problema de ingeniería mientras se encuentran dentro de los límites seguros (de incendio) de ampacidad:</p>
+<p> <img src="00287.png"/> </p>
+<p>Si la carga en el circuito anterior no tolera menos de 220 voltios, dado un voltaje de fuente de 230 voltios, entonces será mejor que nos aseguremos de que el cableado no caiga más de 10 voltios en el camino.  Contando los conductores de suministro y de retorno de este circuito, esto deja una caída máxima tolerable de 5 voltios a lo largo de cada cable.  Usando la Ley de Ohm (R=E/I), podemos determinar la resistencia máxima permitida para cada trozo de cable:</p>
+<p> <img src="10220.png"/> </p>
+<p>Sabemos que la longitud del cable es de 2300 pies para cada trozo de cable, pero ¿cómo determinamos la cantidad de resistencia para un tamaño y longitud de cable específicos?  Para hacer eso, necesitamos otra fórmula:</p>
+<p> <img src="10221.png"/> </p>
+<p>Esta fórmula relaciona la resistencia de un conductor con su resistencia específica (la letra griega "rho" (ρ), que se parece a una letra minúscula "p"), su longitud ("l") y su área de sección transversal ("A").  Observe que con la variable de longitud en la parte superior de la fracción, el valor de resistencia aumenta a medida que aumenta la longitud (analogía: es más difícil forzar el paso de líquido a través de una tubería larga que de una corta) y disminuye a medida que aumenta el área de la sección transversal (analogía: el líquido fluye más fácilmente a través de una tubería gruesa que a través de una delgada).  La resistencia específica es una constante para el tipo de material conductor que se calcula.</p>
+<p>Las resistencias específicas de varios materiales conductores se pueden encontrar en la siguiente tabla.  Encontramos el cobre cerca del final de la tabla, solo superado por la plata por tener una baja resistencia específica (buena conductividad):</p>
+<br/>
+<p>
+<b>Tabla de resistencia específica:</b> <a href="#cspr2.tbl">  below</a>
+</p>
+<a name="cspr2.tbl"><p><i>Specific resistance at 20<sup>o</sup> C:</i></p></a>
+<table border="1" style="background-color: #E0FFFF; ">
+<tr>
+<th>Material</th><th>Elemento/Aleación</th><th>(ohmios-cmil/pies)</th><th>(ohmios-cm·10<sup>-6</sup>)</th>
+</tr>
+<tr>
+<td>nicromo</td><td>Aleación</td><td>675</td><td>112.2</td>
+</tr>
+<tr>
+<td>Nicromo V</td><td>Aleación</td><td>650</td><td>108.1</td>
+</tr>
+<tr>
+<td>manganina</td><td>Aleación</td><td>290</td><td>48.21</td>
+</tr>
+<tr>
+<td>Constantán</td><td>Aleación</td><td>272.97</td><td>45.38</td>
+</tr>
+<tr>
+<td>Acero*</td><td>Aleación</td><td>100</td><td>16.62</td>
+</tr>
+<tr>
+<td>Platino</td><td>Elemento</td><td>63.16</td><td>10.5</td>
+</tr>
+<tr>
+<td>Hierro</td><td>Elemento</td><td>57.81</td><td>9.61</td>
+</tr>
+<tr>
+<td>Níquel</td><td>Elemento</td><td>41.69</td><td>6.93</td>
+</tr>
+<tr>
+<td>Zinc</td><td>Elemento</td><td>35.49</td><td>5.90</td>
+</tr>
+<tr>
+<td>Molibdeno</td><td>Elemento</td><td>32.12</td><td>5.34</td>
+</tr>
+<tr>
+<td>Tungsteno</td><td>Elemento</td><td>31.76</td><td>5.28</td>
+</tr>
+<tr>
+<td>Aluminio</td><td>Elemento</td><td>15.94</td><td>2.650</td>
+</tr>
+<tr>
+<td>Oro</td><td>Elemento</td><td>13.32</td><td>2.214</td>
+</tr>
+<tr>
+<td>Cobre</td><td>Elemento</td><td>10.09</td><td>1.678</td>
+</tr>
+<tr>
+<td>Plata</td><td>Elemento</td><td>9.546</td><td>1.587</td>
+</tr>
+</table>
+<table border="1" style="background-color: #E0FFFF; ">
+<tr>
+<td>*       =    Acero   aleación   con   99,5 %    hierro,   0,5 %    carbono</td>
+</tr>
+</table>
+<br/>
+<p>Observe que las cifras de resistencia específica en la tabla anterior se dan en la unidad muy extraña de "ohmios-cmil/pie" (Ω-cmil/pie). Esta unidad indica qué unidades se espera que usemos en la fórmula de resistencia (R=ρl/A).  En este caso, estas cifras de resistencia específica deben usarse cuando la longitud se mide en pies y el área de la sección transversal se mide en milésimas de pulgada circulares.</p>
+<p>La unidad métrica para la resistencia específica es el ohmímetro (Ω-m), o el ohmio-centímetro (Ω-cm), con 1,66243 x 10<sup>-9</sup>Ω-metros por Ω-cmil/pie (1,66243 x 10<sup>-7</sup>Ω-cm por Ω-cmil/pie).  En la columna Ω-cm de la tabla, las cifras en realidad están escaladas como µΩ-cm debido a sus magnitudes muy pequeñas.  Por ejemplo, el hierro aparece como 9,61 µΩ-cm, lo que podría representarse como 9,61 x 10<sup>-6</sup>Ω-cm.</p>
+<p>Cuando se utiliza la unidad de Ω-metro para resistencia específica en la fórmula R=ρl/A, la longitud debe estar en metros y el área en metros cuadrados.  Cuando se utiliza la unidad de Ω-centímetro (Ω-cm) en la misma fórmula, la longitud debe estar en centímetros y el área en centímetros cuadrados.</p>
+<p>Todas estas unidades de resistencia específica son válidas para cualquier material (Ω-cmil/ft, Ω-m o Ω-cm).  Sin embargo, se podría preferir usar Ω-cmil/pie cuando se trata de alambre redondo donde el área de la sección transversal ya se conoce en mils circulares.  Por el contrario, cuando se trata de barras colectoras de formas irregulares o barras colectoras personalizadas recortadas de metal, donde solo se conocen las dimensiones lineales de longitud, ancho y altura, las unidades de resistencia específicas de Ω-metro o Ω-cm pueden ser más apropiadas.</p>
+<p>Volviendo a nuestro circuito de ejemplo, buscábamos un cable que tuviera 0,2 Ω o menos de resistencia en una longitud de 2300 pies.  Suponiendo que vamos a utilizar alambre de cobre (el tipo más común de alambre eléctrico fabricado), podemos configurar nuestra fórmula como tal:</p>
+<p> <img src="10222.png"/> </p>
+<p>Resolviendo algebraicamente A, obtenemos un valor de 116,035 mils circulares.  Haciendo referencia a nuestra tabla de tamaños de cables sólidos, encontramos que el cable "doble-deber" (2/0) con 133,100 cmils es adecuado, mientras que el siguiente tamaño más bajo, "simple-deber" (1/0), con 105,500 cmils es demasiado pequeño.  Tenga en cuenta que la corriente de nuestro circuito es de unos modestos 25 amperios.  Según nuestra tabla de ampacidad para alambre de cobre al aire libre, un alambre de calibre 14 habría sido suficiente (en la medida de lo posible).<i>not</i>se trata de provocar un incendio).  Sin embargo, desde el punto de vista de la caída de voltaje, un cable de calibre 14 habría sido muy inaceptable.</p>
+<p>Sólo por diversión, veamos qué habría hecho un cable de calibre 14 en el rendimiento de nuestro circuito de alimentación.  Al observar nuestra tabla de tamaños de cables, encontramos que el cable de calibre 14 tiene un área de sección transversal de 4107 mils circulares.  Si todavía utilizamos cobre como material de alambre (una buena opción, a menos que estemos<i>en realidad</i>¡es rico y puede permitirse 4600 pies de alambre de plata de calibre 14!), entonces nuestra resistencia específica seguirá siendo 10.09 Ω-cmil/pie:</p>
+<p> <img src="10223.png"/> </p>
+<p>Recuerde que esto es 5.651 Ω por 2300 pies de alambre de cobre calibre 14, y que tenemos dos tramos de 2300 pies en todo el circuito, por lo que<i>cada</i>El trozo de cable en el circuito tiene 5.651 Ω de resistencia:</p>
+<p> <img src="00288.png"/> </p>
+<p>La resistencia total de los cables de nuestro circuito es 2 veces 5,651 o 11,301 Ω.  Desafortunadamente, esto es<i>far</i>demasiada resistencia para permitir 25 amperios de corriente con una fuente de voltaje de 230 voltios.  Incluso si nuestra resistencia de carga fuera 0 Ω, nuestra resistencia de cableado de 11,301 Ω restringiría la corriente del circuito a tan solo 20,352 amperios.  Como puede ver, una "pequeña" cantidad de resistencia del cable puede marcar una gran diferencia en el rendimiento del circuito, especialmente en circuitos de potencia donde las corrientes son mucho más altas que las que normalmente se encuentran en los circuitos electrónicos.</p>
+<p>Hagamos un ejemplo de problema de resistencia para un trozo de barra colectora cortada a medida.  Supongamos que tenemos un trozo de barra de aluminio sólida, de 4 centímetros de ancho por 3 centímetros de alto por 125 centímetros de largo, y deseamos calcular la resistencia de un extremo a otro a lo largo de la dimensión larga (125 cm).  Primero, necesitaríamos determinar el área de la sección transversal de la barra:</p>
+<p> <img src="10224.png"/> </p>
+<p>También necesitamos conocer la resistencia específica del aluminio, en la unidad adecuada para esta aplicación (Ω-cm).  De nuestra tabla de resistencias específicas, vemos que esto es 2,65 x 10<sup>-6</sup>Ω-cm.  Configurando nuestra fórmula R=ρl/A, tenemos:</p>
+<p> <img src="10225.png"/> </p>
+<p>Como puede ver, el gran espesor de una barra colectora hace que<i>muy</i>Resistencias bajas en comparación con los tamaños de cables estándar, incluso cuando se utiliza un material con una mayor resistencia específica.</p>
+<p>El procedimiento para determinar la resistencia de las barras colectoras no es fundamentalmente diferente al de determinar la resistencia de los cables redondos.  Sólo necesitamos asegurarnos de que el área de la sección transversal se calcule correctamente y que todas las unidades se correspondan entre sí como deberían.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>La resistencia del conductor aumenta al aumentar la longitud y disminuye al aumentar el área de la sección transversal, siendo todos los demás factores iguales.</li>
+<li><i>Resistencia específica</i>("ρ") es una propiedad de cualquier material conductor, una cifra que se utiliza para determinar la resistencia de un extremo a otro de un conductor dada la longitud y el área en esta fórmula: R = ρl/A</li>
+<li>La resistencia específica de los materiales se da en unidades de Ω-cmil/pie o Ω-metros (métrico).  El factor de conversión entre estas dos unidades es 1,66243 x 10<sup>-9</sup>Ω-metros por Ω-cmil/pie, o 1,66243 x 10<sup>-7</sup>Ω-cm por Ω-cmil/pie.</li>
+<li>Si la caída de voltaje del cableado en un circuito es crítica, se deben realizar cálculos exactos de resistencia de los cables antes de elegir el tamaño del cable.</li>
+</ul>
+<h2><u><a name="xtocid88065">Temperature coefficient of resistance</a></u></h2>
+<a name="Temperature coefficient of resistance"></a>
+<a name="Resistance, temperature coefficient of"></a>
+<p>Es posible que hayas notado en la tabla de resistencias específicas que todas las cifras se especificaron a una temperatura de 20<sup>o</sup>Celsius.  Si sospechaba que esto significaba que la resistencia específica de un material puede cambiar con la temperatura, ¡tenía razón!</p>
+<p>Los valores de resistencia para conductores a cualquier temperatura distinta de la temperatura estándar (generalmente especificada en 20 Celsius) en la tabla de resistencia específica deben determinarse mediante otra fórmula más:</p>
+<p> <img src="10226.png"/> </p>
+<p>La constante "alfa" (α) se conoce como<i>coeficiente de temperatura de resistencia</i>, y simboliza el factor de cambio de resistencia por grado de cambio de temperatura.  Así como todos los materiales tienen una determinada resistencia específica (a 20<sup>o</sup>C), ellos también<i>cambiar</i>Resistencia según la temperatura en ciertas cantidades.  Para metales puros, este coeficiente es un número positivo, lo que significa que la resistencia<i>aumenta</i>con el aumento de la temperatura.  Para los elementos carbono, silicio y germanio, este coeficiente es un número negativo, lo que significa que la resistencia<i>disminuye</i>con el aumento de la temperatura.  Para algunas aleaciones metálicas, el coeficiente de resistencia a la temperatura es muy cercano a cero, lo que significa que la resistencia apenas cambia con las variaciones de temperatura (¡una buena propiedad si desea construir una resistencia de precisión con alambre metálico!).  La siguiente tabla proporciona los coeficientes de resistencia a la temperatura para varios metales comunes, tanto puros como aleados:</p>
+<br/>
+<p>
+<b>Tabla de coeficientes de temperatura:</b> <a href="#tcr2.tbl">  below</a>
+</p>
+<a name="tcr2.tbl"><p><i>Temperature coefficient (α) per degree C:</i></p></a>
+<table border="1" style="background-color: #E0FFFF; ">
+<tr>
+<th>Material</th><th>Elemento/Aleación</th><th>Temperatura. coeficiente</th>
+</tr>
+<tr>
+<td>Níquel</td><td>Elemento</td><td>0.005866</td>
+</tr>
+<tr>
+<td>Hierro</td><td>Elemento</td><td>0.005671</td>
+</tr>
+<tr>
+<td>Molibdeno</td><td>Elemento</td><td>0.004579</td>
+</tr>
+<tr>
+<td>Tungsteno</td><td>Elemento</td><td>0.004403</td>
+</tr>
+<tr>
+<td>Aluminio</td><td>Elemento</td><td>0.004308</td>
+</tr>
+<tr>
+<td>Cobre</td><td>Elemento</td><td>0.004041</td>
+</tr>
+<tr>
+<td>Plata</td><td>Elemento</td><td>0.003819</td>
+</tr>
+<tr>
+<td>Platino</td><td>Elemento</td><td>0.003729</td>
+</tr>
+<tr>
+<td>Oro</td><td>Elemento</td><td>0.003715</td>
+</tr>
+<tr>
+<td>Zinc</td><td>Elemento</td><td>0.003847</td>
+</tr>
+<tr>
+<td>Acero*</td><td>Aleación</td><td>0.003</td>
+</tr>
+<tr>
+<td>nicromo</td><td>Aleación</td><td>0.00017</td>
+</tr>
+<tr>
+<td>Nicromo V</td><td>Aleación</td><td>0.00013</td>
+</tr>
+<tr>
+<td>manganina</td><td>Aleación</td><td>0.000015</td>
+</tr>
+<tr>
+<td>Constantán</td><td>Aleación</td><td>±0.000074</td>
+</tr>
+</table>
+<table border="1" style="background-color: #E0FFFF; ">
+<tr>
+<td>*   =  Aleación de acero S con 99,5 %    hierro, 0,5 %    carbono</td>
+</tr>
+</table>
+<br/>
+<p>Echemos un vistazo a un circuito de ejemplo para ver cómo la temperatura puede afectar la resistencia del cable y, en consecuencia, el rendimiento del circuito:</p>
+<p> <img src="00289.png"/> </p>
+<p>Este circuito tiene una resistencia total de los cables (cable 1 + cable 2) de 30 Ω a temperatura estándar.  Configurando una tabla de valores de voltaje, corriente y resistencia obtenemos:</p>
+<p> <img src="10227.png"/> </p>
+<p>a los 20<sup>o</sup>Celsius, obtenemos 12,5 voltios a través de la carga y un total de 1,5 voltios (0,75 + 0,75) caídos a través de la resistencia del cable.  Si la temperatura subiera a 35<sup>o</sup>Celsius, podríamos determinar fácilmente el cambio de resistencia de cada trozo de cable.  Suponiendo el uso de alambre de cobre (α = 0,004041) obtenemos:</p>
+<p> <img src="10228.png"/> </p>
+<p>Recalculando los valores de nuestro circuito, vemos qué cambios traerá este aumento de temperatura:</p>
+<p> <img src="10229.png"/> </p>
+<p>Como puede ver, el voltaje a través de la carga disminuyó (de 12,5 voltios a 12,42 voltios) y la caída de voltaje a través de los cables aumentó (de 0,75 voltios a 0,79 voltios) como resultado del aumento de temperatura.  Aunque los cambios pueden parecer pequeños, pueden ser significativos para las líneas eléctricas que se extienden por kilómetros entre las plantas de energía y las subestaciones, subestaciones y cargas.  De hecho, las empresas de servicios públicos a menudo tienen que tener en cuenta los cambios de resistencia de la línea resultantes de las variaciones estacionales de temperatura al calcular la carga permitida del sistema.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>La mayoría de los materiales conductores cambian su resistencia específica con los cambios de temperatura.  Esta es la razón por la que las cifras de resistencia específica siempre se especifican a una temperatura estándar (normalmente 20<sup>o</sup>o 25<sup>o</sup>Celsius).</li>
+<li>El factor de cambio de resistencia por grado Celsius de cambio de temperatura se llama<i>coeficiente de temperatura de resistencia</i>.  Este factor está representado por la letra minúscula griega "alfa" (α).</li>
+<li>Un coeficiente positivo para un material significa que su resistencia aumenta con el aumento de temperatura.  Los metales puros suelen tener coeficientes de resistencia a la temperatura positivos.  Se pueden obtener coeficientes cercanos a cero aleando ciertos metales.</li>
+<li>Un coeficiente negativo para un material significa que su resistencia disminuye con el aumento de temperatura.  Los materiales semiconductores (carbono, silicio, germanio) suelen tener coeficientes de resistencia a la temperatura negativos.</li>
+<li>La fórmula utilizada para determinar la resistencia de un conductor a alguna temperatura distinta a la especificada en una tabla de resistencia es la siguiente:</li>
+<li><p> <img src="10226.png"/> </p></li>
+</ul>
+<h2><u><a name="xtocid88066">Superconductivity</a></u></h2>
+<a name="Superconductor"></a>
+<a name="Zero, absolute"></a>
+<p>Los conductores pierden toda su resistencia eléctrica cuando se enfrían a temperaturas muy bajas (cerca del cero absoluto, aproximadamente -273<sup>o</sup>Celsius).  Debe entenderse que la superconductividad no es simplemente una extrapolación de la tendencia de la mayoría de los conductores a perder gradualmente resistencia al disminuir la temperatura; más bien, es un salto cuántico repentino en la resistividad de lo finito a nada.<i>Un material superconductor tiene una resistencia eléctrica absolutamente nula, no sólo una pequeña cantidad.</i>.
+</p>
+<p>La superconductividad fue descubierta por primera vez por H. Kamerlingh Onnes en la Universidad de Leiden, Países Bajos, en 1911. Apenas tres años antes, en 1908, Onnes había desarrollado un método para licuar gas helio, que proporcionaba un medio con el cual sobreenfriar objetos experimentales a sólo unos pocos grados por encima del cero absoluto.  Al decidir investigar los cambios en la resistencia eléctrica del mercurio cuando se enfriaba a esta temperatura tan baja, descubrió que su resistencia caía a<i>nada</i>justo por debajo del punto de ebullición del helio.</p>
+<a name="Superfluidity"></a>
+<a name="Cooper pairs"></a>
+<p>Existe cierto debate sobre exactamente cómo y por qué los materiales superconductores son superconductores.  Una teoría sostiene que los electrones se agrupan y viajan en pares (llamados<i>pares de cobre</i>) dentro de un superconductor en lugar de viajar de forma independiente, y eso tiene algo que ver con su flujo sin fricción.  Curiosamente, otro fenómeno de temperaturas extremadamente frías,<i>superfluidez</i>, sucede con ciertos líquidos (especialmente el helio líquido), lo que da como resultado un flujo de moléculas sin fricción.</p>
+<p>La superconductividad promete capacidades extraordinarias para los circuitos eléctricos.  Si se pudiera eliminar por completo la resistencia de los conductores, no habría pérdidas de energía ni ineficiencias en los sistemas de energía eléctrica debido a resistencias parásitas.  Los motores eléctricos podrían hacerse casi perfectamente eficientes (100%).  Componentes como condensadores e inductores, cuyas características ideales normalmente se ven perjudicadas por las resistencias inherentes de los cables, podrían convertirse en ideales en un sentido práctico.  Ya se han desarrollado algunos conductores, motores y condensadores superconductores prácticos, pero su uso en la actualidad es limitado debido a los problemas prácticos intrínsecos al mantenimiento de temperaturas súper frías.</p>
+<a name="Transition temperature"></a>
+<a name="Temperature, transition"></a>
+<p>La temperatura umbral para que un superconductor cambie de conducción normal a superconductividad se llama temperatura<i>temperatura de transición</i>.  Las temperaturas de transición para los superconductores "clásicos" están en el rango criogénico (cerca del cero absoluto), pero se ha avanzado mucho en el desarrollo de superconductores de "alta temperatura" que superconducen a temperaturas más cálidas.  Un tipo es una mezcla cerámica de itrio, bario, cobre y oxígeno que cambia a una temperatura relativamente suave -160.<sup>o</sup>Celsius.  Idealmente, un superconductor debería poder funcionar dentro del rango de temperaturas ambiente, o al menos dentro del rango de equipos de refrigeración económicos.</p>
+<a name="kelvin (temperature scale)"></a>
+<a name="Unit, kelvin"></a>
+<p>En esta tabla se muestran las temperaturas críticas para algunas sustancias comunes.  Las temperaturas se dan en kelvin, que tiene el mismo intervalo incremental que los grados Celsius (un aumento o disminución de 1 kelvin es la misma cantidad de cambio de temperatura que 1<sup>o</sup>Celsius), solo compensado de modo que 0 K sea el cero absoluto.  De esta manera no tendremos que lidiar con muchas cifras negativas.</p>
+<br/>
+<p>
+<b>Temperatura crítica, superconductores.</b> <a href="#critical2.tbl">  below</a>
+</p>
+<a name="critical2.tbl"><p><i>Critical temperatures given in Kelvins</i></p></a>
+<table border="1" style="background-color: #E0FFFF; ">
+<tr>
+<th>Material</th><th>Elemento o aleación</th><th>Temperatura crítica (K)</th>
+</tr>
+<tr>
+<td>Aluminio</td><td>Elemento</td><td>1.20</td>
+</tr>
+<tr>
+<td>Cadmio</td><td>Elemento</td><td>0.56</td>
+</tr>
+<tr>
+<td>Dirigir</td><td>Elemento</td><td>7.2</td>
+</tr>
+<tr>
+<td>Mercurio</td><td>Elemento</td><td>4.16</td>
+</tr>
+<tr>
+<td>Niobio</td><td>Elemento</td><td>8.70</td>
+</tr>
+<tr>
+<td>Torio</td><td>Elemento</td><td>1.37</td>
+</tr>
+<tr>
+<td>Tin</td><td>Elemento</td><td>3.72</td>
+</tr>
+<tr>
+<td>Titanio</td><td>Elemento</td><td>0.39</td>
+</tr>
+<tr>
+<td>Uranio</td><td>Elemento</td><td>1.0</td>
+</tr>
+<tr>
+<td>Zinc</td><td>Elemento</td><td>0.91</td>
+</tr>
+<tr>
+<td>Niobio/Estaño</td><td>Aleación</td><td>18.1</td>
+</tr>
+<tr>
+<td>sulfuro cúprico</td><td>Compuesto</td><td>1.6</td>
+</tr>
+</table>
+<br/>
+<a name="Meissner effect"></a>
+<a name="Effect, Meissner"></a>
+<p>Los materiales superconductores también interactúan de formas interesantes con los campos magnéticos.  Mientras se encuentra en estado superconductor, un material superconductor tenderá a excluir todos los campos magnéticos, un fenómeno conocido como<i>efecto Meissner</i>.  Sin embargo, si la intensidad del campo magnético se intensifica más allá de un nivel crítico, el material superconductor dejará de ser superconductor.  En otras palabras, los materiales superconductores perderán su superconductividad (sin importar qué tan fríos los hagas) si se exponen a un campo magnético demasiado fuerte.  De hecho, la presencia de<i>any</i>El campo magnético tiende a reducir la temperatura crítica de cualquier material superconductor: cuanto más campo magnético esté presente, más frío tendrá que enfriar el material antes de que se vuelva superconductor.</p>
+<p>Ésta es otra limitación práctica de los superconductores en el diseño de circuitos, ya que la corriente eléctrica a través de cualquier conductor produce un campo magnético.  Aunque un cable superconductor tendría resistencia cero para oponerse a la corriente, todavía habrá una<i>límite</i>de cuánta corriente prácticamente podría pasar a través de ese cable debido a su límite crítico de campo magnético.</p>
+<p>Ya existen algunas aplicaciones industriales de los superconductores, especialmente desde la reciente aparición (1987) de la cerámica de itrio-bario-cobre-oxígeno, que sólo requiere nitrógeno líquido para enfriarse, a diferencia del helio líquido.  Incluso es posible pedir kits de superconductividad a proveedores educativos que pueden funcionar en laboratorios de escuelas secundarias (nitrógeno líquido no incluido).  Normalmente, estos kits exhiben superconductividad por el efecto Meissner, suspendiendo un pequeño imán en el aire sobre un disco superconductor enfriado por un baño de nitrógeno líquido.</p>
+<p>La resistencia nula que ofrecen los circuitos superconductores tiene consecuencias únicas.  ¡En un cortocircuito superconductor, es posible mantener grandes corrientes indefinidamente con voltaje aplicado cero!</p>
+<p> <img src="00290.png"/> </p>
+<a name="Perpetual motion machine"></a>
+<a name="Motion, perpetual"></a>
+<a name="Over-unity machine"></a>
+<p>Se ha demostrado experimentalmente que los anillos de material superconductor mantienen una corriente continua durante años sin aplicar voltaje.  Hasta donde todo el mundo sabe, no existe un límite de tiempo teórico sobre cuánto tiempo podría mantenerse una corriente sin ayuda en un circuito superconductor.  Si estás pensando que esto parece ser una forma de<i>movimiento perpetuo</i>¡Tienes razón!  Contrariamente a la creencia popular, no existe ninguna ley de la física que prohíba el movimiento perpetuo; más bien, la prohibición se opone a cualquier máquina o sistema que genere más energía de la que consume (lo que se denominaría una<i>sobreunidad</i>dispositivo).  En el mejor de los casos, para lo único que serviría una máquina de movimiento perpetuo (como el anillo superconductor) es para<i>almacenar</i>energía, no<i>generar</i>¡Libremente!</p>
+<a name="Junction, Josephson"></a>
+<a name="Josephson junction"></a>
+<a name="Transistor"></a>
+<p>Los superconductores también ofrecen algunas posibilidades extrañas que no tienen nada que ver con la Ley de Ohm.  Una de esas posibilidades es la construcción de un dispositivo llamado Josephson Junction, que actúa como una especie de relé, controlando una corriente con otra (sin partes móviles, por supuesto).  El pequeño tamaño y el rápido tiempo de conmutación de Josephson Junctions pueden conducir a nuevos diseños de circuitos informáticos: una alternativa al uso de transistores semiconductores.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Los superconductores son materiales que tienen una resistencia eléctrica absolutamente nula.</li>
+<li>Todos los materiales superconductores conocidos actualmente deben enfriarse muy por debajo de la temperatura ambiente para convertirse en superconductores.  La temperatura máxima a la que lo hacen se llama<i>temperatura de transición</i>.</li>
+</ul>
+<h2><u><a name="xtocid88067">Insulator breakdown voltage</a></u></h2>
+<a name="Insulator"></a>
+<p>Los átomos de los materiales aislantes tienen electrones muy unidos, lo que resiste muy bien el flujo libre de electrones.  Sin embargo, los aisladores no pueden resistir cantidades indefinidas de voltaje.  Con suficiente voltaje aplicado,<i>any</i>El material aislante eventualmente sucumbirá a la "presión" eléctrica y se producirá un flujo de electrones.  Sin embargo, a diferencia de la situación con los conductores donde la corriente es proporcional al voltaje aplicado (dada una resistencia fija), la corriente a través de un aislante es bastante no lineal: para voltajes por debajo de un cierto nivel umbral, prácticamente no fluirá ningún electrón, pero si el voltaje excede ese umbral, habrá una avalancha de corriente.</p>
+<a name="Breakdown, insulation"></a>
+<p>Una vez que la corriente es forzada a través de un material aislante,<i>descomponer</i>de la estructura molecular de ese material ha ocurrido.  Después de la ruptura, el material puede o no comportarse más como aislante, ya que la estructura molecular ha sido alterada por la ruptura.  Generalmente hay una "punción" localizada en el medio aislante por donde fluyeron los electrones durante la ruptura.</p>
+<a name="Dielectric strength"></a>
+<p>El espesor de un material aislante juega un papel en la determinación de su voltaje de ruptura, también conocido como<i>rigidez dieléctrica</i>.  La rigidez dieléctrica específica a veces se indica en términos de voltios por mil (1/1000 de pulgada) o kilovoltios por pulgada (las dos unidades son equivalentes), pero en la práctica se ha descubierto que la relación entre el voltaje de ruptura y el espesor no es exactamente lineal.  Un aislante tres veces más grueso tiene una rigidez dieléctrica ligeramente inferior a 3 veces mayor.  Sin embargo, para un uso aproximado, las clasificaciones de voltios por espesor están bien.</p>
+<br/>
+<pre>
+
+</pre>
+<br/>
+<p>
+<b>Rigidez dieléctrica:</b> <a href="#dielectric2.tbl">  below</a>
+</p>
+<a name="dielectric2.tbl"><p><i>Dielectric strength in kilovolts per inch (kV/in):</i></p></a>
+<table border="1" style="background-color: #E0FFFF; ">
+<tr>
+<th>Material*</th><th>Rigidez dieléctrica</th>
+</tr>
+<tr>
+<td>Vacío</td><td>20</td>
+</tr>
+<tr>
+<td>Air</td><td>20 to 75</td>
+</tr>
+<tr>
+<td>Porcelana</td><td>40 to 200</td>
+</tr>
+<tr>
+<td>Parafina</td><td>200 to 300</td>
+</tr>
+<tr>
+<td>Aceite para transformadores</td><td>400</td>
+</tr>
+<tr>
+<td>Baquelita</td><td>300 to 550</td>
+</tr>
+<tr>
+<td>Goma</td><td>450 to 700</td>
+</tr>
+<tr>
+<td>Goma laca</td><td>900</td>
+</tr>
+<tr>
+<td>Papel</td><td>1250</td>
+</tr>
+<tr>
+<td>teflón</td><td>1500</td>
+</tr>
+<tr>
+<td>Vaso</td><td>2000 to 3000</td>
+</tr>
+<tr>
+<td>Mica</td><td>5000</td>
+</tr>
+</table>
+<p>* = Los materiales enumerados están especialmente preparados para uso eléctrico,<a href="#dielectric2.tbl">  above</a>.
+</p>
+<br/>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Con un voltaje aplicado lo suficientemente alto, los electrones pueden liberarse de los átomos de los materiales aislantes, lo que da como resultado una corriente a través de ese material.</li>
+<li>El voltaje mínimo requerido para "violar" un aislante forzando la corriente a través de él se llama voltaje<i>voltaje de ruptura</i>, o<i>rigidez dieléctrica</i>.</li>
+<li>Cuanto más gruesa sea una pieza de material aislante, mayor será el voltaje de ruptura, siendo todos los demás factores iguales.</li>
+<li>La rigidez dieléctrica específica generalmente se clasifica en una de dos unidades equivalentes: voltios por mil o kilovoltios por pulgada.</li>
+</ul>
+<h2><u><a name="xtocid88068">Data</a></u></h2>
+<p>Las tablas de resistencia específica y coeficiente de resistencia a la temperatura para materiales elementales (no aleaciones) se derivaron de cifras encontradas en el 78<sup>th</sup>edición de la<i>Manual CRC de química y física</i>.
+</p>
+<p>Tabla de temperaturas críticas de superconductores derivadas de cifras encontradas en el 21<sup>st</sup>volumen de<i>Enciclopedia de Collier</i>, 1968.</p>
+<h2><u><a name="xtocid88069">Contributors</a></u></h2>
+<p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>
+<p>
+<b>Aarón Forster</b>(18 de febrero de 2003): Corrección de error tipográfico.</p>
+<p>
+<b>Jason Stark</b>(Junio ​​de 2000): Formato de documentos HTML, que dio lugar a una segunda edición mucho más atractiva.</p>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="DC_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="DC_11.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="DC_13.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

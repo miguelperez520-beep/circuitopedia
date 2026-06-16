@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 12 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #f59e0b; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 12</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen IV</h1>
+<h1>Capítulo 12</h1>
+<!-- -->
+<!--Created 07/01/2004 to 04/09/2005 (DC)-->
+<!--Modified-->
+<!--first table/equation image 14164.eps-->
+<!--last table/equation image  14xxx.eps-->
+<!--first schematic image 04371.eps-->
+<!--last schematic image 043.eps-->
+<a name="shift register"></a>
+<a name="sequential logic, shift register"></a>
+<h1>REGISTROS DE TURNO</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid92430"><u>Introduction</u></a></li>
+<li><a href="#xtocid92431"><u>Serial-in/serial-out shift register</u></a></li>
+<ul>
+<li><a href="#xtocid92432"><u>Serial-in/serial-out devices</u></a></li>
+</ul>
+<li><a href="#xtocid92433"><u>Parallel-in, serial-out shift register</u></a></li>
+<ul>
+<li><a href="#xtocid92434"><u>Parallel-in/serial-out devices</u></a></li>
+<li><a href="#xtocid92435"><u>Practical applications</u></a></li>
+</ul>
+<li><a href="#xtocid92436"><u>Serial-in, parallel-out shift register</u></a></li>
+<ul>
+<li><a href="#xtocid92437"><u>Serial-in/ parallel-out devices</u></a></li>
+<li><a href="#xtocid92438"><u>Practical applications</u></a></li>
+</ul>
+<li><a href="#xtocid92439"><u>Parallel-in, parallel-out, universal shift register</u></a></li>
+<ul>
+<li><a href="#xtocid924310"><u>Parallel-in/ parallel-out and universal devices</u></a></li>
+<li><a href="#xtocid924311"><u>Practical applications</u></a></li>
+</ul>
+<li><a href="#xtocid924312"><u>Ring counters</u></a></li>
+<ul>
+<li><a href="#xtocid924313"><u>Johnson counters</u></a></li>
+<ul>
+<li><a href="#xtocid924314">Johnson counter devices</a></li>
+<li><a href="#xtocid924315">Practical applications</a></li>
+</ul>
+</ul>
+<li><a href="#xtocid924316"><u> references</u></a></li></ul>
+<p>
+<b>Autor original: Dennis Crunkilton</b>
+</p>
+<br/>
+<p>
+<!--inage image after author-->
+</p>
+<h2><u><a name="xtocid92430">Introduction</a></u></h2>
+<p>Los registros de desplazamiento, al igual que los contadores, son una forma de<i>lógica secuencial</i>. La lógica secuencial, a diferencia de la lógica combinacional, no solo se ve afectada por las entradas presentes, sino también por la historia anterior. En otras palabras, la lógica secuencial recuerda eventos pasados.</p>
+<p>Los registros de desplazamiento producen un retraso discreto de una señal o forma de onda digital. Una forma de onda sincronizada con un<i>reloj</i>, una onda cuadrada que se repite, se retrasa por<b>"n"</b>tiempos de reloj discretos, donde<b>"n"</b>es el número de etapas del registro de desplazamiento. Por lo tanto, un registro de desplazamiento de cuatro etapas retrasa la "entrada de datos" en cuatro relojes para la "salida de datos". Las etapas en un registro de desplazamiento son<i>etapas de retraso</i>, normalmente escribe<b>"D"</b>Chanclas o tipo<b>"JK"</b>Chanclas.</p>
+<p>Anteriormente, como memoria digital servían registros de desplazamiento muy largos (varios cientos de etapas). Esta aplicación obsoleta recuerda a las líneas de retardo acústico de mercurio utilizadas como memoria de las primeras computadoras.</p>
+<p>La transmisión de datos en serie, a una distancia de metros a kilómetros, utiliza registros de desplazamiento para convertir datos paralelos a formato en serie. Las comunicaciones de datos en serie reemplazan muchos cables de datos paralelos lentos con un único circuito en serie de alta velocidad.</p>
+<p>Los datos en serie a lo largo de distancias más cortas, de decenas de centímetros, utilizan registros de desplazamiento para introducir y sacar datos de los microprocesadores.  Numerosos periféricos, incluidos convertidores de analógico a digital, convertidores de digital a analógico, controladores de pantalla y memoria, utilizan registros de desplazamiento para reducir la cantidad de cableado en las placas de circuito.</p>
+<a name="pseudo-noise"></a>
+<p>Algunos circuitos contadores especializados utilizan registros de desplazamiento para generar formas de onda repetidas. Los registros de desplazamiento más largos, con la ayuda de la retroalimentación, generan patrones tan largos que parecen ruido aleatorio.<i>pseudo-ruido</i>.
+</p>
+<p>Los registros de turnos básicos se clasifican por estructura según los siguientes tipos:<ul>
+<li>Entrada/salida serie</li>
+<li>Entrada paralela/salida serie</li>
+<li>Entrada serie/salida paralela</li>
+<li>Entrada/salida paralela universal</li>
+<li>Contador de timbres</li>
+</ul>
+</p>
+<br/>
+<p>
+<p> <img src="04450.png"/> </p> <!-- SISO block- number out of sequence -->
+</p>
+<br/>
+<p>Arriba mostramos un diagrama de bloques de un registro de desplazamiento de entrada/salida en serie, que tiene 4 etapas de longitud. Los datos en la entrada se retrasarán cuatro períodos de reloj desde la entrada hasta la salida del registro de desplazamiento.</p>
+<p>Los datos en "datos en", arriba, estarán presentes en el escenario<b>A</b>salida después del primer pulso de reloj. Después de la segunda etapa de pulso<b>A</b>los datos se transfieren a la etapa<b>B</b>salida y los "datos de entrada" se transfieren a la etapa<b>A</b>producción. Después del tercer cronómetro, etapa<b>C</b>es reemplazado por etapa<b>B</b>; escenario<b>B</b>es reemplazado por etapa<b>A</b>; y la etapa A se reemplaza por "datos en". Después del cuarto reloj, los datos originalmente presentes en "datos de entrada" están en la etapa<b>D</b>, "producción". Los datos de "primero en entrar" son "primeros en salir", ya que se desplazan de "datos de entrada" a "datos de salida".</p>
+<br/>
+<p>
+<p> <img src="04372.png"/> </p> <!-- PISO block -->
+</p>
+<br/>
+<p>Los datos se cargan en todas las etapas a la vez de un registro de desplazamiento de entrada/salida en paralelo. A continuación, los datos se transfieren mediante "salida de datos" mediante impulsos de reloj. Dado que arriba se muestra un registro de desplazamiento de 4 etapas, se requieren cuatro pulsos de reloj para desplazar todos los datos. En el diagrama de arriba, etapa<b>D</b>los datos estarán presentes en la "salida de datos" hasta el primer pulso de reloj; escenario<b>C</b>los datos estarán presentes en la "salida de datos" entre el primer reloj y el segundo pulso de reloj; escenario<b>B</b>los datos estarán presentes entre el segundo reloj y el tercer reloj; y escenario<b>A</b>Los datos estarán presentes entre el tercer y cuarto reloj. Después del cuarto pulso de reloj y posteriormente, deben aparecer bits sucesivos de "datos de entrada" en "datos de salida" del registro de desplazamiento después de un retraso de cuatro pulsos de reloj.</p>
+<p>Si se conectaran cuatro interruptores a D<sub>A</sub>a través de D<sub>D</sub>, el estado podría leerse en un microprocesador usando solo un pin de datos y un pin de reloj. Dado que agregar más interruptores no requeriría pines adicionales, este enfoque parece atractivo para muchas entradas.</p>
+<br/>
+<p>
+<p> <img src="04373.png"/> </p> <!-- SIPO block -->
+</p>
+<br/>
+<p>Arriba, cuatro bits de datos se desplazarán desde "datos de entrada" mediante cuatro pulsos de reloj y estarán disponibles en Q<sub>A</sub>a través de Q<sub>D</sub>para controlar circuitos externos como LED, lámparas, controladores de relé y bocinas.</p>
+<p>Después del primer reloj, los datos en "datos de entrada" aparecen en Q<sub>A</sub>.
+Después del segundo cronómetro, La vieja Q<sub>A</sub>los datos aparecen en Q<sub>B</sub>; Q<sub>A</sub>recibe los siguientes datos de "datos en". Después del tercer cronómetro, Q<sub>B</sub>los datos están en Q<sub>C</sub>. Después del cuarto reloj, Q<sub>C</sub>los datos están en Q<sub>D</sub>. Esta etapa contiene los datos presentes por primera vez en "datos en". El registro de desplazamiento ahora debería contener cuatro bits de datos.</p>
+<br/>
+<p>
+<p> <img src="04374.png"/> </p> <!-- PIPO block -->
+</p>
+<br/>
+<p>Un registro de desplazamiento de entrada/salida paralela combina la función del registro de desplazamiento de entrada y salida en paralelo con la función del registro de desplazamiento de entrada y salida en serie para producir el registro de desplazamiento universal. La palanca de cambios "hacer cualquier cosa" tiene un precio: el mayor número de pines de E/S (entrada/salida) puede reducir el número de etapas que se pueden empaquetar.</p>
+<p>Datos presentados en D<sub>A</sub>a través de D<sub>D</sub>se carga en paralelo en los registros. Estos datos en Q<sub>A</sub>a través de Q<sub>D</sub>puede cambiarse según el número de pulsos presentados en la entrada del reloj. Los datos desplazados están disponibles en Q<sub>A</sub>a través de Q<sub>D</sub>. La entrada "modo", que puede ser más de una entrada, controla la carga paralela de datos desde D<sub>A</sub>a través de D<sub>D</sub>, cambio de datos y dirección del cambio. Hay registros de desplazamiento que desplazarán los datos hacia la izquierda o hacia la derecha.</p>
+<br/>
+<p>
+<p> <img src="04375.png"/> </p> <!-- ring counter -->
+</p>
+<br/>
+<p>Si la salida en serie de un registro de desplazamiento está conectada a la entrada en serie, los datos se pueden desplazar perpetuamente alrededor del anillo siempre que haya pulsos de reloj presentes.  Si la salida se invierte antes de ser retroalimentada como se muestra arriba, no tenemos que preocuparnos por cargar los datos iniciales en el "contador de anillo".</p>
+<a name="shift register, serial-in/serial-out"></a>
+<h2><u><a name="xtocid92431">Serial-in/serial-out shift register</a></u></h2>
+<p>Los registros de desplazamiento de entrada y salida en serie retrasan los datos un tiempo de reloj para cada etapa. Almacenarán un poco de datos para cada registro. Un registro de desplazamiento de entrada y salida en serie puede tener de uno a 64 bits de longitud, más si los registros o paquetes están en cascada.</p>
+<p>A continuación se muestra un registro de desplazamiento de una sola etapa que recibe datos que no están sincronizados con el reloj del registro. Los "datos en" en el<b>D</b>pin del tipo<b>D</b> <b>FF</b>(Flip-Flop) no cambia de nivel cuando el reloj cambia de bajo a alto. Es posible que deseemos sincronizar los datos con un reloj de todo el sistema en una placa de circuito para mejorar la confiabilidad de un circuito lógico digital.</p>
+<br/>
+<p>
+<p> <img src="04376.png"/> </p> <!-- 1-shift type D-->
+<br/>
+<p>El punto obvio (en comparación con la figura siguiente) ilustrado anteriormente es que cualquier "dato en" que esté presente en el<b>D</b>pin de un tipo<b>D</b>FF se transfiere de D a la salida Q a la hora del reloj. Dado que nuestro registro de desplazamiento de ejemplo utiliza elementos de almacenamiento sensibles al borde positivo, la salida<b>Q</b>sigue el<b>D</b>entrada cuando el reloj pasa de bajo a alto como se muestra con las flechas hacia arriba en el diagrama de arriba. No hay duda de qué nivel lógico está presente en el tiempo del reloj porque los datos son estables mucho antes y después del flanco del reloj. Este rara vez es el caso en registros de desplazamiento de múltiples etapas. Pero este fue un ejemplo fácil para empezar. Sólo nos preocupa el borde positivo del reloj, de menor a mayor. El flanco descendente puede ignorarse. es muy facil de ver<b>Q</b>seguir<b>D</b>a la hora del reloj de arriba. Compare esto con el diagrama siguiente donde los "datos de entrada" parecen cambiar con el flanco positivo del reloj.</p>
+<br/>
+<p>
+<p> <img src="04377.png"/> </p> <!-- 1-shift D?? -->
+</p>
+<br/>
+<p>Dado que "datos en" parece cambiar a la hora del reloj t<sub>1</sub>arriba, ¿qué significa el tipo?<b>D</b>FF ver a la hora del reloj? La respuesta corta y simplificada es que ve los datos que estaban presentes en<b>D</b>antes del reloj. Eso es lo que se transfiere a<b>Q</b>a la hora del reloj t<sub>1</sub>. La forma de onda correcta es Q<sub>C</sub>. en t<sub>1</sub>Q llega a cero si aún no es cero. El<b>D</b>el registro no ve uno hasta el momento t<sub>2</sub>, en cuyo momento Q sube.</p>
+<br/>
+<p>
+<p> <img src="04378.png"/> </p> <!-- 1-shift correct   -->
+</p>
+<br/>
+<p>Dado que los datos anteriores, presentes en<b>D</b>está programado para<b>Q</b>a la hora del reloj, y<b>Q</b>no puede cambiar hasta la próxima hora del reloj, el<b>D</b>FF retrasa los datos un período de reloj, siempre que los datos ya estén sincronizados con el reloj. la q<sub>A</sub>La forma de onda es la misma que la "entrada de datos" con un retraso de un período de reloj.</p>
+<p>Una mirada más detallada a cuál es la entrada del tipo.<b>D</b>Flip-Flop ve la hora del reloj. Consulte la figura siguiente. Dado que los "datos entrantes" parecen cambiar según la hora del reloj (arriba), necesitamos más información para determinar cuál es el<b>D</b>FF ve. Si los "datos en" son de otra etapa del registro de desplazamiento, otro mismo tipo<b>D</b>FF, podemos sacar algunas conclusiones basadas en<i>ficha de datos</i>información. Los fabricantes de lógica digital ponen a disposición información sobre sus piezas en hojas de datos, que antes solo estaban disponibles en una colección llamada<i>libro de datos</i>. Los libros de datos todavía están disponibles; sin embargo, el sitio web del fabricante es la fuente moderna.</p>
+<br/>
+<p>
+<p> <img src="04379.png"/> </p> <!-- Tsu Thld -->
+</p>
+<br/>
+<a name="setup time, shift register"></a>
+<a name="hold  time, shift register"></a>
+<a name="propagation delay, shift register"></a>
+<p>Los siguientes datos se extrajeron de la hoja de datos CD4006b para operación a 5V<sub>DC</sub>, que sirve como ejemplo para ilustrar el momento.</p>
+<p>
+<a href="http://focus.ti.com/docs/prod/folders/print/cd4006b.html">[*]</a>
+</p>
+<ul>
+<li>t<sub>S</sub>=100ns</li>
+<li>t<sub>H</sub>=60 ns</li>
+<li>t<sub>P</sub>=200-400 ns tipo/máx.</li>
+</ul>
+<p>
+t<sub>S</sub>es el<i>tiempo de configuración</i>, los datos de hora deben estar presentes antes de la hora del reloj. En este caso los datos deben estar presentes en<b>D</b> 100ns prior to the clock. Furthermore, the data must be held for <i>tiempo de espera</i> t<sub>H</sub>=60 ns después del tiempo del reloj. Estas dos condiciones deben cumplirse para sincronizar de manera confiable los datos desde<b>D</b> to <b>Q</b>del Flip-Flop.</p>
+<p>No hay problema en cumplir con el tiempo de configuración de 60 ns ya que los datos en<b>D</b>ha estado allí durante todo el período de reloj anterior si proviene de otra etapa del registro de desplazamiento. Por ejemplo, a una frecuencia de reloj de 1 Mhz, el período del reloj es de 1000 µs, tiempo suficiente. En realidad, los datos estarán presentes durante 1000 µs antes del reloj, lo cual es mucho mayor que el t mínimo requerido.<sub>S</sub>de 60ns.</p>
+<p>El tiempo de espera t<sub>H</sub>Se cumple =60ns porque D conectado a Q de otra etapa no puede cambiar más rápido que el retardo de propagación de la etapa anterior t<sub>P</sub>=200ns.  El tiempo de espera se cumple siempre que se reduzca el retardo de propagación del mensaje anterior.<b>D</b>FF es mayor que el tiempo de espera. Datos en<b>D</b>impulsado por otra etapa<b>Q</b>no cambiará más rápido que 200 ns para el CD4006b.</p>
+<p>En resumen, salida<b>Q</b>sigue a la entrada D casi en el tiempo del reloj si los Flip-Flops se conectan en cascada en un registro de desplazamiento de múltiples etapas.</p>
+<br/>
+<p>
+<p> <img src="04380.png"/> </p> <!-- 3-shift type D -->
+</p>
+<br/>
+<p>tres tipos<b>D</b>Los flip-flops se conectan en cascada de Q a D y los relojes se ponen en paralelo para formar un registro de desplazamiento de tres etapas arriba.</p>
+<br/>
+<p>
+<p> <img src="04381.png"/> </p> <!-- 3-shift type JK -->
+</p>
+<br/>
+<p>Tipo<b>JK</b>Los FF conectaron en cascada Q a J, Q' a K con relojes en paralelo para producir una forma alternativa del registro de desplazamiento anterior.</p>
+<p>Un registro de desplazamiento de entrada/salida en serie tiene una entrada de reloj, una entrada de datos y una salida de datos de la última etapa. En general, las otras salidas de etapa no están disponibles. De lo contrario, sería un registro de desplazamiento de entrada en serie y salida en paralelo.</p>
+<p>Las formas de onda siguientes son aplicables a cualquiera de las dos versiones anteriores del registro de desplazamiento de entrada y salida en serie. Los tres pares de flechas muestran que un registro de desplazamiento de tres etapas almacena temporalmente 3 bits de datos y los retrasa tres períodos de reloj desde la entrada hasta la salida.</p>
+<br/>
+<p>
+<p> <img src="04382.png"/> </p> <!-- 3-shift waveforms -->
+</p>
+<br/>
+<p>A la hora del reloj t<sub>1</sub>un "dato en" de<b>0</b>está cronometrado desde<b>D</b> to <b>Q</b>de las tres etapas. En particular,<b>D</b>de escenario<b>A</b>ve una lógica<b>0</b>, que está sincronizado con Q<sub>A</sub>donde permanece hasta el momento t<sub>2</sub>.
+</p>
+<p>A la hora del reloj t<sub>2</sub>un "dato en" de<b>1</b>está cronometrado desde<b>D</b>a Q<sub>A</sub>. En etapas<b>B</b> and <b>C</b>, a <b>0</b>, alimentado desde etapas anteriores se sincroniza a Q<sub>B</sub>y q<sub>C</sub>.
+</p>
+<p>A la hora del reloj t<sub>3</sub>un "dato en" de<b>0</b>está cronometrado desde<b>D</b>a Q<sub>A</sub>. Q<sub>A</sub>baja y permanece baja durante los relojes restantes debido a que se están ingresando "datos".<b>0</b>. Q<sub>B</sub>sube en t<sub>3</sub>debido a un<b>1</b>de la etapa anterior. q<sub>C</sub>sigue siendo bajo después de t<sub>3</sub>debido a una baja de la etapa anterior.</p>
+<p>
+Q<sub>C</sub>finalmente sube alto en el reloj t<sub>4</sub>debido a la alta alimentación a<b>D</b>de la etapa anterior Q<sub>B</sub>. Todas las etapas anteriores tienen<b>0</b>Se ha trasladado a ellos. Y, después del siguiente pulso de reloj en t<sub>5</sub>, toda lógica<b>1</b>s habrá sido desplazado, reemplazado por<b>0</b>s
+</p>
+<h3><u><a name="xtocid92432">Serial-in/serial-out devices</a></u></h3>
+<p>Examinaremos más de cerca las siguientes piezas disponibles como circuitos integrados, cortesía de Texas Instruments. Para obtener hojas de datos completas del dispositivo, siga los enlaces.</p>
+<ul>
+<li>CD4006b Registro de desplazamiento de entrada/salida serie de 18 bits<p>
+<a href="http://focus.ti.com/docs/prod/folders/print/cd4006b.html">[*]</a>
+</p>
+</li>
+<li>CD4031b Registro de desplazamiento de entrada/salida serie de 64 bits<p>
+<a href="http://focus.ti.com/docs/prod/folders/print/cd4031b.html">[*]</a>
+</p>
+</li>
+<li>Registro de desplazamiento de entrada/salida serie dual CD4517b de 64 bits<p>
+<a href="http://focus.ti.com/docs/prod/folders/print/cd4517b.html">[*]</a>
+</p>
+</li>
+</ul>
+<p>Los siguientes registros de desplazamiento de entrada y salida en serie son de la serie 4000.<i>CMOS</i>(Semiconductores complementarios de óxido metálico). Como tal, aceptarán una V.<sub>DD</sub>, fuente de alimentación positiva de 3 voltios a 15 voltios. la v<sub>SS</sub>el pin está conectado a tierra. La frecuencia máxima del reloj de turno, que varía con V<sub>DD</sub>, son unos pocos megahercios. Consulte la hoja de datos completa para obtener más detalles.</p>
+<br/>
+<p>
+<p> <img src="04383.png"/> </p> <!--CD4006b 18-bit -->
+</p>
+<br/>
+<p>El CD4006b de 18 bits consta de dos etapas de 4 bits y dos etapas más de 5 bits con una derivación de salida de 4 bits. Por tanto, las etapas de 5 bits podrían usarse como registros de desplazamiento de 4 bits. Para obtener un registro de desplazamiento completo de 18 bits, la salida de un registro de desplazamiento debe conectarse en cascada a la entrada de otro y así sucesivamente hasta que todas las etapas creen un único registro de desplazamiento como se muestra a continuación.</p>
+<br/>
+<p>
+<p> <img src="04384.png"/> </p> <!--CD4006b 18-bit DIP -->
+</p>
+<br/>
+<p>A continuación se muestra un registro de desplazamiento de entrada/salida serie CD4031 de 64 bits.  Varios pines no están conectados (nc). Tanto Q como Q' están disponibles a partir de la etapa 64, en realidad Q<sub>64</sub>y Q'<sub>64</sub>. También hay una Q<sub>64</sub>"retrasado" de una media etapa que se retrasa medio ciclo de reloj. Una característica importante es un selector de datos que se encuentra en la entrada de datos al registro de desplazamiento.</p>
+<br/>
+<p>
+<p> <img src="04385.png"/> </p> <!--CD40031b 64-bit -->
+</p>
+<br/>
+<p>El "control de modo" selecciona entre dos entradas: datos 1 y datos 2. Si el "control de modo" es alto, los datos se seleccionarán de los "datos 2" para ingresarlos al registro de desplazamiento. En el caso de que el "control de modo" sea lógico bajo, se selecciona el "dato 1". Ejemplos de esto se muestran en las dos figuras siguientes.</p>
+<br/>
+<p>
+<p> <img src="04386.png"/> </p> <!--CD4031b recirculate -->
+</p>
+<br/>
+<p>Los "datos 2" anteriores están conectados al Q<sub>64</sub>salida del registro de desplazamiento. Con el "control de modo" alto, la Q<sub>64</sub>La salida se enruta de regreso a la entrada de datos de la palanca de cambios D. Los datos se<i>recircular</i>desde la salida hasta la entrada. Los datos se repetirán cada 64 pulsos de reloj como se muestra arriba. La pregunta que surge es ¿cómo llegó este patrón de datos al registro de desplazamiento en primer lugar?</p>
+<br/>
+<p>
+<p> <img src="04387.png"/> </p> <!--CD4031b load new data -->
+</p>
+<br/>
+<p>Con el "control de modo" bajo, se selecciona el "dato 1" del CD4031 para ingresarlo a la palanca de cambios. La salida, Q<sub>64</sub>, no se recircula porque la puerta selectora de datos inferior está<i>desactivado</i>. Por deshabilitado queremos decir que la "selección de modo" lógica baja invertida dos veces a un nivel bajo en la puerta NAND inferior impide que pase cualquier señal en el pin inferior (datos 2) a la salida de la puerta. Por tanto, queda inhabilitado.</p>
+<br/>
+<p>
+<p> <img src="04388.png"/> </p> <!--CD4517b dual 64-wide -->
+</p>
+<br/>
+<p>Arriba se muestra un registro de desplazamiento dual CD4517b de 64 bits. Tenga en cuenta los grifos en las etapas 16, 32 y 48. Eso significa que los registros de desplazamiento de esas longitudes se pueden configurar desde uno de los desplazadores de 64 bits. Por supuesto, los desplazadores de 64 bits se pueden conectar en cascada para producir un registro de desplazamiento de 80, 96, 112 o 128 bits. El reloj CL<sub>A</sub>y CL<sub>B</sub>deben estar en paralelo al conectar en cascada las dos palancas de cambio. NOSOTROS<sub>B</sub>y NOSOTROS<sub>B</sub>están conectados a tierra para operaciones de cambio normales. Las entradas de datos a los registros de desplazamiento A y B son D<sub>A</sub>y D<sub>B</sub>respectivamente.</p>
+<p>Supongamos que necesitamos un registro de desplazamiento de 16 bits. ¿Se puede configurar esto con el CD4517b?  ¿Qué tal un registro de 64 turnos de la misma pieza?</p>
+<br/>
+<p>
+<p> <img src="04389.png"/> </p> <!--CD4517b dual 64-wide as 16-bit, 64-bit -->
+</p>
+<br/>
+<p>Arriba mostramos un CD4517b conectado como un registro de desplazamiento de 16 bits para la sección B. El reloj para la sección B es CL<sub>B</sub>. Los datos están registrados en CL.<sub>B</sub>. Y los datos con un retraso de 16 relojes se extraen de Q<sub>16B</sub>.  NOSOTROS<sub>B</sub>, la habilitación de escritura, está conectada a tierra.</p>
+<p>Arriba también mostramos el mismo CD4517b conectado como un registro de desplazamiento de 64 bits para la sección independiente A. El reloj para la sección A es CL<sub>A</sub>. Los datos entran en CL<sub>A</sub>. Los datos retrasados ​​por pulsos de 64 relojes se recogen de Q<sub>64A</sub>.  NOSOTROS<sub>A</sub>, la habilitación de escritura para la sección A, está conectada a tierra.</p>
+<a name="shift register, parallel-in/serial-out"></a>
+<h2><u><a name="xtocid92433">Parallel-in, serial-out shift register</a></u></h2>
+<p>
+</p>
+<a name="parallel data"></a>
+<a name="serial data"></a>
+<p>Los registros de desplazamiento de entrada/salida en serie hacen todo lo que hacen los registros de desplazamiento de entrada/salida en serie anteriores además de introducir datos en todas las etapas simultáneamente.  El registro de desplazamiento de entrada/salida en paralelo almacena datos, los desplaza reloj por reloj y los retrasa según el número de etapas multiplicadas por el período del reloj. Además, la entrada/salida en paralelo realmente significa que podemos cargar datos en paralelo en todas las etapas antes de que comience cualquier cambio. Esta es una manera de convertir datos de un<i>paralelo</i>formato a un<i>de serie</i>formato. Por formato paralelo queremos decir que los bits de datos están presentes simultáneamente en cables individuales, uno para cada bit de datos, como se muestra a continuación. Por formato en serie queremos decir que los bits de datos se presentan secuencialmente en el tiempo en un solo cable o circuito como en el caso de la "salida de datos" en el diagrama de bloques a continuación.</p>
+<br/>
+<p>
+<p> <img src="04372.png"/> </p> <!--CD4517b dual 64-wide -->
+</p>
+<br/>
+<p>A continuación, analizamos de cerca los detalles internos de un registro de desplazamiento de entrada/salida en paralelo de 3 etapas. Una etapa consta de un tipo<b>D</b>Flip-Flop para almacenamiento y un selector AND-OR para determinar si los datos se cargarán en paralelo o se desplazarán los datos almacenados hacia la derecha. En general, estos elementos se replicarán para el número de etapas requeridas. Mostramos tres etapas debido a limitaciones de espacio. Cuatro, ocho o dieciséis bits son normales para piezas reales.</p>
+<br/>
+<p>
+<p> <img src="04390.png"/> </p> <!--PISO 3-stage -->
+</p>
+<br/>
+<p>Arriba mostramos la ruta de carga paralela cuando SHIFT/LD' tiene una lógica baja. Las puertas NAND superiores que sirven a D<sub>A</sub> D<sub>B</sub> D<sub>C</sub>están habilitados, pasando datos a las entradas D de tipo<b>D</b>Chanclas Q<sub>A</sub> Q<sub>B</sub> D<sub>C</sub>respectivamente. En el siguiente flanco positivo del reloj, los datos se sincronizarán de D a Q de los tres FF. Se cargarán tres bits de datos en Q<sub>A</sub> Q<sub>B</sub> D<sub>C</sub>al mismo tiempo.</p>
+<a name="synchronous load, shift register"></a>
+<a name="asynchronous load, shift register"></a>
+<p>El tipo de carga paralela que se acaba de describir, donde las cargas de datos en un pulso de reloj se conoce como<i>carga sincrónica</i>porque la carga de datos está sincronizada con el reloj. Esto debe diferenciarse de<i>carga asíncrona</i>donde la carga se controla mediante los pines preestablecidos y transparentes de los Flip-Flops que no requieren el reloj. Sólo uno de estos métodos de carga se utiliza dentro de un dispositivo individual, siendo la carga síncrona más común en los dispositivos más nuevos.</p>
+<br/>
+<p>
+<p> <img src="04391.png"/> </p> <!--PISO 3-stage SI path -->
+</p>
+<br/>
+<p>La ruta de cambio se muestra arriba cuando SHIFT/LD' tiene una lógica alta. Las puertas AND inferiores de los pares que alimentan la puerta OR están habilitadas, lo que nos proporciona una conexión de registro de desplazamiento de SI a D<sub>A</sub> , Q<sub>A</sub>a D<sub>B</sub> , Q<sub>B</sub>a D<sub>C</sub> , Q<sub>C</sub>a SO.  Los pulsos del reloj harán que los datos se desplacen hacia la derecha a SO en pulsos sucesivos.</p>
+<p>Las formas de onda siguientes muestran tanto la carga paralela de tres bits de datos como el desplazamiento en serie de estos datos. Datos paralelos en D<sub>A</sub> D<sub>B</sub> D<sub>C</sub>se convierte a datos en serie en SO.</p>
+<br/>
+<p>
+<p> <img src="04392.png"/> </p> <!--PISO 3-stage load waveforms -->
+</p>
+<br/>
+<p>Lo que describimos anteriormente con palabras para carga y desplazamiento paralelos ahora se establece como formas de onda arriba. Como ejemplo presentamos<b>101</b>a las entradas paralelas D<sub>AA</sub> D<sub>BB</sub> D<sub>CC</sub>. A continuación, SHIFT/LD' baja, lo que permite cargar datos en lugar de cambiarlos. Debe estar bajo un breve periodo de tiempo antes y después del pulso del reloj debido a los requisitos de configuración y retención. Es considerablemente más ancho de lo necesario. Sin embargo, con lógica síncrona es conveniente hacerlo amplio. Podríamos haber hecho el activo bajo SHIFT/LD con casi dos relojes de ancho, bajo casi un reloj antes de t.<sub>1</sub>y de regreso alto justo antes de t<sub>3</sub>. El factor importante es que debe ser bajo las 24 horas del día.<sub>1</sub>para permitir la carga paralela de los datos mediante el reloj.</p>
+<p>Tenga en cuenta que en t<sub>1</sub>los datos<b>101</b>en D<sub>A</sub> D<sub>B</sub> D<sub>C</sub>está sincronizado de D a Q de los Flip-Flops como se muestra en Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub>en el momento t<sub>1</sub>. Esta es la carga paralela de los datos sincrónica con el reloj.</p>
+<br/>
+<p>
+<p> <img src="04393.png"/> </p> <!--PISO 3-stage shift waveforms -->
+</p>
+<br/>
+<p>Ahora que los datos están cargados, podemos cambiarlos siempre que SHIFT/LD' esté alto para permitir el cambio, que es antes de t<sub>2</sub>. en t<sub>2</sub>los datos<b>0</b>en Q<sub>C</sub>se desplaza fuera de SO, que es lo mismo que Q<sub>C</sub>forma de onda. O se cambia a otro circuito integrado o se pierde si no hay nada conectado a SO. Los datos en Q<sub>B</sub>, a <b>0</b>se desplaza a Q<sub>C</sub>. El<b>1</b>en Q<sub>A</sub>se desplaza a Q<sub>B</sub>. Con "datos en" un<b>0</b>, Q<sub>A</sub>se convierte<b>0</b>. Después de t<sub>2</sub>, Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub> = <b>010</b>.
+</p>
+<p>Después de t<sub>3</sub>, Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub> = <b>001</b>. Este<b>1</b>, que estaba originalmente presente en Q<sub>A</sub>después de t<sub>1</sub>, ahora está presente en SO y Q<sub>C</sub>. El último bit de datos se transfiere a un circuito integrado externo, si existe. Después de t<sub>4</sub>Todos los datos de la carga paralela han desaparecido. En el reloj t<sub>5</sub>mostramos el desplazamiento de un dato<b>1</b>presente en el SI, entrada serie.</p>
+<p>¿Por qué proporcionar pines SI y SO en un registro de desplazamiento?  Estas conexiones nos permiten conectar en cascada etapas de registro de cambios para proporcionar cambios más grandes que los disponibles en un solo paquete IC (circuito integrado). También permiten conexiones en serie hacia y desde otros circuitos integrados, como microprocesadores.</p>
+<h3><u><a name="xtocid92434">Parallel-in/serial-out devices</a></u></h3>
+<p>Echemos un vistazo más de cerca a los registros de desplazamiento de entrada/salida en paralelo disponibles como circuitos integrados, cortesía de Texas Instruments. Para obtener hojas de datos completas del dispositivo, siga estos enlaces.</p>
+<ul>
+<li>SN74ALS166 registro de desplazamiento de 8 bits de entrada/salida en paralelo, carga síncrona<p>
+<a href="http://www-s.ti.com/sc/ds/sn74als166.pdf">[*]</a>
+</p>
+</li>
+<li>SN74ALS165 registro de desplazamiento de 8 bits de entrada/salida en paralelo, carga asíncrona<p>
+<a href="http://www-s.ti.com/sc/ds/sn74als165.pdf">[*]</a>
+</p>
+</li>
+<li>Registro de desplazamiento de 8 bits de entrada paralela/salida serie CD4014B, carga síncrona<p>
+<a href="http://www-s.ti.com/sc/ds/cd4014b.pdf">[*]</a>
+</p>
+</li>
+<li>SN74LS647 registro de desplazamiento de 16 bits de entrada/salida en paralelo, carga síncrona<p>
+<a href="http://www-s.ti.com/sc/ds/sn74ls674.pdf">[*]</a>
+</p>
+</li>
+</ul>
+<br/>
+<p>
+<p> <img src="04394.png"/> </p> <!--PISO SN74ALS166 -->
+</p>
+<br/>
+<a name="166, SN74ALS166"></a>
+<p>El SN74ALS166 que se muestra arriba es la coincidencia más cercana de una pieza real con las figuras anteriores de la palanca de cambios de entrada/salida en paralelo. Observemos los cambios menores en nuestra figura anterior. En primer lugar, hay 8 etapas. Sólo mostramos tres. Las 8 etapas se muestran en la hoja de datos disponible en el enlace de arriba. El fabricante etiqueta las entradas de datos A, B, C, etc. en H. El control SHIFT/LOAD se llama SH/LD'. Es una abreviatura de nuestra terminología anterior, pero funciona igual: carga paralela si es baja, cambio si es alta. La entrada de cambio (entrada de datos en serie) es SER en el ALS166 en lugar de SI. El reloj CLK está controlado por una señal de inhibición, CLKINH. Si CLKINH es alto, el reloj se inhibe o se desactiva. Por lo demás, esta "parte real" es la misma que hemos visto en detalle.</p>
+<p>
+</p>
+<br/>
+<p>
+<p> <img src="04395.png"/> </p> <!--PISO SN74ALS166 ANSI symbol-->
+</p>
+<br/>
+<p>Arriba está el símbolo ANSI (Instituto Nacional Estadounidense de Estándares) para el SN74ALS166 como se proporciona en la hoja de datos. Una vez que sabemos cómo funciona la pieza, es conveniente ocultar los detalles dentro de un símbolo. Hay muchas formas generales de símbolos. La ventaja del símbolo ANSI es que las etiquetas brindan pistas sobre cómo funciona la pieza.</p>
+<p>El gran bloque con muescas en la parte superior del '74ASL166 es la sección de control del símbolo ANSI. Hay un reinicio indicado por<b>R</b>. Hay tres señales de control:<b>M1</b>(Cambio),<b>M2 </b>(Cargar), y<b>C3/1 (flecha)</b>(reloj inhibido). El reloj tiene dos funciones. Primero,<b>C3</b>para cambiar datos paralelos dondequiera que haya un prefijo de<b></b>3 appears. Second, whenever <b>M1</b>se afirma, tal y como indica el<b>1</b> of <b>C3/1 (flecha)</b>, los datos se desplazan como lo indica la flecha que apunta hacia la derecha. La barra diagonal (/) es un separador entre estas dos funciones.  Las etapas de 8 turnos, como lo indica el título.<b>SRG8</b>, se identifican por las entradas externas<b>A, B, C,</b> to <b>H</b>. el interno<b>2, 3D</b>indica que los datos,<b>D</b>, está controlado por<b>M2</b>[Cargar] y<b>C3</b>reloj. En este caso, podemos concluir que los datos paralelos se cargan sincrónicamente con el reloj.<b>C3</b>. La etapa superior en<b>A</b>Es un bloque más ancho que los demás para acomodar la entrada.<b>SER</b>. la leyenda<b>1, 3D</b>implica que<b>SER</b>está controlado por<b>M1</b>[Mayús] y<b>C3</b>reloj. Por lo tanto, esperamos registrar datos en<b>SER</b>al realizar cambios en comparación con la carga paralela.</p>
+<br/>
+<p>
+<p> <img src="04396.png"/> </p> <!--gate symbols, ANSI symbol-->
+</p>
+<br/>
+<a name="shape symbols, logic gate"></a>
+<a name="ANSI gate symbols"></a>
+<a name="gate shape, ANSI symbols"></a>
+<a name="logic gate shape symbols"></a>
+<a name="rectangular symbols, logic gate"></a>
+<p>La puerta básica ANSI/IEEE<i>símbolos rectangulares</i>se proporcionan arriba para compararlos con los más familiares<i>símbolos de forma</i>para que podamos descifrar el significado de la simbología asociada al<b>CLÍN</b>Mano<b>CLK</b>pines en el símbolo ANSI SN74ALS166 anterior. El<b>CLK</b>y CLKINH alimentan un<b>OR</b>puerta en el símbolo ANSI SN74ALS166.<b>OR</b>está indicado por<b>=&gt;</b>en el símbolo insertado rectangular. El triángulo largo en la salida indica un reloj. Si hubiera una burbuja con la flecha, esto habría indicado un cambio en el borde negativo del reloj (de mayor a menor). Como no hay ninguna burbuja con la flecha del reloj, el registro se desplaza en el borde positivo (transición de bajo a alto) del reloj. La flecha larga, tras la leyenda<b>C3/1</b>apuntar hacia la derecha indica desplazamiento hacia la derecha, que está hacia abajo en el símbolo.</p>
+<br/>
+<p>
+<p> <img src="04397.png"/> </p> <!--PISO async load 74ALS165 internal logic-->
+</p>
+<br/>
+<a name="165, SN74ALS165"></a>
+<p>Parte de la lógica interna del registro de desplazamiento de carga asíncrono de entrada paralela/salida serie SN74ALS165 se reproduce de la hoja de datos anterior. Consulte el enlace al principio de esta sección para ver el diagrama completo. Hasta este momento no hemos analizado la carga asincrónica de datos. En primer lugar, la carga se logra mediante la aplicación de señales apropiadas al<b>Set</b>(preestablecido) y<b>Reiniciar</b>(borrar) las entradas de los Flip-Flops. la parte superior<b>NAND</b>Las puertas alimentan el<b>Set</b>pines de los FF y también cae en cascada hacia la parte inferior<b>NAND</b>puerta que alimenta el<b>Reiniciar</b>pines de los FF. el inferior<b>NAND</b>La puerta invierte la señal al pasar del<b>Set</b>fijar al<b>Reiniciar</b>alfiler.</p>
+<p>Primero,<b>SH/LD'</b>debe ser tirado<b>Low</b>para habilitar la parte superior e inferior<b>NAND</b>puertas.  Si<b>SH/LD'</b>estaban en una lógica<b>alto</b>en cambio, el inversor alimenta una lógica<b>low</b>a todos<b>NAND</b>Las puertas obligarían a<b>Alto</b>afuera, liberando el "bajo activo"<b>Set</b> and <b>Reiniciar</b>pines de todos los FF. No habría posibilidad de cargar los FF.</p>
+<p>Con<b>SH/LD'</b>sostuvo<b>Low</b>, podemos alimentar, por ejemplo, un dato<b>1</b>a entrada paralela<b>A</b>, que se invierte a cero en la parte superior<b>NAND</b>salida de puerta, ajuste FF Q<sub>A</sub>a un<b>1</b>. El<b>0</b>al<b>Set</b>el pasador se alimenta a la parte inferior<b>NAND</b>puerta donde se invierte a una<b>1</b>, liberando el<b>Reiniciar</b>alfiler de<b>Q<sub>A</sub></b>. Así, un dato<b>A=1</b>conjuntos<b>Q<sub>A</sub>=1</b>. Como nada de esto requería el reloj, la carga es asíncrona con respecto al reloj. Usamos un registro de desplazamiento de carga asíncrono si no podemos esperar a que un reloj cargue datos en paralelo, o si es inconveniente generar un solo pulso de reloj.</p>
+<p>La única diferencia al alimentar datos.<b>0</b>a entrada paralela<b>A</b>es que se invierte a un<b>1</b>fuera de la puerta superior soltando<b>Set</b>. Este<b>1</b> at <b>Set</b>se invierte a un<b>0</b>en la puerta inferior, tirando<b>Reiniciar</b>a un<b>Low</b>, que se reinicia<b>Q<sub>A</sub>=0</b>.
+</p>
+<br/>
+<p>
+<p> <img src="04398.png"/> </p> <!--74ALS165 ANSI symbol-->
+</p>
+<br/>
+<a name="165, SN74ALS165"></a>
+<p>El símbolo ANSI para el SN74ALS166 anterior tiene dos controles internos<b>C1</b>[CARGAR] y<b>C2</b>reloj de la<b>OR</b>función de (<b>CLKINH, CLK</b>).  <b>SRG8</b>dice palanca de cambios de 8 etapas. La flecha después<b>C2</b>indica cambio hacia la derecha o hacia abajo.<b>SER</b>La entrada es una función del reloj como lo indica la etiqueta interna.<b>2D</b>. Las entradas de datos paralelas<b>A, B, C</b> to <b>H</b>son una función de<b>C1</b>[CARGAR], indicado por la etiqueta interna<b>1D</b>.  <b>C1</b>se afirma cuando<b>sh/LD' =0</b>debido al inversor de media flecha en la entrada. Compare esto con el control de las entradas de datos en paralelo mediante el reloj del anterior ANSI SN75ALS166 síncrono. Tenga en cuenta las diferencias en las etiquetas de datos ANSI.</p>
+<br/>
+<p>
+<p> <img src="04399.png"/> </p> <!--CD4014b, CD4021b ANSI symbol-->
+</p>
+<br/>
+<a name="4014, CD4014B"></a>
+<p>En el CD4014B anterior,<b>M1</b>se afirma cuando<b>LD/SH'=0</b>. <b>M2</b>se afirma cuando<b>LD/SH'=1</b>. Reloj<b>C3/1</b>se utiliza para cargar datos en paralelo en<b>2, 3D</b>cuando<b>M2</b>está activo como lo indica el<b>2,3</b>etiquetas de prefijo. Patas<b>P3</b> to <b>P7</b>se entiende que tienen el mismo interior<b>2,3</b>etiquetas de prefijo como<b>P2</b> and <b>P8</b>.  En<b>SER</b>, el<b>1,3D</b>prefijo implica que<b>M1</b>y reloj<b>C3</b>son necesarios para ingresar datos en serie. El cambio a la derecha tiene lugar cuando M1 activo es como lo indica el<b>1</b> in <b>C3/1 flecha</b>.
+</p>
+<a name="4021, CD4021B"></a>
+<p>El CD4021B es una pieza similar excepto por la carga paralela asíncrona de datos, como lo implica la falta de cualquier<b>2</b>prefijo en la etiqueta de datos<b>1D</b>para los pines P1, P2 a P8. Por supuesto, prefijo<b>2</b>en etiqueta<b>2D</b>en la entrada<b>SER</b>dice que los datos se registran en este pin. El<b>OR</b>El recuadro de la puerta muestra que el reloj está controlado por<b>LD/SH'</b>.
+</p>
+<!-- begin 74ALS674 section could be edited out, as the high priced part is not widely stocked.-->
+<br/>
+<p>
+<p> <img src="04400.png"/> </p> <!--74ALS674 ANSI symbol-->
+</p>
+<br/>
+<a name="674, SN74LS674"></a>
+<p>La etiqueta interna SN74LS674 anterior<b>SRG 16</b>indica registro de desplazamiento de 16 bits. El<b>MODO</b>La entrada a la sección de control en la parte superior del símbolo está etiquetada<b>1,2 M3</b>. Interno<b>M3</b>es una función de la entrada<b>MODO</b> and <b>G1</b> and <b>G2</b>como lo indica el<b>1,2</b>anterior<b>M3</b>. La etiqueta base<b>G</b>indica un<b>AND</b>función de cualquier tal<b>G</b>entradas. Aporte<b>L/E'</b>está etiquetado internamente<b>G1/2 ES</b>. Esta es una habilitación<b>EN</b>(controlado por<b>G1 Y G2</b>) para dispositivos triestados utilizados en otras partes del símbolo.  Notamos que<b>CS'</b>encendido (pin 1) es interno<b>G2</b>. selección de chips<b>CS'</b>también lo es<b>AND</b>ed con la entrada<b>CLK</b>para dar reloj interno<b>C4</b>. La burbuja dentro de la flecha del reloj indica que la actividad se encuentra en el borde negativo (transición de mayor a menor) del reloj. La barra diagonal (/) es un separador que implica dos funciones para el reloj. Antes del corte,<b>C4</b>indica control de cualquier cosa con un prefijo de<b>4</b>. Después del corte, el<b>3' (arrow)</b>indica cambio. El<b>3'</b> of <b>C4/3'</b>implica cambiar cuando M3 no se afirma (<b>MODE=0</b>).   La flecha larga indica desplazamiento hacia la derecha (abajo).</p>
+<p>Bajando por debajo de la sección de control a la sección de datos, tenemos entradas externas<b>P0-P15</b>, pines (7-11, 13-23). el prefijo<b>3,4</b>de etiqueta interna<b>3,4D</b>indica que<b>M3</b>y el reloj<b>C4</b>controlar la carga de datos paralelos. El<b>D</b>significa Datos. Se supone que esta etiqueta se aplica a todas las entradas paralelas, aunque no está escrita explícitamente. Localiza la etiqueta<b>3',4D</b>a la derecha del<b>P0</b>(pin7) etapa. El complementado-<b>3</b>indica que<b>M3=MODE=0</b>entradas (turnos)<b>SER/Q<sub>15</sub></b>(pin5) a la hora del reloj, (<b>4</b>de 3',4D) correspondiente al reloj<b>C4</b>. En otras palabras, con<b>MODE=0</b>, cambiamos los datos a<b>Q<sub>0</sub></b>desde la entrada serie (pin 6). Todas las demás etapas se desplazan hacia la derecha (hacia abajo) a la hora del reloj.</p>
+<p>Moviéndose a la parte inferior del símbolo, el triángulo que apunta hacia la derecha indica un búfer entre<b>Q</b>y el pin de salida. El Triángulo apuntando hacia abajo indica un dispositivo de tres estados. Anteriormente dijimos que el trieste está controlado por enable<b>EN</b>, que en realidad es<b>G1 Y G2</b>desde la sección de control. Si<b>L/E=0</b>, el triestado está deshabilitado y podemos transferir datos a<b>Q<sub>0</sub></b> via <b>SER</b>(pin 6), un detalle que omitimos arriba. realmente necesitamos<b>MODE=0, R/W'=0, CS'=0</b>
+</p>
+<p>La lógica interna del SN74LS674 y una tabla que resume el funcionamiento de las señales de control están disponibles en el enlace de la lista de viñetas, en la parte superior de la sección.</p>
+<p>
+ If <b>L/E'=1</b>, el triestado está habilitado,<b>Q<sub>15</sub></b>se desplaza<b>SER/Q<sub>15</sub></b>(pin 6) y recircula al<b>Q<sub>0</sub></b>etapa a través del cable derecho para<b>3',4D</b>.  Hemos asumido que CS' estaba bajo, lo que nos da el reloj C4/3' y G2 para<b>EN</b>capaz de los tres estados.</p>
+<!-- end 74ALS674 section could be edited out, as the high priced part is not widely stocked.-->
+<h3><u><a name="xtocid92435">Practical applications</a></u></h3>
+<p>Una aplicación de un registro de desplazamiento de entrada/salida en paralelo es leer datos en un microprocesador.</p>
+<br/>
+<p>
+<p> <img src="04401.png"/> </p> <!--Reading switches into microprocessor-->
+</p>
+<br/>
+<p>La alarma anterior está controlada por un teclado remoto. La caja de alarma suministra +5V y tierra al teclado remoto para alimentarlo. La alarma lee el teclado remoto cada pocas decenas de milisegundos enviando relojes de turno al teclado que devuelve datos en serie que muestran el estado de las teclas a través de un registro de turno de entrada/salida en paralelo. Así, leemos nueve interruptores de llave con cuatro cables. ¿Cuántos cables se necesitarían si tuviéramos que ejecutar un circuito para cada una de las nueve teclas?</p>
+<br/>
+<p>
+<p> <img src="04402.png"/> </p> <!--Reading switches into microprocessor-->
+</p>
+<br/>
+<a name="microprocessor, read switches"></a>
+<p>Una aplicación práctica de un registro de desplazamiento de entrada/salida en paralelo es leer muchos cierres de interruptores en un microprocesador con sólo unos pocos pines. Algunos microprocesadores de gama baja sólo tienen 6 pines de E/S (entrada/salida) disponibles en un paquete de 8 pines. O es posible que hayamos utilizado la mayoría de los pines en un paquete de 84 pines. Es posible que deseemos reducir la cantidad de cables que circulan alrededor de una placa de circuito, máquina, vehículo o edificio. Esto aumentará la confiabilidad de nuestro sistema. Se ha informado que los fabricantes que han reducido el número de cables en un automóvil producen un producto más confiable. En cualquier caso, sólo se necesitan tres pines del microprocesador para leer 8 bits de datos de los interruptores de la figura anterior.</p>
+<p>Hemos elegido un dispositivo de carga asíncrono, el CD4021B porque es más fácil controlar la carga de datos sin tener que generar un único reloj de carga paralelo. Las entradas de datos paralelas del registro de desplazamiento se elevan a +5 V con una resistencia en cada entrada. Si todos los interruptores están abiertos, todos<b>1</b>s se cargarán en el registro de desplazamiento cuando el microprocesador mueva el<b>LD/SH'</b>línea de menor a mayor, luego retroceda en previsión del cambio. Cualquier cierre de interruptor aplicará la lógica.<b>0</b>s a las correspondientes entradas paralelas. El patrón de datos en P1-P7 será cargado en paralelo por el<b>LD/SH'=1</b>generado por el software del microprocesador.</p>
+<p>El microprocesador genera pulsos de cambio y lee un bit de datos para cada uno de los 8 bits. Este proceso se puede realizar totalmente con software, o microprocesadores más grandes pueden tener una o más interfaces seriales para realizar la tarea más rápidamente con hardware.  Con<b>LD/SH'=0</b>, el microprocesador genera una<b>0</b> to <b>1</b>transición en el<b>Línea de reloj de turno</b>, luego lee un bit de datos en el<b>datos seriales en</b>línea. Esto se repite para todos los 8 bits.</p>
+<p>
+The <b>SER</b>La línea del registro de desplazamiento puede ser impulsada por otro circuito CD4021B idéntico si es necesario leer más contactos del interruptor. En cuyo caso, el microprocesador genera pulsos de 16 cambios.  Lo más probable es que sea impulsado por algo más compatible con este formato de datos en serie, por ejemplo, un convertidor analógico a digital, un sensor de temperatura, un escáner de teclado, una memoria en serie de sólo lectura. En cuanto a los cierres de interruptor, pueden ser finales de carrera en el carro de una máquina, un sensor de sobretemperatura, un interruptor de láminas magnético, un interruptor de puerta o ventana, un presostato de aire o agua, o un interruptor óptico de estado sólido.</p>
+<a name="shift register, serial-in/parallel-out"></a>
+<h2><u><a name="xtocid92436">Serial-in, parallel-out shift register</a></u></h2>
+<p>Un registro de desplazamiento de entrada/salida en serie es similar al registro de desplazamiento de entrada/salida en serie en el sentido de que desplaza los datos a elementos de almacenamiento internos y los desplaza en el pin de salida y salida de datos. Se diferencia en que hace que todas las etapas internas estén disponibles como salidas. Por lo tanto, un registro de desplazamiento de entrada en serie/salida en paralelo convierte datos del formato en serie al formato paralelo. Si cuatro bits de datos se desplazan mediante cuatro pulsos de reloj a través de un solo cable en la entrada de datos, a continuación, los datos estarán disponibles simultáneamente en las cuatro salidas Q<sub>A</sub>a Q<sub>D</sub>después del cuarto pulso de reloj.</p>
+<br/>
+<p>
+<p> <img src="04373.png"/> </p> <!--SIPO block diagram-->
+</p>
+<br/>
+<p>La aplicación práctica del registro de desplazamiento de entrada en serie/salida en paralelo es convertir datos del formato en serie en un solo cable al formato paralelo en varios cables. Quizás, iluminaremos cuatro LED (Diodos emisores de luz) con las cuatro salidas (<b>Q<sub>A</sub> Q<sub>B</sub>  Q<sub>C</sub>  Q<sub>D</sub> </b>).
+</p>
+<br/>
+<p>
+<p> <img src="04403.png"/> </p> <!--SIPO generic detail-->
+</p>
+<br/>
+<p>Los detalles anteriores del registro de desplazamiento de entrada en serie/salida en paralelo son bastante simples. Parece un registro de desplazamiento de entrada y salida en serie con derivaciones agregadas a cada salida de etapa. Los datos en serie cambian a<b>SI</b>(Entrada serie). Después de un número de relojes igual al número de etapas, el primer bit de datos aparece en SO (Q<sub>D</sub>) en la figura anterior. En general, no hay pin SO. La última etapa (Q<sub>D</sub>arriba) sirve como SO y se conecta en cascada al siguiente paquete si existe.</p>
+<p>Si un registro de desplazamiento de entrada/salida en serie es tan similar a un registro de desplazamiento de entrada/salida en serie, ¿por qué los fabricantes se molestan en ofrecer ambos tipos? ¿Por qué no ofrecer simplemente el registro de desplazamiento de entrada en serie/salida en paralelo? En realidad, solo ofrecen el registro de desplazamiento de entrada en serie/salida en paralelo, siempre que no tenga más de 8 bits.  Tenga en cuenta que los registros de desplazamiento de entrada y salida en serie vienen en longitudes superiores a 8 bits, de 18 a 64 bits. No es práctico ofrecer un registro de desplazamiento de entrada/salida en serie de 64 bits que requiera tantos pines de salida. Consulte las formas de onda a continuación para conocer el registro de desplazamiento anterior.</p>
+<br/>
+<p>
+<p> <img src="04404.png"/> </p> <!--SIPO waveform m-->
+</p>
+<br/>
+<p>El registro de turnos ha sido borrado antes de cualquier dato por<b>CLR'</b>, una señal baja activa, que borra todos los Flip-Flops tipo D dentro del registro de desplazamiento. Tenga en cuenta los datos de serie<b>1011</b>patrón presentado en el<b>SI</b>aporte. Estos datos se sincronizan con el reloj.<b>CLK</b>. Este sería el caso si se está desplazando desde algo así como otro registro de desplazamiento, por ejemplo, un registro de desplazamiento de entrada/salida en paralelo (no se muestra aquí). En el primer reloj a las<b>t1</b>, los datos<b>1</b> at <b>SI</b>se desplaza de<b>D</b> to <b>Q</b>de la primera etapa de registro de desplazamiento.    Después<b>t2</b>este primer bit de datos está en<b>Q<sub>B</sub></b>.  Después<b>t3</b>esta en<b>Q<sub>C</sub></b>. Después<b>t4</b>esta en<b>Q<sub>D</sub></b>. Cuatro pulsos de reloj han desplazado el primer bit de datos hasta la última etapa<b>Q<sub>D</sub></b>. El segundo bit de datos un<b>0</b>esta en<b>Q<sub>C</sub></b>después del cuarto reloj. El tercer bit de datos<b>1</b>esta en<b>Q<sub>B</sub></b>. El cuarto dato mordió a otro.<b>1</b>esta en<b>Q<sub>A</sub></b>.  Por tanto, el patrón de entrada de datos en serie<b>1011</b>está contenido en (<b>Q<sub>D</sub> Q<sub>C</sub>  Q<sub>B</sub>  Q<sub>A</sub></b>). Ahora está disponible en las cuatro salidas.</p>
+<p>Estará disponible en las cuatro salidas justo después del reloj.<b>t<sub>4</sub></b>justo antes<b>t<sub>5</sub></b>. Estos datos paralelos deben usarse o almacenarse entre estos dos momentos, o se perderán debido al cambio de Q<sub>D</sub>etapa en los siguientes relojes<b>t<sub>5</sub></b> to <b>t<sub>8</sub></b>como se muestra arriba.</p>
+<h3><u><a name="xtocid92437">Serial-in/ parallel-out devices</a></u></h3>
+<p>Echemos un vistazo más de cerca a los registros de desplazamiento de entrada serie/salida paralelo disponibles como circuitos integrados, cortesía de Texas Instruments. Para obtener hojas de datos completas del dispositivo, siga los enlaces.</p>
+<ul>
+<li>Registro de desplazamiento de 8 bits de entrada serie/salida paralela SN74ALS164A<p>
+<a href="http://www-s.ti.com/sc/ds/sn74als164a.pdf">[*]</a>
+</p>
+</li>
+<li>Registro de desplazamiento de 8 bits de entrada serie/salida paralela SN74AHC594 con registro de salida<p>
+<p>
+<a href="http://www-s.ti.com/sc/ds/sn74ahct594.pdf">[*]</a>
+</p>
+</p></li>
+<li>Registro de desplazamiento de 8 bits de entrada serie/salida paralela SN74AHC595 con registro de salida<p>
+<a href="http://www-s.ti.com/sc/ds/sn74ahct595.pdf">[*]</a>
+</p>
+</li>
+<li>Registro de desplazamiento de 8 bits de entrada serie/salida paralela CD4094 con registro de salida<p>
+<a href="http://www-s.ti.com/sc/ds/cd4094b.pdf">[*]</a>
+</p>
+<p>
+<a href="http://www.st.com/stonline/books/pdf/docs/2069.pdf">[*]</a>
+</p>
+</li>
+</ul>
+<br/>
+<p>
+<p> <img src="04405.png"/> </p> <!--SIPO 74LS164a -->
+</p>
+<br/>
+<a name="164, SN74ALS164A"></a>
+<p>El 74ALS164A es casi idéntico a nuestro diagrama anterior con la excepción de las dos entradas en serie.<b>A</b> and <b>B</b>. La entrada no utilizada debe elevarse para habilitar la otra entrada. No mostramos todas las etapas anteriores. Sin embargo, todas las salidas se muestran en el símbolo ANSI a continuación, junto con los números de pin.</p>
+<br/>
+<p>
+<p> <img src="04406.png"/> </p> <!--SIP0 74ALS164 ANSI-->
+</p>
+<br/>
+<p>
+The <b>CLK</b>La entrada a la sección de control del símbolo ANSI anterior tiene dos funciones internas.<b>C1</b>, control de cualquier cosa con un prefijo de<b>1</b>. Esto sería registrar datos en<b>1D</b>. La segunda función, la flecha después de la barra (/), es el desplazamiento hacia la derecha (hacia abajo) de los datos dentro del registro de desplazamiento. Las ocho salidas están disponibles a la derecha de los ocho registros debajo de la sección de control. La primera etapa es más ancha que las demás para acomodar el<b>A&amp;B</b>aporte.</p>
+<br/>
+<p>
+<p> <img src="04407.png"/> </p> <!--SIP0 SIP074HC594 internal-->
+</p>
+<br/>
+<a name="594, 74AHC594"></a>
+<p>El diagrama lógico interno anterior está adaptado de la hoja de datos de TI (Texas Instruments) para el 74AHC594. Los FF tipo "D" en la fila superior comprenden un registro de desplazamiento de entrada en serie/salida en paralelo. Esta sección funciona como los dispositivos descritos anteriormente. Las salidas (<b>Q<sub>A</sub>' Q<sub>B</sub>'</b>  to <b>Q<sub>H</sub>' </b>) de la mitad del registro de desplazamiento del dispositivo alimentan los FF tipo "D" en la mitad inferior en paralelo.<b>Q<sub>H</sub>'</b>(pin 9) se desplaza a cualquier paquete de dispositivo en cascada opcional.</p>
+<p>Un único flanco positivo del reloj en RCLK transferirá los datos desde<b> D</b> to <b> Q</b>de los FF inferiores.  Todos los 8 bits se transfieren en paralelo a la salida.<i>registro</i>(una colección de elementos de almacenamiento). El propósito del registro de salida es mantener una salida de datos constante mientras se transfieren nuevos datos a la sección superior del registro de desplazamiento. Esto es necesario si las salidas controlan relés, válvulas, motores, solenoides, bocinas o zumbadores. Es posible que esta característica no sea necesaria cuando se conducen LED, siempre y cuando el parpadeo durante el cambio no sea un problema.</p>
+<p>Tenga en cuenta que el 74AHC594 tiene relojes separados para el registro de desplazamiento (<b>SRCLK</b>) y el registro de salida (<b>RCLK</b>). Además, la palanca de cambios puede borrarse<b>SRCLR</b>y, el registro de salida por<b>RCLR</b>. Es deseable poner las salidas en un estado conocido al momento del encendido, en particular, si se activan relés, motores, etc. Las formas de onda a continuación ilustran el cambio y el enganche de datos.</p>
+<br/>
+<p>
+<p> <img src="04408.png"/> </p> <!--SIP0 SIP074HC594 waveforms-->
+</p>
+<br/>
+<p>Las formas de onda anteriores muestran el desplazamiento de 4 bits de datos a las primeras cuatro etapas del 74AHC594 y luego la transferencia paralela al registro de salida. De hecho, el 74AHC594 es un registro de desplazamiento de 8 bits y se necesitarían 8 relojes para desplazar 8 bits de datos, que sería el modo normal de operación. Sin embargo, los 4 bits que mostramos ahorran espacio e ilustran adecuadamente el funcionamiento.</p>
+<p>Limpiamos el registro de turnos medio reloj antes de<b>t<sub>0</sub></b>con<b>SRCLR'=0</b>. <b>SRCLR'</b>debe soltarse hacia arriba antes de realizar el cambio. Justo antes de<b>t<sub>0</sub></b>el registro de salida se borra mediante<b>RCLR'=0</b>. También se publica (<b>RCLR'=1</b>).
+</p>
+<p>datos seriales<b>1011</b>se presenta en el pin SI entre relojes<b>t<sub>0</sub></b> and <b>t<sub>4</sub></b>. Se cambia por relojes.<b>t<sub>1</sub> t<sub>2</sub> t<sub>3</sub> t<sub>4</sub></b>Apareciendo en etapas de cambio interno.<b>Q<sub>A</sub>' Q<sub>B</sub>' Q<sub>C</sub>' Q<sub>D</sub>' </b>. Estos datos están presentes en estas etapas entre<b>t<sub>4</sub></b> and <b>t<sub>5</sub></b>.  Después<b>t<sub>5</sub></b>los datos deseados (<b>1011</b>) no estará disponible en estas etapas de cambio internas.</p>
+<p>Entre<b>t<sub>4</sub></b> and <b>t<sub>5</sub></b>aplicamos una actitud positiva<b>RCLK</b>transfiriendo datos<b>1011</b>para registrar salidas<b>Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub> Q<sub>D</sub> </b>. Estos datos se congelarán aquí a medida que haya más datos (<b>0</b>s) cambia durante el siguiente<b>SRCLK</b>s (<b>t<sub>5</sub></b> to <b>t<sub>8</sub></b>). No habrá ningún cambio en los datos aquí hasta otro<b>RCLK</b>se aplica.</p>
+<p>
+</p>
+<br/>
+<p>
+<p> <img src="04409.png"/> </p> <!--SIP074HC595 internal -->
+</p>
+<br/>
+<a name="595, 74AHC595"></a>
+<p>El 74AHC595 es idéntico al '594 excepto que el<b>RCLR'</b>es reemplazado por un<b>OE'</b>habilitar un buffer de tres estados en la salida de cada uno de los ocho bits del registro de salida. Aunque el registro de salida no se puede borrar, las salidas se pueden desconectar<b>OE'=1</b>. Esto permitiría que las resistencias pull-up o pull-down externas fuercen cualquier controlador de relé, solenoide o válvula a un estado conocido durante el encendido del sistema. Una vez que el sistema está encendido y, digamos, un microprocesador ha cambiado y bloqueado los datos en el '595, se podría afirmar la habilitación de salida (<b>OE'=0</b>) para accionar los relés, solenoides y válvulas con datos válidos, pero no antes de ese tiempo.</p>
+<br/>
+<p>
+<p> <img src="04410.png"/> </p> <!--SIP0 74HC594/595 ANSI-->
+</p>
+<br/>
+<a name="595, 74AHC595 ANSI symbol"></a>
+<a name="594, 74AHC594 ANSI symbol"></a>
+<p>Arriba están los símbolos ANSI propuestos para estos dispositivos.<b>C3</b>registra los datos en la entrada serie (externa<b>SER</b>) como lo indica el<b>3</b>prefijo de<b>2,3D</b>. La flecha después<b>C3/</b>indica un cambio a la derecha (abajo) del registro de cambios, las 8 etapas a la izquierda del símbolo '595 debajo de la sección de control. El<b>2</b>prefijo de<b>2,3D</b> and <b>2D</b>indica que estas etapas se pueden restablecer<b>R2</b>(externo<b>SRCLR'</b>).
+</p>
+<p>
+The <b>1</b>prefijo de<b>1,4D</b>en el<b>'594</b>indica que<b>R1</b>(externo<b>RCLR'</b>) puede restablecer el registro de salida, que está a la derecha de la sección del registro de desplazamiento. El<b>'595</b>, que tiene un<b>EN</b>en externo<b>OE'</b>No se puede restablecer el registro de salida. Pero, el<b>EN</b>habilita los buffers de salida de tres estados (triángulo invertido). El triángulo que apunta hacia la derecha de ambos<b>'594</b> and<b>'595</b>indica almacenamiento en búfer interno. Tanto el<b>'594</b> and<b>'595</b>Los registros de salida son sincronizados por C4 como lo indica<b>4</b> of <b>1,4D</b> and <b>4D</b>respectivamente.</p>
+<br/>
+<p>
+<p> <img src="04445.png"/> </p> <!--SIP0 CD4095 ANSI-->
+</p>
+<br/>
+<a name="4094, 74HCT4094 ANSI symbol"></a>
+<p>El CD4094B es de 3 a 15V<sub>DC</sub>Alternativa de registro de desplazamiento con enclavamiento capaz a los dispositivos 74AHC594 anteriores.<b>RELOJ</b>, <b>C</b>1, shifts data in  at <b>SERIE EN</b>como lo implica el<b>1</b>prefijo de<b>1D</b>. También es el reloj del registro de desplazamiento derecho (mitad izquierda del cuerpo del símbolo) como lo indica el
+/(flecha derecha) de<b>C1</b>/(flecha) en el<b>RELOJ</b>aporte.</p>
+<p>
+<b>ESTROBOSCÓPICO</b>, <b>C2</b>es el reloj del registro de salida de 8 bits a la derecha del cuerpo del símbolo. El<b>2</b> of <b>2D</b>indica que<b>C2</b>es el reloj del registro de salida. El triángulo invertido en el pestillo de salida indica que la salida está triestada, siendo habilitada por<b>EN3</b>.  El<b>3</b>precede al triángulo invertido y al<b>3</b> of <b>EN3</b>a menudo se omiten, ya que cualquier habilitación (<b>EN</b>) se entiende que controla las salidas de los tres estados.</p>
+<p>
+<b>Q<sub>S</sub></b> and <b>Q<sub>S</sub>'</b>son salidas no enclavadas de la etapa del registro de desplazamiento.<b>Q<sub>S</sub></b>podría conectarse en cascada a<b>SERIE EN</b>de un dispositivo posterior.</p>
+<h3><u><a name="xtocid92438">Practical applications</a></u></h3>
+<p>Una aplicación en el mundo real del registro de desplazamiento de entrada en serie/salida en paralelo es enviar datos desde un microprocesador a un indicador de panel remoto. U otro dispositivo de salida remoto que acepte datos en formato serie.</p>
+<br/>
+<p>
+<p> <img src="04411.png"/> </p> <!--SIP074HC595 internal -->
+</p>
+<br/>
+<p>La figura "Alarma con teclado remoto" se repite aquí desde la sección de entrada/salida en paralelo con la adición de la pantalla remota. Así, podemos visualizar, por ejemplo, el estado de los bucles de alarma conectados a la caja de alarma principal.  Si la alarma detecta una ventana abierta, puede enviar datos en serie a la pantalla remota para informarnos. Es probable que tanto el teclado como la pantalla estén contenidos dentro del mismo gabinete remoto, separado de la caja de alarma principal. Sin embargo, en esta sección sólo veremos el panel de visualización.</p>
+<p>Si la pantalla estuviera en el mismo tablero que la alarma, podríamos simplemente pasar ocho cables a los ocho LED junto con dos cables para alimentación y tierra. Estos ocho cables son mucho menos deseables en un recorrido largo hasta un panel remoto.  Al utilizar registros de desplazamiento, solo necesitamos conectar cinco cables: reloj, datos en serie, luz estroboscópica, alimentación y tierra. Si el panel estuviera a solo unos centímetros de la placa principal, aún sería deseable reducir la cantidad de alambres en un cable de conexión para mejorar la confiabilidad. Además, a veces utilizamos la mayoría de los pines disponibles en un microprocesador y necesitamos utilizar técnicas en serie para ampliar el número de salidas.  Algunos dispositivos de salida de circuitos integrados, como los convertidores digitales a analógicos, contienen registros de desplazamiento de entrada en serie y salida en paralelo para recibir datos de los microprocesadores. Las técnicas ilustradas aquí son aplicables a esas partes.</p>
+<br/>
+<p>
+<p> <img src="04412.png"/> </p> <!--SIP074HC595 internal -->
+</p>
+<br/>
+<p>Hemos elegido el registro de desplazamiento de entrada serie/salida paralela 74AHC594 con registro de salida; sin embargo, requiere un pin adicional,<b>RCLK</b>, para cargar en paralelo los datos transferidos a los pines de salida. Este pin adicional evita que las salidas cambien mientras ingresan datos. Esto no es un gran problema para los LED. Pero sería un problema si accionar relés, válvulas, motores, etc.</p>
+<p>El código ejecutado dentro del microprocesador comenzaría con 8 bits de datos para generar. Se emitiría un bit en el pin "Salida de datos en serie", lo que conduciría<b>SER</b>del mando a distancia 74AHC594. A continuación, el microprocesador genera una transición de bajo a alto en el "reloj de cambio", conduciendo<b>SRCLK</b>del registro de desplazamiento '595. Este reloj positivo desplaza el bit de datos a<b>SER</b>de "D" a "Q" de la primera etapa del registro de desplazamiento. Esto no tiene ningún efecto sobre el<b>Q<sub>A</sub></b>LED en este momento debido al registro de salida interno de 8 bits entre el registro de desplazamiento y los pines de salida (<b>Q<sub>A</sub></b> to <b>Q<sub>H</sub></b>). Finalmente, el microprocesador reduce el "reloj de cambio". Esto completa el cambio de un bit al '595.</p>
+<p>El procedimiento anterior se repite siete veces más para completar el desplazamiento de 8 bits de datos del microprocesador al registro de desplazamiento de entrada serie/salida paralela 74AHC594.  Para transferir los 8 bits de datos dentro del registro de desplazamiento interno '595 a la salida se requiere que el microprocesador genere una transición de bajo a alto en<b>RCLK</b>, el reloj del registro de salida. Esto aplica nuevos datos a los LED. El<b>RCLK</b>debe reducirse antes de la próxima transferencia de datos de 8 bits.</p>
+<p>Los datos presentes en la salida del '595 permanecerán hasta que el proceso de los dos párrafos anteriores se repita para nuevos 8 bits de datos. En particular, se pueden transferir nuevos datos al registro de desplazamiento interno '595 sin afectar los LED. Los LED solo se actualizarán con nuevos datos con la aplicación del<b>RCLK</b>borde ascendente.</p>
+<p>¿Qué pasa si necesitamos controlar más de ocho LED?  Simplemente conecte en cascada otro 74AHC594<b>SER</b>fijar al<b>Q<sub>H</sub>'</b>de la palanca de cambios existente. Paralelo el<b>SRCLK</b> and <b>RCLK</b>patas.
+El microprocesador necesitaría transferir 16 bits de datos con 16 relojes antes de generar un<b>RCLK</b>alimentando ambos dispositivos.</p>
+<p>Los indicadores LED discretos que mostramos podrían ser LED de 7 segmentos. Sin embargo, existen dispositivos LSI (integración a gran escala) capaces de controlar varios dígitos de 7 segmentos. Este dispositivo acepta datos de un microprocesador en formato serie, impulsando más segmentos de LED que pines al multiplexar los LED.   Por ejemplo, consulte el enlace a continuación para MAX6955</p>
+<p>
+<a href="http://www.maxim-ic.com/appnotes.cfm/appnote_number/3211">[*]</a>
+</p>
+<a name="parallel-in/parallel-out  universal shift register"></a>
+<a name="shift register, parallel-in/parallel-out  universal shift register"></a>
+<h2><u><a name="xtocid92439">Parallel-in, parallel-out, universal shift register</a></u></h2>
+<p>
+</p>El propósito del registro de desplazamiento de entrada/salida en paralelo es tomar datos en paralelo, desplazarlos y luego generarlos como se muestra a continuación.  Un registro de desplazamiento universal es un dispositivo que lo hace todo además de la función de entrada y salida en paralelo.<br/>
+<p>
+<p> <img src="04374.png"/> </p> <!--PIPO block -->
+</p>
+<br/>
+<p>Arriba aplicamos cuatro bits de datos a un registro de desplazamiento de entrada/salida en paralelo en<b>D<sub>A</sub> D<sub>B</sub> D<sub>C</sub> D<sub>D</sub></b>. El control de modo, que puede ser de múltiples entradas, controla la carga paralela frente al cambio. El control de modo también puede controlar la dirección del cambio en algunos dispositivos reales. Los datos se desplazarán una posición de bit por cada pulso de reloj. Los datos desplazados están disponibles en las salidas.<b>Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub> Q<sub>D</sub> </b>. Los "datos de entrada" y "datos de salida" se proporcionan para la conexión en cascada de múltiples etapas. Aunque, arriba, solo podemos conectar datos en cascada para el desplazamiento a la derecha. Podríamos acomodar la cascada de datos de desplazamiento a la izquierda agregando un par de señales que apuntan a la izquierda, "datos de entrada" y "datos de salida", arriba.</p>
+<p>A continuación se muestran los detalles internos de un registro de desplazamiento de entrada/salida paralelo con desplazamiento a la derecha. Los buffers de tres estados no son estrictamente necesarios para el registro de desplazamiento de entrada/salida en paralelo, pero son parte del dispositivo del mundo real que se muestra a continuación.</p>
+<a name="395, 74LS395, shift register"></a>
+<br/>
+<p>
+<p> <img src="04413.png"/> </p> <!--PIPO 74LS395 internal -->
+</p>
+<br/>
+<a name="395, 74LS395"></a>
+<p>El 74LS395 se asemeja tanto a nuestro concepto de un hipotético registro de desplazamiento de entrada/salida paralelo con desplazamiento a la derecha que utilizamos una versión demasiado simplificada de los detalles de la hoja de datos anteriores. Consulte el enlace a la hoja de datos completa para obtener más detalles más adelante en este capítulo.</p>
+<p>
+<b>LD/SH'</b>controla el multiplexor AND-OR en la entrada de datos a los FF. Si<b>LD/SH'=1</b>, las cuatro puertas AND superiores están habilitadas, lo que permite la aplicación de entradas paralelas<b>D<sub>A</sub> D<sub>B</sub> D<sub>C</sub> D<sub>D</sub></b>a las cuatro entradas de datos FF. Observe la burbuja del inversor en la entrada del reloj de los cuatro FF. Esto indica que el 74LS395 registra datos en el reloj negativo, que es la transición de alto a bajo. Los cuatro bits de datos se sincronizarán en paralelo desde<b>D<sub>A</sub> D<sub>B</sub> D<sub>C</sub> D<sub>D</sub></b> to <b>Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub> Q<sub>D</sub> </b>en el siguiente reloj negativo. En esta "parte real",<b>OC'</b>debe ser bajo si los datos deben estar disponibles en los pines de salida reales en lugar de solo en los FF internos.</p>
+<p>Los datos previamente cargados pueden desplazarse a la derecha una posición de bit si<b>LD/SH'=0</b>para los sucesivos flancos negativos del reloj. Cuatro relojes sacarían completamente los datos de nuestro registro de desplazamiento de 4 bits. Los datos se perderían a menos que nuestro dispositivo estuviera conectado en cascada desde<b>Q<sub>D</sub>'</b> to <b>SER</b>de otro dispositivo.</p>
+<br/>
+<p>
+<p> <img src="04414.png"/> </p> <!--PIPO 1-shift, 2-shift-->
+</p>
+<br/>
+<p>Arriba, se presenta un patrón de datos a las entradas.<b>D<sub>A</sub> D<sub>B</sub> D<sub>C</sub> D<sub>D</sub></b>. El patrón se carga en<b>Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub> Q<sub>D</sub> </b>. Luego se desplaza un poco hacia la derecha. Los datos entrantes se indican mediante<b>X</b>, es decir, no sabemos qué es. Si la entrada (<b>SER</b>) estuvieran fundamentados, por ejemplo, sabríamos qué datos (<b>0</b>) se desplazó hacia adentro. También se muestra un desplazamiento hacia la derecha en dos posiciones, lo que requiere dos relojes.</p>
+<br/>
+<p>
+<p> <img src="04415.png"/> </p> <!--PIPO right shift diagram -->
+</p>
+<br/>
+<p>La figura anterior sirve como referencia para el hardware involucrado en el desplazamiento correcto de datos. Es demasiado simple como para molestarse siquiera en esta figura, excepto para compararla con figuras más complejas a seguir.</p>
+<br/>
+<p>
+<p> <img src="04416.png"/> </p> <!--PIPO right shift data shift -->
+</p>
+<br/>
+<p>El cambio de datos hacia la derecha se proporciona arriba como referencia al cambio derecho anterior.</p>
+<br/>
+<p>
+<p> <img src="04417.png"/> </p> <!--PIPO left shift diagram-->
+</p>
+<br/>
+<p>Si necesitamos desplazarnos hacia la izquierda, es necesario volver a cablear los FF. Compare con la palanca de cambios derecha anterior. También,<b>SI</b> and <b>SO</b>han sido revertidas.<b>SI</b>cambia a<b>Q<sub>C</sub></b>. <b>Q<sub>C</sub></b>cambia a<b>Q<sub>B</sub></b>. <b>Q<sub>B</sub></b>cambia a<b>Q<sub>A</sub></b>. <b>Q<sub>A</sub></b>hojas en el<b>SO</b>conexión, donde podría caer en cascada a otra palanca de cambios<b>SI</b>. Esta secuencia de desplazamiento a la izquierda está al revés de la secuencia de desplazamiento a la derecha.</p>
+<br/>
+<p>
+<p> <img src="04418.png"/> </p> <!--PIPO left shift data -->
+</p>
+<br/>
+<p>Arriba desplazamos el mismo patrón de datos un bit a la izquierda.</p>
+<p>Hay un problema con la figura anterior de "desplazamiento a la izquierda". No hay mercado para ello. Nadie fabrica una pieza desplazada a la izquierda.  Un "dispositivo real" que cambia una dirección puede conectarse externamente para cambiar la otra dirección. O deberíamos decir que no hay izquierda ni derecha en el contexto de un dispositivo que se desplaza en una sola dirección. Sin embargo, existe mercado para un dispositivo que se desplazará hacia la izquierda o hacia la derecha cuando lo ordene una línea de control. Por supuesto, izquierda y derecha son válidas en ese contexto.</p>
+<br/>
+<p>
+<p> <img src="04419.png"/> </p> <!--PIPO  LR right shift  -->
+</p>
+<br/>
+<p>Lo que tenemos arriba es un registro de desplazamiento hipotético capaz de desplazarse en cualquier dirección bajo el control de<b>L'/R</b>. Está configurado con<b>L'/R=1</b>para cambiar la dirección normal, a la derecha.<b>L'/R=1</b>habilita el multiplexor Y las puertas etiquetadas<b>R</b>. Esto permite que los datos sigan el camino ilustrado por las flechas, cuando se aplica un reloj. La ruta de conexión es la misma que la figura "demasiado simple" de "desplazamiento a la derecha" de arriba.</p>
+<p>Los datos cambian en<b>SR</b>, a<b>Q<sub>A</sub></b>, a<b>Q<sub>B</sub></b>, a<b>Q<sub>C</sub></b>, donde sale en<b>cascada SR</b>. Este pin podría conducir<b>SR</b>de otro dispositivo a la derecha.</p>
+<p>¿Qué pasa si cambiamos?<b>L'/R</b> to <b>L'/R=0</b>?
+</p>
+<br/>
+<p>
+<p> <img src="04420.png"/> </p> <!--PIPO  LR left shift  -->
+</p>
+<br/>
+<p>Con<b>L'/R=0</b>, el multiplexor Y las puertas etiquetadas<b>L</b>están habilitados, lo que produce una ruta, mostrada por las flechas, igual que la figura anterior de "desplazamiento a la izquierda". Los datos cambian en<b>SL</b>, a<b>Q<sub>C</sub></b>, a<b>Q<sub>B</sub></b>, a<b>Q<sub>A</sub></b>, donde sale en<b>cascada SL</b>. Este pin podría conducir<b>SL</b>de otro dispositivo a la izquierda.</p>
+<p>La principal virtud de las dos figuras anteriores que ilustran el "desplazamiento del registro hacia la izquierda/derecha" es la simplicidad. El funcionamiento del control izquierdo derecho.<b>L'/R=0</b>es fácil de seguir. Una parte comercial necesita la carga de datos paralela que implica el título de la sección. Esto aparece en la siguiente figura.</p>
+<br/>
+<p>
+<p> <img src="04421.png"/> </p> <!--PIPO  LR load -->
+</p>
+<br/>
+<p>Ahora que podemos desplazarnos tanto hacia la izquierda como hacia la derecha mediante<b>L'/R</b>, agreguemos<b>SH/LD'</b>, shift/load y las puertas AND etiquetadas como "load" para permitir la carga paralela de datos desde las entradas<b>D<sub>A</sub> D<sub>B</sub> D<sub>C</sub></b>. Cuando<b>SH/LD'=0</b>, Y puertas<b>R</b> and <b>L</b>están deshabilitados, Y las puertas de "carga" están habilitadas para pasar datos<b>D<sub>A</sub> D<sub>B</sub> D<sub>C</sub></b>a las entradas de datos FF. el próximo reloj<b>CLK</b>registrará los datos para<b>Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub></b>. Mientras estén presentes los mismos datos, se recargarán en relojes posteriores. Sin embargo, los datos presentes para un solo reloj se perderán de las salidas cuando ya no estén presentes en las entradas de datos. Una solución es cargar los datos en un reloj y luego proceder a cambiarlos en los siguientes cuatro relojes. Este problema se soluciona en el 74ALS299 añadiendo otra puerta AND al multiplexor.</p>
+<p>
+If <b>SH/LD'</b>se cambia a<b>SH/LD'=1</b>, las puertas AND etiquetadas como "carga" están deshabilitadas, permitiendo el control izquierdo/derecho.<b>L'/R</b>para establecer la dirección de cambio en el<b>L</b> or <b>R</b>Y puertas. El desplazamiento es como en las figuras anteriores.</p>
+<p>Lo único que se necesita para producir un dispositivo integrado viable es agregar la cuarta puerta AND al multiplexor como se mencionó para el 74ALS299. Esto se muestra en la siguiente sección de esa parte.</p>
+<h3><u><a name="xtocid924310">Parallel-in/ parallel-out and universal devices</a></u></h3>
+<p>Echemos un vistazo más de cerca a los registros de desplazamiento de entrada serie/salida paralelo disponibles como circuitos integrados, cortesía de Texas Instruments. Para obtener hojas de datos completas del dispositivo, siga los enlaces.</p>
+<a name="395, 74LS395, shift register"></a>
+<a name="299, 74ALS299, shift register"></a>
+<ul>
+<li>Registro de desplazamiento de 4 bits de entrada/salida paralela SN74LS395A<p>
+<p>
+<a href="http://www-s.ti.com/sc/ds/sn74ls395a.pdf">[*]</a>
+</p>
+</p></li>
+<li>Registro de desplazamiento universal de 8 bits de entrada/salida paralela SN74ALS299<p>
+<a href="http://www-s.ti.com/sc/ds/sn74als299.pdf">[*]</a>
+</p>
+</li>
+</ul>
+<br/>
+<p>
+<p> <img src="04422.png"/> </p> <!--PIPO 74LS395 ansi -->
+</p>
+<br/>
+<a name="395, 74LS395A ANSI symbol"></a>
+<p>Ya hemos visto los detalles internos del SN74LS395A, consulte la figura anterior, registro de desplazamiento de entrada/salida paralela 74LS395 con salida de tres estados.  Directamente arriba está el símbolo ANSI para el 74LS395.</p>
+<p>¿Por qué sólo 4 bits, como lo indica<b>SRG4</b>¿arriba?  Tener entradas y salidas paralelas, además de los pines de control y alimentación, no permite más bits de E/S (entrada/salida) en un DIP (paquete en línea dual) de 16 pines.</p>
+<p>
+<b>R</b>indica que las etapas del registro de desplazamiento se restablecen mediante entrada<b>CLR'</b>(media flecha activa de baja inversión en la entrada) de la sección de control en la parte superior del símbolo.<b>OC'</b>, cuando esté bajo, (invierta la flecha nuevamente) habilitará (<b>EN4</b>) los cuatro buffers de salida triestado (<b>Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub> Q<sub>D</sub> </b>) en la sección de datos.
+Cargar/cambiar' (<b>LD/SH'</b>) en el pasador (7) corresponde a las partes internas<b>M1</b>(carga) y<b>M2</b>(cambio). Busque prefijos de<b>1</b> and <b>2</b>en el resto del símbolo para determinar qué es lo que controlan estos.</p>
+<p>El reloj sensible al borde negativo (indicado por la flecha invertida en el pin-10)<b>C3/2</b>tiene dos funciones.  Primero, el<b>3</b> of <b>C3/2</b>afecta a cualquier entrada que tenga un prefijo de<b>3</b>, decir<b>2,3D</b> or <b>1,3D</b>en la sección de datos. Esta sería una carga paralela en<b>A, B, C, D</b>atribuido a<b>M1</b> and <b>C3</b> for <b>1,3D</b>. Segundo,<b>2</b> of <b>C3/2</b>-la flecha derecha indica el registro de datos en cualquier lugar<b>2</b>aparece en un prefijo (<b>2,3D</b>en el pin-2). Así tenemos el cronometraje de datos en<b>SER</b>en<b>Q<sub>A</sub></b>con modo<b>2</b>. La flecha derecha después<b>C3/2</b>contabiliza los cambios en las etapas internas del registro de cambios<b>Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub> Q<sub>D</sub></b>.
+</p>
+<p>Los triángulos que apuntan a la derecha indican almacenamiento en búfer; el triángulo invertido indica triestado, controlado por el<b>EN4</b>. Tenga en cuenta que todos los<b>4</b>s en el símbolo asociado con el<b>EN</b>frecuentemente se omiten. Etapas<b>Q<sub>B</sub> Q<sub>C</sub></b>Se entiende que tienen los mismos atributos que<b>Q<sub>D</sub></b>. <b>Q<sub>D</sub>'</b>pasa en cascada al siguiente paquete<b>SER</b>A la derecha.</p>
+<br/>
+<p>
+<p> <img src="04423.png"/> </p> <!--PIPO 74LS299 chart -->
+</p>
+<br/>
+<a name="bus, shift register"></a>
+<a name="299, 74LS299"></a>
+<p>La tabla anterior, condensada de la hoja de datos data '299, resume el funcionamiento del registro universal de desplazamiento/almacenamiento 74ALS299. Siga el enlace '299 de arriba para obtener todos los detalles. Las puertas multiplexoras<b>R</b>, <b>L</b>, <b>carga</b>operar como en las figuras anteriores de "desplazamiento de registro izquierda/derecha". La diferencia es que las entradas de modo<b>S1</b> and <b>S0</b>seleccione desplazar a la izquierda, desplazar a la derecha y cargar con el modo configurado en<b>S1 S0 =</b> to <b>01</b>, <b>10</b>, y<b>11</b>respectivamente como se muestra en la tabla, habilitando puertas multiplexoras<b>L</b>, <b>R</b>,  y<b>carga</b>respectivamente. Ver tabla. Una diferencia menor es la ruta de carga paralela desde las salidas de tres estados. En realidad, los buffers de los tres estados están (deben estar) deshabilitados por<b>S1 S0 = 11</b>para hacer flotar la E/S<i>bus</i>para su uso como insumos. Un autobús es una colección de señales similares. Las entradas se aplican a<b>A</b>, <b>B</b>a través de<b>H</b>(los mismos pines que<b>Q<sub>A</sub></b>,  <b>Q<sub>B</sub></b>, a través de<b>Q<sub>H</sub></b>) y encaminado al<b>carga</b>puerta en los multiplexores, y en el<b>D</b>entradas de las FF. Los datos se cargan en paralelo en un pulso de reloj.</p>
+<p>La única nueva puerta multiplexora es la puerta AND etiquetada<b>sostener</b>, habilitado por<b>S1 S0 = 00</b>. El<b>sostener</b>La puerta permite un camino desde el<b>Q</b>salida del FF de vuelta al<b>sostener</b>gate, a la entrada D del mismo FF. El resultado es que con el modo<b>S1 S0 = 00</b>, la salida se recarga continuamente con cada nuevo pulso de reloj. Así, se conservan los datos. Esto se resume en la tabla.</p>
+<p>Para leer datos de salidas<b>Q<sub>A</sub></b>,  <b>Q<sub>B</sub></b>, a través de<b>Q<sub>H</sub></b>, los buffers de tres estados deben estar habilitados por<b>OE2', OE1' =00</b>y modo =<b>S1 S0 = 00, 01 o 10</b>. Es decir, el modo es cualquier cosa excepto<b>carga</b>. Ver segunda tabla.</p>
+<br/>
+<p>
+<p> <img src="04424.png"/> </p> <!--PIPO 74LS299 diagram -->
+</p>
+<br/>
+<p>Desplaza los datos a la derecha de un paquete hacia la izquierda, se desplaza hacia la izquierda<b>SR</b>aporte. Cualquier dato desplazado hacia la derecha desde la etapa Q<sub>H</sub>cascadas a la derecha vía Q<sub>H</sub>'. Esta salida no se ve afectada por los buffers de tres estados. La secuencia de desplazamiento a la derecha para<b>S1 S0 = 10</b> is:
+</p>
+<br/>
+<p>SR &gt; Q<sub>A</sub> &gt; Q<sub>B</sub>&gt; Q<sub>C</sub> &gt; Q<sub>D</sub>&gt; Q<sub>E</sub> &gt; Q<sub>F</sub>  &gt; Q<sub>G</sub>  &gt; Q<sub>H</sub>  (Q<sub>H</sub>')
+</p>
+<br/>
+<p>Los datos de desplazamiento hacia la izquierda de un paquete hacia la derecha se desplazan en el<b>SL</b>aporte. Cualquier dato desplazado hacia la izquierda desde la etapa Q<sub>A</sub>cascadas a la izquierda vía Q<sub>A</sub>', tampoco se ve afectado por las reservas de los tres estados. La secuencia de desplazamiento a la izquierda para<b>S1 S0 = 01</b> is:
+</p>
+<br/>
+<p>
+(Q<sub>A</sub>') Q<sub>A</sub> &lt; Q<sub>B</sub>&lt;Q<sub>C</sub> &lt; Q<sub>D</sub>&lt;Q<sub>E</sub> &lt; Q<sub>F</sub>  &lt; Q<sub>G</sub>  &lt; Q<sub>H</sub>  (Q<sub>SL</sub>')
+</p>
+<br/>
+<p>El cambio puede tener lugar con los buffers de tres estados deshabilitados por uno de<b>OE2'</b> or <b>OE1' = 1</b>. Sin embargo, no se podrá acceder a las salidas del contenido del registro. Ver tabla.</p>
+<br/>
+<p>
+<p> <img src="04425.png"/> </p> <!--PIPO 74LS299 ansi-->
+</p>
+<br/>
+<a name="299, 74LS299 ANSI symbol"></a>
+<p>El símbolo ANSI "limpio" para el registro de desplazamiento universal de 8 bits de entrada/salida paralela SN74ALS299 con salida de tres estados se muestra como referencia arriba.</p>
+<br/>
+<p>
+<p> <img src="04426.png"/> </p> <!--PIPO 74LS299 ansi-->
+</p>
+<br/>
+<p>Se muestra la versión anotada del símbolo ANSI para aclarar la terminología contenida en el mismo. Tenga en cuenta que el modo ANSI (S0 S1) está invertido del orden (S1 S0) utilizado en la tabla anterior. Eso invierte los números del modo decimal (1 y 2). En cualquier caso, estamos totalmente de acuerdo con la ficha técnica oficial, copiando esta inconsistencia.</p>
+<h3><u><a name="xtocid924311">Practical applications</a></u></h3>
+<p>El diagrama de bloques de Alarma con teclado remoto se repite a continuación. Anteriormente, construíamos el lector de teclado y la pantalla remota como unidades separadas. Ahora combinaremos el teclado y la pantalla en una sola unidad usando un registro de desplazamiento universal. Aunque están separados en el diagrama, el teclado y la pantalla están contenidos dentro del mismo gabinete remoto.</p>
+<br/>
+<p>
+<p> <img src="04411.png"/> </p> <!--alarm with remote keypad and display-->
+</p>
+<br/>
+<p>Cargaremos en paralelo los datos del teclado en el registro de desplazamiento con un solo pulso de reloj y luego los trasladaremos a la caja de alarma principal. Al mismo tiempo, transferiremos los datos del LED de la alarma principal al registro de cambio remoto para iluminar los LED. Simultáneamente trasladaremos los datos del teclado y los datos del LED al registro de desplazamiento.</p>
+<br/>
+<p>
+<p> <img src="04427.png"/> </p> <!--PIPO 74LS299 practical ckt-->
+</p>
+<br/>
+<p>Ocho LED y resistencias limitadoras de corriente están conectados a los ocho pines de E/S del registro de desplazamiento universal 74ALS299. Los LED solo se pueden controlar durante el Modo 3 con<b>S1=0 S0=0</b>. El<b>OE1'</b> and <b>OE2'</b>Las habilitaciones triestado están conectadas a tierra para habilitar permanentemente las salidas triestado durante los modos.<b>0, 1, 2</b>. Eso hará que los LED se enciendan (parpadeen) durante el cambio. Si esto fuera un problema<b>EN1</b>' y<b>EN2'</b>podría estar sin conexión a tierra y en paralelo con<b>S1</b> and <b>S0</b>respectivamente para habilitar solo los buffers triestado y encender los LED durante el modo de espera,<b>3</b>. Mantengámoslo simple para este ejemplo.</p>
+<p>Durante la carga paralela,<b>S0=1</b>invertido a 0, permite que los buffers triestado octales conecten a tierra los limpiaparabrisas del interruptor. Los contactos del interruptor superiores abiertos se elevan a un nivel lógico alto mediante la combinación de resistencia y LED en las ocho entradas. Cualquier cierre del interruptor cortocircuitará la entrada baja. Cargamos en paralelo los datos del interruptor en el<b>'299</b>en el reloj<b>t0</b>cuando ambos<b>S0</b> and <b>S1</b>son altos. Vea las formas de onda a continuación.</p>
+<br/>
+<p>
+<p> <img src="04428.png"/> </p> <!--PIPO 74LS299 practical waveform-->
+</p>
+<br/>
+<p>Una vez<b>S0</b>baja, ocho relojes (<b>t0</b> to<b>t8</b>) cambiar los datos de cierre del interruptor fuera del<b>'299</b>a través del<b>Q<sub>h</sub>'</b>alfiler. Al mismo tiempo, los nuevos datos del LED se transfieren a<b>SR</b>del<b>299</b>por los mismos ocho relojes. Los datos del LED reemplazan los datos de cierre del interruptor a medida que avanza el cambio.</p>
+<p>Después del reloj del octavo turno,<b>t8</b>, <b>S1</b>baja al modo de retención de rendimiento (<b>S1 S0 = 00</b>). Los datos en el registro de desplazamiento siguen siendo los mismos incluso si hay más relojes, por ejemplo,<b>T9</b>, <b>t10</b>, etc. ¿De dónde vienen las formas de onda?  Podrían ser generados por un microprocesador si la velocidad del reloj no fuera superior a 100 kHz, en cuyo caso, sería inconveniente generar relojes después.<b>t8</b>. Si el reloj estuviera en el rango de megahercios, funcionaría continuamente. el reloj,<b>S1</b> and <b>S0</b>sería generado por lógica digital, que no se muestra aquí.</p>
+<a name="ring counters"></a>
+<h2><u><a name="xtocid924312">Ring counters</a></u></h2>
+<p>
+</p>
+<p>Si la salida de un registro de desplazamiento se retroalimenta a la entrada. resulta un contador de timbre. El patrón de datos contenido dentro del registro de desplazamiento recirculará siempre que se apliquen pulsos de reloj. Por ejemplo, el patrón de datos se repetirá cada cuatro pulsos de reloj en la figura siguiente.  Sin embargo, debemos cargar un patrón de datos. Todo<b>0</b>'s o todos<b>1</b>Eso no cuenta.  ¿Es útil un nivel lógico continuo a partir de tal condición?</p>
+<br/>
+<p>
+<p> <img src="04375.png"/> </p> <!-- ring counter -->
+</p>
+<br/>
+<p>Tomamos disposiciones para cargar datos en el registro de desplazamiento de entrada/salida en paralelo configurado como un contador de anillo a continuación. Se puede cargar cualquier patrón aleatorio.  El patrón más útil generalmente es un solo<b>1</b>.
+</p>
+<br/>
+<p>
+<p> <img src="04429.png"/> </p> <!-- parallel-in/ serial-out  -->
+</p>
+<br/>
+<p>Cargando binario<b>1000</b>en el contador de anillos, arriba, antes de cambiar, se obtiene un patrón visible. El patrón de datos para una sola etapa se repite cada cuatro pulsos de reloj en nuestro ejemplo de 4 etapas. Las formas de onda para las cuatro etapas tienen el mismo aspecto, excepto por el retraso de un reloj de una etapa a la siguiente. Vea la figura a continuación.</p>
+<br/>
+<p>
+<p> <img src="04430.png"/> </p> <!-- ring counter waveform -->
+</p>
+<br/>
+<p>El circuito de arriba es una división por<b>4</b>encimera. Al comparar la entrada del reloj con cualquiera de las salidas, se muestra una relación de frecuencia de 4:1. ¿Cuántas etapas necesitaríamos para un contador de anillos dividido por 10?  Diez etapas recircularían el<b>1</b>cada<b>10</b>pulsos de reloj.</p>
+<br/>
+<p>
+<p> <img src="04431.png"/> </p> <!-- ring counter 4-D FFs-->
+</p>
+<br/>
+<p>Un método alternativo para inicializar el contador de timbres para<b>1000</b>se muestra arriba. Las formas de onda de cambio son idénticas a las anteriores y se repiten cada cuatro pulsos de reloj. El requisito de inicialización es una desventaja del contador de timbre frente a un contador convencional. At a minimum, it must be initialized at power-up since there is no way to predict what state flip-flops will power up in. In theory, initialization should never be required again. En la práctica real, los flip-flops podrían acabar corrompiéndose por el ruido, destruyendo el patrón de datos. Un contador "autocorrector", como un contador binario síncrono convencional, sería más fiable.</p>
+<p>
+</p>
+<br/>
+<p>
+<p> <img src="04432.png"/> </p> <!-- compare to binary counter-->
+</p>
+<br/>
+<p>El contador síncrono binario anterior sólo necesita dos etapas, pero requiere puertas decodificadoras.  El contador de timbre tenía más etapas, pero se autodecodificaba, guardando las puertas de decodificación de arriba. Otra desventaja del contador de anillos es que no es "autoarranque". Si necesitamos las salidas decodificadas, el contador en anillo parece atractivo, en particular, si la mayor parte de la lógica está en un paquete de registro de desplazamiento único. De lo contrario, el contador binario convencional es menos complejo sin el decodificador.</p>
+<br/>
+<p>
+<p> <img src="04433.png"/> </p> <!--compare to binary counter, waveform-->
+</p>
+<br/>
+<p>Las formas de onda decodificadas del contador binario síncrono son idénticas a las formas de onda del contador de anillo anterior. La secuencia del contador es (<b>Q<sub>A</sub> Q<sub>B</sub>)</b> = (<b>00 01 10 11</b>). 
+</p>
+<a name="Johnson counter"></a>
+<a name="switch-tail ring counter"></a>
+<h3><u><a name="xtocid924313">Johnson counters</a></u></h3>
+<p>
+The  <i>contador de anillo de cola de interruptor</i>, también conocido como el<i>contador johnson</i>, supera algunas de las limitaciones del contador de anillos.  Al igual que un contador de anillo, un contador Johnson es un registro de desplazamiento que se retroalimenta sobre sí mismo. Requiere la mitad de las etapas de un contador anular comparable para una proporción de división determinada. Si la salida complementaria de un contador en anillo se retroalimenta a la entrada en lugar de la salida verdadera, se obtiene un contador Johnson. La diferencia entre un contador anular y un contador Johnson es qué salida de la última etapa se retroalimenta (Q o Q'). Compare cuidadosamente la conexión de retroalimentación a continuación con el contador de timbre anterior.</p>
+<br/>
+<p>
+<p> <img src="04434.png"/> </p> <!--johnson 4-stage ckt-->
+</p>
+<br/>
+<p>Esta conexión de retroalimentación "invertida" tiene un profundo efecto sobre el comportamiento de circuitos que de otro modo serían similares. Recirculación de un solo<b>1</b>alrededor de un contador en anillo divide el reloj de entrada por un factor igual al número de etapas. Mientras que un contador Johnson divide por un factor igual al doble del número de etapas. Por ejemplo, un contador anular de 4 etapas se divide por<b>4</b>. Un contador Johnson de 4 etapas se divide por<b>8</b>. 
+
+</p>
+<p>Inicie un contador Johnson limpiando todas las etapas para<b>0</b>s antes del primer reloj. Esto suele hacerse en el momento del encendido. Con referencia a la figura siguiente, el primer reloj avanza tres<b>0</b>es de (<b> Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub></b>) a la derecha en (<b> Q<sub>B</sub> Q<sub>C</sub> Q<sub>D</sub></b>).  El<b>1</b> at <b>Q<sub>D</sub>' </b>(el complemento de Q) se desplaza nuevamente a<b>Q<sub>A</sub></b>. Por lo tanto, comenzamos a cambiar<b>1</b>s a la derecha, reemplazando el<b>0</b>s. Donde un contador de anillo recirculaba un solo<b>1</b>, el contador Johnson de 4 etapas recircula cuatro<b>0</b>s entonces cuatro<b>1</b>s para un patrón de 8 bits y luego se repite.</p>
+<br/>
+<p>
+<p> <img src="04435.png"/> </p> <!--johnson 4-stage ckt-->
+</p>
+<br/>
+<p>Las formas de onda anteriores ilustran que un contador Johnson genera ondas cuadradas multifásicas. La unidad de 4 etapas anterior genera cuatro fases superpuestas de un ciclo de trabajo del 50%. ¿Cuántas etapas se necesitarían para generar un conjunto de formas de onda trifásicas? Por ejemplo, un contador Johnson de tres etapas, impulsado por un reloj de 360 ​​Hertz, generaría tres 120<sup>o</sup>ondas cuadradas en fase a 60 Hertz.</p>
+<p>Las salidas de los flop-flops en un contador Johnson son fáciles de decodificar en un solo estado. A continuación, por ejemplo, los ocho estados de un contador Johnson de 4 etapas se decodifican mediante no más de una puerta de dos entradas para cada uno de los estados. En nuestro ejemplo, ocho de las dos puertas de entrada decodifican los estados de nuestro contador Johnson de ejemplo.</p>
+<br/>
+<p>
+<p> <img src="04436.png"/> </p> <!--johnson 4-stage w/decoder-->
+</p>
+<br/>
+<p>No importa la longitud del contador Johnson, sólo se necesitan puertas decodificadoras de 2 entradas.  Tenga en cuenta que podríamos haber utilizado entradas no invertidas para el<b>AND</b>puertas cambiando las entradas de la puerta de verdadera a invertida en los FF,<b>Q</b> to<b> Q'</b>, (y viceversa). Sin embargo, estamos tratando de hacer que el diagrama anterior coincida con la hoja de datos del CD4022B, lo más cerca posible.</p>
+<br/>
+<p>
+<p> <img src="04437.png"/> </p> <!--johnson 4-stage, decode waveform-->
+</p>
+<br/>
+<p>Arriba, nuestras ondas cuadradas de cuatro fases.<b>Q<sub>A</sub></b>  to <b>Q<sub>D</sub></b>se decodifican en ocho señales (<b>G<sub>0</sub></b>  to <b>G<sub>7</sub></b>) activo durante un período de reloj de un ciclo completo de 8 relojes. Por ejemplo,<b>G<sub>0</sub></b>está activo alto cuando ambos<b>Q<sub>A</sub></b> and <b>Q<sub>D</sub></b>son bajos. Por lo tanto, los pares de las distintas salidas de registro definen cada uno de los ocho estados de nuestro ejemplo del contador Johnson.</p>
+<br/>
+<p>
+<p> <img src="04438.png"/> </p> <!--CD4022B johnson 4-stage, disallowed state detector -->
+</p>
+<br/>
+<a name="disallowed state, Johnson counter"></a>
+<a name="disallowed state detector"></a>
+<p>Arriba se muestra el diagrama interno más completo del contador Johnson CD4022B. Consulte la hoja de datos del fabricante para conocer detalles menores omitidos. La principal novedad en el diagrama en comparación con las figuras anteriores es la<i>detector de estado no permitido</i>compuesto por los dos<b>NOR</b>puertas. Eche un vistazo a la tabla de estados insertada. Hay 8 estados permitidos como se enumeran en la tabla. Dado que nuestra palanca de cambios tiene cuatro flip-flops, hay un total de 16 estados, de los cuales hay 8 estados no permitidos. Serían los que no aparecen en la tabla.</p>
+<p>En teoría, no entraremos en ninguno de los estados no permitidos siempre que el registro de desplazamiento esté<b>REINICIAR</b>antes del primer uso.  Sin embargo, en el "mundo real", después de muchos días de funcionamiento continuo debido a ruidos imprevistos, perturbaciones en las líneas eléctricas, casi rayos, etc., el contador Johnson podría entrar en uno de los estados no permitidos. Para aplicaciones de alta confiabilidad, debemos planificar esta mínima posibilidad. Más grave es el caso en el que el circuito no se borra durante el encendido. En este caso, no hay forma de saber en cuál de los 16 estados se encenderá el circuito. Una vez en un estado no permitido, el contador Johnson no regresará a ninguno de los estados permitidos sin intervención. Ese es el propósito del<b>NOR</b>puertas.</p>
+<p>Examina la tabla para ver la secuencia (<b>Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub></b>) = (<b>010</b>). Esta secuencia no aparece en ninguna parte de la tabla de estados permitidos. Por lo tanto  (<b>010</b>) no está permitido. Nunca debería ocurrir. Si es así, el contador Johnson se encuentra en un estado no permitido, del cual necesita salir a cualquier estado permitido. Supongamos que (<b>Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub></b>) = (<b>010</b>). el segundo<b>NOR</b>la puerta reemplazará<b>Q<sub>B</sub></b> = <b>1</b>con un<b>0</b>al<b>D</b>entrada a FF<b>Q<sub>C</sub></b>. En otras palabras, el delincuente<b>010</b>es reemplazado por<b>000</b>. Y<b>000</b>, que aparece en la tabla, se desplazará hacia la derecha. Es posible que haya secuencias triple-0 en la tabla. Así es como el<b>NOR</b>Las puertas sacan el contador Johnson de un estado no permitido a un estado permitido.</p>
+<p>No todos los estados no permitidos contienen un<b>010</b>secuencia. Sin embargo, después de unos cuantos relojes, esta secuencia aparecerá de modo que eventualmente se escapará de cualquier estado no permitido. Si el circuito se enciende sin<b>REINICIAR</b>, las salidas serán impredecibles durante algunos relojes hasta que se alcance un estado permitido. Si esto es un problema para una aplicación en particular, asegúrese de<b>REINICIAR</b>en el encendido.</p>
+<h4><a name="xtocid924314">Johnson counter devices</a></h4>
+<p>Se encuentran disponibles un par de dispositivos contadores Johnson de circuito integrado con los estados de salida decodificados.  Ya hemos analizado la lógica interna del CD4017 en la discusión sobre los contadores de Johnson. Los dispositivos de la serie 4000 pueden funcionar con fuentes de alimentación de 3V a 15V. La pieza 74HC, diseñada para compatibilidad TTL, puede funcionar con un suministro de 2 V a 6 V, contar más rápido y tiene una mayor capacidad de accionamiento de salida. Para obtener hojas de datos completas del dispositivo, siga los enlaces.</p>
+<a name="4017, CD4017, 74HC4017, Johnson counter"></a>
+<a name="4022, CD4022, Johnson counter"></a>
+<ul>
+<li>
+<p>CD4017 Contador Johnson con 10 salidas decodificadas</p>
+<p>CD4022 Contador Johnson con 8 salidas decodificadas</p>
+<p>
+<a href="http://www-s.ti.com/sc/ds/cd4017b.pdf">[*]</a>
+</p>
+</li>
+<li>
+74HC4017 Johnson counter, 10 decoded outputs
+<p>
+<a href="http://www-s.ti.com/sc/ds/cd74hc4017.pdf">[*]</a>
+</p>
+</li>
+</ul>
+<p>
+</p>
+<br/>
+<p>
+<p> <img src="04439.png"/> </p> <!--CD4017B, CD4022B johnson ctr -->
+</p>
+<br/>
+<p>Los símbolos ANSI para el<i>módulo</i>-10 (divide by 10) and modulo-8 Johnson counters are shown above. The symbol takes on the characteristics of a counter rather than a shift register derivative, which it is.  Waveforms for the CD4022 modulo-8 and operation were shown previously. The CD4017B/ 74HC4017 decade counter is a 5-stage Johnson counter with ten decoded outputs. The operation and waveforms are similar to the CD4017. In fact, the CD4017 and CD4022 are both detailed on the same data sheet. See above links. The 74HC4017 is a more modern version of the decade counter.
+</p>
+<p>Estos dispositivos se utilizan cuando se necesitan salidas decodificadas en lugar de las salidas binarias o BCD (decimal codificado en binario) que se encuentran en los contadores normales. Por decodificado, queremos decir que una línea de cada diez líneas está activa a la vez para el '4017 en lugar del código BCD de cuatro bits de los contadores convencionales. Consulte las formas de onda anteriores para la decodificación 1 de 8 para el contador Octal Johnson '4022.</p>
+<h4><a name="xtocid924315">Practical applications</a></h4>
+<br/>
+<p>
+<p> <img src="04440.png"/> </p> <!--johnson ctr practical LED -->
+</p>
+<br/>
+<p>El contador Johnson de arriba desplaza un LED iluminado cada quinto de segundo alrededor del anillo de diez.  Tenga en cuenta que se utiliza el 74HC4017 en lugar del '40017 porque la pieza anterior tiene una capacidad de transmisión más actual.  De la hoja de datos, (en el enlace de arriba) operando en V<sub>CC</sub>= 5V, la V<sub>OH</sub>= 4,6 V a 4 mA. En otras palabras, las salidas pueden suministrar 4 ma a 4,6 V para controlar los LED. Tenga en cuenta que los LED normalmente funcionan con 10 a 20 ma de corriente. Sin embargo, son visibles hasta 1 ma. Este circuito simple ilustra una aplicación del 'HC4017. ¿Necesita una pantalla brillante para una exhibición? Luego, use buffers inversores para impulsar los cátodos de los LED conectados a la fuente de alimentación mediante resistencias de ánodo de menor valor.</p>
+<p>El temporizador 555, que actúa como multivibrador astable, genera una frecuencia de reloj determinada por R<sub>1</sub> R<sub>2</sub> C<sub>1</sub>. Esto impulsa el 74HC4017 un paso por reloj como lo indica un solo LED iluminado en el anillo. Tenga en cuenta que si el 555 no acciona de manera confiable el pin de reloj del '4015, páselo por una única etapa de búfer entre el 555 y el '4017.  Una variable R<sub>2</sub>podría cambiar la velocidad del paso. El valor del condensador de desacoplamiento C.<sub>2</sub>No es crítico. Se debe aplicar un condensador similar a los pines de alimentación y tierra del '4017.</p>
+<br/>
+<p>
+<p> <img src="04441.png"/> </p> <!--3-ph generator diagram -->
+</p>
+<br/>
+<a name="stepper motor driver, 3-phase"></a>
+<p>El contador Johnson de arriba genera ondas cuadradas trifásicas, en fases 60<sup>o</sup>aparte con respecto a (<b>Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub></b>). Sin embargo, necesitamos 120<sup>o</sup>formas de onda en fase de aplicaciones de energía (ver Volumen II, CA). Eligiendo<b>P<sub>1</sub>=Q<sub>A</sub></b> <b>P<sub>2</sub>=Q<sub>C</sub></b> <b>P<sub>3</sub>=Q<sub>B</sub>'</b>rinde los 120<sup>o</sup>fase deseada. Vea la figura a continuación. Si estos (<b>P<sub>1</sub></b> <b>P<sub>2</sub></b> <b>P<sub>3</sub></b>) se filtran de paso bajo a ondas sinusoidales y se amplifican, este podría ser el comienzo de una fuente de alimentación trifásica. Por ejemplo, ¿necesita accionar un pequeño motor de avión trifásico de 400 Hz? Luego, alimente 6x 400Hz al circuito anterior.<b>RELOJ</b>. Tenga en cuenta que todas estas formas de onda tienen un ciclo de trabajo del 50%.</p>
+<br/>
+<p>
+<p> <img src="04442.png"/> </p> <!--3-ph waveforms-->
+</p>
+<br/>
+<p>El siguiente circuito produce formas de onda trifásicas sin superposición, con un ciclo de trabajo inferior al 50%, para accionar motores paso a paso trifásicos.</p>
+<br/>
+<p>
+<p> <img src="04443.png"/> </p> <!--3-ph stepper diagram-->
+</p>
+<br/>
+<p>
+</p>
+<p>Arriba decodificamos las salidas superpuestas.<b>  Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub></b>a resultados que no se superpongan<b>P<sub>0</sub> P<sub>1</sub> P<sub>2</sub></b>como se muestra a continuación. Estas formas de onda impulsan un motor paso a paso trifásico después de una amplificación adecuada desde el nivel de miliamperios hasta el nivel de amperaje fraccionario utilizando los controladores ULN2003 que se muestran arriba, o el controlador de par Darlington de componentes discretos que se muestra en el circuito siguiente. Sin contar el controlador del motor, este circuito requiere tres paquetes IC (circuito integrado): dos paquetes FF duales tipo "D" y una puerta NAND cuádruple.</p>
+<br/>
+<p>
+<p> <img src="04444.png"/> </p> <!--new 3-ph stepper waveforms-->
+</p>
+<br/>
+<br/>
+<p>
+<p> <img src="04446.png"/> </p> <!--3-ph 4017 diagram stepper diagram-->
+</p>
+<p>Un solo CD4017, arriba, genera las formas de onda paso a paso trifásicas requeridas en el circuito anterior al borrar el contador Johnson en el conteo.<b>3</b>. Contar<b>3</b>persiste durante menos de un microsegundo antes de borrarse. El otro cuenta (<b>Q<sub>0</sub>=G<sub>0</sub> Q<sub>1</sub>=G<sub>1</sub> Q<sub>2</sub>=G<sub>2</sub></b>) permanecen durante un período de reloj completo cada uno.</p>
+<p>Los controladores de transistores bipolares Darlington que se muestran arriba son un sustituto del circuito interno del ULN2003. El diseño de controladores está más allá del alcance de este capítulo de electrónica digital. Cualquiera de los controladores se puede utilizar con cualquiera de los circuitos generadores de formas de onda.</p>
+<!--the image 04445.png is missing from this sequence, inserted after 04410.eps-->
+<br/>
+<p>
+<p> <img src="04447.png"/> </p> <!--3-ph 4017 stepper waveforms-->
+</p>
+<p>Las formas de onda anteriores tienen más sentido en el contexto de la lógica interna del CD4017 que se mostró anteriormente en esta sección. Sin embargo, el<b>AND</b>Se muestran las ecuaciones de activación para el decodificador interno. las señales<b>Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub></b>son salidas de registro de desplazamiento directo del contador Johnson que no están disponibles en los pines.  El<b>Q<sub>D</sub></b>La forma de onda muestra el reinicio del<b>'4017</b>cada tres relojes.<b>Q<sub>0</sub> Q<sub>1</sub> Q<sub>2</sub></b>, etc. son salidas decodificadas que en realidad están disponibles en los pines de salida.</p>
+<br/>
+<p>
+<p> <img src="04448.png"/> </p> <!--4-ph 4017 stepper waveforms-->
+</p>
+<a name="stepper motor driver, unipolar"></a>
+<p>Arriba generamos formas de onda para conducir un<i>motor paso a paso unipolar</i>, que solo requiere una polaridad de señal de conducción. Es decir, no tenemos que invertir la polaridad del variador hacia los devanados. Esto simplifica el controlador de potencia entre el '4017 y el motor. Los pares Darlington de un diagrama anterior se pueden sustituir por el ULN3003.</p>
+<br/>
+<p>
+<p> <img src="04449.png"/> </p> <!--4-ph 4017 stepper waveforms-->
+</p>
+<p>Una vez más, el CD4017B genera las formas de onda requeridas con un reinicio después del recuento de terminales.  Las salidas decodificadas<b>Q<sub>0</sub> Q<sub>1</sub> Q<sub>2</sub> Q<sub>3</sub></b>accionar sucesivamente los devanados del motor paso a paso, con<b>Q<sub>4</sub></b>restablecer el contador al final de cada grupo de cuatro pulsos.</p>
+<br/>
+<h2><u><a name="xtocid924316"> references</a></u></h2>
+<p>DataSheetCatalog.com http://www.datasheetcatalog.com/</p>
+<p>http://www.st.com/stonline/psearch/index.htm seleccione lógicas estándar</p>http://www.st.com/stonline/books/pdf/docs/2069.pdf<p>http://www.ti.com/ (Productos, Lógica, Árbol de Productos)</p>
+<p>
+</p>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="DIGI_A3.html">CC BY License</a>.
+</p>
+
+
+
+</p></body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="DIGI_11.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="DIGI_13.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

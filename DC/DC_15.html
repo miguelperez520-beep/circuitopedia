@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones sobre circuitos eléctricos - Volumen I (DC) - Capítulo 15 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #3b82f6; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones sobre circuitos eléctricos - Volumen I (DC) - Capítulo 15</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen I</h1>
+<h1>Capítulo 15</h1>
+<h1>INDUCTORES</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid88330"><u>Magnetic fields and inductance</u></a></li>
+<li><a href="#xtocid88331"><u>Inductors and calculus</u></a></li>
+<li><a href="#xtocid88332"><u>Factors affecting inductance</u></a></li>
+<li><a href="#xtocid88333"><u>Series and parallel inductors</u></a></li>
+<li><a href="#xtocid88334"><u>Practical considerations</u></a></li>
+<li><a href="#xtocid88335"><u>Contributors</u></a></li></ul>
+<h2><u><a name="xtocid88330">Magnetic fields and inductance</a></u></h2>
+<a name="Inductor"></a>
+<a name="Magnetic field"></a>
+<a name="Field, magnetic"></a>
+<p>Siempre que los electrones fluyen a través de un conductor, se desarrollará un campo magnético alrededor de ese conductor.  Este efecto se llama<i>electromagnetismo</i>.  Los campos magnéticos afectan la alineación de los electrones en un átomo y pueden hacer que se desarrolle fuerza física entre los átomos a través del espacio, al igual que los campos eléctricos desarrollan fuerza entre partículas cargadas eléctricamente.  Al igual que los campos eléctricos, los campos magnéticos pueden ocupar un espacio completamente vacío y afectar la materia a distancia.</p>
+<a name="Field force"></a>
+<a name="Field flux"></a>
+<p>Los campos tienen dos medidas: un campo<i>fuerza</i>y un campo<i>flujo</i>.  el campo<i>fuerza</i>es la cantidad de "empuje" que ejerce un campo a lo largo de una determinada distancia.  el campo<i>flujo</i>es la cantidad total, o efecto, del campo a través del espacio.  La fuerza de campo y el flujo son aproximadamente análogos al voltaje ("empuje") y la corriente (flujo) a través de un conductor, respectivamente, aunque el flujo de campo puede existir en un espacio totalmente vacío (sin el movimiento de partículas como los electrones), mientras que la corriente sólo puede tener lugar donde hay electrones libres para moverse.  El flujo de campo puede oponerse en el espacio, del mismo modo que la resistencia puede oponerse al flujo de electrones.  La cantidad de flujo de campo que se desarrollará en el espacio es proporcional a la cantidad de fuerza de campo aplicada, dividida por la cantidad de oposición al flujo.  Así como el tipo de material conductor dicta la resistencia específica de ese conductor a la corriente eléctrica, el tipo de material que ocupa el espacio a través del cual se imprime una fuerza de campo magnético dicta la oposición específica al flujo del campo magnético.</p>
+<p>Mientras que un flujo de campo eléctrico entre dos conductores permite una acumulación de carga de electrones libres dentro de esos conductores, un flujo de campo magnético permite que se acumule cierta "inercia" en el flujo de electrones a través del conductor que produce el campo.</p>
+<p>
+<i>Inductores</i>Son componentes diseñados para aprovechar este fenómeno dando forma a la longitud del cable conductor en forma de bobina.  Esta forma crea un campo magnético más fuerte que el que produciría un cable recto.  Algunos inductores están formados con alambre enrollado en una bobina autoportante.  Otros enrollan el cable alrededor de un material de núcleo sólido de algún tipo.  A veces, el núcleo de un inductor será recto y otras veces estará unido en un bucle (cuadrado, rectangular o circular) para contener completamente el flujo magnético.  Todas estas opciones de diseño tienen un efecto en el rendimiento y las características de los inductores.</p>
+<p>El símbolo esquemático de un inductor, como el condensador, es bastante simple y es poco más que un símbolo de bobina que representa el cable enrollado.  Aunque una forma de bobina simple es el símbolo genérico de cualquier inductor, los inductores con núcleos a veces se distinguen por la adición de líneas paralelas al eje de la bobina.  Una versión más nueva del símbolo del inductor prescinde de la forma de la bobina en favor de varias "jorobas" seguidas:</p>
+<p> <img src="00355.png"/> </p>
+<p>Como la corriente eléctrica produce un campo magnético concentrado alrededor de la bobina, este flujo de campo equivale a un almacenamiento de energía que representa el movimiento cinético de los electrones a través de la bobina.  Cuanta más corriente haya en la bobina, más fuerte será el campo magnético y más energía almacenará el inductor.</p>
+<p> <img src="00320.png"/> </p>
+<p>Debido a que los inductores almacenan la energía cinética de los electrones en movimiento en forma de campo magnético, se comportan de manera muy diferente a las resistencias (que simplemente disipan energía en forma de calor) en un circuito.  El almacenamiento de energía en un inductor es función de la cantidad de corriente que lo atraviesa.  La capacidad de un inductor para almacenar energía en función de la corriente da como resultado una tendencia a intentar mantener la corriente a un nivel constante.  En otras palabras, los inductores tienden a resistir<i>cambios</i>en corriente.  Cuando la corriente a través de un inductor aumenta o disminuye, el inductor "resiste" la<i>cambiar</i>produciendo un voltaje entre sus cables en polaridad opuesta a la<i>cambiar</i>.
+</p>
+<p>Para almacenar más energía en un inductor, se debe aumentar la corriente que lo atraviesa.  Esto significa que su campo magnético debe aumentar en intensidad y ese cambio en la intensidad del campo produce el voltaje correspondiente según el principio de autoinducción electromagnética.  Por el contrario, para liberar energía de un inductor, se debe disminuir la corriente que lo atraviesa.  Esto significa que el campo magnético del inductor debe disminuir en intensidad, y ese cambio en la intensidad del campo autoinduce una caída de voltaje de polaridad opuesta.</p>
+<p>Así como la primera Ley del Movimiento de Isaac Newton ("un objeto en movimiento tiende a permanecer en movimiento; un objeto en reposo tiende a permanecer en reposo") describe la tendencia de una masa a oponerse a los cambios de velocidad, podemos establecer la tendencia de un inductor a oponerse a los cambios de corriente como tal: "Los electrones que se mueven a través de un inductor tienden a permanecer en movimiento; los electrones en reposo en un inductor tienden a permanecer en reposo".  Hipotéticamente, un inductor que se deja en cortocircuito mantendrá una tasa de corriente constante a través de él sin ayuda externa:</p>
+<p> <img src="00321.png"/> </p>
+<p>Sin embargo, en la práctica, la capacidad de un inductor de autosostenir corriente se logra sólo con un cable superconductor, ya que la resistencia del cable en cualquier inductor normal es suficiente para hacer que la corriente decaiga muy rápidamente sin ninguna fuente de energía externa.</p>
+<p>Cuando aumenta la corriente a través de un inductor, cae un voltaje que se opone a la dirección del flujo de electrones, actuando como una carga de energía.  En esta condición se dice que el inductor está<i>cargando</i>, porque hay una cantidad cada vez mayor de energía almacenada en su campo magnético.  Tenga en cuenta la polaridad del voltaje con respecto a la dirección de la corriente:</p>
+<a name="Charging, inductor"></a>
+<p> <img src="00322.png"/> </p>
+<p>Por el contrario, cuando la corriente a través del inductor disminuye, cae un voltaje que ayuda a la dirección del flujo de electrones, actuando como una fuente de energía.  En esta condición se dice que el inductor está<i>descarga</i>, porque su reserva de energía disminuye a medida que libera energía de su campo magnético al resto del circuito.  Tenga en cuenta la polaridad del voltaje con respecto a la dirección de la corriente.</p>
+<a name="Discharging, inductor"></a>
+<p> <img src="00323.png"/> </p>
+<p>Si de repente se aplica una fuente de energía eléctrica a un inductor no magnetizado, el inductor inicialmente resistirá el flujo de electrones reduciendo todo el voltaje de la fuente.  A medida que la corriente comienza a aumentar, se creará un campo magnético cada vez más fuerte, absorbiendo energía de la fuente.  Finalmente, la corriente alcanza un nivel máximo y deja de aumentar.  En este punto, el inductor deja de absorber energía de la fuente y cae un voltaje mínimo a través de sus cables, mientras que la corriente permanece en un nivel máximo.  A medida que un inductor almacena más energía, su nivel de corriente aumenta, mientras que su caída de voltaje disminuye.  Tenga en cuenta que esto es precisamente lo opuesto al comportamiento del condensador, donde el almacenamiento de energía da como resultado un aumento de voltaje en el componente.  Mientras que los condensadores almacenan su carga de energía manteniendo un voltaje estático, los inductores mantienen su "carga" de energía manteniendo una corriente constante a través de la bobina.</p>
+<p>El tipo de material alrededor del cual está enrollado el cable impacta en gran medida la fuerza del flujo del campo magnético (y por lo tanto la cantidad de energía almacenada) generada para cualquier cantidad dada de corriente a través de la bobina.  Los núcleos de bobina hechos de materiales ferromagnéticos (como el hierro dulce) estimularán el desarrollo de flujos de campo más fuertes con una fuerza de campo determinada que las sustancias no magnéticas como el aluminio o el aire.</p>
+<a name="Inductance"></a>
+<a name="Henry"></a>
+<a name="Unit, henry"></a>
+<a name="L, symbol for inductance"></a>
+<p>La medida de la capacidad de un inductor para almacenar energía para una determinada cantidad de flujo de corriente se llama<i>inductancia</i>.  No es sorprendente que la inductancia sea también una medida de la intensidad de la oposición a los cambios en la corriente (exactamente cuánto voltaje autoinducido se producirá para una determinada tasa de cambio de corriente).  La inductancia se indica simbólicamente con una "L" mayúscula y se mide en la unidad Henry, abreviada como "H".</p>
+<a name="Choke"></a>
+<a name="Reactor"></a>
+<a name="Inductive reactance"></a>
+<a name="Reactance, inductive"></a>
+<p>Un nombre obsoleto para un inductor es<i>ahogo</i>, llamado así por su uso común para bloquear ("estrangular") señales de CA de alta frecuencia en circuitos de radio.  Otro nombre para un inductor, todavía utilizado en los tiempos modernos, es<i>reactor</i>, especialmente cuando se utiliza en aplicaciones de gran potencia.  Ambos nombres tendrán más sentido después de haber estudiado la teoría de circuitos de corriente alterna (CA), y especialmente un principio conocido como<i>reactancia inductiva</i>.
+</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Los inductores reaccionan contra los cambios de corriente reduciendo el voltaje en la polaridad necesaria para oponerse al cambio.</li>
+<li>Cuando un inductor se enfrenta a una corriente creciente, actúa como una carga: cae el voltaje a medida que absorbe energía (negativa en el lado de entrada de corriente y positiva en el lado de salida de corriente, como una resistencia).</li>
+<li>Cuando un inductor se enfrenta a una corriente decreciente, actúa como una fuente: crea voltaje a medida que libera energía almacenada (positiva en el lado de entrada de corriente y negativa en el lado de salida de corriente, como una batería).</li>
+<li>La capacidad de un inductor para almacenar energía en forma de campo magnético (y en consecuencia oponerse a los cambios de corriente) se llama<i>inductancia</i>.  Se mide en la unidad de<i>Enrique</i>(H).</li>
+<li>Los inductores solían ser conocidos comúnmente con otro término:<i>ahogo</i>.  En aplicaciones de gran potencia, a veces se les conoce como<i>reactores</i>.</li>
+</ul>
+<h2><u><a name="xtocid88331">Inductors and calculus</a></u></h2>
+<p>Los inductores no tienen una "resistencia" estable como la tienen los conductores.  Sin embargo, existe una relación matemática definida entre el voltaje y la corriente de un inductor, como sigue:</p>
+<p> <img src="10269.png"/> </p>
+<a name="Calculus"></a>
+<a name="Instantaneous value"></a>
+<a name="e, symbol for instantaneous voltage"></a>
+<a name="v, symbol for instantaneous voltage"></a>
+<a name="i, symbol for instantaneous current"></a>
+<p>Deberías reconocer la forma de esta ecuación en el capítulo sobre condensadores.  Relaciona una variable (en este caso, la caída de voltaje del inductor) con una<i>tasa de cambio</i>de otra variable (en este caso, la corriente del inductor).  Tanto el voltaje (v) como la tasa de cambio de corriente (di/dt) son<i>instantáneo</i>: es decir, en relación con un momento específico en el tiempo, de ahí las letras minúsculas "v" e "i".  Al igual que con la fórmula del capacitor, es una convención expresar el voltaje instantáneo como<i>v</i>en vez de<i>e</i>, pero usar esta última designación no estaría mal.  La tasa de cambio actual (di/dt) se expresa en unidades de amperios por segundo, un número positivo representa un aumento y un número negativo representa una disminución.</p>
+<p>Al igual que un condensador, el comportamiento de un inductor se basa en la variable del tiempo.  Aparte de cualquier resistencia intrínseca a la bobina de alambre de un inductor (que asumiremos que es cero por el bien de esta sección), la caída de voltaje a través de los terminales de un inductor está puramente relacionada con la rapidez con la que cambia su corriente con el tiempo.</p>
+<p>Supongamos que tuviéramos que conectar un inductor perfecto (uno que tenga cero ohmios de resistencia del cable) a un circuito donde pudiéramos variar la cantidad de corriente a través de él con un potenciómetro conectado como una resistencia variable:</p>
+<p> <img src="00404.png"/> </p>
+<p>Si el mecanismo del potenciómetro permanece en una sola posición (el limpiador está estacionario), el amperímetro conectado en serie registrará una corriente constante (sin cambios) y el voltímetro conectado a través del inductor registrará 0 voltios.  En este escenario, la tasa instantánea de cambio de corriente (di/dt) es igual a cero, porque la corriente es estable.  La ecuación nos dice que con un cambio de 0 amperios por segundo para un di/dt, debe haber un voltaje instantáneo (v) cero a través del inductor.  Desde una perspectiva física, sin cambios de corriente, el inductor generará un campo magnético constante.  Sin cambios en el flujo magnético (dΦ/dt = 0 Webers por segundo), no habrá caída de voltaje a lo largo de la bobina debido a la inducción.</p>
+<p> <img src="00405.png"/> </p>
+<p>Si movemos el limpiador del potenciómetro lentamente en la dirección "arriba", su resistencia de un extremo a otro disminuirá lentamente.  Esto tiene el efecto de aumentar la corriente en el circuito, por lo que la indicación del amperímetro debería aumentar a un ritmo lento:</p>
+<p> <img src="00406.png"/> </p>
+<a name="Lenz's Law"></a>
+<p>Suponiendo que el limpiador del potenciómetro se esté moviendo de manera que el<i>tasa</i>Si el aumento de corriente a través del inductor es constante, el término di/dt de la fórmula será un valor fijo.  Este valor fijo, multiplicado por la inductancia del inductor en Henrys (también fija), da como resultado un voltaje fijo de cierta magnitud.  Desde una perspectiva física, el aumento gradual de la corriente da como resultado un campo magnético que también aumenta.  Este aumento gradual en el flujo magnético hace que se induzca un voltaje en la bobina expresado por la ecuación de inducción de Michael Faraday e = N(dΦ/dt).  Este voltaje autoinducido a través de la bobina, como resultado de un cambio gradual en la magnitud de la corriente a través de la bobina, resulta ser de una polaridad que intenta oponerse al cambio de corriente.  En otras palabras, la polaridad del voltaje inducido resultante de una<i>aumentar</i>en la corriente se orientará de tal manera que empuje<i>contra</i>la dirección de la corriente, para tratar de mantener la corriente en su magnitud anterior.  Este fenómeno exhibe un principio más general de la física conocido como<i>Ley de Lenz</i>, que afirma que un efecto inducido siempre será opuesto a la causa que lo produce.</p>
+<p>En este escenario, el inductor actuará como un<i>carga</i>, con el lado negativo del voltaje inducido en el extremo por donde entran los electrones y el lado positivo del voltaje inducido en el extremo por donde salen los electrones.</p>
+<p> <img src="00407.png"/> </p>
+<p>Cambiar la tasa de aumento de corriente a través del inductor moviendo el limpiador del potenciómetro "hacia arriba" a diferentes velocidades da como resultado diferentes cantidades de voltaje que caen a través del inductor, todos con la misma polaridad (opuesta al aumento de corriente):</p>
+<p> <img src="00408.png"/> </p>
+<a name="Derivative, calculus"></a>
+<a name="Calculus, derivative function"></a>
+<p>Aquí nuevamente vemos el<i>derivado</i>Función del cálculo exhibida en el comportamiento de un inductor.  En términos de cálculo, diríamos que el voltaje inducido a través del inductor es la derivada de la corriente a través del inductor: es decir, proporcional a la tasa de cambio de la corriente con respecto al tiempo.</p>
+<p>Invertir la dirección del movimiento del limpiador en el potenciómetro (haciendo "hacia abajo" en lugar de "hacia arriba") hará que aumente su resistencia de extremo a extremo.  Esto dará como resultado que la corriente del circuito disminuya (un<i>negativo</i>cifra para di/dt).  El inductor, siempre oponiéndose a cualquier cambio de corriente, producirá una caída de voltaje opuesta a la dirección del cambio:</p>
+<p> <img src="00409.png"/> </p>
+<a name="Lenz's Law"></a>
+<p>La cantidad de voltaje que producirá el inductor depende, por supuesto, de la rapidez con la que disminuye la corriente que lo atraviesa.  Como lo describe la Ley de Lenz, el voltaje inducido se opondrá al cambio de corriente.  con un<i>decreciente</i>corriente, la polaridad del voltaje se orientará para tratar de mantener la corriente en su magnitud anterior.  En este escenario, el inductor actuará como un<i>fuente</i>, con el lado negativo del voltaje inducido en el extremo por donde salen los electrones y el lado positivo del voltaje inducido en el extremo por donde entran los electrones.  Cuanto más rápidamente disminuya la corriente, más voltaje producirá el inductor, al liberar energía almacenada para tratar de mantener la corriente constante.</p>
+<p>Nuevamente, la cantidad de voltaje a través de un inductor perfecto es directamente proporcional a la tasa de cambio de corriente a través de él.  La única diferencia entre los efectos de una<i>decreciente</i>actual y un<i>creciente</i>actual es el<i>polaridad</i>del voltaje inducido.  Para la misma tasa de cambio de corriente a lo largo del tiempo, ya sea aumentando o disminuyendo, la magnitud del voltaje (voltios) será la misma.  Por ejemplo, un di/dt de -2 amperios por segundo producirá la misma cantidad de caída de voltaje inducida a través de un inductor que un di/dt de +2 amperios por segundo, justo en la polaridad opuesta.</p>
+<p>Si se fuerza que la corriente a través de un inductor cambie muy rápidamente, se producirán voltajes muy altos.  Considere el siguiente circuito:</p>
+<p> <img src="00410.png"/> </p>
+<p>En este circuito, se conecta una lámpara a través de los terminales de un inductor.  Se utiliza un interruptor para controlar la corriente en el circuito y la energía es suministrada por una batería de 6 voltios.  Cuando el interruptor está cerrado, el inductor se opondrá brevemente al cambio de corriente de cero a cierta magnitud, pero solo reducirá una pequeña cantidad de voltaje.  Se necesitan alrededor de 70 voltios para ionizar el gas de neón dentro de una bombilla de neón como esta, por lo que la bombilla no puede encenderse con los 6 voltios producidos por la batería, o el bajo voltaje cae momentáneamente por el inductor cuando el interruptor está cerrado:</p>
+<p> <img src="00411.png"/> </p>
+<p>Sin embargo, cuando se abre el interruptor, de repente se introduce una resistencia extremadamente alta en el circuito (la resistencia del entrehierro entre los contactos).  Esta introducción repentina de alta resistencia en el circuito hace que la corriente del circuito disminuya casi instantáneamente.  Matemáticamente, el término di/dt será un número negativo muy grande.  Un cambio tan rápido de corriente (de cierta magnitud a cero en muy poco tiempo) inducirá un voltaje muy alto a través del inductor, orientado con negativo a la izquierda y positivo a la derecha, en un esfuerzo por oponerse a esta disminución de corriente.  El voltaje producido suele ser más que suficiente para encender la lámpara de neón, aunque sólo sea por un breve momento hasta que la corriente desciende a cero:</p>
+<p> <img src="00412.png"/> </p>
+<p>Para obtener el máximo efecto, el tamaño del inductor debe ser lo más grande posible (al menos 1 Henry de inductancia).</p>
+<h2><u><a name="xtocid88332">Factors affecting inductance</a></u></h2>
+<p>Hay cuatro factores básicos en la construcción de un inductor que determinan la cantidad de inductancia creada.  Todos estos factores dictan la inductancia al afectar la cantidad de flujo de campo magnético que se desarrollará para una cantidad determinada de fuerza de campo magnético (corriente a través de la bobina de alambre del inductor):</p>
+<br/>
+<p>
+<b>NÚMERO DE ENVOLTURAS DE ALAMBRE O "VUELTAS" EN LA BOBINA:</b>En igualdad de condiciones, un mayor número de vueltas de cable en la bobina produce una mayor inductancia; Menos vueltas de cable en la bobina dan como resultado menos inductancia.</p>
+<p>
+<i>Explicación:</i>Más vueltas de cable significan que la bobina generará una mayor cantidad de fuerza de campo magnético (¡medida en amperios-vueltas!), para una cantidad determinada de corriente de la bobina.</p>
+<p> <img src="00324.png"/> </p>
+<br/>
+<p>
+<b>ÁREA DE LA BOBINA:</b>Si todos los demás factores son iguales, una mayor área de la bobina (medida mirando longitudinalmente a través de la bobina, en la sección transversal del núcleo) da como resultado una mayor inductancia; menos área de bobina da como resultado menos inductancia.</p>
+<p>
+<i>Explicación:</i>Un área de bobina mayor presenta menos oposición a la formación de flujo de campo magnético, para una cantidad determinada de fuerza de campo (amperios-vueltas).</p>
+<p> <img src="00325.png"/> </p>
+<br/>
+<p>
+<b>LONGITUD DE LA BOBINA:</b>En igualdad de condiciones, cuanto mayor sea la longitud de la bobina, menor será la inductancia; cuanto más corta sea la longitud de la bobina, mayor será la inductancia.</p>
+<p>
+<i>Explicación:</i>Un camino más largo para el flujo del campo magnético da como resultado una mayor oposición a la formación de ese flujo para cualquier cantidad dada de fuerza de campo (amperios-vueltas).</p>
+<p> <img src="00326.png"/> </p>
+<br/>
+<a name="Permeability"></a>
+<p>
+<b>MATERIAL DEL NÚCLEO:</b>En igualdad de condiciones, cuanto mayor sea la permeabilidad magnética del núcleo alrededor del cual está enrollada la bobina, mayor será la inductancia; cuanto menor es la permeabilidad del núcleo, menor es la inductancia.</p>
+<p>
+<i>Explicación:</i>Un material central con mayor permeabilidad magnética da como resultado un mayor flujo de campo magnético para cualquier cantidad dada de fuerza de campo (amperios-vueltas).</p>
+<p> <img src="00327.png"/> </p>
+<br/>
+<p>Se puede encontrar una aproximación de la inductancia para cualquier bobina de alambre con esta fórmula:</p>
+<p> <img src="10237.png"/> </p>
+<p>Debe entenderse que esta fórmula produce<i>aproximado</i>solo figuras.  Una razón para esto es el hecho de que la permeabilidad cambia a medida que varía la intensidad del campo (recuerde las curvas no lineales "B/H" para diferentes materiales).  Obviamente, si la permeabilidad (μ) en la ecuación es inestable, entonces la inductancia (L) también será inestable hasta cierto punto a medida que la corriente a través de la bobina cambie de magnitud.  Si la histéresis del material del núcleo es significativa, esto también tendrá efectos extraños en la inductancia de la bobina.  Los diseñadores de inductores intentan minimizar estos efectos diseñando el núcleo de tal manera que su densidad de flujo nunca se acerque a los niveles de saturación, por lo que el inductor opera en una porción más lineal de la curva B/H.</p>
+<p>Si un inductor está diseñado de manera que cualquiera de estos factores pueda variar a voluntad, su inductancia variará correspondientemente.  Los inductores variables generalmente se fabrican proporcionando una forma de variar el número de vueltas de cable en uso en un momento dado, o variando el material del núcleo (un núcleo deslizante que se puede mover hacia adentro y hacia afuera de la bobina).  En esta fotografía se muestra un ejemplo del diseño anterior:</p>
+<p> <img src="50004.jpg"/> </p>
+<p>Esta unidad utiliza contactos deslizantes de cobre para conectarse a la bobina en diferentes puntos a lo largo de su longitud.  La unidad que se muestra es un inductor de núcleo de aire utilizado en los primeros trabajos de radio.</p>
+<p>En la siguiente fotografía se muestra un inductor de valor fijo, otra unidad antigua con núcleo de aire construida para radios.  En la parte inferior se pueden ver los terminales de conexión, así como algunas vueltas de cable relativamente grueso:</p>
+<p> <img src="50007.jpg"/> </p>
+<p>Aquí hay otro inductor (de mayor valor de inductancia), también destinado a aplicaciones de radio.  Su bobina de alambre está enrollada alrededor de un tubo cerámico blanco para mayor rigidez:</p>
+<p> <img src="50013.jpg"/> </p>
+<p>Los inductores también pueden hacerse muy pequeños para aplicaciones de placas de circuito impreso.  Examine de cerca la siguiente fotografía y vea si puede identificar dos inductores cerca uno del otro:</p>
+<p> <img src="50016.jpg"/> </p>
+<a name="Inductor, toroidal"></a>
+<a name="Toroidal core inductor"></a>
+<p>Los dos inductores de esta placa de circuito están etiquetados como L.<sub>1</sub>y l<sub>2</sub>, y están ubicados en el centro-derecha del tablero.  Dos componentes cercanos son R<sub>3</sub>(una resistencia) y C<sub>16</sub>(un condensador).  Estos inductores se denominan "toroidales" porque sus bobinas de alambre están enrolladas alrededor de núcleos en forma de rosquilla ("toroidales").</p>
+<p>Al igual que las resistencias y los condensadores, los inductores también se pueden empaquetar como "dispositivos de montaje en superficie".  La siguiente fotografía muestra cuán pequeño puede ser un inductor empaquetado como tal:</p>
+<p> <img src="50023.jpg"/> </p>
+<p>Se puede ver un par de inductores en esta placa de circuito, a la derecha y al centro, que aparecen como pequeños chips negros con el número "100" impreso en ambos.  La etiqueta del inductor superior se puede ver impresa en la placa de circuito verde como L<sub>5</sub>.  Por supuesto, estos inductores tienen un valor de inductancia muy pequeño, pero demuestra cuán pequeños pueden fabricarse para satisfacer ciertas necesidades de diseño de circuitos.</p>
+<h2><u><a name="xtocid88333">Series and parallel inductors</a></u></h2>
+<a name="Inductors, series and parallel"></a>
+<p>Cuando los inductores se conectan en serie, la inductancia total es la suma de las inductancias de los inductores individuales.  Para entender por qué esto es así, considere lo siguiente: la medida definitiva de la inductancia es la cantidad de voltaje que cae a través de un inductor para una tasa determinada de cambio de corriente a través de él.  Si los inductores están conectados en serie (compartiendo así la misma corriente y viendo la misma tasa de cambio en la corriente), entonces el voltaje total caído como resultado de un cambio en la corriente será aditivo con cada inductor, creando un voltaje total mayor que cualquiera de los inductores individuales por separado.  Un voltaje mayor para la misma tasa de cambio de corriente significa una inductancia mayor.</p>
+<p> <img src="00328.png"/> </p>
+<p>Por lo tanto, la inductancia total de los inductores en serie es mayor que la inductancia de cualquiera de los inductores individuales.  La fórmula para calcular la inductancia total en serie es la misma que para calcular las resistencias en serie:</p>
+<p> <img src="10238.png"/> </p>
+<p>Cuando los inductores se conectan en paralelo, la inductancia total es menor que la inductancia de cualquiera de los inductores en paralelo.  Nuevamente, recuerde que la medida definitiva de la inductancia es la cantidad de voltaje que cae a través de un inductor para una tasa determinada de cambio de corriente a través de él.  Dado que la corriente a través de cada inductor paralelo será una fracción de la corriente total, y el voltaje a través de cada inductor paralelo será igual, un cambio en la corriente total dará como resultado una caída de voltaje menor a través del conjunto paralelo que para cualquiera de los inductores considerados por separado.  En otras palabras, habrá menos caída de voltaje a través de inductores paralelos para una tasa de cambio dada en la corriente que para cualquiera de esos inductores considerados por separado, porque la corriente total se divide entre las ramas paralelas.  Menos voltaje para la misma tasa de cambio de corriente significa menos inductancia.</p>
+<p> <img src="00329.png"/> </p>
+<p>Por tanto, la inductancia total es menor que la inductancia de cualquiera de los inductores individuales.  La fórmula para calcular la inductancia total en paralelo es la misma que para calcular las resistencias en paralelo:</p>
+<p> <img src="10239.png"/> </p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Las inductancias se suman en serie.</li>
+<li>Las inductancias disminuyen en paralelo.</li>
+</ul>
+<h2><u><a name="xtocid88334">Practical considerations</a></u></h2>
+<p>Los inductores, como todos los componentes eléctricos, tienen limitaciones que deben respetarse en aras de la confiabilidad y el funcionamiento adecuado del circuito.</p>
+<p>
+<i>Corriente nominal:</i>Dado que los inductores están construidos con alambre enrollado y cualquier cable estará limitado en su capacidad de transportar corriente por su resistencia y capacidad para disipar el calor, debe prestar atención a la corriente máxima permitida a través de un inductor.</p>
+<a name="Equivalent circuit"></a>
+<a name="Circuit, equivalent"></a>
+<p>
+<i>Circuito equivalente:</i>Dado que el cable del inductor tiene cierta resistencia y las limitaciones del diseño del circuito generalmente exigen que el inductor se construya con las dimensiones más pequeñas posibles, no existe un inductor "perfecto".  El cable de la bobina inductora generalmente presenta una cantidad sustancial de resistencia en serie, y el espaciamiento cercano del cable de una vuelta de la bobina a otra (separado por aislamiento) puede presentar cantidades mensurables de capacitancia parásita para interactuar con sus características puramente inductivas.  A diferencia de los condensadores, que son relativamente fáciles de fabricar con efectos parásitos insignificantes, los inductores son difíciles de encontrar en forma "pura".  En determinadas aplicaciones, estas características indeseables pueden presentar importantes problemas de ingeniería.</p>
+<p>
+<i>Tamaño del inductor:</i>Los inductores tienden a ser mucho más grandes, físicamente, que los condensadores para almacenar cantidades equivalentes de energía.  Esto es especialmente cierto teniendo en cuenta los avances recientes en la tecnología de condensadores electrolíticos, que permiten empaquetar valores de capacitancia increíblemente grandes en un paquete pequeño.  Si un diseñador de circuitos necesita almacenar una gran cantidad de energía en un volumen pequeño y tiene la libertad de elegir condensadores o inductores para la tarea, lo más probable es que elija un condensador.  Una excepción notable a esta regla son las aplicaciones que requieren<i>enorme</i>cantidades de capacitancia o inductancia para almacenar energía eléctrica: los inductores hechos de alambre superconductor (resistencia cero) son más prácticos de construir y operar de manera segura que los capacitores de valor equivalente, y probablemente también sean más pequeños.</p>
+<a name="Mutual inductance"></a>
+<a name="Inductance, mutual"></a>
+<p>
+<i>Interferencia:</i>Los inductores pueden afectar a los componentes cercanos de una placa de circuito con sus campos magnéticos, que pueden extenderse distancias significativas más allá del inductor.  Esto es especialmente cierto si hay otros inductores cerca de la placa de circuito.  Si los campos magnéticos de dos o más inductores pueden "conectarse" con las vueltas de cable de cada uno, habrá inductancia mutua presente en el circuito, así como autoinductancia, lo que muy bien podría causar efectos no deseados.  Esta es otra razón por la que los diseñadores de circuitos tienden a elegir condensadores en lugar de inductores para realizar tareas similares: los condensadores contienen inherentemente sus respectivos campos eléctricos perfectamente dentro del paquete de componentes y, por lo tanto, normalmente no generan ningún efecto "mutuo" con otros componentes.</p>
+<h2><u><a name="xtocid88335">Contributors</a></u></h2>
+<p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>
+<p>
+<b>Jason Stark</b>(Junio ​​de 2000): Formato de documentos HTML, que dio lugar a una segunda edición mucho más atractiva.</p>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="DC_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="DC_14.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="DC_16.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

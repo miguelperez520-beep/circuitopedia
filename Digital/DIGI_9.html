@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 9 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #f59e0b; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 9</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen IV</h1>
+<h1>Capítulo 9</h1>
+<!--Created 2007 Jul 17 to 2007 Oct 30 (DJZ)-->
+<!--2007 Nov 12 (DJZ) Added several ladder logic diagrams-->
+<!--04213.eps stolen from Principles of Digital Computing chapter as 04454.eps.-->
+<!--04214.eps stolen from Principles of Digital Computing chapter as 04475.eps.-->
+<!--first circuit/ladder 04451-->
+<!--last circuit/ladder 04489-->
+<!--first table/equation 14164-->
+<!--last table/equation 14173-->
+<!--2014/02/01 corrections to 7-segment-->
+<!--2014/02/01 04474.png 04488.png freed-up, unused by this sml.-->
+<h1>FUNCIONES LÓGICAS COMBINACIONALES</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid92140"><u>Introduction</u></a></li>
+<li><a href="#xtocid92141"><u>A Half-Adder</u></a></li>
+<li><a href="#xtocid92142"><u>A Full-Adder</u></a></li>
+<li><a href="#xtocid92143"><u>Decoder</u></a></li>
+<li><a href="#xtocid92144"><u>Encoder</u></a></li>
+<li><a href="#xtocid92145"><u>Demultiplexers</u></a></li>
+<li><a href="#xtocid92146"><u>Multiplexers</u></a></li>
+<li><a href="#xtocid92147"><u>Using multiple combinational circuits</u></a></li></ul>
+<p><b>Autor original: David Zitzelsberger</b></p>
+<h2><u><a name="xtocid92140">Introduction</a></u></h2>
+<a name="Combinational logic"></a>
+<p>El término "combinacional" nos llega de las matemáticas. En matemáticas un
+combinación es un conjunto desordenado, que es una forma formal de decir que a nadie le importa
+en qué orden vinieron los artículos. La mayoría de los juegos funcionan de esta manera, si tiraste los dados uno
+a la vez y sacas un 2 seguido de un 3 es lo mismo que si hubieras sacado un 3
+seguido de un 2. Con lógica combinacional, el circuito produce la misma salida
+independientemente del orden en que se cambian las entradas.</p>
+<a name=" Sequential logic"></a>
+<p>Hay circuitos que dependen de cuando cambian las entradas, estos
+Los circuitos se llaman lógica secuencial. Aunque no encontrarás el término
+"lógica secuencial" en los títulos de los capítulos, los próximos capítulos discutirán
+lógica secuencial.</p>
+<p>Los circuitos prácticos tendrán una combinación de lógica combinacional y secuencial,
+con lógica secuencial asegurándose de que todo suceda en orden y combinacional
+Lógica que realiza funciones como aritmética, lógica o conversión.</p>
+<p>Ya has utilizado circuitos combinacionales. Cada puerta lógica discutida
+anteriormente es una función lógica combinacional. Sigamos cómo funcionan dos puertas NAND.
+funciona si les proporcionamos entradas en diferentes órdenes.</p>
+<p>Comenzamos con ambas entradas siendo 0.</p>
+<p><p> <img src="04451.png"/> </p></p> <!--Pair of NAND gates with both inputs low-->
+<p>Luego configuramos una entrada alta.</p>
+<p><p> <img src="04452.png"/> </p></p> <!--Pair of NAND gates, each with one (different) input high-->
+<p>Luego configuramos la otra entrada en alto.</p>
+<p><p> <img src="04453.png"/> </p></p> <!--Pair of NAND gates with both inputs high-->
+<p>Por lo tanto, a las puertas NAND no les importa el orden de las entradas, y encontrará
+Lo mismo se aplica a todas las demás puertas cubiertas hasta este punto (AND, XOR, OR,
+NOR, XNOR y NO).</p>
+<h2><u><a name="xtocid92141">A Half-Adder</a></u></h2>
+<a name="Half-adder"></a>
+<a name="Two input adder"></a>
+<p>Como primer ejemplo de lógica combinacional útil, construyamos un dispositivo que
+Puede sumar dos dígitos binarios. Podemos calcular rápidamente cuáles son las respuestas.
+debería ser:</p>
+<p><pre>
+0 + 0 = 0          0 + 1 = 1          1 + 0 = 1          1 + 1 = 10<sub>2</sub>
+</pre></p>
+<a name="Carry"></a>
+<p>Entonces necesitamos dos entradas (ayb) y dos salidas. La producción de bajo orden
+se llamará Σ porque representa la suma y la salida de orden superior
+se llamará C<sub>out</sub>porque representa el acarreo
+fuera.</p>
+<p>La tabla de verdad es</p>
+<p><p> <img src="14164.png"/> </p></p> <!--Half-adder truth table-->
+<p>Simplificar ecuaciones booleanas o hacer algún mapa de Karnaugh producirá la
+El mismo circuito que se muestra a continuación, pero comience mirando los resultados. El Σ
+La columna es nuestra conocida puerta XOR, mientras que la C<sub>out</sub>la columna es
+la puerta AND. Este dispositivo se llama medio sumador por razones que harán
+sentido en la siguiente sección.</p>
+<p><p> <img src="04454.png"/> </p></p> <!--Half adder circuit-->
+<p>o en lógica de escalera</p>
+<p><p> <img src="04475.png"/> </p></p> <!--Half adder ladder-->
+<h2><u><a name="xtocid92142">A Full-Adder</a></u></h2>
+<a name="Adder"></a>
+<a name="Addition, binary"></a>
+<a name="Binary addition"></a>
+<a name="Full-adder"></a>
+<p>El medio sumador es extremadamente útil hasta que quieras agregar más de uno.
+cantidades de dígitos binarios. La forma lenta de desarrollar sumadores de dos dígitos binarios sería
+ser hacer una tabla de verdad y reducirla. Entonces cuando decidas hacer un tres
+sumador de dígitos binarios, hazlo de nuevo. Luego, cuando decidas hacer un número de cuatro dígitos
+sumador, hazlo de nuevo. Entonces cuando... Los circuitos serían rápidos, pero el desarrollo
+el tiempo sería lento.</p>
+<p>Observar una suma de dos dígitos binarios muestra a qué debemos extender la suma
+múltiples dígitos binarios.</p>
+<p><pre>
+           11
+            11
+            11
+           ---
+           110
+</pre></p>
+<a name="Three input adder"></a>
+<p>Mire cuántas entradas utiliza la columna del medio. Nuestro sumador necesita tres
+entradas; a, b, y el acarreo de la suma anterior, y podemos usar nuestra entrada de dos
+sumador para construir un sumador de tres entradas.</p>
+<a name="Carry"></a>
+<p>Σ es la parte fácil. La aritmética normal nos dice que si Σ = a +
+segundo + C<sub>in</sub>y Σ<sub>1</sub>= a + b, entonces
+Σ = Σ<sub>1</sub> + C<sub>in</sub>.</p>
+<p><p> <img src="04455.png"/> </p></p> <!--Three-quarter adder circuit?-->
+<p><p> <img src="04476.png"/> </p></p> <!--Three-quarter adder ladder?-->
+<p>¿Qué hacemos con C?<sub>1</sub>y
+c<sub>2</sub>? Veamos tres sumas de entrada y rápidamente
+calcular:</p>
+<p><pre>
+C<sub>in</sub> + a + b = ?
+0 + 0 + 0 = 0       0 + 0 + 1 =  1       0 + 1 + 0 =  1      0 + 1 + 1 = 10
+1 + 0 + 0 = 1       1 + 0 + 1 = 10       1 + 1 + 0 = 10      1 + 1 + 1 = 11
+</pre></p>
+<p>Si tiene alguna inquietud sobre la broca de orden bajo, confirme que la
+El circuito y la escalera lo calculan correctamente.</p>
+<p>Para calcular el bit de orden superior, observe que es 1 en ambos
+casos en los que a + b produce una C<sub>1</sub>. Además, el bit de orden superior
+es 1 cuando a + b produce a Σ<sub>1</sub>y
+c<sub>in</sub>es un 1. Entonces tendremos un acarreo cuando
+c<sub>1</sub>O (Σ<sub>1</sub>Y
+c<sub>in</sub>). Nuestro sumador completo de tres entradas es:</p>
+<p><p> <img src="04456.png"/> </p></p> <!--Full adder circuit-->
+<p><p> <img src="04477.png"/> </p></p> <!--Full adder ladder-->
+<p>Para algunos diseños, poder eliminar uno o más tipos de compuertas puede
+ser importante, y puede reemplazar la puerta OR final con una puerta XOR sin
+cambiando los resultados.</p>
+<p>Ahora podemos conectar dos sumadores para sumar cantidades de 2 bits.</p>
+<p><p> <img src="04457.png"/> </p></p> <!--Funky two-bit adder circuit-->
+<p><p> <img src="04478.png"/> </p></p> <!--Funky two-bit adder ladder-->
+<p>A<sub>0</sub>es el bit de orden inferior de A,
+un<sub>1</sub>es el bit de orden superior de A, B<sub>0</sub>es el bit de orden inferior de B, B<sub>1</sub>es el bit de orden superior de B,
+Σ<sub>0</sub>es el bit de orden inferior de la suma,
+Σ<sub>1</sub>es el bit de orden superior de la suma, y
+c<sub>out</sub>es el llevar.</p>
+<p>Un sumador de dos dígitos binarios nunca se haría de esta manera. En cambio el más bajo
+Los bits de pedido también pasarían por un sumador completo.</p>
+<p><p> <img src="04458.png"/> </p></p> <!--Two-bit adder circuit-->
+<p></p> <!--spacing-->
+<p><p> <img src="04479.png"/> </p></p> <!--Two-bit adder ladder-->
+<p>Hay varias razones para esto, una es que podemos permitir que una
+circuito para determinar si el acarreo de orden más bajo debe incluirse en el
+suma. Esto permite encadenar sumas aún mayores. Consideremos dos diferentes
+Maneras de ver una suma de cuatro bits.</p>
+<p><pre>
+           111            1&lt;-+  11&lt;+-
+            0110             |  01  |  10
+            1011             |  10  |  11
+           -----          -  | ---- | ---
+           10001          1  +-100  +-101
+</pre></p>
+<!--the strange looking htmlo sp htmlo markup above is to force it to look ok in the html version-->
+<p>Si permitimos que el programa agregue un número de dos bits y recordemos el acarreo para
+más tarde, luego use ese acarreo en la siguiente suma, el programa puede sumar cualquier número de
+bits que el usuario desea aunque solo hayamos proporcionado un sumador de dos bits. pequeño
+Los PLC también se pueden encadenar para obtener números mayores.</p>
+<p>Estos sumadores completos también se pueden expandir a cualquier número de bits de espacio.
+lo permite. Como ejemplo, aquí se explica cómo hacer un sumador de 8 bits.</p>
+<p><p> <img src="04459.png"/> </p></p> <!--Eight-bit adder circuit-->
+<p>Este es el mismo resultado que usar los dos sumadores de 2 bits para hacer un sumador de 4 bits.
+sumador y luego usar dos sumadores de 4 bits para hacer un sumador de 8 bits o volver a duplicar
+lógica de escalera y actualización de los números.</p>
+<p><p> <img src="04460.png"/> </p></p> <!--Eight-bit adder explained-->
+<p>Cada "2+" es un sumador de 2 bits y está formado por dos sumadores completos. Cada "4+" es un
+Sumador de 4 bits y formado por dos sumadores de 2 bits. Y el resultado de dos sumadores de 4 bits es
+el mismo sumador de 8 bits que usamos sumadores completos para construir.</p>
+<p>Para cualquier circuito combinacional grande, generalmente existen dos enfoques para
+diseño: puedes tomar circuitos más simples y replicarlos; o puedes diseñar el
+circuito complejo como un dispositivo completo.</p>
+<p>Usar circuitos más simples para construir circuitos complejos le permite gastar
+menos tiempo de diseño, pero luego requiere más tiempo para que las señales se propaguen
+los transistores. El diseño del sumador de 8 bits anterior tiene que esperar a que se
+c<sub><i>x</i>out</sub>señales para pasar de
+un<sub>0</sub> + B<sub>0</sub>hasta las entradas de
+Σ<sub>7</sub>.</p>
+<p>Si un diseñador construye un sumador de 8 bits como un dispositivo completo simplificado a un
+suma de productos, entonces cada señal simplemente viaja a través de una puerta NOT, una puerta AND
+puerta y una puerta OR. Un dispositivo de diecisiete entradas tiene una tabla de verdad con 131.072
+entradas, y reducir 131.072 entradas a una suma de productos llevará algo de tiempo
+tiempo.</p>
+<p>Al diseñar sistemas que tienen un tiempo de respuesta máximo permitido para
+Para proporcionar el resultado final, puede comenzar usando circuitos más simples y luego
+Intente reemplazar partes del circuito que sean demasiado lentas. De esa manera gastas
+la mayor parte de tu tiempo en las partes de un circuito que importan.</p>
+<h2><u><a name="xtocid92143">Decoder</a></u></h2>
+<a name="Decoder"></a>
+<p>Un decodificador es un circuito que transforma un código en un conjunto de señales. es
+llamado decodificador porque hace lo contrario de codificar, pero comenzaremos nuestro
+estudio de codificadores y decodificadores con decodificadores porque son más sencillos de
+diseño.</p>
+<a name="1-to-2 line decoder"></a>
+<a name="Decoder, line"></a>
+<a name="Line decoder"></a>
+<p>Un tipo común de decodificador es el decodificador de línea que toma un código binario de n dígitos.
+número y lo decodifica en 2<sup>n</sup>líneas de datos. el
+El más simple es el decodificador de 1 a 2 líneas. La tabla de verdad es</p>
+<p><p> <img src="14165.png"/> </p></p> <!--1-to-2 decoder truth table-->
+<p>A es la dirección y D es la línea de datos. D<sub>0</sub>NO es un
+y D<sub>1</sub>es A. El circuito se parece</p>
+<p><p> <img src="04461.png"/> </p></p> <!--1-to-2 decoder circuit-->
+<p><p> <img src="04480.png"/> </p></p> <!--1-to-2 decoder ladder-->
+<a name="2-to-4 line decoder"></a>
+<p>Sólo un poco más complejo es el decodificador de 2 a 4 líneas. la tabla de verdad
+es</p>
+<p><p> <img src="14166.png"/> </p></p> <!--2-to-4 decoder truth table-->
+<p>Desarrollado en un circuito, parece</p>
+<p><p> <img src="04462.png"/> </p></p> <!--2-to-4 decoder circuit-->
+<p><p> <img src="04481.png"/> </p></p> <!--2-to-4 decoder ladder-->
+<p>Los decodificadores de líneas más grandes se pueden diseñar de manera similar, pero al igual que
+con el sumador binario hay una manera de hacer decodificadores más grandes combinando
+decodificadores más pequeños. Un circuito alternativo para el decodificador de 2 a 4 líneas es</p>
+<p><p> <img src="04463.png"/> </p></p> <!--built up 2-to-4 line decoder circuit-->
+<p>Reemplazar los decodificadores 1 a 2 con sus circuitos mostrará que ambos
+Los circuitos son equivalentes. De manera similar se puede hacer un decodificador de 3 a 8 líneas.
+desde un decodificador de 1 a 2 líneas y un decodificador de 2 a 4 líneas, y un decodificador de 4 a 16 líneas
+Se puede realizar a partir de dos decodificadores de 2 a 4 líneas.</p>
+<p>También podría considerar hacer una escalera de decodificadores de 2 a 4 a partir de un decodificador de 1 a 2.
+escaleras. Si lo haces, podría verse así:</p>
+<p><p> <img src="04482.png"/> </p></p> <!--built up 2-to-4 line decoder ladder-->
+<p>Para cierta lógica, puede ser necesario desarrollar una lógica como esta. para un
+En un sumador de ocho bits, solo sabemos cómo sumar ocho bits sumando un bit a la vez.
+Generalmente es más fácil diseñar lógica de escalera a partir de ecuaciones booleanas o de verdad.
+tablas en lugar de diseñar puertas lógicas y luego "traducirlas" en escaleras
+lógica.</p>
+<p>Una aplicación típica de un circuito decodificador de línea es seleccionar entre
+múltiples dispositivos. Un circuito que necesita seleccionar entre dieciséis dispositivos podría tener
+dieciséis líneas de control para seleccionar qué dispositivo debe "escuchar". Con un decodificador
+sólo se necesitan cuatro líneas de control.</p>
+<h2><u><a name="xtocid92144">Encoder</a></u></h2>
+<a name="Encoder"></a>
+<p>Un codificador es un circuito que convierte un conjunto de señales en un código. vamos
+Comience a hacer una tabla de verdad del codificador de líneas 2 a 1 invirtiendo el decodificador 1 a 2.
+tabla de verdad.</p>
+<p><p> <img src="14167.png"/> </p></p> <!--1-to-2 decoder reversed truth
+table.-->
+<p>Esta tabla de verdad es un poco corta. Una tabla de verdad completa sería</p>
+<p><p> <img src="14168.png"/> </p></p> <!--2-to-1 decoder with empty entries-->
+<p>Una pregunta que debemos responder es ¿qué hacer con esos otros insumos? hacer
+¿los ignoramos? ¿Les hacemos generar una salida de error adicional? En muchos
+circuitos este problema se resuelve agregando lógica secuencial para saber no
+solo qué entrada está activa pero también en qué orden se activaron las entradas.</p>
+<a name="7-segment encoder"></a>
+<a name="Encoder, 7-segment"></a>
+<p>Una aplicación más útil del diseño de codificador combinacional es un binario a
+Codificador de 7 segmentos. Los siete segmentos se dan según</p>
+<a name="7-segment display"></a>
+<p><p> <img src="14169.png"/> </p></p> <!--7-segment display-->
+<p>Nuestra tabla de verdad es:</p>
+<p><p> <img src="14170.png"/> </p></p> <!--7-segment truth table-->
+<p>Decidir qué hacer con las seis entradas restantes de la tabla de verdad es
+más fácil con este circuito. No se debe esperar que este circuito codifique un
+combinación indefinida de entradas, por lo que podemos dejarlas como "no importa" cuando
+diseñar el circuito. Las ecuaciones se simplificaron con mapas de Karnaugh.</p>
+<p><p> <img src="14174.png"/> </p></p> <!--7-segment D0 D1 k-maps-->
+<p><p> <img src="14175.png"/> </p></p> <!--7-segment D2 D3 k-maps-->
+<p><p> <img src="14176.png"/> </p></p> <!--7-segment D4 D5 D6 k-maps-->
+<p>La colección de ecuaciones se resume aquí:</p>
+<p><p> <img src="14171.png"/> </p></p> <!--7-segment equations-->
+<p>El circuito es:</p>
+<p><p> <img src="04464.png"/> </p></p> <!--7-segment circuit-->
+<!--04474.eps was formerly a rotated version of 04464.eps-->
+<p>Y el diagrama de escalera correspondiente:</p>
+<p><p> <img src="04483.png"/> </p></p> <!--7-segment ladder-->
+<h2><u><a name="xtocid92145">Demultiplexers</a></u></h2>
+<a name="Decoder, line"></a>
+<a name="Demultiplexer"></a>
+<a name="dmux"></a>
+<p>Un demultiplexor, a veces abreviado dmux, es un circuito que tiene uno
+entrada y más de una salida. Se utiliza cuando un circuito desea enviar una
+señal a uno de muchos dispositivos. Esta descripción suena similar a la
+descripción dada para un decodificador, pero un decodificador se utiliza para seleccionar entre muchos
+dispositivos mientras que un demultiplexor se utiliza para enviar una señal entre muchos
+dispositivos.</p>
+<p>Un demultiplexor se utiliza con tanta frecuencia que tiene su propio esquema.
+símbolo</p>
+<p><p> <img src="04465.png"/> </p></p> <!--dmux schematic symbol-->
+<a name="1-to-2 demultiplexer"></a>
+<p>La tabla de verdad para un demultiplexor 1 a 2 es</p>
+<p><p> <img src="14172.png"/> </p></p> <!--dmux truth table-->
+<a name="Line decoder"></a>
+<p>Usando nuestro decodificador 1 a 2 como parte del circuito, podemos expresar esto
+circuito fácilmente</p>
+<p><p> <img src="04466.png"/> </p></p> <!--dmux circuit-->
+<p><p> <img src="04484.png"/> </p></p> <!--dmux ladder-->
+<p>Este circuito se puede ampliar de dos maneras diferentes. Puedes aumentar el
+número de señales que se transmiten, o puede aumentar el número de
+entradas que pasan. Para aumentar el número de entradas que reciben
+pasado solo requiere un decodificador de línea más grande. Aumentando el número de
+Las señales que se transmiten son aún más fáciles.</p>
+<p>Por ejemplo, un dispositivo que pasa un conjunto de dos señales entre cuatro
+señales es un "demultiplexor 1 a 2 de dos bits". Su circuito es</p>
+<p><p> <img src="04467.png"/> </p></p> <!--Expanded dmux-->
+<p>o expresando el circuito como</p>
+<p><p> <img src="04468.png"/> </p></p> <!--Expanded dmux simplified circuit-->
+<p><p> <img src="04485.png"/> </p></p> <!--Expanded dmux simplified ladder-->
+<p>muestra que podrían ser dos demultiplexores 1 a 2 de un bit sin cambiar
+su comportamiento esperado.</p>
+<a name="1-to-4 demultiplexer"></a>
+<p>Se puede construir fácilmente un demultiplexor de 1 a 4 a partir de demultiplexores de 1 a 2 como
+sigue.</p>
+<p><p> <img src="04469.png"/> </p></p> <!--2-to-4 demultiplexer-->
+<h2><u><a name="xtocid92146">Multiplexers</a></u></h2>
+<a name="Multiplexer"></a>
+<a name="mux"></a>
+<p>Un multiplexor, abreviado mux, es un dispositivo que tiene múltiples entradas y
+una salida.</p>
+<p>El símbolo esquemático de los multiplexores es</p>
+<p><p> <img src="04470.png"/> </p></p> <!--multiplexer schematic-->
+<a name="2-to-1 multiplexer"></a>
+<p>La tabla de verdad para un multiplexor 2 a 1 es</p>
+<p><p> <img src="14173.png"/> </p></p> <!--multiplexer truth table-->
+<a name="Decoder, line"></a>
+<a name="Line decoder"></a>
+<p>Usando un decodificador 1 a 2 como parte del circuito, podemos expresar este circuito
+fácilmente.</p>
+<p><p> <img src="04471.png"/> </p></p> <!--2-to-1 multiplexer circuit-->
+<p><p> <img src="04486.png"/> </p></p> <!--2-to-1 multiplexer ladder-->
+<a name="4-to-1 multiplexer"></a>
+<p>Los multiplexores también se pueden ampliar con las mismas convenciones de nomenclatura que
+demultiplexores. Un circuito multiplexor 4 a 1 es</p>
+<p><p> <img src="04472.png"/> </p></p> <!--4-to-1 multiplexer-->
+<p>Ésa es la definición formal de multiplexor. Informalmente, hay mucho
+de confusión. Tanto los demultiplexores como los multiplexores tienen nombres similares,
+abreviaturas, símbolos esquemáticos y circuitos, por lo que es fácil la confusión. el término
+multiplexor, y la abreviatura mux, se utilizan a menudo para referirse también a un
+demultiplexor, o un multiplexor y un demultiplexor trabajando juntos. Entonces cuando
+Si oye hablar de un multiplexor, puede que signifique algo muy diferente.</p>
+<h2><u><a name="xtocid92147">Using multiple combinational circuits</a></u></h2>
+<p>Como ejemplo de uso de varios circuitos juntos, vamos a hacer un
+dispositivo que tendrá 16 entradas, que representan un número de cuatro dígitos, a un cuatro
+Pantalla de 7 dígitos pero usando solo un codificador de binario a 7 segmentos.</p>
+<p>Primero, la arquitectura general de nuestro circuito proporciona lo que parece
+nuestra descripción proporcionada.</p>
+<p><p> <img src="04473.png"/> </p></p> <!--4 digit display circuit-->
+<p>Siga este circuito y podrá confirmar que coincide con el
+descripción dada anteriormente. Hay 16 entradas principales. Hay dos entradas más.
+Se utiliza para seleccionar qué dígito se mostrará. Hay 28 salidas para controlar.
+la pantalla de 7 segmentos de cuatro dígitos. Sólo cuatro de las entradas primarias están codificadas en
+un tiempo. Sin embargo, es posible que hayas notado una posible pregunta.</p>
+<p>Cuando se selecciona uno de los dígitos, ¿qué significan los otros tres dígitos?
+mostrar? Revise el circuito de los demultiplexores y observe que cualquier línea que no
+seleccionado por la entrada A es cero. Entonces los otros tres dígitos están en blanco. nosotros no
+tiene un problema, sólo se muestra un dígito a la vez.</p>
+<p>Tengamos una perspectiva de cuán complejo es este circuito observando
+la lógica de escalera equivalente.</p>
+<p><p> <img src="04487.png"/> </p></p>
+<!--4 digit display circuit-->
+<p>Observe lo rápido que se desarrolló este gran circuito a partir de piezas más pequeñas.
+Esto es cierto en la mayoría de los circuitos complejos: están compuestos de partes más pequeñas.
+Permitir que un diseñador abstraiga cierta complejidad y comprenda el circuito.
+en su conjunto. A veces un diseñador puede incluso tomar componentes que otros tienen
+diseñado y eliminar el trabajo de diseño de detalle.</p>
+<p>Además de la cantidad adicional de puertas, este diseño adolece de una
+debilidad adicional. Sólo puedes ver una pantalla con un dígito a la vez. si hay
+Si hubiera alguna forma de rotar los cuatro dígitos rápidamente, podrías tener el
+apariencia de los cuatro dígitos que se muestran al mismo tiempo. eso es un trabajo
+para un circuito secuencial, que es el tema de los siguientes capítulos.</p>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="DIGI_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="DIGI_8.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="DIGI_A1.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

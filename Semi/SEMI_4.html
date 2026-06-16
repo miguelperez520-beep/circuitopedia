@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen III (Semiconductores) - Capítulo 4 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #10b981; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen III (Semiconductores) - Capítulo 4</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen III</h1>
+<h1>Capítulo 4</h1>
+<h1>TRANSISTORES DE UNIÓN BIPOLAR</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid90360"><u>Introduction</u></a></li>
+<li><a href="#xtocid90361"><u>The transistor as a switch</u></a></li>
+<li><a href="#xtocid90362"><u>Meter check of a transistor</u></a></li>
+<li><a href="#xtocid90363"><u>Active mode operation</u></a></li>
+<li><a href="#xtocid90364"><u>The common-emitter amplifier</u></a></li>
+<li><a href="#xtocid90365"><u>The common-collector amplifier</u></a></li>
+<li><a href="#xtocid90366"><u>The common-base amplifier</u></a></li>
+<li><a href="#xtocid90367"><u>The cascode amplifier</u></a></li>
+<li><a href="#xtocid90368"><u>Biasing techniques</u></a></li>
+<li><a href="#xtocid90369"><u>Biasing calculations</u></a></li>
+<ul>
+<li><a href="#xtocid903610"><u>Base Bias</u></a></li>
+<li><a href="#xtocid903611"><u>Collector-feedback bias</u></a></li>
+<li><a href="#xtocid903612"><u>Emitter-bias</u></a></li>
+<li><a href="#xtocid903613"><u>Voltage divider bias </u></a></li>
+</ul>
+<li><a href="#xtocid903614"><u>Input and output coupling</u></a></li>
+<li><a href="#xtocid903615"><u>Feedback</u></a></li>
+<li><a href="#xtocid903616"><u>Amplifier impedances</u></a></li>
+<li><a href="#xtocid903617"><u>Current mirrors</u></a></li>
+<li><a href="#xtocid903618"><u>Transistor ratings and packages</u></a></li>
+<li><a href="#xtocid903619"><u>BJT quirks</u></a></li>
+<ul>
+<li><a href="#xtocid903620"><u>Nonlinearity</u></a></li>
+<li><a href="#xtocid903621"><u>Temperature drift</u></a></li>
+<li><a href="#xtocid903622"><u>Thermal runaway</u></a></li>
+<li><a href="#xtocid903623"><u>Junction capacitance</u></a></li>
+<li><a href="#xtocid903624"><u>Noise</u></a></li>
+<li><a href="#xtocid903625"><u>Thermal mismatch (problem with paralleling transistors)</u></a></li>
+<li><a href="#xtocid903626"><u>High frequency effects</u></a></li>
+</ul>
+<li><a href="#xtocid903627">Bibliography</a></li></ul>
+<h2><u><a name="xtocid90360">Introduction</a></u></h2>
+<p>La invención del transistor bipolar en 1948 marcó el comienzo de una revolución en la electrónica.  Proezas técnicas que antes requerían tubos de vacío relativamente grandes, mecánicamente frágiles y consumidores de energía, de repente se pudieron lograr con pequeñas motas de silicio cristalino, mecánicamente resistentes y que ahorran energía.  Esta revolución hizo posible el diseño y la fabricación de dispositivos electrónicos livianos y económicos que ahora damos por sentado.  Comprender cómo funcionan los transistores es de suma importancia para cualquier persona interesada en comprender la electrónica moderna.</p>
+<p>Mi intención aquí es centrarme lo más exclusivamente posible en la función práctica y la aplicación de los transistores bipolares, en lugar de explorar el mundo cuántico de la teoría de los semiconductores.  En mi opinión, es mejor dejar las discusiones sobre huecos y electrones para otro capítulo.  Aquí quiero explorar cómo<i>use</i>estos componentes, no analizar sus detalles internos íntimos.  No pretendo restar importancia a la comprensión de la física de los semiconductores, pero a veces un enfoque intenso en la física del estado sólido resta valor a la comprensión de las funciones de estos dispositivos a nivel de componentes.  Sin embargo, al adoptar este enfoque, asumo que el lector posee un cierto conocimiento mínimo de los semiconductores: la diferencia entre semiconductores dopados “P” y “N”, las características funcionales de una unión PN (diodo) y el significado de los términos “polarización inversa” y “polarización directa”.  Si estos conceptos no le quedan claros, es mejor consultar los capítulos anteriores de este libro antes de continuar con este.</p>
+<p>Un transistor bipolar consta de un “sándwich” de tres capas de materiales semiconductores dopados (extrínsecos), ya sea P-N-P en la Figura<a href="#03071.png">  below</a>(b) o N-P-N en (d).  Cada capa que forma el transistor tiene un nombre específico y cada capa está provista de un contacto de cable para su conexión a un circuito. Los símbolos esquemáticos se muestran en la Figura.<a href="#03071.png">  below</a>(a) y (d).</p>
+<a name="03071.png"></a>
+<p> <img src="03071.png"/> </p>
+<p><i>Transistor BJT: (a) símbolo esquemático PNP, (b) diseño físico (c) símbolo NPN, (d) diseño.</i></p>
+<p>La diferencia funcional entre un transistor PNP y un transistor NPN es la polarización (polaridad) adecuada de las uniones cuando están en funcionamiento.  Para cualquier estado de operación dado, las direcciones de corriente y las polaridades de voltaje para cada tipo de transistor son exactamente opuestas entre sí.</p>
+<p>Los transistores bipolares funcionan como corriente controlada por corriente.<i>reguladores</i>.  En otras palabras, los transistores restringen la cantidad de corriente que pasa de acuerdo con una corriente de control más pequeña.  La corriente principal que es<i>revisado</i>va de colector a emisor, o de emisor a colector, dependiendo del tipo de transistor que sea (PNP o NPN, respectivamente).  La pequeña corriente que<i>controles</i>la corriente principal va de base a emisor, o de emisor a base, dependiendo nuevamente del tipo de transistor que sea (PNP o NPN, respectivamente).  Según los estándares de simbología de semiconductores, la flecha siempre apunta<i>contra</i>la dirección del flujo de electrones.  (Cifra<a href="#03073.png">  below</a>)
+</p>
+<a name="03073.png"></a>
+<p> <img src="03073.png"/> </p>
+<p><i>La corriente de base-emisor pequeña controla la corriente de colector-emisor grande que fluye contra la flecha del emisor.</i></p>
+<p>Los transistores bipolares se llaman<i>bi</i>polares porque el flujo principal de electrones a través de ellos tiene lugar en<i>two</i>tipos de material semiconductor: P y N, ya que la corriente principal va del emisor al colector (o viceversa).  En otras palabras, dos tipos de portadores de carga (electrones y huecos) componen esta corriente principal a través del transistor.</p>
+<a name="Kirchhoff's Current Law"></a>
+<p>Como puedes ver, el<i>controlador</i>actual y el<i>revisado</i>La corriente siempre se entrelaza a través del cable emisor y sus electrones siempre fluyen.<i>contra</i>la dirección de la flecha del transistor.  Esta es la primera y más importante regla en el uso de transistores: todas las corrientes deben ir en la dirección adecuada para que el dispositivo funcione como regulador de corriente.  La pequeña corriente de control generalmente se conoce simplemente como<i>corriente base</i>porque es la única corriente que pasa por el cable base del transistor.  Por el contrario, la corriente grande y controlada se conoce como<i>corriente del colector</i>porque es la única corriente que pasa por el cable colector.  La corriente del emisor es la suma de las corrientes de base y colector, cumpliendo la Ley de Corrientes de Kirchhoff.</p>
+<p>No hay corriente a través de la base del transistor, lo apaga como un interruptor abierto e impide que la corriente pase por el colector.  Una corriente de base enciende el transistor como un interruptor cerrado y permite que una cantidad proporcional de corriente pase por el colector.  La corriente del colector está limitada principalmente por la corriente de base, independientemente de la cantidad de voltaje disponible para impulsarla.  La siguiente sección explorará con más detalle el uso de transistores bipolares como elementos de conmutación.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Los transistores bipolares se llaman así porque la corriente controlada debe pasar a través<i>two</i>tipos de material semiconductor: P y N. La corriente consiste tanto en un flujo de electrones como de huecos, en diferentes partes del transistor.</li>
+<li>Los transistores bipolares constan de una estructura "sándwich" de semiconductores P-N-P o N-P-N.</li>
+<li>Las tres puntas de un transistor bipolar se llaman<i>emisor</i>, <i>Base</i>, y<i>Coleccionista</i>.</li>
+<li>Los transistores funcionan como reguladores de corriente al permitir que pase una pequeña corriente.<i>control</i>una corriente mayor.  La cantidad de corriente permitida entre el colector y el emisor está determinada principalmente por la cantidad de corriente que se mueve entre la base y el emisor.</li>
+<li>Para que un transistor funcione correctamente como regulador de corriente, la corriente de control (base) y las corrientes controladas (colector) deben ir en las direcciones adecuadas: engranándose aditivamente en el emisor y yendo<i>contra</i>el símbolo de la flecha del emisor.</li>
+</ul>
+<h2><u><a name="xtocid90361">The transistor as a switch</a></u></h2>
+<p>Debido a que la corriente del colector de un transistor está proporcionalmente limitada por su corriente de base, se puede utilizar como una especie de interruptor controlado por corriente.  Un flujo relativamente pequeño de electrones enviado a través de la base del transistor tiene la capacidad de ejercer control sobre un flujo mucho mayor de electrones a través del colector.</p>
+<p>Supongamos que tenemos una lámpara que queremos encender y apagar con un interruptor.  Un circuito de este tipo sería extremadamente simple como en la Figura<a href="#03075.png">  below</a>(a).</p>
+<p>A modo de ilustración, insertemos un transistor en lugar del interruptor para mostrar cómo puede controlar el flujo de electrones a través de la lámpara.  Recuerde que la corriente controlada a través de un transistor debe ir entre el colector y el emisor.  Dado que lo que queremos controlar es la corriente que pasa por la lámpara, debemos colocar el colector y el emisor de nuestro transistor donde estaban los dos contactos del interruptor.  También debemos asegurarnos de que la corriente de la lámpara se moverá.<i>contra</i>la dirección del símbolo de la flecha del emisor para garantizar que la polarización de la unión del transistor sea correcta como en la Figura<a href="#03075.png">  below</a>(b).</p>
+<a name="03075.png"></a>
+<p> <img src="03075.png"/> </p>
+<p><i>(a) interruptor mecánico, (b) interruptor de transistor NPN, (c) interruptor de transistor PNP.</i></p>
+<p>También se podría haber elegido un transistor PNP para el trabajo. Su aplicación se muestra en la figura.<a href="#03075.png">  above</a>(do).</p>
+<p>La elección entre NPN y PNP es realmente arbitraria.  Lo único que importa es que se mantengan las direcciones de corriente adecuadas para lograr una polarización de unión correcta (el flujo de electrones va<i>contra</i>la flecha del símbolo del transistor).</p>
+<p>Volviendo al transistor NPN de nuestro circuito de ejemplo, nos enfrentamos a la necesidad de añadir algo más para poder tener corriente base.  Sin una conexión al cable de base del transistor, la corriente de base será cero y el transistor no podrá encenderse, lo que dará como resultado una lámpara que siempre estará apagada.  Recuerde que para un transistor NPN, la corriente de base debe consistir en electrones que fluyen del emisor a la base (contra el símbolo de la flecha del emisor, al igual que la corriente de la lámpara).  Quizás lo más sencillo sería conectar un interruptor entre los cables base y colector del transistor como en la Figura<a href="#03078.png">  below</a>(a).</p>
+<a name="03078.png"></a>
+<p> <img src="03078.png"/> </p>
+<p><i>Transistor: (a) corte, lámpara apagada; (b) saturado, lámpara encendida.</i></p>
+<a name="Floating"></a>
+<a name="Cutoff, transistor"></a>
+<a name="Saturation, transistor"></a>
+<p>Si el interruptor está abierto como en la Figura<a href="#03078.png">  above</a>(a), la base
+El cable del transistor quedará “flotante” (no conectado a nada) y no pasará corriente a través de él.  En este estado, el transistor está
+  se dice que es<i>cierre</i>.  Si el interruptor está cerrado como en la Figura<a href="#03078.png">  above</a>(b), los electrones podrán fluir desde el emisor hasta la base del transistor, a través del interruptor, hasta el lado izquierdo de la lámpara y de regreso al lado positivo de la batería.  Esta corriente de base permitirá un flujo mucho mayor de electrones desde el emisor hasta el colector, iluminando así la lámpara.  En este estado de corriente máxima del circuito, se dice que el transistor está<i>saturado</i>.
+</p>
+<p>Por supuesto, puede parecer inútil utilizar un transistor de esta capacidad para controlar la lámpara.  Después de todo, todavía utilizamos un interruptor en el circuito, ¿no?  Si todavía utilizamos un interruptor para controlar la lámpara, aunque sólo sea indirectamente, ¿cuál es el punto de tener un transistor para controlar la corriente?  ¿Por qué no volver a nuestro circuito original y usar el interruptor directamente para controlar la corriente de la lámpara?</p>
+<p>En realidad, aquí se pueden señalar dos puntos.  Primero está el hecho de que cuando se usa en
+  De esta manera, los contactos del interruptor solo necesitan manejar la poca corriente de base
+  necesario encender el transistor; el propio transistor maneja la mayor parte de
+       la corriente de la lámpara.  Esto puede ser una ventaja importante si el interruptor
+       tiene una clasificación de corriente baja: se puede usar un pequeño interruptor para controlar un
+       carga de corriente relativamente alta.  Más importante aún, el comportamiento de control de corriente del transistor nos permite usar algo completamente diferente para encender o apagar la lámpara.  Considere la figura<a href="#03079.png">  below</a>, donde un par de células solares proporciona 1 V para superar los 0,7 V<sub>BE</sub>del transistor para provocar el flujo de corriente de base, que a su vez controla la lámpara.</p>
+<a name="03079.png"></a>
+<p> <img src="03079.png"/> </p>
+<p><i>La célula solar sirve como sensor de luz.</i></p>
+<p>O podríamos usar un termopar (muchos conectados en serie) para proporcionar la corriente de base necesaria para encender el transistor en la Figura<a href="#03080.png">  below</a>.
+</p>
+<a name="03080.png"></a>
+<p> <img src="03080.png"/> </p>
+<p><i>Un solo termopar proporciona menos de 40 mV.  Muchos en serie podrían producir más del transistor V de 0,7 V.<sub>BE</sub>para provocar el flujo de corriente de base y la consiguiente corriente del colector a la lámpara.</i></p>
+<p>Incluso un micrófono (Figura<a href="#03081.png">  below</a>) con suficiente voltaje y salida de corriente (de un amplificador) podría encender el transistor, siempre que su salida esté rectificada de CA a CC de modo que la unión PN emisor-base dentro del transistor siempre esté polarizada directamente:</p>
+<a name="03081.png"></a>
+<p> <img src="03081.png"/> </p>
+<p><i>La señal del micrófono amplificada se rectifica a CC para polarizar la base del transistor y proporcionar una mayor corriente de colector.</i></p>
+<p>El punto ya debería ser bastante evidente:<i>any</i>Se puede usar una fuente suficiente de corriente continua para encender el transistor, y esa fuente de corriente solo necesita ser una fracción de la corriente necesaria para energizar la lámpara.  Aquí vemos el transistor funcionando no sólo como un interruptor, sino como un verdadero<i>amplificador</i>: usar una señal de potencia relativamente baja para<i>control</i>una cantidad relativamente grande de energía.  Tenga en cuenta que la energía real para encender la lámpara proviene de la batería a la derecha del esquema.  No es como si la pequeña corriente de señal de la célula solar, el termopar o el micrófono se estuviera transformando mágicamente en una mayor cantidad de energía.  Más bien, esas pequeñas fuentes de energía son simplemente<i>controlador</i>la energía de la batería para encender la lámpara.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Los transistores se pueden utilizar como elementos de conmutación para controlar la alimentación de CC a una carga.  La corriente conmutada (controlada) va entre el emisor y el colector; la corriente de control va entre el emisor y la base.</li>
+<li>Cuando un transistor no tiene corriente a través de él, se dice que está en un estado de<i>cierre</i>(totalmente no conductor).</li>
+<li>Cuando un transistor tiene una corriente máxima a través de él, se dice que está en un estado de<i>saturación</i>(completamente realizado).</li>
+</ul>
+<h2><u><a name="xtocid90362">Meter check of a transistor</a></u></h2>
+<p>Los transistores bipolares están construidos a partir de un “sándwich” de semiconductores de tres capas, ya sea PNP o NPN. Como tal, los transistores se registran como dos diodos conectados espalda con espalda cuando se prueban con la función de “resistencia” o “verificación de diodo” de un multímetro, como se ilustra en la Figura siguiente. Las lecturas de baja resistencia en la base con los cables negros negativos (-) corresponden a un material tipo N en la base de un transistor PNP. En el símbolo, el material tipo N está "señalado" por la flecha de la unión base-emisor, que es la base para este ejemplo. El emisor tipo P corresponde al otro extremo de la flecha de la unión base-emisor, el emisor. El colector es muy similar al emisor y también es un material tipo P de unión PN.</p>
+<a name="03077.png"></a>
+<p> <img src="03077.png"/> </p>
+<p><i>Verificación del medidor del transistor PNP: (a) adelante B-E, B-C, la resistencia es baja; (b) inversa B-E, B-C, la resistencia es ∞.</i></p>
+<p>Aquí asumo el uso de un multímetro con una sola función de rango de continuidad (resistencia) para verificar las uniones PN.  Algunos multímetros están equipados con dos funciones de verificación de continuidad separadas: resistencia y "verificación de diodos", cada una con su propio propósito.  Si su medidor tiene una función designada de "verificación de diodo", utilícela en lugar del rango de "resistencia", y el medidor mostrará el voltaje directo real de la unión PN y no solo si conduce corriente o no.</p>
+<a name="Diode check, meter function"></a>
+<p>Las lecturas del medidor serán exactamente opuestas, por supuesto, para un transistor NPN, con ambas uniones PN orientadas hacia el otro lado. Las lecturas de baja resistencia con el cable rojo (+) en la base son la condición "opuesta" para el transistor NPN.</p>
+<p>Si en esta prueba se utiliza un multímetro con función de “verificación de diodos”, se encontrará que la unión emisor-base posee una caída de tensión directa ligeramente mayor que la unión colector-base.  Esta diferencia de voltaje directo se debe a la disparidad en la concentración de dopaje entre las regiones del emisor y del colector del transistor: el emisor es una pieza de material semiconductor mucho más dopado que el colector, lo que hace que su unión con la base produzca una mayor caída de voltaje directo.</p>
+<p>Sabiendo esto, es posible determinar qué cable es cuál en un transistor sin marcar.  Esto es importante porque, lamentablemente, el embalaje de los transistores no está estandarizado.  Todos los transistores bipolares tienen tres cables, por supuesto, pero las posiciones de los tres cables en el paquete físico real no están dispuestas en ningún orden universal y estandarizado.</p>
+<p>Supongamos que un técnico encuentra un transistor bipolar y procede a medir la continuidad con un multímetro configurado en el modo de "verificación de diodos".  Midiendo entre pares de cables y registrando los valores mostrados por el medidor, el técnico obtiene los datos de la Figura<a href="#03084.png">  below</a>.
+</p>
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="SEMI_3.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="SEMI_5.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

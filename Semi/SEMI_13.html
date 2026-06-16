@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen III (Semiconductores) - Capítulo 13 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #10b981; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen III (Semiconductores) - Capítulo 13</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen III</h1>
+<h1>Capítulo 13</h1>
+<h1>TUBOS DE ELECTRONES</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid91170"><u>Introduction</u></a></li>
+<li><a href="#xtocid91171"><u>Early tube history</u></a></li>
+<li><a href="#xtocid91172"><u>The triode</u></a></li>
+<li><a href="#xtocid91173"><u>The tetrode</u></a></li>
+<li><a href="#xtocid91174"><u>Beam power tubes</u></a></li>
+<li><a href="#xtocid91175"><u>The pentode</u></a></li>
+<li><a href="#xtocid91176"><u>Combination tubes</u></a></li>
+<li><a href="#xtocid91177"><u>Tube parameters</u></a></li>
+<li><a href="#xtocid91178"><u>Ionization (gas-filled) tubes</u></a></li>
+<li><a href="#xtocid91179"><u>Display tubes</u></a></li>
+<li><a href="#xtocid911710"><u>Microwave tubes</u></a></li>
+<li><a href="#xtocid911711"><u>Tubes versus Semiconductors</u></a></li></ul>
+<h2><u><a name="xtocid91170">Introduction</a></u></h2>
+<p>Un área de estudio a menudo descuidada en la electrónica moderna es la de<i>tubos</i>, más precisamente conocido como<i>tubos de vacío</i> or <i>tubos de electrones</i>.  Casi completamente eclipsada por los semiconductores o componentes de "estado sólido" en la mayoría de las aplicaciones modernas, la tecnología de tubos alguna vez dominó el diseño de circuitos electrónicos.</p>
+<p>De hecho, la transición histórica de los circuitos "eléctricos" a los "electrónicos" realmente comenzó con los tubos, porque fueron con los tubos con los que entramos en un ámbito completamente nuevo de función de circuito: una forma de controlar el flujo de electrones (corriente) en un circuito por medio de otra señal eléctrica (en el caso de la mayoría de los tubos, la señal de control es un pequeño voltaje).  La contraparte semiconductora del tubo es, por supuesto, el transistor.  Los transistores realizan prácticamente la misma función que los tubos: controlar el flujo de electrones en un circuito mediante otro flujo de electrones en el caso del transistor bipolar, y controlar el flujo de electrones mediante un voltaje en el caso del transistor de efecto de campo.  En cualquier caso, una señal eléctrica relativamente pequeña controla una corriente eléctrica relativamente grande.  Ésta es la esencia de la palabra "electrónico", para distinguirla de "eléctrico", que tiene más que ver con cómo el flujo de electrones está regulado por la Ley de Ohm y los atributos físicos de los cables y los componentes.</p>
+<p>Aunque los tubos ahora están obsoletos para todas las aplicaciones especializadas, excepto para unas pocas, siguen siendo un área de estudio que vale la pena.  Al menos, es fascinante explorar "la forma en que se hacían las cosas antes" para apreciar mejor la tecnología moderna.</p>
+<h2><u><a name="xtocid91171">Early tube history</a></u></h2>
+<p>A Thomas Edison, ese prolífico inventor estadounidense, a menudo se le atribuye la invención de la lámpara incandescente.  Más exactamente, se podría decir que Edison fue el hombre que<i>perfeccionado</i>la lámpara incandescente.  El exitoso diseño de Edison de 1879 fue en realidad precedido por 77 años por el científico británico Sir Humphry Davy, quien demostró por primera vez el principio de usar corriente eléctrica para calentar una delgada tira de metal (llamada "filamento") hasta el punto de incandescencia (brillando al rojo vivo).</p>
+<p>Edison pudo lograr su éxito colocando su filamento (hecho de hilo de coser carbonizado) dentro de una bombilla de vidrio transparente de la que se había extraído el aire a la fuerza.  En este vacío, el filamento podría brillar a temperaturas candentes sin ser consumido por la combustión:</p>
+<p> <img src="03001.png"/> </p>
+<p>En el curso de su experimentación (alrededor de 1883), Edison colocó una tira de metal dentro de una bombilla de vidrio al vacío junto con el filamento.  Entre esta tira de metal y una de las conexiones del filamento colocó un amperímetro sensible.  Lo que encontró fue que los electrones fluirían a través del medidor siempre que el filamento estuviera caliente, pero cesarían cuando el filamento se enfriara:</p>
+<p> <img src="03002.png"/> </p>
+<p>El filamento candente de la lámpara de Edison estaba liberando electrones libres en el vacío de la lámpara, esos electrones encontraban su camino hacia la tira de metal, a través del galvanómetro, y de regreso al filamento.  Despertada su curiosidad, Edison conectó una batería de bastante alto voltaje en el circuito del galvanómetro para ayudar a la pequeña corriente:</p>
+<p> <img src="03003.png"/> </p>
+<p>Efectivamente, la presencia de la batería creó una corriente mucho mayor desde el filamento hasta la tira de metal.  Sin embargo, cuando se giró la batería, ¡había poca o ninguna corriente!</p>
+<p> <img src="03004.png"/> </p>
+<p>En efecto, ¡lo que Edison había encontrado era un diodo!  Desafortunadamente, no vio ningún uso práctico para tal dispositivo y procedió a perfeccionar aún más el diseño de su lámpara.</p>
+<a name="Edison effect"></a>
+<a name="Effect, Edison"></a>
+<p>El flujo de electrones unidireccional de este dispositivo (conocido como<i>Efecto Edison</i>) siguió siendo una curiosidad hasta que J. A. Fleming experimentó con su uso en 1895. Fleming comercializó su dispositivo como una "válvula", iniciando un área de estudio completamente nueva en los circuitos eléctricos.  Los diodos de tubo de vacío (las "válvulas" de Fleming no son una excepción) no son capaces de manejar grandes cantidades de corriente, por lo que el invento de Fleming no era práctico para ninguna aplicación en energía CA, sólo para pequeñas señales eléctricas.</p>
+<p>Luego, en 1906, otro inventor llamado Lee De Forest comenzó a jugar con el "Efecto Edison", viendo qué más se podía obtener de este fenómeno.  Al hacerlo, hizo un descubrimiento sorprendente: al colocar una pantalla de metal entre el filamento incandescente y la tira de metal (que ya había tomado la forma de una placa para una mayor superficie), la corriente de electrones que fluía del filamento a la placa podía regularse mediante la aplicación de un pequeño voltaje entre la pantalla de metal y el filamento:</p>
+<p> <img src="03005.png"/> </p>
+<a name="Grid"></a>
+<a name="Electrode, grid"></a>
+<p>De Forest llamó a esta pantalla metálica entre el filamento y la placa un<i>red</i>.  No era sólo la cantidad de voltaje entre la rejilla y el filamento lo que controlaba la corriente desde el filamento a la placa, sino también la polaridad.  Un voltaje negativo aplicado a la rejilla con respecto al filamento tendería a obstruir el flujo natural de electrones, mientras que un voltaje positivo tendería a mejorar el flujo.  Aunque había cierta cantidad de corriente a través de la red, era muy pequeña; mucho más pequeño que la corriente a través de la placa.</p>
+<p>Quizás lo más importante fue su descubrimiento de que las pequeñas cantidades de voltaje y corriente de la red tenían grandes efectos sobre la cantidad de voltaje de la placa (con respecto al filamento) y la corriente de la placa.  Al añadir la rejilla a la "válvula" de Fleming, De Forest había hecho que la válvula fuera ajustable: ahora funcionaba como una<i>amplificando</i>dispositivo mediante el cual una pequeña señal eléctrica podría tomar el control de una cantidad eléctrica mayor.</p>
+<p>El semiconductor equivalente más cercano al tubo Audion, y a todos sus equivalentes de tubo más modernos, es un MOSFET tipo D de canal n.  Es un dispositivo controlado por voltaje con una gran ganancia de corriente.</p>
+<p>Llamó a su invento "Audion" y lo aplicó vigorosamente al desarrollo de la tecnología de las comunicaciones.  En 1912 vendió los derechos de su tubo Audion como amplificador de señal telefónica a la American Telephone and Telegraph Company (AT y T), lo que hizo práctica la comunicación telefónica de larga distancia.  Al año siguiente, demostró el uso de un tubo Audion para generar señales de CA de radiofrecuencia.  En 1915 logró la notable hazaña de transmitir señales de voz por radio desde Arlington, Virginia, a París, y en 1916 inauguró la primera transmisión de noticias por radio.  Estos logros le valieron a De Forest el título de "Padre de la radio" en Estados Unidos.</p>
+<p> <img src="53001.jpg"/> </p>
+<h2><u><a name="xtocid91172">The triode</a></u></h2>
+<a name="Triode tube"></a>
+<a name="Diode tube"></a>
+<a name="Cathode"></a>
+<a name="Electrode, cathode"></a>
+<p>El tubo Audion de De Forest llegó a ser conocido como el<i>triodo</i>tubo, porque tenía tres elementos: filamento, rejilla y placa (tal como el "di" en el nombre<i>diodo</i>se refiere a dos elementos, filamento y placa).  Los avances posteriores en la tecnología de los tubos de diodos condujeron al refinamiento del emisor de electrones: en lugar de utilizar el filamento directamente como elemento emisor, se utilizó otra tira metálica llamada<i>cátodo</i>podría ser calentado por el filamento.</p>
+<p>Este refinamiento fue necesario para evitar algunos efectos no deseados de un filamento incandescente como emisor de electrones.  Primero, un filamento experimenta una caída de voltaje a lo largo de su longitud, ya que la corriente supera la resistencia del material del filamento y disipa la energía térmica.  Esto significaba que el potencial de voltaje entre diferentes puntos a lo largo del cable del filamento y otros elementos del tubo no sería constante.  Por esta y otras razones similares, la corriente alterna utilizada como fuente de energía para calentar el alambre de filamento tendería a introducir "ruido" de CA no deseado en el resto del circuito del tubo.  Además, el área de superficie de un filamento delgado era, en el mejor de los casos, limitada, y el área de superficie limitada en el elemento emisor de electrones tiende a imponer un límite correspondiente a la capacidad de transporte de corriente del tubo.</p>
+<p>El cátodo era un fino cilindro metálico que encajaba perfectamente sobre el alambre retorcido del filamento.  El cilindro del cátodo sería calentado por el cable de filamento lo suficiente como para emitir electrones libremente, sin los efectos secundarios indeseables de transportar la corriente de calentamiento como tenía que hacerlo el cable de filamento.  El símbolo del tubo de un triodo con un cátodo calentado indirectamente se ve así:</p>
+<p> <img src="03006.png"/> </p>
+<p>Dado que el filamento es necesario para todos los tipos de tubos de vacío, excepto unos pocos, a menudo se omite en el símbolo por simplicidad, o puede incluirse en el dibujo pero sin conexiones de alimentación:</p>
+<p> <img src="03007.png"/> </p>
+<p>Se muestra un circuito triodo simple para ilustrar su funcionamiento básico como amplificador:</p>
+<p> <img src="03008.png"/> </p>
+<p>La señal de CA de bajo voltaje conectada entre la rejilla y el cátodo suprime alternativamente y luego mejora el flujo de electrones entre el cátodo y la placa.  Esto provoca un cambio de voltaje en la salida del circuito (entre placa y cátodo).  Las magnitudes de voltaje y corriente de CA en la rejilla del tubo son generalmente bastante pequeñas en comparación con la variación de voltaje y corriente en el circuito de placa.  Por lo tanto, el triodo funciona como un amplificador de la señal de CA entrante (tomando energía CC de alto voltaje y alta corriente suministrada desde la gran fuente de CC de la derecha y "estrangulándola" por medio de la conductividad controlada del tubo).</p>
+<p>En el triodo, la cantidad de corriente del cátodo a la placa (la corriente "controlada" es una función tanto del voltaje de la rejilla al cátodo (la señal de control) como del voltaje de la placa al cátodo (la fuerza electromotriz disponible para empujar los electrones a través del vacío). Desafortunadamente, ninguna de estas variables independientes tiene un efecto puramente lineal sobre la cantidad de corriente que pasa por el dispositivo (a menudo denominada simplemente "corriente de placa"). Es decir, la corriente del triodo no responde necesariamente de manera directa y proporcional a la voltajes aplicados.</p>
+<p>En este circuito amplificador particular, las no linealidades se agravan, ya que el voltaje de la placa (con respecto al cátodo) cambia junto con el voltaje de la red (también con respecto al cátodo) a medida que el tubo regula la corriente de la placa.  El resultado será una forma de onda del voltaje de salida que no se parece exactamente a la forma de onda del voltaje de entrada.  En otras palabras, la peculiaridad del tubo triodo y la dinámica de este circuito en particular<i>distorsionar</i>la forma de onda.  Si realmente quisiéramos ser complejos acerca de cómo decimos esto, podríamos decir que el tubo introduce<i>armonía</i>al no reproducir exactamente la forma de onda de entrada.</p>
+<p>Otro problema con el comportamiento del triodo es el de la capacitancia parásita.  Recordemos que siempre que tengamos dos superficies conductoras separadas por un medio aislante se formará un condensador.  Cualquier voltaje entre esas dos superficies conductoras generará un campo eléctrico dentro de esa región aislante, potencialmente almacenando energía e introduciendo reactancia en un circuito.  Tal es el caso del triodo, que resulta más problemático entre la rejilla y la placa.  Es como si hubiera pequeños condensadores conectados entre los pares de elementos del tubo:</p>
+<p> <img src="03009.png"/> </p>
+<p>Ahora bien, esta capacitancia parásita es bastante pequeña y las impedancias reactivas suelen ser altas.  Por lo general, es decir, a menos que se trate de frecuencias de radio.  Como vimos con el tubo Audion de De Forest, la radio fue probablemente la principal aplicación de esta nueva tecnología, por lo que estas "pequeñas" capacitancias se convirtieron en algo más que un problema potencial.  Fue necesario otro refinamiento en la tecnología de los tubos para superar las limitaciones del triodo.</p>
+<h2><u><a name="xtocid91173">The tetrode</a></u></h2>
+<a name="Tetrode tube"></a>
+<a name="Screen"></a>
+<a name="Electrode, screen"></a>
+<p>Como sugiere el nombre, el<i>tetrodo</i>El tubo contenía cuatro elementos: cátodo (con el filamento implícito o "calentador"), rejilla, placa y un nuevo elemento llamado<i>pantalla</i>.  De construcción similar a la rejilla, la pantalla era una malla de alambre o bobina colocada entre la rejilla y la placa, conectada a una fuente de potencial CC positivo (con respecto al cátodo, como es habitual) igual a una fracción del voltaje de la placa.  Cuando se conectaba a tierra a través de un condensador externo, la pantalla tenía el efecto de proteger electrostáticamente la rejilla de la placa.  Sin la pantalla, la conexión capacitiva entre la placa y la rejilla podría provocar una importante retroalimentación de la señal a altas frecuencias, lo que provocaría oscilaciones no deseadas.</p>
+<p>La pantalla, al tener menos área de superficie y menor potencial positivo que la placa, no atrajo muchos de los electrones que pasaban a través de la rejilla desde el cátodo, por lo que la gran mayoría de los electrones en el tubo aún volaron por la pantalla para ser recogidos por la placa:</p>
+<p> <img src="03010.png"/> </p>
+<p>Con un voltaje de pantalla de CC constante, el flujo de electrones desde el cátodo a la placa dependía casi exclusivamente del voltaje de la red, lo que significa que el voltaje de la placa podía variar en un amplio rango con poco efecto sobre la corriente de la placa.  Esto logró ganancias más estables en los circuitos amplificadores y una mejor linealidad para una reproducción más precisa de la forma de onda de la señal de entrada.</p>
+<a name="Secondary emission"></a>
+<p>A pesar de las ventajas obtenidas con la adición de una pantalla, también hubo algunas desventajas.  La desventaja más significativa estaba relacionada con algo conocido como<i>emisión secundaria</i>.  Cuando los electrones del cátodo golpean la placa a alta velocidad, pueden provocar que los electrones libres se suelten de los átomos del metal de la placa.  Se dice que estos electrones, arrancados de la placa por el impacto de los electrones del cátodo, son "emitidos secundariamente".  En un tubo triodo, la emisión secundaria no es un gran problema, pero en un tetrodo con una rejilla de pantalla cargada positivamente cerca, estos electrones secundarios serán atraídos hacia la pantalla en lugar de hacia la placa de la que provienen, lo que resultará en una pérdida de corriente de placa.  Menos corriente de placa significa menos ganancia para el amplificador, lo cual no es bueno.</p>
+<p>Se desarrollaron dos estrategias diferentes para abordar este problema del tubo tetrodo:<i>potencia del haz</i>tubos y<i>pentodos</i>.  Ambas soluciones dieron como resultado nuevos diseños de tubos con aproximadamente las mismas características eléctricas.</p>
+<h2><u><a name="xtocid91174">Beam power tubes</a></u></h2>
+<a name="Beam power tube"></a>
+<p>En el tubo de potencia del haz, se mantuvo la estructura básica de cuatro elementos del tetrodo, pero la rejilla y los cables de la pantalla se dispusieron cuidadosamente junto con un par de placas auxiliares para crear un efecto interesante: haces enfocados o "láminas" de electrones que viajan desde el cátodo hasta la placa.  Estos haces de electrones formaron una "nube" estacionaria de electrones entre la pantalla y la placa (llamada "carga espacial") que actuaba para repeler los electrones secundarios emitidos desde la placa hacia la placa.  Se añadió un conjunto de placas "formadoras de haces", cada una de ellas conectada al cátodo, para ayudar a mantener el enfoque adecuado del haz de electrones.  Las bobinas de alambre de rejilla y de pantalla se dispusieron de tal manera que cada vuelta o envoltura de la pantalla cayera directamente detrás de una envoltura de la rejilla, lo que colocó los alambres de la pantalla en la "sombra" formada por la rejilla.  Esta alineación precisa permitió que la pantalla aún realizara su función de blindaje con una interferencia mínima en el paso de los electrones del cátodo a la placa.</p>
+<p> <img src="03011.png"/> </p>
+<p>Esto resultó en una corriente de pantalla más baja (¡y más corriente de placa!) que un tubo tetrodo ordinario, con poco gasto adicional para la construcción del tubo.</p>
+<p>Los tetrodos de potencia de haz a menudo se distinguían de sus homólogos que no eran de haz por un símbolo esquemático diferente, que mostraba las placas formadoras de haces:</p>
+<p> <img src="03172.png"/> </p>
+<h2><u><a name="xtocid91175">The pentode</a></u></h2>
+<a name="Suppressor"></a>
+<a name="Electrode, suppressor"></a>
+<p>Otra estrategia para abordar el problema de la atracción de electrones secundarios por la pantalla fue la adición de un quinto elemento de alambre a la estructura del tubo: un<i>supresor</i>.  Estos tubos de cinco elementos se denominaron naturalmente<i>pentodos</i>.
+</p>
+<p> <img src="03012.png"/> </p>
+<p>El supresor era otra bobina o malla de alambre situada entre la pantalla y la placa, generalmente conectada directamente al potencial de tierra.  En algunos diseños de tubos de pentodo, el supresor estaba conectado internamente al cátodo para minimizar la cantidad de clavijas de conexión que tenían que penetrar la envoltura del tubo:</p>
+<p> <img src="03013.png"/> </p>
+<p>El trabajo del supresor era repeler cualquier electrón emitido secundariamente hacia la placa: un equivalente estructural de la carga espacial del tubo de potencia del haz.  Esto, por supuesto, aumentó la corriente de la placa y disminuyó la corriente de la pantalla, lo que resultó en una mejor ganancia y rendimiento general.  En algunos casos, también permitió un mayor voltaje de la placa operativa.</p>
+<h2><u><a name="xtocid91176">Combination tubes</a></u></h2>
+<p>De manera similar a la idea del circuito integrado, los diseñadores de tubos intentaron integrar diferentes funciones de los tubos en envolturas de un solo tubo para reducir los requisitos de espacio en los equipos electrónicos de tipo tubo más modernos.  Una combinación común vista dentro de una sola carcasa de vidrio era dos diodos o dos triodos.  La idea de colocar pares de diodos dentro de una sola envoltura tiene mucho sentido a la luz de los diseños de rectificadores de onda completa de suministro de energía, que siempre requieren múltiples diodos.</p>
+<p>Por supuesto, habría sido bastante imposible combinar miles de elementos de tubos en una sola envoltura de tubo de la misma manera que se pueden grabar miles de transistores en una sola pieza de silicio, pero los ingenieros aun así hicieron todo lo posible para superar los límites de la miniaturización y consolidación de tubos.  Algunos de estos tubos, caprichosamente llamados<i>compactadores</i>, contenía cuatro o más elementos tubulares completos dentro de un solo sobre.</p>
+<a name="Pentagrid tube"></a>
+<a name="Heptode"></a>
+<p>A veces, las funciones de dos tubos diferentes se podían integrar en un solo tubo combinado de una manera que simplemente funcionaba de manera más elegante que dos tubos.  Un ejemplo de esto fue el<i>convertidor pentagrid</i>, más generalmente llamado<i>heptodo</i>, utilizado en algunos diseños de radio superheterodinos.  Estos tubos contenían siete elementos: 5 rejillas más un cátodo y una placa.  Dos de las rejillas normalmente estaban reservadas para la entrada de señales, las otras tres relegadas a funciones de detección y supresión (mejoras del rendimiento).  Combinando las funciones superheterodinas del oscilador y el mezclador de señales en un solo tubo, el acoplamiento de señales entre estas dos etapas era intrínseco.  En lugar de tener circuitos de oscilador y mezclador separados, el oscilador creaba un voltaje de CA y el mezclador "mezclaba" ese voltaje con otra señal, la sección del oscilador del convertidor pentagrid creó una corriente de electrones que oscilaba en intensidad y luego pasaba directamente a través de otra rejilla para "mezclarse" con otra señal.</p>
+<a name="Mu, tube amplification factor"></a>
+<p>Este mismo tubo a veces se usaba de manera diferente: aplicando un voltaje de CC a una de las rejillas de control, se podía cambiar la ganancia del tubo por una señal impresa en la otra rejilla de control.  Esto fue conocido como<i>variable-mu</i>operación, porque el "mu" (μ) del tubo (su factor de amplificación, medido como una proporción del cambio de voltaje de placa a cátodo sobre el cambio de voltaje de rejilla a cátodo con una corriente de placa constante) podría alterarse a voluntad mediante una señal de voltaje de control de CC.</p>
+<p>Los ingenieros electrónicos emprendedores también descubrieron formas de explotar las capacidades multivariables de tubos "menores" como los tetrodos y pentodos.  Una de esas formas fue la llamada<i>ultralineal</i>Amplificador de potencia de audio, inventado por un par de ingenieros llamados Hafler y Keroes, que utiliza un tubo tetrodo en combinación con un transformador de salida "con derivación" para proporcionar mejoras sustanciales en la linealidad del amplificador (disminuciones en los niveles de distorsión).  Considere un amplificador de válvulas triodo de "un solo extremo" con un transformador de salida que acopla la potencia al altavoz:</p>
+<p> <img src="03325.png"/> </p>
+<p>Si sustituimos un triodo por un tetrodo en este circuito, veremos mejoras en la ganancia del circuito resultantes del blindaje electrostático que ofrece la pantalla, evitando retroalimentación no deseada entre la placa y la rejilla de control:</p>
+<p> <img src="03326.png"/> </p>
+<p>Sin embargo, la pantalla del tetrodo puede usarse para funciones distintas a simplemente proteger la rejilla de la placa.  También se puede utilizar como un elemento de control más, como la propia rejilla.  Si se realiza una "toma" en el devanado primario del transformador y esta toma se conecta a la pantalla, la pantalla recibirá un voltaje que varía con la señal que se amplifica (retroalimentación).  Más específicamente, la señal de retroalimentación es proporcional a la tasa de cambio del flujo magnético en el núcleo del transformador (dΦ/dt), mejorando así la capacidad del amplificador para reproducir la forma de onda de la señal de entrada en los terminales del altavoz y no solo en el devanado primario del transformador:</p>
+<p> <img src="03327.png"/> </p>
+<p>Esta retroalimentación de señal produce mejoras significativas en la linealidad del amplificador (y en consecuencia, en la distorsión), siempre y cuando se tomen precauciones para no "sobrecargar" la pantalla con un voltaje positivo demasiado grande con respecto al cátodo.  Como concepto, el diseño ultralineal (retroalimentación de pantalla) demuestra la flexibilidad de operación otorgada por múltiples elementos de rejilla dentro de un solo tubo: una capacidad rara vez igualada por los componentes semiconductores.</p>
+<p>Algunos diseños de tubos combinaban múltiples funciones de los tubos de la manera más económica: placas duales con un solo cátodo, las corrientes para cada una de las placas controladas por conjuntos separados de rejillas de control.  Ejemplos comunes de estos tubos fueron<i>triodo-heptodo</i> and <i>triodo-hexodo</i>tubos (un tubo hexodo es un tubo con cuatro rejillas, un cátodo y una placa).</p>
+<p>Otros diseños de tubos simplemente incorporaron estructuras de tubos separados dentro de una única envoltura de vidrio para mayor economía.  Los tubos de doble diodo (rectificador) eran bastante comunes, al igual que los tubos de doble triodo, especialmente cuando la disipación de potencia de cada tubo era relativamente baja.</p>
+<p> <img src="03328.png"/> </p>
+<p>Los modelos 12AX7 y 12AU7 son ejemplos comunes de válvulas de triodo dual, ambos de baja potencia.  El 12AX7 es especialmente común como válvula preamplificadora en circuitos amplificadores de guitarra eléctrica.</p>
+<h2><u><a name="xtocid91177">Tube parameters</a></u></h2>
+<a name="Beta ratio, bipolar transistor"></a>
+<p>Para los transistores de unión bipolar, la medida fundamental de amplificación es la relación Beta (β), definida como la relación entre la corriente del colector y la corriente de la base (I<sub>C</sub>/I<sub>B</sub>).  Otras características del transistor, como la resistencia de la unión, que en algunos circuitos amplificadores pueden afectar el rendimiento hasta β, se cuantifican para beneficio del análisis del circuito.  Los tubos de electrones no son diferentes, ya que sus características de rendimiento han sido exploradas y cuantificadas hace mucho tiempo por ingenieros eléctricos.</p>
+<p>Antes de que podamos hablar significativamente sobre estas características, debemos definir varias variables matemáticas utilizadas para expresar mediciones comunes de voltaje, corriente y resistencia, así como algunas de las cantidades más complejas:</p>
+<p> <img src="13038.png"/> </p>
+<p>Las dos medidas más básicas de las características de un tubo amplificador son su factor de amplificación (μ) y su conductancia mutua (g<sub>m</sub>), también conocido como<i>transconductancia</i>.  La transconductancia se define aquí de la misma manera que para los transistores de efecto de campo, otra categoría de dispositivos controlados por voltaje.  Aquí están las dos ecuaciones que definen cada una de estas características de rendimiento:</p>
+<p> <img src="13039.png"/> </p>
+<p>Otra medida importante, aunque más abstracta, del rendimiento del tubo es su<i>resistencia de la placa</i>.  Esta es la medida del cambio de voltaje de la placa sobre el cambio de corriente de la placa para un valor constante de voltaje de la red.  En otras palabras, esta es una expresión de en qué medida el tubo actúa como una resistencia para cualquier cantidad dada de voltaje de red, análoga al funcionamiento de un JFET en su modo óhmico:</p>
+<p> <img src="13040.png"/> </p>
+<p>El lector astuto notará que la resistencia de la placa se puede determinar dividiendo el factor de amplificación por la transconductancia:</p>
+<p> <img src="13041.png"/> </p>
+<p>Estas tres medidas de rendimiento de los tubos están sujetas a cambios de un tubo a otro (así como las relaciones β entre dos transistores bipolares "idénticos" nunca son exactamente las mismas) y entre diferentes condiciones de funcionamiento.  Esta variabilidad se debe en parte a las inevitables no linealidades de los tubos de electrones y en parte a cómo se definen.  Incluso suponiendo la existencia de un tubo perfectamente lineal, será imposible que estas tres medidas sean constantes en los rangos de operación permitidos.  Considere un tubo que<i>perfectamente</i>regula la corriente en cualquier cantidad dada de voltaje de la red (como un transistor bipolar con un β absolutamente constante): la resistencia de la placa de ese tubo<i>debe</i>varían con el voltaje de la placa, porque la corriente de la placa no cambiará aunque el voltaje de la placa sí lo haga.</p>
+<p>Sin embargo, los tubos fueron (y son) clasificados según estos valores en determinadas condiciones de funcionamiento, y pueden tener sus curvas características publicadas al igual que los transistores.</p>
+<h2><u><a name="xtocid91178">Ionization (gas-filled) tubes</a></u></h2>
+<p>Hasta ahora hemos explorado tubos que están totalmente "evacuados" de todo gas y vapor dentro de sus envolturas de vidrio, conocidos propiamente como<i>tubos de vacío</i>.  Sin embargo, con la adición de ciertos gases o vapores, los tubos adquieren características significativamente diferentes y pueden cumplir ciertas funciones especiales en los circuitos electrónicos.</p>
+<a name="Ionization"></a>
+<a name="Plasma"></a>
+<p>Cuando se aplica un voltaje suficientemente alto a lo largo de una distancia ocupada por un gas o vapor, o cuando ese gas o vapor se calienta lo suficiente, los electrones de esas moléculas de gas serán arrancados de sus respectivos núcleos, creando una condición de<i>ionización</i>.  Una vez liberados los electrones de sus enlaces electrostáticos con los núcleos de los átomos, quedan libres para migrar en forma de corriente, lo que convierte al gas ionizado en un conductor de electricidad relativamente bueno.  En este estado, el gas se denomina más propiamente<i>plasma</i>.
+</p>
+<p>El gas ionizado no es un conductor perfecto.  Como tal, el flujo de electrones a través del gas ionizado tenderá a disipar energía en forma de calor, ayudando así a mantener el gas en estado de ionización.  El resultado de esto es un tubo que comenzará a conducir bajo ciertas condiciones, luego tenderá a permanecer en un estado de conducción hasta que el voltaje aplicado a través del gas y/o la corriente generadora de calor caiga a un nivel mínimo.</p>
+<a name="Hysteresis"></a>
+<a name="Thyristor"></a>
+<p>El observador astuto notará que este es precisamente el tipo de comportamiento exhibido por una clase de dispositivos semiconductores llamados "tiristores", que tienden a permanecer "encendidos" una vez encendidos y tienden a permanecer "apagados" una vez apagados.  Se puede decir que los tubos llenos de gas manifiestan esta misma propiedad de<i>histéresis</i>.
+</p>
+<a name="Cold-cathode tube"></a>
+<a name="Hot-cathode tube"></a>
+<p>A diferencia de sus homólogos de vacío, los tubos de ionización a menudo se fabricaban sin ningún filamento (calentador).  Estos fueron llamados<i>cátodo frío</i>tubos, con las versiones calentadas designadas como<i>cátodo caliente</i>tubos.  El hecho de que el tubo contuviera o no una fuente de calor obviamente afectaba las características de un tubo lleno de gas, pero no en la medida en que la falta de calor afectaría el rendimiento de un tubo de vacío duro.</p>
+<a name="Spark gap"></a>
+<p>El tipo más simple de dispositivo de ionización no es necesariamente un tubo; más bien, está construido con dos electrodos separados por un espacio lleno de gas.  simplemente llamado un<i>vía de chispa</i>, el espacio entre los electrodos puede estar ocupado por aire ambiente, otras veces por un gas especial, en cuyo caso el dispositivo debe tener algún tipo de envoltura sellada.</p>
+<p> <img src="03014.png"/> </p>
+<p>Una aplicación principal de los explosores es la protección contra sobretensiones.  Diseñado para no ionizarse o "descomponerse" (comenzar a conducir), con un voltaje normal del sistema aplicado a través de los electrodos, la función del explosor es conducir en caso de un aumento significativo en el voltaje.  Una vez conductor, actuará como una carga pesada, manteniendo baja la tensión del sistema a través de su gran consumo de corriente y la posterior caída de tensión a lo largo de los conductores y otras impedancias en serie.  En un sistema diseñado adecuadamente, el explosor dejará de conducir ("se extinguirá") cuando el voltaje del sistema disminuya a un nivel normal, muy por debajo del voltaje requerido para iniciar la conducción.</p>
+<p>Una advertencia importante sobre las descargas de chispas es su vida significativamente finita.  La descarga generada por un dispositivo de este tipo puede ser bastante violenta y, como tal, tenderá a deteriorar las superficies de los electrodos mediante picaduras y/o fusión.</p>
+<p>Se puede hacer que los explosores conduzcan según una orden colocando un tercer electrodo (generalmente con un borde o punta afilada) entre los otros dos y aplicando un pulso de alto voltaje entre ese electrodo y uno de los otros electrodos.  El pulso creará una pequeña chispa entre los dos electrodos, ionizando parte del camino entre los dos electrodos grandes y permitiendo la conducción entre ellos si el voltaje aplicado es lo suficientemente alto:</p>
+<p> <img src="03015.png"/> </p>
+<p>Se pueden construir explosores tanto de tipo disparado como no disparado para manejar grandes cantidades de corriente, ¡algunos incluso en el rango de megaamperios (millones de amperios)!  El tamaño físico es el principal factor limitante de la cantidad de corriente que un explosor puede manejar de forma segura y confiable.</p>
+<!-- Special switch tubes: T-R switch, hydrogen thyratrons, ignitrons, krytrons, sprytrons (vacuum, not gas-filled!) -->
+<a name="Discharge tube"></a>
+<a name="Tube, discharge"></a>
+<p>Cuando los dos electrodos principales se colocan en un tubo sellado lleno de un gas especial, se<i>tubo de descarga</i>está formado.  El tipo más común de tubo de descarga es la luz de neón, utilizada popularmente como fuente de iluminación colorida, dependiendo el color de la luz emitida del tipo de gas que llena el tubo.</p>
+<p>La construcción de las lámparas de neón se parece mucho a la de los explosores, pero las características operativas son bastante diferentes:</p>
+<p> <img src="03016.png"/> </p>
+<p>Al controlar el espaciado de los electrodos y el tipo de gas en el tubo, se puede hacer que las luces de neón conduzcan sin consumir las corrientes excesivas que generan las chispas.  Todavía exhiben histéresis en el sentido de que se necesita un voltaje más alto para iniciar la conducción que para que se "extingan", y su resistencia es definitivamente no lineal (cuanto más voltaje se aplica a través del tubo, más corriente, por lo tanto más calor, por lo tanto, menor resistencia).  Dada esta tendencia no lineal, no se debe permitir que el voltaje a través de un tubo de neón exceda un cierto límite, para que el tubo no se dañe por temperaturas excesivas.</p>
+<a name="Glow tube"></a>
+<a name="Voltage regulator tube"></a>
+<p>Esta tendencia no lineal le da al tubo de neón una aplicación distinta a la iluminación colorida: puede actuar como un diodo zener, "fijando" el voltaje a través de él al consumir más y más corriente si el voltaje disminuye.  Cuando se utiliza de esta manera, el tubo se conoce como<i>tubo incandescente</i>, o<i>tubo regulador de voltaje</i>, y era un medio popular de regulación de voltaje en la época del diseño de circuitos de tubos de electrones.</p>
+<p> <img src="03017.png"/> </p>
+<p>Tome nota del punto negro que se encuentra en el símbolo del tubo que se muestra arriba (y en el símbolo de la lámpara de neón que se muestra antes).  Ese marcador indica que el tubo está lleno de gas.  Es un marcador común utilizado en todos los símbolos de tubos llenos de gas.</p>
+<p>Un ejemplo de tubo incandescente diseñado para la regulación de voltaje fue el VR-150, con un voltaje de regulación nominal de 150 voltios.  Su resistencia dentro de los límites permitidos de corriente podría variar de 5 kΩ a 30 kΩ, un lapso de 6:1.  Al igual que los circuitos reguladores de diodo Zener actuales, los reguladores de tubos incandescentes podrían acoplarse a tubos amplificadores para una mejor regulación del voltaje y rangos de corriente de carga más altos.</p>
+<a name="SCR"></a>
+<a name="Silicon-controlled rectifier"></a>
+<a name="Thyratron"></a>
+<p>Si un triodo normal se llenara con gas en lugar de un fuerte vacío, manifestaría toda la histéresis y la no linealidad de otros tubos de gas con una ventaja importante: la cantidad de voltaje aplicado entre la rejilla y el cátodo determinaría el voltaje mínimo entre placa y cátodo necesario para iniciar la conducción.  En esencia, este tubo era el equivalente del semiconductor SCR (Rectificador Controlado por Silicio), y se le llamó<i>tiratrón</i>.
+</p>
+<p> <img src="03018.png"/> </p>
+<p>Cabe señalar que el esquema que se muestra arriba está muy simplificado para la mayoría de los propósitos y diseños de tubos de tiratrón.  Algunos tiratrones, por ejemplo, requerían que el voltaje de la red cambiara la polaridad entre sus estados "encendido" y "apagado" para poder funcionar correctamente.  Además, ¡algunos tiratrones tenían más de una rejilla!</p>
+<p>Los tiratrones encontraron uso de la misma manera que los SCR encuentran uso hoy en día: controlando CA rectificada para grandes cargas, como motores.  Los tubos Thyratron se han fabricado con diferentes tipos de rellenos de gas para diferentes características: gas inerte (químicamente no reactivo), gas hidrógeno y mercurio (se vaporiza en forma de gas cuando se activa).  El deuterio, un isótopo raro del hidrógeno, se utilizó en algunas aplicaciones especiales que requerían la conmutación de altos voltajes.</p>
+<h2><u><a name="xtocid91179">Display tubes</a></u></h2>
+<p>Además de realizar tareas de amplificación y conmutación, los tubos pueden diseñarse para que sirvan como dispositivos de visualización.</p>
+<a name="CRT"></a>
+<a name="Cathode Ray Tube"></a>
+<p>Quizás el tubo de visualización más conocido sea el<i>tubo de rayos catódicos</i>, o<i>CRT</i>.  Originalmente inventados como un instrumento para estudiar el comportamiento de los "rayos catódicos" (electrones) en el vacío, estos tubos se convirtieron en instrumentos útiles para detectar voltaje y luego como dispositivos de proyección de video con la llegada de la televisión.  La principal diferencia entre los CRT utilizados en osciloscopios y los CRT utilizados en televisores es que la variedad de osciloscopio utiliza exclusivamente deflexión electrostática (placa), mientras que los televisores utilizan deflexión electromagnética (bobina).  Las placas funcionan mucho mejor que las bobinas en una gama más amplia de frecuencias de señal, lo cual es excelente para los osciloscopios pero irrelevante para los televisores, ya que el haz de electrones de un televisor barre vertical y horizontalmente a frecuencias fijas.  Las bobinas de desviación electromagnética son muy preferidas en la construcción de CRT de televisión porque no tienen que atravesar la envoltura de vidrio del tubo, lo que disminuye los costos de producción y aumenta la confiabilidad del tubo.</p>
+<a name="Cat-Eye tube"></a>
+<a name="Magic-Eye tube"></a>
+<p>Un "primo" interesante del CRT es el<i>Ojo de gato</i> or <i>Ojo mágico</i>tubo indicador.  Básicamente, este tubo es un dispositivo de medición de voltaje con una pantalla que se asemeja a un anillo verde brillante.  Los electrones emitidos por el cátodo de este tubo inciden en una pantalla fluorescente, provocando la emisión de luz de color verde.  La forma del brillo producido por la pantalla fluorescente varía a medida que cambia la cantidad de voltaje aplicado a una rejilla:</p>
+<p> <img src="03021.png"/> </p>
+<p>El ancho de la sombra está directamente determinado por la diferencia de potencial entre el electrodo de control y la pantalla fluorescente.  El electrodo de control es una varilla estrecha colocada entre el cátodo y la pantalla fluorescente.  Si ese electrodo de control (varilla) es significativamente más negativo que la pantalla fluorescente, desviará algunos electrones lejos de esa área de la pantalla.  El área de la pantalla "sombreada" por el electrodo de control aparecerá más oscura cuando haya una diferencia de voltaje significativa entre los dos.  Cuando el electrodo de control y la pantalla fluorescente tienen el mismo potencial (voltaje cero entre ellos), el efecto de sombra será mínimo y la pantalla estará igualmente iluminada.</p>
+<p>El símbolo esquemático de un tubo "ojo de gato" se parece a esto:</p>
+<p> <img src="03019.png"/> </p>
+<p>Aquí hay una fotografía de un tubo tipo ojo de gato, que muestra la región de visualización circular, así como la envoltura de vidrio, el casquillo (negro, en el extremo más alejado del tubo) y parte de su estructura interna:</p>
+<p> <img src="53003.jpg"/> </p>
+<p>Normalmente, sólo el extremo del tubo sobresaldría de un agujero en el panel de instrumentos, para que el usuario pudiera ver la pantalla circular fluorescente.</p>
+<p>En su uso más simple, un tubo "ojo de gato" podría funcionar sin el uso de la rejilla del amplificador.  Sin embargo, para hacerlo más sensible, la rejilla del amplificador<i>is</i>usado, y se usa así:</p>
+<p> <img src="03020.png"/> </p>
+<p>El cátodo, la rejilla del amplificador y la placa actúan como un triodo para crear grandes cambios en el voltaje de la placa al cátodo para pequeños cambios en el voltaje de la rejilla al cátodo.  Debido a que el electrodo de control está conectado internamente a la placa, es eléctricamente común a ella y por lo tanto posee la misma cantidad de voltaje con respecto al cátodo que la placa.  Así, los grandes cambios de voltaje inducidos en la placa debido a pequeños cambios de voltaje en la rejilla del amplificador terminan provocando grandes cambios en el ancho de la sombra vista por quien observa el tubo.</p>
+<p> <img src="03029.png"/> </p>
+<p>Los tubos "ojo de gato" nunca fueron lo suficientemente precisos como para estar equipados con una escala graduada como es el caso de los CRT y los movimientos de los medidores electromecánicos, pero sirvieron bien como detectores nulos en circuitos puente y como indicadores de intensidad de señal en circuitos de sintonización de radio.  Una desafortunada limitación del tubo "ojo de gato" como detector nulo fue el hecho de que no era directamente capaz de indicar voltaje en ambas polaridades.</p>
+<h2><u><a name="xtocid911710">Microwave tubes</a></u></h2>
+<p>Para aplicaciones de frecuencia extremadamente alta (por encima de 1 GHz), las capacitancias entre electrodos y los retrasos en el tiempo de tránsito de la construcción de tubos de electrones estándar se vuelven prohibitivos.  Sin embargo, las formas creativas en que se pueden construir los tubos parecen no tener fin, y se han creado varios diseños de tubos de electrones de alta frecuencia para superar estos desafíos.</p>
+<a name="Inductive output tube"></a>
+<a name="Coupling loop, resonator"></a>
+<p>En 1939 se descubrió que una cavidad toroidal hecha de material conductor llamada<i>resonador de cavidad</i>rodear un haz de electrones de intensidad oscilante podría extraer energía del haz sin interceptarlo.  Los campos eléctricos y magnéticos oscilantes asociados con el haz "resonaron" dentro de la cavidad, de una manera similar a los sonidos de los automóviles en movimiento que hacen eco en un cañón al borde de la carretera, permitiendo que la energía de radiofrecuencia se transfiera desde el haz a una guía de ondas o cable coaxial conectado al resonador con un bucle de acoplamiento.  El tubo se llamó<i>tubo de salida inductivo</i>, o<i>IOT</i>:
+</p>
+<p> <img src="03173.png"/> </p>
+<a name="Klystron"></a>
+<p>Dos de los investigadores que contribuyeron decisivamente al desarrollo inicial del IOT, un par de hermanos llamados Sigurd y Russell Varian, agregaron un segundo resonador de cavidad para la entrada de señal al tubo de salida inductivo.  Este resonador de entrada actuaba como un par de rejillas inductivas para "agrupar" y liberar alternativamente paquetes de electrones por el espacio de deriva del tubo, de modo que el haz de electrones estaría compuesto de electrones que viajaban a diferentes velocidades.  Esta "modulación de velocidad" del haz se tradujo en el mismo tipo de variación de amplitud en el resonador de salida, donde se extraía energía del haz.  Los hermanos Varian llamaron a su invento un<i>klistrón</i>.
+</p>
+<p> <img src="03174.png"/> </p>
+<a name="Reflex klystron"></a>
+<a name="Oscillator, voltage-controlled"></a>
+<a name="Voltage-controlled oscillator"></a>
+<p>Otro invento de los hermanos Varian fue el<i>klistrón reflejo</i>tubo.  En este tubo, los electrones emitidos por el cátodo calentado viajan a través de las rejillas de la cavidad hacia la placa repelente, luego son repelidos y devueltos por donde vinieron (de ahí el nombre).<i>reflejo</i>) a través de las rejillas de la cavidad.  En este tubo se desarrollarían oscilaciones autosostenidas, cuya frecuencia podría cambiarse ajustando el voltaje del repelente.  Por tanto, este tubo funcionaba como un oscilador controlado por voltaje.</p>
+<p> <img src="03175.png"/> </p>
+<p>Como oscilador controlado por voltaje, los tubos reflejos de klistrón servían comúnmente como "osciladores locales" para equipos de radar y receptores de microondas:</p>
+<p> <img src="03176.png"/> </p>
+<p>Inicialmente desarrollados como dispositivos de baja potencia cuya salida requería amplificación adicional para el uso de transmisores de radio, el diseño del klistrón réflex se perfeccionó hasta el punto en que los tubos podían servir como dispositivos de energía por derecho propio.  Desde entonces, los klistrones reflejos han sido reemplazados por dispositivos semiconductores en la aplicación de osciladores locales, pero los klistrones de amplificación continúan encontrando uso en transmisores de radio de alta potencia y alta frecuencia y en aplicaciones de investigación científica.</p>
+<!-- Traveling wave tube (TWT) -->
+<p>Un tubo de microondas realiza su tarea tan bien y de forma tan rentable que sigue reinando en el competitivo ámbito de la electrónica de consumo: el tubo de magnetrón.  Este dispositivo forma el corazón de cada horno microondas, genera varios cientos de vatios de energía de RF de microondas que se utiliza para calentar alimentos y bebidas, y lo hace en las condiciones más agotadoras para un tubo: encendido y apagado en momentos aleatorios y durante duraciones aleatorias.</p>
+<p>Los tubos de magnetrón son representativos de un tipo de tubo completamente diferente al IOT y al klistrón.  Mientras que estos últimos tubos utilizan un haz de electrones lineal, el magnetrón dirige su haz de electrones en un patrón circular mediante un fuerte campo magnético:</p>
+<p> <img src="03177.png"/> </p>
+<a name="Coupling loop, resonator"></a>
+<p>Una vez más, los resonadores de cavidad se utilizan como "circuitos de tanque" de frecuencia de microondas, extrayendo energía del haz de electrones que pasa de forma inductiva.  Como todos los dispositivos de frecuencia de microondas que utilizan un resonador de cavidad, al menos una de las cavidades del resonador se golpea con un<i>bucle de acoplamiento</i>: un bucle de alambre que acopla magnéticamente el cable coaxial a la estructura resonante de la cavidad, lo que permite que la energía de RF se dirija fuera del tubo hacia una carga.  En el caso del horno microondas, la potencia de salida se dirige a través de una guía de ondas a la comida o bebida que se va a calentar, y las moléculas de agua que contiene actúan como pequeñas resistencias de carga, disipando la energía eléctrica en forma de calor.</p>
+<p>El imán necesario para el funcionamiento del magnetrón no se muestra en el diagrama.  El flujo magnético corre perpendicular al plano de la trayectoria circular del electrón.  En otras palabras, desde la vista del tubo que se muestra en el diagrama, estás mirando directamente a uno de los polos magnéticos.</p>
+<h2><u><a name="xtocid911711">Tubes versus Semiconductors</a></u></h2>
+<p>Dedicar un capítulo entero en un texto de electrónica moderna al diseño y función de los tubos de electrones puede parecer un poco extraño, considerando que la tecnología de semiconductores tiene tubos casi obsoletos en casi todas las aplicaciones.  Sin embargo, tiene sentido explorar los tubos no sólo con fines históricos, sino también para aquellas aplicaciones específicas que requieren la frase calificativa "<i>casi</i>cada aplicación" en lo que respecta a la supremacía de los semiconductores.</p>
+<p>En algunas aplicaciones, los tubos de electrones no sólo siguen teniendo uso práctico, sino que realizan sus respectivas tareas mejor que cualquier dispositivo de estado sólido inventado hasta ahora.  En algunos casos, el rendimiento y la confiabilidad de la tecnología de tubos de electrones son<i>far</i>superior.</p>
+<p>En los campos de la conmutación de circuitos de alta potencia y alta velocidad, tubos especializados como los tiratrones y krytrones de hidrógeno son capaces de conmutar cantidades de corriente mucho mayores, mucho más rápido que cualquier dispositivo semiconductor diseñado hasta la fecha.  Los límites térmicos y temporales de la física de los semiconductores imponen limitaciones a la capacidad de conmutación de las que están exentos los tubos, que no funcionan según los mismos principios.</p>
+<p>En aplicaciones de transmisores de microondas de alta potencia, la excelente tolerancia térmica de los tubos por sí sola asegura su dominio sobre los semiconductores.  La conducción de electrones a través de materiales semiconductores se ve muy afectada por la temperatura.  La conducción de electrones a través del vacío no lo es.  Como consecuencia de ello, los límites térmicos prácticos de los dispositivos semiconductores son bastante bajos en comparación con los de los tubos.  Ser capaz de operar tubos a temperaturas mucho mayores que los dispositivos semiconductores equivalentes permite que los tubos disipen más energía térmica para una cantidad determinada de área de disipación, lo que los hace más pequeños y livianos en aplicaciones continuas de alta potencia.</p>
+<p>Otra ventaja decisiva de los tubos sobre los componentes semiconductores en aplicaciones de alta potencia es su capacidad de reconstrucción.  Cuando un tubo grande falla, se puede desmontar y reparar a un costo mucho menor que el precio de compra de un tubo nuevo.  Cuando falla un componente semiconductor, grande o pequeño, generalmente no hay forma de repararlo.</p>
+<p>La siguiente fotografía muestra el panel frontal de un transmisor de radio AM de 5 kW antiguo de los años 1960.  Uno de los dos tubos de potencia de la marca "Eimac" se puede ver en un área empotrada, detrás de la puerta de vidrio.  Según el ingeniero de la estación que visitó las instalaciones, el coste de reconstrucción de un tubo de este tipo es de sólo 800 dólares: ¡bastante barato en comparación con el coste de un tubo nuevo, y todavía bastante razonable en comparación con el precio de un componente semiconductor nuevo y comparable!</p>
+<p> <img src="53002.jpg"/> </p>
+<p>Los tubos, al ser menos complejos en su fabricación que los componentes semiconductores, también son potencialmente más baratos de producir, aunque el enorme volumen de producción de dispositivos semiconductores en el mundo contrarresta en gran medida esta ventaja teórica.  La fabricación de semiconductores es bastante compleja, implica muchas sustancias químicas peligrosas y requiere entornos de montaje súper limpios.  Los tubos no son esencialmente más que vidrio y metal, con un sello de vacío.  Las tolerancias físicas son lo suficientemente "flexibles" como para permitir el ensamblaje manual de los tubos de vacío, y el trabajo de ensamblaje no necesita realizarse en un ambiente de "sala limpia", como es necesario para la fabricación de semiconductores.</p>
+<p>Un área moderna donde los tubos de electrones disfrutan de supremacía sobre los componentes semiconductores es en los mercados de amplificadores de audio profesionales y de alta gama, aunque esto se debe en parte a la cultura musical.  Muchos guitarristas profesionales, por ejemplo, prefieren los amplificadores de válvulas a los amplificadores de transistores debido a la distorsión específica producida por los circuitos de válvulas.  Un amplificador de guitarra eléctrica está diseñado para<i>producir distorsión</i>en lugar de evitar la distorsión como es el caso de los amplificadores de reproducción de audio (por eso una guitarra eléctrica suena tan diferente a una guitarra acústica), y el tipo de distorsión producida por un amplificador es tanto una cuestión de gusto personal como de medida técnica.  Dado que la música rock en particular nació con guitarristas que tocaban equipos amplificadores de válvulas, existe un nivel significativo de "atractivo de válvulas" inherente al género en sí, y este atractivo se muestra en la demanda continua de amplificadores de guitarra "de válvulas" entre los guitarristas de rock.</p>
+<p>Como ejemplo de la actitud de algunos guitarristas, considere la siguiente cita extraída de la página del glosario técnico de un sitio web sobre amplificadores de válvulas que permanecerá sin nombre:</p>
+<blockquote>
+<b>Estado sólido:</b> <i>Un componente que ha sido diseñado específicamente para hacer que un amplificador de guitarra suene mal.  En comparación con las válvulas, estos dispositivos pueden tener una vida útil muy larga, lo que garantiza que su amplificador conservará su sonido fino, sin vida y zumbido durante mucho tiempo.</i>
+</blockquote>
+<a name="Microphonics, electron tube"></a>
+<p>En el área de amplificadores de reproducción de audio (amplificadores de estudio de música y amplificadores de entretenimiento en el hogar), lo mejor es que un amplificador reproduzca la señal musical con la mayor<i>pequeño</i>distorsión posible.  Paradójicamente, a diferencia del mercado de amplificadores de guitarra, donde la distorsión es un objetivo de diseño, el audio de alta gama es otra área donde los amplificadores de válvulas disfrutan de una demanda continua por parte de los consumidores.  Aunque se podría suponer que el requisito objetivo y técnico de una baja distorsión eliminaría cualquier sesgo subjetivo por parte de los audiófilos, estaríamos muy equivocados.  El mercado de equipos amplificadores "tubulares" de alta gama es bastante volátil y cambia rápidamente con las tendencias y las modas, impulsado por afirmaciones altamente subjetivas de sonido "mágico" por parte de vendedores y revisores de sistemas de audio.  Al igual que en el mundo de la guitarra eléctrica, existe una devoción no pequeña por parte de algunos sectores del mundo audiófilo hacia los amplificadores de válvulas.  Como ejemplo de esta irracionalidad, consideremos el diseño de muchos amplificadores de gama ultra alta, con chasis construidos para mostrar abiertamente los tubos en funcionamiento, aunque esta exposición física de los tubos obviamente aumenta el efecto indeseable de<i>micrófonos</i>(cambios en el rendimiento del tubo como resultado de las ondas sonoras que hacen vibrar la estructura del tubo).</p>
+<p>Dicho esto, sin embargo, existe una gran cantidad de literatura técnica que contrasta los tubos con los semiconductores para el uso en amplificadores de potencia de audio, especialmente en el área del análisis de distorsión.  Más de unos pocos ingenieros eléctricos competentes prefieren los diseños de amplificadores de válvulas a los de transistores, y son capaces de producir evidencia experimental que respalde su elección.  La principal dificultad para cuantificar el rendimiento de un sistema de audio es la respuesta incierta del oído humano.<i>All</i>Los amplificadores distorsionan su señal de entrada hasta cierto punto, especialmente cuando están sobrecargados, por lo que la pregunta es qué tipo de diseño de amplificador distorsiona menos.  Sin embargo, dado que la audición humana es muy no lineal, las personas no interpretan todos los tipos de distorsión acústica de la misma manera, por lo que algunos amplificadores sonarán "mejor" que otros incluso si un análisis cuantitativo de distorsión con instrumentos electrónicos indica niveles de distorsión similares.  Para determinar qué tipo de amplificador de audio distorsionará "lo mínimo" una señal musical, debemos considerar el oído y el cerebro humanos como parte de todo el sistema acústico.  Dado que todavía no existe un modelo completo para la respuesta auditiva humana, la evaluación objetiva es, en el mejor de los casos, difícil.  Sin embargo, algunas investigaciones indican que la distorsión característica de los circuitos amplificadores de válvulas (especialmente cuando están sobrecargados) es menos objetable que la distorsión producida por los transistores.</p>
+<p>Los tubos también poseen la clara ventaja de una baja "deriva" en una amplia gama de condiciones operativas.  A diferencia de los componentes semiconductores, cuyos voltajes de barrera, relaciones β, resistencias en masa y capacitancias de unión pueden cambiar sustancialmente con los cambios en la temperatura del dispositivo y/u otras condiciones operativas, las características fundamentales de un tubo de vacío permanecen casi constantes en un amplio rango de condiciones operativas, porque esas características están determinadas principalmente por las dimensiones físicas de los elementos estructurales del tubo (cátodo, rejilla(s) y placa) en lugar de las interacciones de partículas subatómicas en una red cristalina.</p>
+<p>Esta es una de las principales razones por las que los diseñadores de amplificadores de estado sólido suelen diseñar sus circuitos para maximizar la eficiencia energética incluso cuando compromete el rendimiento de la distorsión, porque un amplificador ineficiente disipa mucha energía en forma de calor residual y las características del transistor tienden a cambiar sustancialmente con la temperatura.  La "deriva" inducida por la temperatura dificulta la estabilización de los puntos "Q" y otras medidas importantes relacionadas con el rendimiento en un circuito amplificador.  Desafortunadamente, la eficiencia energética y la baja distorsión parecen ser objetivos de diseño mutuamente excluyentes.</p>
+<a name="Crossover distortion"></a>
+<a name="Distortion, crossover"></a>
+<p>Por ejemplo, los circuitos amplificadores de audio de clase A suelen exhibir niveles de distorsión muy bajos, pero desperdician mucha energía, lo que significa que sería difícil diseñar un amplificador de clase A de estado sólido con una potencia nominal sustancial debido a la consiguiente deriva de las características del transistor.  Por lo tanto, la mayoría de los diseñadores de amplificadores de audio de estado sólido eligen configuraciones de circuitos de clase B para una mayor eficiencia, aunque los diseños de clase B son conocidos por producir un tipo de distorsión conocida como<i>distorsión cruzada</i>.  Sin embargo, con válvulas es fácil diseñar un circuito amplificador de audio de clase A estable porque las válvulas no se ven tan afectadas negativamente por los cambios de temperatura experimentados en una configuración de circuito tan ineficiente desde el punto de vista energético.</p>
+<p>Sin embargo, los parámetros de rendimiento de los tubos tienden a "desviarse" más que los dispositivos semiconductores cuando se miden durante largos períodos de tiempo (años).  Un mecanismo importante del "envejecimiento" de los tubos parecen ser las fugas de vacío: cuando entra aire en el interior de un tubo de vacío, sus características eléctricas se alteran irreversiblemente.  Este mismo fenómeno es una de las principales causas de la mortalidad de los tubos, o la razón por la que los tubos normalmente no duran tanto como sus respectivos homólogos de estado sólido.  Sin embargo, cuando el vacío del tubo se mantiene a un nivel alto, es posible obtener un rendimiento y una vida útil excelentes.  Un ejemplo de esto es un tubo de klistrón (utilizado para producir las ondas de radio de alta frecuencia utilizadas en un sistema de radar) que duró 240.000 horas de funcionamiento (citado por Robert S. Symons de la División de Dispositivos Electrónicos de Litton en su artículo informativo, "Tubes: Still vital after all These years", impreso en la edición de abril de 1998 de<i>Espectro IEEE</i>revista).</p>
+<p>Al menos, la tensión entre los audiófilos sobre los tubos y los semiconductores ha estimulado un grado notable de experimentación e innovación técnica, sirviendo como un excelente recurso para aquellos que desean educarse en la teoría de los amplificadores.  Desde una perspectiva más amplia, la versatilidad de la tecnología de tubos de electrones (diferentes configuraciones físicas, múltiples rejillas de control) sugiere el potencial para diseños de circuitos de una variedad mucho mayor que la que es posible utilizando semiconductores.  Por esta y otras razones, los tubos de electrones nunca quedarán "obsoletos", pero seguirán cumpliendo funciones específicas y fomentando la innovación para aquellos ingenieros electrónicos, inventores y aficionados que no están dispuestos a dejar que sus mentes sean sofocadas por las convenciones.</p>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="SEMI_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="SEMI_12.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="SEMI_2.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

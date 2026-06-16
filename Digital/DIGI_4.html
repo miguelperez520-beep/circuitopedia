@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 4 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #f59e0b; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 4</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen IV</h1>
+<h1>Capítulo 4</h1>
+<h1>INTERRUPTORES</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid91690"><u>Switch types</u></a></li>
+<li><a href="#xtocid91691"><u>Switch contact design</u></a></li>
+<li><a href="#xtocid91692"><u>Contact "normal" state and make/break sequence</u></a></li>
+<li><a href="#xtocid91693"><u>Contact "bounce"</u></a></li></ul>
+<h2><u><a name="xtocid91690">Switch types</a></u></h2>
+<p>Un interruptor eléctrico es cualquier dispositivo utilizado para interrumpir el flujo de electrones en un circuito.  Los interruptores son esencialmente dispositivos binarios: están completamente encendidos ("cerrados") o completamente apagados ("abiertos").  Hay muchos tipos diferentes de interruptores y exploraremos algunos de estos tipos en este capítulo.</p>
+<p>Aunque puede parecer extraño cubrir este tema eléctrico elemental en una etapa tan avanzada de esta serie de libros, lo hago porque los capítulos que siguen exploran un ámbito más antiguo de la tecnología digital basado en contactos de interruptores mecánicos en lugar de circuitos de compuerta de estado sólido, y para ello es necesario un conocimiento profundo de los tipos de interruptores.  Aprender la función de los circuitos basados ​​en interruptores al mismo tiempo que aprende sobre las puertas lógicas de estado sólido hace que ambos temas sean más fáciles de comprender y prepara el escenario para una experiencia de aprendizaje mejorada en álgebra booleana, las matemáticas detrás de los circuitos lógicos digitales.</p>
+<a name="Closed switch"></a>
+<a name="Switch, closed"></a>
+<a name="Open switch"></a>
+<a name="Switch, open"></a>
+<p>El tipo de interruptor más simple es aquel en el que dos conductores eléctricos se ponen en contacto entre sí mediante el movimiento de un mecanismo actuador.  Otros interruptores son más complejos y contienen circuitos electrónicos capaces de encenderse o apagarse dependiendo de algún estímulo físico (como luz o campo magnético) detectado.  En cualquier caso, la salida final de cualquier interruptor será (al menos) un par de terminales de conexión de cables que estarán conectados entre sí mediante el mecanismo de contacto interno del interruptor ("cerrados") o no conectados entre sí ("abiertos").</p>
+<p>Cualquier interruptor diseñado para ser operado por una persona generalmente se denomina interruptor.<i>interruptor de mano</i>, y se fabrican en varias variedades:</p>
+<a name="Toggle switch"></a>
+<a name="Switch, toggle"></a>
+<p> <img src="04016.png"/> </p>
+<p>Los interruptores de palanca son accionados por una palanca en ángulo en una de dos o más posiciones.  El interruptor de luz común que se utiliza en el cableado doméstico es un ejemplo de interruptor de palanca.  La mayoría de los interruptores de palanca se detendrán en cualquiera de las posiciones de su palanca, mientras que otros tienen un mecanismo de resorte interno que devuelve la palanca a una determinada posición.<i>normal</i>posición, permitiendo lo que se llama operación "momentánea".</p>
+<a name="Pushbutton switch"></a>
+<a name="Switch, pushbutton"></a>
+<p> <img src="04017.png"/> </p>
+<p>Los interruptores de botón son dispositivos de dos posiciones que se accionan con un botón que se presiona y se suelta.  La mayoría de los interruptores de botón tienen un mecanismo de resorte interno que devuelve el botón a su posición "fuera" o "sin presionar" para una operación momentánea.  Algunos interruptores de botón se activarán o desactivarán alternativamente con cada pulsación del botón.  Otros interruptores de botón permanecerán en su posición "adentro" o "presionado" hasta que se retire el botón.  Este último tipo de interruptores de botón suelen tener un botón en forma de seta para facilitar la acción de empujar y tirar.</p>
+<a name="Selector switch"></a>
+<a name="Switch, selector"></a>
+<p> <img src="04018.png"/> </p>
+<p>Los interruptores selectores se accionan con un botón giratorio o palanca de algún tipo para seleccionar una de dos o más posiciones.  Al igual que el interruptor de palanca, los interruptores selectores pueden descansar en cualquiera de sus posiciones o contener mecanismos de retorno por resorte para una operación momentánea.</p>
+<a name="Joystick switch"></a>
+<a name="Switch, joystick"></a>
+<p> <img src="04019.png"/> </p>
+<p>Un interruptor tipo joystick es accionado por una palanca que puede moverse libremente en más de un eje de movimiento.  Uno o más de varios mecanismos de contacto del interruptor se activan dependiendo de en qué dirección se empuja la palanca y, a veces, de cómo<i>far</i>es empujado.  La notación de círculo y punto en el símbolo del interruptor representa la dirección del movimiento de la palanca del joystick necesaria para activar el contacto.  Los interruptores manuales con palanca de mando se utilizan habitualmente para el control de grúas y robots.</p>
+<a name="Limit switch"></a>
+<a name="Switch, limit"></a>
+<p>Algunos interruptores están diseñados específicamente para ser operados por el movimiento de una máquina en lugar de por la mano de un operador humano.  Estos interruptores operados por movimiento se llaman comúnmente<i>interruptores de límite</i>, porque a menudo se utilizan para limitar el movimiento de una máquina apagando la potencia de accionamiento de un componente si se mueve demasiado.  Al igual que con los interruptores manuales, los interruptores de límite vienen en varias variedades:</p>
+<p> <img src="04021.png"/> </p>
+<p>Estos interruptores de límite se parecen mucho a interruptores manuales de palanca o selectores resistentes equipados con una palanca empujada por la parte de la máquina.  A menudo, las palancas tienen en la punta un pequeño cojinete de rodillos, lo que evita que la palanca se desgaste por el contacto repetido con la pieza de la máquina.</p>
+<a name="Proximity switch"></a>
+<a name="Switch, proximity"></a>
+<p> <img src="04022.png"/> </p>
+<p>Los interruptores de proximidad detectan la aproximación de una pieza metálica de una máquina mediante un campo magnético o electromagnético de alta frecuencia.  Los interruptores de proximidad simples utilizan un imán permanente para accionar un mecanismo de interruptor sellado cada vez que la pieza de la máquina se acerca (normalmente 1 pulgada o menos).  Los interruptores de proximidad más complejos funcionan como un detector de metales, energizando una bobina de cable con una corriente de alta frecuencia y monitoreando electrónicamente la magnitud de esa corriente.  Si una pieza metálica (no necesariamente magnética) se acerca lo suficiente a la bobina, la corriente aumentará y disparará el circuito de monitoreo.  El símbolo que se muestra aquí para el interruptor de proximidad es de variedad electrónica, como lo indica la caja en forma de diamante que rodea el interruptor.  Un interruptor de proximidad no electrónico usaría el mismo símbolo que el interruptor de límite accionado por palanca.</p>
+<a name="Optical switch"></a>
+<a name="Switch, optical"></a>
+<p>Otra forma de interruptor de proximidad es el interruptor óptico, compuesto por una fuente de luz y una fotocélula.  La posición de la máquina se detecta mediante la interrupción o el reflejo de un haz de luz.  Los interruptores ópticos también son útiles en aplicaciones de seguridad, donde se pueden usar haces de luz para detectar la entrada de personal a un área peligrosa.</p>
+<p>En muchos procesos industriales es necesario controlar distintas cantidades físicas con interruptores.  Dichos interruptores se pueden usar para hacer sonar alarmas, indicando que una variable de proceso ha excedido los parámetros normales, o se pueden usar para apagar procesos o equipos si esas variables han alcanzado niveles peligrosos o destructivos.  Hay muchos tipos diferentes de interruptores de proceso:</p>
+<a name="Speed switch"></a>
+<a name="Switch, speed"></a>
+<p> <img src="04024.png"/> </p>
+<p>Estos interruptores detectan la velocidad de rotación de un eje mediante un mecanismo de peso centrífugo montado en el eje o mediante algún tipo de detección sin contacto del movimiento del eje, como óptico o magnético.</p>
+<a name="Pressure switch"></a>
+<a name="Switch, pressure"></a>
+<p> <img src="04025.png"/> </p>
+<p>Se puede utilizar presión de gas o líquido para accionar un mecanismo de interruptor si esa presión se aplica a un pistón, diafragma o fuelle, que convierte la presión en fuerza mecánica.</p>
+<a name="Temperature switch"></a>
+<a name="Switch, temperature"></a>
+<p> <img src="04026.png"/> </p>
+<p>Un mecanismo económico de detección de temperatura es la "tira bimetálica": una tira delgada de dos metales, unidos espalda con espalda, cada metal tiene una tasa diferente de expansión térmica.  Cuando la tira se calienta o se enfría, las diferentes tasas de expansión térmica entre los dos metales hacen que se doble.  La curvatura de la tira puede usarse entonces para accionar un mecanismo de contacto de interruptor.  Otros interruptores de temperatura utilizan una bombilla de latón llena de líquido o gas, con un pequeño tubo que conecta la bombilla a un interruptor sensor de presión.  A medida que se calienta el bulbo, el gas o líquido se expande, generando un aumento de presión que luego acciona el mecanismo del interruptor.</p>
+<a name="Level switch"></a>
+<a name="Switch, level"></a>
+<p> <img src="04027.png"/> </p>
+<p>Se puede utilizar un objeto flotante para accionar un mecanismo de interruptor cuando el nivel del líquido en un tanque supera un cierto punto.  Si el líquido es conductor de electricidad, el propio líquido se puede utilizar como conductor para tender un puente entre dos sondas metálicas insertadas en el tanque a la profundidad requerida.  La técnica de conductividad generalmente se implementa con un diseño especial de relé activado por una pequeña cantidad de corriente a través del líquido conductor.  En la mayoría de los casos, no es práctico y peligroso conmutar la corriente de carga total del circuito a través de un líquido.</p>
+<a name="Level switch"></a>
+<a name="Switch, level"></a>
+<p>Los interruptores de nivel también se pueden diseñar para detectar el nivel de materiales sólidos como astillas de madera, granos, carbón o alimento para animales en un silo, contenedor o tolva de almacenamiento.  Un diseño común para esta aplicación es una pequeña rueda de paletas, insertada en el contenedor a la altura deseada, que gira lentamente mediante un pequeño motor eléctrico.  Cuando el material sólido llena el contenedor hasta esa altura, el material evita que la rueda de paletas gire.  La respuesta de torsión del motor pequeño activa el mecanismo del interruptor.  Otro diseño utiliza una punta de metal en forma de "diapasón", que se inserta en el contenedor desde el exterior a la altura deseada.  La horquilla hace vibrar a su frecuencia resonante mediante un circuito electrónico y un conjunto de bobina de imán/electroimán.  Cuando el contenedor se llena hasta esa altura, el material sólido amortigua la vibración de la horquilla, el cambio en la amplitud y/o frecuencia de la vibración detectado por el circuito electrónico.</p>
+<a name="Flow switch"></a>
+<a name="Switch, flow"></a>
+<p> <img src="04028.png"/> </p>
+<p>Insertado en una tubería, un interruptor de flujo detectará cualquier caudal de gas o líquido que exceda un cierto umbral, generalmente con una pequeña paleta o paleta que es empujada por el flujo.  Otros interruptores de flujo están construidos como interruptores de presión diferencial y miden la caída de presión a través de una restricción integrada en la tubería.</p>
+<a name="Nuclear switch"></a>
+<a name="Switch, nuclear radiation"></a>
+<p>Otro tipo de interruptor de nivel, adecuado para la detección de materiales líquidos o sólidos, es el interruptor nuclear.  Compuestos por un material fuente radiactivo y un detector de radiación, los dos están montados a lo largo del diámetro de un recipiente de almacenamiento para material sólido o líquido.  Cualquier altura de material más allá del nivel de la disposición fuente/detector atenuará la intensidad de la radiación que llega al detector.  Esta disminución de la radiación en el detector se puede utilizar para activar un mecanismo de relé que proporcione un contacto de interruptor para medición, punto de alarma o incluso control del nivel del recipiente.</p>
+<p> <img src="04030.png"/> </p>
+<p>Tanto la fuente como el detector están fuera del recipiente, sin ninguna intrusión excepto el propio flujo de radiación.  Las fuentes radiactivas utilizadas son bastante débiles y no representan una amenaza inmediata para la salud del personal de operaciones o mantenimiento.</p>
+<p>Como es habitual, suele haber más de una forma de implementar un interruptor para monitorear un proceso físico o servir como control del operador.  Por lo general, no existe un único interruptor "perfecto" para ninguna aplicación, aunque obviamente algunos presentan ciertas ventajas sobre otros.  Los interruptores deben adaptarse inteligentemente a la tarea para lograr un funcionamiento eficiente y confiable.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>A <i>cambiar</i>Es un dispositivo eléctrico, generalmente electromecánico, que se utiliza para controlar la continuidad entre dos puntos.</li>
+<li><i>Mano</i>Los interruptores son accionados por el tacto humano.</li>
+<li><i>Límite</i>Los interruptores son accionados por el movimiento de la máquina.</li>
+<li><i>Proceso</i>Los interruptores son accionados por cambios en algún proceso físico (temperatura, nivel, flujo, etc.).</li>
+</ul>
+<h2><u><a name="xtocid91691">Switch contact design</a></u></h2>
+<p>Se puede construir un interruptor con cualquier mecanismo que ponga en contacto dos conductores entre sí de manera controlada.  Esto puede ser tan simple como permitir que dos cables de cobre se toquen entre sí mediante el movimiento de una palanca o empujando directamente dos tiras de metal para que entren en contacto.  Sin embargo, un buen diseño de interruptor debe ser resistente y confiable, y evitar presentar al operador la posibilidad de sufrir una descarga eléctrica.  Por lo tanto, los diseños de interruptores industriales rara vez son tan toscos.</p>
+<a name="Contact, switch"></a>
+<a name="Switch contact"></a>
+<p>Las partes conductoras de un interruptor que se utilizan para hacer y deshacer la conexión eléctrica se llaman<i>contactos</i>.  Los contactos suelen estar hechos de plata o aleación de plata y cadmio, cuyas propiedades conductoras no se ven comprometidas significativamente por la corrosión u oxidación de la superficie.  Los contactos de oro exhiben la mejor resistencia a la corrosión, pero tienen una capacidad de transporte de corriente limitada y pueden "soldarse en frío" si se unen con una gran fuerza mecánica.  Cualquiera que sea la elección del metal, los contactos del interruptor están guiados por un mecanismo que garantiza un contacto cuadrado y uniforme, para una máxima confiabilidad y una mínima resistencia.</p>
+<p>Se pueden construir contactos como estos para manejar cantidades extremadamente grandes de corriente eléctrica, hasta miles de amperios en algunos casos.  Los factores limitantes para la ampacidad del contacto del interruptor son los siguientes:</p>
+<ul>
+<li>Calor generado por la corriente a través de contactos metálicos (cuando están cerrados).</li>
+<li>Chispas causadas cuando los contactos se abren o cierran.</li>
+<li>El voltaje a través de los contactos del interruptor abiertos (potencial de corriente que salta a través del espacio).</li>
+</ul>
+<p>Una desventaja importante de los contactos de interruptor estándar es la exposición de los contactos a la atmósfera circundante.  En un ambiente agradable y limpio de sala de control, esto generalmente no es un problema.  Sin embargo, la mayoría de los entornos industriales no son tan benignos.  La presencia de productos químicos corrosivos en el aire puede provocar que los contactos se deterioren y fallen prematuramente.  Aún más problemática es la posibilidad de que se produzcan chispas por contacto regular que provoquen la ignición de productos químicos inflamables o explosivos.</p>
+<p>Cuando existen tales preocupaciones ambientales, se pueden considerar otros tipos de contactos para interruptores pequeños.  Estos otros tipos de contactos están sellados contra el contacto con el aire exterior y, por lo tanto, no sufren los mismos problemas de exposición que los contactos estándar.</p>
+<a name="Mercury (tilt) switch"></a>
+<a name="Switch, mercury tilt"></a>
+<p>Un tipo común de interruptor de contacto sellado es el interruptor de mercurio.  El mercurio es un elemento metálico, líquido a temperatura ambiente.  Al ser un metal, posee excelentes propiedades conductoras.  Al ser un líquido, se puede poner en contacto con sondas metálicas (para cerrar un circuito) dentro de una cámara sellada simplemente inclinando la cámara para que las sondas queden en el fondo.  Muchos interruptores industriales utilizan pequeños tubos de vidrio que contienen mercurio que se inclinan en un sentido para cerrar el contacto y en otro sentido para abrirlo.  Aparte de los problemas de rotura de tubos y derrames de mercurio (que es un material tóxico) y la susceptibilidad a las vibraciones, estos dispositivos son una excelente alternativa a los contactos de interruptor al aire libre siempre que los problemas de exposición ambiental sean una preocupación.</p>
+<p>Aquí, un interruptor de mercurio (a menudo llamado<i>inclinación</i>interruptor) se muestra en la posición abierta, donde el mercurio está fuera de contacto con los dos contactos metálicos en el otro extremo de la bombilla de vidrio:</p>
+<p> <img src="54001.jpg"/> </p>
+<p>Aquí, el mismo interruptor se muestra en la posición cerrada.  La gravedad ahora mantiene el mercurio líquido en contacto con los dos contactos metálicos, proporcionando continuidad eléctrica de uno al otro:</p>
+<p> <img src="54002.jpg"/> </p>
+<p>Los contactos de interruptor de mercurio no son prácticos para construir en tamaños grandes, por lo que normalmente encontrará dichos contactos con una capacidad nominal de no más de unos pocos amperios y no más de 120 voltios.  Por supuesto, hay excepciones, pero estos son límites comunes.</p>
+<p>Otro tipo de interruptor de contacto sellado es el interruptor de láminas magnético.  Al igual que el interruptor de mercurio, los contactos de un interruptor de láminas están ubicados dentro de un tubo sellado.  A diferencia del interruptor de mercurio que utiliza metal líquido como medio de contacto, el interruptor de láminas es simplemente un par de tiras metálicas magnéticas muy delgadas (de ahí el nombre "lengüeta") que se ponen en contacto entre sí aplicando un fuerte campo magnético fuera del tubo sellado.  La fuente del campo magnético en este tipo de interruptor suele ser un imán permanente, que el mecanismo de accionamiento acerca o aleja del tubo.  Debido al pequeño tamaño de las lengüetas, este tipo de contacto suele tener corrientes y voltajes más bajos que el interruptor de mercurio promedio.  Sin embargo, los interruptores de láminas suelen manejar mejor la vibración que los contactos de mercurio, porque no hay líquido dentro del tubo que pueda salpicar.</p>
+<p>Es común encontrar que el voltaje y las corrientes nominales de contacto del interruptor de uso general sean mayores en cualquier interruptor o relé si la energía eléctrica que se conmuta es CA en lugar de CC.  La razón de esto es la tendencia a autoextinguirse de un arco de corriente alterna a través de un entrehierro.  Debido a que la corriente de la línea eléctrica de 60 Hz en realidad se detiene e invierte la dirección 120 veces por segundo, existen muchas oportunidades para que el aire ionizado de un arco pierda suficiente temperatura para dejar de conducir corriente, hasta el punto en que el arco no se reiniciará en el siguiente pico de voltaje.  La CC, por otro lado, es un flujo continuo e ininterrumpido de electrones que tiende a mantener mucho mejor un arco a través de un espacio de aire.  Por lo tanto, los contactos de interruptor de cualquier tipo sufren más desgaste al conmutar un valor dado de corriente continua que con el mismo valor de corriente alterna.  El problema de la conmutación de CC es exagerado cuando la carga tiene una cantidad significativa de inductancia, ya que se generarán voltajes muy altos a través de los contactos del interruptor cuando se abre el circuito (el inductor hace todo lo posible para mantener la corriente del circuito en la misma magnitud que cuando el interruptor estaba cerrado).</p>
+<p>Tanto con CA como con CC, la formación de arcos en los contactos se puede minimizar agregando un circuito "amortiguador" (un capacitor y una resistencia conectados en serie) en paralelo con el contacto, como este:</p>
+<p> <img src="04015.png"/> </p>
+<p>Un aumento repentino de voltaje a través del contacto del interruptor causado por la apertura del contacto será atenuado por la acción de carga del capacitor (el capacitor se opone al aumento de voltaje al consumir corriente).  La resistencia limita la cantidad de corriente que el condensador descargará a través del contacto cuando se cierre nuevamente.  Si la resistencia no estuviera allí, el capacitor podría hacer que el arco durante el cierre del contacto sea peor que el arco durante la apertura del contacto sin un capacitor.  Si bien esta adición al circuito ayuda a mitigar el arco de contacto, no está exenta de desventajas: una consideración primordial es la posibilidad de que una combinación de condensador/resistencia fallida (en cortocircuito) proporcione un camino para que los electrones fluyan a través del circuito en todo momento, incluso cuando el contacto está abierto y no se desea corriente.  El riesgo de esta falla y la gravedad de las consecuencias resultantes deben considerarse frente al mayor desgaste de los contactos (y la inevitable falla de los contactos) sin el circuito amortiguador.</p>
+<a name="Condenser"></a>
+<p>El uso de amortiguadores en circuitos de interruptores de CC no es nada nuevo: los fabricantes de automóviles han estado haciendo esto durante años en los sistemas de encendido de motores, minimizando la formación de arcos en los "puntos" de contacto del interruptor en el distribuidor con un pequeño condensador llamado<i>condensador</i>.  Como te puede decir cualquier mecánico, la vida útil de los "puntos" del distribuidor está directamente relacionada con el buen funcionamiento del condensador.</p>
+<a name="Wetting current"></a>
+<a name="Current, contact " wetting""=""></a>
+<p>Con toda esta discusión sobre la reducción del arco eléctrico en los contactos del interruptor, uno podría pensar que menos corriente siempre es mejor para un interruptor mecánico.  Sin embargo, esto no es necesariamente así.  Se ha descubierto que una pequeña cantidad de arcos periódicos puede ser realmente buena para los contactos del interruptor, porque mantiene las caras de los contactos libres de pequeñas cantidades de suciedad y corrosión.  Si un contacto de interruptor mecánico se opera con muy poca corriente, los contactos tenderán a acumular una resistencia excesiva y pueden fallar prematuramente.  Esta cantidad mínima de corriente eléctrica necesaria para mantener en buen estado el contacto de un interruptor mecánico se denomina<i>corriente de humectación</i>.
+</p>
+<p>Normalmente, la clasificación de corriente de mojado de un interruptor está muy por debajo de su clasificación de corriente máxima y muy por debajo de su carga de corriente operativa normal en un sistema diseñado adecuadamente.  Sin embargo, hay aplicaciones en las que puede ser necesario un contacto de interruptor mecánico para manejar rutinariamente corrientes por debajo de los límites de corriente de humectación normales (por ejemplo, si un interruptor selector mecánico necesita abrir o cerrar un circuito electrónico analógico o lógico digital donde el valor de corriente es extremadamente pequeño).  En estas aplicaciones, se recomienda encarecidamente especificar contactos de interruptor chapados en oro.  El oro es un metal "noble" y no se corroe como lo hacen otros metales.  Como resultado, tales contactos tienen requisitos de corriente de humectación extremadamente bajos.  ¡Los contactos normales de aleación de plata o cobre no proporcionarán un funcionamiento confiable si se usan en un servicio de corriente tan baja!</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Las partes de un interruptor responsables de establecer y romper la continuidad eléctrica se denominan "contactos".  Generalmente hechos de una aleación de metal resistente a la corrosión, los contactos se tocan entre sí mediante un mecanismo que ayuda a mantener la alineación y el espaciado adecuados.</li>
+<li>Los interruptores de mercurio utilizan una porción de mercurio metálico líquido como contacto móvil.  Sellado en un tubo de vidrio, la chispa del contacto de mercurio está sellada del ambiente exterior, lo que hace que este tipo de interruptor sea ideal para atmósferas que potencialmente albergan vapores explosivos.</li>
+<li>Los interruptores de láminas son otro tipo de dispositivo de contacto sellado, en el que el contacto se realiza mediante dos delgadas "lengüetas" de metal dentro de un tubo de vidrio, unidas por la influencia de un campo magnético externo.</li>
+<li>Los contactos del interruptor sufren una mayor presión al cambiar CC que CA.  Esto se debe principalmente a la naturaleza autoextinguible de un arco de CA.</li>
+<li>Se puede conectar una red de resistencia-condensador llamada "amortiguador" en paralelo con un contacto de interruptor para reducir la formación de arcos en los contactos.</li>
+<li><i>corriente de humedecimiento</i>es la cantidad mínima de corriente eléctrica necesaria que debe transportar un contacto de interruptor para que sea autolimpiante.  Normalmente este valor está muy por debajo de la corriente nominal máxima del interruptor.</li>
+</ul>
+<h2><u><a name="xtocid91692">Contact "normal" state and make/break sequence</a></u></h2>
+<a name="Normally-open"></a>
+<a name="Normally-closed"></a>
+<a name="Switch normal position"></a>
+<p>Se puede diseñar cualquier tipo de contacto de interruptor de modo que los contactos se "cierren" (establezcan continuidad) cuando se accionen, o se "abran" (interrumpan la continuidad) cuando se accionen.  Para los interruptores que tienen un mecanismo de retorno por resorte, la dirección a la que regresa el resorte sin aplicar fuerza se llama<i>normal</i>posición.  Por lo tanto, los contactos que están abiertos en esta posición se llaman<i>normalmente abierto</i>y los contactos que están cerrados en esta posición se llaman<i>normalmente cerrado</i>.
+</p>
+<p>Para los interruptores de proceso, la posición o estado normal es aquella en la que se encuentra el interruptor cuando no hay influencia del proceso sobre él.  Una manera fácil de determinar la condición normal de un interruptor de proceso es considerar el estado del interruptor mientras se encuentra en un estante de almacenamiento, desinstalado.  A continuación se muestran algunos ejemplos de condiciones de cambio de proceso "normales":</p>
+<ul>
+<li><b>interruptor de velocidad</b>: El eje no gira</li>
+<li><b>interruptor de presión</b>: Presión aplicada cero</li>
+<li><b>interruptor de temperatura</b>: Temperatura ambiente (ambiente)</li>
+<li><b>interruptor de nivel</b>: Tanque o contenedor vacío</li>
+<li><b>interruptor de flujo</b>: Flujo de líquido cero</li>
+</ul>
+<p>Es importante diferenciar entre la condición "normal" de un interruptor y su uso "normal" en un proceso operativo.  Considere el ejemplo de un interruptor de flujo de líquido que sirve como alarma de flujo bajo en un sistema de agua de refrigeración.  La condición normal, o de funcionamiento adecuado, del sistema de agua de refrigeración es que haya un flujo de refrigerante bastante constante a través de esta tubería.  Si queremos que el contacto del interruptor de flujo<i>cerca</i>En caso de pérdida de flujo de refrigerante (para completar un circuito eléctrico que activa una sirena de alarma, por ejemplo), nos gustaría utilizar un interruptor de flujo con<i>normalmente cerrado</i>en lugar de contactos normalmente abiertos.  Cuando hay un flujo adecuado a través de la tubería, los contactos del interruptor se abren a la fuerza; cuando el caudal cae a un nivel anormalmente bajo, los contactos vuelven a su estado normal (cerrado).  Esto resulta confuso si piensa que "normal" es el estado normal del proceso, así que asegúrese de pensar siempre en el estado "normal" de un interruptor como aquel que se encuentra en un estante.</p>
+<p>La simbología esquemática de los interruptores varía según el propósito y la actuación del interruptor.  Un contacto de interruptor normalmente abierto se dibuja de tal manera que indique una conexión abierta, lista para cerrarse cuando se acciona.  Por el contrario, un interruptor normalmente cerrado se dibuja como una conexión cerrada que se abrirá cuando se accione.  Tenga en cuenta los siguientes símbolos:</p>
+<p> <img src="04031.png"/> </p>
+<a name="Switch, generic contact symbol"></a>
+<p>También existe una simbología genérica para cualquier contacto de interruptor, que utiliza un par de líneas verticales para representar los puntos de contacto en un interruptor.  Los contactos normalmente abiertos se designan con líneas que no se tocan, mientras que los contactos normalmente cerrados se designan con una línea diagonal que une las dos líneas.  Compara los dos:</p>
+<p> <img src="04029.png"/> </p>
+<p>El interruptor de la izquierda se cerrará cuando se accione y se abrirá mientras esté en la posición "normal" (no accionado).  El interruptor de la derecha se abrirá cuando se accione y se cerrará en la posición "normal" (no accionado).  Si los interruptores se designan con estos símbolos genéricos, el tipo de interruptor generalmente se indicará en el texto inmediatamente al lado del símbolo.  Tenga en cuenta que el símbolo de la izquierda es<i>not</i>confundirse con el de un condensador.  Si es necesario representar un capacitor en un esquema lógico de control, se mostrará así:</p>
+<p> <img src="04023.png"/> </p>
+<p>En la simbología electrónica estándar, la figura que se muestra arriba está reservada para condensadores sensibles a la polaridad.  En la simbología de la lógica de control, este símbolo de condensador se utiliza para<i>any</i>tipo de condensador, incluso cuando el condensador no es sensible a la polaridad, para distinguirlo claramente de un contacto de interruptor normalmente abierto.</p>
+<p>Con los interruptores selectores de posiciones múltiples, se debe considerar otro factor de diseño: es decir, la secuencia de romper conexiones antiguas y hacer conexiones nuevas a medida que el interruptor se mueve de una posición a otra, el contacto móvil toca varios contactos estacionarios en secuencia.</p>
+<p> <img src="04032.png"/> </p>
+<a name="Break-before-make"></a>
+<p>El interruptor selector que se muestra arriba cambia una palanca de contacto común a una de cinco posiciones diferentes, para hacer contacto con los cables numerados del 1 al 5. La configuración más común de un interruptor de posiciones múltiples como este es aquella en la que el contacto con una posición está roto.<i>antes</i>se realiza el contacto con la siguiente posición.  Esta configuración se llama<i>romper antes de hacer</i>.  Para dar un ejemplo, si el interruptor estuviera colocado en la posición número 3 y se girara lentamente en el sentido de las agujas del reloj, la palanca de contacto se movería fuera de la posición número 3, abriendo ese circuito, se movería a una posición entre el número 3 y el número 4 (ambas rutas del circuito se abrirían) y luego tocaría la posición número 4, cerrando ese circuito.</p>
+<a name="Make-before-break"></a>
+<p>Hay aplicaciones en las que es inaceptable abrir completamente el circuito conectado al cable "común" en cualquier momento.  Para tal aplicación, un<i>hacer antes de romper</i>Se puede construir un diseño de interruptor en el que la palanca de contacto móvil en realidad hace un puente entre dos posiciones de contacto (entre el número 3 y el número 4, en el escenario anterior) a medida que viaja entre posiciones.  El compromiso aquí es que el circuito debe poder tolerar cierres de interruptor entre contactos de posición adyacentes (1 y 2, 2 y 3, 3 y 4, 4 y 5) a medida que se gira la perilla selectora de una posición a otra.  Un interruptor de este tipo se muestra aquí:</p>
+<p> <img src="04033.png"/> </p>
+<a name="Throws, switch"></a>
+<a name="Poles, switch"></a>
+<p>Cuando los contactos móviles se pueden llevar a una de varias posiciones con contactos estacionarios, esas posiciones a veces se denominan<i>lanza</i>.  El número de contactos móviles a veces se denomina<i>polos</i>.  Los dos interruptores selectores que se muestran arriba con un contacto móvil y cinco contactos estacionarios se designarían como interruptores "unipolares de cinco posiciones".</p>
+<p>Si dos interruptores unipolares idénticos de cinco posiciones se unieran mecánicamente para que fueran accionados por el mismo mecanismo, todo el conjunto se llamaría interruptor "bipolar de cinco posiciones":</p>
+<p> <img src="04034.png"/> </p>
+<p>A continuación se muestran algunas configuraciones de conmutadores comunes y sus designaciones abreviadas:</p>
+<a name="SPST switch"></a>
+<p> <img src="04035.png"/> </p>
+<p>
+</p>
+<br/>
+<a name="DPST switch"></a>
+<p> <img src="04036.png"/> </p>
+<p>
+</p>
+<br/>
+<a name="SPDT switch"></a>
+<p> <img src="04037.png"/> </p>
+<p>
+</p>
+<br/>
+<a name="DPDT switch"></a>
+<p> <img src="04038.png"/> </p>
+<p>
+</p>
+<br/>
+<a name="4PDT switch"></a>
+<p> <img src="04039.png"/> </p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>The <i>normal</i>El estado de un interruptor es aquel en el que no está accionado.  Para los interruptores de proceso, esta es la condición en la que se encuentran cuando se encuentran en un estante, desinstalados.</li>
+<li>Un interruptor que está abierto cuando no está accionado se llama<i>normalmente abierto</i>.  Un interruptor que se cierra cuando no está accionado se llama<i>normalmente cerrado</i>.  A veces, los términos "normalmente abierto" y "normalmente cerrado" se abrevian N.O. y Carolina del Norte, respectivamente.</li>
+<li>La simbología genérica de N.O. y contactos del interruptor N.C. es el siguiente:</li>
+<li>
+<p> <img src="04029.png"/> </p>
+</li>
+<li>Los interruptores multiposición pueden ser de apertura antes de apertura (el más común) o de apertura antes de apertura.</li>
+<li>Los "polos" de un interruptor se refieren a la cantidad de contactos móviles, mientras que los "tiros" de un interruptor se refieren a la cantidad de contactos estacionarios por contacto móvil.</li>
+</ul>
+<h2><u><a name="xtocid91693">Contact "bounce"</a></u></h2>
+<a name="Bounce, switch contact"></a>
+<a name="Contact bounce"></a>
+<p>Cuando se acciona un interruptor y los contactos se tocan entre sí bajo la fuerza de la actuación, se supone que establecen continuidad en un momento único y nítido.  Desafortunadamente, los interruptores no logran exactamente este objetivo.  Debido a la masa del contacto móvil y a cualquier elasticidad inherente al mecanismo y/o los materiales de contacto, los contactos "rebotarán" al cerrarse durante un período de milisegundos antes de detenerse por completo y proporcionar un contacto ininterrumpido.  En muchas aplicaciones, el rebote del interruptor no tiene importancia: importa poco si un interruptor que controla una lámpara incandescente "rebota" durante algunos ciclos cada vez que se acciona.  Dado que el tiempo de calentamiento de la lámpara excede con creces el período de rebote, no se producirá ninguna irregularidad en el funcionamiento de la lámpara.</p>
+<p>Sin embargo, si el interruptor se utiliza para enviar una señal a un amplificador electrónico o algún otro circuito con un tiempo de respuesta rápido, el rebote del contacto puede producir efectos muy notorios y no deseados:</p>
+<p> <img src="04283.png"/> </p>
+<p>Una mirada más cercana a la pantalla del osciloscopio revela un conjunto bastante feo de conexiones y cortes cuando el interruptor se acciona una sola vez:</p>
+<p> <img src="04284.png"/> </p>
+<p>Si, por ejemplo, este interruptor se utiliza para proporcionar una señal de "reloj" a un circuito contador digital, de modo que se supone que cada accionamiento del interruptor de botón incrementa el contador en un valor de 1, lo que sucederá en cambio es que el contador se incrementará en varios conteos cada vez que se accione el interruptor.  Dado que los interruptores mecánicos a menudo interactúan con circuitos electrónicos digitales en los sistemas modernos, el rebote de los contactos del interruptor es una consideración de diseño frecuente.  De alguna manera, se debe eliminar el "castañeteo" producido por los contactos que rebotan para que el circuito receptor vea una transición de encendido/apagado limpia y nítida:</p>
+<p> <img src="04285.png"/> </p>
+<a name="Debounce, switch contact"></a>
+<a name="Contact debouncing"></a>
+<p>Los contactos del interruptor pueden ser<i>rebotado</i>varias maneras diferentes.  El medio más directo es abordar el problema en su origen: el propio interruptor.  A continuación se ofrecen algunas sugerencias para diseñar mecanismos de conmutación para un rebote mínimo:</p>
+<ul>
+<li>Reducir la energía cinética del contacto en movimiento.  Esto reducirá la fuerza del impacto cuando se detenga sobre el contacto estacionario, minimizando así el rebote.</li>
+<li>Utilice "resortes amortiguadores" en los contactos estacionarios para que puedan retroceder libremente y absorber suavemente la fuerza del impacto del contacto en movimiento.</li>
+<li>Diseñe el interruptor para que tenga un contacto "deslizante" o "limpiante" en lugar de un impacto directo.  Los diseños de interruptores de "cuchillo" utilizan contactos deslizantes.</li>
+<li>Humedezca el movimiento del mecanismo del interruptor utilizando un mecanismo de "amortiguador" de aire o aceite.</li>
+<li>Utilice conjuntos de contactos en paralelo entre sí, cada uno ligeramente diferente en masa o espacio de contacto, de modo que cuando uno rebote en el contacto estacionario, al menos uno de los otros todavía esté en contacto firme.</li>
+<li>"Moje" los contactos con mercurio líquido en un ambiente sellado.  Después de realizar el contacto inicial, la tensión superficial del mercurio mantendrá la continuidad del circuito incluso aunque el contacto móvil pueda rebotar varias veces en el contacto estacionario.</li>
+</ul>
+<a name="Mercury-wetted contacts"></a>
+<p>Cada una de estas sugerencias sacrifica algún aspecto del rendimiento del interruptor para lograr un rebote limitado, por lo que no es práctico diseñar<i>all</i>interruptores teniendo en cuenta el rebote de contacto limitado.  Las modificaciones realizadas para reducir la energía cinética del contacto pueden dar como resultado una pequeña brecha de contacto abierto o un contacto de movimiento lento, lo que limita la cantidad de voltaje que el interruptor puede manejar y la cantidad de corriente que puede interrumpir.  Los contactos deslizantes, aunque no rebotan, aún producen "ruido" (corriente irregular causada por una resistencia de contacto irregular al moverse) y sufren más desgaste mecánico que los contactos normales.</p>
+<p>Múltiples contactos paralelos dan menos rebote, pero sólo a mayor complejidad y costo del interruptor.  Usar mercurio para "mojar" los contactos es un medio muy eficaz para mitigar el rebote, pero lamentablemente se limita a cambiar contactos de baja ampacidad.  Además, los contactos humedecidos con mercurio generalmente tienen una posición de montaje limitada, ya que la gravedad puede hacer que los contactos se "puenteen" accidentalmente si se orientan en la dirección incorrecta.</p>
+<p>Si rediseñar el mecanismo del interruptor no es una opción, los contactos del interruptor mecánico se pueden eliminar externamente, utilizando otros componentes del circuito para acondicionar la señal.  Un circuito de filtro de paso bajo conectado a la salida del interruptor, por ejemplo, reducirá las fluctuaciones de voltaje/corriente generadas por el rebote de los contactos:</p>
+<p> <img src="04286.png"/> </p>
+<a name="Multivibrator"></a>
+<a name="One-shot"></a>
+<p>Los contactos del interruptor se pueden eliminar electrónicamente, utilizando circuitos de transistores histeréticos (circuitos que se "bloquean" en un estado alto o bajo) con retardos de tiempo incorporados (llamados circuitos "de un solo disparo") o dos entradas controladas por un interruptor de doble tiro.  Estos circuitos histeréticos, llamados<i>multivibradores</i>, se analizan en detalle en un capítulo posterior.</p>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="DIGI_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="DIGI_3.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="DIGI_5.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

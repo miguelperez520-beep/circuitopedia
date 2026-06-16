@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen III (Semiconductores) - Capítulo 1 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #10b981; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen III (Semiconductores) - Capítulo 1</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen III</h1>
+<h1>Capítulo 1</h1>
+<h1>AMPLIFICADORES Y DISPOSITIVOS ACTIVOS</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid90090"><u>From electric to electronic</u></a></li>
+<li><a href="#xtocid90091"><u>Active versus passive devices</u></a></li>
+<li><a href="#xtocid90092"><u>Amplifiers</u></a></li>
+<li><a href="#xtocid90093"><u>Amplifier gain</u></a></li>
+<li><a href="#xtocid90094"><u>Decibels</u></a></li>
+<li><a href="#xtocid90095"><u>Absolute dB scales</u></a></li>
+<li><a href="#xtocid90096"><u>Attenuators</u></a></li>
+<ul>
+<li><a href="#xtocid90097"><u>Decibels</u></a></li>
+<li><a href="#xtocid90098"><u>T-section attenuator</u></a></li>
+<li><a href="#xtocid90099"><u>PI-section attenuator</u></a></li>
+<li><a href="#xtocid900910"><u>L-section attenuator</u></a></li>
+<li><a href="#xtocid900911"><u>Bridged T attenuator</u></a></li>
+<li><a href="#xtocid900912"><u>Cascaded sections </u></a></li>
+<li><a href="#xtocid900913"><u>RF attenuators</u></a></li>
+</ul>
+<li><a href="#xtocid900914"><u>Contributors</u></a></li></ul>
+<h2><u><a name="xtocid90090">From electric to electronic</a></u></h2>
+<p>Este tercer volumen de la serie de libros.<i>Lecciones en circuitos eléctricos</i>se aparta de los dos primeros en que la transición entre<i>eléctrico</i>circuitos y<i>electrónico</i>Los circuitos se cruzan formalmente.  Los circuitos eléctricos son conexiones de cables conductores y otros dispositivos mediante los cuales se produce el flujo uniforme de electrones.  Los circuitos electrónicos añaden una nueva dimensión a los circuitos eléctricos en el sentido de que algunos medios de<i>control</i>Se ejerce sobre el flujo de electrones por otra señal eléctrica, ya sea un voltaje o una corriente.</p>
+<p>En sí mismo, el control del flujo de electrones no es nada nuevo para el estudiante de circuitos eléctricos.  Los interruptores controlan el flujo de electrones, al igual que los potenciómetros, especialmente cuando se conectan como resistencias variables (reostatos).  Ni el interruptor ni el potenciómetro deberían ser nuevos para su experiencia en este punto de su estudio.  El umbral que marca la transición de lo eléctrico a lo electrónico, entonces, está definido por<i>how</i>el flujo de electrones está controlado en lugar de si existe o no alguna forma de control en un circuito.  Los interruptores y reóstatos controlan el flujo de electrones según el posicionamiento de un dispositivo mecánico, que es accionado por alguna fuerza física externa al circuito.  En electrónica, sin embargo, se trata de dispositivos especiales capaces de controlar el flujo de electrones según otro flujo de electrones o mediante la aplicación de una tensión estática.  En otras palabras, en un circuito electrónico,<i>La electricidad es capaz de controlar la electricidad.</i>.
+</p>
+<p>El precursor histórico de la era de la electrónica moderna fue inventado por Thomas Edison en 1880 mientras desarrollaba la lámpara incandescente eléctrica. Edison descubrió que una pequeña corriente pasaba desde el filamento calentado de la lámpara a una placa metálica montada dentro de la envoltura de vacío.  (Cifra<a href="#03375.png">  below</a>(a)) Hoy esto se conoce como el “efecto Edison”. Tenga en cuenta que la batería sólo es necesaria para calentar el filamento. Los electrones seguirían fluyendo si se utilizara una fuente de calor no eléctrica.</p>
+<a name="03375.png"></a>
+<p> <img src="03375.png"/> </p>
+<p><i>(a) Efecto Edison, (b) Válvula Fleming o diodo de vacío, (c) Amplificador de válvulas de vacío con triodo audion DeForest.</i></p>
+<p>En 1904, el asesor de Marconi Wireless Company, John Flemming, descubrió que una corriente aplicada externamente (batería de placas) solo pasaba en una dirección desde el filamento a la placa (Figura<a href="#03375.png">  above</a>(b)), pero no en la dirección inversa (no se muestra).<!--Split for multiple references cannot have two without cr at end-->Este invento fue el diodo de vacío, utilizado para convertir corrientes alternas en CC. La adición de un tercer electrodo por Lee DeForest (Figura<a href="#03375.png">  above</a>(c)) permitió que una pequeña señal controlara el flujo de electrones más grande desde el filamento a la placa.</p>
+<p>Históricamente, la era de la electrónica comenzó con la invención del<i>tubo de audio</i>, un dispositivo que controla el flujo de una corriente de electrones a través del vacío mediante la aplicación de un pequeño voltaje entre dos estructuras metálicas dentro del tubo.  Un resumen más detallado de los llamados<i>tubo de electrones</i> or <i>tubo vacío</i>La tecnología está disponible en el último capítulo de este volumen para aquellos que estén interesados.</p>
+<a name="Solid-state"></a>
+<p>La tecnología electrónica experimentó una revolución en 1948 con la invención del<i>transistor</i>.  Este pequeño dispositivo logró aproximadamente el mismo efecto que el tubo Audion, pero en una cantidad de espacio mucho menor y con menos material.  Los transistores controlan el flujo de electrones a través de un sólido.<i>semiconductor</i>sustancias en lugar de a través del vacío, por lo que la tecnología de transistores a menudo se denomina<i>estado sólido</i>electrónica.</p>
+<h2><u><a name="xtocid90091">Active versus passive devices</a></u></h2>
+<a name="Active device"></a>
+<a name="Passive device"></a>
+<a name="Saturable reactor"></a>
+<p>
+An <i>activo</i>dispositivo es cualquier tipo de componente de circuito con la capacidad de controlar eléctricamente el flujo de electrones (electricidad que controla la electricidad).  Para que un circuito se llame correctamente<i>electrónico</i>, debe contener al menos un dispositivo activo.  Los componentes incapaces de controlar la corriente mediante otra señal eléctrica se denominan<i>pasivo</i>dispositivos.  Las resistencias, los condensadores, los inductores, los transformadores e incluso los diodos se consideran dispositivos pasivos.  Los dispositivos activos incluyen, entre otros, tubos de vacío, transistores, rectificadores controlados por silicio (SCR) y TRIAC.  Se podría argumentar que el reactor saturable se define como un dispositivo activo, ya que es capaz de controlar una corriente CA con una corriente CC, pero nunca escuché que se haga referencia a él como tal.  El funcionamiento de cada uno de estos dispositivos activos se explorará en capítulos posteriores de este volumen.</p>
+<p>Todos los dispositivos activos controlan el flujo de electrones a través de ellos.  Algunos dispositivos activos permiten que un voltaje controle esta corriente, mientras que otros dispositivos activos permiten que otra corriente haga el trabajo.  Los dispositivos que utilizan un voltaje estático como señal de control se denominan, como es lógico,<i>controlado por voltaje</i>dispositivos.  Los dispositivos que funcionan según el principio de una corriente que controla otra corriente se conocen como<i>controlado por corriente</i>dispositivos.  Para que conste, los tubos de vacío son dispositivos controlados por voltaje, mientras que los transistores se fabrican como tipos controlados por voltaje o controlados por corriente.  El primer tipo de transistor demostrado con éxito fue un dispositivo controlado por corriente.</p>
+<h2><u><a name="xtocid90092">Amplifiers</a></u></h2>
+<p>El beneficio práctico de los dispositivos activos es su<i>amplificando</i>capacidad.  Ya sea que el dispositivo en cuestión esté controlado por voltaje o por corriente, la cantidad de potencia requerida de la señal de control es típicamente mucho menor que la cantidad de potencia disponible en la corriente controlada.  En otras palabras, un dispositivo activo no sólo permite que la electricidad controle la electricidad; permite un<i>pequeño</i>cantidad de electricidad para controlar un<i>grande</i>cantidad de electricidad.</p>
+<a name="Amplification, definition"></a>
+<p>Debido a esta disparidad entre<i>controlador</i> and <i>revisado</i>potencias, se pueden emplear dispositivos activos para gobernar una gran cantidad de potencia (controlada) mediante la aplicación de una pequeña cantidad de potencia (control).  Este comportamiento se conoce como<i>amplificación</i>.
+</p>
+<p>Es una regla fundamental de la física que la energía no se puede crear ni destruir.  Formalmente, esta regla se conoce como Ley de Conservación de la Energía y hasta la fecha no se han descubierto excepciones a ella.  Si esta Ley es cierta (y una abrumadora masa de datos experimentales sugiere que lo es), entonces es imposible construir un dispositivo capaz de tomar una pequeña cantidad de energía y transformarla mágicamente en una gran cantidad de energía.  Todas las máquinas, incluidos los circuitos eléctricos y electrónicos, tienen un límite de eficiencia superior del 100 por ciento.  En el mejor de los casos, la potencia de salida es igual a la potencia de entrada, como se muestra en la Figura<a href="#03165.png">  below</a>.
+</p>
+<a name="03165.png"></a>
+<p> <img src="03165.png"/> </p>
+<p><i>La potencia de salida de una máquina puede acercarse, pero nunca exceder, la potencia de entrada para una eficiencia del 100% como límite superior.</i></p>
+<p>Por lo general, las máquinas ni siquiera logran cumplir este límite, perdiendo parte de su energía de entrada en forma de calor que se irradia al espacio circundante y, por lo tanto, no forma parte del flujo de energía de salida.  (Cifra<a href="#03166.png">  below</a>)
+</p>
+<a name="03166.png"></a>
+<p> <img src="03166.png"/> </p>
+<p><i>Una máquina realista suele perder parte de su energía de entrada en forma de calor al transformarla en el flujo de energía de salida.</i></p>
+<a name="Perpetual motion machine"></a>
+<p>Mucha gente ha intentado, sin éxito, diseñar y construir máquinas que produzcan más energía de la que absorben.<i>movimiento perpetuo</i>La máquina demostraría que la Ley de Conservación de la Energía no era una Ley después de todo, pero marcaría el comienzo de una revolución tecnológica como el mundo nunca ha visto, ya que podría alimentarse a sí misma en un bucle circular y generar un exceso de energía de forma "gratuita". (Cifra<a href="#03167.png">  below</a>)
+</p>
+<a name="03167.png"></a>
+<p> <img src="03167.png"/> </p>
+<p><i>¿La hipotética “máquina de movimiento perpetuo” se alimenta a sí misma?</i></p>
+<a name="Over-unity machine"></a>
+<p>A pesar de muchos esfuerzos y muchas afirmaciones sin escrúpulos de “energía libre” o<i>sobreunidad</i>máquinas, ninguna ha superado jamás la sencilla prueba de alimentarse con su propia producción de energía y generar energía de sobra.</p>
+<p>Sin embargo, existe una clase de máquinas conocidas como<i>amplificadores</i>, que son capaces de captar señales de pequeña potencia y emitir señales de mucha mayor potencia.  La clave para comprender cómo pueden existir los amplificadores sin violar la Ley de Conservación de la Energía radica en el comportamiento de los dispositivos activos.</p>
+<p>Debido a que los dispositivos activos tienen la capacidad de<i>control</i>una gran cantidad de energía eléctrica con una pequeña cantidad de energía eléctrica, se pueden disponer en un circuito para duplicar la forma de la señal de entrada de una mayor cantidad de energía suministrada por una fuente de energía externa.  El resultado es un dispositivo que parece magnificar mágicamente la potencia de una pequeña señal eléctrica (normalmente una forma de onda de voltaje CA) hasta convertirla en una forma de onda de forma idéntica y de mayor magnitud.  La Ley de Conservación de la Energía no se viola porque la energía adicional es suministrada por una fuente externa, generalmente una batería de CC o equivalente.  El amplificador no crea ni destruye energía, sino que simplemente la transforma en la forma de onda deseada, como se muestra en la Figura<a href="#03168.png">  below</a>.
+</p>
+<a name="03168.png"></a>
+<p> <img src="03168.png"/> </p>
+<p><i>Si bien un amplificador puede escalar una pequeña señal de entrada a una salida grande, su fuente de energía es una fuente de alimentación externa.</i></p>
+<p>En otras palabras, el comportamiento de control de corriente de los dispositivos activos se emplea para<i>forma</i>La energía CC de la fuente de alimentación externa adopta la misma forma de onda que la señal de entrada, lo que produce una señal de salida de forma similar pero con una magnitud de potencia diferente (mayor).  El transistor u otro dispositivo activo dentro de un amplificador simplemente forma una mayor<i>Copiar</i>de la forma de onda de la señal de entrada a partir de la energía CC “bruta” proporcionada por una batería u otra fuente de energía.</p>
+<p>Los amplificadores, como todas las máquinas, tienen una eficiencia limitada a un máximo del 100 por ciento.  Normalmente, los amplificadores electrónicos son mucho menos eficientes y disipan cantidades considerables de energía en forma de calor residual.  Debido a que la eficiencia de un amplificador es siempre del 100 por ciento o menos, nunca se puede hacer que funcione como un dispositivo de “movimiento perpetuo”.</p>
+<p>El requisito de una fuente de alimentación externa es común a todos los tipos de amplificadores, eléctricos y no eléctricos.  Un ejemplo común de un sistema de amplificación no eléctrico sería la dirección asistida de un automóvil, que amplifica la potencia de los brazos del conductor al girar el volante para mover las ruedas delanteras del automóvil.  La fuente de energía necesaria para la amplificación proviene del motor.  El dispositivo activo que controla la “señal de entrada” del conductor es una válvula hidráulica que transporta la energía del fluido desde una bomba conectada al motor a un pistón hidráulico que asiste el movimiento de las ruedas.  Si el motor deja de funcionar, el sistema de amplificación no logra amplificar la potencia del brazo del conductor y resulta muy difícil girar el automóvil.</p>
+<h2><u><a name="xtocid90093">Amplifier gain</a></u></h2>
+<a name="Gain"></a>
+<p>Debido a que los amplificadores tienen la capacidad de aumentar la magnitud de una señal de entrada, es útil poder calificar la capacidad de amplificación de un amplificador en términos de una relación salida/entrada.  El término técnico para la relación de magnitud de salida/entrada de un amplificador es<i>ganar</i>.  Como relación de unidades iguales (salida/entrada de energía, salida de voltaje/entrada de voltaje, o salida de corriente/entrada de corriente), la ganancia es, naturalmente, una medida sin unidades.  Matemáticamente, la ganancia está simbolizada por la letra mayúscula "A".</p>
+<p>Por ejemplo, si un amplificador recibe una señal de voltaje de CA que mide 2 voltios RMS y emite un voltaje de CA de 30 voltios RMS, tiene una ganancia de voltaje de CA de 30 dividido por 2, o 15:</p>
+<p> <img src="13025.png"/> </p>
+<p>En consecuencia, si conocemos la ganancia de un amplificador y la magnitud de la señal de entrada, podemos calcular la magnitud de la salida.  Por ejemplo, si a un amplificador con una ganancia de corriente CA de 3,5 se le da una señal de entrada CA de 28 mA RMS, la salida será 3,5 veces 28 mA, o 98 mA:</p>
+<p> <img src="13026.png"/> </p>
+<a name="Gain, AC versus DC"></a>
+<p>En los dos últimos ejemplos identifiqué específicamente las ganancias y las magnitudes de la señal en términos de "CA".  Esto fue intencional e ilustra un concepto importante: los amplificadores electrónicos a menudo responden de manera diferente a las señales de entrada de CA y CC, y pueden amplificarlas en diferentes grados.  Otra forma de decir esto es que los amplificadores suelen amplificar<i>cambios</i> or <i>variaciones</i>en la magnitud de la señal de entrada (CA) en una proporción diferente a la<i>estable</i>Magnitudes de la señal de entrada (DC).  Las razones específicas de esto son demasiado complejas para explicarlas en este momento, pero vale la pena mencionar el hecho.  Si se van a realizar cálculos de ganancia, primero se debe entender qué tipo de señales y ganancias se están tratando, CA o CC.</p>
+<p>Las ganancias de los amplificadores eléctricos se pueden expresar en términos de voltaje, corriente y/o potencia, tanto en CA como en CC.  Un resumen de las definiciones de ganancia es el siguiente.  El símbolo “delta” en forma de triángulo (Δ) representa<i>cambiar</i>en matemáticas, entonces “ΔV<sub>producción</sub>/ ΔV<sub>aporte</sub>" significa "cambio en el voltaje de salida dividido por el cambio en el voltaje de entrada" o, más simplemente, "voltaje de salida de CA dividido por el voltaje de entrada de CA":</p>
+<p> <img src="13027.png"/> </p>
+<p>Si se colocan varios amplificadores, sus respectivas ganancias forman una ganancia general igual al producto (multiplicación) de las ganancias individuales.  (Cifra<a href="#03169.png">  below</a>) 
+Si se aplicara una señal de 1 V a la entrada de la ganancia del 3 amplificador en la Figura<a href="#03169.png">  below</a>una señal de 3 V procedente del primer amplificador se amplificaría aún más con una ganancia de 5 en la segunda etapa, lo que produciría 15 V en la salida final.</p>
+<a name="03169.png"></a>
+<p> <img src="03169.png"/> </p>
+<p><i>La ganancia de una cadena de amplificadores en cascada es el producto de las ganancias individuales.</i></p>
+<h2><u><a name="xtocid90094">Decibels</a></u></h2>
+<a name="Bel"></a>
+<a name="Unit, bel"></a>
+<p>En su forma más simple, el amplificador<i>ganar</i>es una relación entre la producción y la entrada.  Como todas las razones, esta forma de ganancia no tiene unidades.  Sin embargo, existe una unidad real destinada a representar la ganancia y se llama<i>bel</i>.
+</p>
+<p>Como unidad, el bel en realidad fue ideado como una forma conveniente de representar el poder.<i>pérdida</i>en el cableado del sistema telefónico en lugar de<i>ganar</i>en amplificadores.  El nombre de la unidad deriva de Alexander Graham Bell, el famoso inventor escocés cuyo trabajo fue fundamental en el desarrollo de sistemas telefónicos.  Originalmente, la bel representaba la cantidad de pérdida de potencia de la señal debido a la resistencia sobre una longitud estándar de cable eléctrico.  Ahora, se define en términos del logaritmo común (base 10) de una relación de potencia (potencia de salida dividida por la potencia de entrada):</p>
+<p> <img src="13028.png"/> </p>
+<p>Como el bel es una unidad logarítmica, no es lineal.  Para darle una idea de cómo funciona esto, considere la siguiente tabla de cifras, comparando las pérdidas y ganancias de energía en belios con proporciones simples:</p>
+<p> <img src="13029.png"/> </p>
+<a name="Decibel"></a>
+<a name="dB"></a>
+<p>Más tarde se decidió que el bel era una unidad demasiado grande para usarse directamente, por lo que se hizo habitual aplicar el prefijo métrico<i>deci</i>(es decir, 1/10), haciéndolo<i>deci</i>belios o dB.  Ahora bien, la expresión "dB" es tan común que muchas personas no se dan cuenta de que es una combinación de "deci-" y "-bel", o que incluso existe una unidad como el "bel".  Para poner esto en perspectiva, aquí hay otra tabla que compara las relaciones de ganancia/pérdida de potencia con los decibelios:</p>
+<p> <img src="13030.png"/> </p>
+<a name="Richter scale"></a>
+<p>Como unidad logarítmica, este modo de expresión de ganancia de potencia cubre una amplia gama de proporciones con una extensión mínima de cifras.  Es razonable preguntarse: “¿por qué alguien sintió la necesidad de inventar una<i>logarítmico</i>¿Unidad para pérdida de potencia de señal eléctrica en un sistema telefónico?”  La respuesta está relacionada con la dinámica de la audición humana, cuya intensidad perceptiva es de naturaleza logarítmica.</p>
+<p>La audición humana es altamente no lineal: para duplicar la intensidad percibida de un sonido, la potencia sonora real debe multiplicarse por un factor de diez.  Relacionar la pérdida de potencia de la señal telefónica en términos de la escala logarítmica “bel” tiene mucho sentido en este contexto: una pérdida de potencia de 1 bel se traduce en una pérdida de sonido percibida del 50 por ciento, o 1/2.  Una ganancia de potencia de 1 belio se traduce en una duplicación de la intensidad percibida del sonido.</p>
+<p>Una analogía casi perfecta con la escala de Bel es la escala de Richter utilizada para describir la intensidad de un terremoto: un terremoto de 6,0 Richter es 10 veces más potente que un terremoto de 5,0 Richter; un terremoto de 7,0 Richter 100 veces más potente que un terremoto de 5,0 Richter; un terremoto de 4,0 Richter es 1/10 tan potente como un terremoto de 5,0 Richter, y así sucesivamente.  La escala de medición del pH químico también es logarítmica; una diferencia de 1 en la escala equivale a una diferencia diez veces mayor en la concentración de iones de hidrógeno de una solución química.  Una ventaja de utilizar una escala de medición logarítmica es el tremendo rango de expresión que ofrece un intervalo relativamente pequeño de valores numéricos, y es esta ventaja la que asegura el uso de los números de Richter para terremotos y el pH para la actividad de los iones de hidrógeno.</p>
+<p>Otra razón para la adopción del bel como unidad de ganancia es la simple expresión de las ganancias y pérdidas del sistema.  Considere el último ejemplo del sistema (Figura<a href="#03169.png">  above</a>) donde se conectaron dos amplificadores en tándem para amplificar una señal.  La ganancia respectiva de cada amplificador se expresó como una relación, y la ganancia general del sistema fue el producto (multiplicación) de esas dos relaciones:</p>
+<br/>
+<pre>
+
+           Overall gain = (3)(5) = 15
+
+</pre>
+<br/>
+<p>Si estas cifras representaran<i>fuerza</i>ganancias, podríamos aplicar directamente la unidad de belios a la tarea de representar la ganancia de cada amplificador, y del sistema en su conjunto.  (Cifra<a href="#03170.png">  below</a>)
+</p>
+<a name="03170.png"></a>
+<p> <img src="03170.png"/> </p>
+<p><i>La ganancia de potencia en belios es aditiva: 0,477 B + 0,699 B = 1,176 B.</i></p>
+<p>Una inspección minuciosa de estas cifras de ganancia en la unidad de “bel” arroja un descubrimiento: son aditivas.  Las cifras de ganancia de relación son multiplicativas para amplificadores por etapas, pero las ganancias se expresan en belios.<i>add</i>en vez de<i>multiplicar</i>para igualar la ganancia general del sistema.  El primer amplificador con una ganancia de potencia de 0,477 B se suma a la ganancia de potencia del segundo amplificador de 0,699 B para crear un sistema con una ganancia de potencia total de 1,176 B.</p>
+<p>Al volver a calcular los decibelios en lugar de los belios, notamos el mismo fenómeno. (Cifra<a href="#03171.png">  below</a>)
+</p>
+<a name="03171.png"></a>
+<p> <img src="03171.png"/> </p>
+<p><i>La ganancia de las etapas del amplificador en decibeles es aditiva: 4,77 dB + 6,99 dB = 11,76 dB.</i></p>
+<a name="Logarithm"></a>
+<a name="Antilogarithm"></a>
+<a name="Slide rule"></a>
+<p>Para quienes ya están familiarizados con las propiedades aritméticas de los logaritmos, esto no sorprende.  Es una regla elemental del álgebra que el antilogaritmo de la suma de los valores del logaritmo de dos números es igual al producto de los dos números originales.  En otras palabras, si tomamos dos números y determinamos el logaritmo de cada uno, luego sumamos esas dos cifras de logaritmo, luego determinamos el “antilogaritmo” de esa suma (elevamos el número base del logaritmo, en este caso, 10, a la potencia de esa suma), el resultado será el mismo que si simplemente hubiéramos multiplicado los dos números originales.  Esta regla algebraica forma el corazón de un dispositivo llamado<i>regla de cálculo</i>, una computadora analógica que podría, entre otras cosas, determinar los productos y cocientes de números mediante la suma (sumando longitudes físicas marcadas en balanzas deslizantes de madera, metal o plástico).  Dada una tabla de cifras de logaritmos, el mismo truco matemático podría usarse para realizar multiplicaciones y divisiones que de otro modo serían complejas, teniendo solo que hacer sumas y restas, respectivamente.  Con la llegada de las calculadoras digitales portátiles de alta velocidad, esta elegante técnica de cálculo prácticamente desapareció del uso popular.  Sin embargo, sigue siendo importante comprender cuándo se trabaja con escalas de medición que son de naturaleza logarítmica, como las escalas bel (decibelios) y Richter.</p>
+<p>Al convertir una ganancia de potencia de unidades de belios o decibelios a una relación sin unidades, se utiliza la función matemática inversa de los logaritmos comunes: potencias de 10, o la<i>antilogaritmo</i>.
+</p>
+<p> <img src="13042.png"/> </p>
+<p>Convertir decibeles en proporciones sin unidades para la ganancia de potencia es muy parecido, sólo se incluye un factor de división de 10 en el término del exponente:</p>
+<p> <img src="13043.png"/> </p>
+<b>Ejemplo:</b>La potencia que entra a un amplificador es de 1 vatio y la potencia de salida es de 10 vatios. Encuentre la ganancia de potencia en dB.<blockquote>
+A<sub>P(dB)</sub>= 10 registro<sub>10</sub>(P<sub>O</sub>/  PAG<sub>I</sub>) = 10 registro<sub>10</sub>(10/1) = 10 registro<sub>10</sub>(10) = 10 (1) = 10dB</blockquote>
+<b>Ejemplo:</b>Encuentre la relación de ganancia de potencia A<sub>P(ratio)</sub>= (P<sub>O</sub>/  PAG<sub>I</sub>) para una ganancia de potencia de 20 dB.<blockquote>
+A<sub>P(dB)</sub>= 20 = 10 registro<sub>10</sub>  A<sub>P(ratio)</sub>
+</blockquote>
+<blockquote>
+20/10 = log<sub>10</sub> A<sub>P(ratio)</sub>
+</blockquote>
+<blockquote>
+10<sup>20/10</sup>= 10<sup>log<sub>10</sub> (A<sub>P(ratio)</sub>)</sup>
+</blockquote>
+<blockquote>
+100 = A<sub>P(ratio)</sub>= (P<sub>O</sub> / P<sub>I</sub>)
+</blockquote>
+<a name="Joule's Law"></a>
+<p>Debido a que el bel es fundamentalmente una unidad de<i>fuerza</i>La ganancia o pérdida en un sistema, las ganancias y pérdidas de voltaje o corriente no se convierten a belios o dB de la misma manera.  Cuando usamos belios o decibelios para expresar una ganancia distinta de la potencia, ya sea voltaje o corriente, debemos realizar el cálculo en términos de cuánta ganancia de potencia habría para esa cantidad de voltaje o ganancia de corriente.  Para una impedancia de carga constante, una ganancia de voltaje o corriente de 2 equivale a una ganancia de potencia de 4 (2<sup>2</sup>); una ganancia de voltaje o corriente de 3 equivale a una ganancia de potencia de 9 (3<sup>2</sup>).  Si multiplicamos el voltaje o la corriente por un factor dado, entonces la ganancia de potencia incurrida por esa multiplicación será el cuadrado de ese factor.  Esto se relaciona con las formas de la Ley de Joule donde la potencia se calculaba a partir del voltaje o la corriente y la resistencia:</p>
+<p> <img src="13031.png"/> </p>
+<p>Por lo tanto, al traducir una ganancia de voltaje o corriente<i>relación</i>en una ganancia respectiva en términos de la unidad bel, debemos incluir este exponente en la(s) ecuación(s):</p>
+<p> <img src="13032.png"/> </p>
+<p>El mismo requisito de exponente se aplica al expresar ganancias de voltaje o corriente en términos de decibeles:</p>
+<p> <img src="13033.png"/> </p>
+<p>Sin embargo, gracias a otra propiedad interesante de los logaritmos, podemos simplificar estas ecuaciones para eliminar el exponente incluyendo el “2” como<i>factor multiplicador</i>para la función logaritmo.  En otras palabras, en lugar de tomar el logaritmo de la<i>cuadrado</i>de la ganancia de voltaje o corriente, simplemente multiplicamos el logaritmo de la ganancia de voltaje o corriente por 2 y el resultado final en belios o decibeles será el mismo:</p>
+<p> <img src="13034.png"/> </p>
+<p>El proceso de convertir ganancias de voltaje o corriente de belios o decibeles a proporciones sin unidades es muy similar al de las ganancias de potencia:</p>
+<p> <img src="13044.png"/> </p>
+<p>Aquí están las ecuaciones utilizadas para convertir ganancias de voltaje o corriente en decibeles en proporciones sin unidades:</p>
+<p> <img src="13045.png"/> </p>
+<a name="Neper"></a>
+<a name="Unit, neper"></a>
+<p>Si bien el bel es una unidad escalada naturalmente para potencia, se ha inventado otra unidad logarítmica para expresar directamente las ganancias/pérdidas de voltaje o corriente, y se basa en el<i>natural</i>logaritmo en lugar de<i>común</i>logaritmo como lo son los belios y los decibelios.  llamado el<i>neper</i>, su símbolo de unidad es “N<sub>p</sub>; sin embargo, es posible que se encuentre una “n” minúscula.</p>
+<p> <img src="13035.png"/> </p>
+<a name="Decineper"></a>
+<a name="Unit, decineper"></a>
+<a name="dn"></a>
+<p>Para bien o para mal, ni el neper ni su primo atenuado, el<i>descifrador</i>, se utiliza popularmente como unidad en aplicaciones de ingeniería estadounidenses.</p>
+<p>
+<b>Ejemplo:</b>El voltaje en un amplificador de línea de audio de 600 Ω es de 10 mV, el voltaje en una carga de 600 Ω es de 1 V. Encuentre la ganancia de potencia en dB.</p>
+<blockquote>
+A<sub>(dB)</sub>= 20 registro<sub>10</sub>(V<sub>O</sub>/V<sub>I</sub>) = 20 registro<sub>10</sub>(1/0,01) = 20 registro<sub>10</sub>(100) = 20 (2) = 40dB</blockquote>
+<p>
+<b>Ejemplo:</b>Encuentre la relación de ganancia de voltaje A<sub>V(ratio)</sub>= (V<sub>O</sub>/V<sub>I</sub>) para un amplificador de ganancia de 20 dB con una impedancia de entrada y salida de 50 Ω.</p>
+<blockquote>
+A<sub>V(dB)</sub>= 20 registro<sub>10</sub>  A<sub>V(ratio)</sub>
+</blockquote>
+<blockquote>
+ 20 = 20 log<sub>10</sub>  A<sub>V(ratio)</sub>
+</blockquote>
+<blockquote>
+20/20 = log<sub>10</sub> A<sub>P(ratio)</sub>
+</blockquote>
+<blockquote>
+10<sup>20/20</sup>= 10<sup>log<sub>10</sub> (A<sub>V(ratio)</sub>)</sup>
+</blockquote>
+<blockquote>
+10 = A<sub>V(ratio)</sub>= (V<sub>O</sub> / V<sub>I</sub>)
+</blockquote>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Las ganancias y pérdidas pueden expresarse en términos de una relación sin unidades, o en la unidad de belios (B) o decibelios (dB).  Un decibelio es literalmente un<i>deci</i>-bel: una décima parte de un bel.</li>
+<li>El bel es fundamentalmente una unidad de expresión.<i>fuerza</i>ganancia o pérdida.  Para convertir una relación de potencia a belios o decibelios, utilice una de estas ecuaciones:</li>
+<li><p> <img src="13036.png"/> </p></li>
+<li>Cuando se utiliza la unidad de belio o decibelio para expresar una<i>Voltaje</i> or <i>actual</i>relación, debe expresarse en términos de un equivalente<i>fuerza</i>relación.  En la práctica, esto significa el uso de diferentes ecuaciones, con un factor de multiplicación de 2 para el valor del logaritmo correspondiente a un exponente de 2 para la relación de ganancia de tensión o corriente:</li>
+<li><p> <img src="13037.png"/> </p></li>
+<li>Para convertir una ganancia de decibeles en una ganancia de relación sin unidades, utilice una de estas ecuaciones:</li>
+<li><p> <img src="13046.png"/> </p></li>
+<li>Una ganancia (amplificación) se expresa como un belio o decibelio positivo.  Una pérdida (atenuación) se expresa como una cifra negativa en belios o decibeles.  La ganancia unitaria (sin ganancia ni pérdida; relación = 1) se expresa como cero belios o cero decibeles.</li>
+<li>Al calcular la ganancia general para un sistema amplificador compuesto por múltiples etapas de amplificador, las relaciones de ganancia individuales son<i>multiplicado</i>para encontrar la relación de ganancia general.  Por otra parte, las cifras de belios o decibeles para cada etapa del amplificador son<i>agregado</i>juntos para determinar la ganancia general.</li>
+</ul>
+<h2><u><a name="xtocid90095">Absolute dB scales</a></u></h2>
+<a name="dB, sound measurements"></a>
+<a name="Sound intensity measurement"></a>
+<p>También es posible utilizar el decibelio como unidad de potencia absoluta, además de utilizarlo como expresión de ganancia o pérdida de potencia.  Un ejemplo común de esto es el uso de decibelios como medida de la intensidad de la presión sonora.  En casos como estos, la medición se realiza en referencia a algún nivel de potencia estandarizado definido como 0 dB.  Para las mediciones de presión sonora, 0 dB se define vagamente como el umbral inferior de la audición humana, cuantificado objetivamente como 1 picovatio de potencia sonora por metro cuadrado de área.</p>
+<p>Un sonido que mide 40 dB en la escala de decibeles sería 10<sup>4</sup>veces mayor que el umbral de audición.  Un sonido de 100 dB sería 10<sup>10</sup>(diez mil millones) de veces mayor que el umbral de audición.</p>
+<a name="A-weighted dB scale"></a>
+<a name="dBA"></a>
+<p>Debido a que el oído humano no es igualmente sensible a todas las frecuencias del sonido, se han desarrollado variaciones de la escala de potencia sonora en decibelios para representar intensidades de sonido fisiológicamente equivalentes en diferentes frecuencias.  Algunos instrumentos de intensidad de sonido estaban equipados con redes de filtros para dar indicaciones desproporcionadas en toda la escala de frecuencia, con el fin de representar mejor los efectos del sonido en el cuerpo humano.  Tres escalas filtradas se conocieron comúnmente como escalas ponderadas “A”, “B” y “C”.  Las indicaciones de intensidad del sonido en decibelios medidas a través de estas respectivas redes de filtrado se dieron en unidades de dBA, dBB y dBC.  Hoy en día, la “escala ponderada A” se utiliza más comúnmente para expresar el impacto fisiológico equivalente en el cuerpo humano y es especialmente útil para calificar fuentes de ruido peligrosamente fuertes.</p>
+<a name="dB, absolute power measurements"></a>
+<a name="dBm"></a>
+<p>Se ha establecido otro sistema estándar de medición de potencia en la unidad de decibeles para su uso en sistemas de telecomunicaciones.  Esto se llama el<i>dBm</i>escala. (Cifra<a href="#13057.png">  below</a>) El punto de referencia, 0 dBm, se define como 1 milivatio de potencia eléctrica disipada por una carga de 600 Ω.  Según esta escala, 10 dBm equivalen a 10 veces la potencia de referencia, o 10 milivatios; 20 dBm equivalen a 100 veces la potencia de referencia, o 100 milivatios.  Algunos voltímetros de CA vienen equipados con un rango o escala de dBm (a veces denominado "DB") destinado a medir la potencia de la señal de CA a través de una carga de 600 Ω.  0 dBm en esta escala está, por supuesto, elevado por encima de cero porque representa algo mayor que 0 (en realidad, representa 0,7746 voltios en una carga de 600 Ω, siendo el voltaje igual a la raíz cuadrada de la potencia multiplicada por la resistencia; la raíz cuadrada de 0,001 multiplicada por 600).  Cuando se ve en el frente del movimiento de un medidor analógico, esta escala de dBm aparece comprimida en el lado izquierdo y expandida en el derecho de una manera similar a una escala de resistencia, debido a su naturaleza logarítmica.</p>
+<p>Las mediciones de potencia de radiofrecuencia para señales de bajo nivel encontradas en receptores de radio utilizan mediciones de dBm referidas a una carga de 50 Ω.  Los generadores de señales para la evaluación de receptores de radio pueden emitir una señal nominal ajustable en dBm. El nivel de la señal se selecciona mediante un dispositivo llamado atenuador, que se describe en la siguiente sección.</p>
+<a name="13057.png"></a>
+<p> <img src="13057.png"/> </p>
+<p><i>Niveles de potencia absolutos en dBm (decibelios referidos a 1 milivatio).</i></p>
+<a name="VU scale"></a>
+<a name="Volume units"></a>
+<p>Una adaptación de la escala dBm para la intensidad de la señal de audio se utiliza en la grabación de estudio y en la ingeniería de transmisión para estandarizar los niveles de volumen, y se llama escala<i>VU</i>escala.  Los vúmetros se ven con frecuencia en instrumentos de grabación electrónicos para indicar si la señal grabada excede o no el límite máximo de nivel de señal del dispositivo, donde se producirá una distorsión significativa.  Esta escala de “indicador de volumen” está calibrada de acuerdo con la escala dBm, pero no indica directamente dBm para ninguna señal que no sean tonos de onda sinusoidal constante.  La unidad de medida adecuada para un vúmetro es<i>unidades de volumen</i>.
+</p>
+<a name="dB, absolute power measurements"></a>
+<a name="dBW"></a>
+<a name="dBk"></a>
+<p>Cuando se trata de señales relativamente grandes, y una escala absoluta de dB sería útil para representar el nivel de la señal, a veces se utilizan escalas de decibeles especializadas con puntos de referencia mayores que 1 mW utilizado en dBm.  Tal es el caso de la<i>dBW</i>escala, con un punto de referencia de 0 dBW establecido en 1 Watt.  Otra medida absoluta de poder llamada<i>dBk</i>la escala hace referencia a 0 dBk a 1 kW o 1000 vatios.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>La unidad de belio o decibelio también se puede utilizar para representar una medida absoluta de potencia en lugar de solo una ganancia o pérdida relativa.  Para las mediciones de potencia sonora, 0 dB se define como un punto de referencia estandarizado de potencia igual a 1 picovatio por metro cuadrado.  Otra escala de dB adecuada para mediciones de intensidad de sonido está normalizada a los mismos efectos fisiológicos que un tono de 1000 Hz y se llama<i>dBA</i>escala.  En este sistema, 0 dBA se define como cualquier sonido de frecuencia que tenga la misma equivalencia fisiológica que un tono de 1 picovatio por metro cuadrado a 1000 Hz.</li>
+<li>Se ha creado una escala eléctrica de dB con un punto de referencia absoluto para su uso en sistemas de telecomunicaciones.  llamado el<i>dBm</i>escala, su punto de referencia de 0 dBm se define como 1 milivatio de potencia de señal de CA disipada por una carga de 600 Ω.</li>
+<li>A <i>VU</i>El medidor lee el nivel de la señal de audio según los dBm para señales de onda sinusoidal.  Debido a que su respuesta a señales distintas a las ondas sinusoidales estables no es la misma que la del dBm verdadero, su unidad de medida es<i>unidades de volumen</i>.</li>
+<li>Se han inventado escalas de dB con puntos de referencia absolutos mayores que la escala de dBm para señales de alta potencia.  El<i>dBW</i>La escala tiene su punto de referencia de 0 dBW definido como 1 vatio de potencia.  El<i>dBk</i>La báscula fija 1 kW (1000 Watts) como referencia del punto cero.</li>
+</ul>
+<h2><u><a name="xtocid90096">Attenuators</a></u></h2>
+<a name="Attenuator"></a>
+<p>Los atenuadores son dispositivos pasivos. Conviene comentarlos junto con los decibeles. Los atenuadores se debilitan o<i>atenuar</i>la salida de alto nivel de un generador de señal, por ejemplo, para proporcionar una señal de nivel más bajo para algo como la entrada de antena de un receptor de radio sensible.  (Cifra<a href="#03376.png">  below</a>) El atenuador podría estar integrado en el generador de señal o ser un dispositivo independiente. Podría proporcionar una cantidad de atenuación fija o ajustable. Una sección de atenuador también puede proporcionar aislamiento entre una fuente y una carga problemática.</p>
+<a name="03376.png"></a>
+<p> <img src="03376.png"/> </p>
+<p><i>El atenuador de impedancia constante se adapta a la impedancia de la fuente Z<sub>I</sub>y la impedancia de carga Z<sub>O</sub>. Para equipos de radiofrecuencia Z es 50 Ω.</i></p>
+<p>En el caso de un atenuador independiente, se debe colocar en serie entre la fuente de señal y la carga abriendo la ruta de la señal como se muestra en la Figura<a href="#03376.png">  above</a>. Además, debe coincidir tanto con la impedancia de la fuente<b>Z<sub>I</sub></b>y la impedancia de carga<b>Z<sub>O</sub></b>, al tiempo que proporciona una cantidad específica de atenuación. En esta sección solo consideraremos el caso especial y más común donde las impedancias de fuente y carga son iguales. No consideradas en esta sección, las impedancias desiguales de fuente y carga pueden igualarse mediante una sección de atenuador. Sin embargo, la formulación es más compleja.</p>
+<a name="03377.png"></a>
+<p> <img src="03377.png"/> </p>
+<p><i>Los atenuadores de sección T y sección Π son formas comunes.</i></p>
+<a name="T-network "></a>
+<a name="PI-network "></a>
+<p>Las configuraciones comunes son las<b>T</b> and <b>Π</b>redes mostradas en la figura<a href="#03377.png">  above</a>
+<!--Split for multiple ref'f in one paragraph.-->Se pueden conectar en cascada múltiples secciones de atenuador cuando se necesitan señales aún más débiles, como se muestra en la Figura<a href="#03385.png">  below</a>.
+</p>
+<h3><u><a name="xtocid90097">Decibels</a></u></h3>
+<a name="Decibels, attenuator"></a>
+<p>Las relaciones de voltaje, tal como se utilizan en el diseño de atenuadores, a menudo se expresan en términos de decibeles. La relación de voltaje (K a continuación) debe derivarse de la atenuación en decibeles. Las relaciones de potencia expresadas en decibelios son aditivas. Por ejemplo, un atenuador de 10 dB seguido de un atenuador de 6 dB proporciona 16 dB de atenuación general.</p>
+<blockquote>
+10 dB + 6 db = 16 dB
+</blockquote>
+<p>Los cambios en los niveles de sonido son perceptibles aproximadamente proporcionales al logaritmo de la relación de potencia (P<sub>I</sub> / P<sub>O</sub>).
+</p>
+<blockquote>nivel de sonido = registro<sub>10</sub>(P<sub>I</sub> / P<sub>O</sub>)
+</blockquote>
+<p>Un cambio de 1 dB en el nivel de sonido es apenas perceptible para el oyente, mientras que un cambio de 2 dB es fácilmente perceptible. Una atenuación de 3 dB corresponde a reducir la potencia a la mitad, mientras que una ganancia de 3 db corresponde a duplicar el nivel de potencia. Una ganancia de -3 dB equivale a una atenuación de +3 dB, correspondiente a la mitad del nivel de potencia original.</p>El cambio de potencia en decibeles en términos de relación de potencia es:<blockquote>
+dB = 10 log<sub>10</sub>(P<sub>I</sub> / P<sub>O</sub>)
+</blockquote>Suponiendo que la carga R<sub>I</sub>en P<sub>I</sub>es igual que la resistencia de carga R<sub>O</sub>en P<sub>O</sub> (R<sub>I</sub> = R<sub>O</sub>), los decibeles pueden derivarse de la relación de voltaje (V<sub>I</sub>/V<sub>O</sub>) o ratio circulante (I<sub>I</sub> / I<sub>O</sub>):
+<blockquote>
+P<sub>O</sub> = V <sub>O</sub>  I<sub>O</sub> = V<sub>O</sub><sup>2</sup>/ R = yo<sub>O</sub><sup>2</sup> R
+</blockquote>
+<blockquote>
+P<sub>I</sub> = V<sub> I</sub> I<sub>I</sub> = V<sub>I</sub><sup>2</sup>/ R = yo<sub>I</sub><sup>2</sup> R
+</blockquote>
+<blockquote>
+dB = 10 log<sub>10</sub>(P<sub>I</sub>/  PAG<sub>O</sub>) = 10 registro<sub>10</sub>(V<sub>I</sub><sup>2</sup> / V<sub>O</sub><sup>2</sup>) = 20 registro<sub>10</sub>(V<sub>I</sub>/V<sub>O</sub>)
+</blockquote>
+<blockquote>dB = 10 log<sub>10</sub>(P<sub>I</sub>/  PAG<sub>O</sub>) = 10 registro<sub>10</sub>(I<sub>I</sub><sup>2</sup> / I<sub>O</sub><sup>2</sup>) = 20 registro<sub>10</sub>(I<sub>I</sub>/I<sub>O</sub>)
+</blockquote>
+<p>Las dos formas más utilizadas de la ecuación de decibelios son:</p>
+<blockquote>
+dB = 10 log<sub>10</sub>(P<sub>I</sub>/  PAG<sub>O</sub>)      o         dB = 20 log<sub>10</sub>(V<sub>I</sub>/V<sub>O</sub>)
+</blockquote>
+<p>Usaremos la última forma, ya que necesitamos la relación de voltaje. Una vez más, la forma de ecuación de relación de voltaje solo es aplicable cuando las dos resistencias correspondientes son iguales. Es decir, la resistencia de la fuente y la carga deben ser iguales.</p>
+<p>
+<b>Ejemplo:</b>La potencia de entrada a un atenuador es de 10 vatios y la potencia de salida es de 1 vatio. Encuentre la atenuación en dB.</p>
+<blockquote>
+dB = 10 log<sub>10</sub>(P<sub>I</sub>/  PAG<sub>O</sub>) = 10 registro<sub>10</sub>(10/1) = 10 registro<sub>10</sub>(10) = 10 (1) = 10dB</blockquote>
+<p>
+<b>Ejemplo:</b>Encuentre la relación de atenuación de voltaje (K= (V<sub>I</sub>/V<sub>O</sub>)) para un atenuador de 10 dB.</p>
+<blockquote>
+dB = 10= 20 log<sub>10</sub>(V<sub>I</sub>/V<sub>O</sub>)
+</blockquote>
+<blockquote>
+10/20 = log<sub>10</sub>(V<sub>I</sub>/V<sub>O</sub>)
+</blockquote>
+<blockquote>10<sup>10/20</sup>= 10<sup>log<sub>10</sub>(V<sub>I</sub> / V<sub>O</sub>)</sup></blockquote>
+<blockquote>
+3.16 = (V<sub>I</sub> / V<sub>O</sub>) = Un<sub>P(ratio)</sub>
+</blockquote>
+<p>
+<b>Ejemplo:</b>La potencia que entra a un atenuador es de 100 milivatios y la potencia de salida es de 1 milivatio. Encuentre la atenuación en dB.</p>
+<blockquote>
+dB = 10 log<sub>10</sub>(P<sub>I</sub> / P<sub>O</sub>) = 10 registro<sub>10</sub>(100/1) = 10 registro<sub>10</sub>(100) = 10 (2) = 20dB</blockquote>
+<p>
+<b>Ejemplo:</b>Encuentre la relación de atenuación de voltaje (K= (V<sub>I</sub> / V<sub>O</sub>)) para un atenuador de 20 dB.</p>
+<blockquote>
+dB = 20= 20 log<sub>10</sub>(V<sub>I</sub> / V<sub>O</sub> )
+</blockquote>
+<blockquote>10<sup>20/20</sup>= 10<sup> log<sub>10</sub>(V<sub>I</sub> / V<sub>O</sub> )</sup></blockquote>
+<blockquote>
+10 = (V<sub>I</sub> / V<sub>O</sub>) = k</blockquote>
+<h3><u><a name="xtocid90098">T-section attenuator</a></u></h3>
+<a name="Attenuator, T"></a>
+<p>Los atenuadores T y Π deben conectarse a un<b>Z</b>fuente y<b>Z</b>Impedancia de carga. El<b>Z</b>-(las flechas) que apuntan en dirección opuesta al atenuador en la siguiente figura indican esto. El<b>Z</b>-(flechas) que apuntan hacia el atenuador indican que la impedancia vista mirando hacia el atenuador con una carga Z en el extremo opuesto es Z, Z=50 Ω para nuestro caso. Esta impedancia es constante (50 Ω) con respecto a la atenuación; la impedancia no cambia cuando se cambia la atenuación.</p>
+<p>La tabla en la figura<a href="#03378.png">  below</a>enumera los valores de resistencia para el<b>T</b> and <b>Π</b>atenuadores para adaptarse a una fuente/carga de 50 Ω, como es el requisito habitual en el trabajo de radiofrecuencia.</p>
+<p>Los servicios telefónicos y otros trabajos de audio a menudo requieren una adaptación a 600 Ω. multiplicar todo<b>R</b>valores según la relación (600/50) para corregir la coincidencia de 600 Ω. Multiplicar por 75/50 convertiría los valores de la tabla para que coincidan con una fuente y carga de 75 Ω.</p>
+<a name="03378.png"></a>
+<p> <img src="03378.png"/> </p>
+<p><i>Fórmulas para resistencias atenuadoras de sección en T, dada K, la relación de atenuación de voltaje y Z<sub>I</sub> = Z<sub>O</sub>= 50 Ω.</i></p>
+<p>La cantidad de atenuación suele especificarse en dB (decibelios). Sin embargo, necesitamos la relación de voltaje (o corriente)<b>K</b>para encontrar los valores de resistencia a partir de ecuaciones. Ver el<b>dB/20</b>término en poder de<b>10</b>término para calcular la relación de voltaje<b>K</b>desde dB, arriba.</p>
+<p>
+The <b>T</b>(y debajo<b>Π</b>) las configuraciones se utilizan con mayor frecuencia ya que proporcionan coincidencia bidireccional. Es decir, la entrada y salida del atenuador se pueden intercambiar de un extremo a otro y aún así coincidir con las impedancias de fuente y carga mientras se proporciona la misma atenuación.</p>
+<p>Desconectando la fuente y mirando hacia la derecha en<b>V<sub>I</sub></b>, necesitamos ver una combinación en serie paralela de<b>R<sub>1</sub></b>, <b>R<sub>2</sub></b>,  <b>R<sub>1</sub></b>, y<b>Z</b>pareciendo una resistencia equivalente a<b>Z<sub>IN</sub></b>, igual que la impedancia de fuente/carga Z: (una carga de Z está conectada a la salida).</p>
+<blockquote>
+Z<sub>IN</sub> = R<sub>1</sub>+ (R<sub>2</sub>||(R<sub>1</sub>+Z))</blockquote>
+<p>Por ejemplo, sustituya los valores de 10 dB de la tabla de atenuadores de 50 Ω por<b>R<sub>1</sub></b>  and <b>R<sub>2</sub></b>como se muestra en la figura<a href="#03379.png">  below</a>.
+</p>
+<blockquote>
+Z<sub>IN</sub>= 25,97 + (35,14 ||(25,97 + 50))</blockquote>
+<blockquote>
+Z<sub>IN</sub>= 25,97 + (35,14 || 75,97 )</blockquote>
+<blockquote>
+Z<sub>IN</sub>= 25,97 + 24,03 = 50</blockquote>
+<p>Esto nos muestra que vemos 50 Ω mirando directamente al atenuador de ejemplo (Figura<a href="#03379.png">  below</a>) con una carga de 50 Ω.</p>
+<p>Reemplazo del generador fuente, desconectando la carga.<b>Z</b> at <b>V<sub>O</sub></b>, y mirando hacia la izquierda, debería darnos la misma ecuación que la anterior para la impedancia en<b>V<sub>O</sub></b>, debido a la simetría.  Además, las tres resistencias deben tener valores que suministren la atenuación requerida de entrada a salida. Esto se logra mediante las ecuaciones para<b>R<sub>1</sub></b> and  <b>R<sub>2</sub></b>arriba como se aplica a la<b>T</b>-atenuador abajo.</p>
+<a name="03379.png"></a>
+<p> <img src="03379.png"/> </p>
+<p><i>10 dB T-section attenuator for insertion between a 50 Ω source and load.</i></p>
+<p>
+</p>
+<br/>
+<h3><u><a name="xtocid90099">PI-section attenuator</a></u></h3>
+<a name="Attenuator, PI"></a>
+<p>La tabla en la figura<a href="#03380.png">  below</a>enumera los valores de resistencia para el<b>Π</b>atenuador que coincide con una fuente/carga de 50 Ω en algunos niveles de atenuación comunes. Las resistencias correspondientes a otros niveles de atenuación pueden calcularse a partir de las ecuaciones.</p>
+<a name="03380.png"></a>
+<p> <img src="03380.png"/> </p>
+<p><i>Fórmulas para resistencias atenuadoras de sección Π, dada K, la relación de atenuación de voltaje y Z<sub>I</sub> = Z<sub>O</sub>= 50 Ω.</i></p>
+<p>Lo anterior se aplica al atenuador π siguiente.</p>
+<p>¿Qué valores de resistencia se requerirían tanto para el<b>Π</b>¿Atenuadores para 10 dB de atenuación que coincidan con una fuente y carga de 50 Ω?</p>
+<a name="03381.png"></a>
+<p> <img src="03381.png"/> </p>
+<p><i>10 dB Π-section attenuator example for matching a 50 Ω source and load.</i></p>
+<p>
+The <b>10 dB</b>corresponde a una relación de atenuación de tensión de<b>K=3.16</b>en la penúltima línea de la tabla anterior. Transfiera los valores de resistencia en esa línea a las resistencias en el diagrama esquemático de la Figura<a href="#03381.png">  above</a>.
+</p>
+<h3><u><a name="xtocid900910">L-section attenuator</a></u></h3>
+<a name="Attenuator, L"></a>
+<p>La tabla en la figura<a href="#03382.png">  below</a>enumera los valores de resistencia para el<b>L</b>atenuadores para que coincidan con una fuente/carga de 50 Ω.<!--Split for multiple references cannot have two without cr at end-->La tabla en la figura<a href="#03383.png">  below</a>enumera los valores de resistencia para una forma alternativa. Tenga en cuenta que los valores de resistencia no son los mismos.</p>
+<a name="03382.png"></a>
+<p> <img src="03382.png"/> </p>
+<p><i>Mesa de atenuadores de sección en L para fuente de 50 Ω e impedancia de carga.</i></p>
+<p>Lo anterior se aplica a la<b>L</b>atenuador a continuación.</p>
+<a name="03383.png"></a>
+<p> <img src="03383.png"/> </p>
+<p><i>Tabla de atenuadores de sección en L de forma alternativa para fuente de 50 Ω e impedancia de carga.</i></p>
+<h3><u><a name="xtocid900911">Bridged T attenuator</a></u></h3>
+<a name="Attenuator, bridged T"></a>
+<p>La tabla en la figura<a href="#03384.png">  below</a>enumera los valores de resistencia para el puente<b>T</b>atenuadores para que coincidan con una fuente y carga de 50 Ω. El atenuador en T puenteado no se utiliza con frecuencia. ¿Por qué no?</p>
+<a name="03384.png"></a>
+<p> <img src="03384.png"/> </p>
+<p><i>Fórmulas y tabla abreviada para la sección de atenuador en T puenteada, Z = 50 Ω.</i></p>
+<h3><u><a name="xtocid900912">Cascaded sections </a></u></h3>
+<p>Las secciones del atenuador se pueden conectar en cascada como en la Figura<a href="#03385.png">  below</a>para obtener más atenuación de la que puede estar disponible en una sola sección. Por ejemplo, se pueden conectar en cascada dos atenuadores de 10 dB para proporcionar 20 dB de atenuación, siendo los valores de dB aditivos. La relación de atenuación de voltaje.<b>K</b> or <b>V<sub>I</sub>/V<sub>O</sub></b>para una sección de atenuador de 10 dB es 3,16. La relación de atenuación de voltaje para las dos secciones en cascada es el producto de los dos<b>K</b>s o 3,16x3,16=10 para las dos secciones en cascada.</p>
+<a name="03385.png"></a>
+<p> <img src="03385.png"/> </p>
+<p><i>Secciones de atenuador en cascada: la atenuación en dB es aditiva.</i></p>
+<p>Se puede proporcionar atenuación variable en pasos discretos mediante un atenuador conmutado. La figura de ejemplo<a href="#03386.png">  below</a>, que se muestra en la posición de 0 dB, es capaz de atenuar de 0 a 7 dB mediante conmutación aditiva de ninguna, una o más secciones.</p>
+<a name="03386.png"></a>
+<p> <img src="03386.png"/> </p>
+<p><i>Atenuador conmutado: la atenuación es variable en pasos discretos.</i></p>
+<p>El atenuador típico de múltiples secciones tiene más secciones de las que muestra la figura anterior.  La adición de una sección de 3 u 8 dB arriba permite que la unidad cubra hasta 10 dB y más. Los niveles de señal más bajos se logran añadiendo secciones de 10 dB y 20 dB, o una sección binaria múltiple de 16 dB.</p>
+<h3><u><a name="xtocid900913">RF attenuators</a></u></h3>
+<a name="Attenuator, coaxial"></a>
+<a name="Attenuator, rf"></a>
+<p>Para trabajos de radiofrecuencia (RF) (&lt;1000 Mhz), las secciones individuales deben montarse en compartimentos blindados para impedir el acoplamiento capacitivo si se desean alcanzar niveles de señal más bajos en las frecuencias más altas. Las secciones individuales de los atenuadores conmutados de la sección anterior están montadas en secciones blindadas.  Se pueden tomar medidas adicionales para ampliar el rango de frecuencia más allá de 1000 Mhz. Se trata de una construcción a partir de elementos resistivos sin plomo de formas especiales.</p>
+<a name="03387.png"></a>
+<p> <img src="03387.png"/> </p>
+<p><i>Atenuador en T coaxial para trabajos por radiofrecuencia.</i></p>
+<p>En la figura se muestra un atenuador de sección en T coaxial que consta de varillas resistivas y un disco resistivo.<a href="#03387.png">  above</a>.  Esta construcción se puede utilizar hasta unos pocos gigahercios.<!--Split for multiple references cannot have two without cr at end-->La versión coaxial Π tendría una varilla resistiva entre dos discos resistivos en la línea coaxial como en la Figura<a href="#03388.png">  below</a>.
+</p>
+<a name="Attenuator, coaxial"></a>
+<a name="Attenuator, rf"></a>
+<a name="03388.png"></a>
+<p> <img src="03388.png"/> </p>
+<p><i>Atenuador Π coaxial para trabajos de radiofrecuencia.</i></p>
+<p>Los conectores de RF, que no se muestran, están conectados a los extremos de los atenuadores T y Π anteriores. Los conectores permiten conectar en cascada atenuadores individuales, además de conectarse entre una fuente y una carga. Por ejemplo, se puede colocar un atenuador de 10 dB entre una fuente de señal problemática y una entrada costosa del analizador de espectro. Aunque es posible que no necesitemos la atenuación, el costoso equipo de prueba está protegido de la fuente atenuando cualquier sobretensión.</p>
+<b>Resumen: atenuadores</b>
+<ul>
+<li>An <i>atenuador</i>reduce una señal de entrada a un nivel más bajo.</li>
+<li>La cantidad de atenuación se especifica en<i>decibeles</i>(dB). Los valores de decibelios son aditivos para las secciones de atenuador en cascada.</li>
+<li>dB de la relación de potencia:      dB = 10 log<sub>10</sub>(P<sub>I</sub>/  PAG<sub>O</sub>)</li>
+<li>dB de la relación de voltaje:    dB = 20 log<sub>10</sub>(V<sub>I</sub>/V<sub>O</sub>)</li>
+<li><i>T</i> and <i>Π</i>Los atenuadores de sección son las configuraciones de circuito más comunes.</li>
+</ul>
+<h2><u><a name="xtocid900914">Contributors</a></u></h2>
+<p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>
+<p>
+<b>Colin Barnard</b>(Noviembre de 2003): Corrección respecto al país de origen de Alexander Graham Bell (Escocia, no Estados Unidos).</p>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="SEMI_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="index.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="SEMI_10.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

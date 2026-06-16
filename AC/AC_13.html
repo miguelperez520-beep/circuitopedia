@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen II (CA) - Capítulo 13 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #8b5cf6; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen II (CA) - Capítulo 13</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen II</h1>
+<h1>Capítulo 13</h1>
+<!--Created 06/01/2005 (DC)-->
+<!--Modified 02/09/2005 (DC) Floating figures w/ captions -->
+<!--images used, diagrams, 02418.eps to -->
+<h1>MOTORES DE CA</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid89750"><u>Introduction</u></a></li>
+<ul>
+<li><a href="#xtocid89751"><u> Hysteresis and Eddy Current </u></a></li>
+</ul>
+<li><a href="#xtocid89752"><u> Synchronous Motors</u></a></li>
+<li><a href="#xtocid89753"><u>Synchronous condenser</u></a></li>
+<li><a href="#xtocid89754"><u>Reluctance motor</u></a></li>
+<ul>
+<li><a href="#xtocid89755"><u>Synchronous reluctance</u></a></li>
+<li><a href="#xtocid89756"><u>Switched reluctance</u></a></li>
+<li><a href="#xtocid89757"><u>Electronic driven variable reluctance motor </u></a></li>
+</ul>
+<li><a href="#xtocid89758"><u>Stepper motors</u></a></li>
+<ul>
+<li><a href="#xtocid89759"><u>Characteristics </u></a></li>
+<li><a href="#xtocid897510"><u>Variable reluctance stepper</u></a></li>
+<li><a href="#xtocid897511"><u>Permanent magnet stepper </u></a></li>
+<ul>
+<li><a href="#xtocid897512">Wave drive</a></li>
+<li><a href="#xtocid897513">Full step drive</a></li>
+<li><a href="#xtocid897514">Half step drive</a></li>
+<li><a href="#xtocid897515">Construction</a></li>
+</ul>
+<li><a href="#xtocid897516"><u>Hybrid stepper motor</u></a></li>
+</ul>
+<li><a href="#xtocid897517"><u>Brushless DC motor</u></a></li>
+<li><a href="#xtocid897518"><u>Tesla polyphase induction motors </u></a></li>
+<ul>
+<li><a href="#xtocid897519"><u>Construction</u></a></li>
+<li><a href="#xtocid897520"><u>Theory of operation </u></a></li>
+<ul>
+<li><a href="#xtocid897521">Motor speed</a></li>
+<li><a href="#xtocid897522">Torque</a></li>
+<li><a href="#xtocid897523">NEMA design classes</a></li>
+<li><a href="#xtocid897524">Power factor</a></li>
+<li><a href="#xtocid897525">Efficiency</a></li>
+</ul>
+<li><a href="#xtocid897526"><u>Nola power factor corrector</u></a></li>
+<li><a href="#xtocid897527"><u>Induction motor alternator</u></a></li>
+<li><a href="#xtocid897528"><u>Motor starting and speed control</u></a></li>
+<ul>
+<li><a href="#xtocid897529">Running 3-phase motors on 1-phase</a></li>
+<li><a href="#xtocid897530">Multiple fields</a></li>
+<li><a href="#xtocid897531">Variable voltage</a></li>
+<li><a href="#xtocid897532">Electronic speed control</a></li>
+</ul>
+<li><a href="#xtocid897533"><u>Linear induction motor</u></a></li>
+</ul>
+<li><a href="#xtocid897534"><u>Wound rotor induction motors </u></a></li>
+<ul>
+<li><a href="#xtocid897535"><u>Speed control</u></a></li>
+<li><a href="#xtocid897536"><u>Doubly-fed induction generator</u></a></li>
+</ul>
+<li><a href="#xtocid897537"><u>Single-phase induction motors</u></a></li>
+<ul>
+<li><a href="#xtocid897538"><u>Permanent-split capacitor motor </u></a></li>
+<li><a href="#xtocid897539"><u>Capacitor-start induction motor </u></a></li>
+<li><a href="#xtocid897540"><u>Capacitor-run motor induction motor </u></a></li>
+<li><a href="#xtocid897541"><u>Resistance split-phase induction motor</u></a></li>
+<li><a href="#xtocid897542"><u>Nola power factor corrector</u></a></li>
+</ul>
+<li><a href="#xtocid897543"><u> Other specialized motors</u></a></li>
+<ul>
+<li><a href="#xtocid897544"><u> Shaded pole induction motor </u></a></li>
+<li><a href="#xtocid897545"><u> 2-phase  servo motor</u></a></li>
+<li><a href="#xtocid897546"><u> Hysteresis motor</u></a></li>
+<li><a href="#xtocid897547"><u> Eddy current clutch </u></a></li>
+</ul>
+<li><a href="#xtocid897548"><u> Selsyn (synchro) motors </u></a></li>
+<ul>
+<li><a href="#xtocid897549"><u>Transmitter - receiver</u></a></li>
+<li><a href="#xtocid897550"><u> Differential transmitter - receiver </u></a></li>
+<ul>
+<li><a href="#xtocid897551"> Addition vs subtraction</a></li>
+</ul>
+<li><a href="#xtocid897552"><u> Control transformer </u></a></li>
+<li><a href="#xtocid897553"><u> Resolver</u></a></li>
+</ul>
+<li><a href="#xtocid897554"><u> AC commutator motors </u></a></li>
+<ul>
+<li><a href="#xtocid897555"><u> Single phase series motor </u></a></li>
+<li><a href="#xtocid897556"><u> Compensated series motor </u></a></li>
+<li><a href="#xtocid897557"><u> Universal motor </u></a></li>
+<li><a href="#xtocid897558"><u> Repulsion motor </u></a></li>
+<li><a href="#xtocid897559"><u> Repulsion start induction motor </u></a></li>
+</ul>
+<li><a href="#xtocid897560">Bibliography</a></li></ul>
+<p>
+<b>Autor original: Dennis Crunkilton</b>
+</p>
+<a name="02418.png"></a>
+<p> <img src="02418.png"/> </p>
+<p><i>Conductores del motor de inducción de jaula de ardilla retirados del rotor.</i></p>
+<h2><u><a name="xtocid89750">Introduction</a></u></h2>
+<a name="Tesla, Nikola"></a>
+<a name="Motor, AC"></a>
+<a name="AC motor"></a>
+<p>Después de la introducción del sistema de distribución eléctrica de CC por parte de Edison en los Estados Unidos, comenzó una transición gradual hacia el sistema de CA, más económico. La iluminación funcionó tan bien con CA como con CC. La transmisión de energía eléctrica cubría distancias más largas con menores pérdidas con corriente alterna. Sin embargo, los motores eran un problema con la corriente alterna. Inicialmente, los motores de CA se construían como motores de CC. Se encontraron numerosos problemas debido a los cambios en los campos magnéticos, en comparación con los campos estáticos en las bobinas de campo de los motores de CC.</p>
+<a name="02420.png"></a>
+<p> <img src="02420.png"/> </p>
+<p><i>Diagrama de familia de motores eléctricos de CA.</i></p>
+<p>Charles P. Steinmetz contribuyó a resolver estos problemas con su investigación de las pérdidas por histéresis en armaduras de hierro. Nikola Tesla imaginó un tipo de motor completamente nuevo cuando visualizó una turbina giratoria, no impulsada por agua o vapor, sino por un campo magnético giratorio. Su nuevo tipo de motor, el motor de inducción de CA, es el caballo de batalla de la industria hasta el día de hoy. Su robustez y sencillez (Figura<a href="#02418.png">  above</a>) garantizan una larga vida útil, alta confiabilidad y bajo mantenimiento. Sin embargo, los pequeños motores de CA con escobillas, similares a la variedad de CC, persisten en pequeños electrodomésticos junto con los pequeños motores de inducción de Tesla. Por encima de un caballo de fuerza (750 W), el motor Tesla reina.</p>
+<p>Unidad de circuitos electrónicos modernos de estado sólido.<i>motores de corriente continua sin escobillas</i>con formas de onda de CA generadas a partir de una fuente de CC. El motor de CC sin escobillas, en realidad un motor de CA, está reemplazando al motor de CC con escobillas convencional en muchas aplicaciones. y, el<i>motor paso a paso</i>, una versión digital del motor, es impulsado por ondas cuadradas de corriente alterna, generadas nuevamente por un circuito de estado sólido.<a href="#02420.png">  above</a>muestra el árbol genealógico de los motores de CA descritos en este capítulo.</p>
+<p>Los cruceros y otras embarcaciones grandes reemplazan los ejes de transmisión con engranajes reductores por grandes generadores y motores de varios megavatios. Este es el caso desde hace muchos años con las locomotoras diésel-eléctricas a menor escala.</p>
+<a name="02421.png"></a>
+<p> <img src="02421.png"/> </p>
+<p><i>Diagrama de niveles del sistema motor.</i></p>
+<p>A nivel del sistema, (Figura<a href="#02421.png">  above</a>) un motor absorbe energía eléctrica en términos de diferencia de potencial y flujo de corriente, convirtiéndola en trabajo mecánico. Desgraciadamente, los motores eléctricos no son 100% eficientes. Parte de la energía eléctrica se pierde en calor, otra forma de energía, debido a I<sup>2</sup>Pérdidas de R en los devanados del motor. El calor es un subproducto no deseado de la conversión. Debe retirarse del motor y puede afectar negativamente a la longevidad. Por tanto, un objetivo es maximizar la eficiencia del motor, reduciendo la pérdida de calor.  Los motores de CA también tienen algunas pérdidas que no encuentran los motores de CC: histéresis y corrientes parásitas.</p>
+<h3><u><a name="xtocid89751"> Hysteresis and Eddy Current </a></u></h3>
+<p>Los primeros diseñadores de motores de CA encontraron problemas debidos a pérdidas exclusivas del magnetismo de corriente alterna. Estos problemas se encontraron al adaptar 
+Motores DC a funcionamiento AC. Aunque hoy en día pocos motores de CA se parecen a los motores de CC, estos problemas tuvieron que resolverse antes de que los motores de CA de cualquier tipo pudieran diseñarse adecuadamente antes de su construcción.</p>
+<a name="Eddy current"></a>
+<p>Tanto el núcleo del rotor como el del estator de los motores de CA están compuestos por una pila de laminaciones aisladas. Las laminaciones se recubren con barniz aislante antes de apilarlas y atornillarlas hasta darle la forma final.<i>corrientes parásitas</i>se minimizan rompiendo el bucle conductor potencial en segmentos más pequeños y con menos pérdidas. (Cifra<a href="#02422.png">  below</a>) Los bucles de corriente parecen espiras secundarias de un transformador en cortocircuito. Las finas laminaciones aisladas rompen estos bucles. Además, el silicio (un semiconductor) agregado a la aleación utilizada en las laminaciones aumenta la resistencia eléctrica, lo que disminuye la magnitud de las corrientes parásitas.</p>
+<a name="02422.png"></a>
+<p> <img src="02422.png"/> </p>
+<p><i>Corrientes de Foucault en núcleos de hierro.</i></p>
+<p>Si las laminaciones están hechas de acero de aleación de silicio orientado al grano,<i>histéresis</i>Se minimizan las pérdidas. La histéresis magnética es un retraso de la intensidad del campo magnético en comparación con la fuerza de magnetización. Si un clavo de hierro dulce es magnetizado temporalmente por un solenoide, se esperaría que el clavo perdiera el campo magnético una vez que se desenergiza el solenoide. Sin embargo, una pequeña cantidad de<i>magnetización residual</i>,  B<sub>r</sub>debido a la histéresis. (Cifra<a href="#02423.png">  below</a>) Una corriente alterna tiene que gastar energía, -H<sub>c</sub> the <i>fuerza coercitiva</i>, para superar esta magnetización residual antes de que pueda magnetizar el núcleo de nuevo a cero, y mucho menos en la dirección opuesta. La pérdida de histéresis se produce cada vez que se invierte la polaridad del CA. La pérdida es proporcional al área encerrada por el bucle de histéresis en la curva B-H. Las aleaciones de hierro "blando" tienen menores pérdidas que las aleaciones de acero "duros" con alto contenido de carbono. El acero orientado con grano de silicio, 4% de silicio, laminado para orientar preferentemente el grano o la estructura cristalina, tiene pérdidas aún menores.</p>
+<a name="02423.png"></a>
+<p> <img src="02423.png"/> </p>
+<p><i>Curvas de histéresis para aleaciones de bajas y altas pérdidas.</i></p>
+<p>Una vez que las leyes de histéresis de Steinmetz pudieron predecir las pérdidas del núcleo de hierro, fue posible diseñar motores de CA que funcionaran según lo diseñado. Esto era similar a poder diseñar un puente con anticipación que no colapsaría una vez construido. Este conocimiento de las corrientes parásitas y la histéresis se aplicó por primera vez a la construcción de motores conmutadores de CA similares a sus homólogos de CC. Hoy en día esto no es más que una categoría menor de motores de CA. Otros inventaron nuevos tipos de motores de CA que se parecían poco a sus parientes de CC.</p>
+<h2><u><a name="xtocid89752"> Synchronous Motors</a></u></h2>
+<a name="Synchronous motor"></a>
+<a name="Motor, AC, synchronous"></a>
+<a name="Motor, synchronous"></a>
+<p>Los motores síncronos monofásicos están disponibles en tamaños pequeños para aplicaciones que requieren sincronización precisa, como cronometraje (relojes) y reproductores de cintas. Aunque los relojes regulados por cuarzo que funcionan con baterías están ampliamente disponibles, la variedad que funciona con línea de CA tiene una mayor precisión a largo plazo, durante un período de meses. Esto se debe a que los operadores de las centrales eléctricas mantienen deliberadamente la precisión a largo plazo de la frecuencia del sistema de distribución de CA. Si se retrasa unos pocos ciclos, compensarán los ciclos perdidos de CA para que los relojes no pierdan tiempo.</p>
+<p>Por encima de los 10 caballos de fuerza (10 kW), la mayor eficiencia y el factor de potencia líder hacen que los motores síncronos grandes sean útiles en la industria. Los motores síncronos grandes son un porcentaje un poco más eficientes que los motores de inducción más comunes. Sin embargo, el motor síncrono es más complejo.</p>
+<p>Dado que los motores y generadores son similares en construcción, debería ser posible utilizar un generador como motor; por el contrario, utilizar un motor como generador. Un motor síncrono es similar a un alternador con campo giratorio. La siguiente figura muestra pequeños alternadores con un campo giratorio de imán permanente. esta figura<a href="#02424.png">  below</a>podrían ser dos alternadores sincronizados y en paralelo impulsados ​​por una fuente de energía mecánica, o un alternador que impulsa un motor síncrono. O podrían ser dos motores, si se conectara una fuente de alimentación externa. El punto es que en cualquier caso los rotores deben funcionar a la misma frecuencia nominal y estar en fase entre sí.  Es decir, deben ser<i>sincronizado</i>. El procedimiento para sincronizar dos alternadores es (1) abrir el interruptor, (2) accionar ambos alternadores a la misma velocidad de rotación, (3) avanzar o retrasar la fase de una unidad hasta que ambas salidas de CA estén en fase, (4) cerrar el interruptor antes de que se desfasen. Una vez sincronizados, los alternadores se bloquearán entre sí, lo que requerirá un par considerable para separar una unidad (dessincronizarla) de la otra.</p>
+<a name="02424.png"></a>
+<p> <img src="02424.png"/> </p>
+<p><i>Motor síncrono funcionando al paso del alternador.</i></p>
+<p>Si se aplica más torque en la dirección de rotación al rotor de uno de los alternadores giratorios anteriores, el ángulo del rotor avanzará (opuesto a (3)) con respecto al campo magnético en las bobinas del estator mientras aún está sincronizado y el rotor entregará energía a la línea de CA como un alternador. El rotor también avanzará con respecto al rotor del otro alternador. Si se aplica una carga, como un freno, a una de las unidades anteriores, el ángulo del rotor se retrasará con respecto al campo del estator como en (3), extrayendo energía de la línea de CA, como un motor.  Si se aplica un par o arrastre excesivo, el rotor excederá el máximo<i>ángulo de torsión</i>avanza o se retrasa tanto que se pierde la sincronización. El par se desarrolla sólo cuando se mantiene la sincronización del motor.</p>
+<p>En el caso de un pequeño motor síncrono en lugar del alternador Figura<a href="#02424.png">  above</a>Bien, no es necesario pasar por el elaborado procedimiento de sincronización para alternadores. Sin embargo, el motor síncrono no arranca automáticamente y aun así se debe llevar a la velocidad eléctrica aproximada del alternador antes de que se bloquee (sincronice) con la velocidad de rotación del generador. Una vez que alcance la velocidad, el motor síncrono mantendrá el sincronismo con la fuente de alimentación de CA y desarrollará par.</p>
+<a name="02425.png"></a>
+<p> <img src="02425.png"/> </p>
+<p><i>La onda sinusoidal impulsa el motor síncrono.</i></p>
+<p>Suponiendo que el motor alcanza la velocidad síncrona, ya que la onda sinusoidal cambia a positiva en la Figura<a href="#02425.png">  above</a>(1), la bobina norte inferior empuja el polo norte del rotor, mientras que la bobina sur superior atrae ese polo norte del rotor. De manera similar, el polo sur del rotor es repelido por la bobina superior sur y atraído por la bobina inferior norte. En el momento en que la onda sinusoidal alcanza un pico en (2), el par que mantiene levantado el polo norte del rotor es máximo. Este par disminuye a medida que la onda sinusoidal disminuye a 0 V.<sub>DC</sub>en (3) con el par al mínimo.</p>
+<p>A medida que la onda sinusoidal cambia a negativa entre (3 y 4), la bobina sur inferior empuja el polo sur del rotor, mientras atrae el polo norte del rotor.   De manera similar, el polo norte del rotor es repelido por la bobina norte superior y atraído por la bobina sur inferior. En (4), la onda sinusoidal alcanza un pico negativo y el par de retención vuelve a ser máximo. A medida que la onda sinusoidal cambia de negativa a 0 V<sub>DC</sub>a positivo, el proceso se repite para un nuevo ciclo de onda sinusoidal.</p>
+<p>Tenga en cuenta que la figura anterior ilustra la posición del rotor para una condición sin carga (α=0<sup>o</sup>). En la práctica real, cargar el rotor hará que el rotor se retrase de las posiciones mostradas por el ángulo α. Este ángulo aumenta con la carga hasta que se alcanza el par máximo del motor en α=90<sup>o</sup>eléctrico. La sincronización y el par se pierden más allá de este ángulo.</p>
+<p>La corriente en las bobinas de un motor síncrono monofásico pulsa mientras alterna la polaridad. Si la velocidad del rotor del imán permanente está cerca de la frecuencia de esta alternancia, se sincroniza con esta alternancia. Dado que el campo de la bobina pulsa y no gira, es necesario acelerar el rotor de imán permanente con un motor auxiliar. Este es un pequeño motor de inducción similar a los de la siguiente sección.</p>
+<a name="02426.png"></a>
+<p> <img src="02426.png"/> </p>
+<p><i>La adición de postes de campo disminuye la velocidad.</i></p>
+<p>Un alternador de 2 polos (par de polos N-S) generará una onda sinusoidal de 60 Hz cuando se gira a 3600 rpm (revoluciones por minuto). Las 3600 rpm corresponden a 60 revoluciones por segundo. Un motor síncrono de imán permanente de 2 polos similar también girará a 3600 rpm. Se puede construir un motor de menor velocidad agregando más pares de polos. Un motor de 4 polos giraría a 1800 rpm, un motor de 12 polos a 600 rpm. El estilo de construcción mostrado (Figura<a href="#02426.png">  above)</a>) es para ilustración. Los motores síncronos de estator multipolar de mayor eficiencia y mayor par en realidad tienen múltiples polos en el rotor.</p>
+<a name="02427.png"></a>
+<p> <img src="02427.png"/> </p>
+<p><i>Motor síncrono de 12 polos de un devanado.</i></p>
+<p>En lugar de enrollar 12 bobinas para un motor de 12 polos, enrolle una sola bobina con doce piezas de polos de acero interdigitados como se muestra en la Figura<a href="#02427.png">  above</a>. Aunque la polaridad de la bobina alterna debido a la CA aplicada, suponga que la parte superior está temporalmente al norte y la inferior al sur. Las piezas polares dirigen el flujo sur desde la parte inferior y exterior de la bobina hasta la parte superior. Estos 6 sur están intercalados con pestañas de 6 norte dobladas desde la parte superior de la pieza polar de acero de la bobina. Por lo tanto, una barra de rotor de imán permanente encontrará pares de 6 polos correspondientes a 6 ciclos de CA en una rotación física de la barra de imán. La velocidad de rotación será 1/6 de la velocidad eléctrica del AC. La velocidad del rotor será 1/6 de la experimentada con un motor síncrono de 2 polos. Ejemplo: 60 Hz harían girar un motor de 2 polos a 3600 rpm, o 600 rpm para un motor de 12 polos.</p>
+<a name="52017.jpg"></a>
+<p> <img src="52017.jpg"/> </p>
+<p><i>Reimpreso con autorización de Westclox History en<a href="http://www.clockHistory.com">www.clockHistory.com</a></i></p>
+<!--Above image too small scale it larger-200%-->
+<p>El estator (Figura<a href="#52017.jpg">  above</a>) muestra un motor de reloj síncrono Westclox de 12 polos. La construcción es similar a la figura anterior con una sola bobina. El estilo de construcción de una bobina es económico para motores de bajo torque. Este motor de 600 rpm acciona engranajes reductores que mueven las manecillas del reloj.</p>
+<p>Si el motor Westclox funcionara a 600 rpm con una fuente de alimentación de 50 Hz, ¿cuántos polos se necesitarían? Un motor de 10 polos tendría 5 pares de polos N-S. Giraría a 50/5 = 10 rotaciones por segundo o 600 rpm (10 s<sup>-1</sup>x 60 s/minuto.)</p>
+<a name="52018.jpg"></a>
+<p> <img src="52018.jpg"/> </p>
+<p><i>Reimpreso con permiso de Westclox History en<a href="http://www.clockHistory.com">www.clockHistory.com</a></i></p>
+<!--Above image too small scale it larger-200%-->
+<p>El rotor (Figura<a href="#52018.jpg">  above</a>) consta de una barra de imán permanente y una copa de acero del motor de inducción. La barra del motor síncrono que gira dentro de las pestañas de los polos mantiene la hora exacta. La copa del motor de inducción fuera de la barra magnética encaja afuera y sobre las pestañas para el arranque automático.  Hubo un tiempo en que se fabricaban motores que no arrancaban automáticamente sin copa del motor de inducción.</p>
+<p>Un motor síncrono trifásico como se muestra en la Figura<a href="#02428.png">  below</a>genera un campo eléctricamente giratorio en el estator. Estos motores no arrancan automáticamente si se arrancan desde una fuente de alimentación de frecuencia fija, como 50 o 60 Hz, como las que se encuentran en un entorno industrial. Además, el rotor no es un imán permanente como se muestra a continuación para los motores de varios caballos de fuerza (varios kilovatios) utilizados en la industria, sino un electroimán.  Los grandes motores síncronos industriales son más eficientes que los motores de inducción. Se utilizan cuando se requiere velocidad constante. Al tener un factor de potencia adelantado, pueden corregir la línea de CA por un factor de potencia retrasado.</p>
+<p>Las tres fases de excitación del estator se suman vectorialmente para producir un único campo magnético resultante que gira f/2n veces por segundo, donde f es la frecuencia de la línea eléctrica, 50 o 60 Hz para motores industriales operados por línea eléctrica. El número de polos es n. Para la velocidad del rotor en rpm, multiplique por 60.</p>
+<pre>
+        S = f120/n
+                                
+        where: S = rotor speed in rpm
+               f = AC line frequency
+               n = number of poles per phase
+</pre>
+<p>El motor síncrono trifásico de 4 polos (por fase) (Figura<a href="#02428.png">  below</a>) girará a 1800 rpm con 60 Hz de potencia o 1500 rpm con 50 Hz de potencia. Si las bobinas se energizan una a la vez en la secuencia φ-1, φ-2, φ-3, el rotor debe apuntar a los polos correspondientes por turno. Dado que las ondas sinusoidales en realidad se superponen, el campo resultante rotará, no en pasos, sino suavemente. Por ejemplo, cuando las ondas sinusoidales φ-1 y φ-2 coinciden, el campo estará en un pico apuntando entre estos polos. El rotor magnético de barra que se muestra solo es apropiado para motores pequeños. El rotor con múltiples polos magnéticos (abajo a la derecha) se utiliza en cualquier motor eficiente que impulse una carga sustancial. Serán electroimanes alimentados por anillos colectores en grandes motores industriales. Los grandes motores síncronos industriales se arrancan automáticamente mediante conductores de jaula de ardilla integrados en la armadura, que actúan como un motor de inducción. La armadura electromagnética solo se energiza después de que el rotor alcanza una velocidad casi sincrónica.</p>
+<a name="02428.png"></a>
+<p> <img src="02428.png"/> </p>
+<p><i>Motor síncrono trifásico de 4 polos.</i></p>
+<p>Pequeños motores síncronos multifásicos (Figura<a href="#02428.png">  above</a>) se puede iniciar aumentando la frecuencia del variador desde cero hasta la frecuencia de funcionamiento final.  Las señales de accionamiento multifásicas son generadas por circuitos electrónicos y serán ondas cuadradas en todas las aplicaciones excepto en las más exigentes. Estos motores se conocen como motores de CC sin escobillas. Los verdaderos motores síncronos son impulsados ​​por formas de onda sinusoidales. Se puede utilizar accionamiento bifásico o trifásico suministrando el número adecuado de devanados en el estator. Arriba solo se muestra trifásico.</p>
+<br/>
+<a name="02429.png"></a>
+<p> <img src="02429.png"/> </p>
+<p><i>Motor síncrono electrónico</i></p>
+<br/>
+<p>El diagrama de bloques (Figura<a href="#02429.png">  above</a>) muestra la electrónica de accionamiento asociada a una tensión baja (12 V<sub>DC</sub>) motor síncrono. Estos motores tienen un<i>sensor de posición</i>Integrado dentro del motor, que proporciona una señal de bajo nivel con una frecuencia proporcional a la velocidad de rotación del motor. El sensor de posición podría ser tan simple como sensores de campo magnético de estado sólido como<i>efecto hall</i>Dispositivos que proporcionan sincronización de conmutación (dirección de corriente de armadura) a la electrónica del variador.  El sensor de posición podría ser un sensor angular de alta resolución tal como un<a href="#resolver">resolver</a>, 
+<!--split for double ref--> an <a href="AC_12.html#inductosyn">inductosyn</a>(codificador magnético) o un codificador óptico.</p>
+<p>Si se requiere una velocidad de rotación constante y precisa (como para una unidad de disco)<i>tacómetro</i> and <i>bucle de bloqueo de fase</i>puede estar incluido. (Cifra<a href="#02430.png">  below</a>) Esta señal del tacómetro, un tren de impulsos proporcional a la velocidad del motor, se retroalimenta a un circuito bloqueado de fase, que compara la frecuencia y la fase del tacómetro con una fuente de frecuencia de referencia estable, como un oscilador de cristal.</p>
+<a name="02430.png"></a>
+<p> <img src="02430.png"/> </p>
+<p><i>El bucle de fase bloqueada controla la velocidad del motor síncrono.</i></p>
+<a name="Motor, DC, brushless"></a>
+<a name="Brushless DC motor"></a>
+<a name="Ripple torque"></a>
+<p>Un motor impulsado por ondas cuadradas de corriente, proporcionadas por simples sensores de efecto Hall, se conoce como<i>motor de corriente continua sin escobillas</i>. Este tipo de motor tiene mayor<i>par de ondulación</i>variación del par a través de la revolución del eje que un motor impulsado por onda sinusoidal. Esto no es un problema para muchas aplicaciones. Sin embargo, en esta sección nos interesan principalmente los motores síncronos.</p>
+<br/>
+<a name="02431.png"></a>
+<p> <img src="02431.png"/> </p>
+<p><i>Par de ondulación del motor y analógico mecánico.</i></p>
+<br/>
+<p>El par ondulado o dentado es causado por la atracción magnética de los polos del rotor a las piezas polares del estator. (Cifra<a href="#02431.png">  above</a>) Tenga en cuenta que no hay bobinas de estator, ni siquiera un motor. El rotor PM se puede girar con la mano, pero encontrará atracción hacia las piezas polares cuando esté cerca de ellas. Esto es análogo a la situación mecánica. ¿El par de ondulación sería un problema para un motor utilizado en un reproductor de cintas? Sí, no queremos que el motor acelere y desacelere alternativamente mientras mueve la cinta de audio por un cabezal de reproducción de cinta. ¿El par ondulado sería un problema para el motor de un ventilador? No.</p>
+<a name="Resolver"></a>
+<a name="Optical encoder"></a>
+<a name="Magnetic encoder"></a>
+<a name="Encoder, optical"></a>
+<a name="Encoder, magnetic"></a>
+<a name="02432.png"></a>
+<p> <img src="02432.png"/> </p>
+<p><i>Los devanados distribuidos en una correa producen un campo más sinusoidal.</i></p>
+<p>Si un motor es impulsado por ondas sinusoidales de corriente síncronas con la fuerza contraelectromotriz del motor, se clasifica como un motor de CA síncrono, independientemente de si las formas de onda del variador se generan por medios electrónicos.  Un motor síncrono generará una contrafem sinusoidal si el campo magnético del estator tiene una distribución sinusoidal. Será más sinusoidal si los devanados de los polos se distribuyen en una correa (Figura<a href="#02432.png">  above</a>) a través de muchas ranuras en lugar de concentrarse en un poste grande (como se muestra en la mayoría de nuestras ilustraciones simplificadas). Esta disposición cancela muchos de los armónicos impares del campo del estator. Las ranuras que tienen menos devanados en el borde del devanado de fase pueden compartir el espacio con otras fases.<!--Split for 2-ref tags-->Las correas de enrollado pueden adoptar una forma concéntrica alternativa como se muestra en la Figura<a href="#02487.png">  below</a>.  
+</p>
+<a name="02487.png"></a>
+<p> <img src="02487.png"/> </p>
+<p><i>Cinturones concéntricos.</i></p>
+<p>Para un motor bifásico, impulsado por una onda sinusoidal, el par es constante a lo largo de una revolución según la identidad trigonométrica:</p>
+<pre>
+ 
+         sin<sup>2</sup>θ + cos<sup>2</sup>θ = 1
+ 
+</pre>
+<p>La generación y sincronización de la forma de onda del variador requiere una indicación de la posición del rotor más precisa que la proporcionada por los sensores de efecto Hall utilizados en los motores CC sin escobillas. A<i>solucionador</i>, o<i>codificador óptico o magnético</i>Proporciona una resolución de cientos a miles de partes (pulsos) por revolución. Un resolver proporciona señales analógicas de posición angular en forma de señales proporcionales al seno y coseno del ángulo del eje. Los codificadores proporcionan una indicación de posición angular digital en formato serie o paralelo. La unidad de onda sinusoidal puede ser en realidad de un PWM,<i>Modulador de ancho de pulso</i>, un método de alta eficiencia para aproximar una onda sinusoidal con una forma de onda digital. (Cifra<a href="#02433.png">  below</a>) Cada fase requiere una electrónica de accionamiento para esta forma de onda desfasada en la cantidad adecuada por fase.</p>
+<br/>
+<a name="02433.png"></a>
+<p> <img src="02433.png"/> </p>
+<p><i>PWM se aproxima a una onda sinusoidal.</i></p>
+<br/>
+<p>La eficiencia de los motores síncronos es mayor que la de los motores de inducción. El motor síncrono también puede ser más pequeño, especialmente si en el rotor se utilizan imanes permanentes de alta energía. La llegada de la electrónica moderna de estado sólido hace posible accionar estos motores a velocidad variable. Los motores de inducción se utilizan principalmente en tracción ferroviaria. Sin embargo, un pequeño motor síncrono, que se monta dentro de una rueda motriz, lo hace atractivo para tales aplicaciones. El<i>superconductor de alta temperatura</i>La versión de este motor pesa entre un quinto y un tercio del peso de un motor bobinado de cobre.<a href="#1.bibitem">[1]</a>El motor síncrono superconductor experimental más grande es capaz de impulsar un barco de clase destructor naval. En todas estas aplicaciones el variador electrónico de velocidad es fundamental.</p>
+<p>El variador de velocidad también debe reducir el voltaje del variador a baja velocidad debido a la disminución de la reactancia inductiva a menor frecuencia. Para desarrollar el par máximo, el rotor necesita retrasarse 90° con respecto a la dirección del campo del estator.<sup>o</sup>. Más, pierde la sincronización. Mucho menos da como resultado un par reducido. Por tanto, es necesario conocer con precisión la posición del rotor. Y es necesario calcular y controlar la posición del rotor con respecto al campo del estator. Este tipo de control se conoce como<i>control de fase vectorial</i>. Se implementa con un microprocesador rápido que acciona un modulador de ancho de pulso para las fases del estator.</p>
+<p>El estator de un motor síncrono es el mismo que el del motor de inducción más popular. Como resultado, el control electrónico de velocidad de grado industrial utilizado con motores de inducción también es aplicable a grandes motores síncronos industriales.</p>
+<p>Si se desenrollan el rotor y el estator de un motor síncrono rotativo convencional, se obtiene un motor lineal síncrono. Este tipo de motor se aplica al posicionamiento lineal preciso de alta velocidad.<a href="#2.bibitem">[2]</a>
+</p>
+<p>Se está desarrollando una versión más grande del motor síncrono lineal con un carro móvil que contiene imanes permanentes de NdBFe de alta energía para lanzar aviones desde portaaviones navales.<a href="#3.bibitem">[3]</a>
+</p>
+<h2><u><a name="xtocid89753">Synchronous condenser</a></u></h2>
+<a name="Synchronous condenser"></a>
+<p>Los motores síncronos cargan la línea eléctrica con un factor de potencia adelantado. Esto suele ser útil para cancelar el factor de potencia en retraso más común causado por motores de inducción y otras cargas inductivas. Originalmente, los grandes motores síncronos industriales se empezaron a utilizar ampliamente debido a su capacidad para corregir el factor de potencia retrasado de los motores de inducción.</p>
+<p>Este factor de potencia principal se puede exagerar eliminando la carga mecánica y<i>demasiado emocionante</i>el campo del motor síncrono. Un dispositivo de este tipo se conoce como<i>condensador sincrónico</i>. Además, el factor de potencia principal se puede ajustar variando la excitación del campo. Esto hace posible casi cancelar un factor de potencia en retraso arbitrario a la unidad al poner en paralelo la carga en retraso con un motor síncrono. Un condensador síncrono funciona en una condición límite entre un motor y un generador sin carga mecánica para cumplir esta función. Puede compensar un factor de potencia en adelanto o en atraso, absorbiendo o suministrando potencia reactiva a la línea. Esto mejora la regulación del voltaje de la línea eléctrica.</p>
+<p>Dado que un condensador síncrono no proporciona par, se puede prescindir del eje de salida y encerrar fácilmente la unidad en una carcasa hermética al gas. Luego, el condensador síncrono se puede llenar con hidrógeno para ayudar a la refrigeración y reducir las pérdidas por viento. Dado que la densidad del hidrógeno es el 7% de la del aire, la pérdida por viento para una unidad llena de hidrógeno es el 7% de la que se encuentra en el aire. Además, la conductividad térmica del hidrógeno es diez veces mayor que la del aire. Por tanto, la eliminación del calor es diez veces más eficaz. Como resultado, un condensador síncrono lleno de hidrógeno puede funcionar con más fuerza que una unidad enfriada por aire, o puede ser físicamente más pequeño para una capacidad determinada. No hay riesgo de explosión siempre que la concentración de hidrógeno se mantenga por encima del 70 %, normalmente por encima del 91 %.</p>
+<p>La eficiencia de las líneas de transmisión de energía largas se puede aumentar colocando condensadores síncronos a lo largo de la línea para compensar las corrientes retrasadas causadas por la inductancia de la línea. Se puede transmitir más potencia real a través de una línea de tamaño fijo si el factor de potencia se acerca a la unidad mediante condensadores síncronos que absorben potencia reactiva.</p>
+<p>La capacidad de los condensadores síncronos para absorber o producir energía reactiva de forma transitoria estabiliza la red eléctrica contra cortocircuitos y otras condiciones de falla transitoria. Se estabilizan las caídas y caídas transitorias de milisegundos de duración. Esto complementa tiempos de respuesta más largos de regulación de voltaje de acción rápida y excitación de equipos generadores. El condensador síncrono ayuda a la regulación de voltaje al extraer corriente principal cuando el voltaje de línea cae, lo que aumenta la excitación del generador y restablece así el voltaje de línea. (Cifra<a href="#02434.png">  below</a>) Una batería de condensadores no tiene esta capacidad.</p>
+<a name="02434.png"></a>
+<p> <img src="02434.png"/> </p>
+<p><i>El condensador síncrono mejora la regulación del voltaje de la línea eléctrica.</i></p>
+<p>La capacidad de un condensador síncrono se puede aumentar reemplazando el rotor de campo de hierro bobinado con cobre por un rotor sin hierro de<i>alambre superconductor de alta temperatura</i>, que debe enfriarse hasta el punto de ebullición del nitrógeno líquido de 77<sup>o</sup>k (-196<sup>o</sup>DO). El cable superconductor transporta 160 veces la corriente de un cable de cobre comparable, al tiempo que produce una densidad de flujo de 3 Teslas o superior. Un núcleo de hierro se saturaría a 2 Teslas en el entrehierro del rotor. Así, un núcleo de hierro, aproximado µ<sub>r</sub>=1000, no es más útil que el aire o cualquier otro material con una permeabilidad relativa µ<sub>r</sub>=1, en el rotor. Se dice que una máquina de este tipo tiene una considerable capacidad transitoria adicional para suministrar energía reactiva a cargas problemáticas como los hornos de arco para fundir metales. El fabricante lo describe como un “amortiguador de potencia reactiva”. Un condensador síncrono de este tipo tiene una mayor densidad de potencia (físicamente más pequeña) que un banco de condensadores conmutados. La capacidad de absorber o producir energía reactiva de forma transitoria estabiliza la red eléctrica general contra condiciones de falla.</p>
+<h2><u><a name="xtocid89754">Reluctance motor</a></u></h2>
+<a name="Switched reluctance motor"></a>
+<a name="Variable reluctance motor"></a>
+<a name="Reluctance motor"></a>
+<a name="Motor, reluctance"></a>
+<a name="Motor, switched reluctance"></a>
+<a name="Motor, variable reluctance"></a>
+<a name="Variable reluctance stepper motor"></a>
+<a name="Stepper motor, variable reluctance"></a>
+<a name="motor, stepper, variable reluctance"></a>
+<p>
+The <i>motor de reluctancia variable</i>se basa en el principio de que una pieza de hierro libre se moverá para completar una trayectoria de flujo magnético con un mínimo<i>reluctancia</i>, el análogo magnético de la resistencia eléctrica. (Cifra<a href="#02435.png">  below</a>)
+</p>
+<h3><u><a name="xtocid89755">Synchronous reluctance</a></u></h3>
+<p>Si se desenergiza el campo giratorio de un motor síncrono grande con polos salientes, seguirá desarrollando entre el 10 y el 15% del par síncrono. Esto se debe a la reluctancia variable a lo largo de la revolución del rotor. No existe una aplicación práctica para un motor de reluctancia síncrono de gran tamaño. Sin embargo, resulta práctico en tamaños pequeños.</p>
+<p>Si se cortan ranuras en el rotor sin conductores de un motor de inducción, correspondientes a las ranuras del estator, se obtiene un<i>motor síncrono de reluctancia</i>resultados. Arranca como un motor de inducción pero funciona con una pequeña cantidad de par síncrono. El par sincrónico se debe a cambios en la reluctancia de la trayectoria magnética desde el estator a través del rotor a medida que se alinean las ranuras. Este motor es un medio económico para desarrollar un par síncrono moderado. El bajo factor de potencia, el bajo par de arranque y la baja eficiencia son características del motor de reluctancia variable accionado por línea de alimentación directa. Tal era el estado del motor de reluctancia variable durante un siglo antes del desarrollo del control de potencia de semiconductores.</p>
+<h3><u><a name="xtocid89756">Switched reluctance</a></u></h3>
+<p>Si se monta un rotor de hierro con polos, pero sin conductores, en un estator multifásico,<i>motor de reluctancia conmutada</i>, capaz de sincronizarse con los resultados del campo del estator. Cuando se energiza un par de polos de la bobina del estator, el rotor se moverá a la trayectoria de menor reluctancia magnética. (Cifra<a href="#02435.png">  below</a>) Un motor de reluctancia conmutada también se conoce como motor de reluctancia variable. La reticencia del rotor a la trayectoria del flujo del estator varía con la posición del rotor.</p>
+<a name="02435.png"></a>
+<p> <img src="02435.png"/> </p>
+<p><i>La reluctancia es una función de la posición del rotor en un motor de reluctancia variable.</i></p>
+<p>Conmutación secuencial (Figura<a href="#02436.png">  below</a>) de las fases del estator mueve el rotor de una posición a la siguiente. El flujo mangético busca el camino de menor desgana, el análogo magnético de la resistencia eléctrica. Este es un rotor y formas de onda muy simplificados para ilustrar el funcionamiento.</p>
+<a name="02436.png"></a>
+<p> <img src="02436.png"/> </p>
+<p><i>Motor de reluctancia variable, funcionamiento demasiado simplificado.</i></p>
+<p>Si un extremo de cada devanado trifásico del motor de reluctancia conmutada se saca a través de un cable común, podemos explicar el funcionamiento como si fuera un motor paso a paso. (Cifra<a href="#02436.png">  above</a>) Las otras conexiones de la bobina se ponen a tierra sucesivamente, una a la vez, en un<i>unidad de onda</i>patrón. Esto atrae al rotor hacia el campo magnético que gira en el sentido de las agujas del reloj en 60<sup>o</sup>incrementos.</p>
+<p>Varias formas de onda pueden impulsar motores de reluctancia variable. (Cifra<a href="#02511.png">  below</a>) El accionamiento por onda (a) es simple y requiere solo un interruptor unipolar de un solo extremo. Es decir, uno que sólo cambia en una dirección. El accionamiento bipolar (b) proporciona más torsión, pero requiere un interruptor bipolar. El motor debe tirar alternativamente hacia arriba y hacia abajo. Las formas de onda (a y b) son aplicables a la versión de motor paso a paso del motor de reluctancia variable. Para un funcionamiento suave y sin vibraciones, es deseable y fácil de generar la aproximación de 6 pasos de una onda sinusoidal (c). El impulsor de onda sinusoidal (d) puede generarse mediante un modulador de ancho de pulso (PWM) o extraerse de la línea eléctrica.</p>
+<a name="02511.png"></a>
+<p> <img src="02511.png"/> </p>
+<p><i>Formas de onda de accionamiento de motor de reluctancia variable: (a) accionamiento de onda unipolar, (b) paso completo bipolar (c) onda sinusoidal (d) bipolar de 6 pasos.</i></p>
+<p>Duplicar el número de polos del estator disminuye la velocidad de rotación y aumenta el par. Esto podría eliminar una transmisión de reducción de engranajes.  Un motor de reluctancia variable destinado a moverse en pasos discretos, pararse y arrancar es un<i>motor paso a paso de reluctancia variable</i>, tratado en otra sección. Si el objetivo es una rotación suave, existe una versión accionada electrónicamente del motor de reluctancia conmutada. Los motores de reluctancia variable o los motores paso a paso en realidad utilizan rotores como los de la Figura<a href="#02437.png">  below</a>.
+</p>
+<!--move this to motor drivers in Vol 3-->
+<h3><u><a name="xtocid89757">Electronic driven variable reluctance motor </a></u></h3>
+<p>Los motores de reluctancia variable tienen un rendimiento deficiente cuando se accionan directamente por línea eléctrica. Sin embargo, los microprocesadores y la unidad de potencia de estado sólido hacen de este motor una solución económica de alto rendimiento en algunas aplicaciones de gran volumen.</p>
+<p>Aunque es difícil de controlar, este motor es fácil de hacer girar. La conmutación secuencial de las bobinas de campo crea un campo magnético giratorio que arrastra consigo el rotor de forma irregular mientras busca la trayectoria de menor reluctancia magnética. La relación entre el par y la corriente del estator es altamente no lineal y difícil de controlar.</p>
+<a name="02437.png"></a>
+<p> <img src="02437.png"/> </p>
+<p><i>Motor de reluctancia variable accionado electrónicamente.</i></p>
+<p>Un motor de reluctancia variable accionado electrónicamente (Figura<a href="#02438.png">  below</a>) se parece a un motor CC sin escobillas sin rotor de imán permanente. Esto hace que el motor sea sencillo y económico. Sin embargo, esto se compensa con el coste del control electrónico, que no es tan sencillo como el de un motor CC sin escobillas.</p>
+<p>Si bien el motor de reluctancia variable es simple, incluso más que un motor de inducción, es difícil de controlar. El control electrónico resuelve este problema y hace que sea práctico accionar el motor muy por encima y por debajo de la frecuencia de la línea eléctrica. Un motor de reluctancia variable impulsado por un<i>servo</i>, un sistema de retroalimentación electrónica, controla el par y la velocidad, minimizando el par ondulado. Cifra<a href="#02438.png">  below</a>
+</p>
+<a name="02438.png"></a>
+<p> <img src="02438.png"/> </p>
+<p><i>Motor de reluctancia variable accionado electrónicamente.</i></p>
+<p>Esto es lo opuesto al alto par de ondulación deseado en los motores paso a paso. En lugar de un paso a paso, un motor de reluctancia variable está optimizado para una rotación continua a alta velocidad con un par de ondulación mínimo. Es necesario medir la posición del rotor con un sensor de posición giratorio, como un codificador óptico o magnético, o derivarla de la supervisión de la fuerza electromagnética inversa del estator. Un microprocesador realiza cálculos complejos para cambiar los devanados en el momento adecuado con dispositivos de estado sólido. Esto debe hacerse precisamente para minimizar el ruido audible y el par de ondulación. Para lograr el par de ondulación más bajo, se debe monitorear y controlar la corriente del devanado. Los estrictos requisitos de accionamiento hacen que este motor solo sea práctico para aplicaciones de gran volumen, como motores de aspiradoras, motores de ventiladores o motores de bombas energéticamente eficientes. Una de estas aspiradoras utiliza un motor de ventilador compacto de 100.000 rpm accionado electrónicamente y de alta eficiencia. La simplicidad del motor compensa el coste de la electrónica del accionamiento. Sin escobillas, sin conmutador, sin devanados del rotor, sin imanes permanentes, simplifica la fabricación del motor. La eficiencia de este motor accionado electrónicamente puede ser alta. Pero requiere una optimización considerable, utilizando técnicas de diseño especializadas, lo que sólo se justifica para grandes volúmenes de fabricación.</p>
+<br/>
+<b>Ventajas</b>
+<ul>
+<li>Construcción simple: sin escobillas, conmutador ni imanes permanentes, ni Cu ni Al en el rotor.</li>
+<li>Alta eficiencia y confiabilidad en comparación con los motores convencionales de CA o CC.</li>
+<li>Alto par de arranque.</li>
+<li>Rentable en comparación con el motor CC sin casquillos en grandes volúmenes.</li>
+<li>Adaptable a temperaturas ambiente muy altas.</li>
+<li>Es posible un control de velocidad preciso y de bajo costo si el volumen es lo suficientemente alto.</li>
+</ul>
+<b>Desventajas</b>
+<ul>
+<li>La corriente versus el par es altamente no lineal</li>
+<li>La conmutación de fase debe ser precisa para minimizar el par de ondulación</li>
+<li>La corriente de fase debe controlarse para minimizar el par de ondulación.</li>
+<li>Ruido acústico y eléctrico.</li>
+<li>No aplicable a volúmenes bajos debido a problemas de control complejos</li>
+</ul>
+<h2><u><a name="xtocid89758">Stepper motors</a></u></h2>
+<a name="Stepper motor"></a>
+<p>
+A <i>motor paso a paso</i>Es una versión “digital” del motor eléctrico. El rotor se mueve en pasos discretos según se le ordena, en lugar de girar continuamente como un motor convencional. Cuando está parado pero energizado, un<i>paso a paso</i>(abreviatura de motor paso a paso) mantiene su carga estable con un<i>par de retención</i>. La amplia aceptación del motor paso a paso en las últimas dos décadas fue impulsada por el predominio de la electrónica digital. La electrónica moderna del controlador de estado sólido fue la clave de su éxito. Además, los microprocesadores interactúan fácilmente con los circuitos controladores de motores paso a paso.</p>
+<p>En cuanto a la aplicación, el predecesor del motor paso a paso fue el servomotor. Hoy en día, esta es una solución de mayor costo para aplicaciones de control de movimiento de alto rendimiento. El coste y la complejidad de un servomotor se debe a los componentes adicionales del sistema: sensor de posición y amplificador de error. (Cifra<a href="#02439.png">  below</a>) Sigue siendo la forma de colocar cargas pesadas fuera del alcance de los motores paso a paso de menor potencia. Una alta aceleración o una precisión inusualmente alta aún requieren un servomotor.  De lo contrario, el valor predeterminado es el paso a paso debido al bajo costo, la electrónica de accionamiento simple, la buena precisión, el buen torque, la velocidad moderada y el bajo costo.</p>
+<a name="02439.png"></a>
+<p> <img src="02439.png"/> </p>
+<p><i>Motor paso a paso versus servomotor.</i></p>
+<p>Un motor paso a paso posiciona los cabezales de lectura y escritura en una unidad de disquete.  Alguna vez se usaron para el mismo propósito en los discos duros. Sin embargo, la alta velocidad y precisión requeridas para el posicionamiento del cabezal del disco duro moderno exigen el uso de un servomotor lineal (bobina móvil).</p>
+<p>El servoamplificador es un amplificador lineal con algunos componentes discretos difíciles de integrar. Se requiere un esfuerzo de diseño considerable para optimizar la ganancia del servoamplificador frente a la respuesta de fase de los componentes mecánicos. Los controladores de motores paso a paso son interruptores de estado sólido menos complejos y pueden estar "encendidos" o "apagados". Por tanto, un controlador de motor paso a paso es menos complejo y costoso que un controlador de servomotor.</p>
+<p>Los motores síncronos Slo-syn pueden funcionar con tensión de línea de CA como un motor de inducción de condensador permanente monofásico. El condensador genera un 90<sup>o</sup>segunda fase. Con la tensión de línea directa, tenemos un variador bifásico.   Impulsar formas de onda de<i>bipolar</i>(±) las ondas cuadradas de 2-24 V son más comunes hoy en día. Los campos magnéticos bipolares también pueden generarse a partir de<i>unipolar</i>(una polaridad) aplicados a extremos alternos de un devanado con derivación central. (Cifra<a href="#02440.png">  below</a>) En otras palabras, se puede cambiar CC al motor para que vea CA. A medida que los devanados se energizan en secuencia, el rotor se sincroniza con el consiguiente campo magnético del estator. Por lo tanto, tratamos los motores paso a paso como una clase de motor síncrono de CA.</p>
+<a name="02440.png"></a>
+<p> <img src="02440.png"/> </p>
+<p><i>El accionamiento unipolar de la bobina central en (b) emula la corriente alterna en una sola bobina en (a).</i></p>
+<h3><u><a name="xtocid89759">Characteristics </a></u></h3>
+<p>Los motores paso a paso son resistentes y económicos porque el rotor no contiene anillos colectores ni conmutador. El rotor es un sólido cilíndrico, que también puede tener polos salientes o dientes finos. La mayoría de las veces el rotor es un imán permanente. Determine que el rotor es un imán permanente mediante rotación manual sin motor que muestra<i>par de retención</i>, pulsaciones de par. Las bobinas del motor paso a paso están enrolladas dentro de un estator laminado, excepto para<i>puede apilar</i>construcción. Puede haber tan solo dos fases sinuosas o hasta cinco. Estas fases frecuentemente se dividen en pares. Por lo tanto, un motor paso a paso de 4 polos puede tener dos fases compuestas por pares de polos en línea espaciados 90<sup>o</sup>aparte. También puede haber varios pares de polos por fase. Por ejemplo, un paso a paso de 12 polos tiene 6 pares de polos, tres pares por fase.</p>
+<p>Dado que los motores paso a paso no necesariamente giran continuamente, no existe una clasificación de caballos de fuerza. Si giran continuamente, ni siquiera se acercan a una capacidad nominal subfraccional de hp. Son dispositivos verdaderamente pequeños y de bajo consumo en comparación con otros motores. Tienen valores de torque de mil pulgadas-oz (pulgadas-onzas) o diez n-m (newton-metros) para una unidad de tamaño de 4 kg. Un pequeño paso a paso del tamaño de una moneda de diez centavos tiene un par de torsión de una centésima de newton-metro o unas pocas onzas-pulgada. La mayoría de los motores paso a paso tienen unas pocas pulgadas de diámetro y una fracción de n-m o unas pocas pulgadas-oz de torque. El par disponible es función de la velocidad del motor, la inercia de la carga, el par de carga y la electrónica del variador, como se ilustra en la<i>curva de velocidad vs par</i>. (Cifra<a href="#02441.png">  below</a>) Un paso a paso energizado y retenido tiene una velocidad relativamente alta.<i>par de retención</i>clasificación. Hay menos par disponible para un motor en funcionamiento, que disminuye a cero a cierta velocidad alta. Esta velocidad frecuentemente no se puede alcanzar debido a la resonancia mecánica de la combinación de carga del motor.</p>
+<a name="02441.png"></a>
+<p> <img src="02441.png"/> </p>
+<p><i>Características de velocidad paso a paso.</i></p>
+<p>Los motores paso a paso se mueven paso a paso, el<i>ángulo de paso</i>, cuando se cambian las formas de onda del variador. El ángulo de paso está relacionado con los detalles de construcción del motor: número de bobinas, número de polos, número de dientes. Puede ser desde 90<sup>o</sup>a 0,75<sup>o</sup>, correspondiente a 4 a 500 pasos por revolución. La electrónica de accionamiento puede reducir a la mitad el ángulo de paso moviendo el rotor hacia adentro.<i>semitonos</i>.
+</p>
+<p>Los motores paso a paso no pueden alcanzar instantáneamente las velocidades en la curva de velocidad y par. El<i>frecuencia máxima de inicio</i>es la velocidad más alta a la que se puede iniciar un paso a paso detenido y descargado. Cualquier carga hará que este parámetro sea inalcanzable. En la práctica, la velocidad de paso aumenta durante el arranque desde muy por debajo de la frecuencia de arranque máxima.  Al detener un motor paso a paso, la velocidad de paso puede reducirse antes de detenerse.</p>
+<p>El par máximo al que un paso a paso puede arrancar y detenerse es el<i>par de tracción</i>. Esta carga de torsión en el paso a paso se debe a cargas de fricción (freno) e inerciales (volante) en el eje del motor. Una vez que el motor alcance la velocidad,<i>par de extracción</i>es el par máximo sostenible sin perder pasos.</p>
+<p>Hay tres tipos de motores paso a paso en orden de complejidad creciente: reluctancia variable, imán permanente e híbrido. El paso a paso de reluctancia variable tiene un rotor sólido de acero blando con polos salientes. El motor paso a paso de imán permanente tiene un rotor cilíndrico de imán permanente. El paso a paso híbrido tiene dientes de acero blando agregados al rotor de imán permanente para un ángulo de paso más pequeño.</p>
+<h3><u><a name="xtocid897510">Variable reluctance stepper</a></u></h3>
+<a name="Variable reluctance stepper motor"></a>
+<a name="Stepper motor, variable reluctance"></a>
+<a name="Motor, stepper, variable reluctance"></a>
+<p>
+A <i>motor paso a paso de reluctancia variable</i>Se basa en el flujo magnético que busca la ruta de menor reluctancia a través de un circuito magnético. Esto significa que un rotor magnético blando de forma irregular se moverá para completar un circuito magnético, minimizando la longitud de cualquier entrehierro de alta reluctancia. El estator suele tener tres devanados distribuidos entre pares de polos, el rotor cuatro polos salientes, lo que produce un 30<sup>o</sup>ángulo de paso. (Figura<a href="#02442.png">  below</a>) Un paso a paso desenergizado sin par de retención cuando se gira con la mano se puede identificar como un paso a paso de reluctancia variable.</p>
+<a name="02442.png"></a>
+<p> <img src="02442.png"/> </p>
+<p><i>Motores paso a paso de reluctancia variable trifásicos y cuatrofásicos.</i></p>
+<p>Las formas de onda del variador para el motor paso a paso de 3 φ se pueden ver en la sección "Motor de reluctancia". El accionamiento para un paso a paso de 4 φ se muestra en la Figura<a href="#02443.png">  below</a>. La conmutación secuencial de las fases del estator produce un campo magnético giratorio que sigue el rotor. Sin embargo, debido al menor número de polos del rotor, el rotor se mueve menos que el ángulo del estator en cada paso. Para un motor paso a paso de reluctancia variable, el ángulo de paso viene dado por:</p>
+<br/>
+<pre>
+       Θ<sub>S</sub> = 360<sup>o</sup>/N<sub>S</sub>
+       Θ<sub>R</sub> = 360<sup>o</sup>/N<sub>R</sub>
+       Θ<sub>ST</sub> =  Θ<sub>R</sub> -  Θ<sub>S</sub> 
+       where:  Θ<sub>S</sub> = stator angle,          Θ<sub>R</sub> = Rotor angle,     Θ<sub>ST</sub> = step angle 
+               N<sub>S</sub> = number stator poles,    N<sub>P</sub> = number rotor poles
+
+
+</pre>
+<a name="02443.png"></a>
+<p> <img src="02443.png"/> </p>
+<p><i>Secuencia de pasos para paso a paso de reluctancia variable.</i></p>
+<p>En la figura<a href="#02443.png">  above</a>, pasando de φ<sub>1</sub>a φ<sub>2</sub>, etc., el campo magnético del estator gira en el sentido de las agujas del reloj. El rotor se mueve en sentido antihorario (CCW). ¡Observa lo que no sucede! El diente punteado del rotor no pasa al siguiente diente del estator. En cambio, el φ<sub>2</sub>El campo del estator atrae un diente diferente al mover el rotor en sentido antihorario, que es un ángulo más pequeño (15<sup>o</sup>) que el ángulo del estator de 30<sup>o</sup>.  El ángulo del diente del rotor de 45<sup>o</sup>entra en el cálculo mediante la ecuación anterior. El rotor se movió en sentido antihorario al siguiente diente del rotor en 45<sup>o</sup>, pero se alinea con un CW por 30<sup>o</sup>diente del estator. Por lo tanto, el ángulo de paso real es la diferencia entre un ángulo del estator de 45<sup>o</sup>y un ángulo del rotor de 30<sup>o</sup>. ¿Hasta dónde giraría el motor paso a paso si el rotor y el estator tuvieran el mismo número de dientes? Cero: sin rotación.</p>
+<p>Comenzando en reposo con la fase φ<sub>1</sub>energizado, se requieren tres pulsos (φ<sub>2</sub>, φ<sub>3</sub>, φ<sub>4</sub>) para alinear el diente del rotor “punteado” con el siguiente diente del estator en sentido antihorario, que es 45<sup>o</sup>. Con 3 pulsos por diente del estator y 8 dientes del estator, 24 pulsos o pasos mueven el rotor 360<sup>o</sup>. 
+</p>
+<p>Al invertir la secuencia de impulsos, se invierte el sentido de rotación arriba a la derecha. La dirección, la velocidad de paso y el número de pasos se controlan mediante un controlador de motor paso a paso que alimenta un controlador o amplificador. Esto podría combinarse en una sola placa de circuito. El controlador podría ser un microprocesador o un circuito integrado especializado. El controlador no es un amplificador lineal, sino un simple interruptor de encendido y apagado capaz de generar una corriente lo suficientemente alta como para energizar el paso a paso. En principio, el controlador podría ser un relé o incluso un interruptor de palanca para cada fase. En la práctica, el controlador son interruptores de transistores discretos o un circuito integrado. Tanto el controlador como el controlador pueden combinarse en un único circuito integrado que acepte un comando de dirección y un pulso de paso. Envía corriente a las fases adecuadas en secuencia.</p>
+<a name="02444.png"></a>
+<p> <img src="02444.png"/> </p>
+<p><i>Motor paso a paso de reluctancia variable.</i></p>
+<p>Desarme un paso a paso de desgana para ver los componentes internos. De lo contrario, mostramos la construcción interna de un motor paso a paso de reluctancia variable en la Figura<a href="#02444.png">  above</a>. El rotor tiene polos sobresalientes para que puedan ser atraídos por el campo giratorio del estator cuando se conmuta. Un motor real es mucho más largo que nuestra ilustración simplificada.<a name="02445.png"></a>
+<p> <img src="02445.png"/> </p>
+<p><i>El paso a paso de reluctancia variable impulsa el tornillo de avance.</i></p>
+<p>El eje suele estar equipado con un tornillo de accionamiento. (Cifra<a href="#02445.png">  above</a>) Esto puede mover los cabezales de una unidad de disquete cuando lo ordene el controlador de la unidad de disquete.</p>
+</p>
+<p>Los motores paso a paso de reluctancia variable se aplican cuando sólo se requiere un nivel moderado de par y un ángulo de paso grueso es adecuado. Una aplicación de este tipo es una unidad de tornillo, como la que se utiliza en una unidad de disquete. Cuando el controlador se enciende, no conoce la posición del carro. Sin embargo, puede impulsar el carro hacia el interruptor óptico, calibrando la posición en la que el filo corta el interruptor como "hogar". El controlador cuenta los pulsos de paso desde esta posición. Siempre que el par de carga no exceda el par del motor, el controlador conocerá la posición del carro.</p>
+<br/>
+<b>Resumen: motor paso a paso de reluctancia variable</b>
+<ul>
+<li>El rotor es un cilindro de hierro dulce con polos salientes (que sobresalen).</li>
+<li>Este es el motor paso a paso menos complejo y económico.</li>
+<li>El único tipo paso a paso sin par de retención en la rotación manual de un eje de motor desenergizado.</li>
+<li>Gran ángulo de paso</li>
+<li>A menudo se monta un tornillo de avance en el eje para un movimiento escalonado lineal.</li>
+</ul>
+<h3><u><a name="xtocid897511">Permanent magnet stepper </a></u></h3>
+<a name="Permanent magnet stepper motor"></a>
+<a name="stepper motor, permanent magnet"></a>
+<a name="motor, stepper, permanent magnet"></a>
+<p>
+A <i>motor paso a paso de imán permanente</i>Tiene un rotor cilíndrico de imán permanente. El estator suele tener dos devanados. Los devanados podrían tener una derivación central para permitir una<i>unipolar</i>Circuito conductor donde se cambia la polaridad del campo magnético cambiando un voltaje de un extremo al otro del devanado. A<i>bipolar</i>Se requiere un accionamiento de polaridad alterna para alimentar los devanados sin la toma central. Un paso a paso de imán permanente puro suele tener un ángulo de paso grande. La rotación del eje de un motor desenergizado exhibe un par de retención. Si el ángulo de retención es grande, digamos 7,5<sup>o</sup>a 90<sup>o</sup>, es probable que sea un paso a paso de imán permanente en lugar de un paso a paso híbrido (siguiente subsección).</p>
+<p>Los motores paso a paso de imán permanente requieren corrientes alternas en fases aplicadas a los dos (o más) devanados. En la práctica, casi siempre se trata de ondas cuadradas generadas a partir de CC mediante electrónica de estado sólido.<i>Bipolar</i>El impulsor son ondas cuadradas que alternan entre polaridades (+) y (-), digamos, +2,5 V a -2,5 V.<i>unipolar</i>El variador suministra un flujo magnético alterno (+) y (-) a las bobinas desarrollado a partir de un par de ondas cuadradas positivas aplicadas a los extremos opuestos de una bobina con derivación central. La sincronización de la onda bipolar o unipolar es de impulso de onda, paso completo o medio paso.</p>
+<h4><a name="xtocid897512">Wave drive </a></h4>
+<a name="02446.png"></a>
+<p> <img src="02446.png"/> </p>
+<p><i>Secuencia de conducción de ondas PM (a) φ<sub>1</sub>+ ,   (b) φ<sub>2</sub>+ ,   (c) φ<sub>1</sub>- ,  (d) φ<sub>2</sub>-.</i></p>
+<p>Conceptualmente, la unidad más simple es<i>unidad de onda</i>. (Cifra<a href="#02446.png">  above</a>) La secuencia de rotación de izquierda a derecha es positiva φ-1 apunta al rotor norte hacia arriba, (+) φ-2 apunta al rotor norte a la derecha, negativa φ-1 atrae al rotor hacia el norte hacia abajo, (-) φ-2 apunta al rotor hacia la izquierda. Las formas de onda del impulsor de onda a continuación muestran que solo se energiza una bobina a la vez. Si bien es simple, esto no produce tanto torque como otras técnicas de accionamiento.</p>
+<a name="02447.png"></a>
+<p> <img src="02447.png"/> </p>
+<p><i>Formas de onda: onda bipolar.</i></p>
+<p>Las formas de onda (Figura<a href="#02447.png">  above</a>) son bipolares porque ambas polaridades, (+) y (-) impulsan el paso a paso. El campo magnético de la bobina se invierte porque se invierte la polaridad de la corriente de excitación.</p>
+<a name="02448.png"></a>
+<p> <img src="02448.png"/> </p>
+<p><i>Formas de onda: onda unipolar.</i></p>
+<p>La (Figura<a href="#02448.png">  above</a>) las formas de onda son unipolares porque solo se requiere una polaridad. Esto simplifica la electrónica de accionamiento, pero requiere el doble de controladores. Hay el doble de formas de onda porque se requiere un par de ondas (+) para producir un campo magnético alterno mediante la aplicación a los extremos opuestos de una bobina con derivación central. El motor requiere campos magnéticos alternos. Estos pueden ser producidos por ondas unipolares o bipolares. Sin embargo, las bobinas del motor deben tener derivaciones centrales para accionamiento unipolar.</p>
+<p>Los motores paso a paso de imanes permanentes se fabrican con varias configuraciones de cables conductores. (Cifra<a href="#02449.png">  below</a>)
+</p>
+<a name="02449.png"></a>
+<p> <img src="02449.png"/> </p>
+<p><i>Diagramas de cableado del motor paso a paso.</i></p>
+<p>El motor de 4 hilos sólo puede funcionar mediante formas de onda bipolares. El motor de 6 hilos, la disposición más común, está diseñado para accionamiento unipolar debido a las derivaciones centrales. Sin embargo, puede ser impulsado por ondas bipolares si se ignoran los grifos centrales. El motor de 5 hilos sólo puede funcionar mediante ondas unipolares, ya que la derivación central común interfiere si ambos devanados se activan simultáneamente. La configuración de 8 cables es poco común, pero proporciona la máxima flexibilidad. Puede cablearse para accionamiento unipolar como para motor de 6 o 5 hilos. Se puede conectar un par de bobinas en serie para un accionamiento bipolar de alta tensión y baja corriente, o en paralelo para un accionamiento de baja tensión y alta corriente.</p>
+<a name="Bifilar winding, stepper motor"></a>
+<a name="Stepper motor, bifilar winding"></a>
+<p>
+A <i>bobinado bifilar</i>Se produce enrollando las bobinas con dos cables en paralelo, a menudo un cable esmaltado en rojo y verde. Este método produce relaciones de vueltas exactas de 1:1 para devanados con derivación central. Este método de bobinado es aplicable a todos menos a la disposición de 4 cables anterior.</p>
+<h4><a name="xtocid897513">Full step drive </a></h4>
+<p>
+<i>paso completo</i>El propulsor proporciona más torque que el propulsor de onda porque ambas bobinas se energizan al mismo tiempo. Esto atrae los polos del rotor a medio camino entre los dos polos del campo. (Cifra<a href="#02450.png">  below</a>)
+</p>
+<a name="02450.png"></a>
+<p> <img src="02450.png"/> </p>
+<p><i>Paso completo, accionamiento bipolar.</i></p>
+<p>Unidad bipolar de paso completo como se muestra en la Figura<a href="#02450.png">  above</a>tiene el mismo ángulo de paso que el accionamiento por onda. El accionamiento unipolar (no mostrado) requeriría un par de formas de onda unipolares para cada una de las formas de onda bipolares anteriores aplicadas a los extremos de un devanado con derivación central. El accionamiento unipolar utiliza un circuito controlador menos complejo y menos costoso. El coste adicional del accionamiento bipolar se justifica cuando se requiere más par.</p>
+<h4><a name="xtocid897514">Half step drive</a></h4>
+<p>El ángulo de paso para una geometría de motor paso a paso determinada se reduce a la mitad con<i>medio paso</i>conducir. Esto corresponde al doble de impulsos escalonados por revolución. (Cifra<a href="#02451.png">  below</a>) El medio paso proporciona una mayor resolución en el posicionamiento del eje del motor. Por ejemplo, acelerar el motor hasta la mitad y mover el cabezal de impresión sobre el papel de una impresora de inyección de tinta duplicaría la densidad de puntos.</p>
+<a name="02451.png"></a>
+<p> <img src="02451.png"/> </p>
+<p><i>Medio paso, accionamiento bipolar.</i></p>
+<p>El accionamiento de medio paso es una combinación de accionamiento por onda y accionamiento por paso completo con un devanado energizado, seguido de ambos devanados energizados, lo que produce el doble de pasos. Las formas de onda unipolares para el accionamiento de medio paso se muestran arriba. El rotor se alinea con los polos del campo como para el accionamiento por onda y entre los polos como para el accionamiento por paso completo.</p>
+<p>El micropaso es posible con controladores especializados. Variando las corrientes a los devanados de forma sinusoidal se pueden interpolar muchos micropasos entre las posiciones normales.</p>
+<h4><a name="xtocid897515">Construction </a></h4>
+<p>La construcción de un motor paso a paso de imán permanente es considerablemente diferente de los dibujos anteriores. Es deseable aumentar el número de polos más allá del ilustrado para producir un ángulo de paso más pequeño. También es deseable reducir el número de devanados, o al menos no aumentar el número de devanados para facilitar la fabricación.</p>
+<a name="Stepper motor, can stack"></a>
+<a name="Can stack, stepper motor"></a>
+<a name="02452.png"></a>
+<p> <img src="02452.png"/> </p>
+<p><i>Motor paso a paso de imán permanente, construcción tipo lata de 24 polos.</i></p>
+<p>El paso a paso de imán permanente (Figura<a href="#02452.png">  above</a>) sólo tiene dos devanados, pero tiene 24 polos en cada una de las dos fases. Este estilo de construcción se conoce como<i>puede apilar</i>. Un devanado de fase está envuelto con una carcasa de acero dulce, con los dedos llevados al centro. Una fase, de carácter transitorio, tendrá un lado norte y un lado sur. Cada lado se envuelve hasta el centro del donut con doce dedos interdigitados para un total de 24 polos. Estos dedos alternados de norte a sur atraerán el rotor de imán permanente. Si se invirtiera la polaridad de la fase, el rotor saltaría 360<sup>o</sup>/24 = 15<sup>o</sup>. No sabemos en qué dirección, cuál no es útil. Sin embargo, si energizamos φ-1 seguido de φ-2, el rotor se moverá 7,5<sup>o</sup>porque el φ-2 está desplazado (girado) en 7,5<sup>o</sup>de φ-1. Consulte a continuación la compensación. Y girará en una dirección reproducible si se alternan las fases. La aplicación de cualquiera de las formas de onda anteriores hará girar el rotor de imán permanente.</p>
+<p>Tenga en cuenta que el rotor es un cilindro cerámico de ferrita gris magnetizado en el patrón de 24 polos que se muestra. Esto se puede ver con una película de visor magnético o con limaduras de hierro aplicadas a un envoltorio de papel. Sin embargo, los colores serán verdes tanto para el polo norte como para el sur de la película.</p>
+<a name="02453.png"></a>
+<p> <img src="02453.png"/> </p>
+<p><i>(a) Vista externa de la pila de latas,  (b) detalle de desplazamiento del campo.</i></p>
+<p>La construcción estilo lata apilada de un motor paso a paso PM es distintiva y fácil de identificar por las “latas” apiladas. (Cifra<a href="#02453.png">  above</a>) Tenga en cuenta el desplazamiento rotacional entre las dos secciones de fase. Esto es clave para hacer que el rotor siga la conmutación de los campos entre las dos fases.</p>
+<br/>
+<b>Resumen: motor paso a paso de imán permanente</b>
+<ul>
+<li>El rotor es un imán permanente, a menudo un manguito de ferrita magnetizado con numerosos polos.</li>
+<li>La construcción de apilamiento de latas proporciona numerosos polos de una sola bobina con dedos entrelazados de hierro dulce.</li>
+<li>Ángulo de paso de grande a moderado.</li>
+<li>A menudo se utiliza en impresoras de computadoras para hacer avanzar el papel.</li>
+</ul>
+<h3><u><a name="xtocid897516">Hybrid stepper motor</a></u></h3>
+<a name="Hybrid stepper motor"></a>
+<a name="Stepper motor, hybrid"></a>
+<a name="Bifilar winding, stepper motor"></a>
+<a name="Stepper motor, bifilar winding"></a>
+<a name="Motor, stepper, hybrid"></a>
+<p>
+The <i>motor paso a paso híbrido</i>Combina características tanto del paso a paso de reluctancia variable como del paso a paso de imán permanente para producir un ángulo de paso más pequeño. El rotor es un imán permanente cilíndrico, magnetizado a lo largo del eje con dientes radiales de hierro dulce (Figura<a href="#02454.png">  below</a>). Las bobinas del estator están enrolladas en polos alternos con los dientes correspondientes. Normalmente hay dos fases de devanado distribuidas entre pares de polos. Este devanado puede tener una derivación central para accionamiento unipolar. El grifo central se consigue mediante un<i>bobinado bifilar</i>, un par de cables enrollados físicamente en paralelo, pero conectados en serie. Los polos norte-sur de una fase cambian de polaridad cuando se invierte la corriente de accionamiento de fase. Se requiere accionamiento bipolar para devanados sin derivación.</p>
+<a name="02454.png"></a>
+<p> <img src="02454.png"/> </p>
+<p><i>Motor paso a paso híbrido.</i></p>
+<p>Tenga en cuenta que los 48 dientes de una sección del rotor están desplazados medio paso con respecto a la otra. Vea el detalle del polo del rotor arriba. Este desplazamiento de los dientes del rotor también se muestra a continuación. Debido a este desplazamiento, el rotor tiene efectivamente 96 polos entrelazados de polaridad opuesta. Este desplazamiento permite la rotación en pasos de 1/96 de revolución al invertir la polaridad del campo de una fase. Los devanados de dos fases son comunes, como se muestra arriba y abajo. Sin embargo, podría haber hasta cinco fases.</p>
+<p>Los dientes del estator en los 8 polos corresponden a los dientes del rotor de 48, excepto por los dientes que faltan en el espacio entre los polos. Así, un polo del rotor, digamos el polo sur, puede alinearse con el estator en 48 posiciones distintas. Sin embargo, los dientes del polo sur están desplazados de los dientes del norte medio diente. Por tanto, el rotor puede alinearse con el estator en 96 posiciones distintas. Este desplazamiento de medio diente se muestra en el detalle del polo del rotor arriba, o en la Figura<a href="#02445.png">  below</a>.
+</p>
+<p>Por si esto no fuera lo suficientemente complicado, los polos principales del estator se dividen en dos fases (φ-1, φ-2). Estas fases del estator están desplazadas entre sí un cuarto de diente. Este detalle sólo se puede discernir en los diagramas esquemáticos siguientes. El resultado es que el rotor se mueve en pasos de un cuarto de diente cuando las fases se energizan alternativamente. En otras palabras, el rotor se mueve en 2×96=192 pasos por revolución para el paso a paso anterior.</p>
+<p>El dibujo de arriba es representativo de un motor paso a paso híbrido real. Sin embargo, proporcionamos una representación pictórica y esquemática simplificada (Figura<a href="#02455.png">  below</a>) para ilustrar detalles que no son obvios anteriormente. Tenga en cuenta el número reducido de bobinas y dientes en el rotor y el estator para simplificar. En las dos figuras siguientes, intentamos ilustrar la rotación de un cuarto de diente producida por las dos fases del estator desplazadas por un cuarto de diente y el desplazamiento de medio diente del rotor. El desplazamiento del estator de un cuarto de diente junto con la sincronización de la corriente de accionamiento también define la dirección de rotación.</p>
+<a name="02455.png"></a>
+<p> <img src="02455.png"/> </p>
+<p><i>Diagrama esquemático del motor paso a paso híbrido.</i></p>
+<b>Características del esquema paso a paso híbrido.</b>(Cifra<a href="#02455.png">  above</a>)
+
+<ul>
+<li>La parte superior del rotor de imán permanente es el polo sur y la parte inferior es el norte.</li>
+<li>Los dientes norte-sur del rotor están desplazados medio diente.</li>
+<li>Si el estator φ-1 se energiza temporalmente hacia el norte arriba, hacia el sur abajo.</li>
+<li>Los dientes superiores del estator φ-1 se alinean al norte con los dientes superiores del sur del rotor.</li>
+<li>Los dientes inferiores del estator φ-1' se alinean al sur con los dientes inferiores del norte del rotor.</li>
+<li>Un par de torsión suficiente aplicado al eje para superar el par de retención movería el rotor un diente.</li>
+<li>Si se invirtiera la polaridad de φ-1, el rotor se movería medio diente, en dirección desconocida. La alineación sería la parte superior del estator sur con la parte inferior del rotor norte y la parte inferior del estator norte con el rotor sur.</li>
+<li>Los dientes del estator φ-2 no están alineados con los dientes del rotor cuando se energiza φ-1. De hecho, los dientes del estator φ-2 están desplazados en un cuarto de diente. Esto permitirá una rotación de esa cantidad si φ-1 está desenergizado y φ-2 energizado. La polaridad del accionamiento φ-1 y φ-2 determina la dirección de rotación.</li>
+</ul>
+<a name="02456.png"></a>
+<p> <img src="02456.png"/> </p>
+<p><i>Secuencia de rotación del motor paso a paso híbrido.</i></p>
+<b>Rotación del motor paso a paso híbrido</b>(Cifra<a href="#02456.png">  above</a>)
+
+<ul>
+<li>La parte superior del rotor es un imán permanente hacia el sur y la parte inferior hacia el norte. Los campos φ-1, φ-2 son conmutables: activado, desactivado, inverso.</li>
+<li><b>(a)</b>φ-1=encendido=norte-arriba, φ-2=apagado.<b>Alinear (de arriba a abajo):</b>φ-1 estator-N:rotor-superior-S, φ-1' estator-S: rotor-inferior-N. Posición inicial, rotación=0.</li>
+<li><b>(b)</b>φ-1=apagado, φ-2=encendido.<b>Alinear (de derecha a izquierda):</b>φ-2 estator-N-derecha: rotor-arriba-S, φ-2' estator-S: rotor-abajo-N. Gire 1/4 de diente, rotación total = 1/4 de diente.</li>
+<li><b>(c)</b>φ-1=reversa(encendido), φ-2=apagado.<b>Alinear (de abajo hacia arriba):</b>φ-1 estator-S:rotor-inferior-N, φ-1' estator-N:rotor-superior-S. Gire 1/4 de diente desde la última posición. Rotación total desde el inicio: 1/2 diente.</li>
+<li>No se muestra: φ-1=apagado, φ-2=reverso(encendido).<b>Alinear (de izquierda a derecha):</b>Rotación total: 3/4 diente.</li>
+<li>No se muestra: φ-1=encendido, φ-2=apagado (igual que (a)).<b>Alinear (de arriba a abajo):</b>Rotación total 1 diente.</li>
+</ul>
+<p>Un motor paso a paso sin alimentación con par de retención es un paso a paso de imán permanente o un paso a paso híbrido. El paso a paso híbrido tendrá un ángulo de paso pequeño, mucho menor que el de 7,5<sup>o</sup>de motores paso a paso de imán permanente.  El ángulo de paso podría ser una fracción de grado, correspondiente a unos pocos cientos de pasos por revolución.</p>
+<br/>
+<b>Resumen: motor paso a paso híbrido</b>
+<ul>
+<li>El ángulo de paso es más pequeño que el de reluctancia variable o los de imán permanente.</li>
+<li>El rotor es un imán permanente con dientes finos. Los dientes norte y sur están desplazados medio diente para lograr un ángulo de paso más pequeño.</li>
+<li>Los polos del estator tienen dientes finos a juego del mismo paso que el rotor.</li>
+<li>Los devanados del estator se dividen en al menos dos fases.</li>
+<li>Los polos de uno de los devanados del estator están desplazados por un cuarto de diente para un ángulo de paso aún menor.</li>
+</ul>
+<h2><u><a name="xtocid897517">Brushless DC motor</a></u></h2>
+<a name="Brushless DC motor"></a>
+<a name="Motor, DC, brushless"></a>
+<p>Los motores de CC sin escobillas se desarrollaron a partir de motores de CC con escobillas convencionales con disponibilidad de semiconductores de potencia de estado sólido. Entonces, ¿por qué hablamos de motores de CC sin escobillas en un capítulo sobre motores de CA? Los motores de CC sin escobillas son similares a los motores síncronos de CA. La principal diferencia es que los motores síncronos desarrollan una FEM trasera sinusoidal, en comparación con una FEM trasera rectangular o trapezoidal para los motores de CC sin escobillas.  Ambos tienen campos magnéticos giratorios creados por el estator que producen torque en un rotor magnético.</p>
+<p>Los motores síncronos suelen ser de gran tamaño, de varios kilovatios, a menudo con rotores electromagnéticos. Los motores verdaderamente síncronos se consideran de una sola velocidad, un submúltiplo de la frecuencia de la línea eléctrica. Los motores de CC sin escobillas tienden a ser pequeños: desde unos pocos vatios hasta decenas de vatios, con rotores de imanes permanentes. La velocidad de un motor de CC sin escobillas no es fija a menos que sea impulsada por un bucle bloqueado en fase esclavo de una frecuencia de referencia. El estilo de construcción es cilíndrico o tipo panqueque. (Cifras<a href="#02457.png"> </a>
+<!--split-->
+and  <a href="#02458.png">  below</a>)
+
+</p>
+<a name="02457.png"></a>
+<p> <img src="02457.png"/> </p>
+<p><i>Construcción cilíndrica: (a) rotor exterior, (b) rotor interior.</i></p>
+<p>La construcción más habitual, cilíndrica, puede adoptar dos formas (Figura<a href="#02457.png">  above</a>).  El estilo cilíndrico más común es con el rotor en el interior, arriba a la derecha. Este estilo de motor se utiliza en unidades de disco duro. También es posible colocar el rotor en el exterior rodeando al estator. Tal es el caso de los motores de ventilador de CC sin escobillas, sin eje. Este estilo de construcción puede ser corto y grueso. Sin embargo, la dirección del flujo magnético es radial con respecto al eje de rotación.</p>
+<a name="02458.png"></a>
+<p> <img src="02458.png"/> </p>
+<p><i>Construcción del motor tipo panqueque: (a) estator simple, (b) estator doble.</i></p>
+<p>Los motores tipo pancake de alto torque pueden tener bobinas de estator en ambos lados del rotor (Figura<a href="#02458.png">  above</a>-b).<!--We have split the paragraph because we have two ref-tags. Can only handle one per line in sml2latx.sed. It still looks like one P in output-->Las aplicaciones de par más bajo, como los motores de unidad de disquete, son suficientes con una bobina de estator en un lado del rotor (Figura<a href="#02458.png">  above</a>-a). La dirección del flujo magnético es axial, es decir, paralela al eje de rotación.</p>
+<p>La función de conmutación puede ser realizada por varios sensores de posición del eje: codificador óptico, codificador magnético (resolver, sincro, etc), o sensores magnéticos de efecto Hall. Los motores pequeños y económicos utilizan sensores de efecto Hall. (Cifra<a href="#02459.png">  below</a>) Un sensor de efecto Hall es un dispositivo semiconductor donde el flujo de electrones se ve afectado por un campo magnético perpendicular a la dirección del flujo de corriente. Parece una red de resistencia variable de cuatro terminales. Los voltajes en las dos salidas son complementarios. La aplicación de un campo magnético al sensor provoca un pequeño cambio de voltaje en la salida. La salida Hall puede accionar un comparador para proporcionar una conducción más estable al dispositivo de potencia. O puede impulsar una etapa de transistor compuesto si está polarizado adecuadamente. Los sensores de efecto Hall más modernos pueden contener un amplificador integrado y circuitos digitales. Este dispositivo de 3 conductores puede accionar directamente el transistor de potencia que alimenta un devanado de fase.  El sensor debe montarse cerca del rotor de imán permanente para detectar su posición.</p>
+<a name="02459.png"></a>
+<p> <img src="02459.png"/> </p>
+<p><i>Los sensores de efecto Hall conmutan el motor CC sin escobillas de 3 φ.</i></p>
+<p>El motor cilíndrico simple de 3 φ Figura<a href="#02459.png">  above</a>es conmutado por un dispositivo de efecto Hall para cada una de las tres fases del estator. El dispositivo Hall detecta la posición cambiante del rotor de imán permanente a medida que cambia la polaridad del polo del rotor que pasa. Esta señal Hall se amplifica para que las bobinas del estator funcionen con la corriente adecuada.  Como no se muestran aquí, las señales Hall pueden procesarse mediante lógica combinatoria para obtener formas de onda de excitación más eficientes.</p>
+<p>El motor cilíndrico anterior podría impulsar un disco duro si estuviera equipado con un bucle de bloqueo en fase (PLL) para mantener una velocidad constante. Un circuito similar podría accionar el motor de la unidad de disquete tipo pancake (Figura<a href="#02460.png">  below</a>). Nuevamente, necesitaría un PLL para mantener una velocidad constante.</p>
+<a name="02460.png"></a>
+<p> <img src="02460.png"/> </p>
+<p><i>Motor tipo panqueque sin escobillas</i></p>
+<p>El motor tipo pancake de 3 φ (Figura<a href="#02460.png">  above</a>) tiene 6 polos de estator y 8 polos de rotor. El rotor es un anillo de ferrita plano magnetizado con ocho polos alternos magnetizados axialmente. No mostramos que el rotor esté cubierto por una placa de acero dulce para montarlo en el cojinete en el medio del estator. La placa de acero también ayuda a completar el circuito magnético. Los polos del estator también están montados sobre una placa de acero, lo que ayuda a cerrar el circuito magnético. Las bobinas planas del estator son trapezoidales para ajustarse más estrechamente a las bobinas y aproximarse a los polos del rotor.  Las bobinas de 6 estatores constan de tres fases de devanado.</p>
+<p>Si las tres fases del estator se energizaran sucesivamente, se generaría un campo magnético giratorio. El rotor de imán permanente seguiría como en el caso de un motor síncrono.  Un rotor de dos polos seguiría este campo a la misma velocidad de rotación que el campo giratorio.  Sin embargo, nuestro rotor de 8 polos girará a un submúltiplo de esta velocidad debido a los polos adicionales en el rotor.</p>
+<p>El motor del ventilador CC sin escobillas (Figura<a href="#02461.png">  below</a>) tiene estas características:</p>
+<a name="02461.png"></a>
+<p> <img src="02461.png"/> </p>
+<p><i>Motor de ventilador sin escobillas, 2-φ.</i></p>
+<ul>
+<li>El estator tiene 2 fases distribuidas en 4 polos.</li>
+<li>Hay 4 polos salientes sin devanados para eliminar puntos de torsión cero.</li>
+<li>El rotor tiene cuatro polos de accionamiento principales.</li>
+<li>El rotor tiene 8 polos superpuestos para ayudar a eliminar los puntos de torsión cero.</li>
+<li>Los sensores de efecto Hall están espaciados a 45<sup>o</sup>físico.</li>
+<li>La carcasa del ventilador se coloca encima del rotor, que se coloca sobre el estator.</li>
+</ul>
+<p>El objetivo de un motor de ventilador sin escobillas es minimizar el coste de fabricación. Este es un incentivo para trasladar productos de menor rendimiento de una configuración de 3-φ a una de 2-φ. Dependiendo de cómo se acciona, se le puede llamar motor de 4 φ.</p>
+<p>Quizás recuerde que los motores de CC convencionales no pueden tener un número par de polos de armadura (2,4, etc.) si van a tener arranque automático, siendo común 3,5,7. Por lo tanto, es posible que un hipotético motor de 4 polos se detenga con un par mínimo, donde no se puede arrancar desde el reposo. La adición de los cuatro pequeños polos salientes sin devanados superpone un par ondulado sobre la curva de par versus posición. Cuando este par ondulado se suma a la curva de par energizado normal, el resultado es que los mínimos de par se eliminan parcialmente. Esto hace posible arrancar el motor en todas las posiciones de parada posibles. La adición de ocho polos de imán permanente al rotor de imán permanente normal de 4 polos superpone un pequeño par de ondulación del segundo armónico sobre el par de ondulación normal de 4 polos. Esto elimina aún más los mínimos de par. Mientras el par mínimo no baje a cero, deberíamos poder arrancar el motor. Cuanto más éxito tengamos en eliminar los mínimos de par, más fácil será el arranque del motor.</p>
+<p>El estator de 2-φ requiere que los sensores Hall estén separados por 90<sup>o</sup>eléctrico. Si el rotor fuera un rotor de 2 polos, los sensores Hall se colocarían 90<sup>o</sup>físico. Como tenemos un rotor de imanes permanentes de 4 polos, los sensores deben colocarse 45<sup>o</sup>fisico para alcanzar los 90<sup>o</sup>espaciamiento eléctrico. Observe el espacio entre pasillos arriba. La mayor parte del par se debe a la interacción de las bobinas interiores del estator de 2 φ con la sección de 4 polos del rotor. Además, la sección de 4 polos del rotor debe estar en la parte inferior para que los sensores Hall detecten las señales de conmutación adecuadas. La sección del rotor de 8 polos sirve únicamente para mejorar el arranque del motor.</p>
+<a name="02462.png"></a>
+<p> <img src="02462.png"/> </p>
+<p><i>Motor DC sin escobillas de 2 φ con accionamiento push-pull.</i></p>
+<p>En la figura<a href="#02462.png">  above</a>, el accionamiento push-pull de 2-φ (también conocido como accionamiento de 4-φ) utiliza dos sensores de efecto Hall para accionar cuatro devanados. Los sensores están espaciados 90<sup>o</sup>aparte electrico, que es 90<sup>o</sup>físico para un rotor unipolar. Dado que el sensor Hall tiene dos salidas complementarias, un sensor proporciona conmutación para dos devanados opuestos.</p>
+<h2><u><a name="xtocid897518">Tesla polyphase induction motors </a></u></h2>
+<a name="Poly-phase induction motor"></a>
+<a name="Induction motor, poly-phase"></a>
+<p>La mayoría de los motores de CA son motores de inducción. Se prefieren los motores de inducción debido a su robustez y simplicidad.  De hecho, el 90% de los motores industriales son motores de inducción.</p>
+<a name="Tesla, Nikola"></a>
+<a name="Induction motor, 2-phase"></a>
+<p>Nikola Tesla concibió los principios básicos del motor de inducción polifásico en 1883 y tenía un modelo de medio caballo de fuerza (400 vatios) en 1888. Tesla vendió los derechos de fabricación a George Westinghouse por 65.000 dólares.</p>
+<p>La mayoría de los motores industriales grandes (&gt; 1 hp o 1 kW) son<i>motores de inducción polifásicos</i>. Por polifásico, queremos decir que el estator contiene múltiples devanados distintos por polo del motor, impulsados ​​por las correspondientes ondas sinusoidales desplazadas en el tiempo. En la práctica, se trata de dos o tres fases. Los grandes motores industriales son trifásicos. Si bien incluimos numerosas ilustraciones de motores bifásicos para simplificar, debemos enfatizar que casi todos los motores polifásicos son trifásicos.   Por<i>motor de inducción</i>, queremos decir que los devanados del estator inducen un flujo de corriente en los conductores del rotor, como un transformador, a diferencia de un motor conmutador de CC con escobillas.</p>
+<h3><u><a name="xtocid897519">Construction</a></u></h3>
+<p>Un motor de inducción está compuesto por un rotor, conocido como armadura, y un estator que contiene devanados conectados a una fuente de energía polifásica, como se muestra en la Figura<a href="#02463.png">  below</a>. El motor de inducción bifásico simple que aparece a continuación es similar al motor de 1/2 caballo de fuerza que Nikola Tesla introdujo en 1888.</p>
+<p>
+<a name="02463.png"></a>
+<p> <img src="02463.png"/> </p>
+<p><i>Motor de inducción polifásico Tesla.</i></p>
+</p>
+<p>El estator en la figura.<a href="#02463.png">  above</a>Está enrollado con pares de bobinas correspondientes a las fases de energía eléctrica disponibles. El estator del motor de inducción bifásico de arriba tiene 2 pares de bobinas, un par para cada una de las dos fases de CA. Las bobinas individuales de un par están conectadas en serie y corresponden a los polos opuestos de un electroimán. Es decir, una bobina corresponde a un polo N y la otra a un polo S hasta que la fase de CA cambia de polaridad. El otro par de bobinas está orientado 90<sup>o</sup>en el espacio al primer par.  Este par de bobinas está conectada a CA desplazada en el tiempo 90<sup>o</sup>en el caso de un motor bifásico. En la época de Tesla, la fuente de las dos fases de CA era un alternador de dos fases.</p>
+<p>El estator en la figura.<a href="#02463.png">  above</a> has <i>saliente</i>, polos que sobresalen obvios, como los utilizados en los primeros motores de inducción de Tesla. Este diseño se utiliza hasta el día de hoy para motores de potencia subfraccional (&lt;50 vatios).<!--split for two ref-tags-->Sin embargo, para motores más grandes se obtienen menos pulsaciones de par y mayor eficiencia si las bobinas están incrustadas en ranuras cortadas en las laminaciones del estator. (Cifra<a href="#02464.png">  below</a>)
+</p>
+<p>
+<a name="02464.png"></a>
+<p> <img src="02464.png"/> </p>
+<p><i>Marco del estator que muestra ranuras para los devanados.</i></p>
+</p>
+<p>Las laminaciones del estator son anillos delgados aislados con ranuras perforadas a partir de láminas de acero de calidad eléctrica. Una pila de estos se fija mediante tornillos en los extremos, que también pueden sujetar las carcasas de los extremos.</p>
+<p>
+<a name="02465.png"></a>
+<p> <img src="02465.png"/> </p>
+<p><i>Estator con devanados (a) 2-φ y (b) 3-φ.</i></p>
+</p>
+<p>En la figura<a href="#02465.png">  above</a>, en las ranuras del estator se han instalado los devanados tanto para un motor bifásico como para un motor trifásico.  Las bobinas se enrollan en un dispositivo externo y luego se introducen en las ranuras. El aislamiento encajado entre la periferia de la bobina y la ranura protege contra la abrasión.</p>
+<p>Los devanados del estator reales son más complejos que los devanados individuales por polo en la Figura<a href="#02465.png">  above</a>. Comparando el motor 2-φ con el motor 2-φ de Tesla con polos salientes, el número de bobinas es el mismo.   En los motores grandes reales, un devanado de polo se divide en bobinas idénticas insertadas en muchas ranuras más pequeñas que las anteriores.<!--split for two ref-tags-->Este grupo se llama<i>cinturón de fase</i>. Ver figura<a href="#02432.png">  below</a>.  Las bobinas distribuidas del cinturón de fases cancelan algunos de los armónicos impares, produciendo una distribución del campo magnético más sinusoidal a través del polo. Esto se muestra en la sección del motor síncrono. Las ranuras en el borde del poste pueden tener menos vueltas que las otras ranuras. Las ranuras de los bordes pueden contener devanados de dos fases. Es decir, los cinturones de fases se superponen.</p>
+<!--html only, repeated in synchronous motors section. not in latex-->
+<a name="02432.png"></a>
+<p> <img src="02432.png"/> </p>
+<p><i></i></p>
+<p>La clave de la popularidad del motor de inducción de CA es la simplicidad, como lo demuestra el rotor simple (Figura<a href="#02466.png">  below</a>). El rotor consta de un eje, un rotor laminado de acero y una placa de cobre o aluminio incrustada.<i>jaula de ardilla</i>, mostrado en (b) retirado del rotor. En comparación con la armadura de un motor de CC, no hay conmutador. Esto elimina las escobillas, los arcos, las chispas, el polvo de grafito, el ajuste y reemplazo de las escobillas y el remecanizado del conmutador.</p>
+<a name="02466.png"></a>
+<p> <img src="02466.png"/> </p>
+<p><i>Rotor laminado con (a) jaula de ardilla integrada, (b) jaula conductora extraída del rotor.</i></p>
+<a name="Eddy current"></a>
+<p>Los conductores de jaula de ardilla pueden estar torcidos o torcidos con respecto al eje. La desalineación con las ranuras del estator reduce las pulsaciones de par.</p>
+<p>Tanto el núcleo del rotor como el del estator están compuestos por una pila de laminaciones aisladas. Las laminaciones están recubiertas con óxido o barniz aislante para minimizar las pérdidas por corrientes parásitas. La aleación utilizada en las laminaciones se selecciona para tener bajas pérdidas por histéresis.</p>
+<h3><u><a name="xtocid897520">Theory of operation </a></u></h3>
+<a name="Lenz's Law"></a>
+<p>Una breve explicación del funcionamiento es que el estator crea un campo magnético giratorio que arrastra el rotor.</p>
+<p>La teoría del funcionamiento de los motores de inducción se basa en un campo magnético giratorio. Una forma de crear un campo magnético giratorio es hacer girar un imán permanente como se muestra en la Figura<a href="#02467.png">  below</a>. Si las líneas de flujo magnético en movimiento cortan un disco conductor, éste seguirá el movimiento del imán. Las líneas de flujo que cortan el conductor inducirán un voltaje y el consiguiente flujo de corriente en el disco conductor. Este flujo de corriente crea un electroimán cuya polaridad se opone al movimiento del imán permanente.<i>Ley de Lenz</i>. La polaridad del electroimán es tal que tira contra el imán permanente. El disco sigue con un poco menos de velocidad que el imán permanente.</p>
+<a name="02467.png"></a>
+<p> <img src="02467.png"/> </p>
+<p><i>El campo magnético giratorio produce torsión en el disco conductor.</i></p>
+<a name="Speedometer, eddy current"></a>
+<a name="Eddy current speedometer"></a>
+<p>El par desarrollado por el disco es proporcional al número de líneas de flujo que cortan el disco y a la velocidad a la que lo corta. Si el disco girara a la misma velocidad que el imán permanente, no habría flujo que cortara el disco, ni flujo de corriente inducida, ni campo electromagnético, ni torsión. Por lo tanto, la velocidad del disco siempre será inferior a la del imán permanente giratorio, de modo que las líneas de flujo que cortan el disco inducen una corriente y crean un campo electromagnético en el disco, que sigue al imán permanente. Si se aplica una carga al disco, ralentizándolo, se desarrollará más torsión a medida que más líneas de flujo corten el disco. El par es proporcional a<i>deslizar</i>, el grado en que el disco cae detrás del imán giratorio. Más deslizamiento corresponde a más flujo cortando el disco conductor, desarrollando más torque.</p>
+<p>Un velocímetro analógico de corrientes parásitas para automóviles se basa en el principio ilustrado anteriormente. Con el disco sujeto por un resorte, la deflexión del disco y de la aguja es proporcional a la velocidad de rotación del imán.</p>
+<p>Un campo magnético giratorio es creado por dos bobinas colocadas en ángulo recto entre sí, impulsadas por corrientes que son 90<sup>o</sup>desfasado. Esto no debería sorprenderle si está familiarizado con los patrones del osciloscopio Lissajous.</p>
+<a name="02468.png"></a>
+<p> <img src="02468.png"/> </p>
+<p><i>Fuera de fase (90<sup>o</sup>) las ondas sinusoidales producen un patrón circular de Lissajous.</i></p>
+<p>En la figura<a href="#02468.png">  above</a>, se produce un Lissajous circular accionando las entradas del osciloscopio horizontal y vertical con 90<sup>o</sup>ondas sinusoidales desfasadas. Comenzando en (a) con una deflexión máxima “X” y mínima “Y”, la traza se mueve hacia arriba y hacia la izquierda hacia (b). Entre (a) y (b) las dos formas de onda son iguales a 0,707 V<sub>pk</sub>a los 45<sup>o</sup>. Este punto (0.707, 0.707) cae en el radio del círculo entre (a) y (b). La traza se mueve a (b) con una deflexión mínima “X” y máxima “Y”.  Con una deflexión máxima negativa “X” y mínima “Y”, la traza se mueve a (c). Luego, con un mínimo de “X” y un máximo de “Y” negativo, se mueve a (d) y regresa a (a), completando un ciclo.</p>
+<a name="02469.png"></a>
+<p> <img src="02469.png"/> </p>
+<p><i>Círculo de seguimiento del seno del eje X y del coseno del eje Y.</i></p>
+<p>Cifra<a href="#02469.png">  above</a>muestra los dos 90<sup>o</sup>Ondas sinusoidales desfasadas aplicadas a placas de desviación de osciloscopios que se encuentran en ángulo recto en el espacio. Si este no fuera el caso, se mostraría una línea unidimensional. La combinación de 90<sup>o</sup>ondas sinusoidales en fase y desviación en ángulo recto, dan como resultado un patrón bidimensional: un círculo. Este círculo se traza mediante un haz de electrones que gira en sentido antihorario.</p>
+<p>Como referencia, Figura<a href="#02470.png">  below</a>muestra por qué las ondas sinusoidales en fase no producirán un patrón circular. La deflexión igual de “X” e “Y” mueve el punto iluminado desde el origen en (a) hasta la derecha (1,1) en (b), de regreso a la izquierda hasta el origen en (c), hacia abajo a la izquierda hasta (-1.-1) en (d), y de regreso a la derecha hasta el origen. La línea se produce mediante deflexiones iguales a lo largo de ambos ejes; y=x es una línea recta.</p>
+<a name="02470.png"></a>
+<p> <img src="02470.png"/> </p>
+<p><i>No hay movimiento circular debido a formas de onda en fase.</i></p>
+<p>Si un par de 90<sup>o</sup>Las ondas sinusoidales desfasadas producen un Lissajous circular, un par similar de corrientes debería poder producir un campo magnético giratorio circular. Este es el caso de un motor bifásico. Por analogía tres devanados colocados 120<sup>o</sup>separados en el espacio, y alimentados con los correspondientes 120<sup>o</sup>Las corrientes en fase también producirán un campo magnético giratorio.</p>
+<a name="02471.png"></a>
+<p> <img src="02471.png"/> </p>
+<p><i>Campo magnético giratorio desde 90<sup>o</sup>ondas sinusoidales en fase.</i></p>
+<p>como los 90<sup>o</sup>ondas sinusoidales en fase, Figura<a href="#02471.png">  above</a>, avanzando desde los puntos (a) a (d), el campo magnético gira en sentido antihorario (figuras a-d) de la siguiente manera:</p>
+<ul>
+<li>(a) φ-1 máximo, φ-2 cero</li>
+<li>(a') φ-1 70%, φ-2 70%</li>
+<li>(b) φ-1 cero, φ-2 máximo</li>
+<li>(c) φ-1 máximo negativo, φ-2 cero</li>
+<li>(d) φ-1 cero, φ-2 máximo negativo</li>
+</ul>
+<h4><a name="xtocid897521">Motor speed </a></h4>
+<a name="Synchronous speed, induction motor"></a>
+<a name="Motor, induction, speed"></a>
+<a name="Induction motor speed"></a>
+<a name="Motor, induction, synchronous speed"></a>
+<a name="Induction motor synchronous speed"></a>
+<p>La velocidad de rotación de un campo magnético giratorio del estator está relacionada con el número de pares de polos por fase del estator. La figura de “a toda velocidad”<a href="#02472.png">  below</a>tiene un total de seis polos o tres pares de polos y tres fases. Sin embargo, sólo hay un par de polos por fase: el número que necesitamos. El campo magnético girará una vez por ciclo de onda sinusoidal. En el caso de una potencia de 60 Hz, el campo gira 60 veces por segundo o 3600 revoluciones por minuto (rpm). Para una potencia de 50 Hz, gira a 50 rotaciones por segundo, o 3000 rpm.  Las de 3600 y 3000 rpm, son las<i>velocidad sincrónica</i>del motor. Aunque el rotor de un motor de inducción nunca alcanza esta velocidad, ciertamente es un límite superior. Si duplicamos el número de polos del motor, la velocidad sincrónica se reduce a la mitad porque el campo magnético gira 180<sup>o</sup>en el espacio para 360<sup>o</sup>de onda sinusoidal eléctrica.</p>
+<a name="02472.png"></a>
+<p> <img src="02472.png"/> </p>
+<p><i>Duplicar los polos del estator reduce a la mitad la velocidad sincrónica.</i></p>
+<p>La velocidad sincrónica viene dada por:</p>
+<blockquote>N<sub>s</sub>= 120·f/P</blockquote>
+<blockquote>N<sub>s</sub>= velocidad síncrona en rpm</blockquote>
+<blockquote>f = frequency of applied power, Hz</blockquote>
+<blockquote>P = total number of poles per phase, a multiple of 2</blockquote>
+<pre>
+<b>Example:</b>
+</pre>
+<p>La figura de la “media velocidad”<a href="#02472.png">  above</a>Tiene cuatro polos por fase (trifásico). La velocidad síncrona para una potencia de 50 Hz es:</p>
+<blockquote>
+S = 120·50/4 = 1500 rpm
+</blockquote>
+<p>La breve explicación del motor de inducción es que el campo magnético giratorio producido por el estator arrastra al rotor consigo.</p>
+<a name="Induction motor slip"></a>
+<a name="Motor, induction, slip"></a>
+<p>La explicación más larga y correcta es que el campo magnético del estator induce una corriente alterna en los conductores de jaula de ardilla del rotor, que constituye un secundario del transformador. Esta corriente inducida del rotor crea a su vez un campo magnético. El campo magnético giratorio del estator interactúa con este campo del rotor. El campo del rotor intenta alinearse con el campo del estator giratorio. El resultado es la rotación del rotor de jaula de ardilla. Si no hubiera carga de par mecánico del motor, rodamientos, viento u otras pérdidas, el rotor giraría a la velocidad sincrónica. Sin embargo, el<i>deslizar</i>entre el rotor y el campo del estator de velocidad síncrona se desarrolla el par. Es el flujo magnético que corta los conductores del rotor a medida que se desliza lo que desarrolla el par. Por tanto, un motor cargado se deslizará en proporción a la carga mecánica. Si el rotor funcionara a velocidad síncrona, no habría flujo del estator que cortara el rotor, no habría corriente inducida en el rotor ni par.</p>
+<h4><a name="xtocid897522">Torque </a></h4>
+<a name="Motor, induction, torque"></a>
+<a name="Induction motor torque"></a>
+<p>Cuando se aplica potencia al motor por primera vez, el rotor está en reposo, mientras que el campo magnético del estator gira a la velocidad síncrona N<sub>s</sub>. El campo del estator corta el rotor a la velocidad síncrona N<sub>s</sub>. La corriente inducida en las espiras en cortocircuito del rotor es máxima, al igual que la frecuencia de la corriente, la frecuencia de línea. A medida que el rotor se acelera, la velocidad a la que el flujo del estator corta el rotor es la diferencia entre la velocidad sincrónica N<sub>s</sub>y la velocidad real del rotor N, o (N<sub>s</sub>-N). La relación entre el flujo real que corta el rotor y la velocidad síncrona se define como<i>deslizar</i>:
+</p>
+<blockquote>
+s = (N<sub>s</sub>- N)/N<sub>s</sub>
+</blockquote>
+<blockquote>donde: norte<sub>s</sub>= velocidad sincrónica,   N = velocidad del rotor</blockquote>
+<p>La frecuencia de la corriente inducida en los conductores del rotor es tan alta como la frecuencia de la línea en el arranque del motor, y disminuye a medida que el rotor se acerca a la velocidad sincrónica.<i>Frecuencia del rotor</i>está dada por:</p>
+<blockquote>
+f<sub>r</sub>= s·f</blockquote>
+<blockquote>donde: s = deslizamiento,   f = frecuencia de la línea eléctrica del estator</blockquote>
+<p>El deslizamiento al 100% del par suele ser del 5% o menos en los motores de inducción. Por lo tanto, para f = frecuencia de línea de 50 Hz, la frecuencia de la corriente inducida en el rotor f<sub>r</sub>= 0,05·50 = 2,5 Hz. ¿Por qué es tan bajo? El campo magnético del estator gira a 50 Hz. La velocidad del rotor es un 5% menor. El campo magnético giratorio sólo corta el rotor a 2,5 Hz. Los 2,5 Hz son la diferencia entre la velocidad síncrona y la velocidad real del rotor. Si el rotor gira un poco más rápido, a velocidad síncrona, ningún flujo cortará el rotor en absoluto, f<sub>r</sub>= 0.</p>
+<a name="02473.png"></a>
+<p> <img src="02473.png"/> </p>
+<p><i>Par y velocidad vs %deslizamiento. %NORTE<sub>s</sub>=%Velocidad sincrónica.</i></p>
+<p>La figura<a href="#02473.png">  above</a>El gráfico muestra que el par de arranque conocido como<i>par de rotor bloqueado</i>(LRT) es superior al 100% del<i>par de carga completa</i>(FLT), la clasificación de torsión continua segura. El par del rotor bloqueado es aproximadamente el 175 % del FLT para el motor de ejemplo que se muestra arriba.  Corriente inicial conocida como<i>corriente de rotor bloqueado</i>(LRC) es el 500% de<i>corriente de carga completa</i>(FLC), la corriente de funcionamiento segura. La corriente es alta porque es análoga a un secundario en cortocircuito en un transformador. A medida que el rotor comienza a girar, el par puede disminuir un poco para ciertas clases de motores hasta un valor conocido como<i>par de torsión</i>. Este es el valor de par más bajo jamás encontrado por el motor de arranque. A medida que el rotor gana el 80% de la velocidad sincrónica, el par aumenta del 175% al ​​300% del par a plena carga. Este<i>par de ruptura</i>se debe a un deslizamiento mayor de lo normal del 20%. La corriente ha disminuido sólo ligeramente en este punto, pero disminuirá rápidamente más allá de este punto. A medida que el rotor acelera hasta un pequeño porcentaje de la velocidad síncrona, tanto el par como la corriente disminuirán sustancialmente. El deslizamiento será sólo de un pequeño porcentaje durante el funcionamiento normal. Para un motor en funcionamiento, cualquier parte de la curva de par por debajo del 100% del par nominal es normal. La carga del motor determina el punto de funcionamiento en la curva de par. Si bien el par y la corriente del motor pueden exceder el 100 % durante unos segundos durante el arranque, el funcionamiento continuo por encima del 100 % puede dañar el motor.  Cualquier carga de par del motor por encima del par de ruptura detendrá el motor. El par, el deslizamiento y la corriente se aproximarán a cero en una condición de carga "sin par mecánico". Esta condición es análoga a un transformador secundario abierto.</p>
+<p>Hay varios diseños básicos de motores de inducción (Figura<a href="#02474.png">  below</a>) que muestra una variación considerable con respecto a la curva de torsión anterior. Los diferentes diseños están optimizados para arrancar y ejecutar diferentes tipos de cargas.  El par de rotor bloqueado (LRT) para varios diseños y tamaños de motores oscila entre el 60% y el 350% del par de carga total (FLT).  La corriente de arranque o corriente de rotor bloqueado (LRC) puede oscilar entre el 500% y el 1400% de la corriente de carga completa (FLC). Este consumo de corriente puede presentar un problema de arranque para motores de inducción grandes.</p>
+<h4><a name="xtocid897523">NEMA design classes</a></h4>
+<a name="Motor, induction, NEMA designs"></a>
+<a name="NEMA induction motor designs"></a>
+<a name="Induction motor, NEMA designs"></a>
+<p>Varias clases (o diseños) estándar para motores, correspondientes a las curvas de par (Figura<a href="#02474.png">  below</a>) se han desarrollado para impulsar mejor varios tipos de cargas. La Asociación Nacional de Fabricantes Eléctricos (NEMA) ha especificado las clases de motor A, B, C y D para cumplir con estos requisitos de accionamiento. Las clases N y H similares de la Comisión Electrotécnica Internacional (IEC) corresponden a diseños NEMA B y C respectivamente.</p>
+<a name="02474.png"></a>
+<p> <img src="02474.png"/> </p>
+<p><i>Características para diseños NEMA.</i></p>
+<p>Todos los motores, excepto los de clase D, funcionan con un deslizamiento del 5 % o menos a plena carga.</p>
+<ul>
+<li><b>Clase B (IEC Clase N)</b>Los motores son el motor predeterminado que se utiliza en la mayoría de las aplicaciones. Con un par de arranque de LRT = 150 % a 170 % de FLT, puede arrancar la mayoría de las cargas, sin una corriente de arranque excesiva (LRT). La eficiencia y el factor de potencia son altos. Por lo general, impulsa bombas, ventiladores y máquinas herramienta.</li>
+<li><b>Clase A</b>El par de arranque es el mismo que el de la clase B. El par de caída y la corriente de arranque (LRT) son mayores. Este motor maneja sobrecargas transitorias como las que se encuentran en las máquinas de moldeo por inyección.</li>
+<li><b>Clase C (IEC Clase H)</b>tiene un par de arranque más alto que la clase A y B en LRT = 200% de FLT. Este motor se aplica a cargas de arranque difícil que deben accionarse a velocidad constante, como transportadores, trituradoras y bombas y compresores alternativos.</li>
+<li><b>Clase D</b>Los motores tienen el par de arranque más alto (LRT) junto con una corriente de arranque baja debido al alto deslizamiento (5% a 13% en FLT). El alto deslizamiento da como resultado una velocidad más baja. La regulación de la velocidad es deficiente. Sin embargo, el motor sobresale al impulsar cargas de velocidad muy variable, como aquellas que requieren un volante de almacenamiento de energía. Las aplicaciones incluyen punzonadoras, cizallas y elevadores.</li>
+<li><b>Clase E</b>Los motores son una versión de mayor eficiencia de la clase B.</li>
+<li><b>Clase F</b>Los motores tienen LRC, LRT y par de ruptura mucho más bajos que los de clase B. Impulsan cargas constantes de fácil arranque.</li>
+</ul>
+<h4><a name="xtocid897524">Power factor </a></h4>
+<a name="Power factor, induction motor"></a>
+<a name="Motor, induction, power factor"></a>
+<a name="Induction motor, power factor"></a>
+<p>Los motores de inducción presentan un factor de potencia retrasado (inductivo) a la línea eléctrica. El factor de potencia en motores grandes de alta velocidad completamente cargados puede ser tan favorable como el 90% para motores grandes de alta velocidad. A 3/4 de la carga completa, el mayor factor de potencia del motor de alta velocidad puede ser del 92%. El factor de potencia para motores pequeños de baja velocidad puede ser tan bajo como el 50%.  Al arrancar, el factor de potencia puede estar en el rango del 10% al 25%, aumentando a medida que el rotor alcanza velocidad.</p>
+<p>El factor de potencia (PF) varía considerablemente con la carga mecánica del motor (Figura<a href="#02475.png">  below</a>). Un motor descargado es análogo a un transformador sin carga resistiva en el secundario. Se refleja poca resistencia desde el secundario (rotor) al primario (estator). Por lo tanto, la línea eléctrica ve una carga reactiva, tan baja como 10% PF.  A medida que se carga el rotor, un componente resistivo creciente se refleja del rotor al estator, aumentando el factor de potencia.</p>
+<a name="02475.png"></a>
+<p> <img src="02475.png"/> </p>
+<p><i>Factor de potencia y eficiencia del motor de inducción.</i></p>
+<h4><a name="xtocid897525">Efficiency</a></h4>
+<a name="Motor, induction, efficiency"></a>
+<a name="Induction motor efficiency"></a>
+<p>Los motores trifásicos grandes son más eficientes que los motores trifásicos más pequeños y que la mayoría de los motores monofásicos. La eficiencia de un motor de inducción grande puede llegar al 95% a plena carga, aunque el 90% es más común. La eficiencia de un motor de inducción con carga ligera o sin carga es deficiente porque la mayor parte de la corriente participa en el mantenimiento del flujo magnetizante. A medida que aumenta la carga de par, se consume más corriente para generar el par, mientras que la corriente asociada con la magnetización permanece fija. La eficiencia al 75% FLT puede ser ligeramente mayor que la del 100% FLT. La eficiencia disminuye un pequeño porcentaje al 50 % FLT y un pequeño porcentaje más al 25 % FLT. La eficiencia sólo se vuelve pobre por debajo del 25% FLT. La variación de la eficiencia con la carga se muestra en la Figura<a href="#02475.png">  above</a>
+</p>
+<p>Los motores de inducción suelen estar sobredimensionados para garantizar que su carga mecánica pueda arrancarse y accionarse en todas las condiciones de funcionamiento. Si un motor polifásico se carga a menos del 75 % del par nominal, donde la eficiencia alcanza su punto máximo, la eficiencia sufre sólo ligeramente hasta el 25 % de FLT.</p>
+<h3><u><a name="xtocid897526">Nola power factor corrector</a></u></h3>
+<a name="Nola power factor corrector"></a>
+<a name="Motor, power factor corrector"></a>
+<p>Frank Nola de la NASA propuso un corrector del factor de potencia (PFC) como dispositivo de ahorro de energía para motores de inducción monofásicos a finales de los años 1970. Se basa en la premisa de que un motor de inducción que no está completamente cargado es menos eficiente y tiene un factor de potencia más bajo que un motor completamente cargado. Por lo tanto, se puede ahorrar energía en motores parcialmente cargados, en particular en motores 1-φ. La energía consumida para mantener el campo magnético del estator es relativamente fija con respecto a los cambios de carga. Si bien no se puede ahorrar nada en un motor completamente cargado, el voltaje de un motor parcialmente cargado se puede reducir para disminuir la energía requerida para mantener el campo magnético. Esto aumentará el factor de potencia y la eficiencia. Este era un buen concepto para los motores monofásicos notoriamente ineficientes para los que estaba destinado.</p>
+<p>Este concepto no es muy aplicable a motores trifásicos grandes. Debido a su alta eficiencia (90%+), no se puede ahorrar mucha energía. Además, un motor con una eficiencia del 95 % sigue teniendo una eficiencia del 94 % con un par de carga total (FLT) del 50 % y una eficiencia del 90 % con un FLT del 25 %. El ahorro potencial de energía al pasar del 100% FLT al 25% FLT es la diferencia en eficiencia 95% - 90% = 5%. Esto no es el 5% de la potencia en potencia a plena carga, sino el 5% de la potencia en potencia con carga reducida. El corrector del factor de potencia de Nola podría ser aplicable a un motor trifásico que está inactivo la mayor parte del tiempo (por debajo del 25 % de FLT), como una punzonadora. Se ha estimado que el período de amortización del costoso controlador electrónico no es atractivo para la mayoría de las aplicaciones. Sin embargo, podría resultar económico como parte de un arrancador de motor electrónico o un control de velocidad.<a href="#7.bibitem">[7]</a>
+</p>
+<a name="sfig"></a>
+<h3><u><a name="xtocid897527">Induction motor alternator</a></u></h3>
+<a name="Alternator, induction"></a>
+<a name="Induction alternator"></a>
+<a name="Generator, induction"></a>
+<a name="Induction generator"></a>
+<p>Un motor de inducción puede funcionar como alternador si es impulsado por un par superior al 100% de la velocidad síncrona. (Cifra<a href="#02476.png">  below</a>) Esto corresponde a un pequeño porcentaje de deslizamiento “negativo”, digamos -1% de deslizamiento. Esto significa que a medida que hacemos girar el motor más rápido que la velocidad síncrona, el rotor avanza un 1% más rápido que el campo magnético giratorio del estator. Normalmente tiene un retraso del 1% en un motor. Dado que el rotor corta el campo magnético del estator en la dirección opuesta (en dirección), el rotor induce un voltaje en el estator y devuelve energía eléctrica a la línea eléctrica.</p>
+<a name="02476.png"></a>
+<p> <img src="02476.png"/> </p>
+<p><i>El par negativo convierte el motor de inducción en un generador.</i></p>
+<p>tal<i>generador de inducción</i>debe ser excitado por una fuente “viva” de 50 o 60 Hz de potencia. No se puede generar energía en caso de un corte de energía de la compañía eléctrica. Este tipo de alternador parece inadecuado como fuente de energía de reserva. Como generador de turbina eólica de energía auxiliar, tiene la ventaja de no requerir un interruptor de desconexión automática por falla de energía para proteger a los equipos de reparación. Es a prueba de fallos.</p>
+<p>Las pequeñas instalaciones remotas (de la red eléctrica) pueden autoexcitarse colocando condensadores en paralelo con las fases del estator. Si se elimina la carga, el magnetismo residual puede generar una pequeña cantidad de flujo de corriente. Los condensadores permiten que esta corriente fluya sin disipar energía. A medida que el generador alcanza su máxima velocidad, el flujo de corriente aumenta para suministrar una corriente magnetizante al estator. La carga se puede aplicar en este punto. La regulación de voltaje es deficiente. Un motor de inducción se puede convertir en un generador autoexcitado añadiendo condensadores.<a href="#6.bibitem">[6]</a>
+</p>
+<p>El procedimiento de arranque consiste en acelerar la turbina eólica en modo motor mediante la aplicación de voltaje normal de la línea eléctrica al estator. Cualquier velocidad de turbina inducida por el viento que exceda la velocidad sincrónica desarrollará un par negativo, devolviendo energía a la línea eléctrica, invirtiendo la dirección normal del medidor de kilovatios-hora eléctricos. Mientras que un motor de inducción presenta un factor de potencia retrasado con respecto a la línea eléctrica, un alternador de inducción presenta un factor de potencia adelantado. Los generadores de inducción no se utilizan mucho en las centrales eléctricas convencionales. La velocidad del accionamiento de la turbina de vapor es constante y controlable según lo requieren los alternadores sincrónicos.  Los alternadores síncronos también son más eficientes.<p>
+</p>La velocidad de una turbina eólica es difícil de controlar y está sujeta a la variación de la velocidad del viento mediante ráfagas. Un alternador de inducción es más capaz de hacer frente a estas variaciones debido al deslizamiento inherente. Esto tensiona menos el tren de engranajes y los componentes mecánicos que un generador síncrono.  Sin embargo, esta variación de velocidad permitida sólo asciende a aproximadamente el 1%. Por lo tanto, un generador de inducción conectado en línea directa se considera de velocidad fija en una turbina eólica. Ver<a href="#dfig">Doubly-fed induction generator</a>para un verdadero alternador de velocidad variable.  Se pueden cambiar múltiples generadores o múltiples devanados en un eje común para proporcionar una velocidad alta y baja para adaptarse a condiciones de viento variables.</p>
+<h3><u><a name="xtocid897528">Motor starting and speed control</a></u></h3>
+<a name="Motor, induction, starting"></a>
+<a name="Induction motor starting"></a>
+<p>Algunos motores de inducción pueden consumir más del 1000% de la corriente a plena carga durante el arranque; sin embargo, unos cientos por ciento son más comunes. Los motores pequeños de unos pocos kilovatios o menos se pueden arrancar conectándolos directamente a la línea eléctrica. Arrancar motores más grandes puede causar una caída de voltaje en la línea, afectando otras cargas.  Los disyuntores clasificados para arranque de motores (análogos a los fusibles de acción lenta) deben reemplazar a los disyuntores estándar para arrancar motores de unos pocos kilovatios. Este disyuntor acepta altas sobrecorrientes durante el arranque.</p>
+<a name="02477.png"></a>
+<p> <img src="02477.png"/> </p>
+<p><i>Arrancador de motor de inducción con autotransformador.</i></p>
+<p>Los motores de más de 50 kW utilizan arrancadores de motor para reducir la corriente de línea de varios cientos a unos pocos cientos por ciento de la corriente de carga total.  Un autotransformador de servicio intermitente puede reducir el voltaje del estator durante una fracción de minuto durante el intervalo de arranque, seguido de la aplicación de voltaje de línea completo como en la Figura<a href="#02477.png">  above</a>. El cierre de los contactos S aplica una tensión reducida durante el intervalo de inicio. Los contactos S se abren y los contactos R se cierran después del arranque. Esto reduce la corriente de arranque a, digamos, el 200% de la corriente de carga completa. Dado que el autotransformador sólo se utiliza durante el intervalo de arranque corto, su tamaño puede ser considerablemente más pequeño que una unidad de servicio continuo.</p>
+<h4><a name="xtocid897529">Running 3-phase motors on 1-phase</a></h4>
+<a name="add-a-phase, AC motor"></a>
+<p>Los motores trifásicos funcionarán con motores monofásicos tan fácilmente como los motores monofásicos. El único problema de cualquiera de los motores es el arranque. A veces se compran motores trifásicos para usarlos en monofásicos si se prevé un aprovisionamiento trifásico. La potencia nominal debe ser un 50% mayor que la de un motor monofásico comparable para compensar un devanado no utilizado. La monofásica se aplica a un par de devanados simultáneos con un condensador de arranque en serie con el tercer devanado. El interruptor de arranque se abre en la Figura<a href="#02519.png">  below</a>al arrancar el motor. A veces, durante el funcionamiento se retiene un condensador más pequeño que el condensador de arranque.</p>
+<a name="02519.png"></a>
+<p> <img src="02519.png"/> </p>
+<p><i>Arranque de un motor trifásico en monofásico.</i></p>
+<a name="static phase converter"></a>
+<p>El circuito en la figura.<a href="#02519.png">  above</a>para hacer funcionar un motor trifásico en monofásico se conoce como<i>convertidor de fase estático</i>si el eje del motor no está cargado. Además, el motor actúa como un generador trifásico. Se puede extraer energía trifásica de los tres devanados del estator para alimentar otros equipos trifásicos. El condensador suministra una<i>sintético</i>fase aproximadamente a mitad de camino ∠90<sup>o</sup>entre los ∠180<sup>o</sup>Terminales de fuente de alimentación monofásica para arranque. Mientras está en funcionamiento, el motor genera aproximadamente 3-φ estándar, como se muestra en la Figura<a href="#02519.png">  above</a>.  Matt Isserstedt muestra un diseño completo para alimentar un taller mecánico doméstico.<a href="#8.bibitem">[8]</a>
+</p>
+<a name="02520.png"></a>
+<p> <img src="02520.png"/> </p>
+<p><i>Convertidor de fase estático de arranque automático. Condensador de funcionamiento = 25-30 µF por HP. Adaptado de la Figura 7, Hanrahan<a href="#9.bibitem">[9]</a></i></p>
+<p>Dado que un convertidor de fase estático no tiene carga de par, se puede arrancar con un condensador considerablemente más pequeño que un condensador de arranque normal. Si es lo suficientemente pequeño, puede dejarse en el circuito como condensador de funcionamiento. Ver figura<a href="#02520.png">  above</a>. Sin embargo, los condensadores de funcionamiento más pequeños dan como resultado una mejor salida de energía trifásica como en la Figura<a href="#02521.png">  below</a>. Además, el ajuste de estos condensadores para igualar las corrientes medidas en las tres fases da como resultado la máquina más eficiente.<a href="#9.bibitem">[9]</a>Sin embargo, se requiere un condensador de arranque grande durante aproximadamente un segundo para arrancar rápidamente el convertidor. Hanrahan proporciona detalles de construcción.<a href="#9.bibitem">[9]</a>
+</p>
+<a name="02521.png"></a>
+<p> <img src="02521.png"/> </p>
+<p><i>Convertidor de fase estático más eficiente. Condensador de arranque = 50-100 µF/HP. Condensadores de funcionamiento = 12-16 µF/HP. Adaptado de la Figura 1, Hanrahan<a href="#9.bibitem">[9]</a></i></p>
+<h4><a name="xtocid897530">Multiple fields </a></h4>
+<a name="Motor, induction, speed"></a>
+<a name="Induction motor speed"></a>
+<p>Los motores de inducción pueden contener múltiples devanados de campo, por ejemplo, un devanado de 4 polos y otro de 8 polos correspondientes a velocidades síncronas de 1800 y 900 rpm. Energizar un campo u otro es menos complejo que volver a cablear las bobinas del estator en la Figura<a href="#02478.png">  below</a>.
+</p>
+<a name="02478.png"></a>
+<p> <img src="02478.png"/> </p>
+<p><i>Múltiples campos permiten el cambio de velocidad.</i></p>
+<p>Si el campo está segmentado con los cables sacados, se puede recablear (o cambiar) de 4 polos a 2 polos como se muestra arriba para un motor bifásico. El 22.5<sup>o</sup>Los segmentos son conmutables a 45.<sup>o</sup>segmentos. Arriba solo se muestra el cableado de una fase para mayor claridad. Por lo tanto, nuestro motor de inducción puede funcionar a múltiples velocidades. Al cambiar el motor de 60 Hz anterior de 4 polos a 2 polos, la velocidad síncrona aumenta de 1800 rpm a 3600 rpm.  Si el motor funciona a 50 Hz, ¿cuáles serían las velocidades síncronas correspondientes de 4 polos y 2 polos?</p>
+<blockquote>N<sub>s</sub>= 120f/P = 120*50/4 = 1500 rpm (4 polos)</blockquote>
+<blockquote>N<sub>s</sub>= 3000 rpm (2 polos)</blockquote>
+<h4><a name="xtocid897531">Variable voltage</a></h4>
+<p>La velocidad de los pequeños motores de inducción de jaula de ardilla para aplicaciones como ventiladores de accionamiento se puede cambiar reduciendo el voltaje de línea. Esto reduce el par disponible para la carga, lo que reduce la velocidad. (Cifra<a href="#02479.png">  below</a>)
+</p>
+<a name="02479.png"></a>
+<p> <img src="02479.png"/> </p>
+<p><i>El voltaje variable controla la velocidad del motor de inducción.</i></p>
+<h4><a name="xtocid897532">Electronic speed control </a></h4>
+<a name="Induction motor, speed control"></a>
+<a name="Motor, induction, speed control"></a>
+<a name="Speed control, induction motor"></a>
+<p>La electrónica de estado sólido moderna aumenta las opciones de control de velocidad. Al cambiar la frecuencia de línea de 50 o 60 Hz a valores más altos o más bajos, se puede cambiar la velocidad síncrona del motor. Sin embargo, disminuir la frecuencia de la corriente alimentada al motor también disminuye la reactancia X<sub>L</sub>lo que aumenta la corriente del estator. Esto puede provocar que el circuito magnético del estator se sature con resultados desastrosos. En la práctica, es necesario disminuir el voltaje al motor cuando se reduce la frecuencia.</p>
+<a name="02480.png"></a>
+<p> <img src="02480.png"/> </p>
+<p><i>Variador electrónico de velocidad.</i></p>
+<p>Por el contrario, la frecuencia de accionamiento se puede aumentar para aumentar la velocidad síncrona del motor. Sin embargo, es necesario aumentar el voltaje para superar el aumento de la reactancia y mantener la corriente a un valor normal y mantener el par.
+El inversor (Figura<a href="#02480.png">  above</a>) aproxima las ondas sinusoidales al motor con salidas de modulación de ancho de pulso. Esta es una forma de onda cortada que está encendida o apagada, alta o baja; el porcentaje de tiempo "encendido" corresponde al voltaje de onda sinusoidal instantánea.</p>
+<p>Una vez que se aplica la electrónica al control de motores de inducción, hay muchos métodos de control disponibles, que van desde simples hasta complejos:</p>
+<br/>
+<b>Resumen: control de velocidad</b>
+<ul>
+<li><i>Control del escalador</i>Método de bajo costo descrito anteriormente para controlar únicamente el voltaje y la frecuencia, sin retroalimentación.</li>
+<li><i>Control de vectores</i>También conocido como control de fase vectorial. Los componentes de la corriente del estator que producen flujo y par se miden o estiman en tiempo real para mejorar la curva par-velocidad del motor. Esto requiere mucha computación.</li>
+<li><i>Control de par directo</i>Un elaborado modelo de motor adaptativo permite un control más directo del flujo y el par sin retroalimentación. Este método responde rápidamente a los cambios de carga.</li>
+</ul>
+<br/>
+<b>Resumen: motores de inducción polifásicos Tesla</b>
+<ul>
+<li>A <i>motor de inducción polifásico</i>Consta de un devanado polifásico integrado en un estator laminado y una jaula de ardilla conductora integrada en un rotor laminado.</li>
+<li>Las corrientes trifásicas que fluyen dentro del estator crean un campo magnético giratorio que induce una corriente y el consiguiente campo magnético en el rotor. El par del rotor se desarrolla a medida que el rotor se desliza un poco detrás del campo giratorio del estator.</li>
+<li>A diferencia de los motores monofásicos, los motores de inducción polifásicos son<i>autoiniciador.</i></li>
+<li><i>Arrancadores de motor</i>Minimiza la carga de la línea eléctrica mientras proporciona un par de arranque mayor que el requerido durante el funcionamiento. Reducción de corriente de línea<i>entrantes</i>Sólo son necesarios para motores grandes.</li>
+<li>Los motores trifásicos funcionarán monofásicos, si se arrancan.</li>
+<li>A <i>convertidor de fase estático</i>Es un motor trifásico que funciona monofásico y no tiene carga en el eje, generando una salida trifásica.</li>
+<li><i>Múltiples devanados de campo</i>Se puede recablear para múltiples velocidades de motor discretas cambiando el número de polos.</li>
+</ul>
+<h3><u><a name="xtocid897533">Linear induction motor</a></u></h3>
+<a name="Linear induction motor"></a>
+<a name="Induction motor, linear"></a>
+<p>El estator bobinado y el rotor de jaula de ardilla de un motor de inducción pueden cortarse en su circunferencia y desenrollarse formando un motor de inducción lineal. La dirección del recorrido lineal está controlada por la secuencia del accionamiento a las fases del estator.</p>
+<p>El motor de inducción lineal se ha propuesto como accionamiento para trenes de pasajeros de alta velocidad. Hasta este momento, el motor de inducción lineal con el correspondiente sistema de levitación por repulsión magnética necesario para un viaje suave ha sido demasiado costoso para todas las instalaciones excepto las experimentales.  Sin embargo, está previsto que el motor de inducción lineal reemplace los sistemas de lanzamiento de aviones de catapulta impulsados ​​por vapor en la próxima generación de portaaviones navales, CVNX-1, en 2013. Esto aumentará la eficiencia y reducirá el mantenimiento.<a href="#4.bibitem">[4]</a>
+<a href="#5.bibitem">[5]</a>
+</p>
+<h2><u><a name="xtocid897534">Wound rotor induction motors </a></u></h2>
+<a name="Wound rotor induction motor"></a>
+<a name="Motor, induction, wound rotor"></a>
+<a name="Induction motor, wound rotor"></a>
+<p>
+A <i>rotor bobinado</i>El motor de inducción tiene un estator como el motor de inducción de jaula de ardilla, pero un rotor con devanados aislados que salen a través de anillos colectores y escobillas. Sin embargo, no se aplica energía a los anillos colectores. Su único propósito es permitir que la resistencia se coloque en serie con los devanados del rotor durante el arranque. (Cifra<a href="#02481.png">  below</a>) Esta resistencia se pone en cortocircuito una vez que se arranca el motor para que el rotor se parezca eléctricamente a la contraparte de la jaula de ardilla.</p>
+<a name="02481.png"></a>
+<p> <img src="02481.png"/> </p>
+<p><i>Motor de inducción de rotor bobinado.</i></p>
+<p>¿Por qué poner resistencia en serie con el rotor?  Los motores de inducción de jaula de ardilla consumen entre el 500% y más del 1000% de la corriente a plena carga (FLC) durante el arranque. 
+Si bien esto no es un problema grave para los motores pequeños, sí lo es para los motores grandes (decenas de kW). Colocar resistencia en serie con los devanados del rotor no solo disminuye la corriente de arranque, corriente de rotor bloqueado (LRC), sino que también aumenta el par de arranque, par de rotor bloqueado (LRT). Cifra<a href="#02482.png">  below</a>muestra que al aumentar la resistencia del rotor desde R<sub>0</sub>a r<sub>1</sub>a r<sub>2</sub>, el pico de par de ruptura se desplaza a la izquierda a velocidad cero. Tenga en cuenta que este pico de par es mucho mayor que el par de arranque disponible sin resistencia del rotor (R<sub>0</sub>).  El deslizamiento es proporcional a la resistencia del rotor y el par de extracción es proporcional al deslizamiento. Por tanto, se produce un par elevado durante el arranque.</p>
+<a name="02482.png"></a>
+<p> <img src="02482.png"/> </p>
+<p><i>El pico de par de ruptura se desplaza a velocidad cero aumentando la resistencia del rotor.</i></p>
+<p>La resistencia disminuye el par disponible a máxima velocidad de funcionamiento. Pero esa resistencia se pone en cortocircuito cuando se pone en marcha el rotor. Un rotor en cortocircuito funciona como un rotor de jaula de ardilla. El calor generado durante el arranque se disipa principalmente fuera del motor en la resistencia de arranque. La complicación y el mantenimiento asociados con las escobillas y los anillos colectores son una desventaja del rotor bobinado en comparación con el rotor de jaula de ardilla simple.</p>
+<p>Este motor es adecuado para arrancar cargas inerciales elevadas. Una alta resistencia de arranque hace que el alto par de extracción esté disponible a velocidad cero. A modo de comparación, un rotor de jaula de ardilla solo exhibe un par de extracción (máximo) al 80% de su velocidad sincrónica.</p>
+<h3><u><a name="xtocid897535">Speed control</a></u></h3>
+<a name="Induction motor, speed control"></a>
+<a name="Motor, induction, speed control"></a>
+<a name="Speed control,induction motor"></a>
+<p>La velocidad del motor se puede variar volviendo a colocar una resistencia variable en el circuito del rotor. Esto reduce la corriente y la velocidad del rotor. El alto par de arranque disponible a velocidad cero, el par de ruptura reducido, no está disponible a alta velocidad. Ver R<sub>2</sub>curva al 90% Ns, Figura<a href="#02483.png">  below</a>. Resistencias R<sub>0</sub>R<sub>1</sub>R<sub>2</sub>R<sub>3</sub>aumento de valor desde cero. Una mayor resistencia en R<sub>3</sub>reduce aún más la velocidad. La regulación de velocidad es deficiente con respecto a las cargas de torque cambiantes. Esta técnica de control de velocidad sólo es útil en un rango del 50 % al 100 % de la velocidad máxima. El control de velocidad funciona bien con cargas de velocidad variable como ascensores y prensas de impresión.</p>
+<a name="02483.png"></a>
+<p> <img src="02483.png"/> </p>
+<p><i>La resistencia del rotor controla la velocidad del motor de inducción del rotor bobinado.</i></p>
+<a name="dfig"></a>
+<h3><u><a name="xtocid897536">Doubly-fed induction generator</a></u></h3>
+<a name="Doubly fed induction generator"></a>
+<a name="Alternator, induction"></a>
+<a name="Induction alternator"></a>
+<a name="Generator, induction"></a>
+<a name="Induction generator"></a>
+<p>Anteriormente describimos un motor de inducción de jaula de ardilla que actúa como un generador si se acciona más rápido que la velocidad sincrónica. (Ver<a href="#sfig">Induction motor alternator</a>) Este es un<i>generador de inducción de alimentación simple</i>, teniendo conexiones eléctricas únicamente a los devanados del estator. Un motor de inducción de rotor bobinado también puede actuar como generador cuando se acciona por encima de la velocidad síncrona. Dado que hay conexiones tanto al estator como al rotor, dicha máquina se conoce como<i>generador de inducción doblemente alimentado</i>(DFIG).</p>
+<a name="02512.png"></a>
+<p> <img src="02512.png"/> </p>
+<p><i>La resistencia del rotor permite un exceso de velocidad del generador de inducción doblemente alimentado.</i></p>
+<p>El generador de inducción de alimentación única sólo tenía un rango de deslizamiento utilizable del 1% cuando era impulsado por un par de viento problemático. Dado que la velocidad de un motor de inducción de rotor bobinado se puede controlar en un rango de 50 a 100% insertando resistencia en el rotor, podemos esperar lo mismo del generador de inducción doblemente alimentado. No sólo podemos ralentizar el rotor en un 50%, sino que también podemos sobreacelerarlo en un 50%. Es decir, podemos variar la velocidad de un generador de inducción doblemente alimentado en un ±50% de la velocidad síncrona. En la práctica real, ±30% es más práctico.</p>
+<p>Si el generador acelera demasiado, la resistencia colocada en el circuito del rotor absorberá el exceso de energía mientras el estator alimenta 60 Hz constantes a la línea eléctrica. (Cifra<a href="#02512.png">  above</a>) En el caso de baja velocidad, la resistencia negativa insertada en el circuito del rotor puede compensar el déficit de energía, permitiendo aún así que el estator alimente la línea eléctrica con potencia de 60 Hz.</p>
+<a name="02513.png"></a>
+<p> <img src="02513.png"/> </p>
+<p><i>El convertidor recupera energía del rotor del generador de inducción doblemente alimentado.</i></p>
+<p>En la práctica real, la resistencia del rotor puede ser reemplazada por un convertidor (Figura<a href="#02513.png">  above</a>) absorbiendo energía del rotor y alimentando energía a la línea eléctrica en lugar de disiparla. Esto mejora la eficiencia del generador.</p>
+<a name="02514.png"></a>
+<p> <img src="02514.png"/> </p>
+<p><i>El convertidor toma prestada energía de la línea eléctrica para el rotor del generador de inducción doblemente alimentado, lo que le permite funcionar bien a velocidad sincrónica.</i></p>
+<p>El convertidor puede “tomar prestada” energía de la línea para el rotor de baja velocidad, que la pasa al estator. (Cifra<a href="#02514.png">  above</a>) La potencia prestada, junto con la energía del eje mayor, pasa al estator que está conectado a la línea eléctrica. El estator parece estar suministrando el 130% de la energía a la línea.  Hay que tener en cuenta que el rotor “toma prestado” el 30%, saliendo, dejando la línea con el 100% para el DFIG teórico sin pérdidas.</p>
+<br/>
+<b>Cualidades del motor de inducción de rotor bobinado.</b>
+<ul>
+<li>Excelente par de arranque para cargas de alta inercia.</li>
+<li>Baja corriente de arranque en comparación con el motor de inducción de jaula de ardilla.</li>
+<li>La velocidad es una resistencia variable entre el 50% y el 100% de la velocidad máxima.</li>
+<li>Mayor mantenimiento de escobillas y anillos colectores en comparación con el motor de jaula de ardilla.</li>
+<li>La versión generadora de la máquina de rotor bobinado se conoce como<i>generador de inducción doblemente alimentado</i>, una máquina de velocidad variable.</li>
+</ul>
+<h2><u><a name="xtocid897537">Single-phase induction motors</a></u></h2>
+<a name="Induction motor, single phase"></a>
+<p>Un motor trifásico puede funcionar con una fuente de alimentación monofásica. (Cifra<a href="#02484.png">  below</a>) Sin embargo, no se iniciará automáticamente.  Se puede arrancar manualmente en cualquier dirección y alcanzar la velocidad en unos segundos. Solo desarrollará 2/3 de la potencia nominal de 3-φ porque no se utiliza un devanado.</p>
+<a name="02484.png"></a>
+<p> <img src="02484.png"/> </p>
+<p><i>3-φmotor runs from 1-φ power,  but does not start.</i></p>
+<p>La bobina única de un motor de inducción monofásico no produce un campo magnético giratorio, sino un campo pulsante que alcanza su máxima intensidad a 0<sup>o</sup>y 180<sup>o</sup>eléctrico. (Cifra<a href="#02485.png">  below</a>)
+</p>
+<a name="02485.png"></a>
+<p> <img src="02485.png"/> </p>
+<p><i>El estator monofásico produce un campo magnético pulsante y no giratorio.</i></p>
+<p>Otro punto de vista es que la bobina única excitada por una corriente monofásica produce dos fasores de campo magnético contrarrotativos, que coinciden dos veces por revolución en 0<sup>o</sup>(Cifra<a href="#02485.png">  above</a>-a) y 180<sup>o</sup>(figura e). Cuando los fasores giran a 90<sup>o</sup>y -90<sup>o</sup>se cancelan en la figura b. a los 45<sup>o</sup>y -45<sup>o</sup>(figura c) son parcialmente aditivos a lo largo del eje +x y se cancelan a lo largo del eje y. Una situación análoga existe en la figura d.  La suma de estos dos fasores es un fasor estacionario en el espacio, pero de polaridad alterna en el tiempo. Por tanto, no se desarrolla ningún par de arranque.</p>
+<p>Sin embargo, si el rotor gira hacia adelante a un poco menos que la velocidad sincrónica, desarrollará un par máximo con un deslizamiento del 10% con respecto al fasor de rotación hacia adelante. Se desarrollará menos torque por encima o por debajo del 10% de deslizamiento. El rotor experimentará un deslizamiento del 200 % al 10 % con respecto al fasor del campo magnético contrarrotativo. A partir del fasor contrarrotante se desarrolla poco par (ver curva de par versus deslizamiento) aparte de una ondulación de doble frecuencia. Por lo tanto, la bobina monofásica desarrollará par una vez que se ponga en marcha el rotor. Si el rotor se arranca en la dirección inversa, desarrollará un par similar a medida que se acerque a la velocidad del fasor que gira hacia atrás.</p>
+<p>Los motores de inducción monofásicos tienen una jaula de ardilla de cobre o aluminio incrustada en un cilindro de laminaciones de acero, típico de los motores de inducción polifásicos.</p>
+<h3><u><a name="xtocid897538">Permanent-split capacitor motor </a></u></h3>
+<a name="Motor, permanent-split capacitor"></a>
+<p>Una forma de resolver el problema monofásico es construir un motor bifásico, obteniendo energía bifásica de una monofásica. Esto requiere un motor con dos devanados separados 90<sup>o</sup>eléctrico, alimentado con dos fases de corriente desplazada 90<sup>o</sup>a tiempo. Esto se llama motor de condensador permanentemente dividido en la Figura<a href="#02486.png">  below</a>.  
+</p>
+<a name="02486.png"></a>
+<p> <img src="02486.png"/> </p>
+<p><i>Motor de inducción con condensador dividido permanente.</i></p>
+<p>Este tipo de motor sufre un aumento de la magnitud de la corriente y un desplazamiento del tiempo hacia atrás a medida que el motor alcanza velocidad, con pulsaciones de par a máxima velocidad. La solución es mantener el condensador (impedancia) pequeño para minimizar las pérdidas.  Las pérdidas son menores que para un motor de polos sombreados. Esta configuración de motor funciona bien con hasta 1/4 de caballo de fuerza (200 vatios), aunque generalmente se aplica a motores más pequeños. La dirección del motor se puede invertir fácilmente conectando el condensador en serie con el otro devanado. Este tipo de motor se puede adaptar para su uso como servomotor, como se describe en otra parte de este capítulo.</p>
+<a name="02487.png"></a>
+<p> <img src="02487.png"/> </p>
+<p><i>Motor de inducción monofásico con bobinas de estator integradas.</i></p>
+<p>Los motores de inducción monofásicos pueden tener bobinas incrustadas en el estator como se muestra en la Figura<a href="#02487.png">  above</a>para motores de mayor tamaño. Sin embargo, los tamaños más pequeños utilizan menos complejidad para construir devanados concentrados con polos salientes.</p>
+<h3><u><a name="xtocid897539">Capacitor-start induction motor </a></u></h3>
+<a name="Motor, capacitor-start"></a>
+<p>En la figura<a href="#02488.png">  below</a>Se puede usar un capacitor más grande para arrancar un motor de inducción monofásico a través del devanado auxiliar si se apaga mediante un interruptor centrífugo una vez que el motor alcanza la velocidad. Además, el devanado auxiliar puede tener muchas más vueltas de cable más pesado que el utilizado en un motor de fase dividida de resistencia para mitigar el aumento excesivo de temperatura. El resultado es que hay más par de arranque disponible para cargas pesadas como los compresores de aire acondicionado. Esta configuración de motor funciona tan bien que está disponible en tamaños de varios caballos de fuerza (varios kilovatios).</p>
+<a name="02488.png"></a>
+<p> <img src="02488.png"/> </p>
+<p><i>Motor de inducción de arranque por condensador.</i></p>
+<p>
+</p>
+<h3><u><a name="xtocid897540">Capacitor-run motor induction motor </a></u></h3>
+<a name="Motor, capacitor-run"></a>
+<p>Una variación del motor de arranque por condensador (Figura<a href="#02489.png">  below</a>) es arrancar el motor con un condensador relativamente grande para un par de arranque alto, pero dejar un condensador de menor valor en su lugar después de arrancar para mejorar las características de funcionamiento sin consumir corriente excesiva. La complejidad adicional del motor accionado por condensador se justifica para motores de mayor tamaño.</p>
+<a name="02489.png"></a>
+<p> <img src="02489.png"/> </p>
+<p><i>Motor de inducción accionado por condensador.</i></p>
+<p>Un condensador de arranque de motor puede ser un condensador electrolítico no polar de doble ánodo que podría ser dos condensadores electrolíticos polarizados conectados en serie de + a + (o - a -).  Estos condensadores electrolíticos con clasificación de CA tienen pérdidas tan altas que solo pueden usarse para trabajos intermitentes (1 segundo encendido, 60 segundos apagado) como el arranque de un motor. Un condensador para el funcionamiento del motor no debe ser de construcción electrolítica, sino de un tipo de polímero de baja pérdida.</p>
+<h3><u><a name="xtocid897541">Resistance split-phase induction motor</a></u></h3>
+<a name="Motor, split-phase"></a>
+<p>Si se coloca un devanado auxiliar de muchas menos vueltas de alambre más pequeño a 90<sup>o</sup>eléctrico al devanado principal, puede arrancar un motor de inducción monofásico. (Cifra<a href="#02490.png">  below</a>) Con menor inductancia y mayor resistencia, la corriente experimentará menos cambio de fase que el devanado principal. alrededor de 30<sup>o</sup>de diferencia de fase se puede obtener. Esta bobina produce un par de arranque moderado, que se desconecta mediante un interruptor centrífugo a 3/4 de la velocidad síncrona. Esta disposición simple (sin capacitor) sirve para motores de hasta 1/3 de caballo de fuerza (250 vatios) que impulsan cargas de fácil arranque.</p>
+<a name="02490.png"></a>
+<p> <img src="02490.png"/> </p>
+<p><i>Motor de inducción de fase dividida por resistencia.</i></p>
+<p>Este motor tiene más par de arranque que un motor de polos sombreados (siguiente sección), pero no tanto como un motor bifásico construido con las mismas piezas. La densidad de corriente en el devanado auxiliar es tan alta durante el arranque que el consiguiente rápido aumento de temperatura impide reinicios frecuentes o cargas de arranque lentas.</p>
+<h3><u><a name="xtocid897542">Nola power factor corrector</a></u></h3>
+<a name="Nola power factor corrector"></a>
+<a name="Motor, power factor corrector"></a>
+<a name="Induction motor power factor corrector"></a>
+<p>Frank Nola de la NASA propuso un corrector del factor de potencia para mejorar la eficiencia de los motores de inducción de CA a mediados de los años 1970. Se basa en la premisa de que los motores de inducción son ineficientes cuando no están a plena carga. Esta ineficiencia se correlaciona con un bajo factor de potencia. El factor de potencia inferior a la unidad se debe a la corriente de magnetización requerida por el estator. Esta corriente fija es una proporción mayor de la corriente total del motor a medida que disminuye la carga del motor. Con carga ligera, no se requiere toda la corriente magnetizante. Podría reducirse disminuyendo el voltaje aplicado, mejorando el factor de potencia y la eficiencia. El corrector del factor de potencia detecta el factor de potencia y disminuye el voltaje del motor, restaurando así un factor de potencia más alto y disminuyendo las pérdidas.</p>
+<p>Dado que los motores monofásicos son entre 2 y 4 veces más ineficientes que los motores trifásicos, existe un potencial ahorro de energía para los motores 1-φ. No hay ahorros para un motor completamente cargado ya que se requiere toda la corriente de magnetización del estator.  El voltaje no se puede reducir. Pero existen ahorros potenciales si el motor no está completamente cargado. Un motor nominal de 117 VCA está diseñado para funcionar a una tensión tan alta como 127 VCA y tan baja como 104 VCA. Eso significa que no está completamente cargado cuando se opera a más de 104 VCA, por ejemplo, un refrigerador de 117 VCA. Es seguro que el controlador del factor de potencia reduzca el voltaje de línea a 104-110 VCA. Cuanto mayor sea el voltaje de línea inicial, mayores serán los ahorros potenciales. Por supuesto, si la compañía eléctrica entrega cerca de 110 VCA, el motor funcionará de manera más eficiente sin ningún dispositivo adicional.</p>
+<p>Cualquier motor de inducción monofásico sustancialmente inactivo, con 25 % de FLC o menos, es candidato para un PFC. Sin embargo, necesita funcionar una gran cantidad de horas al año. Y cuanto más tiempo esté inactivo, como en una sierra para madera, una punzonadora o una cinta transportadora, mayor será la posibilidad de pagar el controlador en unos pocos años de funcionamiento. Debería ser más fácil pagarlo por un factor de tres en comparación con el motor 3-φ más eficiente. El costo de un PFC no se puede recuperar para un motor que funciona sólo unas pocas horas al día.<a href="#7.bibitem">[7]</a>
+</p>
+<br/>
+<b>Resumen: motores de inducción monofásicos</b>
+<ul>
+<li> <i>Motores de inducción monofásicos</i>no son de arranque automático sin un devanado del estator auxiliar impulsado por una corriente desfasada de cerca de 90<sup>o</sup>. Una vez iniciado el devanado auxiliar es opcional.</li>
+<li>El devanado auxiliar de un<i>motor de condensador permanentemente dividido</i>tiene un condensador en serie durante el arranque y el funcionamiento.</li>
+<li>A <i>motor de inducción de arranque por condensador</i>sólo tiene un condensador en serie con el devanado auxiliar durante el arranque.</li>
+<li>A <i>motor accionado por condensador</i>Por lo general, tiene un capacitor electrolítico no polarizado grande en serie con el devanado auxiliar para el arranque, luego un capacitor no electrolítico más pequeño durante el funcionamiento.</li>
+<li>El devanado auxiliar de un<i>motor de fase dividida de resistencia</i>desarrolla una diferencia de fase versus el devanado principal durante el arranque en virtud de la diferencia de resistencia.</li>
+</ul>
+<h2><u><a name="xtocid897543"> Other specialized motors</a></u></h2>
+<h3><u><a name="xtocid897544"> Shaded pole induction motor </a></u></h3>
+<a name="Motor, shaded pole"></a>
+<p>Una forma sencilla de proporcionar par de arranque a un motor monofásico es incorporar una vuelta en cortocircuito en cada polo a 30<sup>o</sup>a 60<sup>o</sup>al devanado principal. (Cifra<a href="#02491.png">  below</a>) Normalmente, 1/3 del poste está rodeado por una correa de cobre desnuda. Estas bobinas de sombreado producen un flujo amortiguado con retardo espaciado 30<sup>o</sup>a 60<sup>o</sup>del campo principal. Este flujo retrasado con el componente principal no amortiguado produce un campo giratorio con un pequeño par para arrancar el rotor.</p>
+<a name="02491.png"></a>
+<p> <img src="02491.png"/> </p>
+<p><i>Motor de inducción de polo sombreado, (a) diseño de doble bobina, (b) versión más pequeña de bobina única.</i></p>
+<p>El par de arranque es tan bajo que los motores de polos sombreados sólo se fabrican en tamaños más pequeños, por debajo de 50 vatios. El bajo costo y la simplicidad adaptan este motor a ventiladores pequeños, circuladores de aire y otras aplicaciones de bajo torque. La velocidad del motor se puede reducir cambiando la reactancia en serie para limitar la corriente y el par, o cambiando las derivaciones de la bobina del motor como se muestra en la Figura<a href="#02492.png">  below</a>.
+</p>
+<a name="02492.png"></a>
+<p> <img src="02492.png"/> </p>
+<p><i>Control de velocidad del motor de polo sombreado.</i></p>
+<h3><u><a name="xtocid897545"> 2-phase  servo motor</a></u></h3>
+<a name="Motor, AC servo"></a>
+<p>
+A <i>servomotor</i>Normalmente forma parte de un circuito de retroalimentación que contiene componentes electrónicos, mecánicos y eléctricos. El servobucle es un medio para controlar el movimiento de un objeto a través del motor.  Un requisito de muchos de estos sistemas es una respuesta rápida. Para reducir la aceleración que roba la inercia, el núcleo de hierro se retira del rotor dejando solo una copa de aluminio montada en el eje para girar. (Cifra<a href="#02493.png">  below</a>) El núcleo de hierro se reinserta dentro de la copa como un componente estático (no giratorio) para completar el circuito magnético. Por lo demás, la construcción es típica de un motor bifásico. El rotor de baja masa puede acelerar más rápidamente que un rotor de jaula de ardilla.</p>
+<a name="02493.png"></a>
+<p> <img src="02493.png"/> </p>
+<p><i>Servomotor CA 2-φ de alta aceleración.</i></p>
+<p>Una fase está conectada a la línea monofásica; el otro es impulsado por un amplificador. Uno de los devanados es impulsado por un 90<sup>o</sup>forma de onda desfasada. En la figura anterior, esto se logra mediante un capacitor en serie en el devanado de la línea eléctrica. El otro devanado es impulsado por una onda sinusoidal de amplitud variable para controlar la velocidad del motor. La fase de la forma de onda puede invertirse (180<sup>o</sup>cambio de fase) para invertir la dirección del motor. Esta onda sinusoidal variable es la salida de un amplificador de error. Consulte la sección CT sincronizada, por ejemplo. Las superficies de control de las aeronaves pueden posicionarse mediante servomotores 2-φ de 400 Hz.</p>
+<h3><u><a name="xtocid897546"> Hysteresis motor</a></u></h3>
+<a name="Motor, hysteresis"></a>
+<p>Si el rotor laminado de acero Si de baja histéresis de un motor de inducción se reemplaza por un cilindro sin ranuras y sin devanado de acero magnético endurecido, la histéresis o el retraso de la magnetización del rotor se acentúa considerablemente. El motor síncrono de bajo par resultante desarrolla un par constante desde la velocidad de parada hasta la velocidad síncrona. Debido al bajo par, el motor de histéresis sólo está disponible en tamaños muy pequeños y sólo se utiliza para aplicaciones de velocidad constante como accionamientos de reloj y, anteriormente, tocadiscos de fonógrafo.</p>
+<h3><u><a name="xtocid897547"> Eddy current clutch </a></u></h3>
+<a name="Eddy current clutch"></a>
+<p>Si el estator de un motor de inducción o de un motor síncrono se monta de forma que gire independientemente del rotor, se produce un embrague de corrientes parásitas. Las bobinas se excitan con CC y se unen a la carga mecánica. El rotor de jaula de ardilla está unido al motor impulsor. El motor de accionamiento arranca sin excitación de CC al embrague. La excitación de CC se ajusta desde cero hasta el valor final deseado, proporcionando un par continuamente y suavemente variable. El funcionamiento del embrague de corrientes parásitas es similar al de un velocímetro automotriz analógico de corrientes parásitas.</p>
+<br/>
+<b>Resumen: Otros motores especializados</b>
+<ul>
+<li>The <i>motor de inducción de polo sombreado</i>, utilizado en aplicaciones de bajo par de menos de 50 vatios, desarrolla una segunda fase a partir de vueltas en cortocircuito en el estator.</li>
+<li><i>Motores de histéresis</i>son un pequeño motor síncrono de bajo par que alguna vez se usó en relojes y fonógrafos.</li>
+<li>The <i>embrague de corrientes parásitas</i>Proporciona un par ajustable.</li>
+</ul>
+<h2><u><a name="xtocid897548"> Selsyn (synchro) motors </a></u></h2>
+<a name="Selsyn"></a>
+<a name="Synchro (selsyn)"></a>
+<!--synchros USN http://www.tpub.com/content/neets/14187/index.htm-->
+<!--synchros British  www.atra.mod.uk/atra/rsabst/pdf/Z/Ctrl-Synchros.pdf-->
+<p>Normalmente, los devanados del rotor de un motor de inducción de rotor bobinado sufren un cortocircuito después del arranque. Durante el arranque, se puede colocar una resistencia en serie con los devanados del rotor para limitar la corriente de arranque.  Si estos devanados están conectados a una resistencia de arranque común, los dos rotores permanecerán sincronizados durante el arranque. (Cifra<a href="#02494.png">  below</a>) Esto es útil para imprentas y puentes levadizos, donde es necesario sincronizar dos motores durante el arranque.  Una vez arrancado y los rotores están en cortocircuito, el par de sincronización está ausente.  Cuanto mayor sea la resistencia durante el arranque, mayor será el par de sincronización para un par de motores. Si se quitan las resistencias de arranque, pero los rotores aún están en paralelo, no hay par de arranque. Sin embargo, existe un par de sincronización sustancial.  Este es un<i>selsyn</i>, que es una abreviatura de "autosincrónico".</p>
+<a name="02494.png"></a>
+<p> <img src="02494.png"/> </p>
+<p><i>Arranque de motores de inducción de rotor bobinado a partir de resistencias comunes.</i></p>
+<p>Los rotores pueden estar estacionarios. Si un rotor se mueve en un ángulo θ, el otro eje selsyn se moverá en un ángulo θ. Si se aplica arrastre a un selsyn, esto se sentirá al intentar girar el otro eje. Si bien existen selsyns de múltiples caballos de fuerza (varios kilovatios), la aplicación principal son pequeñas unidades de unos pocos vatios para aplicaciones de instrumentación: indicación de posición remota.</p>
+<a name="02495.png"></a>
+<p> <img src="02495.png"/> </p>
+<p><i>Selsyns sin resistencia inicial.</i></p>
+<p>Los selsyns de instrumentación no sirven para arrancar resistencias. (Cifra<a href="#02495.png">  above</a>) No están diseñados para girar automáticamente. Dado que los rotores no están en cortocircuito ni cargadas con resistencias, no se desarrolla ningún par de arranque. Sin embargo, la rotación manual de un eje producirá un desequilibrio en las corrientes del rotor hasta que le siga el eje de la unidad paralela. Tenga en cuenta que se aplica una fuente común de energía trifásica a ambos estatores.<!--Split for 2-ref tags-->Aunque mostramos rotores trifásicos arriba, un rotor monofásico es suficiente como se muestra en la Figura<a href="#02496.png">  below</a>.
+</p>
+<h3><u><a name="xtocid897549">Transmitter - receiver</a></u></h3>
+<a name="Selsyn, transmitter"></a>
+<a name="Selsyn, receiver"></a>
+<a name="Synchro, transmitter"></a>
+<a name="Synchro, receiver"></a>
+<p>Selsyns de instrumentación pequeña, también conocidos como<i>sincronizaciones</i>, utilice rotores monofásicos en paralelo, energizados por CA, conservando los estatores trifásicos en paralelo, que no están energizados externamente. (Cifra<a href="#02496.png">  below</a>) Los sincros funcionan como transformadores rotativos. Si los rotores de ambos<i>transmisor de par</i>(TX) y<i>receptor de par</i>(RX) están en el mismo ángulo, las fases de los voltajes inducidos del estator serán idénticas para ambos y no fluirá corriente. Si un rotor se desplaza del otro, los voltajes de fase del estator diferirán entre el transmisor y el receptor. La corriente del estator fluirá desarrollando par. El eje del receptor está conectado eléctricamente al eje del transmisor. Se puede girar el eje del transmisor o del receptor para girar la unidad opuesta.</p>
+<a name="02496.png"></a>
+<p> <img src="02496.png"/> </p>
+<p><i>Los sincronizadores tienen rotores accionados monofásicos.</i></p>
+<p>Los estatores sincro están bobinados con devanados trifásicos llevados a terminales externos. El devanado de un solo rotor de un transmisor o receptor de par se extrae mediante anillos colectores cepillados. Los transmisores y receptores sincronizados son eléctricamente idénticos. Sin embargo, un receptor sincronizado tiene amortiguación inercial incorporada. Un transmisor de par sincronizado puede sustituirse por un receptor de par.</p>
+<p>La detección remota de posición es la principal aplicación de sincronización. (Cifra<a href="#02497.png">  below</a>) Por ejemplo, un transmisor sincronizado acoplado a una antena de radar indica la posición de la antena en un indicador en una sala de control. Un transmisor sincronizado acoplado a una veleta indica la dirección del viento en una consola remota.  Los sincronizadores están disponibles para uso con alimentación de 240 VCA 50 Hz, 115 VCA 60 Hz, 115 VCA 400 Hz y 26 VCA 400 Hz.</p>
+<a name="02497.png"></a>
+<p> <img src="02497.png"/> </p>
+<p><i>Aplicación sincronizada: indicación de posición remota.</i></p>
+<h3><u><a name="xtocid897550"> Differential transmitter - receiver </a></u></h3>
+<a name="Selsyn, differential transmitter"></a>
+<a name="Synchro, differential transmitter"></a>
+<p>
+<i></i>
+A <i>transmisor diferencial sincronizado</i>(TDX) tiene un rotor y un estator trifásicos. (Cifra<a href="#02498.png">  below</a>) Un transmisor diferencial sincronizado agrega una entrada de ángulo del eje a una entrada de ángulo eléctrico en las entradas del rotor, generando la suma en las salidas del estator. Este ángulo eléctrico del estator se puede mostrar enviándolo a un RX.  Por ejemplo, un receptor sincronizado muestra la posición de una antena de radar con respecto a la proa de un barco. La adición del rumbo de la brújula de un barco mediante un transmisor diferencial sincronizado muestra la posición de la antena en un RX en relación con el norte verdadero, independientemente del rumbo del barco. Invertir el par de cables del estator S1-S3 entre TX y TDX resta posiciones angulares.</p>
+<a name="02498.png"></a>
+<p> <img src="02498.png"/> </p>
+<p><i>Transmisor diferencial de par (TDX).</i></p>
+<p>Una antena de radar a bordo acoplada a un transmisor sincronizado codifica el ángulo de la antena con respecto a la proa del barco. (Cifra<a href="#02499.png">  below</a>) Se desea visualizar la posición de la antena con respecto al norte verdadero.  Necesitamos agregar los barcos que se dirigen desde un girocompás a la posición de la antena relativa a la proa para mostrar el ángulo de la antena con respecto al norte verdadero. ∠antena + ∠giro</p>
+<a name="02499.png"></a>
+<p> <img src="02499.png"/> </p>
+<p><i>Aplicación del transmisor diferencial de par: suma angular.</i></p>
+<p>∠antena-N = ∠antena + ∠giro</p>
+<p>∠rx = ∠tx + ∠gy</p>
+<p>Por ejemplo, el rumbo del barco es ∠30<sup>o</sup>, la posición de la antena con respecto a la proa del barco es ∠0<sup>o</sup>, ∠antena-N es:</p>
+<p>∠rx = ∠tx + ∠gy</p>
+<p>
+        ∠30<sup>o</sup>= ∠30<sup>o</sup>+ ∠0<sup>o</sup>
+</p>
+<p>Ejemplo, el rumbo del barco es ∠30<sup>o</sup>, la posición de la antena con respecto a la proa del barco es ∠15<sup>o</sup>, ∠antena-N es:</p>
+<p>
+        ∠45<sup>o</sup>= ∠30<sup>o</sup>+ ∠15<sup>o</sup>
+</p>
+<h4><a name="xtocid897551"> Addition vs subtraction </a></h4>
+<p>Como referencia, mostramos los diagramas de cableado para la resta y suma de ángulos de eje utilizando TDX (Transmisor diferencial de par) y TDR (Receptor diferencial de par). El TDX tiene una entrada de ángulo de torsión en el eje, una entrada de ángulo eléctrico en las tres conexiones del estator y una salida de ángulo eléctrico en las tres conexiones del rotor. El TDR tiene entradas de ángulo eléctrico tanto en el estator como en el rotor. La salida del ángulo es un par en el eje TDR. La diferencia entre un TDX y un TDR es que el TDX es un transmisor de par y el TDR un receptor de par.</p>
+<a name="02500.png"></a>
+<p> <img src="02500.png"/> </p>
+<p><i>Resta TDX.</i></p>
+<p>Las entradas de par en la Figura<a href="#02500.png">  above</a>son TX y TDX. La diferencia angular de salida de par es TR.</p>
+<a name="02501.png"></a>
+<p> <img src="02501.png"/> </p>
+<p><i>Adición TDX.</i></p>
+<p>Las entradas de par en la Figura<a href="#02501.png">  above</a>son TX y TDX. La suma angular de salida del par es TR.</p>
+<a name="02502.png"></a>
+<p> <img src="02502.png"/> </p>
+<p><i>Resta TDR.</i></p>
+<p>Las entradas de par en la Figura<a href="#02502.png">  above</a>son TX<sub>1</sub>y TX<sub>2</sub>. La diferencia angular de salida de par es TDR.</p>
+<a name="02503.png"></a>
+<p> <img src="02503.png"/> </p>
+<p><i>Adición de TDR.</i></p>
+<p>Las entradas de par en la Figura<a href="#02503.png">  above</a>son TX<sub>1</sub>y TX<sub>2</sub>. La suma angular de salida de par es TDR.</p>
+<h3><u><a name="xtocid897552"> Control transformer </a></u></h3>
+<a name="Control transformer, synchro"></a>
+<a name="CT, control transformer, synchro"></a>
+<a name="Synchro, control transformer"></a>
+<p>Una variación del transmisor sincronizado es el<i>transformador de control</i>. Tiene tres devanados de estator equiespaciados como un TX.  Su rotor está enrollado con más vueltas que un transmisor o receptor para hacerlo más sensible a la hora de detectar un valor nulo a medida que lo gira, normalmente, mediante un<i>servo</i>sistema.  La salida del rotor CT (Transformador de control) es cero cuando está orientado en ángulo recto con respecto al vector del campo magnético del estator. A diferencia de un TX o RX, el CT no transmite ni recibe torque. Es simplemente un detector sensible de posición angular.</p>
+<a name="02504.png"></a>
+<p> <img src="02504.png"/> </p>
+<p><i>El transformador de control (CT) detecta servo nulo.</i></p>
+<a name="Servo motor, AC"></a>
+<a name="Motor, AC, servo"></a>
+<p>En la figura<a href="#02504.png">  above</a>, el eje del TX se coloca en la posición deseada de la antena del radar. El servosistema hará que el servomotor impulse la antena a la posición ordenada. El CT compara la posición ordenada con la real y le indica al servoamplificador que accione el motor hasta que se alcance el ángulo ordenado.</p>
+<a name="02505.png"></a>
+<p> <img src="02505.png"/> </p>
+<p><i>Servo usa CT para detectar la posición nula de la antena</i></p>
+<p>Cuando el rotor del transformador de control detecta un valor nulo a 90<sup>o</sup>al eje del campo del estator, no hay salida del rotor. Cualquier desplazamiento del rotor produce un voltaje de error de CA proporcional al desplazamiento.  A<i>servo</i>(Cifra<a href="#02505.png">  above</a>) busca minimizar el error entre una variable ordenada y medida debido a la retroalimentación negativa. El transformador de control compara el ángulo del eje con el ángulo del campo magnético del estator, enviado por el estator TX.  Cuando mide un mínimo o nulo, el servo ha conducido la antena y el rotor del transformador de control a la posición ordenada. No hay error entre la posición medida y comandada, no hay CT, transformador de control, salida a amplificar. El<i>servomotor</i>, un motor bifásico, deja de girar. Sin embargo, cualquier error detectado por el CT acciona el amplificador que acciona el motor hasta que se minimiza el error. Esto corresponde a que el servosistema haya accionado el CT acoplado a la antena para que coincida con el ángulo ordenado por el TX.</p>
+<p>El servomotor puede impulsar un tren de engranajes reductores y ser grande en comparación con los sincronizadores TX y CT. Sin embargo, la baja eficiencia de los servomotores de CA los limita a cargas más pequeñas. También son difíciles de controlar ya que son dispositivos de velocidad constante. Sin embargo, se pueden controlar hasta cierto punto variando el voltaje en una fase con el voltaje de línea en la otra fase. Las cargas pesadas son impulsadas de manera más eficiente por grandes servomotores de CC.</p>
+<p>Las aplicaciones aéreas utilizan componentes de 400 Hz: TX, CT y servomotor. El tamaño y el peso de los componentes magnéticos de CA son inversamente proporcionales a la frecuencia. Por lo tanto, el uso de componentes de 400 Hz para aplicaciones aeronáuticas, como superficies de control móviles, ahorra tamaño y peso.</p>
+<h3><u><a name="xtocid897553"> Resolver</a></u></h3>
+<a name="Synchro, resolver"></a>
+<a name="Resolver, synchro"></a>
+<a name="resolver"></a>
+<p>
+A <i>solucionador</i>(Cifra<a href="#02506.png">  below</a>) tiene dos devanados del estator colocados a 90<sup>o</sup>entre sí, y un devanado de un solo rotor impulsado por corriente alterna. Se utiliza un solucionador para la conversión de polar a rectangular. Una entrada angular en el eje del rotor produce tensiones proporcionales en coordenadas rectangulares senθ y cosθ en los devanados del estator.</p>
+<a name="02506.png"></a>
+<p> <img src="02506.png"/> </p>
+<p><i>El solucionador convierte el ángulo del eje en seno y coseno del ángulo.</i></p>
+<p>Por ejemplo, una caja negra dentro de un radar codifica la distancia a un objetivo como un voltaje proporcional de onda sinusoidal V, con el ángulo de orientación como un ángulo del eje. Convertir a coordenadas X e Y. La onda sinusoidal se alimenta al rotor de un resolver. El eje del ángulo de rodamiento está acoplado al eje del resolutor. Las coordenadas (X, Y) están disponibles en las bobinas del estator del resolver:<blockquote>
+X=V(cos(∠bearing)) 
+</blockquote>
+<blockquote>
+Y=V(sin(∠bearing)) 
+</blockquote>Las coordenadas cartesianas (X, Y) se pueden trazar en una visualización de mapa.</p>
+<p>Se puede adaptar un TX (transmisor de par) para funcionar como resolutor. (Cifra<a href="#02507.png">  below</a>)
+</p>
+<a name="02507.png"></a>
+<p> <img src="02507.png"/> </p>
+<p><i>Scott-T convierte 3-φ en 2-φ, lo que permite que TX realice la función de resolución.</i></p>
+<a name="Scott-T transformer"></a>
+<a name="Transformer, Scott-T"></a>
+<p>Es posible derivar componentes angulares en cuadratura tipo resolutor a partir de un transmisor sincrónico utilizando un<i>Scott-T</i>transformador. Las tres salidas TX, trifásicas, son procesadas por un<i>Scott-T</i>transformador en un par de componentes en cuadratura. Ver<a href="AC_9.html#scott">Scott-T</a>capítulo 9 para más detalles.</p>
+<p>También existe una versión lineal del resolutor conocida como<a href="AC_12.html#inductosyn">inductosyn</a>. La versión rotativa del<i>inductosin</i>tiene una resolución más fina que un resolutor.</p>
+<br/>
+<b>Resumen: motores Selsyn (sincro)</b>
+<ul>
+<li>A <i>sincronizado</i>, también conocido como<i>selsyn</i>, es un transformador rotativo que se utiliza para transmitir el par del eje.</li>
+<li>un TX,<i>transmisor de par</i>, acepta una entrada de par en su eje para transmisión en salidas eléctricas trifásicas.</li>
+<li>un RX,<i>receptor de par</i>, acepta una representación eléctrica trifásica de una entrada angular para su conversión en una salida de par en su eje. Así, TX transmite un par desde un eje de entrada a un eje de salida RX remoto.</li>
+<li>un TDX,<i>transmisor diferencial de par</i>, suma una entrada de ángulo eléctrico con una entrada de ángulo del eje produciendo una salida de ángulo eléctrico</li>
+<li>un TDR,<i>receptor diferencial de torque,</i>suma dos entradas de ángulo eléctrico produciendo una salida de ángulo del eje</li>
+<li>ACTO,<i>transformador de control</i>, detecta un valor nulo cuando el rotor se coloca en ángulo recto con respecto a la entrada del ángulo del estator. Un CT suele ser un componente de un sistema de servorretroalimentación.</li>
+<li>A <i>solucionador</i>genera una representación en cuadratura sin(θ) y cos(θ) de la entrada del ángulo del eje en lugar de una salida trifásica.</li>
+<li>La salida trifásica de un TX se convierte en una salida de estilo resolutor mediante un<i>Transformador Scott-T</i>.</li>
+</ul>
+<h2><u><a name="xtocid897554"> AC commutator motors </a></u></h2>
+<a name="Motor, AC commutator"></a>
+<p>El primer trabajo de Charles Proteus Steinmetz después de llegar a Estados Unidos fue investigar los problemas encontrados en el diseño de la versión de corriente alterna del motor conmutador con escobillas. La situación era tan mala que no era posible diseñar los motores antes de su construcción. El éxito o el fracaso del diseño de un motor no se conocía hasta después de que se construyera y probara con un gran gasto.  Formuló las leyes del magnetismo.<i>histéresis</i>en encontrar una solución.  La histéresis es un retraso de la intensidad del campo magnético en comparación con la fuerza de magnetización. Esto produce una pérdida que no está presente en el campo magnético de CC. Aleaciones de baja histéresis y rotura de la aleación en aislamiento fino.<i>laminaciones</i>hizo posible diseñar con precisión motores de conmutador de CA antes de construirlos.</p>
+<p>Los motores de conmutador de CA, al igual que los motores de CC comparables, tienen un par de arranque más alto y una velocidad más alta que los motores de inducción de CA. El motor en serie funciona muy por encima de la velocidad síncrona de un motor de CA convencional. Los motores de conmutador de CA pueden ser monofásicos o polifásicos. La versión monofásica AC sufre una pulsación de par de doble frecuencia de línea, no presente en el motor polifásico. Dado que un motor de conmutación puede funcionar a una velocidad mucho mayor que un motor de inducción, puede generar más potencia que un motor de inducción de tamaño similar. Sin embargo, los motores de conmutador no requieren tanto mantenimiento como los motores de inducción, debido al desgaste de las escobillas y del conmutador.</p>
+<h3><u><a name="xtocid897555"> Single phase series motor </a></u></h3>
+<a name="Motor, AC series"></a>
+<p>Si un motor en serie de CC equipado con un campo laminado se conecta a CA, la reactancia en retraso de la bobina de campo reducirá considerablemente la corriente de campo. Si bien dicho motor gira, el funcionamiento es marginal.  Durante el arranque, los devanados del inducido conectados a los segmentos del conmutador en cortocircuito por las escobillas parecen espiras de transformador en cortocircuito con el campo. Esto produce considerables arcos y chispas en las escobillas cuando la armadura comienza a girar. Esto es un problema menor a medida que aumenta la velocidad, lo que comparte los arcos y las chispas entre los segmentos del conmutador.  La reactancia retardada y las escobillas de arco sólo son tolerables en motores de CA en serie muy pequeños y no compensados ​​que funcionan a alta velocidad. Los motores de CA de serie más pequeños que los taladros manuales y las batidoras de cocina pueden no estar compensados. (Cifra<a href="#02508.png">  below</a>)
+</p>
+<a name="02508.png"></a>
+<p> <img src="02508.png"/> </p>
+<p><i>Motor AC serie no compensado.</i></p>
+<!--<a name="Compensated series AC motor"></a>-->
+<a name="Motor, AC, compensated series motor"></a>
+<h3><u><a name="xtocid897556"> Compensated series motor </a></u></h3>
+<p>Los arcos y las chispas se mitigan colocando un<i>bobinado compensador</i>en el estator en serie con la armadura colocada de modo que su fuerza magnetomotriz (mmf) cancele la mmf AC de la armadura. (Cifra<a href="#02509.png">  below</a>) Un entrehierro más pequeño del motor y menos vueltas de campo reducen la reactancia retrasada en serie con la armadura, mejorando el factor de potencia. Todos los motores de conmutador de CA, excepto los muy pequeños, emplean devanados de compensación. Los motores tan grandes como los empleados en una batidora de cocina, o más grandes, utilizan devanados de estator compensados.</p>
+<a name="02509.png"></a>
+<p> <img src="02509.png"/> </p>
+<p><i>Motor AC serie compensado.</i></p>
+<h3><u><a name="xtocid897557"> Universal motor </a></u></h3>
+<a name="Universal AC motor"></a>
+<a name="Motor, AC, universal"></a>
+<p>Es posible diseñar pequeños (menos de 300 vatios)<i>motores universales</i>que funcionan con CC o CA.  Los motores universales muy pequeños pueden estar descompensados. Los motores universales más grandes y de mayor velocidad utilizan un devanado de compensación. Un motor funcionará más lento con CA que con CC debido a la reactancia que se encuentra con la CA. Sin embargo, los picos de las ondas sinusoidales saturan la trayectoria magnética reduciendo el flujo total por debajo del valor de CC, aumentando la velocidad del motor "en serie". Por tanto, los efectos de compensación dan como resultado una velocidad casi constante de CC a 60 Hz. Los pequeños aparatos operados en línea, como taladros, aspiradoras y batidoras, que requieren de 3.000 a 10.000 rpm utilizan motores universales. Sin embargo, el desarrollo de rectificadores de estado sólido e imanes permanentes económicos está convirtiendo al motor de imán permanente de CC en una alternativa viable.</p>
+<h3><u><a name="xtocid897558"> Repulsion motor </a></u></h3>
+<a name="Repulsion motor"></a>
+<a name="Motor, repulsion"></a>
+<p>Un motor de repulsión (Figura<a href="#02510.png">  below</a>) consta de un campo conectado directamente a la tensión de línea de CA y un par de escobillas en cortocircuito desplazadas en 15<sup>o</sup>a 25<sup>o</sup>desde el eje del campo. El campo induce un flujo de corriente hacia la armadura en cortocircuito cuyo campo magnético se opone al de las bobinas de campo. La velocidad se puede controlar girando los cepillos con respecto al eje del campo. Este motor tiene una conmutación superior por debajo de la velocidad sincrónica, una conmutación inferior por encima de la velocidad sincrónica. Una corriente de arranque baja produce un par de arranque alto.</p>
+<a name="02510.png"></a>
+<p> <img src="02510.png"/> </p>
+<p><i>Motor de repulsión AC.</i></p>
+<h3><u><a name="xtocid897559"> Repulsion start induction motor </a></u></h3>
+<a name="Repulsion start induction motor"></a>
+<a name="Motor, repulsion start induction"></a>
+<a name="Induction motor, repulsion start"></a>
+<p>Cuando un motor de inducción impulsa una carga de arranque fuerte como un compresor, se puede aprovechar el alto par de arranque del motor de repulsión. Los devanados del rotor del motor de inducción se llevan a los segmentos del conmutador para arrancar mediante un par de escobillas en cortocircuito. A una velocidad cercana a la de funcionamiento, un interruptor centrífugo pone en cortocircuito todos los segmentos del conmutador, dando el efecto de un rotor de jaula de ardilla.  Los cepillos también se pueden levantar para prolongar la vida útil del arbusto. El par de arranque es del 300% al 600% del valor de velocidad máxima en comparación con menos del 200% para un motor de inducción pura.</p>
+<br/>
+<b>Resumen: motores de conmutador de CA</b>
+<ul>
+<li>The <i>motor serie monofásico</i>es un intento de construir un motor como un motor conmutador de CC. El motor resultante sólo es práctico en los tamaños más pequeños.</li>
+<li>La adición de un devanado de compensación produce el<i>motor serie compensado</i>, superando el exceso de chispas en el conmutador. La mayoría de los motores de conmutador de CA son de este tipo. A alta velocidad, este motor proporciona más potencia que un motor de inducción del mismo tamaño, pero no requiere mantenimiento.</li>
+<li>Es posible producir motores para pequeños electrodomésticos alimentados por CA o CC. Esto se conoce como un<i>motores universales</i>.</li>
+<li>La línea de CA está conectada directamente al estator de un<i>motor de repulsión</i>con el conmutador en cortocircuito por las escobillas.</li>
+<li>Las escobillas retráctiles en cortocircuito pueden arrancar un motor de inducción de rotor bobinado. Esto se conoce como un<i>motor de inducción de arranque por repulsión</i>.</li>
+</ul>
+<h2><a name="xtocid897560">Bibliography</a></h2><br/>
+<ol>
+<li><a name="1.bibitem">[1]“American Superconductor achieves full power of 5MW Ship motor”, at <a href="http://www.spacedaily.com/news/energy-tech-04zzn.html">www.spacedaily.com/news/energy-tech-04zzn.html</a></a> </li>
+<li><a name="2.bibitem">[2]“Linear motor applications guide”, (Aerotech, Inc., Pittsburg, PA)  <a href="http://www.aerotech.com/products/PDF/LMAppGuide.pdf ">www.aerotech.com/products/PDF/LMAppGuide.pdf</a>opt_txt</a></li>
+<li><a name="3.bibitem">[3]“Linear motor outperforms steam-piston catapults”, Design News, <a href="http://www.designnews.com/index.asp?layout=article&amp;articleid=CA151563&amp;cfd=1">www.designnews.com/index.asp?layout=article&amp;articleid=CA151563&amp;cfd=1</a></a> </li>
+<li><a name="4.bibitem">[4]“Future Aircraft Carrier - CVF, Navy Matters”, <a href="http://navy-matters.beedall.com/cvf3-2.htm ">http://navy-matters.beedall.com/cvf3-2.htm</a></a></li>
+<li><a name="5.bibitem">[5]Bill Schweber, “Electronics poised to replace steam-powered aircraft launch system”,  EDN, (4/11/2002). <a href="http://www.edn.com/article/CA207108.html?pubdate=04%2F11%2F2002">www.edn.com/article/CA207108.html?pubdate=04%2F11%2F2002</a></a></li>
+<li><a name="6.bibitem">[6]“Operating 60 cycle motors as generators”, Red Rock Energy <a href="http://www.redrok.com/cimtext.pdf">www.redrok.com/cimtext.pdf</a></a></li>
+<li><a name="7.bibitem">[7]“Energy Saver systems for Induction motors”,  M Photonics Ltd, P.O. Box 13 076, Christchurch, New Zealand at</a></li>
+<a href="http://www.lmphotonics.com/energy.htm">http://www.lmphotonics.com/energy.htm</a>
+<li><a name="8.bibitem">[8] Matt Isserstedt“Building an Auto-Start Rotary Three Phase Converter”, May 2008, at <a href="http://www.metalwebnews.com/howto/phase-converter/phase-converter.html">http://www.metalwebnews.com/howto/phase-converter/phase-converter.html</a></a></li>
+<li><a name="9.bibitem">[9]Jim Hanrahan“Building a Phase Converter”, December 1995, at <a href="http://www.metalwebnews.com/howto/ph-conv/ph-conv.html">http://www.metalwebnews.com/howto/ph-conv/ph-conv.html</a></a></li>
+</ol>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="AC_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="AC_12.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="AC_14.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen II (AC) - Capítulo 1 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #8b5cf6; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen II (AC) - Capítulo 1</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen II</h1>
+<h1>Capítulo 1</h1>
+<!--Modified 02/09/2005 (DC) Floating figures w/ captions -->
+<h1>TEORÍA BÁSICA DE CA</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid88670"><u>What is alternating current (AC)?</u></a></li>
+<li><a href="#xtocid88671"><u>AC waveforms</u></a></li>
+<li><a href="#xtocid88672"><u>Measurements of AC magnitude</u></a></li>
+<li><a href="#xtocid88673"><u>Simple AC circuit calculations</u></a></li>
+<li><a href="#xtocid88674"><u>AC phase</u></a></li>
+<li><a href="#xtocid88675"><u>Principles of radio</u></a></li>
+<li><a href="#xtocid88676"><u>Contributors</u></a></li></ul>
+<h2><u><a name="xtocid88670">What is alternating current (AC)?</a></u></h2>
+<a name="AC"></a>
+<a name="Alternating current"></a>
+<a name="DC"></a>
+<a name="Direct current"></a>
+<p>La mayoría de los estudiantes de electricidad comienzan su estudio con lo que se conoce como<i>corriente continua</i>(CC), que es electricidad que fluye en una dirección constante y/o que posee un voltaje con polaridad constante.  La CC es el tipo de electricidad producida por una batería (con terminales positivos y negativos definidos), o el tipo de carga generada al frotar ciertos tipos de materiales entre sí.</p>
+<p>Por muy útil y fácil de entender que sea DC, no es el único “tipo” de
+electricidad en uso.  Ciertas fuentes de electricidad (en particular, las rotativas)
+generadores electromecánicos) producen naturalmente voltajes que se alternan en
+polaridad, invirtiendo positivo y negativo con el tiempo.  Ya sea como voltaje
+polaridad de conmutación o como dirección de conmutación de corriente hacia adelante y hacia atrás, esto
+El “tipo” de electricidad se conoce como corriente alterna (CA): Figura<a href="#02001.png">  below</a>
+</p>
+<a name="02001.png"></a>
+<p> <img src="02001.png"/> </p>
+<p><i>Corriente directa versus corriente alterna</i></p>
+<p>Mientras que el conocido símbolo de la batería se utiliza como símbolo genérico para cualquier fuente de voltaje de CC, el círculo con la línea ondulada en su interior es el símbolo genérico de cualquier fuente de voltaje de CA.</p>
+<p>Uno podría preguntarse por qué alguien se molestaría con algo como el aire acondicionado.  Es cierto que en algunos casos la CA no tiene ninguna ventaja práctica sobre la CC.  En aplicaciones donde se utiliza electricidad para disipar energía en forma de calor, la polaridad o dirección de la corriente es irrelevante, siempre que haya suficiente voltaje y corriente en la carga para producir el calor deseado (disipación de potencia).  Sin embargo, con la CA es posible construir generadores eléctricos, motores y sistemas de distribución de energía que son mucho más eficientes que la CC, por lo que encontramos que la CA se utiliza predominantemente en todo el mundo en aplicaciones de alta potencia.  Para explicar los detalles de por qué esto es así, es necesario un poco de conocimiento previo sobre AC.</p>
+<a name="Alternator"></a>
+<a name="Electromagnetic induction"></a>
+<a name="Induction, electromagnetic"></a>
+<p>Si se construye una máquina para hacer girar un campo magnético alrededor de un conjunto de bobinas de alambre estacionarias con el giro de un eje, se producirá voltaje de CA a través de las bobinas de alambre a medida que ese eje gira, de acuerdo con la Ley de inducción electromagnética de Faraday.  Este es el principio de funcionamiento básico de un generador de CA, también conocido como<i>alternador</i>: Cifra<a href="#02002.png">  below</a>
+</p>
+<a name="02002.png"></a>
+<p> <img src="02002.png"/> </p>
+<p><i>Operación del alternador</i></p>
+<p>Observe cómo la polaridad del voltaje a través de las bobinas de alambre se invierte cuando pasan los polos opuestos del imán giratorio.  Conectada a una carga, esta polaridad de voltaje invertida creará una dirección de corriente inversa en el circuito.  Cuanto más rápido se gira el eje del alternador, más rápido girará el imán, lo que da como resultado un voltaje y una corriente alterna que cambian de dirección con más frecuencia en un período de tiempo determinado.</p>
+<a name="Generator"></a>
+<a name="Brush, generator"></a>
+<p>Mientras que los generadores de CC funcionan según el mismo principio general de electromagnética
+Por inducción, su construcción no es tan simple como la de sus homólogos de CA.  con
+En un generador de CC, la bobina de cable está montada en el eje donde está el imán.
+el alternador de CA y las conexiones eléctricas se realizan a esta bobina giratoria
+a través de “escobillas” de carbón estacionarias que entran en contacto con tiras de cobre en el eje giratorio.
+eje.  Todo esto es necesario para cambiar la polaridad de salida cambiante de la bobina a
+el circuito externo de modo que el circuito externo vea una polaridad constante:
+Figura<a href="#02003.png">  below</a>
+</p>
+<a name="02003.png"></a>
+<p> <img src="02003.png"/> </p>
+<p><i>Operación del generador de CC</i></p>
+<p>El generador que se muestra arriba producirá dos pulsos de voltaje por revolución del eje, ambos pulsos en la misma dirección (polaridad).  Para que un generador de CC produzca<i>constante</i>voltaje, en lugar de breves pulsos de voltaje una vez cada 1/2 revolución, hay múltiples conjuntos de bobinas que hacen contacto intermitente con las escobillas.  El diagrama que se muestra arriba es un poco más simplificado que el que verías en la vida real.</p>
+<p>Los problemas relacionados con establecer y romper el contacto eléctrico con una bobina en movimiento deberían ser obvios (chispas y calor), especialmente si el eje del generador gira a alta velocidad.  Si la atmósfera que rodea la máquina contiene vapores inflamables o explosivos, los problemas prácticos de los contactos de las escobillas que producen chispas son aún mayores.  Un generador de CA (alternador) no requiere escobillas ni conmutadores para funcionar, por lo que es inmune a estos problemas que experimentan los generadores de CC.</p>
+<p>Los beneficios de la CA sobre la CC con respecto al diseño del generador también se reflejan en los motores eléctricos.  Mientras que los motores de CC requieren el uso de escobillas para hacer contacto eléctrico con bobinas de alambre en movimiento, los motores de CA no.  De hecho, los diseños de motores de CA y CC son muy similares a sus contrapartes de generador (idénticos por el bien de este tutorial), el motor de CA depende del campo magnético inverso producido por la corriente alterna a través de sus bobinas de alambre estacionarias para hacer girar el imán giratorio sobre su eje, y el motor de CC depende de los contactos de las escobillas que hacen y cortan conexiones para invertir la corriente a través de la bobina giratoria cada 1/2 rotación (180 grados).</p>
+<a name="Mutual induction"></a>
+<a name="Induction, mutual"></a>
+<a name="Transformer"></a>
+<p>Entonces sabemos que los generadores de CA y los motores de CA tienden a ser más simples que los de CC.
+Generadores y motores DC.  Esta relativa simplicidad se traduce en una mayor
+confiabilidad y menor costo de fabricación.  Pero, ¿para qué más sirve el aire acondicionado?
+¡Seguramente debe haber algo más que detalles de diseño de generadores y motores!
+De hecho lo hay.  Existe un efecto del electromagnetismo conocido como<i>inducción mutua</i>, mediante el cual dos o más bobinas de alambre colocadas de manera
+que el campo magnético cambiante creado por uno induce un voltaje en el
+otro.  Si tenemos dos bobinas mutuamente inductivas y energizamos una bobina con
+AC, crearemos un voltaje AC en la otra bobina.  Cuando se usa como tal, este
+dispositivo se conoce como<i>transformador</i>: Cifra<a href="#02004.png">  below</a>
+</p>
+<a name="02004.png"></a>
+<p> <img src="02004.png"/> </p>
+<p><i>El transformador “transforma” el voltaje y la corriente CA.</i></p>
+<a name="Transformer coils, primary and secondary"></a>
+<a name="Primary transformer coil"></a>
+<a name="Secondary transformer coil"></a>
+<p>La importancia fundamental de un transformador es su capacidad para aumentar el voltaje.
+o hacia abajo desde la bobina alimentada hasta la bobina no alimentada.  El voltaje CA inducido en
+La bobina sin alimentación (“secundaria”) es igual al voltaje de CA a través de la bobina alimentada.
+Bobina (“primaria”) multiplicada por la relación de vueltas de la bobina secundaria a la primaria.
+vueltas de la bobina.  Si la bobina secundaria está alimentando una carga, la corriente a través de la
+La bobina secundaria es todo lo contrario: la corriente de la bobina primaria multiplicada por la
+Relación de vueltas primarias y secundarias.  Esta relación tiene una relación muy estrecha.
+analogía mecánica, utilizando par y velocidad para representar voltaje y corriente,
+respectivamente: Figura<a href="#02005.png">  below</a>
+</p>
+<a name="02005.png"></a>
+<p> <img src="02005.png"/> </p>
+<p><i>El tren de engranajes de multiplicación de velocidad reduce el par y aumenta la velocidad. El transformador reductor reduce el voltaje y aumenta la corriente.</i></p>
+<p>Si la relación de devanado se invierte de modo que la bobina primaria tenga menos vueltas que
+la bobina secundaria, el transformador "aumenta" el voltaje de la fuente
+nivel a un nivel superior en la carga: Figura<a href="#02006.png">  below</a>
+</p>
+<a name="02006.png"></a>
+<p> <img src="02006.png"/> </p>
+<p><i>El tren de engranajes de reducción de velocidad aumenta y reduce la velocidad. El transformador elevador aumenta el voltaje y reduce la corriente.</i></p>
+<p>La capacidad del transformador para aumentar o disminuir el voltaje de CA con facilidad le da a la CA una ventaja incomparable con la CC en el ámbito de la distribución de energía en la figura.<a href="#02007.png">  below</a>.  Cuando se transmite energía eléctrica a largas distancias, es mucho más eficiente hacerlo con voltajes elevados y corrientes reducidas (cable de menor diámetro con menos pérdidas de potencia resistiva), luego reducir el voltaje y aumentar la corriente para uso industrial, empresarial o de consumo.</p>
+<a name="02007.png"></a>
+<p> <img src="02007.png"/> </p>
+<p><i>Los transformadores permiten una transmisión eficiente de energía eléctrica de alto voltaje a larga distancia.</i></p>
+<p>La tecnología de transformadores ha hecho práctica la distribución de energía eléctrica a largo alcance.  Sin la capacidad de aumentar y disminuir el voltaje de manera eficiente, tendría un costo prohibitivo construir sistemas de energía para cualquier uso que no sea de corto alcance (dentro de unas pocas millas como máximo).</p>
+<p>Por muy útiles que sean los transformadores, solo funcionan con CA, no con CC.  Debido a que el fenómeno de la inductancia mutua se basa en<i>cambio</i>Los campos magnéticos y la corriente continua (CC) solo pueden producir campos magnéticos estables, los transformadores simplemente no funcionan con corriente continua.  Por supuesto, la corriente continua puede interrumpirse (impulsarse) a través del devanado primario de un transformador para crear un campo magnético cambiante (como se hace en los sistemas de encendido de automóviles para producir energía de bujías de alto voltaje a partir de una batería de CC de bajo voltaje), pero la CC pulsada no es tan diferente de la CA.  Quizás más que cualquier otra razón, esta es la razón por la que la CA encuentra una aplicación tan amplia en los sistemas de energía.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>DC significa "corriente continua", es decir, voltaje o corriente que mantiene una polaridad o dirección constante, respectivamente, a lo largo del tiempo.</li>
+<li>CA significa "corriente alterna", es decir, voltaje o corriente que cambia de polaridad o dirección, respectivamente, con el tiempo.</li>
+<li>Generadores electromecánicos de CA, conocidos como<i>alternadores</i>, son de construcción más simple que los generadores electromecánicos de CC.</li>
+<li>El diseño de motores de CA y CC sigue muy de cerca los principios de diseño de los respectivos generadores.</li>
+<li>A <i>transformador</i>es un par de bobinas mutuamente inductivas que se utilizan para transmitir energía CA de una bobina a la otra.  A menudo, el número de vueltas en cada bobina se establece para crear un aumento o disminución de voltaje desde la bobina alimentada (primaria) a la bobina no alimentada (secundaria).</li>
+<li>Tensión secundaria = Tensión primaria (vueltas secundarias / vueltas primarias)</li>
+<li>Corriente secundaria = Corriente primaria (vueltas primarias / vueltas secundarias)</li>
+</ul>
+<h2><u><a name="xtocid88671">AC waveforms</a></u></h2>
+<a name="Sine wave"></a>
+<a name="Wave, sine"></a>
+<p>Cuando un alternador produce voltaje CA, el voltaje cambia de polaridad con el tiempo, pero lo hace de una manera muy particular.  Cuando se representa gráficamente a lo largo del tiempo, la "onda" trazada por este voltaje de polaridad alterna de un alternador adquiere una forma distinta, conocida como<i>onda sinusoidal</i>: Cifra<a href="#02008.png">  below</a>
+</p>
+<a name="02008.png"></a>
+<p> <img src="02008.png"/> </p>
+<p><i>Gráfico de voltaje CA a lo largo del tiempo (la onda sinusoidal).</i></p>
+<a name="Sine function"></a>
+<a name="Function, sine"></a>
+<p>En el gráfico de voltaje de un alternador electromecánico, el cambio de una polaridad a la otra es suave, el nivel de voltaje cambia más rápidamente en el punto cero (“cruce”) y más lentamente en su pico.  Si tuviéramos que graficar la función trigonométrica del “seno” en un rango horizontal de 0 a 360 grados, encontraríamos exactamente el mismo patrón que en la Tabla<a href="#sine.tbl">  below</a>.
+</p>
+<a name="sine.tbl"><p><i>Trigonometric “sine” function.</i></p></a>
+<table border="1" style="background-color: #E0FFFF; ">
+<tr>
+<th>Ángulo (<sup>o</sup>)</th><th>sin(angle)</th><th>ola</th><th>Ángulo (<sup>o</sup>)</th><th>sin(angle)</th><th>ola</th>
+</tr>
+<tr>
+<td>0</td><td>0.0000</td><td>cero</td><td>180</td><td>0.0000</td><td>cero</td>
+</tr>
+<tr>
+<td>15</td><td>0.2588</td><td>+</td><td>195</td><td>-0.2588</td><td>-</td>
+</tr>
+<tr>
+<td>30</td><td>0.5000</td><td>+</td><td>210</td><td>-0.5000</td><td>-</td>
+</tr>
+<tr>
+<td>45</td><td>0.7071</td><td>+</td><td>225</td><td>-0.7071</td><td>-</td>
+</tr>
+<tr>
+<td>60</td><td>0.8660</td><td>+</td><td>240</td><td>-0.8660</td><td>-</td>
+</tr>
+<tr>
+<td>75</td><td>0.9659</td><td>+</td><td>255</td><td>-0.9659</td><td>-</td>
+</tr>
+<tr>
+<td>90</td><td>1.0000</td><td>+pico</td><td>270</td><td>-1.0000</td><td>-cima</td>
+</tr>
+<tr>
+<td>105</td><td>0.9659</td><td>+</td><td>285</td><td>-0.9659</td><td>-</td>
+</tr>
+<tr>
+<td>120</td><td>0.8660</td><td>+</td><td>300</td><td>-0.8660</td><td>-</td>
+</tr>
+<tr>
+<td>135</td><td>0.7071</td><td>+</td><td>315</td><td>-0.7071</td><td>-</td>
+</tr>
+<tr>
+<td>150</td><td>0.5000</td><td>+</td><td>330</td><td>-0.5000</td><td>-</td>
+</tr>
+<tr>
+<td>165</td><td>0.2588</td><td>+</td><td>345</td><td>-0.2588</td><td>-</td>
+</tr>
+<tr>
+<td>180</td><td>0.0000</td><td>cero</td><td>360</td><td>0.0000</td><td>cero</td>
+</tr>
+</table>
+<br/>
+<p>La razón por la que un alternador electromecánico genera CA de onda sinusoidal se debe a la física de su funcionamiento.  El voltaje producido por las bobinas estacionarias por el movimiento del imán giratorio es proporcional a la velocidad a la que el flujo magnético cambia perpendicularmente a las bobinas (Ley de inducción electromagnética de Faraday).  Esa tasa es mayor cuando los polos del imán están más cerca de las bobinas y menor cuando los polos del imán están más alejados de las bobinas.  Matemáticamente, la tasa de cambio del flujo magnético debido a un imán giratorio sigue la de una función sinusoidal, por lo que el voltaje producido por las bobinas sigue esa misma función.</p>
+<a name="Cycle"></a>
+<p>Si tuviéramos que seguir el voltaje cambiante producido por una bobina en un alternador desde cualquier punto en el gráfico de onda sinusoidal hasta el punto donde la forma de onda comienza a repetirse, habríamos marcado exactamente un<i>ciclo</i>de esa ola.  Esto se muestra más fácilmente abarcando la distancia entre picos idénticos, pero se puede medir entre cualquier punto correspondiente en el gráfico.  Las marcas de grados en el eje horizontal del gráfico representan el dominio de la función seno trigonométrica y también la posición angular de nuestro eje de alternador bipolar simple a medida que gira: Figura<a href="#02009.png">  below</a>
+</p>
+<a name="02009.png"></a>
+<p> <img src="02009.png"/> </p>
+<p><i>Tensión del alternador en función de la posición del eje (tiempo).</i></p>
+<a name="Period"></a>
+<p>Dado que el eje horizontal de este gráfico puede marcar el paso del tiempo así como la posición del eje en grados, la dimensión marcada para un ciclo a menudo se mide en una unidad de tiempo, generalmente segundos o fracciones de segundo.  Cuando se expresa como una medida, a menudo se le llama<i>período</i>de una ola.  El periodo de una onda en grados es<i>siempre</i> 360, but the amount of time one period occupies depends on the rate voltage oscillates back and forth.
+</p>
+<a name="Frequency"></a>
+<a name="Hertz, unit"></a>
+<a name="Unit, Hertz"></a>
+<p>Una medida más popular para describir la tasa alterna de un voltaje de CA o una onda de corriente que<i>período</i>es la tasa de esa oscilación de ida y vuelta.  esto se llama<i>frecuencia</i>.  La unidad moderna de frecuencia es el Hertz (abreviado Hz), que representa el número de ciclos de onda completados durante un segundo de tiempo.  En los Estados Unidos de América, la frecuencia estándar de la línea eléctrica es de 60 Hz, lo que significa que el voltaje de CA oscila a una velocidad de 60 ciclos completos de ida y vuelta cada segundo.  En Europa, donde la frecuencia del sistema eléctrico es de 50 Hz, el voltaje de CA solo completa 50 ciclos por segundo.  El transmisor de una estación de radio que transmite a una frecuencia de 100 MHz genera un voltaje de CA que oscila a una velocidad de 100<i>millón</i>ciclos cada segundo.</p>
+<a name="CPS, unit"></a>
+<a name="Unit, CPS"></a>
+<a name="Celsius, unit"></a>
+<a name="Unit, Celsius"></a>
+<a name="Centigrade, unit"></a>
+<a name="Unit, Centigrade"></a>
+<p>Antes de la canonización de la unidad Hertz, la frecuencia se expresaba simplemente como "ciclos por segundo".  Los medidores y equipos electrónicos más antiguos a menudo llevaban unidades de frecuencia de “CPS” (ciclos por segundo) en lugar de Hz.  Mucha gente cree que el cambio de unidades autoexplicativas como CPS a Hertz constituye un paso atrás en la claridad.  Se produjo un cambio similar cuando la unidad “Celsius” reemplazó a la “Centígrados” para la medición métrica de temperatura.  El nombre Centígrado se basó en una escala de 100 unidades (“Centi-”) (“-grado”) que representa los puntos de fusión y ebullición del H.<sub>2</sub>Oh, respectivamente.  El nombre Celsius, por otra parte, no da ninguna pista sobre el origen o significado de la unidad.</p>
+<p>El período y la frecuencia son recíprocos matemáticos entre sí.  Es decir, si una onda tiene un periodo de 10 segundos, su frecuencia será de 0,1 Hz, o 1/10 de ciclo por segundo:</p>
+<p> <img src="12002.png"/> </p>
+<a name="Oscilloscope"></a>
+<a name="ECG"></a>
+<a name="EKG"></a>
+<a name="Electrocardiograph"></a>
+<p>Un instrumento llamado<i>osciloscopio</i>, Cifra<a href="#02410.png">  below</a>, se utiliza para mostrar un voltaje cambiante a lo largo del tiempo en una pantalla gráfica.  Quizás esté familiarizado con la apariencia de un<i>ECG</i> or <i>EKG</i>Máquina (electrocardiógrafo), utilizada por los médicos para representar gráficamente las oscilaciones del corazón de un paciente a lo largo del tiempo.  El ECG es un osciloscopio especial diseñado expresamente para uso médico.  Los osciloscopios de uso general tienen la capacidad de mostrar el voltaje de prácticamente cualquier fuente de voltaje, trazado como un gráfico con el tiempo como variable independiente.  Es muy útil conocer la relación entre el período y la frecuencia al mostrar una forma de onda de corriente o voltaje de CA en la pantalla de un osciloscopio.  Al medir el período de la onda en el eje horizontal de la pantalla del osciloscopio y alternar ese valor de tiempo (en segundos), puede determinar la frecuencia en Hercios.</p>
+<a name="02410.png"></a>
+<p> <img src="02410.png"/> </p>
+<p><i>El período de tiempo de la onda sinusoidal se muestra en el osciloscopio.</i></p>
+<a name="Sound waves"></a>
+<p>El voltaje y la corriente no son de ninguna manera las únicas variables físicas sujetas a variaciones con el tiempo.  Mucho más común en nuestra experiencia cotidiana es<i>sonido</i>, que no es más que la alternancia de compresión y descompresión (ondas de presión) de moléculas de aire, interpretada por nuestros oídos como una sensación física.  Dado que la corriente alterna es un fenómeno ondulatorio, comparte muchas de las propiedades de otros fenómenos ondulatorios, como el sonido.  Por esta razón, el sonido (especialmente la música estructurada) proporciona una excelente analogía para relacionar conceptos de CA.</p>
+<a name="Pitch (musical)"></a>
+<p>En términos musicales, la frecuencia equivale a<i>paso</i>.  Las notas graves, como las producidas por una tuba o un fagot, consisten en vibraciones de moléculas de aire que son relativamente lentas (baja frecuencia).  Las notas agudas, como las producidas por una flauta o un silbato, consisten en el mismo tipo de vibraciones en el aire, solo que vibran a un ritmo mucho más rápido (frecuencia más alta). Cifra<a href="#02276.png">  below</a>es una tabla que muestra las frecuencias reales de una variedad de notas musicales comunes.</p>
+<a name="02276.png"></a>
+<p> <img src="02276.png"/> </p>
+<p><i>La frecuencia en Hertz (Hz) se muestra para varias notas musicales.</i></p>
+<p>Los observadores astutos notarán que todas las notas en la tabla que llevan la misma designación de letra están relacionadas por una relación de frecuencia de 2:1.  Por ejemplo, la primera frecuencia mostrada (designada con la letra “A”) es 220 Hz.  La siguiente nota "A" más alta tiene una frecuencia de 440 Hz, exactamente el doble de ciclos de ondas sonoras por segundo.  La misma relación 2:1 es válida para el primer La sostenido (233,08 Hz) y el siguiente La sostenido (466,16 Hz), y para todos los pares de notas que se encuentran en la tabla.</p>
+<a name="Octave"></a>
+<p>Audiblemente, dos notas cuyas frecuencias son exactamente el doble de la otra suenan notablemente similares.  Esta similitud en el sonido se reconoce musicalmente; el lapso más corto en una escala musical que separa tales pares de notas se llama<i>octava</i>.  Siguiendo esta regla, la siguiente nota “A” más alta (una octava por encima de 440 Hz) será 880 Hz, la siguiente nota “A” más baja (una octava por debajo de 220 Hz) será 110 Hz.  Una vista del teclado de un piano ayuda a poner esta escala en perspectiva: Figura<a href="#02277.png">  below</a>
+</p>
+<a name="Keyboard, piano"></a>
+<a name="Piano"></a>
+<a name="02277.png"></a>
+<p> <img src="02277.png"/> </p>
+<p><i>Se muestra una octava en un teclado musical.</i></p>
+<p>Como puedes ver, una octava es igual a<i>Siete</i>La distancia equivalente a las teclas blancas en un teclado de piano.  El familiar mnemónico musical (doe-ray-mee-fah-so-lah-tee), sí, el mismo patrón inmortalizado en la caprichosa canción de Rodgers y Hammerstein cantada en<u>El sonido de la música</u>-- cubre una octava de C a C.</p>
+<p>Mientras que los alternadores electromecánicos y muchos otros fenómenos físicos naturalmente
+producen ondas sinusoidales, este no es el único tipo de onda alterna en
+existencia.  Otras "formas de onda" de CA se producen comúnmente en dispositivos electrónicos.
+circuitos.  A continuación se muestran algunos ejemplos de formas de onda y sus designaciones comunes.
+en figura<a href="#02010.png">  below</a></p>
+<a name="02010.png"></a>
+<p> <img src="02010.png"/> </p>
+<p><i>Algunas formas de onda comunes (formas de onda).</i></p>
+<a name="Square wave"></a>
+<a name="Wave, square"></a>
+<a name="Triangle wave"></a>
+<a name="Wave, triangle"></a>
+<a name="Sawtooth wave"></a>
+<a name="Wave, sawtooth"></a>
+<a name="Sinusoidal"></a>
+<a name="Non-sinusoidal"></a>
+<p>Estas formas de onda no son de ninguna manera los únicos tipos de formas de onda que existen.  Son simplemente algunos que son lo suficientemente comunes como para que se les hayan dado nombres distintos.  Incluso en circuitos que se supone que manifiestan formas de onda de voltaje/corriente “puras” sinusoidales, cuadradas, triangulares o en dientes de sierra, el resultado en la vida real es a menudo una versión distorsionada de la forma de onda deseada.  Algunas formas de onda son tan complejas que desafían la clasificación como un “tipo” particular (incluidas las formas de onda asociadas con muchos tipos de instrumentos musicales).  En términos generales, cualquier forma de onda que se parezca mucho a una onda sinusoidal perfecta se denomina<i>sinusoidal</i>, cualquier cosa diferente se etiqueta como<i>no sinusoidal</i>.  Dado que la forma de onda de un voltaje o corriente CA es crucial para su impacto en un circuito, debemos ser conscientes del hecho de que las ondas CA tienen una variedad de formas.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>La CA producida por un alternador electromecánico sigue la forma gráfica de una onda sinusoidal.</li>
+<li>One <i>ciclo</i>de una onda es una evolución completa de su forma hasta el punto en que está lista para repetirse.</li>
+<li>The <i>período</i>de una onda es la cantidad de tiempo que tarda en completar un ciclo.</li>
+<li><i>Frecuencia</i>es el número de ciclos completos que completa una onda en un período de tiempo determinado.  Generalmente se mide en Hercios (Hz), siendo 1 Hz igual a un ciclo de onda completo por segundo.</li>
+<li>Frequency = 1/(period in seconds)</li>
+</ul>
+<h2><u><a name="xtocid88672">Measurements of AC magnitude</a></u></h2>
+<p>Hasta ahora sabemos que el voltaje CA alterna en polaridad y la corriente CA alterna en dirección.  También sabemos que la CA puede alternar de diferentes maneras y, al rastrear la alternancia a lo largo del tiempo, podemos trazarla como una "forma de onda".  Podemos medir la tasa de alternancia midiendo el tiempo que tarda una onda en evolucionar antes de repetirse (el "período") y expresarlo como ciclos por unidad de tiempo o "frecuencia".  En música, la frecuencia es la misma que<i>paso</i>, que es la propiedad esencial que distingue una nota de otra.</p>
+<p>Sin embargo, nos encontramos con un problema de medición si intentamos expresar qué tan grande o pequeña es una cantidad de CA.  Con CC, donde las cantidades de voltaje y corriente son generalmente estables, tenemos pocos problemas para expresar cuánto voltaje o corriente tenemos en cualquier parte de un circuito.  Pero, ¿cómo se puede conceder una única medida de magnitud a algo que cambia constantemente?</p>
+<a name="Amplitude"></a>
+<a name="Magnitude"></a>
+<a name="Peak"></a>
+<a name="Crest"></a>
+<a name="Amplitude, peak"></a>
+<p>Una forma de expresar la intensidad o magnitud (también llamada<i>amplitud</i>), de una cantidad de CA es medir su altura máxima en un gráfico de forma de onda.  Esto se conoce como el<i>cima</i> or    <i>cresta</i>valor de una forma de onda de CA: Figura<a href="#02011.png">  below</a></p>
+<a name="02011.png"></a>
+<p> <img src="02011.png"/> </p>
+<p><i>Tensión máxima de una forma de onda.</i></p>
+<a name="Peak-to-peak"></a>
+<a name="Amplitude, peak-to-peak"></a>
+<p>Otra forma es medir la altura total entre picos opuestos.  Esto se conoce como el<i>pico a pico</i>Valor (P-P) de una forma de onda de CA: Figura<a href="#02012.png">  below</a>
+</p>
+<a name="02012.png"></a>
+<p> <img src="02012.png"/> </p>
+<p><i>Tensión pico a pico de una forma de onda.</i></p>
+<p>Desafortunadamente, cualquiera de estas expresiones de amplitud de forma de onda puede resultar engañosa al comparar dos tipos diferentes de ondas.  Por ejemplo, una onda cuadrada con un pico de 10 voltios es obviamente una mayor cantidad de voltaje durante una mayor cantidad de tiempo que una onda triangular con un pico de 10 voltios.  Los efectos de estos dos voltajes de CA que alimentan una carga serían bastante diferentes: Figura<a href="#02013.png">  below</a>
+</p>
+<a name="02013.png"></a>
+<p> <img src="02013.png"/> </p>
+<p><i>Una onda cuadrada produce un mayor efecto de calentamiento que la misma onda triangular de voltaje máximo.</i></p>
+<a name="Average amplitude, AC"></a>
+<a name="Amplitude, average"></a>
+<p>Una forma de expresar la amplitud de diferentes formas de onda de una manera más equivalente es promediar matemáticamente los valores de todos los puntos en el gráfico de una forma de onda para obtener un único número agregado.  Esta medida de amplitud se conoce simplemente como<i>promedio</i>valor de la forma de onda.  Si promediamos algebraicamente todos los puntos de la forma de onda (es decir, para considerar sus<i>firmar</i>, ya sea positivo o negativo), el valor promedio para la mayoría de las formas de onda es técnicamente cero, porque todos los puntos positivos cancelan todos los puntos negativos durante un ciclo completo: Figura<a href="#02412.png">  below</a>
+</p>
+<a name="02412.png"></a>
+<p> <img src="02412.png"/> </p>
+<p><i>El valor medio de una onda sinusoidal es cero.</i></p>
+<p>Esto, por supuesto, será cierto para cualquier forma de onda que tenga porciones de áreas iguales por encima y por debajo de la línea "cero" de un gráfico.  Sin embargo, como un<i>práctico</i>Medida del valor agregado de una forma de onda, el "promedio" generalmente se define como la media matemática de todos los puntos.<i>valores absolutos</i>durante un ciclo.  En otras palabras, calculamos el valor promedio práctico de la forma de onda considerando todos los puntos de la onda como cantidades positivas, como si la forma de onda se viera así: Figura<a href="#02413.png">  below</a>
+</p>
+<a name="02413.png"></a>
+<p> <img src="02413.png"/> </p>
+<p><i>Forma de onda vista por un medidor de “respuesta promedio” de CA.</i></p>
+<p>Los movimientos del medidor mecánico insensible a la polaridad (medidores diseñados para responder igualmente a los semiciclos positivos y negativos de un voltaje o corriente alterna) se registran en proporción al valor promedio (práctico) de la forma de onda, porque la inercia del puntero contra la tensión del resorte promedia naturalmente la fuerza producida por los valores variables de voltaje/corriente a lo largo del tiempo.  Por el contrario, los movimientos del medidor sensibles a la polaridad vibran inútilmente si se exponen a voltaje o corriente alterna, y sus agujas oscilan rápidamente alrededor de la marca cero, lo que indica el valor promedio verdadero (algebraico) de cero para una forma de onda simétrica.  Cuando en este texto se hace referencia al valor “promedio” de una forma de onda, se asumirá que se utiliza la definición “práctica” de promedio a menos que se especifique lo contrario.</p>
+<p>Otro método para derivar un valor agregado para la amplitud de la forma de onda se basa en la capacidad de la forma de onda para realizar un trabajo útil cuando se aplica a una resistencia de carga.  Desafortunadamente, una medición de CA basada en el trabajo realizado por una forma de onda no es lo mismo que el valor "promedio" de esa forma de onda, porque el<i>fuerza</i>disipado por una carga dada (trabajo realizado por unidad de tiempo) no es directamente proporcional a la magnitud del voltaje o la corriente aplicada sobre él.  Más bien, el poder es proporcional a la<i>cuadrado</i>del voltaje o corriente aplicada a una resistencia (P = E<sup>2</sup>/R, y P = I<sup>2</sup>R).  Aunque las matemáticas de tal medición de amplitud pueden no ser sencillas, su utilidad sí lo es.</p>
+<p>Considere una sierra de cinta y una sierra de calar, dos equipos modernos para trabajar la madera.  Ambos tipos de sierras cortan con una hoja de metal delgada, dentada y motorizada para cortar madera.  Pero mientras la sierra de cinta utiliza un movimiento continuo de la hoja para cortar, la sierra de calar utiliza un movimiento de ida y vuelta.  La comparación de corriente alterna (CA) con corriente continua (CC) se puede comparar con la comparación de estos dos tipos de sierra: Figura<a href="#02014.png">  below</a>
+</p>
+<a name="02014.png"></a>
+<p> <img src="02014.png"/> </p>
+<p><i>Analogía de sierra de cinta y sierra de calar entre CC y CA.</i></p>
+<p>El problema de tratar de describir las cantidades cambiantes de voltaje o corriente alterna en una sola medición agregada también está presente en esta analogía de la sierra: ¿cómo podríamos expresar la velocidad de la hoja de una sierra de calar?  Una hoja de sierra de cinta se mueve con una velocidad constante, similar a la forma en que el voltaje CC empuja o la corriente CC se mueve con una magnitud constante.  La hoja de una sierra de calar, por otro lado, se mueve hacia adelante y hacia atrás y su velocidad cambia constantemente.  Es más, el movimiento de vaivén de dos sierras de calar cualesquiera puede no ser del mismo tipo, dependiendo del diseño mecánico de las sierras.  Una sierra de calar podría mover su hoja con un movimiento de onda sinusoidal, mientras que otra con un movimiento de onda triangular.  Para calificar una sierra de calar según su<i>cima</i>La velocidad de la hoja sería bastante engañosa al comparar una sierra de calar con otra (¡o una sierra de calar con una sierra de cinta!).  A pesar de que estas diferentes sierras mueven sus hojas de diferentes maneras, son iguales en un aspecto: todas cortan madera, y una comparación cuantitativa de esta función común puede servir como base común para calificar la velocidad de la hoja.</p>
+<p>Imagínese una sierra de calar y una sierra de cinta, una al lado de la otra, equipadas con hojas idénticas (mismo paso de dientes, ángulo, etc.), igualmente capaces de cortar el mismo espesor del mismo tipo de madera al mismo ritmo.  Podríamos decir que las dos sierras eran equivalentes o iguales en su capacidad de corte.  ¿Podría usarse esta comparación para asignar una velocidad de hoja “equivalente a una sierra de cinta” al movimiento de vaivén de la hoja de la sierra de calar? ¿Cómo relacionar la eficacia de corte de madera de uno con el otro?  Esta es la idea general utilizada para asignar una medida de “equivalente de CC” a cualquier voltaje o corriente de CA: cualquier magnitud de voltaje o corriente de CC produciría la misma cantidad de disipación de energía térmica a través de una resistencia igual: Figura<a href="#02015.png">  below</a>
+</p>
+<a name="02015.png"></a>
+<p> <img src="02015.png"/> </p>
+<p><i>Un voltaje RMS produce el mismo efecto de calentamiento que el mismo voltaje DC</i></p>
+<a name="Root-Mean-Square"></a>
+<a name="RMS"></a>
+<a name="Equivalent, AC to DC"></a>
+<a name="DC equivalent, AC measurement"></a>
+<a name="Amplitude, RMS"></a>
+<p>En los dos circuitos anteriores, tenemos la misma cantidad de resistencia de carga (2 Ω) disipando la misma cantidad de potencia en forma de calor (50 vatios), uno alimentado por CA y el otro por CC.  Debido a que la fuente de voltaje de CA que se muestra arriba es equivalente (en términos de energía entregada a una carga) a una batería de 10 voltios de CC, la llamaríamos una fuente de CA de “10 voltios”.  Más específicamente, indicaríamos que su valor de voltaje es de 10 voltios.<i>RMS</i>.  El calificativo “RMS” significa<i>Raíz cuadrática media</i>, el algoritmo utilizado para obtener el valor equivalente de CC a partir de puntos en un gráfico (esencialmente, el procedimiento consiste en elevar al cuadrado todos los puntos positivos y negativos en un gráfico de forma de onda, promediar esos valores al cuadrado y luego tomar la raíz cuadrada de ese promedio para obtener la respuesta final).  A veces los términos alternativos<i>equivalente</i> or <i>Equivalente CC</i>se utilizan en lugar de “RMS”, pero la cantidad y el principio son los mismos.</p>
+<p>La medición de amplitud RMS es la mejor manera de relacionar cantidades de CA con cantidades de CC, u otras cantidades de CA con diferentes formas de onda, cuando se trata de mediciones de energía eléctrica.  Por otras consideraciones, las mediciones de pico o pico a pico pueden ser las mejores.  Por ejemplo, al determinar el tamaño adecuado de cable (ampacidad) para conducir energía eléctrica desde una fuente a una carga, la mejor opción es la medición de corriente RMS, porque la principal preocupación con la corriente es el sobrecalentamiento del cable, que es una función de la disipación de energía causada por la corriente a través de la resistencia del cable.  Sin embargo, cuando se clasifican aisladores para servicio en aplicaciones de CA de alto voltaje, las mediciones de voltaje pico son las más apropiadas, porque la principal preocupación aquí es el "descarga repentina" del aislador causada por breves picos de voltaje, independientemente del tiempo.</p>
+<a name="D'Arsonval meter movement"></a>
+<a name="Weston meter movement"></a>
+<a name="Iron-vane meter movement"></a>
+<a name="True-RMS meter"></a>
+<p>Las mediciones de pico y pico a pico se realizan mejor con un osciloscopio, que puede capturar las crestas de la forma de onda con un alto grado de precisión debido a la rápida acción del tubo de rayos catódicos en respuesta a los cambios de voltaje.  Para mediciones RMS, los movimientos del medidor analógico (D'Arsonval, Weston, paleta de hierro, electrodinamómetro) funcionarán siempre que hayan sido calibrados en cifras RMS.  Debido a que la inercia mecánica y los efectos de amortiguación del movimiento de un medidor electromecánico hacen que la desviación de la aguja sea naturalmente proporcional a la<i>promedio</i>valor de la CA, no el valor RMS verdadero, los medidores analógicos deben calibrarse específicamente (o mal calibrarse, dependiendo de cómo se mire) para indicar voltaje o corriente en unidades RMS.  La precisión de esta calibración depende de la forma de onda supuesta, generalmente una onda sinusoidal.</p>
+<p>Los medidores electrónicos diseñados específicamente para la medición RMS son los mejores para esta tarea.  Algunos fabricantes de instrumentos han diseñado métodos ingeniosos para determinar el valor RMS de cualquier forma de onda.  Uno de esos fabricantes produce medidores de “verdadero valor eficaz” con un pequeño elemento calefactor resistivo alimentado por un voltaje proporcional al que se está midiendo.  El efecto de calentamiento de ese elemento de resistencia se mide térmicamente para dar un valor RMS verdadero sin ningún cálculo matemático, solo las leyes de la física en acción en cumplimiento de la definición de RMS.  La precisión de este tipo de medición RMS es independiente de la forma de onda.</p>
+<p>Para formas de onda “puras”, existen coeficientes de conversión simples para equiparar mediciones de pico, pico a pico, promedio (práctico, no algebraico) y RMS entre sí: Figura<a href="#02016.png">  below</a>
+</p>
+<a name="02016.png"></a>
+<p> <img src="02016.png"/> </p>
+<p><i>Factores de conversión para formas de onda comunes.</i></p>
+<a name="Crest factor"></a>
+<a name="Factor, crest"></a>
+<a name="Form factor"></a>
+<a name="Factor, form"></a>
+<p>Además de las medidas RMS, promedio, pico (cresta) y pico a pico de una forma de onda de CA, existen relaciones que expresan la proporcionalidad entre algunas de estas medidas fundamentales.  El<i>factor de cresta</i>de una forma de onda de CA, por ejemplo, es la relación entre su valor pico (cresta) dividido por su valor RMS.  El<i>factor de forma</i>de una forma de onda de CA es la relación entre su valor RMS dividido por su valor promedio. Las formas de onda de forma cuadrada siempre tienen cresta y factores de forma iguales a 1, ya que el pico es el mismo que el RMS y los valores promedio. Las formas de onda sinusoidales tienen un valor RMS de 0,707 (el recíproco de la raíz cuadrada de 2) y un factor de forma de 1,11 (0,707/0,636). Las formas de onda en forma de triángulo y diente de sierra tienen valores RMS de 0,577 (el recíproco de la raíz cuadrada de 3) y factores de forma de 1,15 (0,577/0,5).</p>
+<p>Tenga en cuenta que las constantes de conversión que se muestran aquí para las amplitudes máxima, RMS y promedio de ondas sinusoidales, ondas cuadradas y ondas triangulares son válidas sólo para<i>puro</i>formas de estas formas de onda.  Los valores RMS y promedio de las formas de onda distorsionadas no están relacionados por las mismas proporciones: Figura<a href="#02017.png">  below</a>
+</p>
+<a name="02017.png"></a>
+<p> <img src="02017.png"/> </p>
+<p><i>Las formas de onda arbitrarias no tienen conversiones simples.</i></p>
+<p>Este es un concepto muy importante que se debe comprender cuando se utiliza un movimiento de medidor analógico D'Arsonval para medir voltaje o corriente CA.  Un movimiento analógico D'Arsonval, calibrado para indicar la amplitud RMS de la onda sinusoidal, sólo será preciso cuando mida ondas sinusoidales puras.  Si la forma de onda del voltaje o corriente que se está midiendo no es una onda sinusoidal pura, la indicación proporcionada por el medidor no será el verdadero valor RMS de la forma de onda, porque el grado de desviación de la aguja en el movimiento de un medidor analógico D'Arsonval es proporcional a la<i>promedio</i>valor de la forma de onda, no el RMS.  La calibración del medidor RMS se obtiene “sesgando” el rango del medidor para que muestre un pequeño múltiplo del valor promedio, que será igual al valor RMS para una forma de onda particular y<i>una forma de onda particular solamente</i>.  
+</p>
+<p>Dado que la forma de onda sinusoidal es más común en mediciones eléctricas, es la forma de onda asumida para la calibración de medidores analógicos, y el pequeño múltiplo utilizado en la calibración del medidor es 1,1107 (el factor de forma: 0,707/0,636: la relación de RMS dividida por el promedio para una forma de onda sinusoidal).  Cualquier forma de onda que no sea una onda sinusoidal pura tendrá una relación diferente de RMS y valores promedio y, por lo tanto, un medidor calibrado para voltaje o corriente de onda sinusoidal no indicará RMS verdadero al leer una onda no sinusoidal.  Tenga en cuenta que esta limitación se aplica sólo a medidores de CA analógicos simples que no emplean tecnología "True-RMS".</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>The <i>amplitud</i>de una forma de onda de CA es su altura como se muestra en un gráfico a lo largo del tiempo.  Una medición de amplitud puede tomar la forma de cantidad pico, pico a pico, promedio o RMS.</li>
+<li><i>Cima</i>La amplitud es la altura de una forma de onda de CA medida desde la marca cero hasta el punto positivo más alto o el punto negativo más bajo en un gráfico.  También conocido como el<i>cresta</i>amplitud de una onda.</li>
+<li><i>Pico a pico</i>La amplitud es la altura total de una forma de onda de CA medida desde los picos máximos positivos hasta los máximos negativos en un gráfico.  A menudo abreviado como "P-P".</li>
+<li><i>Promedio</i>La amplitud es la “media” matemática de todos los puntos de una forma de onda durante el período de un ciclo.  Técnicamente, la amplitud promedio de cualquier forma de onda con porciones de áreas iguales por encima y por debajo de la línea "cero" en un gráfico es cero.  Sin embargo, como medida práctica de amplitud, el valor promedio de una forma de onda a menudo se calcula como la media matemática de todos los puntos.<i>valores absolutos</i>(tomando todos los valores negativos y considerándolos como positivos).  Para una onda sinusoidal, el valor medio así calculado es aproximadamente 0,637 de su valor máximo.</li>
+<li>“RMS” significa<i>Raíz cuadrática media</i>, y es una forma de expresar una cantidad de voltaje o corriente CA en términos funcionalmente equivalentes a CC.  Por ejemplo, 10 voltios CA RMS es la cantidad de voltaje que produciría la misma cantidad de disipación de calor a través de una resistencia de un valor dado que una fuente de alimentación de 10 voltios CC.  También conocido como valor “equivalente” o “equivalente de CC” de un voltaje o corriente de CA.  Para una onda sinusoidal, el valor RMS es aproximadamente 0,707 de su valor máximo.</li>
+<li>The <i>factor de cresta</i>de una forma de onda de CA es la relación entre su pico (cresta) y su valor RMS.</li>
+<li>The <i>factor de forma</i>de una forma de onda de CA es la relación entre su valor RMS y su valor promedio.</li>
+<li>Los movimientos del medidor electromecánico analógico responden proporcionalmente a la<i>promedio</i>Valor de una tensión o corriente CA.  Cuando se desea una indicación RMS, la calibración del medidor debe “sesgarse” en consecuencia.  Esto significa que la precisión de la indicación RMS de un medidor electromecánico depende de la pureza de la forma de onda: si es exactamente la misma forma de onda que la forma de onda utilizada en la calibración.</li>
+</ul>
+<h2><u><a name="xtocid88673">Simple AC circuit calculations</a></u></h2>
+<p>En el transcurso de los próximos capítulos, aprenderá que las mediciones y cálculos de circuitos de CA pueden volverse muy complicados debido a la naturaleza compleja de la corriente alterna en circuitos con inductancia y capacitancia. Sin embargo, con circuitos simples (figura<a href="#02018.png">  below</a>) que involucra nada más que una fuente de alimentación de CA y una resistencia, se aplican simple y directamente las mismas leyes y reglas de CC.</p>
+<a name="02018.png"></a>
+<p> <img src="02018.png"/> </p>
+<p><i>Los cálculos del circuito de CA para circuitos resistivos son los mismos que para CC.</i></p>
+<p>
+</p>
+<br/>
+<p> <img src="12003.png"/> </p>
+<a name="Ohm's Law"></a>
+<a name="Kirchhoff's Voltage Law"></a>
+<a name="KVL"></a>
+<a name="Kirchhoff's Current Law"></a>
+<a name="KCL"></a>
+<p>Las resistencias en serie aún se suman, las resistencias en paralelo aún disminuyen y las leyes de Kirchhoff y Ohm siguen siendo válidas.  En realidad, como descubriremos más adelante, estas reglas y leyes<i>siempre</i>Si es cierto, es sólo que tenemos que expresar las cantidades de voltaje, corriente y oposición a la corriente en formas matemáticas más avanzadas.  Sin embargo, con circuitos puramente resistivos, estas complejidades de la CA no tienen consecuencias prácticas, por lo que podemos tratar los números como si estuviéramos tratando con cantidades simples de CC.</p>
+<p>Debido a que todas estas relaciones matemáticas siguen siendo válidas, podemos hacer uso de nuestro conocido método de “tabla” para organizar los valores del circuito tal como con CC:</p>
+<p> <img src="12004.png"/> </p>
+<p>Aquí es necesario hacer una advertencia importante: todas las mediciones de voltaje y corriente CA deben expresarse en los mismos términos (pico, pico a pico, promedio o RMS).  Si el voltaje de la fuente se da en voltios CA pico, entonces todas las corrientes y voltajes calculados posteriormente se expresan en términos de unidades pico.  Si el voltaje de la fuente se proporciona en voltios CA RMS, entonces todas las corrientes y voltajes calculados también se expresan en unidades CA RMS.  Esto es cierto para<i>any</i>cálculo basado en las leyes de Ohm, las leyes de Kirchhoff, etc. A menos que se indique lo contrario, generalmente se supone que todos los valores de voltaje y corriente en los circuitos de CA son RMS en lugar de pico, promedio o pico a pico.  En algunas áreas de la electrónica, se suponen mediciones de pico, pero en la mayoría de las aplicaciones (especialmente en electrónica industrial) la suposición es RMS.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Todas las antiguas reglas y leyes de la corriente continua (leyes de corriente y voltaje de Kirchhoff, ley de Ohm) siguen siendo válidas para la corriente alterna.  Sin embargo, con circuitos más complejos, es posible que necesitemos representar las cantidades de CA en una forma más compleja.  Más sobre esto más adelante, ¡lo prometo!</li>
+<li>El método de “tabla” para organizar los valores de los circuitos sigue siendo una herramienta de análisis válida para los circuitos de CA.</li>
+</ul>
+<h2><u><a name="xtocid88674">AC phase</a></u></h2>
+<a name="Phase"></a>
+<p>Las cosas empiezan a complicarse cuando necesitamos relacionar dos o más voltajes o corrientes CA que no están en sintonía entre sí.  Por “desfasado” me refiero a que las dos formas de onda no están sincronizadas: que sus picos y puntos cero no coinciden en los mismos momentos en el tiempo.  El gráfico en la figura.<a href="#02019.png">  below</a>ilustra un ejemplo de esto.</p>
+<a name="02019.png"></a>
+<p> <img src="02019.png"/> </p>
+<p><i>Formas de onda fuera de fase</i></p>
+<a name="Phase shift"></a>
+<p>Las dos ondas que se muestran arriba (A versus B) tienen la misma amplitud y frecuencia, pero no están sincronizadas entre sí.  En términos técnicos, esto se llama<i>cambio de fase</i>.  Anteriormente vimos cómo podíamos trazar una “onda sinusoidal” calculando la función seno trigonométrica para ángulos que van de 0 a 360 grados, un círculo completo.  El punto de partida de una onda sinusoidal era de amplitud cero a cero grados, progresando a una amplitud positiva completa a 90 grados, cero a 180 grados, negativa completa a 270 grados y de regreso al punto inicial de cero a 360 grados.  Podemos usar esta escala de ángulo a lo largo del eje horizontal de nuestro gráfico de forma de onda para expresar qué tan desfasada está una onda con respecto a otra: Figura<a href="#02020.png">  below</a>
+</p>
+<a name="02020.png"></a>
+<p> <img src="02020.png"/> </p>
+<p><i>La onda A adelanta a la onda B por 45<sup>o</sup></i></p>
+<p>El cambio entre estas dos formas de onda es de aproximadamente 45 grados, estando la onda "A" por delante de la onda "B".  En los siguientes gráficos se ofrece una muestra de diferentes cambios de fase para ilustrar mejor este concepto: Figura<a href="#02021.png">  below</a>
+</p>
+<a name="02021.png"></a>
+<p> <img src="02021.png"/> </p>
+<p><i>Ejemplos de cambios de fase.</i></p>
+<a name="Lagging phase shift"></a>
+<a name="Leading phase shift"></a>
+<p>Debido a que las formas de onda en los ejemplos anteriores tienen la misma frecuencia, estarán desfasadas en la misma cantidad angular en cada momento.  Por esta razón, podemos expresar el cambio de fase para dos o más formas de onda de la misma frecuencia como una cantidad constante para toda la onda, y no simplemente una expresión de cambio entre dos puntos particulares cualesquiera a lo largo de las ondas.  Es decir, es seguro decir algo como "el voltaje 'A' está desfasado 45 grados con el voltaje 'B'".  Cualquier forma de onda que esté por delante en su evolución se dice que es<i>principal</i>y el de atrás se dice que es<i>rezagado</i>.
+</p>
+<p>El cambio de fase, como el voltaje, es siempre una medida relativa entre dos cosas.  Realmente no existe tal cosa como una forma de onda con<i>absoluto</i>medición de fase porque no existe una referencia universal conocida para la fase.  Normalmente, en el análisis de circuitos de CA, la forma de onda de voltaje de la fuente de alimentación se utiliza como referencia para la fase; ese voltaje se indica como "xxx voltios a 0 grados".  Cualquier otro voltaje o corriente de CA en ese circuito tendrá su cambio de fase expresado en términos relativos a ese voltaje de fuente.</p>
+<a name="Number, complex"></a>
+<a name="Complex number"></a>
+<p>Esto es lo que hace que los cálculos de circuitos de CA sean más complicados que los de CC.  Al aplicar la ley de Ohm y las leyes de Kirchhoff, las cantidades de voltaje y corriente CA deben reflejar el cambio de fase y la amplitud.  Las operaciones matemáticas de suma, resta, multiplicación y división deben operar con estas cantidades de desfase y amplitud.  Afortunadamente, existe un sistema matemático de cantidades llamado<i>números complejos</i>ideal para esta tarea de representar amplitud y fase.</p>
+<p>Debido a que el tema de los números complejos es tan esencial para la comprensión de los circuitos de CA, el próximo capítulo se dedicará únicamente a ese tema.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li><i>cambio de fase</i>Es cuando dos o más formas de onda no están sincronizadas entre sí.</li>
+<li>La cantidad de cambio de fase entre dos ondas se puede expresar en términos de grados, según lo definido por las unidades de grado en el eje horizontal del gráfico de forma de onda utilizado para trazar la función seno trigonométrica.</li>
+<li>A <i>principal</i>La forma de onda se define como una forma de onda que está por delante de otra en su evolución.  A<i>rezagado</i>La forma de onda es aquella que está detrás de otra.  Ejemplo:</li>
+<li>
+<p> <img src="02022.png"/> </p>
+</li>
+<li>Los cálculos para el análisis de circuitos de CA deben tener en cuenta tanto la amplitud como el cambio de fase de las formas de onda de voltaje y corriente para que sean completamente precisos.  Esto requiere el uso de un sistema matemático llamado<i>números complejos</i>.</li>
+</ul>
+<h2><u><a name="xtocid88675">Principles of radio</a></u></h2>
+<a name="Radio"></a>
+<a name="Radio wave"></a>
+<p>Una de las aplicaciones más fascinantes de la electricidad es la generación de ondas invisibles de energía llamadas<i>ondas de radio</i>.  El alcance limitado de esta lección sobre corriente alterna no permite una exploración completa del concepto; se cubrirán algunos de los principios básicos.</p>
+<p>Con el descubrimiento accidental del electromagnetismo por parte de Oersted, se comprendió que la electricidad y el magnetismo estaban relacionados entre sí.  Cuando una corriente eléctrica pasaba a través de un conductor, se generaba un campo magnético perpendicular al eje del flujo.  Del mismo modo, si un conductor estaba expuesto a un cambio en el flujo magnético perpendicular al conductor, se producía un voltaje a lo largo de ese conductor.  Hasta ahora, los científicos sabían que la electricidad y el magnetismo siempre parecían afectarse entre sí en ángulos rectos.  Sin embargo, justo debajo de este concepto aparentemente simple de perpendicularidad relacionada se ocultaba un descubrimiento importante, y su revelación fue uno de los momentos cruciales de la ciencia moderna.</p>
+<a name="Electric field"></a>
+<a name="Field, electric"></a>
+<a name="Magnetic field"></a>
+<a name="Field, magnetic"></a>
+<p>Es difícil exagerar este avance en la física.  El responsable de esta revolución conceptual fue el físico escocés James Clerk Maxwell (1831-1879), quien “unificó” el estudio de la electricidad y el magnetismo en cuatro ecuaciones relativamente ordenadas.  En esencia, lo que descubrió fue que los sistemas eléctricos y magnéticos<i>campos</i>estaban intrínsecamente relacionados entre sí, con o sin la presencia de un camino conductor para que los electrones fluyeran.  Dicho más formalmente, el descubrimiento de Maxwell fue el siguiente:</p>
+<br/>
+<p>
+<b>Un campo eléctrico cambiante produce un campo magnético perpendicular.</b>, y</p>
+<p>
+<b>Un campo magnético cambiante produce un campo eléctrico perpendicular.</b>.
+</p>
+<br/>
+<a name="Electromagnetic wave"></a>
+<a name="Wave, electromagnetic"></a>
+<p>Todo esto puede tener lugar en el espacio abierto, donde los campos eléctricos y magnéticos alternos se apoyan mutuamente mientras viajan por el espacio a la velocidad de la luz.  Esta estructura dinámica de campos eléctricos y magnéticos que se propagan a través del espacio se conoce mejor como<i>onda electromagnética</i>.
+</p>
+<a name="Antenna"></a>
+<p>Hay muchos tipos de energía radiativa natural compuestas de ondas electromagnéticas.  Incluso la luz es de naturaleza electromagnética.  También lo son los rayos X y la radiación de rayos “gamma”.  La única diferencia entre estos tipos de radiación electromagnética es la frecuencia de su oscilación (alternancia de polaridad de los campos eléctrico y magnético).  Al utilizar una fuente de voltaje CA y un dispositivo especial llamado<i>antena</i>, podemos crear ondas electromagnéticas (de una frecuencia mucho más baja que la de la luz) con facilidad.</p>
+<a name="Dipole antenna"></a>
+<a name="Loop antenna"></a>
+<p>Una antena no es más que un dispositivo construido para producir un campo eléctrico o magnético dispersivo.  Dos tipos fundamentales de antenas son las<i>dipolo</i>y el<i>bucle</i>: Cifra<a href="#02023.png">  below</a>
+</p>
+<a name="02023.png"></a>
+<p> <img src="02023.png"/> </p>
+<p><i>Antenas dipolo y de bucle</i></p>
+<p>Si bien el dipolo parece nada más que un circuito abierto y el bucle un cortocircuito, estos trozos de cable son radiadores eficaces de campos electromagnéticos cuando se conectan a fuentes de CA de la frecuencia adecuada.  Los dos hilos abiertos del dipolo actúan como una especie de condensador (dos conductores separados por un dieléctrico), con el campo eléctrico abierto a la dispersión en lugar de concentrarse entre dos placas muy espaciadas.  La trayectoria del cable cerrado de la antena de cuadro actúa como un inductor con un gran núcleo de aire, lo que nuevamente brinda una amplia oportunidad para que el campo se disperse lejos de la antena en lugar de concentrarse y contenerse como en un inductor normal.</p>
+<p>A medida que el dipolo energizado irradia su campo eléctrico cambiante hacia el espacio, se produce un campo magnético cambiante en ángulos rectos, manteniendo así el campo eléctrico más adentro del espacio, y así sucesivamente a medida que la onda se propaga a la velocidad de la luz.  A medida que la antena de cuadro alimentada irradia su campo magnético cambiante hacia el espacio, se produce un campo eléctrico cambiante en ángulo recto, con el mismo resultado final de una onda electromagnética continua enviada desde la antena.  Ambas antenas logran la misma tarea básica: la producción controlada de un campo electromagnético.</p>
+<p>Cuando se conecta a una fuente de alimentación de CA de alta frecuencia, una antena actúa como<i>transmitiendo</i>Dispositivo que convierte voltaje y corriente CA en energía de ondas electromagnéticas.  Las antenas también tienen la capacidad de interceptar ondas electromagnéticas y convertir su energía en voltaje y corriente alterna.  En este modo, una antena actúa como<i>recepción</i>dispositivo: Figura<a href="#02024.png">  below</a>
+</p>
+<a name="02024.png"></a>
+<p> <img src="02024.png"/> </p>
+<p><i>Transmisor y receptor de radio básico.</i></p>
+<p>mientras hay<i>mucho</i>Más que se puede decir sobre la tecnología de antenas, esta breve introducción es suficiente para darle una idea general de lo que está sucediendo (y tal vez suficiente información para provocar algunos experimentos).</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>James Maxwell descubrió que los campos eléctricos cambiantes producen campos magnéticos perpendiculares y viceversa, incluso en el espacio vacío.</li>
+<li>Un conjunto gemelo de campos eléctricos y magnéticos, que oscilan en ángulo recto entre sí y viajan a la velocidad de la luz, constituye un<i>onda electromagnética</i>.</li>
+<li>An <i>antena</i>es un dispositivo hecho de alambre, diseñado para irradiar un campo eléctrico cambiante o un campo magnético cambiante cuando se alimenta con una fuente de CA de alta frecuencia, o interceptar un campo electromagnético y convertirlo en un voltaje o corriente de CA.</li>
+<li>The <i>dipolo</i>La antena consta de dos trozos de cable (que no se tocan), que generan principalmente un campo eléctrico cuando se energizan y, en segundo lugar, producen un campo magnético en el espacio.</li>
+<li>The <i>bucle</i>La antena consta de un bucle de cable que genera principalmente un campo magnético cuando se energiza y, en segundo lugar, produce un campo eléctrico en el espacio.</li>
+</ul>
+<h2><u><a name="xtocid88676">Contributors</a></u></h2>
+<p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>
+<p>
+<b>Harvey Lew</b>(7 de febrero de 2004): Error tipográfico corregido: “circuito” debería haber sido “círculo”.</p>
+<p>
+<b>Duane Damián</b>(25 de febrero de 2003): Señaló un error de polaridad magnética en la ilustración del generador de CC.</p>
+<p>
+<b>Mark D.Zarella</b>(28 de abril de 2002): Sugerencia para mejorar la explicación de la amplitud de la forma de onda "promedio".</p>
+<p>
+<b>John Symonds</b>(28 de marzo de 2002): Sugerencia para mejorar la explicación de la unidad “Hertz”.</p>
+<p>
+<b>Jason Stark</b>(Junio ​​de 2000): Formato de documentos HTML, que dio lugar a una segunda edición mucho más atractiva.</p>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="AC_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="index.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="AC_10.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

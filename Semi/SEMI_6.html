@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen III (Semiconductores) - Capítulo 6 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #10b981; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen III (Semiconductores) - Capítulo 6</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen III</h1>
+<h1>Capítulo 6</h1>
+<!--Modified 05/04/2005 (DC) -- Added nutmeg-spice plots -->
+<!--23020.png through 23023.png added -->
+<h1>TRANSISTORES DE EFECTO DE CAMPO DE PUERTA AISLADA</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid90540"><u>Introduction</u></a></li>
+<li><a href="#xtocid90541"><u>Depletion-type IGFETs</u></a></li>
+<li><a href="#xtocid90542"><u>Enhancement-type IGFETs -- PENDING</u></a></li>
+<li><a href="#xtocid90543"><u>Active-mode operation -- PENDING</u></a></li>
+<li><a href="#xtocid90544"><u>The common-source amplifier -- PENDING</u></a></li>
+<li><a href="#xtocid90545"><u>The common-drain amplifier -- PENDING</u></a></li>
+<li><a href="#xtocid90546"><u>The common-gate amplifier -- PENDING</u></a></li>
+<li><a href="#xtocid90547"><u>Biasing techniques -- PENDING</u></a></li>
+<li><a href="#xtocid90548"><u>Transistor ratings and packages -- PENDING</u></a></li>
+<li><a href="#xtocid90549"><u>IGFET quirks -- PENDING</u></a></li>
+<li><a href="#xtocid905410"><u>MESFETs -- PENDING</u></a></li>
+<li><a href="#xtocid905411"><u>IGBTs</u></a></li></ul>
+<p>
+<b>*** INCOMPLETO ***</b>
+</p>
+<h2><u><a name="xtocid90540">Introduction</a></u></h2>
+<p>Como se indicó en el capítulo anterior, existe más de un tipo de transistor de efecto de campo.  El transistor de efecto de campo de unión, o JFET, utiliza voltaje aplicado a través de una unión PN con polarización inversa para controlar el ancho de la región de agotamiento de esa unión, que luego controla la conductividad de un canal semiconductor a través del cual se mueve la corriente controlada.  Otro tipo de dispositivo de efecto de campo, el transistor de efecto de campo de puerta aislada, o IGFET, explota un principio similar de una región de agotamiento que controla la conductividad a través de un canal semiconductor, pero se diferencia principalmente del JFET en que no hay<i>directo</i>conexión entre el cable de la puerta y el propio material semiconductor.  Más bien, el cable de la puerta está aislado del cuerpo del transistor por una barrera delgada, de ahí el término<i>puerta aislada</i>.  Esta barrera aislante actúa como la capa dieléctrica de un condensador y permite que el voltaje de la puerta a la fuente influya en la región de agotamiento electrostáticamente en lugar de mediante una conexión directa.</p>
+<p>Además de la opción de diseño de canal N versus canal P, los IGFET vienen en dos tipos principales:<i>realce</i> and <i>agotamiento</i>.  El tipo de agotamiento está más estrechamente relacionado con el JFET, por lo que comenzaremos nuestro estudio de los IGFET con él.</p>
+<h2><u><a name="xtocid90541">Depletion-type IGFETs</a></u></h2>
+<p>Los transistores de efecto de campo de puerta aislada son dispositivos unipolares como los JFET: es decir, la corriente controlada no tiene que cruzar una unión PN.  Hay una unión PN dentro del transistor, pero su único propósito es proporcionar esa región de agotamiento no conductora que se utiliza para restringir la corriente a través del canal.</p>
+<p>Aquí hay un diagrama de un IGFET de canal N del tipo "agotamiento":</p>
+<p> <img src="03178.png"/> </p>
+<p>Observe cómo los cables de fuente y drenaje se conectan a cada extremo del canal N y cómo el cable de compuerta se conecta a una placa metálica separada del canal por una delgada barrera aislante.  Esa barrera a veces está hecha de dióxido de silicio (el principal compuesto químico que se encuentra en la arena), que es un muy buen aislante.  debido a esto<b>M</b>metal (puerta) -<b>O</b>xido (barrera) -<b>S</b>Construcción de semiconductores (canal), el IGFET a veces se denomina MOSFET.  Sin embargo, existen otros tipos de construcción IGFET, por lo que "IGFET" es el mejor descriptor para esta clase general de transistores.</p>
+<p>Observe también cómo hay cuatro conexiones con el IGFET.  En la práctica, el<i>sustrato</i>El cable está conectado directamente al<i>fuente</i>conducir para hacer que los dos sean eléctricamente comunes.  Por lo general, esta conexión se realiza internamente al IGFET, eliminando la conexión de sustrato separada, lo que da como resultado un dispositivo de tres terminales con un símbolo esquemático ligeramente diferente:</p>
+<p> <img src="03179.png"/> </p>
+<p>Con la fuente y el sustrato comunes entre sí, las capas N y P del IGFET terminan conectadas directamente entre sí a través del cable exterior.  Esta conexión evita que se aplique voltaje a través de la unión PN.  Como resultado, existe una región de agotamiento entre los dos materiales, pero nunca puede expandirse ni colapsarse.  La operación JFET se basa en la expansión de la región de agotamiento de la unión PN, pero aquí en el IGFET eso no puede suceder, por lo que la operación IGFET debe basarse en un efecto diferente.</p>
+<p>De hecho lo es, porque cuando se aplica un voltaje de control entre la puerta y la fuente, la conductividad del canal cambia como resultado de la región de agotamiento.<i>emocionante</i>más cerca o más lejos de la puerta.  En otras palabras, el ancho efectivo del canal cambia igual que con el JFET, pero este cambio en el ancho del canal se debe a la región de agotamiento.<i>desplazamiento</i>en lugar de región de agotamiento<i>expansión</i>.
+</p>
+<p>En un IGFET de canal N, un voltaje de control aplicado positivo (+) a la puerta y negativo (-) a la fuente tiene el efecto de repeler la región de agotamiento de la unión PN, expandiendo el canal tipo N y aumentando la conductividad:</p>
+<p> <img src="03180.png"/> </p>
+<p>Invertir la polaridad del voltaje de control tiene el efecto opuesto, atrayendo la región de agotamiento y estrechando el canal, reduciendo en consecuencia la conductividad del canal:</p>
+<p> <img src="03181.png"/> </p>
+<p>La puerta aislada permite controlar voltajes de cualquier polaridad sin peligro de polarizar directamente una unión, como era el caso de los JFET.  Este tipo de IGFET, aunque se llama "tipo agotamiento", en realidad tiene la capacidad de tener su canal<i>cualquiera</i>agotado (canal estrechado)<i>or</i>mejorado (canal expandido).  La polaridad del voltaje de entrada determina de qué manera se influirá en el canal.</p>
+<p>Comprender qué polaridad tiene qué efecto no es tan difícil como parece.  La clave es considerar el tipo de dopaje semiconductor utilizado en el canal (¿canal N o canal P?), luego relacionar ese tipo de dopaje con el lado de la fuente de voltaje de entrada conectada al canal por medio del cable de fuente.  Si el IGFET es un canal N y el voltaje de entrada está conectado de modo que el lado positivo (+) esté en la puerta mientras que el lado negativo (-) esté en la fuente, el canal mejorará a medida que se acumulen electrones adicionales en el lado del canal de la barrera dieléctrica.  Piense, "negativo (-) se correlaciona con<i>N</i>-tipo, mejorando así el canal con el tipo correcto de portador de carga (electrones) y haciéndolo más conductor". Por el contrario, si el voltaje de entrada se conecta a un IGFET de canal N al revés, de modo que el negativo (-) se conecte a la puerta mientras que el positivo (+) se conecte a la fuente, los electrones libres serán "robados" del canal a medida que se carga el capacitor del canal de puerta, agotando así el canal de portadores de carga mayoritarios y haciéndolo menos conductor.</p>
+<p>Para los IGFET de canal P, la polaridad del voltaje de entrada y los efectos del canal siguen la misma regla.  Es decir, se necesita exactamente la polaridad opuesta a la de un IGFET de canal N para agotar o mejorar:</p>
+<p> <img src="03182.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="03183.png"/> </p>
+<p>Ilustrando las polaridades de polarización adecuadas con símbolos IGFET estándar:</p>
+<p> <img src="03184.png"/> </p>
+<p>Cuando se aplica voltaje cero entre la puerta y la fuente, el IGFET conducirá corriente entre la fuente y el drenaje, pero no tanta corriente como lo haría si estuviera mejorado por el voltaje de puerta adecuado.  Esto coloca al tipo de agotamiento, o simplemente<i>tipo D</i>, IGFET en una categoría propia en el mundo de los transistores.  Los transistores de unión bipolar son<i>normalmente apagado</i>Dispositivos: sin corriente de base, bloquean el paso de cualquier corriente a través del colector.  Los transistores de efecto de campo de unión son<i>normalmente encendido</i>dispositivos: con voltaje de puerta a fuente aplicado cero, permiten una corriente de drenaje máxima (en realidad, puede convencer a un JFET para que genere corrientes de drenaje mayores aplicando un voltaje de polarización directa muy pequeño entre la puerta y la fuente, pero esto nunca debe hacerse en la práctica por el riesgo de dañar su frágil unión PN).  Los IGFET tipo D, sin embargo, son<i>normalmente a medias</i>Dispositivos: sin voltaje de puerta a fuente, su nivel de conducción está entre el corte y la saturación total.  Además, tolerarán voltajes de puerta-fuente aplicados de cualquier polaridad, siendo la unión PN inmune a daños debido a la barrera aislante y especialmente a la conexión directa entre la fuente y el sustrato evitando cualquier diferencial de voltaje a través de la unión.</p>
+<a name="Triode tube"></a>
+<a name="Tetrode tube"></a>
+<a name="Pentode tube"></a>
+<p>Irónicamente, el comportamiento de conducción de un IGFET tipo D es sorprendentemente similar al de un tubo de electrones de la variedad triodo/tetrodo/pentodo.  Estos dispositivos eran reguladores de corriente controlados por voltaje que también permitían que la corriente pasara a través de ellos sin aplicar un voltaje de control cero.  Un voltaje de control de una polaridad (rejilla negativa y cátodo positivo) disminuiría la conductividad a través del tubo, mientras que un voltaje de la otra polaridad (rejilla positiva y cátodo negativo) mejoraría la conductividad.  Me parece curioso que uno de los últimos diseños de transistores inventados exhiba las mismas propiedades básicas del primer dispositivo (electrónico) activo.</p>
+<p>Algunos análisis de SPICE demostrarán el comportamiento de regulación actual de los IGFET de tipo D.  Primero, una prueba con voltaje de entrada cero (puerta en cortocircuito a la fuente) y la fuente de alimentación pasó de 0 a 50 voltios.  El gráfico muestra la corriente de drenaje:</p>
+<p> <img src="03185.png"/> </p>
+<br/>
+<pre>
+n-channel igfet characteristic curve                                            
+m1 1 0 0 0 mod1 
+vammeter 2 1 dc 0       
+v1 2 0  
+.model mod1 nmos vto=-1 
+.dc v1 0 50 2   
+.plot dc i(vammeter)    
+.end    
+</pre>
+<br/>
+<!--i(vammeter) -->
+<!--|     0.000E+00     5.000E-06    1.000E-05     1.500E-05  2.000E-05-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<!--0.000E+00 *             .             .             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--1.000E-05 .             .             *             .            .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<br/>
+<p> <img src="23020.png"/> </p>
+<br/>
+<p>Como se esperaba de cualquier transistor, la corriente controlada se mantiene estable en un valor regulado en una amplia gama de voltajes de suministro de energía.  En este caso ese punto regulado es 10 µA (1.000E-05).  Ahora veamos qué sucede cuando aplicamos un voltaje negativo a la puerta (con referencia a la fuente) y barremos la fuente de alimentación en el mismo rango de 0 a 50 voltios:</p>
+<p> <img src="03186.png"/> </p>
+<br/>
+<pre>
+n-channel igfet characteristic curve                                            
+m1 1 3 0 0 mod1 
+vin 0 3 dc 0.5  
+vammeter 2 1 dc 0       
+v1 2 0  
+.model mod1 nmos vto=-1 
+.dc v1 0 50 2   
+.plot dc i(vammeter)    
+.end    
+</pre>
+<br/>
+<!--i(vammeter)-->
+<!--|      0.000E+00    1.000E-06     2.000E-06     3.000E-06  4.000E-06-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<!--0.000E+00 *             .             .             .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--2.500E-06 .             .             .      *      .            .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<p> <img src="23021.png"/> </p>
+<br/>
+<p>No es sorprendente que la corriente de drenaje ahora esté regulada a un valor más bajo de 2,5 µA (en comparación con 10 µA con voltaje de entrada cero).  Ahora apliquemos un voltaje de entrada de la otra polaridad, para<i>mejorar</i>el IGFET:</p>
+<p> <img src="03187.png"/> </p>
+<br/>
+<pre>
+n-channel igfet characteristic curve                                            
+m1 1 3 0 0 mod1 
+vin 3 0 dc 0.5  
+vammeter 2 1 dc 0       
+v1 2 0  
+.model mod1 nmos vto=-1 
+.dc v1 0 50 2   
+.plot dc i(vammeter)    
+.end    
+</pre>
+<br/>
+<!--i(vammeter)-->
+<!--|     0.000E+00     1.000E-05     2.000E-05     3.000E-05  4.000E-05-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<!--0.000E+00 *             .             .             .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--2.250E-05 .             .             .   *         .            .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<p> <img src="23022.png"/> </p>
+<br/>
+<p>Con el transistor mejorado por el pequeño voltaje de control, la corriente de drenaje ahora tiene un valor aumentado de 22,5 µA (2.250E-05).  A partir de estos tres conjuntos de cifras de voltaje y corriente, debería ser evidente que la relación entre la corriente de drenaje y el voltaje de la puerta-fuente no es lineal, tal como lo era con el JFET.  Con 1/2 voltio de voltaje de agotamiento, la corriente de drenaje es de 2,5 µA; con entrada de 0 voltios la corriente de drenaje sube hasta 10 µA; y con 1/2 voltio de voltaje mejorado, la corriente es de 22,5 µA.  Para obtener una mejor comprensión de esta no linealidad, podemos usar SPICE para trazar la corriente de drenaje en un rango de valores de voltaje de entrada, desde una cifra negativa (agotadora) hasta una cifra positiva (mejorada), manteniendo el voltaje de suministro de energía en V.<sub>1</sub>a un valor constante:</p>
+<br/>
+<pre>
+n-channel igfet 
+m1 1 3 0 0 mod1 
+vin 3 0 
+vammeter 2 1 dc 0       
+v1 2 0 dc 24    
+.model mod1 nmos vto=-1 
+.dc vin -1 1 0.1
+.plot dc i(vammeter)    
+.end    
+</pre>
+<br/>
+<!--vin   i(vammeter) 0.000E+00     2.000E-05    4.000E-05    6.000E-05-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<!---1.000E+00  3.328E-11 *             .             .             .-->
+<!---9.000E-01  1.000E-07 *             .             .             .-->
+<!---8.000E-01  4.000E-07 *             .             .             .-->
+<!---7.000E-01  9.000E-07 .*            .             .             .-->
+<!---6.000E-01  1.600E-06 .*            .             .             .-->
+<!---5.000E-01  2.500E-06 . *           .             .             .-->
+<!---4.000E-01  3.600E-06 .  *          .             .             .-->
+<!---3.000E-01  4.900E-06 .  *          .             .             .-->
+<!---2.000E-01  6.400E-06 .   *         .             .             .-->
+<!---1.000E-01  8.100E-06 .     *       .             .             .-->
+<!---2.220E-16  1.000E-05 .      *      .             .             .-->
+<!-- 1.000E-01  1.210E-05 .       *     .             .             .-->
+<!-- 2.000E-01  1.440E-05 .         *   .             .             .-->
+<!-- 3.000E-01  1.690E-05 .           * .             .             .-->
+<!-- 4.000E-01  1.960E-05 .             *             .             .-->
+<!-- 5.000E-01  2.250E-05 .             . *           .             .-->
+<!-- 6.000E-01  2.560E-05 .             .   *         .             .-->
+<!-- 7.000E-01  2.890E-05 .             .     *       .             .-->
+<!-- 8.000E-01  3.240E-05 .             .        *    .             .-->
+<!-- 9.000E-01  3.610E-05 .             .          *  .             .-->
+<!-- 1.000E+00  4.000E-05 .             .             *             .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<p> <img src="23023.png"/> </p>
+<br/>
+<p>Al igual que con los JFET, esta no linealidad inherente del IGFET tiene el potencial de causar distorsión en un circuito amplificador, ya que la señal de entrada no se reproducirá con una precisión del 100 por ciento en la salida.  Observe también que un voltaje puerta-fuente de aproximadamente 1 voltio en la dirección de agotamiento puede pellizcar el canal de modo que prácticamente no haya corriente de drenaje.  Los IGFET de tipo D, como los JFET, tienen una cierta tensión nominal de pellizco.  Esta clasificación varía según la característica única del transistor y puede no ser la misma que en nuestra simulación aquí.</p>
+<p>Al trazar un conjunto de curvas características para el IGFET, vemos un patrón no muy diferente al del JFET:</p>
+<p> <img src="03188.png"/> </p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<h2><u><a name="xtocid90542">Enhancement-type IGFETs -- PENDING</a></u></h2>
+<ul>
+<li><b>REVISAR:</b></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<h2><u><a name="xtocid90543">Active-mode operation -- PENDING</a></u></h2>
+<!--Transconductance-->
+<ul>
+<li><b>REVISAR:</b></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<h2><u><a name="xtocid90544">The common-source amplifier -- PENDING</a></u></h2>
+<ul>
+<li><b>REVISAR:</b></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<h2><u><a name="xtocid90545">The common-drain amplifier -- PENDING</a></u></h2>
+<ul>
+<li><b>REVISAR:</b></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<h2><u><a name="xtocid90546">The common-gate amplifier -- PENDING</a></u></h2>
+<ul>
+<li><b>REVISAR:</b></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<h2><u><a name="xtocid90547">Biasing techniques -- PENDING</a></u></h2>
+<ul>
+<li><b>REVISAR:</b></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<h2><u><a name="xtocid90548">Transistor ratings and packages -- PENDING</a></u></h2>
+<ul>
+<li><b>REVISAR:</b></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<h2><u><a name="xtocid90549">IGFET quirks -- PENDING</a></u></h2>
+<!--Static sensitivity-->
+<!--Unpredictable with floating gate-->
+<ul>
+<li><b>REVISAR:</b></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<h2><u><a name="xtocid905410">MESFETs -- PENDING</a></u></h2>
+<ul>
+<li><b>REVISAR:</b></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<h2><u><a name="xtocid905411">IGBTs</a></u></h2>
+<p>Debido a sus puertas aisladas, los IGFET de todos los tipos tienen una ganancia de corriente extremadamente alta: no puede haber corriente de puerta sostenida si no hay una puerta continua.<i>circuito</i>en el que los electrones pueden fluir continuamente.  Entonces, la única corriente que vemos a través del terminal de puerta de un IGFET es cualquier transitorio (breve sobretensión) que pueda ser necesario para cargar la capacitancia del canal de puerta y desplazar la región de agotamiento cuando el transistor cambia de un estado "encendido" a un estado "apagado", o viceversa.</p>
+<p>Esta alta ganancia de corriente parecería a primera vista colocar a la tecnología IGFET en una clara ventaja sobre los transistores bipolares para el control de corrientes muy grandes.  Si se utiliza un transistor de unión bipolar para controlar una corriente de colector grande, debe haber una corriente de base sustancial generada o absorbida por algún circuito de control, de acuerdo con la relación β.  Para dar un ejemplo, para que un BJT de potencia con un β de 20 conduzca una corriente de colector de 100 amperios, debe haber al menos 5 amperios de corriente de base, una cantidad sustancial de corriente en sí misma para que la maneje un circuito de control integrado o discreto en miniatura:</p>
+<p> <img src="03308.png"/> </p>
+<p>Sería bueno desde el punto de vista del circuito de control tener transistores de potencia con alta ganancia de corriente, de modo que se necesite mucha menos corriente para controlar la corriente de carga.  Por supuesto, podemos usar transistores de par Darlington para aumentar la ganancia actual, pero este tipo de disposición aún requiere<i>far</i>Más corriente de control que un IGFET de potencia equivalente:</p>
+<p> <img src="03309.png"/> </p>
+<a name="VMOS transistor"></a>
+<p>Desafortunadamente, sin embargo, los IGFET tienen sus propios problemas para controlar la alta corriente: generalmente exhiben una mayor caída de voltaje entre el drenaje y la fuente mientras están saturados que la caída de voltaje entre el colector y el emisor de un BJT saturado.  Esta mayor caída de voltaje equivale a una mayor disipación de potencia para la misma cantidad de corriente de carga, lo que limita la utilidad de los IGFET como dispositivos de alta potencia.   Aunque algunos diseños especializados, como el llamado transistor VMOS, se han diseñado para minimizar esta desventaja inherente, el transistor de unión bipolar sigue siendo superior en su capacidad para conmutar corrientes elevadas.</p>
+<a name="IGBT"></a>
+<a name="Insulated-Gate Bipolar Transistor"></a>
+<a name="IGT"></a>
+<a name="Insulated-Gate Transistor"></a>
+<a name="COMFET"></a>
+<a name="Conductivity-Modulated Field-Effect Transistor"></a>
+<a name="Bipolar-mode MOSFET"></a>
+<p>Una solución interesante a este dilema aprovecha las mejores características de los IGFET con las mejores características de los BJT, en un dispositivo llamado<i>Transistor bipolar de puerta aislada</i>, o<i>IGBT</i>.  También conocido como un<i>MOSFET de modo bipolar</i>, a <i>Transistor de efecto de campo modulado por conductividad</i> (<i>COMFET</i>), o simplemente como<i>Transistor de puerta aislada</i> (<i>IGT</i>), es equivalente a un par Darlington de IGFET y BJT:</p>
+<p> <img src="03310.png"/> </p>
+<p>En esencia, el IGFET controla la corriente base de un BJT, que maneja la corriente de carga principal entre el colector y el emisor.  De esta manera, hay una ganancia de corriente extremadamente alta (ya que la puerta aislada del IGFET prácticamente no extrae corriente del circuito de control), pero la caída de voltaje del colector al emisor durante la conducción total es tan baja como la de un BJT ordinario.</p>
+<p>Una desventaja del IGBT sobre un BJT estándar es su tiempo de apagado más lento.  Para<i>rápido</i>Conmutación y alta capacidad de manejo de corriente, es difícil superar al transistor de unión bipolar.  Se pueden lograr tiempos de apagado más rápidos para los IGBT mediante ciertos cambios en el diseño, pero sólo a expensas de una mayor caída de tensión saturada entre el colector y el emisor.  Sin embargo, el IGBT proporciona una buena alternativa a los IGFET y BJT para aplicaciones de control de alta potencia.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="SEMI_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="SEMI_5.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="SEMI_7.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

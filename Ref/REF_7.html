@@ -1,0 +1,2192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen V (Referencia) - Capítulo 7 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #ef4444; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen V (Referencia) - Capítulo 7</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen V</h1>
+<h1>Capítulo 7</h1>
+<h1>USANDO EL<i>CONDIMENTAR</i>PROGRAMA DE SIMULACIÓN DE CIRCUITO</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid93580"><u>Introduction</u></a></li>
+<li><a href="#xtocid93581"><u>History of SPICE</u></a></li>
+<li><a href="#xtocid93582"><u>Fundamentals of SPICE programming</u></a></li>
+<li><a href="#xtocid93583"><u>The command-line interface</u></a></li>
+<li><a href="#xtocid93584"><u>Circuit components</u></a></li>
+<ul>
+<li><a href="#xtocid93585"><u>Passive components</u></a></li>
+<ul>
+<li><a href="#xtocid93586">CAPACITORS</a></li>
+<li><a href="#xtocid93587">INDUCTORS</a></li>
+<li><a href="#xtocid93588">INDUCTOR COUPLING (transformers)</a></li>
+<li><a href="#xtocid93589">RESISTORS</a></li>
+</ul>
+<li><a href="#xtocid935810"><u>Active components</u></a></li>
+<ul>
+<li><a href="#xtocid935811">DIODES</a></li>
+<li><a href="#xtocid935812">TRANSISTORS, bipolar junction -- BJT</a></li>
+<li><a href="#xtocid935813">JFET, junction field-effect transistor</a></li>
+<li><a href="#xtocid935814">MOSFET, transistor</a></li>
+</ul>
+<li><a href="#xtocid935815"><u>Sources</u></a></li>
+</ul>
+<li><a href="#xtocid935816"><u>Analysis options</u></a></li>
+<li><a href="#xtocid935817"><u>Quirks</u></a></li>
+<ul>
+<li><a href="#xtocid935818"><u>A good beginning</u></a></li>
+<li><a href="#xtocid935819"><u>A good ending</u></a></li>
+<li><a href="#xtocid935820"><u>Must have a node 0</u></a></li>
+<li><a href="#xtocid935821"><u>Avoid open circuits</u></a></li>
+<li><a href="#xtocid935822"><u>Avoid certain component loops</u></a></li>
+<li><a href="#xtocid935823"><u>Current measurement</u></a></li>
+<li><a href="#xtocid935824"><u>Fourier analysis</u></a></li>
+</ul>
+<li><a href="#xtocid935825"><u>Example circuits and netlists</u></a></li>
+<ul>
+<li><a href="#xtocid935826"><u>Multiple-source DC resistor network, part 1</u></a></li>
+<li><a href="#xtocid935827"><u>Multiple-source DC resistor network, part 2</u></a></li>
+<li><a href="#xtocid935828"><u>RC time-constant circuit</u></a></li>
+<li><a href="#xtocid935829"><u>Plotting and analyzing a simple AC sinewave voltage</u></a></li>
+<li><a href="#xtocid935830"><u>Simple AC resistor-capacitor circuit</u></a></li>
+<li><a href="#xtocid935831"><u>Low-pass filter</u></a></li>
+<li><a href="#xtocid935832"><u>Multiple-source AC network</u></a></li>
+<li><a href="#xtocid935833"><u>AC phase shift demonstration</u></a></li>
+<li><a href="#xtocid935834"><u>Transformer circuit</u></a></li>
+<li><a href="#xtocid935835"><u>Full-wave bridge rectifier</u></a></li>
+<li><a href="#xtocid935836"><u>Common-base BJT transistor amplifier</u></a></li>
+<li><a href="#xtocid935837"><u>Common-source JFET amplifier with self-bias</u></a></li>
+<li><a href="#xtocid935838"><u>Inverting op-amp circuit</u></a></li>
+<li><a href="#xtocid935839"><u>Noninverting op-amp circuit</u></a></li>
+<li><a href="#xtocid935840"><u>Instrumentation amplifier</u></a></li>
+<li><a href="#xtocid935841"><u>Op-amp integrator with sinewave input</u></a></li>
+<li><a href="#xtocid935842"><u>Op-amp integrator with squarewave input</u></a></li></ul>
+</ul>
+<h2><u><a name="xtocid93580">Introduction</a></u></h2>
+<a name="&lt;i&gt;Electronics Workbench&lt;/i&gt;"></a>
+<a name="SPICE"></a>
+<blockquote>
+<p>
+<i>"Con Electronics Workbench, puedes crear esquemas de circuitos que lucen exactamente iguales a aquellos con los que ya estás familiarizado en papel; además, puedes activar el interruptor de encendido para que el esquema se comporte como un circuito real. Con otros simuladores de electrónica, es posible que tengas que escribir listas de nodos SPICE como archivos de texto, una representación abstracta de un circuito que está más allá de las capacidades de todos, excepto de los ingenieros electrónicos avanzados".</i>
+</p>
+<p>
+<b>(Guía del usuario de Electronics Workbench - versión 4, página 7)</b>
+</p>
+</blockquote>
+<p>Esta introducción proviene del manual de operación de un programa de simulación de circuitos llamado<i>Banco de trabajo de electrónica</i>.  Utilizando una interfaz gráfica, permite al usuario dibujar un esquema de circuito y luego hacer que la computadora analice ese circuito, mostrando los resultados en forma gráfica.  Es una herramienta de análisis muy valiosa, pero tiene sus defectos.  Por un lado, este y otros programas gráficos similares tienden a ser poco confiables al analizar circuitos complejos, ya que la traducción de una imagen a un código de computadora no es la ciencia exacta que nos gustaría que fuera (todavía).  En segundo lugar, debido a sus requisitos gráficos, tiende a necesitar una cantidad significativa de "caballos de potencia" computacionales para ejecutarse y un sistema operativo de computadora que admita gráficos.  En tercer lugar, estos programas gráficos pueden resultar costosos.</p>
+<p>Sin embargo, debajo de la apariencia gráfica de<i>Banco de trabajo de electrónica</i>Se encuentra un programa robusto (¡y gratuito!) llamado SPICE, que analiza un circuito basándose en una descripción de un archivo de texto de los componentes y conexiones del circuito.  Con qué paga el usuario<i>Banco de trabajo de electrónica</i>y otros programas de análisis de circuitos gráficos es la conveniente interfaz "apuntar y hacer clic", mientras que SPICE realiza el análisis matemático real.</p>
+<p>Por sí solo, SPICE no requiere una interfaz gráfica y exige pocos recursos del sistema.  También es muy confiable.  A los creadores de Electronic Workbench les gustaría hacerles pensar que usar SPICE en su modo de texto nativo es una tarea adecuada para científicos espaciales, pero escribo esto para demostrar que están equivocados.  SPICE es bastante fácil de usar para circuitos simples y su interfaz no gráfica en realidad se presta para el análisis de circuitos que pueden ser difíciles de dibujar.  Creo que fue el experto en programación Donald Knuth quien bromeó: "Lo que ves es todo lo que obtienes" cuando se trata de aplicaciones informáticas.  Los gráficos pueden parecer más atractivos, pero las interfaces abstractas (texto) son en realidad más eficientes.</p>
+<p>Este documento no pretende ser un tutorial exhaustivo sobre cómo utilizar SPICE.  Simplemente estoy tratando de mostrarle al usuario interesado cómo aplicarlo al análisis de circuitos simples, como una alternativa a los programas propietarios ($$$) y con errores.  Una vez que aprenda los conceptos básicos, existen otros tutoriales más adecuados para llevarlo más allá.  Usar SPICE, un programa originalmente destinado a desarrollar circuitos integrados, para analizar algunos de los circuitos realmente simples que se muestran aquí puede parecer un poco como cortar mantequilla con una motosierra, ¡pero funciona!</p>
+<a name="SPICE2g6"></a>
+<p>Todas las opciones y ejemplos se han probado en SPICE versión 2g6 en sistemas operativos MS-DOS y Linux.  Hasta donde yo sé, no estoy usando funciones específicas de la versión 2g6, por lo que estas funciones simples deberían funcionar en la mayoría de las versiones de SPICE.</p>
+<h2><u><a name="xtocid93581">History of SPICE</a></u></h2>
+<p>SPICE es un programa informático diseñado para simular circuitos electrónicos analógicos.  Su intención original era el desarrollo de circuitos integrados, de donde deriva su nombre:<b>S</b>imulación<b>P</b>programar con<b>I</b>integrado<b>C</b>circuito<b>E</b>énfasis.</p>
+<p>El origen de SPICE se remonta a otro programa de simulación de circuitos llamado CANCER.  Desarrollado por el profesor Ronald Rohrer de la U.C. Berkeley, junto con algunos de sus estudiantes a finales de los años 1960, CÁNCER continuó mejorando hasta principios de los años 1970.  Cuando Rohrer dejó Berkeley, CÁNCER fue reescrito y rebautizado como SPICE, lanzado como versión 1 al dominio público en mayo de 1972. La versión 2 de SPICE se publicó en 1975 (la versión 2g6, la versión utilizada en este libro, es una revisión menor de esta versión de 1975).  En la decisión de lanzar SPICE como programa informático de dominio público jugó un papel decisivo el profesor Donald Pederson de Berkeley, quien creía que todo progreso técnico significativo se produce cuando la información se comparte libremente.  Por mi parte, le agradezco su visión.</p>
+<a name="FORTRAN, computer language"></a>
+<a name="C, computer language"></a>
+<p>En marzo de 1985 se produjo una mejora importante con la versión 3 de SPICE (también publicada bajo dominio público).  Escrita en lenguaje C en lugar de FORTRAN, la versión 3 incorporó tipos de transistores adicionales (el MESFET, por ejemplo) y elementos de conmutación.  La versión 3 también permitió el uso de etiquetas de nodos alfabéticos en lugar de solo números.  Sin embargo, las instrucciones escritas para la versión 2 de SPICE aún deberían ejecutarse en la versión 3.</p>
+<p>A pesar del poder adicional de la versión 3, he elegido usar la versión 2g6 a lo largo de este libro porque parece ser la versión más fácil de adquirir y ejecutar en diferentes sistemas informáticos.</p>
+<h2><u><a name="xtocid93582">Fundamentals of SPICE programming</a></u></h2>
+<a name="Programming, SPICE"></a>
+<a name="SPICE programming"></a>
+<p>Programar una simulación de circuito con SPICE es muy parecido a programar en cualquier otro lenguaje de computadora: debe escribir los comandos como texto en un archivo, guardar ese archivo en el disco duro de la computadora y luego procesar el contenido de ese archivo con un programa (compilador o intérprete) que comprenda dichos comandos.</p>
+<p>En un lenguaje informático interpretado, la computadora posee un programa especial llamado<i>intérprete</i>que traduce el programa que escribiste (el llamado<i>archivo fuente</i>) al lenguaje propio de la computadora, sobre la marcha, mientras se ejecuta:</p>
+<a name="Interpreter"></a>
+<p> <img src="01041.png"/> </p>
+<p>
+</p>
+<br/>
+<a name="Compiler"></a>
+<p>En un lenguaje informático compilado, el programa que usted escribió se traduce de una vez al propio lenguaje de la computadora mediante un programa especial llamado<i>compilador</i>.  Una vez "compilado" el programa que has escrito, el resultado<i>ejecutable</i>El archivo no necesita más traducción para ser entendido directamente por la computadora.  Ahora se puede "ejecutar" en una computadora, independientemente de que se haya instalado o no el software compilador en esa computadora:</p>
+<p> <img src="01042.png"/> </p>
+<p>SPICE es un lenguaje interpretado.  Para que una computadora pueda entender las instrucciones SPICE que usted escribe, debe tener instalado el programa SPICE (intérprete):</p>
+<p> <img src="01043.png"/> </p>
+<a name="FORTRAN, computer language"></a>
+<a name="BASIC, computer language"></a>
+<a name="PASCAL, computer language"></a>
+<a name="Netlist, SPICE"></a>
+<p>Los archivos fuente de SPICE se denominan comúnmente "netlists", aunque a veces se les conoce como "mazos" y cada línea del archivo se denomina "tarjeta".  Lindo, ¿no crees?  Las listas de red las crea una persona como usted escribiendo instrucciones línea por línea usando un procesador de textos o un editor de texto.  Los editores de texto son mucho más preferidos que los procesadores de texto para cualquier tipo de programación informática, ya que producen texto ASCII puro sin códigos especiales incorporados para resaltar texto (como<i>itálico</i> or <b>negrita</b>fuentes), que no son interpretables por el software de interpretación y compilación.</p>
+<p>Como en la programación general, el archivo fuente que cree para SPICE debe seguir ciertas convenciones de programación.  Es un lenguaje informático en sí mismo, aunque simple.  Habiendo programado en BASIC y C/C++, y teniendo algo de experiencia leyendo programas PASCAL y FORTRAN, es mi opinión que el lenguaje de SPICE es mucho más simple que cualquiera de estos.  Tiene aproximadamente la misma complejidad que un lenguaje de marcado como HTML, quizás menos.</p>
+<p>Hay un ciclo de pasos a seguir al usar SPICE para analizar un circuito.  El ciclo comienza cuando invocas por primera vez el programa de edición de texto y haces tu primer borrador de la lista de redes.  El siguiente paso es ejecutar SPICE en esa nueva lista de redes y ver cuáles son los resultados.  Si es un usuario novato de SPICE, sus primeros intentos de crear una buena lista de redes estarán plagados de pequeños errores de sintaxis.  No se preocupe: como todo programador informático sabe, el dominio se consigue con mucha práctica.  Si su ejecución de prueba produce mensajes de error o resultados que son obviamente incorrectos, deberá volver a invocar el programa de edición de texto y modificar la lista de redes.  Después de modificar la lista de redes, debe ejecutar SPICE nuevamente y verificar los resultados.  La secuencia, entonces, se parece a esto:</p>
+<ul>
+<li>Redacte una nueva lista de redes con un programa de edición de texto.  Guarde esa lista de red en un archivo con el nombre que elija.</li>
+<li>Ejecute SPICE en esa lista de redes y observe los resultados.</li>
+<li>Si los resultados contienen errores, inicie nuevamente el programa de edición de texto y modifique la lista de redes.</li>
+<li>Ejecute SPICE nuevamente y observe los nuevos resultados.</li>
+<li>Si todavía hay errores en la salida de SPICE, vuelva a editar la lista de redes con el programa de edición de texto.  Repita este ciclo de edición/ejecución tantas veces como sea necesario hasta obtener los resultados deseados.</li>
+<li>Una vez que haya "depurado" su lista de redes y esté obteniendo buenos resultados, ejecute SPICE nuevamente, solo que esta vez redirija la salida a un nuevo archivo en lugar de simplemente observarlo en la pantalla de la computadora.</li>
+<li>Iniciar un programa de edición de texto<i>or</i>un programa procesador de textos y abra el archivo de salida SPICE que acaba de crear.  Modifique ese archivo para adaptarlo a sus necesidades de formato y guarde esos cambios en el disco o imprímalos en papel.</li>
+</ul>
+<p>Para "ejecutar" un "programa" SPICE, debe escribir un comando en la interfaz del indicador de terminal, como el que se encuentra en MS-DOS, UNIX o la opción de indicador de DOS de MS-Windows:</p>
+<br/>
+<pre>
+spice &lt; example.cir
+</pre>
+<br/>
+<p>La palabra "spice" invoca el programa de interpretación SPICE (¡siempre que el software SPICE haya sido instalado en la computadora!), el símbolo "&lt;" redirige el contenido del archivo fuente al intérprete SPICE, y<tt>ejemplo.cir</tt>es el nombre del archivo fuente para este ejemplo de circuito.  La extensión del archivo "<tt>.cir</tt>" no es obligatorio; he visto "<tt>.inp</tt>" (para "entrada") y simplemente "<tt>.TXT</tt>" también funciona bien. Funcionará incluso cuando el archivo netlist no tenga extensión. A SPICE no le importa cómo le llame, siempre y cuando tenga un nombre compatible con el sistema de archivos de su computadora (para máquinas MS-DOS antiguas, por ejemplo, el nombre del archivo no debe tener más de 8 caracteres de longitud, con una extensión de 3 caracteres y sin espacios ni otros caracteres no alfanuméricos).</p>
+<p>Cuando se escribe este comando, SPICE leerá el contenido del<tt>ejemplo.cir</tt>archivo, analiza el circuito especificado por ese archivo y envía un informe de texto a la salida estándar del terminal de la computadora (generalmente la pantalla, donde puedes verlo desplazarse).  Una salida típica de SPICE consta de varias pantallas de información, por lo que es posible que desees revisarla con una ligera modificación del comando:</p>
+<br/>
+<pre>
+spice &lt; example.cir | more
+</pre>
+<br/>
+<p>Esta alternativa "canaliza" la salida de texto de SPICE a la utilidad "más", que permite mostrar sólo una página a la vez.  Lo que esto significa (en inglés) es que la salida de texto de SPICE se detiene después de una pantalla completa y espera hasta que el usuario presiona una tecla del teclado para mostrar la siguiente pantalla llena de texto.  Si solo está probando su archivo de circuito de ejemplo y desea verificar si hay errores, esta es una buena manera de hacerlo.</p>
+<br/>
+<pre>
+spice &lt; example.cir &gt; example.txt
+</pre>
+<br/>
+<p>Esta segunda alternativa (arriba) redirige la salida de texto de SPICE a otro archivo, llamado<tt>ejemplo.txt</tt>, donde se puede ver o imprimir.  Esta opción corresponde al último paso del ciclo de desarrollo mencionado anteriormente.  Este autor recomienda que utilice esta técnica de "redirección" a un archivo de texto sólo después de haber demostrado que su lista de circuitos de ejemplo funciona bien, para no perder tiempo invocando un editor de texto sólo para ver el resultado durante las etapas de "depuración".</p>
+<p>Una vez que tenga una salida SPICE almacenada en un<tt>.TXT</tt>archivo, puede usar un editor de texto o (¡mejor aún!) un procesador de textos para editar el resultado, eliminando cualquier banner y mensaje innecesario, incluso especificando fuentes alternativas para resaltar los títulos y/o datos para una apariencia más pulida.  Luego, por supuesto, puede imprimir el resultado en papel si así lo desea.  Dado que la salida directa de SPICE es texto ASCII plano, dicho archivo será universalmente interpretable en cualquier computadora, ya sea que SPICE esté instalado o no.  Además, el formato de texto plano garantiza que el archivo será muy pequeño en comparación con los archivos de capturas de pantalla gráficas generados por los simuladores de "apuntar y hacer clic".</p>
+<p>El formato de archivo netlist requerido por SPICE es bastante simple.  Un archivo netlist no es más que un archivo de texto ASCII plano que contiene varias líneas de texto, cada una de las cuales describe un componente del circuito o un comando especial de SPICE.  La arquitectura del circuito se especifica asignando números a los puntos de conexión de cada componente en cada línea, conexiones entre componentes designadas por números comunes.  Examine el siguiente diagrama de circuito de ejemplo y su correspondiente archivo SPICE.  Tenga en cuenta que el diagrama del circuito existe únicamente para facilitar la comprensión de la simulación por parte de los seres humanos.  SPICE sólo entiende las listas de red:</p>
+<p> <img src="01004.png"/> </p>
+<br/>
+<pre>
+Example netlist
+v1 1 0 dc 15
+r1 1 0 2.2k
+r2 1 2 3.3k     
+r3 2 0 150
+.end
+</pre>
+<br/>
+<p>Cada línea del archivo fuente que se muestra arriba se explica aquí:</p>
+<ul>
+<li><tt>v1</tt>representa la batería (fuente de voltaje 1), terminal positivo numerado 1, terminal negativo numerado 0, con una salida de voltaje CC de 15 voltios.</li>
+<li><tt>r1</tt>representa la resistencia R<sub>1</sub>en el diagrama, conectado entre los puntos 1 y 0, con un valor de 2,2 kΩ.</li>
+<li><tt>r2</tt>representa la resistencia R<sub>2</sub>en el diagrama, conectado entre los puntos 1 y 2, con un valor de 3,3 kΩ.</li>
+<li><tt>r3</tt>representa la resistencia R<sub>3</sub>en el diagrama, conectado entre los puntos 2 y 0, con un valor de 150 kΩ.</li>
+</ul>
+<a name="Nodes, SPICE"></a>
+<p>Los puntos eléctricamente comunes (o "nodos") en la descripción de un circuito SPICE comparten números comunes, de la misma manera que los cables que conectan puntos comunes en un circuito grande generalmente comparten etiquetas de cables comunes.</p>
+<p>Para simular este circuito, el usuario escribiría esas seis líneas de texto en un editor de texto y las guardaría como un archivo con un nombre único (como<tt>ejemplo.cir</tt>).  Una vez que la lista de red está compuesta y guardada en un archivo, el usuario procesa ese archivo con una de las declaraciones de línea de comando mostradas anteriormente (<tt>especia &lt; ejemplo.cir</tt>), y recibirán este texto en la pantalla de su computadora:</p>
+<br/>
+<pre>
+1*******10/10/99 ******** spice 2g.6 3/15/83 ********07:32:42*****
+
+0example netlist    
+
+0****   input listing                 temperature =   27.000 deg c
+
+ v1 1 0 dc 15    
+ r1 1 0 2.2k     
+ r2 1 2 3.3k     
+ r3 2 0 150      
+ .end    
+
+*****10/10/99 *********  spice 2g.6  3/15/83 ******07:32:42******
+
+0example netlist   
+0****   small signal bias solution     temperature =   27.000 deg c
+
+
+  node   voltage     node   voltage
+
+ (  1)   15.0000    (  2)    0.6522
+
+
+     voltage source currents
+     name       current
+
+     v1       -1.117E-02
+
+
+     total power dissipation   1.67E-01  watts
+         
+        job concluded
+0         total job time            0.02
+1*******10/10/99 ********  spice 2g.6  3/15/83 ******07:32:42*****
+
+
+0****   input listing                 temperature =   27.000 deg c
+</pre>
+<br/>
+<p>SPICE comienza imprimiendo la hora, fecha y versión utilizada en la parte superior del resultado.  Luego enumera los parámetros de entrada (las líneas del archivo fuente), seguido de una visualización de las lecturas de voltaje de CC desde cada nodo (número de referencia) a tierra (siempre número de referencia 0).  A esto le sigue una lista de lecturas de corriente a través de cada fuente de voltaje (en este caso solo hay una, v1).  Finalmente, se imprime la disipación total de energía y el tiempo de cálculo en segundos.</p>
+<p>Todos los valores de salida proporcionados por SPICE se muestran en notación científica.</p>
+<p>La lista de resultados de SPICE que se muestra arriba es un poco detallada para el gusto de la mayoría de las personas.  Para una presentación final, sería bueno recortar todo el texto innecesario y dejar solo lo importante.  Aquí hay una muestra del mismo resultado, redirigido a un archivo de texto (<tt>especia &lt; ejemplo.cir &gt; ​​ejemplo.txt</tt>), luego se recortó juiciosamente con un editor de texto para la presentación final y se imprimió:</p>
+<br/>
+<pre>
+example netlist    
+v1 1 0 dc 15    
+r1 1 0 2.2k     
+r2 1 2 3.3k     
+r3 2 0 150      
+.end    
+</pre>
+<br/>
+<pre>
+node    voltage    node     voltage
+(  1)   15.0000    (  2)    0.6522
+</pre>
+<br/>
+<pre>
+voltage source currents
+name       current
+v1       -1.117E-02
+</pre>
+<br/>
+<pre>
+total power dissipation   1.67E-01  watts
+</pre>
+<br/>
+<p>Una de las cosas buenas de SPICE es que tanto el formato de entrada como el de salida son texto sin formato, que es el formato electrónico más universal y fácil de editar que existe.  Prácticamente<i>any</i>La computadora podrá editar y mostrar este formato, incluso si el programa SPICE en sí no reside en esa computadora.  Si el usuario lo desea, es libre de utilizar las capacidades avanzadas de los programas de procesamiento de textos para que el resultado parezca más elegante.  Incluso se pueden insertar comentarios entre líneas del resultado para mayor claridad para el lector.</p>
+<h2><u><a name="xtocid93583">The command-line interface</a></u></h2>
+<p>Si ha utilizado sistemas operativos DOS o UNIX antes en un entorno de shell de línea de comandos, puede preguntarse por qué tenemos que usar el símbolo "&lt;" entre la palabra "spice" y el nombre del archivo netlist a interpretar.  ¿Por qué no simplemente ingresar el nombre del archivo como primer argumento del comando "spice" como lo hacemos cuando invocamos el editor de texto?  La respuesta es que SPICE tiene la opción de un<i>interactivo</i>modo, mediante el cual cada línea de la lista de red se puede interpretar a medida que se ingresa a través de la entrada estándar (stdin) de la computadora.  Si simplemente escribe "especia" cuando se le solicite y presiona<b>[Ingresar]</b>, SPICE comenzará a interpretar todo lo que escriba (en vivo).</p>
+<p>Para la mayoría de las aplicaciones, es bueno guardar el trabajo de su lista de red en un archivo separado y luego dejar que SPICE interprete ese archivo cuando esté listo.  Esta es la forma en que recomiendo que se utilice SPICE, y así es como se presenta en esta lección.  Para usar SPICE de esta manera en un entorno de línea de comandos, necesitamos usar el símbolo de redirección "&lt;" para dirigir el contenido de su archivo netlist a la entrada estándar (stdin), que luego SPICE puede procesar.</p>
+<h2><u><a name="xtocid93584">Circuit components</a></u></h2>
+<p>Recuerde que este tutorial no es exhaustivo de ninguna manera y que todas las descripciones de los elementos en el lenguaje SPICE están documentadas aquí en forma condensada.  SPICE es un software muy capaz con muchas opciones y sólo voy a documentar algunas de ellas.</p>
+<p>
+<i>All</i>Los componentes en un archivo fuente SPICE se identifican principalmente por la primera letra en cada línea respectiva.  Los caracteres que siguen a la letra de identificación se utilizan para distinguir un componente de un determinado tipo de otro del mismo tipo (r1, r2, r3, rload, rpullup, etc.) y no necesitan seguir ninguna convención de nomenclatura particular, siempre que no se utilicen más de ocho caracteres tanto en la letra de identificación del componente como en el nombre distintivo.</p>
+<a name="Component names, SPICE"></a>
+<p>Por ejemplo, suponga que está simulando un circuito digital con resistencias "pullup" y "pulldown".  el nombre<tt>pullup</tt>sería válido porque tiene siete caracteres.  el nombre<tt>desplegable</tt>, sin embargo, tiene nueve caracteres.  Esto puede causar problemas cuando SPICE interpreta la lista de redes.</p>
+<p>De hecho, puede salirse con la suya con nombres de componentes que superen los ocho caracteres en total si no hay otros componentes con nombres similares en el archivo fuente.  SPICE sólo presta atención a los primeros ocho caracteres del primer campo de cada línea, por lo que<tt>desplegable</tt>en realidad se interpreta como<tt>rpulldow</tt>ignorando la "n" al final.  Por lo tanto, SPICE considerará cualquier otra resistencia que tenga los primeros ocho caracteres en su primer campo como la misma resistencia, definida dos veces, lo que provocará un error (es decir,<tt>rpulldown1</tt> and <tt>rpulldown2</tt>se interpretaría como el mismo nombre,<tt>rpulldow</tt>).
+</p>
+<p>También debe tenerse en cuenta que SPICE ignora mayúsculas y minúsculas, por lo que<tt>r1</tt> and <tt>R1</tt>son interpretados por SPICE como uno y el mismo.</p>
+<p>SPICE permite el uso de prefijos métricos para especificar valores de componentes, lo cual es una característica muy útil.  Sin embargo, la convención de prefijo utilizada por SPICE difiere algo de los símbolos métricos estándar, principalmente debido al hecho de que las netlists están restringidas a caracteres ASCII estándar (descartando letras griegas como µ para el prefijo "micro") y que SPICE no distingue entre mayúsculas y minúsculas, por lo que "m" (que es el símbolo estándar de "milli") y "M" (que es el símbolo estándar de "Mega") se interpretan de manera idéntica.  A continuación se muestran algunos ejemplos de prefijos utilizados en las netlists de SPICE:</p>
+<a name="Metric prefixes, SPICE"></a>
+<br/>
+<p>
+<tt>r1 1 0 2t</tt>(Resistencia R<sub>1</sub>, 2t = 2 Tera-ohmios = 2 TΩ)</p>
+<p>
+<tt>r2 1 0 4g</tt>(Resistencia R<sub>2</sub>, 4g = 4 Giga-ohmios = 4 GΩ)</p>
+<p>
+<tt>r3 1 0 47meg</tt>(Resistencia R<sub>3</sub>, 47 megas = 47 megaohmios = 47 MΩ)</p>
+<p>
+<tt>r4 1 0 3.3k</tt>(Resistencia R<sub>4</sub>, 3,3k = 3,3 kiloohmios = 3,3 kΩ)</p>
+<p>
+<tt>r5 1 0 55m</tt>(Resistencia R<sub>5</sub>, 55 m = 55 miliohmios = 55 mΩ)</p>
+<p>
+<tt>r6 1 0 10u</tt>(Resistencia R<sub>6</sub>, 10u = 10 microohmios 10 µΩ)</p>
+<p>
+<tt>r7 1 0 30n</tt>(Resistencia R<sub>7</sub>, 30n = 30 nanoohmios = 30 nΩ)</p>
+<p>
+<tt>r8 1 0 5p</tt>(Resistencia R<sub>8</sub>, 5p = 5 picoohmios = 5 pΩ)</p>
+<p>
+<tt>r9 1 0 250f</tt>(Resistencia R<sub>9</sub>, 250f = 250 femtoohmios = 250 fΩ)</p>
+<br/>
+<a name="Scientific notation, SPICE"></a>
+<p>También se permite la notación científica al especificar los valores de los componentes.  Por ejemplo:</p>
+<br/>
+<p>
+<tt>r10 1 0 4.7e3</tt>(Resistencia R<sub>10</sub>, 4,7e3 = 4,7 x 10<sup>3</sup> ohms = 4.7 kilo-ohms = 4.7 kΩ)
+</p>
+<p>
+<tt>r11 1 0 1e-12</tt>(Resistencia R<sub>11</sub>, 1e-12 = 1 x 10<sup>-12</sup> ohms = 1 pico-ohm = 1 pΩ)
+</p>
+<br/>
+<p>La unidad (ohmios, voltios, faradios, henrys, etc.) se determina automáticamente según el tipo de componente que se especifica.  SPICE "sabe" que todos los ejemplos anteriores son "ohmios" porque todos son resistencias (r1, r2, r3,...).  Si fueran condensadores, los valores se interpretarían como "faradios", si fueran inductores, entonces "henrys", etc.</p>
+<h3><u><a name="xtocid93585">Passive components</a></u></h3>
+<h4><a name="xtocid93586">CAPACITORS</a></h4>
+<a name="Capacitors, SPICE"></a>
+<pre>
+General form:  c[name] [node1] [node2] [value] ic=[initial voltage]
+Example 1:     c1 12 33 10u 
+Example 2:     c1 12 33 10u ic=3.5
+ 
+</pre>
+<p>
+<b>Comentarios:</b>La "condición inicial" (<tt>ic=</tt>) la variable es el voltaje del capacitor en unidades de<i>voltios</i>al inicio del análisis DC.  Es un valor opcional, y se supone que el voltaje de arranque es cero si no se especifica.  SPICE interpreta los valores de corriente de arranque para capacitores solo si el<tt>.tran</tt>Se invoca la opción de análisis (con el "<tt>uic</tt>" opción).</p>
+<h4><a name="xtocid93587">INDUCTORS</a></h4>
+<a name="Inductors, SPICE"></a>
+<pre>
+General form:  l[name] [node1] [node2] [value] ic=[initial current]
+Example 1:     l1 12 33 133m 
+Example 2:     l1 12 33 133m ic=12.7m
+ 
+</pre>
+<p>
+<b>Comentarios:</b>La "condición inicial" (<tt>ic=</tt>) la variable es la corriente del inductor en unidades de<i>amperios</i>al inicio del análisis DC.  Es un valor opcional, y se supone que la corriente de arranque es cero si no se especifica.  SPICE interpreta los valores de corriente inicial para inductores solo si se invoca la opción de análisis .tran.</p>
+<h4><a name="xtocid93588">INDUCTOR COUPLING (transformers)</a></h4>
+<a name="Mutual inductance, SPICE"></a>
+<a name="Transformers, SPICE"></a>
+<pre>
+General form:  k[name] l[name] l[name] [coupling factor]
+Example 1:     k1 l1 l2 0.999
+ 
+</pre>
+<p>
+<b>Comentarios:</b>SPICE solo permitirá valores de factor de acoplamiento entre 0 y 1 (no inclusivos), donde 0 representa ningún acoplamiento y 1 representa un acoplamiento perfecto.  El orden de especificación de los inductores acoplados (l1, l2 o l2, l1) es irrelevante.</p>
+<h4><a name="xtocid93589">RESISTORS</a></h4>
+<a name="Resistors, SPICE"></a>
+<pre>
+General form:  r[name] [node1] [node2] [value]
+Example:       rload 23 15 3.3k
+ 
+</pre>
+<p>
+<b>Comentarios:</b>En caso de que se lo pregunte, no existe una declaración de clasificación de disipación de potencia de resistencia en SPICE.  Se supone que todos los componentes son indestructibles.  ¡Si tan solo la vida real fuera tan indulgente!</p>
+<h3><u><a name="xtocid935810">Active components</a></u></h3>
+<a name="Model, SPICE"></a>
+<a name="Semiconductor model, SPICE"></a>
+<p>Todos los componentes semiconductores deben tener sus características eléctricas descritas en una línea que comience con la palabra "<tt>.modelo</tt>", que le dice a SPICE exactamente cómo se comportará el dispositivo. Cualquier parámetro que no esté definido explícitamente en el<tt>.modelo</tt>La tarjeta utilizará de forma predeterminada los valores preprogramados en SPICE.  Sin embargo, el<tt>.modelo</tt>tarjeta<i>debe</i>incluirse y al menos especificar el nombre del modelo y el tipo de dispositivo (d, npn, pnp, njf, pjf, nmos o pmos).</p>
+<h4><a name="xtocid935811">DIODES</a></h4>
+<a name="Diodes, SPICE"></a>
+<pre>
+General form:  d[name] [anode] [cathode] [model]
+Example:       d1 1 2 mod1
+ 
+</pre>
+<p>
+<b>MODELOS DE DIODO:</b>
+</p>
+<pre>
+General form:  .model [modelname] d [parmtr1=x] [parmtr2=x] . . .
+Example:       .model mod1 d
+Example:       .model mod2 d vj=0.65 rs=1.3
+ 
+</pre>
+<hypertarget>parámetro de diodo</hypertarget>
+<p>
+<i>Definiciones de parámetros:</i>
+</p>
+<p>
+<tt>is</tt>= corriente de saturación en amperios</p>
+<p>
+<tt>rs</tt>= resistencia de unión en ohmios</p>
+<p>
+<tt>n</tt>= coeficiente de emisión (sin unidades)</p>
+<p>
+<tt>tt</tt>= tiempo de tránsito en segundos</p>
+<p>
+<tt>cjo</tt>= capacitancia de unión de polarización cero en faradios</p>
+<p>
+<tt>vj</tt>= potencial de unión en voltios</p>
+<p>
+<tt>m</tt>= coeficiente de calificación (sin unidades)</p>
+<p>
+<tt>eg</tt>= energía de activación en electronvoltios</p>
+<p>
+<tt>xti</tt>= exponente de temperatura de corriente de saturación (sin unidades)</p>
+<p>
+<tt>kf</tt>= coeficiente de ruido de parpadeo (sin unidades)</p>
+<p>
+<tt>af</tt>= exponente del ruido de parpadeo (sin unidades)</p>
+<p>
+<tt>fc</tt>= coeficiente de capacitancia de agotamiento de polarización directa (sin unidades)</p>
+<p>
+<tt>bv</tt>= tensión de ruptura inversa en voltios</p>
+<p>
+<tt>ibv</tt>= corriente a voltaje de ruptura en amperios</p>
+<br/>
+<p>
+<b>Comentarios:</b>El nombre del modelo<i>debe</i>comience con una letra, no con un número.  Si planea especificar un modelo para un diodo rectificador 1N4003, por ejemplo, no puede usar "1n4003" como nombre del modelo.  Una alternativa podría ser "m1n4003".</p>
+<h4><a name="xtocid935812">TRANSISTORS, bipolar junction -- BJT</a></h4>
+<a name="Transistors, bipolar, SPICE"></a>
+<pre>
+General form:  q[name] [collector] [base] [emitter] [model]
+Example:       q1 2 3 0 mod1
+ 
+</pre>
+<p>
+<b>MODELOS DE TRANSISTORES BJT:</b>
+</p>
+<pre>
+General form:  .model [modelname] [npn or pnp] [parmtr1=x] . . .
+Example:       .model mod1 pnp
+Example:       .model mod2 npn bf=75 is=1e-14
+ 
+</pre>
+<p>Los ejemplos de modelos que se muestran arriba son muy inespecíficos.  Para modelar con precisión los transistores de la vida real, se necesitan más parámetros.  Tomemos estos dos ejemplos, para los populares transistores 2N2222 y 2N2907 (los "<tt>+</tt>") los caracteres representan marcas de continuación de línea en SPICE, cuando desea dividir una sola línea (tarjeta) en dos o más líneas separadas en su editor de texto:</p>
+<pre>
+ 
+Example:       .model m2n2222 npn is=19f bf=150 vaf=100 ikf=.18
++                     ise=50p ne=2.5 br=7.5 var=6.4 ikr=12m
++                     isc=8.7p nc=1.2 rb=50 re=0.4 rc=0.4 cje=26p
++                     tf=0.5n cjc=11p tr=7n xtb=1.5 kf=0.032f af=1
+ 
+</pre>
+<pre>
+Example:       .model m2n2907 pnp is=1.1p bf=200 nf=1.2 vaf=50 
++                     ikf=0.1 ise=13p ne=1.9 br=6 rc=0.6 cje=23p
++                     vje=0.85 mje=1.25 tf=0.5n cjc=19p vjc=0.5
++                     mjc=0.2 tr=34n xtb=1.5
+ 
+</pre>
+<p>
+<i>Definiciones de parámetros:</i>
+</p>
+<p>
+<tt>is</tt>= corriente de saturación de transporte en amperios</p>
+<p>
+<tt>bf</tt>= Beta directa máxima ideal (sin unidades)</p>
+<p>
+<tt>nf</tt>= coeficiente de emisión actual directo (sin unidades)</p>
+<p>
+<tt>vaf</tt>= voltaje inicial directo en voltios</p>
+<p>
+<tt>ikf</tt>= esquina para la reducción de alta corriente Beta directa en amperios</p>
+<p>
+<tt>ise</tt>= Corriente de saturación de fuga B-E en amperios</p>
+<p>
+<tt>ne</tt>= Coeficiente de emisión de fugas B-E (sin unidades)</p>
+<p>
+<tt>br</tt>= Beta inversa máxima ideal (sin unidades)</p>
+<p>
+<tt>nr</tt>= coeficiente de emisión de corriente inversa (sin unidades)</p>
+<p>
+<tt>bar</tt>= voltaje inicial inverso en voltios</p>
+<p>
+<tt>ikr</tt>ikr = corner for reverse Beta high-current rolloff in amps
+</p>
+<p>
+<tt>isc</tt>isc = B-C leakage saturation current in amps
+</p>
+<p>
+<tt>nc</tt>= Coeficiente de emisión de fugas B-C (sin unidades)</p>
+<p>
+<tt>rb</tt>= resistencia de base de polarización cero en ohmios</p>
+<p>
+<tt>irb</tt>= corriente para el valor medio de la resistencia base en amperios</p>
+<p>
+<tt>rbm</tt>= resistencia de base mínima a corrientes altas en ohmios</p>
+<p>
+<tt>re</tt>= resistencia del emisor en ohmios</p>
+<p>
+<tt>rc</tt>= resistencia del colector en ohmios</p>
+<p>
+<tt>cje</tt>= Capacitancia de agotamiento de polarización cero B-E en faradios</p>
+<p>
+<tt>vje</tt>= potencial incorporado B-E en voltios</p>
+<p>
+<tt>mje</tt>= factor exponencial de la unión B-E (sin unidades)</p>
+<p>
+<tt>tf</tt>= tiempo de tránsito ideal hacia adelante (segundos)</p>
+<p>
+<tt>xtf</tt>= coeficiente de dependencia del sesgo del tiempo de tránsito (sin unidades)</p>
+<p>
+<tt>vtf</tt>= Dependencia del voltaje B-C del tiempo de tránsito, en voltios</p>
+<p>
+<tt>itf</tt>= efecto del parámetro de alta corriente en el tiempo de tránsito, en amperios</p>
+<p>
+<tt>ptf</tt>= exceso de fase en f=1/(tiempo de tránsito)(2)(pi) Hz, en grados</p>
+<p>
+<tt>cjc</tt>= Capacitancia de agotamiento de polarización cero B-C en faradios</p>
+<p>
+<tt>vjc</tt>= potencial incorporado B-C en voltios</p>
+<p>
+<tt>mjc</tt>= factor exponencial de la unión B-C (sin unidades)</p>
+<p>
+<tt>xjcj</tt>= Fracción de capacitancia de agotamiento B-C conectada en el nodo base (sin unidades)</p>
+<p>
+<tt>tr</tt>= tiempo ideal de tránsito inverso en segundos</p>
+<p>
+<tt>cjs</tt>= capacitancia colector-sustrato de polarización cero en faradios</p>
+<p>
+<tt>vjs</tt>= potencial incorporado de la unión del sustrato en voltios</p>
+<p>
+<tt>mjs</tt>= factor exponencial de unión del sustrato (sin unidades)</p>
+<p>
+<tt>xtb</tt>= exponente de temperatura Beta directo/inverso</p>
+<p>
+<tt>eg</tt>= brecha de energía para el efecto de la temperatura en la corriente de saturación del transporte en electronvoltios</p>
+<p>
+<tt>xti</tt>= exponente de temperatura para el efecto sobre la corriente de saturación del transporte (sin unidades)</p>
+<p>
+<tt>kf</tt>= coeficiente de ruido de parpadeo (sin unidades)</p>
+<p>
+<tt>af</tt>= exponente del ruido de parpadeo (sin unidades)</p>
+<p>
+<tt>fc</tt>= coeficiente de fórmula de capacitancia de agotamiento de polarización directa (sin unidades)</p>
+<br/>
+<p>
+<b>Comentarios:</b>Al igual que con los diodos, el nombre del modelo asignado a un tipo de transistor en particular<i>debe</i>comience con una letra, no con un número.  Es por eso que los ejemplos dados anteriormente para los tipos de BJT 2N2222 y 2N2907 se denominan "m2n2222" y "q2n2907" respectivamente.</p>
+<p>Como puede ver, SPICE permite una especificación muy detallada de las propiedades del transistor.  Muchas de las propiedades enumeradas anteriormente están más allá del alcance y el interés del estudiante principiante de electrónica, y ni siquiera son útiles aparte de conocer las ecuaciones que SPICE usa para modelar transistores BJT.  Para aquellos interesados ​​en aprender más sobre el modelado de transistores en SPICE, consulte otros libros, como el de Andrei Vladimirescu.<i>El libro de las especias</i>(ISBN 0-471-60926-9).</p>
+<h4><a name="xtocid935813">JFET, junction field-effect transistor</a></h4>
+<a name="Transistors, jfet, SPICE"></a>
+<pre>
+General form:  j[name] [drain] [gate] [source] [model]
+Example:       j1 2 3 0 mod1
+ 
+</pre>
+<p>
+<b>MODELOS DE TRANSISTOR JFET:</b>
+</p>
+<pre>
+General form:     .model [modelname] [njf or pjf] [parmtr1=x] . . .
+Example:          .model mod1 pjf
+Example:          .model mod2 njf lambda=1e-5 pb=0.75
+ 
+</pre>
+<p>
+<i>Definiciones de parámetros:</i>
+</p>
+<p>
+<tt>vto</tt>= tensión umbral en voltios</p>
+<p>
+<tt>beta</tt>= parámetro de transconductancia en amperios/voltios<sup>2</sup>
+</p>
+<p>
+<tt>lambda</tt>= parámetro de modulación de longitud del canal en unidades de 1/voltios</p>
+<p>
+<tt>rd</tt>= resistencia al drenaje en ohmios</p>
+<p>
+<tt>rs</tt>= resistencia de la fuente en ohmios</p>
+<p>
+<tt>cgs</tt>= capacitancia de unión G-S de polarización cero en faradios</p>
+<p>
+<tt>cgd</tt>= capacitancia de unión G-D de polarización cero en faradios</p>
+<p>
+<tt>pb</tt>= potencial de unión de puerta en voltios</p>
+<p>
+<tt>is</tt>= corriente de saturación de la unión de la puerta en amperios</p>
+<p>
+<tt>kf</tt>= coeficiente de ruido de parpadeo (sin unidades)</p>
+<p>
+<tt>af</tt>= exponente del ruido de parpadeo (sin unidades)</p>
+<p>
+<tt>fc</tt>= coeficiente de capacitancia de agotamiento de polarización directa (sin unidades)</p>
+<h4><a name="xtocid935814">MOSFET, transistor</a></h4>
+<a name="Transistors, mosfet, SPICE"></a>
+<pre>
+General form:  m[name] [drain] [gate] [source] [substrate] [model]
+Example:       m1 2 3 0 0 mod1
+ 
+</pre>
+<p>
+<b>MODELOS DE TRANSISTORES MOSFET:</b>
+</p>
+<pre>
+General form:  .model [modelname] [nmos or pmos] [parmtr1=x] . . .
+Example:       .model mod1 pmos
+Example:       .model mod2 nmos level=2 phi=0.65 rd=1.5
+Example:       .model mod3 nmos vto=-1   (depletion)
+Example:       .model mod4 nmos vto=1    (enhancement)
+Example:       .model mod5 pmos vto=1    (depletion)
+Example:       .model mod6 pmos vto=-1   (enhancement)
+ 
+</pre>
+<p>
+<b>Comentarios:</b>Para distinguir entre transistores en modo de mejora y en modo de agotamiento (también conocido como modo de mejora de agotamiento), el parámetro del modelo "<tt>vto</tt>" (voltaje umbral de polarización cero) debe especificarse. Su valor predeterminado es cero, pero un valor positivo (+1 voltios, por ejemplo) en un transistor de canal P o un valor negativo (-1 voltios) en un transistor de canal N especificará que ese transistor sea un<i>agotamiento</i>(también conocido como<i>mejora del agotamiento</i>) <i>modo</i>dispositivo.  Por el contrario, un valor negativo en un transistor de canal P o un valor positivo en un transistor de canal N especificará que ese transistor sea un<i>modo de mejora</i>dispositivo.</p>
+<p>Recuerde que los transistores en modo de mejora son dispositivos normalmente apagados y deben encenderse mediante la aplicación de voltaje de puerta.  Los transistores en modo de agotamiento normalmente están "encendidos", pero pueden "apagarse" y mejorarse a mayores niveles de corriente de drenaje mediante el voltaje de puerta aplicado, de ahí la designación alternativa de MOSFET de "mejora de agotamiento".  El "<tt>vto</tt>"El parámetro especifica el voltaje de puerta umbral para la conducción MOSFET.</p>
+<h3><u><a name="xtocid935815">Sources</a></u></h3>
+<a name="Voltage sources, AC, SPICE"></a>
+<p>
+<b>FUENTES DE VOLTAJE DE ONDA SINUSoidal CA (cuando se utiliza la tarjeta .ac para especificar la frecuencia):</b>
+</p>
+<pre>
+General form:  v[name] [+node] [-node] ac [voltage] [phase] sin
+Example 1:     v1 1 0 ac 12 sin
+Example 2:     v1 1 0 ac 12 240 sin   (12 V ∠ 240<sup>o</sup>)
+</pre>
+<p>
+<b>Comentarios:</b>Este método de especificar fuentes de voltaje de CA funciona bien si utiliza varias fuentes con diferentes ángulos de fase entre sí, pero todas a la misma frecuencia.  Si necesita especificar fuentes en diferentes frecuencias en el mismo circuito, debe utilizar el siguiente método.</p>
+<br/>
+<p>
+<b>FUENTES DE VOLTAJE DE ONDA SINUSoidal DE CA (cuando NO se utiliza la tarjeta .ac para especificar la frecuencia):</b>
+</p>
+<pre>
+General form:  v[name] [+node] [-node] sin([offset] [voltage] 
++               [freq] [delay] [damping factor])
+Example 1:     v1 1 0 sin(0 12 60 0 0)
+</pre>
+<p>
+<i>Definiciones de parámetros:</i>
+</p>
+<p>
+<tt>compensar</tt>= voltaje de polarización de CC, que compensa la forma de onda de CA en un voltaje específico.</p>
+<p>
+<tt>Voltaje</tt>= valor de voltaje CA pico o cresta para la forma de onda.</p>
+<p>
+<tt>frecuencia</tt>= frecuencia en Hercios.</p>
+<p>
+<tt>demora</tt>= retardo de tiempo, o desplazamiento de fase de la forma de onda, en segundos.</p>
+<p>
+<tt>factor de amortiguación</tt>= una figura utilizada para crear formas de onda de amplitud decreciente.</p>
+<p>
+<b>Comentarios:</b>Este método de especificar fuentes de voltaje de CA funciona bien si utiliza varias fuentes a diferentes frecuencias entre sí.  Sin embargo, representar el cambio de fase es complicado y requiere el uso de la<i>demora</i>factor.</p>
+<br/>
+<a name="Voltage sources, DC, SPICE"></a>
+<p>
+<b>FUENTES DE VOLTAJE DE CC (cuando se utiliza una tarjeta .dc para especificar el voltaje):</b>
+</p>
+<pre>
+General form:  v[name] [+node] [-node] dc
+Example 1:     v1 1 0 dc
+</pre>
+<p>
+<b>Comentarios:</b>Si desea tener voltajes de salida SPICE<i>not</i>en referencia al nodo 0, debe utilizar el<tt>.dc</tt>opción de análisis y, para utilizar esta opción, debe especificar al menos una de sus fuentes de DC de esta manera.</p>
+<br/>
+<p>
+<b>FUENTES DE VOLTAJE DE CC (cuando NO se utiliza la tarjeta .dc para especificar el voltaje):</b>
+</p>
+<pre>
+General form:  v[name] [+node] [-node] dc [voltage]
+Example 1:     v1 1 0 dc 12
+</pre>
+<p>
+<b>Comentarios:</b>¡Nada digno de mención aquí!</p>
+<br/>
+<a name="Voltage sources, pulse, SPICE"></a>
+<p>
+<b>FUENTES DE TENSIÓN DE PULSOS</b>
+</p>
+<pre>
+General form:  v[name] [+node] [-node] pulse ([i] [p] [td] [tr]
++              [tf] [pw] [pd])
+</pre>
+<p>
+<i>Definiciones de parámetros:</i>
+</p>
+<p>
+<tt>i</tt>= valor inicial</p>
+<p>
+<tt>p</tt>= valor del pulso</p>
+<p>
+<tt>td</tt>= tiempo de retardo (todos los parámetros de tiempo en unidades de segundos)</p>
+<p>
+<tt>tr</tt>= tiempo de subida</p>
+<p>
+<tt>tf</tt>= tiempo de caída</p>
+<p>
+<tt>pw</tt>= ancho de pulso</p>
+<p>
+<tt>pd</tt>= período</p>
+<pre>
+Example 1:     v1 1 0 pulse (-3 3 0 0 0 10m 20m)
+</pre>
+<p>
+<b>Comentarios:</b>El ejemplo 1 es una onda cuadrada perfecta que oscila entre -3 y +3 voltios, con tiempos de subida y bajada cero, un período de 20 milisegundos y un ciclo de trabajo del 50 por ciento (+3 voltios durante 10 ms, luego -3 voltios durante 10 ms).</p>
+<br/>
+<a name="Current sources, AC, SPICE"></a>
+<p>
+<b>FUENTES DE CORRIENTE DE ONDA SINUSICOCA (cuando se usa una tarjeta .ac para especificar la frecuencia):</b>
+</p>
+<pre>
+General form:  i[name] [+node] [-node] ac [current] [phase] sin
+Example 1:     i1 1 0 ac 3 sin        (3 amps)
+Example 2:     i1 1 0 ac 1m 240 sin   (1 mA ∠ 240<sup>o</sup>)
+</pre>
+<p>
+<b>Comentarios:</b>Los mismos comentarios se aplican aquí (y en el siguiente ejemplo) que para las fuentes de voltaje CA.</p>
+<br/>
+<p>
+<b>FUENTES DE CORRIENTE DE ONDA SINUSoidal CA (cuando NO se utiliza la tarjeta .ac para especificar la frecuencia):</b>
+</p>
+<pre>
+General form:  i[name] [+node] [-node] sin([offset] 
++              [current] [freq] 0 0)
+Example 1:     i1 1 0 sin(0 1.5 60 0 0)  
+</pre>
+<br/>
+<a name="Current sources, DC, SPICE"></a>
+<p>
+<b>FUENTES DE CORRIENTE DC (cuando se usa una tarjeta .dc para especificar la corriente):</b>
+</p>
+<pre>
+General form:  i[name] [+node] [-node] dc
+Example 1:     i1 1 0 dc
+</pre>
+<br/>
+<p>
+<b>FUENTES DE CORRIENTE DC (cuando NO se usa la tarjeta .dc para especificar la corriente):</b>
+</p>
+<pre>
+General form:  i[name] [+node] [-node] dc [current]
+Example 1:     i1 1 0 dc 12
+</pre>
+<p>
+<b>Comentarios:</b>Aunque todos los libros dicen que el primer nodo dado para la fuente de corriente continua es el nodo positivo, eso no es lo que he encontrado en la práctica.  En realidad, una fuente de corriente CC en SPICE empuja la corriente en la misma dirección que lo haría una fuente de voltaje (batería) con su<i>negativo</i>nodo especificado primero.</p>
+<br/>
+<a name="Current sources, pulse, SPICE"></a>
+<p>
+<b>FUENTES DE CORRIENTE DE PULSO</b>
+</p>
+<pre>
+General form:  i[name] [+node] [-node] pulse ([i] [p] [td] [tr]
++              [tf] [pw] [pd])
+</pre>
+<p>
+<i>Definiciones de parámetros:</i>
+</p>
+<p>
+<tt>i</tt>= valor inicial</p>
+<p>
+<tt>p</tt>= valor del pulso</p>
+<p>
+<tt>td</tt>= tiempo de retraso</p>
+<p>
+<tt>tr</tt>= tiempo de subida</p>
+<p>
+<tt>tf</tt>= tiempo de caída</p>
+<p>
+<tt>pw</tt>= ancho de pulso</p>
+<p>
+<tt>pd</tt>= período</p>
+<pre>
+Example 1:     i1 1 0 pulse (-3m 3m 0 0 0 17m 34m)
+</pre>
+<p>
+<b>Comentarios:</b>El ejemplo 1 es una onda cuadrada perfecta que oscila entre -3 mA y +3 mA, con tiempos de subida y bajada cero, un período de 34 milisegundos y un ciclo de trabajo del 50 por ciento (+3 mA durante 17 ms, luego -3 mA durante 17 ms).</p>
+<br/>
+<a name="Voltage sources, dependent, SPICE"></a>
+<p>
+<b>FUENTES DE TENSIÓN (dependiente):</b>
+</p>
+<pre>
+General form:  e[name] [out+node] [out-node] [in+node] [in-node]
++               [gain]
+Example 1:     e1 2 0 1 2 999k
+</pre>
+<p>
+<b>Comentarios:</b>Las fuentes de voltaje dependientes son excelentes para simular amplificadores operacionales.  El ejemplo 1 muestra cómo se configuraría dicha fuente para su uso como seguidor de voltaje, entrada inversora conectada a la salida (nodo 2) para retroalimentación negativa y entrada no inversora en el nodo 1. La ganancia se ha establecido en un valor arbitrariamente alto de 999.000.  Sin embargo, una palabra de advertencia: SPICE no reconoce la entrada de una fuente dependiente como una carga, por lo que una fuente de voltaje vinculada únicamente a la entrada de una fuente de voltaje independiente se interpretará como "abierta".  Consulte ejemplos de circuitos de amplificador operacional para obtener más detalles al respecto.</p>
+<br/>
+<a name="Current sources, dependent, SPICE"></a>
+<p>
+<b>FUENTES ACTUALES (dependiente):</b>
+</p>
+<h2><u><a name="xtocid935816">Analysis options</a></u></h2>
+<a name="Analysis, AC, SPICE"></a>
+<p>
+<b>ANÁLISIS DE CA:</b>
+</p>
+<pre>
+General form:  .ac [curve] [points] [start] [final]
+Example 1:     .ac lin 1 1000 1000
+</pre>
+<p>
+<b>Comentarios:</b>El campo [curva] puede ser "lin" (lineal), "dec" (década) u "oct" (octava), especificando la (no)linealidad del barrido de frecuencia.<points>especifica en cuántos puntos dentro del barrido de frecuencia se realizarán análisis (para barrido de década, el número de puntos por década; para octava, el número de puntos por octava).  Los campos [inicio] y [final] especifican las frecuencias inicial y final del barrido, respectivamente.  Una nota final: ¡el valor "inicial" no puede ser cero!</points></p>
+<br/>
+<a name="Analysis, DC, SPICE"></a>
+<p>
+<b>ANÁLISIS DE CC:</b>
+</p>
+<pre>
+General form:     .dc [source] [start] [final] [increment]
+Example 1:        .dc vin 1.5 15 0.5
+</pre>
+<p>
+<b>Comentarios:</b>La tarjeta .dc es necesaria si desea imprimir o trazar cualquier voltaje entre dos nodos distintos de cero.  De lo contrario, el análisis predeterminado de "señal pequeña" solo imprime el voltaje entre cada nodo distinto de cero y el nodo cero.</p>
+<br/>
+<a name="Analysis, transient, SPICE"></a>
+<p>
+<b>ANÁLISIS TRANSITORIO:</b>
+</p>
+<pre>
+General form:  .tran [increment] [stop_time] [start_time] 
++                    [comp_interval]
+Example 1:     .tran 1m 50m uic 
+Example 2:     .tran .5m 32m 0 .01m 
+</pre>
+<p>
+<b>Comentarios:</b>El ejemplo 1 tiene un tiempo de incremento de 1 milisegundo y un tiempo de parada de 50 milisegundos (cuando solo se especifican dos parámetros, se<i>incremento de tiempo</i> and <i>detener el tiempo</i>, respectivamente).  El ejemplo 2 tiene un tiempo de incremento de 0,5 milisegundos, un tiempo de parada de 32 milisegundos, un tiempo de inicio de 0 milisegundos (sin demora en el inicio) y un intervalo de cálculo de 0,01 milisegundos.</p>
+<p>El valor predeterminado para la hora de inicio es cero.  Análisis transitorio<i>siempre</i>comienza en el momento cero, pero el almacenamiento de datos solo tiene lugar entre el tiempo de inicio y el tiempo de finalización.  El intervalo de salida de datos es el tiempo de incremento, o (tiempo de parada - tiempo de inicio)/50, el que sea menor.  Sin embargo, la variable de intervalo de cálculo se puede utilizar para forzar un intervalo de cálculo más pequeño que cualquiera de los dos.  Para recuentos de intervalos totales grandes, el<tt>itl5</tt>variables en el<tt>.opciones</tt>La tarjeta puede estar configurada con un número mayor.  El "<tt>uic</tt>"La opción le dice a SPICE que "use las condiciones iniciales".</p>
+<br/>
+<a name="Plot output, SPICE"></a>
+<p>
+<b>SALIDA DE LA PARCELA:</b>
+</p>
+<pre>
+General form:  .plot [type] [output1] [output2] . . . [output n]
+Example 1:     .plot dc v(1,2) i(v2)
+Example 2:     .plot ac v(3,4) vp(3,4) i(v1) ip(v1)
+Example 3:     .plot tran v(4,5) i(v2)
+</pre>
+<p>
+<b>Comentarios:</b>SPICE no puede manejar más de ocho solicitudes de puntos de datos en una sola<tt>.trama</tt> or <tt>.imprimir</tt>tarjeta.  Si solicita más de ocho puntos de datos, ¡use varias tarjetas!</p>
+<p>Además, aquí hay una advertencia importante al usar SPICE versión 3: si está realizando un análisis de CA y le pide a SPICE que trace un voltaje de CA como en el ejemplo n.° 2, el<tt>v(3,4)</tt>El comando solo generará el<i>real</i>componente de un número complejo de forma rectangular!  SPICE versión 2 genera el<i>polar</i>Magnitud de un número complejo: una cantidad mucho más significativa si solo se pide una cantidad.  Para obligar a SPICE3 a que le dé magnitud polar, tendrá que reescribir el<tt>.imprimir</tt> or <tt>.trama</tt>argumento como tal:<tt>vm(3,4)</tt>.
+</p>
+<br/>
+<a name="Print output, SPICE"></a>
+<p>
+<b>SALIDA DE IMPRESIÓN:</b>
+</p>
+<pre>
+General form:  .print [type] [output1] [output2] . . . [output n]
+Example 1:     .print dc v(1,2) i(v2)
+Example 2:     .print ac v(2,4) i(vinput) vp(2,3)
+Example 3:     .print tran v(4,5) i(v2)
+</pre>
+<p>
+<b>Comentarios:</b>SPICE no puede manejar más de ocho solicitudes de puntos de datos en una sola<tt>.trama</tt> or <tt>.imprimir</tt>tarjeta.  Si solicita más de ocho puntos de datos, ¡use varias tarjetas!</p>
+<br/>
+<a name="Analysis, Fourier, SPICE"></a>
+<p>
+<b>ANÁLISIS DE CUATRO:</b>
+</p>
+<pre>
+General form:  .four [freq] [output1] [output2] . . . [output n]
+Example 1:     .four 60 v(1,2)
+</pre>
+<p>
+<b>Comentarios:</b>  The <tt>.cuatro</tt>La tarjeta se basa en<tt>.tran</tt>La carta está presente en algún lugar de la baraja, con los periodos de tiempo adecuados para el análisis de los ciclos adecuados.  Además, SPICE puede "colapsar" si un<tt>.trama</tt>El análisis no se realiza junto con el<tt>.cuatro</tt>análisis, incluso si todos<tt>.tran</tt>Los parámetros son técnicamente correctos.  Finalmente, el<tt>.cuatro</tt>La opción de análisis solo funciona cuando la frecuencia de la fuente de CA se especifica en la línea de la tarjeta de esa fuente, y<i>not</i>en un<tt>.ac</tt>línea de opción de análisis.</p>
+<p>Es útil incluir una variable de intervalo de cálculo en el<tt>.tran</tt>tarjeta para una mejor precisión del análisis.  Se realiza un análisis de Fourier del voltaje o corriente especificado hasta el noveno armónico, siendo la especificación [freq] la frecuencia fundamental o inicial del espectro de análisis.</p>
+<br/>
+<a name="Options, miscellaneous, SPICE"></a>
+<p>
+<b>MISCELÁNEAS:</b>
+</p>
+<pre>
+General form:  .options [option1] [option2]
+Example 1:     .options limpts=500
+Example 2:     .options itl5=0
+Example 3:     .options method=gear
+Example 4:     .options list
+Example 5:     .options nopage
+Example 6:     .options numdgt=6
+</pre>
+<a name="Option, &lt;i&gt;limpts&lt;/i&gt;, SPICE"></a>
+<p>
+<b>Comentarios:</b>Hay muchas opciones que se pueden especificar usando esta tarjeta.  Quizás el que más necesitan los usuarios principiantes de SPICE es el "<tt>cojea</tt>". Al ejecutar una simulación que requiere imprimir o trazar más de 201 puntos, este límite de puntos de cálculo debe aumentarse o, de lo contrario, SPICE finalizará el análisis. El ejemplo dado anteriormente (<tt>limpts=500</tt>) le dice a SPICE que asigne suficiente memoria para manejar al menos 500 puntos de cálculo en cualquier tipo de análisis especificado (CC, CA o transitorio).</p>
+<a name="Option, &lt;i&gt;itl5&lt;/i&gt;, SPICE"></a>
+<p>En el ejemplo 2, vemos un<i>iteración</i>variables (<tt>itl5</tt>) se establece en un valor de 0. En realidad, hay seis variables de iteración diferentes disponibles para la manipulación del usuario.  Controlan los límites del ciclo de iteración para la solución de ecuaciones no lineales.  la variable<tt>itl5</tt>establece el número máximo de iteraciones para un análisis transitorio.  Similar al<tt>cojea</tt>variable,<tt>itl5</tt>Por lo general, es necesario establecerlo cuando se ha especificado un pequeño intervalo de cálculo en un<tt>.tran</tt>tarjeta.  Configuración<tt>itl5</tt>a un valor de 0 desactiva el límite por completo, permitiendo a la computadora ciclos de iteración infinitos (tiempo infinito) para calcular el análisis.<i>Advertencia: ¡esto puede provocar largos tiempos de simulación!</i>
+</p>
+<a name="Option, &lt;i&gt;method&lt;/i&gt;, SPICE"></a>
+<p>Ejemplo 3 con "<tt>method=gear</tt>" establece el método de integración numérica utilizado por SPICE. El valor predeterminado es "trapezoide" en lugar de "engranaje", siendo el trapezoide una aproximación geométrica simple del área bajo una curva que se encuentra cortando la curva en trapecios para aproximar la forma. El método del "engranaje" se basa en ecuaciones polinómicas de segundo orden o mejores y lleva el nombre de C.W. Gear (<i>Integración numérica de ecuaciones ordinarias rígidas</i>, Informe 221, Departamento de Ciencias de la Computación, Universidad de Illinois, Urbana).  El método de integración Gear es más exigente para la computadora (computacionalmente "caro") y, a veces, dará resultados ligeramente diferentes a los del método trapezoidal.</p>
+<a name="Option, &lt;i&gt;list&lt;/i&gt;, SPICE"></a>
+<p>El "<tt>lista</tt>"La opción que se muestra en el ejemplo 4 ofrece un resumen detallado de todos los componentes del circuito y sus respectivos valores en el resultado final.</p>
+<a name="Option, &lt;i&gt;nopage&lt;/i&gt;, SPICE"></a>
+<p>De forma predeterminada, SPICE insertará códigos de control de salto de página ASCII en la salida para separar diferentes secciones del análisis.  Especificando el "<tt>no página</tt>La opción "(ejemplo 5) evitará dicha paginación.</p>
+<a name="Option, &lt;i&gt;numdgt&lt;/i&gt;, SPICE"></a>
+<p>El "<tt>entumecido</tt>La opción "que se muestra en el ejemplo 6 especifica el número de dígitos significativos generados cuando se utiliza uno de los "<tt>.imprimir</tt>"opciones de salida de datos. SPICE tiene por defecto una precisión de 4 dígitos significativos.</p>
+<br/>
+<p>
+<b>CONTROL DE ANCHO:</b>
+</p>
+<pre>
+General form:  .width in=[columns] out=[columns]
+Example 1:     .width out=80
+</pre>
+<a name="Option, &lt;i&gt;width&lt;/i&gt;, SPICE"></a>
+<p>
+<b>Comentarios:</b>  The <tt>.ancho</tt>La tarjeta se puede utilizar para controlar el ancho de las líneas de salida de texto durante el análisis.  Esto es especialmente útil al trazar gráficos con el<tt>.trama</tt>tarjeta.  El valor predeterminado es 120, lo que puede causar problemas en pantallas de terminales de 80 caracteres a menos que se establezca en 80 con este comando.</p>
+<h2><u><a name="xtocid935817">Quirks</a></u></h2>
+<blockquote>
+<p>
+<i>"Basura entra, basura sale".</i>
+</p>
+<p>
+<b>Anónimo</b>
+</p>
+</blockquote>
+<p>SPICE es un software muy confiable, pero tiene sus pequeñas peculiaridades a las que cuesta acostumbrarse.  Por "peculiaridad" me refiero a una exigencia que se le impone al usuario para que escriba el archivo fuente de una manera particular para que funcione sin generar mensajes de error.  sí<i>not</i>Significa cualquier tipo de falla con SPICE que pueda producir resultados erróneos o engañosos: sería más apropiado referirse a eso como un "error".  Hablando de errores, SPICE también tiene algunos de ellos.</p>
+<p>Algunas (o todas) de estas peculiaridades pueden ser exclusivas de SPICE versión 2g6, que es la única versión que he usado ampliamente.  Es posible que se hayan solucionado en versiones posteriores.</p>
+<h3><u><a name="xtocid935818">A good beginning</a></u></h3>
+<p>SPICE exige que el archivo fuente comience con algo distinto a la primera "tarjeta" en la descripción del circuito "mazo".  Este primer carácter en el archivo fuente puede ser un salto de línea, una línea de título o un comentario: simplemente tiene que haber<i>algo</i>allí antes de la primera línea del archivo que especifica el componente.  De lo contrario, SPICE se negará a realizar ningún análisis, alegando que hay un error grave (como conexiones de nodos incorrectas) en la "cubierta".</p>
+<h3><u><a name="xtocid935819">A good ending</a></u></h3>
+<a name=".end command, SPICE"></a>
+<p>SPICE exige que el<tt>.fin</tt>La línea al final del archivo fuente no debe terminar con un carácter de salto de línea o retorno de carro.  En otras palabras, cuando termines de escribir "<tt>.fin</tt>"No debes golpear el<b>[Ingresar]</b>tecla de su teclado.  El cursor en su editor de texto debe detenerse inmediatamente a la derecha de la "d" después de "<tt>.fin</tt>" y no vayas más lejos. Si no se presta atención a esta peculiaridad, se producirá un "<i>falta la tarjeta .end</i>"mensaje de error al final del resultado del análisis. El análisis del circuito real no se ve afectado por este error, por lo que normalmente ignoro el mensaje. Sin embargo, si busca recibir un resultado "perfecto", debe prestar atención a esta idiosincrasia.</p>
+<h3><u><a name="xtocid935820">Must have a node 0</a></u></h3>
+<a name="Nodes, SPICE"></a>
+<p>Se le da mucha libertad para numerar los nodos del circuito, pero<i>debe</i>tenga un nodo 0 en algún lugar de su netlist para que SPICE funcione.  El nodo 0 es el nodo predeterminado para la tierra del circuito y es el punto de referencia para todos los voltajes especificados en las ubicaciones de un solo nodo.</p>
+<p>Cuando SPICE realiza un análisis de CC simple, la salida contendrá una lista de voltajes en todos los nodos distintos de cero en el circuito.  El punto de referencia (tierra) para todas estas lecturas de voltaje es el nodo 0. Por ejemplo:</p>
+<br/>
+<pre>
+node    voltage    node     voltage
+(  1)   15.0000    (  2)    0.6522
+</pre>
+<br/>
+<p>En este análisis, hay un voltaje CC de 15 voltios entre el nodo 1 y tierra (nodo 0), y un voltaje CC de 0,6522 voltios entre el nodo 2 y tierra (nodo 0).  En ambos casos, la polaridad del voltaje es negativa en el nodo 0 con respecto al otro nodo (en otras palabras, tanto el nodo 1 como el 2 son positivos con respecto al nodo 0).</p>
+<h3><u><a name="xtocid935821">Avoid open circuits</a></u></h3>
+<a name="Open circuits, SPICE"></a>
+<p>SPICE no puede manejar circuitos abiertos de ningún tipo.  Si su netlist especifica un circuito con una fuente de voltaje abierta, por ejemplo, SPICE se negará a realizar un análisis.  Un excelente ejemplo de este tipo de error se encuentra al "conectar" una fuente de voltaje a la entrada de una fuente dependiente del voltaje (utilizada para simular un amplificador operacional).  SPICE necesita ver una ruta completa para la corriente, por lo que normalmente conecto una resistencia de alto valor (llámela<tt>falso</tt>!) a través de la fuente de voltaje para actuar como una carga mínima.</p>
+<h3><u><a name="xtocid935822">Avoid certain component loops</a></u></h3>
+<p>SPICE no puede manejar ciertos bucles ininterrumpidos de componentes en un circuito, es decir, fuentes de voltaje e inductores.  Los siguientes bucles harán que SPICE cancele el análisis:</p>
+<p> <img src="01005.png"/> </p>
+<pre>
+netlist
+l1 2 4 10m
+l2 2 4 50m
+l3 2 4 25m
+</pre>
+<br/>
+<p> <img src="01006.png"/> </p>
+<pre>
+netlist
+v1 1 0 dc 12  
+l1 1 0 150m 
+</pre>
+<br/>
+<p> <img src="01007.png"/> </p>
+<pre>
+netlist
+c1 5 6 33u  
+c2 6 7 47u 
+</pre>
+<br/>
+<p>La razón por la que SPICE no puede manejar estas condiciones se debe a la forma en que realiza el análisis de CC: tratando todos los inductores como cortos y todos los capacitores como abiertos.  Dado que los cortocircuitos (0 Ω) y los circuitos abiertos (resistencia infinita) contienen o generan infinitudes matemáticas, una computadora simplemente no puede manejarlos, por lo que SPICE interrumpirá el análisis si se produce alguna de estas condiciones.</p>
+<p>Para que estas configuraciones de componentes sean aceptables para SPICE, debe insertar resistencias de valores apropiados en los lugares apropiados, eliminando los respectivos cortocircuitos y circuitos abiertos.  Si se requiere una resistencia en serie, elija un valor de resistencia muy bajo.  Por el contrario, si se requiere una resistencia en paralelo, elija un valor de resistencia muy alto.  Por ejemplo:</p>
+<p>Para solucionar el problema del inductor paralelo, inserte una resistencia de muy bajo valor en serie con cada inductor problemático.</p>
+<p> <img src="01008.png"/> </p>
+<pre>
+original netlist
+l1 2 4 10m
+l2 2 4 50m
+l3 2 4 25m
+</pre>
+<br/>
+<pre>
+fixed netlist
+rbogus1 2 3 1e-12
+rbogus2 2 5 1e-12
+l1 3 4 10m
+l2 2 4 50m
+l3 5 4 25m
+</pre>
+<br/>
+<p>Las resistencias R de extremadamente baja resistencia<sub>falso1</sub>y r<sub>falso2</sub>(cada uno con apenas 1 pico-ohmio de resistencia) "romper" las conexiones paralelas directas que existían entre L<sub>1</sub>, L<sub>2</sub>y l<sub>3</sub>.  Es importante elegir resistencias muy bajas aquí para que el "arreglo" no afecte sustancialmente el funcionamiento del circuito.</p>
+<p>Para fijar la fuente de voltaje/bucle inductor, inserte una resistencia de muy bajo valor en serie con los dos componentes.</p>
+<p> <img src="01009.png"/> </p>
+<pre>
+original netlist
+v1 1 0 dc 12
+l1 1 0 150m
+</pre>
+<br/>
+<pre>
+fixed netlist
+v1 1 0 dc 12
+l1 2 0 150m
+rbogus 1 2 1e-12
+</pre>
+<br/>
+<p>Como en el ejemplo anterior con inductores en paralelo, es importante hacer que la resistencia de corrección (R<sub>falso</sub>) de muy baja resistencia, para no afectar sustancialmente el funcionamiento del circuito.</p>
+<p>Para arreglar el circuito del capacitor en serie, uno de los capacitores debe tener una resistencia en derivación.  SPICE requiere una ruta de corriente CC a cada capacitor para su análisis.</p>
+<p> <img src="01010.png"/> </p>
+<pre>
+original netlist
+c1 5 6 33u
+c2 6 7 47u
+</pre>
+<br/>
+<pre>
+fixed netlist
+c1 5 6 33u
+c2 6 7 47u
+rbogus 6 7 9e12
+</pre>
+<br/>
+<p>la r<sub>falso</sub>El valor de 9 Tera-ohmios proporciona una ruta de corriente CC a C.<sub>1</sub>(y alrededor de C<sub>2</sub>) sin afectar sustancialmente el funcionamiento del circuito.</p>
+<h3><u><a name="xtocid935823">Current measurement</a></u></h3>
+<a name="Current measurement, SPICE"></a>
+<p>Aunque imprimir o trazar el voltaje es bastante fácil en SPICE, la salida de valores actuales es un poco más difícil.  Las mediciones de voltaje se especifican declarando los nodos del circuito apropiados.  Por ejemplo, si deseamos conocer el voltaje a través de un capacitor cuyos conductores se conectan entre los nodos 4 y 7, podríamos distinguir<tt>.imprimir</tt>declaración se ve así:</p>
+<p> <img src="01011.png"/> </p>
+<pre>
+c1 4 7 22u
+.print ac v(4,7)
+</pre>
+<br/>
+<p>Sin embargo, si quisiéramos que SPICE midiera la<i>actual</i>a través de ese condensador, no sería tan fácil.  Las corrientes en SPICE deben especificarse en relación con una fuente de voltaje, no con cualquier componente arbitrario.  Por ejemplo:</p>
+<p> <img src="01012.png"/> </p>
+<pre>
+c1 4 7 22u
+vinput 6 4 ac 1 sin
+.print ac i(vinput)
+</pre>
+<br/>
+<p>Este<tt>.imprimir</tt>La tarjeta le indica a SPICE que imprima la corriente a través de la fuente de voltaje V.<sub>aporte</sub>, que resulta ser la misma que la corriente a través de nuestro capacitor entre los nodos 4 y 7. Pero, ¿qué pasa si no existe tal fuente de voltaje en nuestro circuito como referencia para la medición de corriente?  Una solución es insertar una resistencia en derivación en el circuito y medir el voltaje a través de ella.  En este caso, he elegido un valor de resistencia en derivación de 1 Ω para producir 1 voltio por amperio de corriente a través de C.<sub>1</sub>:
+</p>
+<p> <img src="01013.png"/> </p>
+<pre>
+c1 4 7 22u
+rshunt 6 4 1
+.print ac v(6,4)
+</pre>
+<br/>
+<p>Sin embargo, la inserción de una resistencia adicional en nuestro circuito lo suficientemente grande como para reducir un voltaje significativo para el rango de corriente previsto podría afectar negativamente las cosas.  Una mejor solución para SPICE es esta, aunque nunca se buscaría una solución de medición tan actual en la vida real:</p>
+<p> <img src="01014.png"/> </p>
+<pre>
+c1 4 7 22u 
+vbogus 6 4 dc 0
+.print ac i(vbogus)
+</pre>
+<br/>
+<p>Insertar una fuente de voltaje CC "falsa" de cero voltios no afecta en absoluto el funcionamiento del circuito, pero proporciona un lugar conveniente para que SPICE tome una medición de corriente.  Curiosamente, no importa que V<sub>falso</sub>¡Es una fuente de CC cuando buscamos medir corriente CA!  El hecho de que SPICE genere una lectura de corriente CA está determinado por el "<tt>ac</tt>"especificación en el<tt>.imprimir</tt>Tarjeta y nada más.</p>
+<p>También cabe señalar que la forma en que SPICE asigna una polaridad a las mediciones actuales es un poco extraña.  Tome el siguiente circuito como ejemplo:</p>
+<p> <img src="01015.png"/> </p>
+<pre>
+example    
+v1 1 0    
+r1 1 2 5k 
+r2 2 0 5k  
+.dc v1 10 10 1  
+.print dc i(v1) 
+.end    
+</pre>
+<br/>
+<p>Con un voltaje total de 10 voltios y una resistencia total de 10 kΩ, es posible que SPICE le diga que habrá 1 mA (1e-03) de corriente a través de la fuente de voltaje V.<sub>1</sub>, pero en realidad SPICE generará una cifra de<i>negativo</i> 1 mA (-1e-03)!  SPICE regards current out of the negative end of a DC voltage source (the normal direction) to be a negative value of current rather than a positive value of current.  There are times I'll throw in a "bogus" voltage source in a DC circuit like this simply to get SPICE to output a <i>positivo</i>valor actual:</p>
+<p> <img src="01016.png"/> </p>
+<pre>
+example
+v1 1 0      
+r1 1 2 5k   
+r2 2 3 5k        
+vbogus 3 0 dc 0   
+.dc v1 10 10 1    
+.print dc i(vbogus)     
+.end    
+</pre>
+<br/>
+<p>Observe cómo V<sub>falso</sub>está colocado de manera que la corriente del circuito entre por su lado positivo (nodo 3) y salga por su lado negativo (nodo 0).  Esta orientación asegurará una cifra de salida positiva para la corriente del circuito.</p>
+<h3><u><a name="xtocid935824">Fourier analysis</a></u></h3>
+<a name="Analysis, Fourier, SPICE"></a>
+<p>Al realizar un análisis de Fourier (dominio de frecuencia) en una forma de onda, encontré que era necesario imprimir o trazar la forma de onda usando el<tt>.imprimir</tt> or <tt>.trama</tt>tarjetas, respectivamente.  Si no lo imprime ni lo traza, SPICE se detendrá por un momento durante el análisis y luego cancelará el trabajo después de generar la "solución transitoria inicial".</p>
+<p>Además, al analizar una onda cuadrada producida por el "<tt>legumbres</tt>", debe darle a la forma de onda un tiempo finito de subida y bajada, o de lo contrario los resultados del análisis de Fourier serán incorrectos. Por alguna razón, una onda cuadrada perfecta con tiempo de subida/bajada cero produce niveles significativos de<i>incluso</i>armónicos según la opción de análisis de Fourier de SPICE, lo cual no es cierto para ondas cuadradas reales.</p>
+<h2><u><a name="xtocid935825">Example circuits and netlists</a></u></h2>
+<p>Los siguientes circuitos son listas de redes probadas previamente para SPICE 2g6, completas con breves descripciones cuando sea necesario.  Siéntase libre de "copiar" y "pegar" cualquiera de las listas de red en su propio archivo fuente SPICE para su análisis y/o modificación.  Mi objetivo aquí es doble: dar ejemplos prácticos del diseño de listas de redes SPICE para una mayor comprensión de la sintaxis de las listas de redes SPICE y mostrar cuán simples y compactas pueden ser las listas de redes SPICE al analizar circuitos simples.</p>
+<p>Todos los listados de resultados de estos ejemplos han sido "eliminados" de información superflua, brindándole la presentación más concisa posible del resultado de SPICE.  Hago esto principalmente para ahorrar espacio en este documento.  Los resultados típicos de SPICE contienen muchos encabezados e información resumida que no necesariamente guardan relación con la tarea en cuestión.  Así que no se sorprenda cuando ejecute una simulación por su cuenta y descubra que el resultado no<i>exactamente</i>¡Se parece a lo que he mostrado aquí!</p>
+<h3><u><a name="xtocid935826">Multiple-source DC resistor network, part 1</a></u></h3>
+<p> <img src="01017.png"/> </p>
+<p>sin un<tt>.dc</tt>tarjeta y un<tt>.imprimir</tt> or <tt>.trama</tt>tarjeta, la salida de esta lista de red solo mostrará los voltajes para los nodos 1, 2 y 3 (con referencia al nodo 0, por supuesto).</p>
+<br/>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+Multiple dc sources
+v1 1 0 dc 24
+v2 3 0 dc 15
+r1 1 2 10k
+r2 2 3 8.1k
+r3 2 0 4.7k
+.end
+</pre>
+<br/>
+<p>
+<b>Producción:</b>
+</p>
+<pre>
+node    voltage    node     voltage   node    voltage
+(  1)   24.0000    (  2)    9.7470    (  3)   15.0000
+</pre>
+<br/>
+<pre>
+voltage source currents
+name       current
+v1       -1.425E-03
+v2       -6.485E-04
+</pre>
+<br/>
+<pre>
+total power dissipation   4.39E-02  watts
+</pre>
+<h3><u><a name="xtocid935827">Multiple-source DC resistor network, part 2</a></u></h3>
+<p> <img src="01017.png"/> </p>
+<p>Al agregar un<tt>.dc</tt>tarjeta de análisis y especificación de fuente V<sub>1</sub>de 24 voltios a 24 voltios en 1 paso (en otras palabras, 24 voltios constantes), podemos usar el<tt>.imprimir</tt>Análisis de tarjetas para imprimir voltajes entre dos puntos cualesquiera que deseemos.  Por extraño que parezca, cuando el<tt>.dc</tt>Cuando se invoca la opción de análisis, las impresiones de voltaje predeterminadas para cada nodo (a tierra) desaparecen, por lo que terminamos teniendo que especificarlas explícitamente en el<tt>.imprimir</tt>tarjeta para verlos en absoluto.</p>
+<br/>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+Multiple dc sources
+v1 1 0
+v2 3 0 15
+r1 1 2 10k
+r2 2 3 8.1k
+r3 2 0 4.7k
+.dc v1 24 24 1
+.print dc v(1) v(2) v(3) v(1,2) v(2,3)
+.end
+</pre>
+<br/>
+<p>
+<b>Producción:</b>
+</p>
+<pre>
+v1           v(1)        v(2)        v(3)        v(1,2)      v(2,3)
+2.400E+01    2.400E+01   9.747E+00   1.500E+01   1.425E+01  -5.253E+00
+</pre>
+<h3><u><a name="xtocid935828">RC time-constant circuit</a></u></h3>
+<p> <img src="01018.png"/> </p>
+<p>Para el análisis de CC, se deben especificar las condiciones iniciales de cualquier componente reactivo (C o L) (voltaje para condensadores, corriente para inductores).  Esto lo proporciona el último campo de datos de cada tarjeta de condensador (<tt>ic=0</tt>).  Para realizar un análisis de CC, el<tt>.tran</tt> ("<i>transitorio</i>") se debe especificar la opción de análisis, donde el primer campo de datos especifica el incremento de tiempo en segundos, el segundo especifica el tiempo total de análisis en segundos y el "<tt>uic</tt>" diciéndole que "use las condiciones iniciales" al analizar.</p>
+<br/>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+RC time delay circuit
+v1 1 0 dc 10
+c1 1 2 47u ic=0
+c2 1 2 22u ic=0
+r1 2 0 3.3k
+.tran .05 1 uic
+.print tran v(1,2)
+.end 
+</pre>
+<br/>
+<p>
+<b>Producción:</b>
+</p>
+<pre>
+time          v(1,2)          
+0.000E+00     7.701E-06
+5.000E-02     1.967E+00
+1.000E-01     3.551E+00
+1.500E-01     4.824E+00
+2.000E-01     5.844E+00
+2.500E-01     6.664E+00
+3.000E-01     7.322E+00
+3.500E-01     7.851E+00
+4.000E-01     8.274E+00
+4.500E-01     8.615E+00
+5.000E-01     8.888E+00
+5.500E-01     9.107E+00
+6.000E-01     9.283E+00
+6.500E-01     9.425E+00
+7.000E-01     9.538E+00
+7.500E-01     9.629E+00
+8.000E-01     9.702E+00
+8.500E-01     9.761E+00
+9.000E-01     9.808E+00
+9.500E-01     9.846E+00
+1.000E+00     9.877E+00
+</pre>
+<h3><u><a name="xtocid935829">Plotting and analyzing a simple AC sinewave voltage</a></u></h3>
+<p> <img src="01019.png"/> </p>
+<p>Este ejercicio muestra la configuración adecuada para trazar valores instantáneos de una fuente de voltaje de onda sinusoidal con el<tt>.trama</tt>función (como<i>transitorio</i>análisis).  No sorprende que el análisis de Fourier en esta baraja también requiera la<tt>.tran</tt>La opción de análisis (transitorio) se especificará en un rango de tiempo adecuado.  El rango de tiempo en esta baraja en particular permite un análisis de Fourier con una precisión bastante pobre.  Cuantos más ciclos de la frecuencia fundamental se realice el análisis transitorio, más preciso será el análisis de Fourier.  Esto no es una peculiaridad de SPICE, sino más bien un principio básico de las formas de onda.</p>
+<br/>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+v1 1 0 sin(0 15 60 0 0)
+rload 1 0 10k
+* change tran card to the following for better Fourier precision
+* .tran 1m 30m .01m     and include .options card:
+* .options itl5=30000
+.tran 1m 30m 
+.plot tran v(1) 
+.four 60 v(1)
+.end
+</pre>
+<br/>
+<p>
+<b>Producción:</b>
+</p>
+<pre>
+time      v(1)     -2.000E+01  -1.000E+01    0.000E+00    1.000E+01  
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+0.000E+00  0.000E+00 .         .             *             .       .
+1.000E-03  5.487E+00 .         .             .       *     .       .
+2.000E-03  1.025E+01 .         .             .             *       .
+3.000E-03  1.350E+01 .         .             .             .    *  .
+4.000E-03  1.488E+01 .         .             .             .      *.
+5.000E-03  1.425E+01 .         .             .             .     * .
+6.000E-03  1.150E+01 .         .             .             . *     .
+7.000E-03  7.184E+00 .         .             .         *   .       .
+8.000E-03  1.879E+00 .         .             .  *          .       .
+9.000E-03 -3.714E+00 .         .        *    .             .       .
+1.000E-02 -8.762E+00 .         . *           .             .       .
+1.100E-02 -1.265E+01 .     *   .             .             .       .
+1.200E-02 -1.466E+01 .  *      .             .             .       .
+1.300E-02 -1.465E+01 .  *      .             .             .       .
+1.400E-02 -1.265E+01 .     *   .             .             .       .
+1.500E-02 -8.769E+00 .         . *           .             .       .
+1.600E-02 -3.709E+00 .         .        *    .             .       .
+1.700E-02  1.876E+00 .         .             .  *          .       .
+1.800E-02  7.191E+00 .         .             .         *   .       .
+1.900E-02  1.149E+01 .         .             .             . *     .
+2.000E-02  1.425E+01 .         .             .             .     * .
+2.100E-02  1.489E+01 .         .             .             .      *.
+2.200E-02  1.349E+01 .         .             .             .    *  .
+2.300E-02  1.026E+01 .         .             .             *       .
+2.400E-02  5.491E+00 .         .             .       *     .       .
+2.500E-02  1.553E-03 .         .             *             .       .
+2.600E-02 -5.514E+00 .         .     *       .             .       .
+2.700E-02 -1.022E+01 .         *             .             .       .
+2.800E-02 -1.349E+01 .    *    .             .             .       .
+2.900E-02 -1.495E+01 .  *      .             .             .       .
+3.000E-02 -1.427E+01 .   *     .             .             .       .
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+</pre>
+<br/>
+<pre>
+ fourier components of transient response v(1)    
+dc component =  -1.885E-03
+harmonic   frequency    fourier    normalized    phase     normalized
+no            (hz)     component    component    (deg)    phase (deg)
+1          6.000E+01   1.494E+01     1.000000   -71.998       0.000
+2          1.200E+02   1.886E-02     0.001262   -50.162      21.836
+3          1.800E+02   1.346E-03     0.000090   102.674     174.671
+4          2.400E+02   1.799E-02     0.001204   -10.866      61.132
+5          3.000E+02   3.604E-03     0.000241   160.923     232.921
+6          3.600E+02   5.642E-03     0.000378  -176.247    -104.250
+7          4.200E+02   2.095E-03     0.000140   122.661     194.658
+8          4.800E+02   4.574E-03     0.000306  -143.754     -71.757
+9          5.400E+02   4.896E-03     0.000328  -129.418     -57.420
+total harmonic distortion =      0.186350  percent
+</pre>
+<h3><u><a name="xtocid935830">Simple AC resistor-capacitor circuit</a></u></h3>
+<p> <img src="01021.png"/> </p>
+<p>
+The <tt>.ac</tt>La tarjeta especifica los puntos de análisis de CA de 60 Hz a 60 Hz, en un solo punto.  Esta tarjeta, por supuesto, es un poco más útil para el análisis multifrecuencia, donde se puede analizar un rango de frecuencias en pasos.  El<tt>.imprimir</tt>La tarjeta genera el voltaje de CA entre los nodos 1 y 2, y el voltaje de CA entre el nodo 2 y tierra.</p>
+<br/>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+Demo of a simple AC circuit
+v1 1 0 ac 12 sin
+r1 1 2 30
+c1 2 0 100u
+.ac lin 1 60 60
+.print ac v(1,2) v(2)
+.end
+</pre>
+<br/>
+<p>
+<b>Producción:</b>
+</p>
+<pre>
+freq          v(1,2)      v(2)        
+6.000E+01     8.990E+00   7.949E+00
+</pre>
+<h3><u><a name="xtocid935831">Low-pass filter</a></u></h3>
+<p> <img src="01022.png"/> </p>
+<p>Este filtro de paso bajo bloquea la CA y pasa CC al R<sub>carga</sub>resistor.  Típico de un filtro utilizado para suprimir la ondulación de un circuito rectificador, en realidad tiene una frecuencia resonante, lo que técnicamente lo convierte en un filtro de paso de banda.  Sin embargo, funciona bien de todos modos para pasar CC y bloquear los armónicos de alta frecuencia generados por el proceso de rectificación de CA a CC.  Su rendimiento se mide con una fuente de CA que oscila entre 500 Hz y 15 kHz.  Si lo desea, el<tt>.imprimir</tt>La tarjeta se puede sustituir o complementar con una<tt>.trama</tt>tarjeta para mostrar gráficamente el voltaje de CA en el nodo 4.</p>
+<br/>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+Lowpass filter
+v1 2 1 ac 24 sin
+v2 1 0 dc 24
+rload 4 0 1k
+l1 2 3 100m
+l2 3 4 250m
+c1 3 0 100u
+.ac lin 30 500 15k
+.print ac v(4)
+.plot ac v(4)
+.end
+</pre>
+<br/>
+<pre>
+freq          v(4)            
+5.000E+02     1.935E-01
+1.000E+03     3.275E-02
+1.500E+03     1.057E-02
+2.000E+03     4.614E-03
+2.500E+03     2.402E-03
+3.000E+03     1.403E-03
+3.500E+03     8.884E-04
+4.000E+03     5.973E-04
+4.500E+03     4.206E-04
+5.000E+03     3.072E-04
+5.500E+03     2.311E-04
+6.000E+03     1.782E-04
+6.500E+03     1.403E-04
+7.000E+03     1.124E-04
+7.500E+03     9.141E-05
+8.000E+03     7.536E-05
+8.500E+03     6.285E-05
+9.000E+03     5.296E-05
+9.500E+03     4.504E-05
+1.000E+04     3.863E-05
+1.050E+04     3.337E-05
+1.100E+04     2.903E-05
+1.150E+04     2.541E-05
+1.200E+04     2.237E-05
+1.250E+04     1.979E-05
+1.300E+04     1.760E-05
+1.350E+04     1.571E-05
+1.400E+04     1.409E-05
+1.450E+04     1.268E-05
+1.500E+04     1.146E-05
+</pre>
+<br/>
+<pre>
+freq       v(4)  1.000E-06     1.000E-04    1.000E-02    1.000E+00 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+5.000E+02  1.935E-01 .             .             .        *    . 
+1.000E+03  3.275E-02 .             .             .   *         .
+1.500E+03  1.057E-02 .             .             *             . 
+2.000E+03  4.614E-03 .             .           * .             . 
+2.500E+03  2.402E-03 .             .         *   .             . 
+3.000E+03  1.403E-03 .             .       *     .             . 
+3.500E+03  8.884E-04 .             .      *      .             .  
+4.000E+03  5.973E-04 .             .    *        .             .  
+4.500E+03  4.206E-04 .             .   *         .             .    
+5.000E+03  3.072E-04 .             .  *          .             .   
+5.500E+03  2.311E-04 .             .  *          .             .  
+6.000E+03  1.782E-04 .             . *           .             .   
+6.500E+03  1.403E-04 .             .*            .             .  
+7.000E+03  1.124E-04 .             *             .             .  
+7.500E+03  9.141E-05 .             *             .             .   
+8.000E+03  7.536E-05 .            *.             .             .   
+8.500E+03  6.285E-05 .            *.             .             . 
+9.000E+03  5.296E-05 .           * .             .             .   
+9.500E+03  4.504E-05 .           * .             .             .  
+1.000E+04  3.863E-05 .          *  .             .             .   
+1.050E+04  3.337E-05 .          *  .             .             .  
+1.100E+04  2.903E-05 .         *   .             .             .   
+1.150E+04  2.541E-05 .         *   .             .             .  
+1.200E+04  2.237E-05 .        *    .             .             .  
+1.250E+04  1.979E-05 .        *    .             .             .  
+1.300E+04  1.760E-05 .        *    .             .             .  
+1.350E+04  1.571E-05 .       *     .             .             .  
+1.400E+04  1.409E-05 .       *     .             .             .  
+1.450E+04  1.268E-05 .       *     .             .             .  
+1.500E+04  1.146E-05 .      *      .             .             .   
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+</pre>
+<h3><u><a name="xtocid935832">Multiple-source AC network</a></u></h3>
+<p> <img src="01023.png"/> </p>
+<p>Una de las idiosincrasias de SPICE es su incapacidad para manejar cualquier bucle en un circuito compuesto exclusivamente por inductores y fuentes de voltaje en serie.  Por lo tanto, el "bucle" de V<sub>1</sub>-L<sub>1</sub>-L<sub>2</sub>-V<sub>2</sub>-V<sub>1</sub>es inaceptable.  Para solucionar esto, tuve que insertar un<i>low</i>-resistencia de resistencia en algún lugar de ese bucle para romperlo.  Así, tenemos R<sub>falso</sub>entre 3 y 4 (con 1 pico-ohmio de resistencia), y V<sub>2</sub>entre 4 y 0. El circuito de arriba es el diseño original, mientras que el circuito de abajo tiene R<sub>falso</sub>insertado para evitar el error SPICE.</p>
+<p> <img src="01024.png"/> </p>
+<br/>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+Multiple ac source
+v1 1 0 ac 55 0 sin
+v2 4 0 ac 43 25 sin
+l1 1 2 450m
+c1 2 0 330u
+l2 2 3 150m
+rbogus 3 4 1e-12
+.ac lin 1 30 30
+.print ac v(2)
+.end
+</pre>
+<br/>
+<p>
+<b>Producción:</b>
+</p>
+<pre>
+freq          v(2)            
+3.000E+01     1.413E+02
+</pre>
+<h3><u><a name="xtocid935833">AC phase shift demonstration</a></u></h3>
+<p> <img src="01025.png"/> </p>
+<p>Las corrientes a través de cada tramo están indicadas por las caídas de voltaje a través de cada resistencia en derivación respectiva (1 amperio = 1 voltio a 1 Ω), emitida por el<tt>v(1,2)</tt> and <tt>v(1,3)</tt>términos de la<tt>.imprimir</tt>tarjeta.  La fase de las corrientes a través de cada tramo está indicada por la fase de las caídas de voltaje a través de cada resistencia en derivación respectiva, emitida por el<tt>vicepresidente(1,2)</tt> and <tt>vicepresidente(1,3)</tt>términos en el<tt>.imprimir</tt>tarjeta.</p>
+<br/>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+phase shift
+v1 1 0 ac 4 sin
+rshunt1 1 2 1
+rshunt2 1 3 1
+l1 2 0 1
+r1 3 0 6.3k
+.ac lin 1 1000 1000
+.print ac v(1,2) v(1,3) vp(1,2) vp(1,3)
+.end
+</pre>
+<br/>
+<p>
+<b>Producción:</b>
+</p>
+<pre>
+freq          v(1,2)      v(1,3)      vp(1,2)     vp(1,3)     
+1.000E+03     6.366E-04   6.349E-04  -9.000E+01   0.000E+00
+</pre>
+<h3><u><a name="xtocid935834">Transformer circuit</a></u></h3>
+<p> <img src="01040.png"/> </p>
+<p>SPICE entiende los transformadores como un conjunto de inductores acoplados entre sí.  Por lo tanto, para simular un transformador en SPICE, debe especificar los devanados primario y secundario como inductores separados y luego indicarle a SPICE que los vincule con un "<tt>k</tt>" tarjeta que especifica la constante de acoplamiento. Para una simulación ideal del transformador, la constante de acoplamiento sería la unidad (1). Sin embargo, SPICE no puede manejar este valor, por lo que usamos algo como 0,999 como factor de acoplamiento.</p>
+<p>Tenga en cuenta que<i>all</i>Los pares de inductores devanados deben estar acoplados con sus propios<tt>k</tt>tarjetas para que la simulación funcione correctamente.  Para un transformador de dos devanados, un solo<tt>k</tt>La tarjeta será suficiente.  Para un transformador de tres devanados, tres<tt>k</tt>Se deben especificar las tarjetas (para vincular L<sub>1</sub>con l<sub>2</sub>, L<sub>2</sub>con l<sub>3</sub>y l<sub>1</sub>con l<sub>3</sub>).
+</p>
+<p>la l<sub>1</sub>/L<sub>2</sub>La relación de inductancia de 100:1 proporciona una relación de transformación de voltaje reductor de 10:1.  Con 120 voltios adentro, deberíamos ver 12 voltios afuera de la L.<sub>2</sub>devanado.  la l<sub>1</sub>/L<sub>3</sub>La relación de inductancia de 100:25 (4:1) proporciona una relación de transformación de voltaje reductor de 2:1, lo que debería darnos 60 voltios de la L.<sub>3</sub>bobinado con 120 voltios en.</p>
+<br/>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+transformer                                                                     
+v1 1 0 ac 120 sin       
+rbogus0 1 6 1e-3
+l1 6 0 100      
+l2 2 4 1
+l3 3 5 25       
+k1 l1 l2 0.999  
+k2 l2 l3 0.999  
+k3 l1 l3 0.999  
+r1 2 4 1000     
+r2 3 5 1000     
+rbogus1 5 0 1e10
+rbogus2 4 0 1e10
+.ac lin 1 60 60 
+.print ac v(1,0) v(2,0) v(3,0)  
+.end    
+</pre>
+<br/>
+<p>
+<b>Producción:</b>
+</p>
+<pre>
+freq          v(1)        v(2)        v(3)            
+6.000E+01     1.200E+02   1.199E+01   5.993E+01
+</pre>
+<p>En este ejemplo, R<sub>falso0</sub>es una resistencia de muy bajo valor que sirve para romper el bucle fuente/inductor de V<sub>1</sub>/L<sub>1</sub>.  R<sub>falso1</sub>y r<sub>falso2</sub>Son resistencias de muy alto valor necesarias para proporcionar rutas de CC a tierra en cada uno de los circuitos aislados.  Tenga en cuenta también que un lado del circuito primario está directamente conectado a tierra.  ¡Sin estas referencias básicas, SPICE producirá errores!</p>
+<h3><u><a name="xtocid935835">Full-wave bridge rectifier</a></u></h3>
+<p> <img src="01026.png"/> </p>
+<p>Los diodos, como todos los componentes semiconductores de SPICE, deben modelarse de modo que SPICE conozca todos los detalles esenciales de cómo se supone que deben funcionar.  Afortunadamente, SPICE viene con algunos modelos genéricos y el diodo es el más básico.  Note el<tt>.modelo</tt>tarjeta que simplemente especifica "<tt>d</tt>" como modelo de diodo genérico para<tt>mod1</tt>.  Nuevamente, dado que aquí estamos trazando las formas de onda, necesitamos especificar todos los parámetros de la fuente de CA en una sola tarjeta e imprimir/trazar todos los valores usando el<tt>.tran</tt>opción.</p>
+<br/>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+fullwave bridge rectifier
+v1 1 0 sin(0 15 60 0 0)
+rload 1 0 10k
+d1 1 2 mod1
+d2 0 2 mod1
+d3 3 1 mod1
+d4 3 0 mod1
+.model mod1 d
+.tran .5m 25m
+.plot tran v(1,0) v(2,3) 
+.end
+</pre>
+<br/>
+<p>
+<b>Producción:</b>
+</p>
+<pre>
+legend:
+
+*: v(1)    
++: v(2,3)  
+
+    time      v(1)    
+
+(*)--------- -2.000E+01  -1.000E+01   0.000E+00   1.000E+01  2.000E+01
+(+)--------- -5.000E+00   0.000E+00   5.000E+00   1.000E+01  1.500E+01
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+0.000E+00  0.000E+00 .       +            *            .           .
+5.000E-04  2.806E+00 .       .      +     .   *        .           .
+1.000E-03  5.483E+00 .       .            +      *     .           .
+1.500E-03  7.929E+00 .       .            .     +   *  .           .
+2.000E-03  1.013E+01 .       .            .           +*           .
+2.500E-03  1.198E+01 .       .            .            .  * +      .
+3.000E-03  1.338E+01 .       .            .            .    *  +   .
+3.500E-03  1.435E+01 .       .            .            .     *    +.
+4.000E-03  1.476E+01 .       .            .            .      *    +
+4.500E-03  1.470E+01 .       .            .            .      *    +
+5.000E-03  1.406E+01 .       .            .            .     *   + .
+5.500E-03  1.299E+01 .       .            .            .   *  +    .
+6.000E-03  1.139E+01 .       .            .            . *+        .
+6.500E-03  9.455E+00 .       .            .         + *.           .
+7.000E-03  7.113E+00 .       .            .   +    *   .           .
+7.500E-03  4.591E+00 .       .           +.    *       .           .
+8.000E-03  1.841E+00 .       .   +        . *          .           .
+8.500E-03 -9.177E-01 .       .  +        *.            .           .
+9.000E-03 -3.689E+00 .       .        *+  .            .           .
+9.500E-03 -6.380E+00 .       .    *       . +          .           .
+1.000E-02 -8.784E+00 .       . *          .        +   .           .
+1.050E-02 -1.075E+01 .      *.            .            .+          .
+1.100E-02 -1.255E+01 .   *   .            .            .     +     .
+1.150E-02 -1.372E+01 .  *    .            .            .        +  .
+1.200E-02 -1.460E+01 . *     .            .            .           +
+1.250E-02 -1.476E+01 .*      .            .            .           +
+1.300E-02 -1.460E+01 . *     .            .            .           +
+1.350E-02 -1.373E+01 .  *    .            .            .        +  .
+1.400E-02 -1.254E+01 .   *   .            .            .     +     .
+1.450E-02 -1.077E+01 .      *.            .            .+          .
+1.500E-02 -8.726E+00 .       . *          .       +    .           .
+1.550E-02 -6.293E+00 .       .    *       . +          .           .
+1.600E-02 -3.684E+00 .       .        x   .            .           .
+1.650E-02 -9.361E-01 .       .      +    *.            .           .
+1.700E-02  1.875E+00 .       .      +     . *          .           .
+1.750E-02  4.552E+00 .       .           +.    *       .           .
+1.800E-02  7.170E+00 .       .            .   +    *   .           .
+1.850E-02  9.401E+00 .       .            .         + *.           .
+1.900E-02  1.146E+01 .       .            .            . *+        .
+1.950E-02  1.293E+01 .       .            .            .   *  +    .
+2.000E-02  1.414E+01 .       .            .            .     *    +.
+2.050E-02  1.464E+01 .       .            .            .     *     +
+2.100E-02  1.483E+01 .       .            .            .      *    +
+2.150E-02  1.430E+01 .       .            .            .     *    +.
+2.200E-02  1.344E+01 .       .            .            .    *   +  .
+2.250E-02  1.195E+01 .       .            .            .  *+       .
+2.300E-02  1.016E+01 .       .            .           +*           .
+2.350E-02  7.917E+00 .       .            .     +   *  .           .
+2.400E-02  5.460E+00 .       .            +      *     .           .
+2.450E-02  2.809E+00 .       .      +     .  *         .           .
+2.500E-02 -8.297E-04 .       +            *            .           .
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+</pre>
+<h3><u><a name="xtocid935836">Common-base BJT transistor amplifier</a></u></h3>
+<p> <img src="01027.png"/> </p>
+<p>Este análisis barre el voltaje de entrada (Vin) de 0 a 5 voltios en incrementos de 0,1 voltios, luego imprime el voltaje entre los cables del colector y del emisor del transistor v(2,3).  El transistor (Q1) es un NPN con una Beta directa de 50.</p>
+<br/>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+Common-base BJT amplifier
+vsupply 1 0 dc 24
+vin 0 4 dc
+rc 1 2 800
+re 3 4 100
+q1 2 0 3 mod1
+.model mod1 npn bf=50 
+.dc vin 0 5 0.1
+.print dc v(2,3)
+.plot dc v(2,3)
+.end
+</pre>
+<br/>
+<p>
+<b>Producción:</b>
+</p>
+<pre>
+vin           v(2,3)          
+0.000E+00     2.400E+01
+1.000E-01     2.410E+01
+2.000E-01     2.420E+01
+3.000E-01     2.430E+01
+4.000E-01     2.440E+01
+5.000E-01     2.450E+01
+6.000E-01     2.460E+01
+7.000E-01     2.466E+01
+8.000E-01     2.439E+01
+9.000E-01     2.383E+01
+1.000E+00     2.317E+01
+1.100E+00     2.246E+01
+1.200E+00     2.174E+01
+1.300E+00     2.101E+01
+1.400E+00     2.026E+01
+1.500E+00     1.951E+01
+1.600E+00     1.876E+01
+1.700E+00     1.800E+01
+1.800E+00     1.724E+01
+1.900E+00     1.648E+01
+2.000E+00     1.572E+01
+2.100E+00     1.495E+01
+2.200E+00     1.418E+01
+2.300E+00     1.342E+01
+2.400E+00     1.265E+01
+2.500E+00     1.188E+01
+2.600E+00     1.110E+01
+2.700E+00     1.033E+01
+2.800E+00     9.560E+00
+2.900E+00     8.787E+00
+3.000E+00     8.014E+00
+3.100E+00     7.240E+00
+3.200E+00     6.465E+00
+3.300E+00     5.691E+00
+3.400E+00     4.915E+00
+3.500E+00     4.140E+00
+3.600E+00     3.364E+00
+3.700E+00     2.588E+00
+3.800E+00     1.811E+00
+3.900E+00     1.034E+00
+4.000E+00     2.587E-01
+4.100E+00     9.744E-02
+4.200E+00     7.815E-02
+4.300E+00     6.806E-02
+4.400E+00     6.141E-02
+4.500E+00     5.657E-02
+4.600E+00     5.281E-02
+4.700E+00     4.981E-02
+4.800E+00     4.734E-02
+4.900E+00     4.525E-02
+5.000E+00     4.346E-02
+</pre>
+<br/>
+<pre>
+vin        v(2,3) 0.000E+00    1.000E+01    2.000E+01     3.000E+01  
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+0.000E+00  2.400E+01 .             .             .     *       .  
+1.000E-01  2.410E+01 .             .             .     *       . 
+2.000E-01  2.420E+01 .             .             .     *       . 
+3.000E-01  2.430E+01 .             .             .     *       .
+4.000E-01  2.440E+01 .             .             .     *       .  
+5.000E-01  2.450E+01 .             .             .     *       .   
+6.000E-01  2.460E+01 .             .             .     *       .   
+7.000E-01  2.466E+01 .             .             .      *      .   
+8.000E-01  2.439E+01 .             .             .     *       .   
+9.000E-01  2.383E+01 .             .             .    *        .  
+1.000E+00  2.317E+01 .             .             .   *         .  
+1.100E+00  2.246E+01 .             .             .  *          .   
+1.200E+00  2.174E+01 .             .             . *           .   
+1.300E+00  2.101E+01 .             .             .*            .    
+1.400E+00  2.026E+01 .             .             *             .   
+1.500E+00  1.951E+01 .             .            *.             .     
+1.600E+00  1.876E+01 .             .           * .             .    
+1.700E+00  1.800E+01 .             .          *  .             .     
+1.800E+00  1.724E+01 .             .         *   .             .   
+1.900E+00  1.648E+01 .             .        *    .             .   
+2.000E+00  1.572E+01 .             .       *     .             .   
+2.100E+00  1.495E+01 .             .      *      .             .    
+2.200E+00  1.418E+01 .             .     *       .             .    
+2.300E+00  1.342E+01 .             .    *        .             .    
+2.400E+00  1.265E+01 .             .   *         .             .    
+2.500E+00  1.188E+01 .             .  *          .             .      
+2.600E+00  1.110E+01 .             . *           .             .     
+2.700E+00  1.033E+01 .             *             .             .     
+2.800E+00  9.560E+00 .            *.             .             .    
+2.900E+00  8.787E+00 .           * .             .             .   
+3.000E+00  8.014E+00 .          *  .             .             .    
+3.100E+00  7.240E+00 .         *   .             .             .    
+3.200E+00  6.465E+00 .        *    .             .             .   
+3.300E+00  5.691E+00 .       *     .             .             .     
+3.400E+00  4.915E+00 .      *      .             .             .    
+3.500E+00  4.140E+00 .     *       .             .             .   
+3.600E+00  3.364E+00 .    *        .             .             .    
+3.700E+00  2.588E+00 .   *         .             .             .   
+3.800E+00  1.811E+00 .  *          .             .             .     
+3.900E+00  1.034E+00 .*            .             .             .    
+4.000E+00  2.587E-01 *             .             .             .     
+4.100E+00  9.744E-02 *             .             .             .     
+4.200E+00  7.815E-02 *             .             .             .     
+4.300E+00  6.806E-02 *             .             .             .    
+4.400E+00  6.141E-02 *             .             .             .    
+4.500E+00  5.657E-02 *             .             .             .    
+4.600E+00  5.281E-02 *             .             .             .    
+4.700E+00  4.981E-02 *             .             .             .     
+4.800E+00  4.734E-02 *             .             .             .   
+4.900E+00  4.525E-02 *             .             .             .     
+5.000E+00  4.346E-02 *             .             .             .             
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+</pre>
+<h3><u><a name="xtocid935837">Common-source JFET amplifier with self-bias</a></u></h3>
+<p> <img src="01028.png"/> </p>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+common source jfet amplifier                       
+vin 1 0 sin(0 1 60 0 0) 
+vdd 3 0 dc 20   
+rdrain 3 2 10k      
+rsource 4 0 1k       
+j1 2 1 4 mod1   
+.model mod1 njf 
+.tran 1m 30m    
+.plot tran v(2,0) v(1,0)
+.end    
+</pre>
+<br/>
+<p>
+<b>Producción:</b>
+</p>
+<pre>
+legend:
+*: v(2)    
++: v(1)    
+time      v(2)    
+(*)---------  1.400E+01    1.600E+01   1.800E+01  2.000E+01 2.200E+01
+(+)--------- -1.000E+00   -5.000E-01   0.000E+00  5.000E-01 1.000E+00
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+0.000E+00  1.708E+01 .           .     *    +          .           .
+1.000E-03  1.609E+01 .           .*         .        + .           .
+2.000E-03  1.516E+01 .       *   .          .          .  +        .
+3.000E-03  1.448E+01 .  *        .          .          .        +  .
+4.000E-03  1.419E+01 .*          .          .          .           +
+5.000E-03  1.432E+01 . *         .          .          .          +.
+6.000E-03  1.490E+01 .     *     .          .          .    +      .
+7.000E-03  1.577E+01 .         * .          .         +.           .
+8.000E-03  1.676E+01 .           .  *       .  +       .           .
+9.000E-03  1.768E+01 .           .    +    *.          .           .
+1.000E-02  1.841E+01 .         + .          . *        .           .
+1.100E-02  1.890E+01 .   +       .          .    *     .           .
+1.200E-02  1.912E+01 .+          .          .      *   .           .
+1.300E-02  1.912E+01 .+          .          .      *   .           .
+1.400E-02  1.890E+01 .   +       .          .    *     .           .
+1.500E-02  1.842E+01 .         + .          . *        .           .
+1.600E-02  1.768E+01 .           .    +    *.          .           .
+1.700E-02  1.676E+01 .           .  *       .  +       .           .
+1.800E-02  1.577E+01 .         * .          .         +.           .
+1.900E-02  1.491E+01 .     *     .          .          .    +      .
+2.000E-02  1.432E+01 . *         .          .          .          +.
+2.100E-02  1.419E+01 .*          .          .          .           +
+2.200E-02  1.449E+01 .  *        .          .          .        +  .
+2.300E-02  1.516E+01 .       *   .          .          .  +        .
+2.400E-02  1.609E+01 .           .*         .        + .           .
+2.500E-02  1.708E+01 .           .     *    +          .           .
+2.600E-02  1.796E+01 .           . +        *          .           .
+2.700E-02  1.861E+01 .        +  .          .  *       .           .
+2.800E-02  1.900E+01 .  +        .          .     *    .           .
+2.900E-02  1.916E+01 +           .          .      *   .           .
+3.000E-02  1.908E+01 .+          .          .      *   .           .
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+</pre>
+<h3><u><a name="xtocid935838">Inverting op-amp circuit</a></u></h3>
+<p> <img src="01029.png"/> </p>
+<p>Para simular un amplificador operacional ideal en SPICE, utilizamos una fuente de voltaje dependiente del voltaje como amplificador diferencial con una ganancia extremadamente alta.  El "<tt>e</tt>"La tarjeta configura la fuente de voltaje dependiente con cuatro nodos, 3 y 0 para salida de voltaje, y 1 y 0 para entrada de voltaje. No se necesita fuente de alimentación para la fuente de voltaje dependiente, a diferencia de un amplificador operacional real. La ganancia de voltaje se establece en 999,000 en este caso. La fuente de voltaje de entrada (V<sub>1</sub>) barre de 0 a 3,5 voltios en pasos de 0,05 voltios.</p>
+<br/>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+Inverting opamp
+v1 2 0 dc 
+e 3 0 0 1 999k
+r1 3 1 3.29k
+r2 1 2 1.18k
+.dc v1 0 3.5 0.05
+.print dc v(3,0)
+.end
+</pre>
+<br/>
+<p>
+<b>Producción:</b>
+</p>
+<pre>
+v1            v(3)            
+0.000E+00     0.000E+00
+5.000E-02    -1.394E-01
+1.000E-01    -2.788E-01
+1.500E-01    -4.182E-01
+2.000E-01    -5.576E-01
+2.500E-01    -6.970E-01
+3.000E-01    -8.364E-01
+3.500E-01    -9.758E-01
+4.000E-01    -1.115E+00
+4.500E-01    -1.255E+00
+5.000E-01    -1.394E+00
+5.500E-01    -1.533E+00
+6.000E-01    -1.673E+00
+6.500E-01    -1.812E+00
+7.000E-01    -1.952E+00
+7.500E-01    -2.091E+00
+8.000E-01    -2.231E+00
+8.500E-01    -2.370E+00
+9.000E-01    -2.509E+00
+9.500E-01    -2.649E+00
+1.000E+00    -2.788E+00
+1.050E+00    -2.928E+00
+1.100E+00    -3.067E+00
+1.150E+00    -3.206E+00
+1.200E+00    -3.346E+00
+1.250E+00    -3.485E+00
+1.300E+00    -3.625E+00
+1.350E+00    -3.764E+00
+1.400E+00    -3.903E+00
+1.450E+00    -4.043E+00
+1.500E+00    -4.182E+00
+1.550E+00    -4.322E+00
+1.600E+00    -4.461E+00
+1.650E+00    -4.600E+00
+1.700E+00    -4.740E+00
+1.750E+00    -4.879E+00
+1.800E+00    -5.019E+00
+1.850E+00    -5.158E+00
+1.900E+00    -5.297E+00
+1.950E+00    -5.437E+00
+2.000E+00    -5.576E+00
+2.050E+00    -5.716E+00
+2.100E+00    -5.855E+00
+2.150E+00    -5.994E+00
+2.200E+00    -6.134E+00
+2.250E+00    -6.273E+00
+2.300E+00    -6.413E+00
+2.350E+00    -6.552E+00
+2.400E+00    -6.692E+00
+2.450E+00    -6.831E+00
+2.500E+00    -6.970E+00
+2.550E+00    -7.110E+00
+2.600E+00    -7.249E+00
+2.650E+00    -7.389E+00
+2.700E+00    -7.528E+00
+2.750E+00    -7.667E+00
+2.800E+00    -7.807E+00
+2.850E+00    -7.946E+00
+2.900E+00    -8.086E+00
+2.950E+00    -8.225E+00
+3.000E+00    -8.364E+00
+3.050E+00    -8.504E+00
+3.100E+00    -8.643E+00
+3.150E+00    -8.783E+00
+3.200E+00    -8.922E+00
+3.250E+00    -9.061E+00
+3.300E+00    -9.201E+00
+3.350E+00    -9.340E+00
+3.400E+00    -9.480E+00
+3.450E+00    -9.619E+00
+3.500E+00    -9.758E+00
+</pre>
+<h3><u><a name="xtocid935839">Noninverting op-amp circuit</a></u></h3>
+<p> <img src="01030.png"/> </p>
+<p>Otro ejemplo de una peculiaridad de SPICE: desde la fuente de voltaje dependiente "<tt>e</tt>"no se considera una carga para la fuente de voltaje V<sub>1</sub>, SPICE interpreta V<sub>1</sub>estar en circuito abierto y se negará a analizarlo.  La solución es conectar R<sub>falso</sub>en paralelo con V<sub>1</sub>para actuar como una carga de CC.  Estar conectado directamente a través de V<sub>1</sub>, la resistencia de R<sub>falso</sub>no es crucial para el funcionamiento del circuito, por lo que 10 kΩ funcionarán bien.  Decidí no barrer la V.<sub>1</sub>voltaje de entrada en este circuito para mantener simples la lista de red y la lista de salida.</p>
+<br/>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+noninverting opamp
+v1 2 0 dc 5
+rbogus 2 0 10k
+e 3 0 2 1 999k
+r1 3 1 20k
+r2 1 0 10k
+.end
+</pre>
+<br/>
+<p>
+<b>Producción:</b>
+</p>
+<pre>
+node     voltage   node     voltage   node    voltage
+(  1)    5.0000    (  2)    5.0000    (  3)   15.0000
+</pre>
+<h3><u><a name="xtocid935840">Instrumentation amplifier</a></u></h3>
+<p> <img src="01031.png"/> </p>
+<p>Tenga en cuenta la R de muy alta resistencia<sub>falso1</sub>y r<sub>falso2</sub>resistencias en la lista de red (no se muestran en el esquema por brevedad) en cada fuente de voltaje de entrada, para evitar que SPICE piense en V<sub>1</sub>y v<sub>2</sub>estaban en circuito abierto, al igual que los otros ejemplos de circuitos de amplificador operacional.</p>
+<br/>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+Instrumentation amplifier
+v1 1 0
+rbogus1 1 0 9e12
+v2 4 0 dc 5
+rbogus2 4 0 9e12
+e1 3 0 1 2 999k
+e2 6 0 4 5 999k
+e3 9 0 8 7 999k
+rload 9 0 10k
+r1 2 3 10k
+rgain 2 5 10k
+r2 5 6 10k
+r3 3 7 10k
+r4 7 9 10k
+r5 6 8 10k
+r6 8 0 10k
+.dc v1 0 10 1
+.print dc v(9) v(3,6)
+.end
+</pre>
+<br/>
+<p>
+<b>Producción:</b>
+</p>
+<pre>
+v1            v(9)        v(3,6)      
+0.000E+00     1.500E+01  -1.500E+01
+1.000E+00     1.200E+01  -1.200E+01
+2.000E+00     9.000E+00  -9.000E+00
+3.000E+00     6.000E+00  -6.000E+00
+4.000E+00     3.000E+00  -3.000E+00
+5.000E+00     9.955E-11  -9.956E-11
+6.000E+00    -3.000E+00   3.000E+00
+7.000E+00    -6.000E+00   6.000E+00
+8.000E+00    -9.000E+00   9.000E+00
+9.000E+00    -1.200E+01   1.200E+01
+1.000E+01    -1.500E+01   1.500E+01
+</pre>
+<h3><u><a name="xtocid935841">Op-amp integrator with sinewave input</a></u></h3>
+<p> <img src="01032.png"/> </p>
+<br/>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+Integrator with sinewave input
+vin 1 0 sin (0 15 60 0 0)
+r1 1 2 10k
+c1 2 3 150u ic=0
+e 3 0 0 2 999k
+.tran 1m 30m uic
+.plot tran v(1,0) v(3,0)
+.end
+</pre>
+<br/>
+<p>
+<b>Producción:</b>
+</p>
+<pre>
+legend:
+*: v(1)    
++: v(3)    
+time       v(1)    
+(*)-------- -2.000E+01    -1.000E+01     0.000E+00     1.000E+01  
+(+)-------- -6.000E-02    -4.000E-02    -2.000E-02     0.000E+00  
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+0.000E+00  6.536E-08 .        .             *             +       .
+1.000E-03  5.516E+00 .        .             .       *    +.       .
+2.000E-03  1.021E+01 .        .             .        +    *       .
+3.000E-03  1.350E+01 .        .             .  +          .    *  .
+4.000E-03  1.495E+01 .        .          +  .             .      *.
+5.000E-03  1.418E+01 .        .   +         .             .     * .
+6.000E-03  1.150E+01 .      + .             .             . *     .
+7.000E-03  7.214E+00 . +      .             .         *   .       .
+8.000E-03  1.867E+00 .+       .             .  *          .       .
+9.000E-03 -3.709E+00 . +      .        *    .             .       .
+1.000E-02 -8.805E+00 .   +    . *           .             .       .
+1.100E-02 -1.259E+01 .    *   +             .             .       .
+1.200E-02 -1.466E+01 . *      .     +       .             .       .
+1.300E-02 -1.471E+01 . *      .            +.             .       .
+1.400E-02 -1.259E+01 .    *   .             .    +        .       .
+1.500E-02 -8.774E+00 .        . *           .         +   .       .
+1.600E-02 -3.723E+00 .        .        *    .            +.       .
+1.700E-02  1.870E+00 .        .             .  *          +       .
+1.800E-02  7.188E+00 .        .             .         * + .       .
+1.900E-02  1.154E+01 .        .             .      +      . *     .
+2.000E-02  1.418E+01 .        .             .+            .     * .
+2.100E-02  1.490E+01 .        .       +     .             .      *.
+2.200E-02  1.355E+01 .        . +           .             .    *  .
+2.300E-02  1.020E+01 .    +   .             .             *       .
+2.400E-02  5.496E+00 . +      .             .       *     .       .
+2.500E-02 -1.486E-03 .+       .             *             .       .
+2.600E-02 -5.489E+00 . +      .     *       .             .       .
+2.700E-02 -1.021E+01 .    +   *             .             .       .
+2.800E-02 -1.355E+01 .   *    . +           .             .       . 
+2.900E-02 -1.488E+01 . *      .       +     .             .       .
+3.000E-02 -1.427E+01 .  *     .             .+            .       .
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+</pre>
+<h3><u><a name="xtocid935842">Op-amp integrator with squarewave input</a></u></h3>
+<p> <img src="01033.png"/> </p>
+<br/>
+<p>
+<b>Lista de redes:</b>
+</p>
+<pre>
+Integrator with squarewave input
+vin 1 0 pulse (-1 1 0 0 0 10m 20m)
+r1 1 2 1k
+c1 2 3 150u ic=0
+e 3 0 0 2 999k
+.tran 1m 50m uic
+.plot tran v(1,0) v(3,0)
+.end
+</pre>
+<br/>
+<p>
+<b>Producción:</b>
+</p>
+<pre>
+legend:
+*: v(1)    
++: v(3)    
+time       v(1)    
+(*)-------- -1.000E+00   -5.000E-01     0.000E+00  5.000E-01  1.000E+00
+(+)-------- -1.000E-01   -5.000E-02     0.000E+00  5.000E-02  1.000E-01
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+0.000E+00 -1.000E+00 *         .             +           .         .
+1.000E-03  1.000E+00 .         .             +           .         *
+2.000E-03  1.000E+00 .         .           + .           .         *
+3.000E-03  1.000E+00 .         .         +   .           .         *
+4.000E-03  1.000E+00 .         .       +     .           .         *
+5.000E-03  1.000E+00 .         .      +      .           .         *
+6.000E-03  1.000E+00 .         .    +        .           .         *
+7.000E-03  1.000E+00 .         .  +          .           .         *
+8.000E-03  1.000E+00 .         .+            .           .         *
+9.000E-03  1.000E+00 .        +.             .           .         *
+1.000E-02  1.000E+00 .      +  .             .           .         *
+1.100E-02  1.000E+00 .    +    .             .           .         *
+1.200E-02 -1.000E+00 *    +    .             .           .         .
+1.300E-02 -1.000E+00 *      +  .             .           .         .
+1.400E-02 -1.000E+00 *        +.             .           .         .
+1.500E-02 -1.000E+00 *         .+            .           .         .
+1.600E-02 -1.000E+00 *         .  +          .           .         .
+1.700E-02 -1.000E+00 *         .    +        .           .         .
+1.800E-02 -1.000E+00 *         .      +      .           .         .
+1.900E-02 -1.000E+00 *         .       +     .           .         .
+2.000E-02 -1.000E+00 *         .         +   .           .         .
+2.100E-02  1.000E+00 .         .         +   .           .         *
+2.200E-02  1.000E+00 .         .       +     .           .         *
+2.300E-02  1.000E+00 .         .      +      .           .         *
+2.400E-02  1.000E+00 .         .    +        .           .         *
+2.500E-02  1.000E+00 .         .  +          .           .         *
+2.600E-02  1.000E+00 .         .+            .           .         *
+2.700E-02  1.000E+00 .        +.             .           .         *
+2.800E-02  1.000E+00 .      +  .             .           .         *
+2.900E-02  1.000E+00 .    +    .             .           .         *
+3.000E-02  1.000E+00 .  +      .             .           .         *
+3.100E-02  1.000E+00 . +       .             .           .         *
+3.200E-02 -1.000E+00 * +       .             .           .         .
+3.300E-02 -1.000E+00 *  +      .             .           .         .
+3.400E-02 -1.000E+00 *    +    .             .           .         .
+3.500E-02 -1.000E+00 *      +  .             .           .         .
+3.600E-02 -1.000E+00 *        +.             .           .         .
+3.700E-02 -1.000E+00 *         .+            .           .         .
+3.800E-02 -1.000E+00 *         .  +          .           .         .
+3.900E-02 -1.000E+00 *         .    +        .           .         .
+4.000E-02 -1.000E+00 *         .      +      .           .         .
+4.100E-02  1.000E+00 .         .      +      .           .         *
+4.200E-02  1.000E+00 .         .    +        .           .         *
+4.300E-02  1.000E+00 .         .  +          .           .         *
+4.400E-02  1.000E+00 .         .+            .           .         *
+4.500E-02  1.000E+00 .        +.             .           .         *
+4.600E-02  1.000E+00 .      +  .             .           .         *
+4.700E-02  1.000E+00 .    +    .             .           .         *
+4.800E-02  1.000E+00 .  +      .             .           .         *
+4.900E-02  1.000E+00 . +       .             .           .         *
+5.000E-02  1.000E+00 +         .             .           .         *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+</pre>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="REF_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="REF_6.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="REF_8.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

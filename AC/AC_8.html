@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen II (AC) - Capítulo 8 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #8b5cf6; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen II (AC) - Capítulo 8</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen II</h1>
+<h1>Capítulo 8</h1>
+<h1>FILTROS</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid89300"><u>What is a filter?</u></a></li>
+<li><a href="#xtocid89301"><u>Low-pass filters</u></a></li>
+<li><a href="#xtocid89302"><u>High-pass filters</u></a></li>
+<li><a href="#xtocid89303"><u>Band-pass filters</u></a></li>
+<li><a href="#xtocid89304"><u>Band-stop filters</u></a></li>
+<li><a href="#xtocid89305"><u>Resonant filters</u></a></li>
+<li><a href="#xtocid89306"><u>Summary</u></a></li>
+<li><a href="#xtocid89307"><u>Contributors</u></a></li></ul>
+<h2><u><a name="xtocid89300">What is a filter?</a></u></h2>
+<a name="Filter"></a>
+<a name="Equalizer"></a>
+<a name="Crossover network"></a>
+<a name="Network, “crossover”"></a>
+<p>A veces es deseable tener circuitos capaces de filtrar selectivamente una frecuencia o un rango de frecuencias a partir de una mezcla de diferentes frecuencias en un circuito.  Un circuito diseñado para realizar esta selección de frecuencia se llama<i>circuito de filtro</i>, o simplemente un<i>filtrar</i>.  Una necesidad común de circuitos de filtro es en los sistemas estéreo de alto rendimiento, donde ciertos rangos de frecuencias de audio deben amplificarse o suprimirse para obtener la mejor calidad de sonido y eficiencia energética.  Puede que estés familiarizado con<i>ecualizadores</i>, que permiten ajustar las amplitudes de varios rangos de frecuencia para adaptarse al gusto del oyente y a las propiedades acústicas del área de escucha.  Quizás también estés familiarizado con<i>redes cruzadas</i>, que impiden que ciertos rangos de frecuencias lleguen a los altavoces.  Un tweeter (altavoz de alta frecuencia) es ineficiente para reproducir señales de baja frecuencia, como ritmos de batería, por lo que se conecta un circuito cruzado entre el tweeter y los terminales de salida del estéreo para bloquear las señales de baja frecuencia, pasando solo señales de alta frecuencia a los terminales de conexión del altavoz.  Esto proporciona una mejor eficiencia del sistema de audio y, por tanto, un mejor rendimiento.  Tanto los ecualizadores como las redes de cruce son ejemplos de filtros, diseñados para lograr el filtrado de ciertas frecuencias.</p>
+<p>Otra aplicación práctica de los circuitos de filtro es el "acondicionamiento" de formas de onda de voltaje no sinusoidales en circuitos de potencia.  Algunos dispositivos electrónicos son sensibles a la presencia de armónicos en el voltaje de la fuente de alimentación y, por lo tanto, requieren acondicionamiento de energía para su correcto funcionamiento.  Si un voltaje de onda sinusoidal distorsionada se comporta como una serie de formas de onda armónicas agregadas a la frecuencia fundamental, entonces debería ser posible construir un circuito de filtro que solo permita el paso de la frecuencia de la forma de onda fundamental, bloqueando todos los armónicos (de mayor frecuencia).</p>
+<a name="Bode plot"></a>
+<p>En esta lección estudiaremos el diseño de varios circuitos de filtro elementales.  Para reducir la carga matemática del lector, haré un uso extensivo de SPICE como herramienta de análisis, mostrando diagramas de Bode (amplitud versus frecuencia) para los distintos tipos de filtros.  Sin embargo, tenga en cuenta que estos circuitos se pueden analizar en varios puntos de frecuencia mediante análisis repetidos en serie-paralelo, muy parecido al ejemplo anterior con dos fuentes (60 y 90 Hz), si el estudiante está dispuesto a invertir mucho tiempo trabajando y reelaborando cálculos de circuitos para cada frecuencia.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>A <i>filtrar</i>Es un circuito de CA que separa algunas frecuencias de otras dentro de señales de frecuencia mixta.</li>
+<li>Audio<i>ecualizadores</i> and <i>redes cruzadas</i>Hay dos aplicaciones bien conocidas de los circuitos de filtro.</li>
+<li>A <i>trama de presagio</i>es un gráfico que traza la amplitud o fase de la forma de onda en un eje y la frecuencia en el otro.</li>
+</ul>
+<h2><u><a name="xtocid89301">Low-pass filters</a></u></h2>
+<a name="Low-pass filter"></a>
+<a name="Filter, low-pass"></a>
+<p>Por definición, un filtro de paso bajo es un circuito que ofrece un paso fácil a señales de baja frecuencia y un paso difícil a señales de alta frecuencia.  Hay dos tipos básicos de circuitos capaces de lograr este objetivo, y muchas variaciones de cada uno: El filtro inductivo de paso bajo en la Figura<a href="#02116.png">  below</a>
+<!--Split for two refs in one paragraph-->y el filtro capacitivo de paso bajo en la Figura<a href="#02117.png">  below</a>
+</p>
+<a name="02116.png"></a>
+<p> <img src="02116.png"/> </p>
+<p><i>Filtro inductivo de paso bajo</i></p>
+<p>La impedancia del inductor aumenta al aumentar la frecuencia.  Esta alta impedancia en serie tiende a impedir que las señales de alta frecuencia lleguen a la carga.  Esto se puede demostrar con un análisis SPICE: (Figura<a href="#22026.png">  below</a>)
+</p>
+<pre>
+inductive lowpass filter               
+v1 1 0 ac 1 sin 
+l1 1 2 3
+rload 2 0 1k    
+.ac lin 20 1 200
+.plot ac v(2)   
+.end    
+</pre>
+<!--freq       v(2)    0.2512      0.3981        0.631          1-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--1.000E+00  9.998E-01 .            .            .            * -->
+<!--1.147E+01  9.774E-01 .            .            .           *.-->
+<!--2.195E+01  9.240E-01 .            .            .          * .-->
+<!--3.242E+01  8.533E-01 .            .            .       *    .-->
+<!--4.289E+01  7.776E-01 .            .            .     *      .-->
+<!--5.337E+01  7.050E-01 .            .            .  *         .-->
+<!--6.384E+01  6.391E-01 .            .            *            .-->
+<!--7.432E+01  5.810E-01 .            .         *  .            .-->
+<!--8.479E+01  5.304E-01 .            .        *   .            .-->
+<!--9.526E+01  4.865E-01 .            .     *      .            .-->
+<!--1.057E+02  4.485E-01 .            .   *        .            .-->
+<!--1.162E+02  4.153E-01 .            .*           .            .-->
+<!--1.267E+02  3.863E-01 .           *.            .            .-->
+<!--1.372E+02  3.607E-01 .         *  .            .            .-->
+<!--1.476E+02  3.382E-01 .        *   .            .            .-->
+<!--1.581E+02  3.181E-01 .      *     .            .            .-->
+<!--1.686E+02  3.002E-01 .    *       .            .            .-->
+<!--1.791E+02  2.841E-01 .   *        .            .            .-->
+<!--1.895E+02  2.696E-01 . *          .            .            .-->
+<!--2.000E+02  2.564E-01 .*           .            .            .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<a name="22026.png"></a>
+<p> <img src="22026.png"/> </p>
+<p><i>La respuesta de un filtro inductivo de paso bajo disminuye al aumentar la frecuencia.</i></p>
+<a name="02117.png"></a>
+<p> <img src="02117.png"/> </p>
+<p><i>Filtro capacitivo de paso bajo.</i></p>
+<p>La impedancia del condensador disminuye al aumentar la frecuencia.  Esta baja impedancia en paralelo con la resistencia de carga tiende a cortocircuitar las señales de alta frecuencia, haciendo caer la mayor parte del voltaje a través de la resistencia en serie R.<sub>1</sub>.  (Cifra<a href="#22027.png">  below</a>)
+</p>
+<pre>
+capacitive lowpass filter                                  
+v1 1 0 ac 1 sin 
+r1 1 2 500      
+c1 2 0 7u       
+rload 2 0 1k    
+.ac lin 20 30 150       
+.plot ac v(2)   
+.end    
+</pre>
+<!-- freq       v(2)            0.3162     0.3981     0.5012  <!--0.631-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<!--3.000E+01  6.102E-01 .        .         .         .        *.-->
+<!--3.632E+01  5.885E-01 .        .         .         .      *  .-->
+<!--4.263E+01  5.653E-01 .        .         .         .   *     .-->
+<!--4.895E+01  5.416E-01 .        .         .         .  *      .-->
+<!--5.526E+01  5.180E-01 .        .         .         .*        .-->
+<!--6.158E+01  4.948E-01 .        .         .        *.         .-->
+<!--6.789E+01  4.725E-01 .        .         .     *   .         .-->
+<!--7.421E+01  4.511E-01 .        .         .   *     .         .-->
+<!--8.053E+01  4.309E-01 .        .         . *       .         .-->
+<!--8.684E+01  4.118E-01 .        .         .*        .         .-->
+<!--9.316E+01  3.938E-01 .        .        *.         .         .-->
+<!--9.947E+01  3.770E-01 .        .      *  .         .         .-->
+<!--1.058E+02  3.613E-01 .        .    *    .         .         .-->
+<!--1.121E+02  3.465E-01 .        .  *      .         .         .-->
+<!--1.184E+02  3.327E-01 .        .*        .         .         .-->
+<!--1.247E+02  3.199E-01 .        *         .         .         .-->
+<!--1.311E+02  3.078E-01 .      * .         .         .         .-->
+<!--1.374E+02  2.965E-01 .    *   .         .         .         .-->
+<!--1.437E+02  2.859E-01 .  *     .         .         .         .-->
+<!--1.500E+02  2.760E-01 .*       .         .         .         .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<a name="22027.png"></a>
+<p> <img src="22027.png"/> </p>
+<p><i>La respuesta de un filtro de paso bajo capacitivo disminuye al aumentar la frecuencia.</i></p>
+<p>El filtro inductivo de paso bajo es el pináculo de la simplicidad, con un solo componente que comprende el filtro.  La versión capacitiva de este filtro no es mucho más compleja, ya que solo se necesitan una resistencia y un condensador para su funcionamiento.  Sin embargo, a pesar de su mayor complejidad, los diseños de filtros capacitivos generalmente se prefieren a los inductivos porque los capacitores tienden a ser componentes reactivos "más puros" que los inductores y, por lo tanto, su comportamiento es más predecible.  Por "puro" quiero decir que los condensadores exhiben pocos efectos resistivos que los inductores, lo que los hace casi 100% reactivos.  Los inductores, por otro lado, suelen exhibir importantes efectos disipativos (similares a los de una resistencia), tanto en las grandes longitudes de cable utilizados para fabricarlos como en las pérdidas magnéticas del material del núcleo.  Los condensadores también tienden a participar menos en los efectos de "acoplamiento" con otros componentes (generar y/o recibir interferencias de otros componentes a través de campos eléctricos o magnéticos mutuos) que los inductores, y son menos costosos.</p>
+<p>Sin embargo, el filtro inductivo de paso bajo suele preferirse en las fuentes de alimentación de CA-CC para filtrar la forma de onda de “ondulación” de CA creada cuando la CA se convierte (rectifica) en CC, dejando pasar solo el componente de CC pura.  La razón principal de esto es el requisito de una baja resistencia del filtro para la salida de dicha fuente de alimentación.  Un filtro de paso bajo capacitivo requiere una resistencia adicional en serie con la fuente, mientras que el filtro de paso bajo inductivo no.  En el diseño de un circuito de alta corriente como una fuente de alimentación de CC donde no es deseable una resistencia en serie adicional, el filtro inductivo de paso bajo es la mejor opción de diseño.  Por otro lado, si el peso reducido y el tamaño compacto son prioridades más importantes que la baja resistencia interna de la fuente de alimentación en el diseño de una fuente de alimentación, el filtro capacitivo de paso bajo podría tener más sentido.</p>
+<a name="Cutoff frequency"></a>
+<a name="Frequency, cutoff"></a>
+<p>Todos los filtros de paso bajo tienen una clasificación determinada<i>frecuencia de corte</i>.  Es decir, la frecuencia por encima de la cual el voltaje de salida cae por debajo del 70,7% del voltaje de entrada.  Este porcentaje de corte de 70,7 no es realmente arbitrario, aunque pueda parecerlo a primera vista.  En un filtro de paso bajo capacitivo/resistivo simple, es la frecuencia a la que la reactancia capacitiva en ohmios es igual a la resistencia en ohmios.  En un filtro capacitivo de paso bajo simple (una resistencia, un condensador), la frecuencia de corte viene dada por:</p>
+<p> <img src="12097.png"/> </p>
+<p>Al insertar los valores de R y C de la última simulación de SPICE en esta fórmula, llegamos a una frecuencia de corte de 45,473 Hz.  Sin embargo, cuando observamos el gráfico generado por la simulación SPICE, vemos el voltaje de carga muy por debajo del 70,7% del voltaje de la fuente (1 voltio), incluso a una frecuencia tan baja como 30 Hz, por debajo del punto de corte calculado.  ¿Qué ocurre?  El problema aquí es que la resistencia de carga de 1 kΩ afecta la respuesta de frecuencia del filtro, desviándola de lo que la fórmula nos dijo que sería.  Sin esa resistencia de carga, SPICE produce un diagrama de Bode cuyos números tienen más sentido: (Figura<a href="#22028.png">  below</a>)
+</p>
+<pre>
+capacitive lowpass filter   
+v1 1 0 ac 1 sin 
+r1 1 2 500      
+c1 2 0 7u
+* note: no load resistor!       
+.ac lin 20 40 50
+.plot ac v(2)   
+.end    
+</pre>
+<!--freq       v(2)    0.6607      0.6918       0.7244      0.7586-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--4.000E+01  7.508E-01 .           .             .          *  .-->
+<!--4.053E+01  7.465E-01 .           .             .        *    .-->
+<!--4.105E+01  7.423E-01 .           .             .      *      .-->
+<!--4.158E+01  7.380E-01 .           .             .     *       .-->
+<!--4.211E+01  7.338E-01 .           .             .   *         .-->
+<!--4.263E+01  7.295E-01 .           .             . *           .-->
+<!--4.316E+01  7.253E-01 .           .             *             .-->
+<!--4.368E+01  7.211E-01 .           .            *.             .-->
+<!--4.421E+01  7.170E-01 .           .          *  .             .-->
+<!--4.474E+01  7.129E-01 .           .        *    .             .-->
+<!--4.526E+01  7.087E-01 .           .      *      .             .-->
+<!--4.579E+01  7.046E-01 .           .     *       .             .-->
+<!--4.632E+01  7.006E-01 .           .   *         .             .-->
+<!--4.684E+01  6.965E-01 .           . *           .             .-->
+<!--4.737E+01  6.925E-01 .           *             .             .-->
+<!--4.789E+01  6.885E-01 .          *.             .             .-->
+<!--4.842E+01  6.846E-01 .        *  .             .             .-->
+<!--4.895E+01  6.806E-01 .      *    .             .             .-->
+<!--4.947E+01  6.767E-01 .    *      .             .             .-->
+<!--5.000E+01  6.728E-01 .   *       .             .             .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<a name="22028.png"></a>
+<p> <img src="22028.png"/> </p>
+<p><i>Para el filtro capacitivo de paso bajo con R = 500 Ω y C = 7 µF, la salida debe ser del 70,7 % a 45,473 Hz.</i></p>
+<pre>
+           f<sub>cutoff</sub> = 1/(2πRC) = 1/(2π(500 Ω)(7 µF)) = 45.473 Hz
+</pre>
+<p>Cuando se trata de circuitos de filtro, siempre es importante tener en cuenta que la respuesta del filtro depende de los valores de los componentes del filtro.<i>and</i>the impedance of the load.  Si una ecuación de frecuencia de corte no tiene en cuenta la impedancia de la carga, asume que no hay carga y no dará resultados precisos para un filtro de la vida real que conduce energía a una carga.</p>
+<p>Una aplicación frecuente del principio del filtro capacitivo de paso bajo es el diseño de circuitos que tienen componentes o secciones sensibles al "ruido" eléctrico.  Como se mencionó al comienzo del último capítulo, a veces las señales de CA pueden "acoplarse" de un circuito a otro mediante capacitancia (C<sub>extraviado</sub>) y/o inductancia mutua (M<sub>extraviado</sub>) entre los dos conjuntos de conductores.  Un buen ejemplo de esto son las señales de CA no deseadas (“ruido”) que quedan impresas en las líneas de alimentación de CC que alimentan circuitos sensibles: (Figura<a href="#02300.png">  below</a>)
+</p>
+<a name="02300.png"></a>
+<p> <img src="02300.png"/> </p>
+<p><i>El ruido se combina mediante capacitancia parásita e inductancia mutua en energía CC "limpia".</i></p>
+<p>El osciloscopio-metro de la izquierda muestra la energía "limpia" de la fuente de voltaje de CC.  Sin embargo, después del acoplamiento con la fuente de ruido de CA a través de inductancia parásita mutua y capacitancia parásita, el voltaje medido en los terminales de carga ahora es una mezcla de CA y CC, siendo la CA no deseada.  Normalmente, uno esperaría que E<sub>carga</sub>ser exactamente idéntico a E<sub>fuente</sub>, porque los conductores ininterrumpidos que los conectan deben hacer que los dos conjuntos de puntos sean eléctricamente comunes.  Sin embargo, la impedancia del conductor de potencia permite que los dos voltajes difieran, lo que significa que la magnitud del ruido puede variar en diferentes puntos del sistema de CC.</p>
+<a name="Capacitor, decoupling"></a>
+<a name="Decoupling capacitor"></a>
+<p>Si deseamos evitar que ese "ruido" llegue a la carga de CC, todo lo que debemos hacer es conectar un filtro de paso bajo cerca de la carga para bloquear cualquier señal acoplada.  En su forma más simple, esto no es más que un capacitor conectado directamente a través de los terminales de alimentación de la carga; el capacitor se comporta como una impedancia muy baja ante cualquier ruido de CA y lo cortocircuita.  Un condensador de este tipo se llama<i>condensador de desacoplamiento</i>: (Cifra<a href="#02301.png">  below</a>)
+</p>
+<a name="02301.png"></a>
+<p> <img src="02301.png"/> </p>
+<p><i>El condensador de desacoplamiento, aplicado a la carga, filtra el ruido de la fuente de alimentación de CC.</i></p>
+<a name="Printed circuit board"></a>
+<a name="PCB"></a>
+<p>Un vistazo rápido a una placa de circuito impreso (PCB) abarrotada generalmente revelará capacitores de desacoplamiento dispersos por todas partes, generalmente ubicados lo más cerca posible de las cargas de CC sensibles.  El tamaño del condensador suele ser de 0,1 µF o más, una cantidad mínima de capacitancia necesaria para producir una impedancia lo suficientemente baja como para eliminar cualquier ruido.  Una mayor capacitancia permitirá filtrar mejor el ruido, pero el tamaño y la economía limitan los condensadores de desacoplamiento a valores exiguos.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Un filtro de paso bajo permite el paso fácil de señales de baja frecuencia desde la fuente a la carga y el paso difícil de señales de alta frecuencia.</li>
+<li>Los filtros inductivos de paso bajo insertan un inductor en serie con la carga; Los filtros capacitivos de paso bajo insertan una resistencia en serie y un condensador en paralelo con la carga.  El primer diseño de filtro intenta “bloquear” la señal de frecuencia no deseada mientras que el segundo intenta cortocircuitarla.</li>
+<li>The <i>frecuencia de corte</i>para un filtro de paso bajo es aquella frecuencia a la cual el voltaje de salida (carga) es igual al 70,7% del voltaje de entrada (fuente).  Por encima de la frecuencia de corte, el voltaje de salida es inferior al 70,7% del de entrada y viceversa.</li>
+</ul>
+<h2><u><a name="xtocid89302">High-pass filters</a></u></h2>
+<a name="High-pass filter"></a>
+<a name="Filter, high-pass"></a>
+<p>La tarea de un filtro de paso alto es justo la opuesta a la de un filtro de paso bajo: ofrecer un paso fácil de una señal de alta frecuencia y un paso difícil a una señal de baja frecuencia.  Como era de esperar, el inductivo (Figura<a href="#02119.png">  below</a>)
+<!--Split for two refs in one paragraph-->y capacitivo (Figura<a href="#02118.png">  below</a>) del filtro de paso alto son todo lo contrario de sus respectivos diseños de filtro de paso bajo:</p>
+<a name="02118.png"></a>
+<p> <img src="02118.png"/> </p>
+<p><i>Filtro capacitivo de paso alto.</i></p>
+<p>La impedancia del condensador (Figura<a href="#02118.png">  above</a>)
+<!--split for double ref-->aumenta al disminuir la frecuencia. (Cifra<a href="#22029.png">  below</a>) Esta alta impedancia en serie tiende a bloquear la carga de las señales de baja frecuencia.</p>
+<pre>
+capacitive highpass filter    
+v1 1 0 ac 1 sin 
+c1 1 2 0.5u     
+rload 2 0 1k    
+.ac lin 20 1 200
+.plot ac v(2)   
+.end    
+</pre>
+<!--freq       v(2)  1.000E-03     1.000E-02     1.000E-01  1.000E+00 -->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<!--1.000E+00  3.142E-03 .      *      .             .             .-->
+<!--1.147E+01  3.602E-02 .             .       *     .             .-->
+<!--2.195E+01  6.879E-02 .             .           * .             .-->
+<!--3.242E+01  1.013E-01 .             .             *             .-->
+<!--4.289E+01  1.336E-01 .             .             . *           .-->
+<!--5.337E+01  1.654E-01 .             .             .  *          .-->
+<!--6.384E+01  1.966E-01 .             .             .   *         .-->
+<!--7.432E+01  2.274E-01 .             .             .    *        .-->
+<!--8.479E+01  2.574E-01 .             .             .     *       .-->
+<!--9.526E+01  2.867E-01 .             .             .     *       .-->
+<!--1.057E+02  3.152E-01 .             .             .      *      .-->
+<!--1.162E+02  3.429E-01 .             .             .      *      .-->
+<!--1.267E+02  3.698E-01 .             .             .       *     .-->
+<!--1.372E+02  3.957E-01 .             .             .       *     .-->
+<!--1.476E+02  4.207E-01 .             .             .        *    .-->
+<!--1.581E+02  4.448E-01 .             .             .        *    .-->
+<!--1.686E+02  4.680E-01 .             .             .        *    .-->
+<!--1.791E+02  4.903E-01 .             .             .         *   .-->
+<!--1.895E+02  5.116E-01 .             .             .         *   .-->
+<!--2.000E+02  5.320E-01 .             .             .         *   .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<a name="22029.png"></a>
+<p> <img src="22029.png"/> </p>
+<p><i>La respuesta del filtro capacitivo de paso alto aumenta con la frecuencia.</i></p>
+<a name="02119.png"></a>
+<p> <img src="02119.png"/> </p>
+<p><i>Filtro inductivo de paso alto.</i></p>
+<p>La impedancia del inductor (Figura<a href="#02119.png">  above</a>)
+<!--split for double ref-->disminuye al disminuir la frecuencia. (Cifra<a href="#22030.png">  below</a>) Esta baja impedancia en paralelo tiende a impedir que las señales de baja frecuencia lleguen a la resistencia de carga.  Como consecuencia, la mayor parte del voltaje cae a través de la resistencia en serie R<sub>1</sub>.
+</p>
+<pre>
+inductive highpass filter  
+v1 1 0 ac 1 sin 
+r1 1 2 200      
+l1 2 0 100m     
+rload 2 0 1k    
+.ac lin 20 1 200
+.plot ac v(2)   
+.end    
+</pre>
+<!--freq       v(2)   1.000E-03  1.000E-02   1.000E-01    1.000E+00-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--1.000E+00  3.142E-03 .  *      .             .             .-->
+<!--1.147E+01  3.601E-02 .         .       *     .             .-->
+<!--2.195E+01  6.871E-02 .         .           * .             .-->
+<!--3.242E+01  1.011E-01 .         .             *             .-->
+<!--4.289E+01  1.330E-01 .         .             . *           .-->
+<!--5.337E+01  1.644E-01 .         .             .  *          .-->
+<!--6.384E+01  1.950E-01 .         .             .   *         .-->
+<!--7.432E+01  2.248E-01 .         .             .    *        .-->
+<!--8.479E+01  2.537E-01 .         .             .     *       .-->
+<!--9.526E+01  2.817E-01 .         .             .     *       .-->
+<!--1.057E+02  3.086E-01 .         .             .      *      .-->
+<!--1.162E+02  3.344E-01 .         .             .      *      .-->
+<!--1.267E+02  3.591E-01 .         .             .       *     .-->
+<!--1.372E+02  3.828E-01 .         .             .       *     .-->
+<!--1.476E+02  4.053E-01 .         .             .        *    .-->
+<!--1.581E+02  4.267E-01 .         .             .        *    .-->
+<!--1.686E+02  4.470E-01 .         .             .        *    .-->
+<!--1.791E+02  4.662E-01 .         .             .        *    .-->
+<!--1.895E+02  4.845E-01 .         .             .         *   .-->
+<!--2.000E+02  5.017E-01 .         .             .         *   .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<a name="22030.png"></a>
+<p> <img src="22030.png"/> </p>
+<p><i>La respuesta del filtro inductivo de paso alto aumenta con la frecuencia.</i></p>
+<p>Esta vez, el diseño capacitivo es el más simple y requiere solo un componente más allá de la carga.  Y, nuevamente, la pureza reactiva de los capacitores sobre los inductores tiende a favorecer su uso en el diseño de filtros, especialmente con filtros de paso alto donde las altas frecuencias comúnmente hacen que los inductores se comporten de manera extraña debido al efecto superficial y las pérdidas electromagnéticas del núcleo.</p>
+<a name="Cutoff frequency"></a>
+<a name="Frequency, cutoff"></a>
+<p>Al igual que los filtros de paso bajo, los filtros de paso alto tienen una clasificación<i>frecuencia de corte</i>, por encima del cual el voltaje de salida aumenta por encima del 70,7% del voltaje de entrada.  Al igual que en el caso del circuito del filtro capacitivo de paso bajo, la frecuencia de corte del filtro capacitivo de paso alto se puede encontrar con la misma fórmula:</p>
+<p> <img src="12097.png"/> </p>
+<p>En el circuito de ejemplo, no hay otra resistencia que la de carga, por lo que ese es el valor de R en la fórmula.</p>
+<p>Utilizando un sistema estéreo como ejemplo práctico, un condensador conectado en serie con el altavoz de agudos (agudos) servirá como filtro de paso alto, imponiendo una alta impedancia a las señales de graves de baja frecuencia, evitando así que esa energía se desperdicie en un altavoz ineficaz para reproducir dichos sonidos.  De la misma manera, un inductor conectado en serie con el altavoz de graves (graves) servirá como filtro de paso bajo para las frecuencias bajas que ese altavoz en particular está diseñado para reproducir.  En este circuito de ejemplo simple, el altavoz de rango medio está sujeto a todo el espectro de frecuencias de la salida del estéreo.  A veces se utilizan redes de filtros más elaboradas, pero esto debería darle una idea general.  También tenga en cuenta que sólo le estoy mostrando un canal (ya sea izquierdo o derecho) en este sistema estéreo.  Un estéreo real tendría seis parlantes: 2 woofers, 2 de rango medio y 2 tweeters.</p>
+<a name="02120.png"></a>
+<p> <img src="02120.png"/> </p>
+<p><i>El filtro de paso alto dirige las frecuencias altas al tweeter, mientras que el filtro de paso bajo dirige las frecuencias bajas al woofer.</i></p>
+<p>Para obtener un mejor rendimiento aún, nos gustaría tener algún tipo de circuito de filtro capaz de pasar frecuencias entre bajas (graves) y altas (agudos) al altavoz de rango medio para que ninguna potencia de la señal de baja o alta frecuencia se desperdicie en un altavoz incapaz de reproducir eficientemente esos sonidos.  Lo que estaríamos buscando se llama<i>paso de banda</i>filtro, que es el tema de la siguiente sección.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Un filtro de paso alto permite el paso fácil de señales de alta frecuencia desde la fuente a la carga y el paso difícil de señales de baja frecuencia.</li>
+<li>Los filtros capacitivos de paso alto insertan un condensador en serie con la carga; Los filtros inductivos de paso alto insertan una resistencia en serie y un inductor en paralelo con la carga.  El primer diseño de filtro intenta “bloquear” la señal de frecuencia no deseada mientras que el segundo intenta cortocircuitarla.</li>
+<li>The <i>frecuencia de corte</i>para un filtro de paso alto es aquella frecuencia a la cual el voltaje de salida (carga) es igual al 70,7% del voltaje de entrada (fuente).  Por encima de la frecuencia de corte, el voltaje de salida es mayor que el 70,7% del de entrada, y viceversa.</li>
+</ul>
+<h2><u><a name="xtocid89303">Band-pass filters</a></u></h2>
+<a name="Band-pass filter"></a>
+<a name="Filter, band-pass"></a>
+<p>Hay aplicaciones en las que es necesario filtrar una banda, una dispersión o frecuencias concretas de una gama más amplia de señales mixtas.  Se pueden diseñar circuitos de filtro para realizar esta tarea combinando las propiedades de paso bajo y paso alto en un solo filtro.  El resultado se llama<i>paso de banda</i>filtrar.  La creación de un filtro de paso de banda a partir de un filtro de paso bajo y de paso alto se puede ilustrar mediante diagramas de bloques: (Figura<a href="#02121.png">  below</a>)
+</p>
+<a name="02260.png"></a>
+<p> <img src="02260.png"/> </p>
+<p><i>Diagrama de bloques a nivel de sistema de un filtro de paso de banda.</i></p>
+<p>Lo que surge de la combinación en serie de estos dos circuitos de filtro es un circuito que sólo permitirá el paso de aquellas frecuencias que no sean ni demasiado altas ni demasiado bajas.  Usando componentes reales, así es como se vería un esquema típico.<a href="#02121.png">  below</a>.
+<!--split for double ref-->La respuesta del filtro de paso de banda se muestra en (Figura<a href="#22031.png">  below</a>)
+</p>
+<a name="02121.png"></a>
+<p> <img src="02121.png"/> </p>
+<p><i>Filtro paso banda capacitivo.</i></p>
+<pre>
+capacitive bandpass filter       
+v1 1 0 ac 1 sin 
+r1 1 2 200      
+c1 2 0 2.5u     
+c2 2 3 1u       
+rload 3 0 1k    
+.ac lin 20 100 500      
+.plot ac v(3)   
+.end    
+</pre>
+<!--freq       v(3)   4.467E-01    5.012E-01    5.623E-01    6.310E-01-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--1.000E+02  4.703E-01 .     *       .             .             . -->
+<!--1.211E+02  5.155E-01 .             .  *          .             .-->
+<!--1.421E+02  5.469E-01 .             .          *  .             .-->
+<!--1.632E+02  5.676E-01 .             .             .*            .-->
+<!--1.842E+02  5.801E-01 .             .             .   *         .-->
+<!--2.053E+02  5.865E-01 .             .             .    *        .-->
+<!--2.263E+02  5.882E-01 .             .             .    *        .-->
+<!--2.474E+02  5.864E-01 .             .             .    *        .-->
+<!--2.684E+02  5.820E-01 .             .             .   *         .-->
+<!--2.895E+02  5.755E-01 .             .             .  *          .-->
+<!--3.105E+02  5.676E-01 .             .             .*            .-->
+<!--3.316E+02  5.585E-01 .             .            *.             .-->
+<!--3.526E+02  5.487E-01 .             .          *  .             .-->
+<!--3.737E+02  5.384E-01 .             .        *    .             .-->
+<!--3.947E+02  5.277E-01 .             .     *       .             .-->
+<!--4.158E+02  5.169E-01 .             .   *         .             .-->
+<!--4.368E+02  5.060E-01 .             .*            .             .-->
+<!--4.579E+02  4.951E-01 .            *.             .             .-->
+<!--4.789E+02  4.843E-01 .         *   .             .             .-->
+<!--5.000E+02  4.736E-01 .      *      .             .             .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<a name="22031.png"></a>
+<p> <img src="22031.png"/> </p>
+<p><i>La respuesta de un filtro de paso de banda capacitivo alcanza su punto máximo dentro de un rango de frecuencia estrecho.</i></p>
+<p>Los filtros de paso de banda también se pueden construir utilizando inductores, pero como se mencionó anteriormente, la "pureza" reactiva de los capacitores les da una ventaja de diseño.  Si tuviéramos que diseñar un filtro de paso de banda usando inductores, podría verse así en la Figura<a href="#02122.png">  below</a>.
+</p>
+<a name="02122.png"></a>
+<p> <img src="02122.png"/> </p>
+<p><i>Filtro inductivo de paso de banda.</i></p>
+<p>El hecho de que la sección de paso alto sea “primero” en este diseño en lugar de la sección de paso bajo no supone ninguna diferencia en su funcionamiento general.  Seguirá filtrando todas las frecuencias demasiado altas o demasiado bajas.</p>
+<a name="Attenuation"></a>
+<p>Si bien la idea general de combinar filtros de paso bajo y paso alto para crear un filtro de paso de banda es sólida, no está exenta de ciertas limitaciones.  Debido a que este tipo de filtro de paso de banda funciona confiando en cualquiera de las secciones para<i>bloquear</i>frecuencias no deseadas, puede resultar difícil diseñar un filtro de este tipo que permita el paso sin obstáculos dentro del rango de frecuencia deseado.  Tanto la sección de paso bajo como la de paso alto siempre bloquearán las señales hasta cierto punto, y su esfuerzo combinado produce, en el mejor de los casos, una señal atenuada (amplitud reducida), incluso en el pico del rango de frecuencia de la “banda de paso”.  Observe el pico de la curva en el análisis anterior de SPICE: el voltaje de carga de este filtro nunca supera los 0,59 voltios, aunque el voltaje de la fuente es un voltio completo.  Esta atenuación de la señal se vuelve más pronunciada si el filtro está diseñado para ser más selectivo (curva más pronunciada, banda más estrecha de frecuencias transitables).</p>
+<p>Existen otros métodos para lograr la operación de paso de banda sin sacrificar la intensidad de la señal dentro de la banda de paso.  Discutiremos esos métodos un poco más adelante en este capítulo.</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>A <i>paso de banda</i>El filtro funciona para eliminar las frecuencias que son demasiado bajas o demasiado altas, permitiendo el paso fácil sólo a las frecuencias dentro de un cierto rango.</li>
+<li>Los filtros de paso de banda se pueden fabricar apilando un filtro de paso bajo al final de un filtro de paso alto, o viceversa.</li>
+<li>"Atenuar" significa reducir o disminuir la amplitud.  Cuando bajas el control de volumen de tu estéreo, estás "atenuando" la señal que se envía a los altavoces.</li>
+</ul>
+<h2><u><a name="xtocid89304">Band-stop filters</a></u></h2>
+<a name="Band-stop filter"></a>
+<a name="Band-reject filter"></a>
+<a name="Band-elimination filter"></a>
+<a name="Notch filter"></a>
+<a name="Filter, band-stop"></a>
+<a name="Filter, band-reject"></a>
+<a name="Filter, band-elimination"></a>
+<a name="Filter, notch"></a>
+<p>También llamado<i>eliminacion de banda</i>, <i>rechazo de banda</i>, o<i>muesca</i>filtros, este tipo de filtro pasa todas las frecuencias por encima y por debajo de un rango particular establecido por los valores de los componentes.  No es sorprendente que pueda estar hecho de un filtro de paso bajo y un filtro de paso alto, al igual que el diseño de paso de banda, excepto que esta vez conectamos las dos secciones de filtro en paralelo entre sí en lugar de en serie. (Cifra<a href="#02261.png">  below</a>)
+</p>
+<a name="02261.png"></a>
+<p> <img src="02261.png"/> </p>
+<p><i>Diagrama de bloques a nivel de sistema de un filtro supresor de banda.</i></p>
+<p>Construido con dos secciones de filtro capacitivo, se parece a (Figura<a href="#02123.png">  below</a>).
+</p>
+<a name="02123.png"></a>
+<p> <img src="02123.png"/> </p>
+<p><i>Filtro eliminador de banda “Twin-T”.</i></p>
+<p>La sección del filtro de paso bajo se compone de R<sub>1</sub>, R<sub>2</sub>y C<sub>1</sub>en configuración “T”.  La sección del filtro de paso alto se compone de C<sub>2</sub>, C<sub>3</sub>y R<sub>3</sub>también en configuración “T”.  En conjunto, esta disposición se conoce comúnmente como filtro "Twin-T", y brinda una respuesta nítida cuando los valores de los componentes se eligen en las siguientes proporciones:</p>
+<p> <img src="12098.png"/> </p>
+<p>Dadas estas proporciones de componentes, la frecuencia de rechazo máximo (la “frecuencia de muesca”) se puede calcular de la siguiente manera:</p>
+<p> <img src="12099.png"/> </p>
+<p>La impresionante capacidad de detención de banda de este filtro se ilustra en el siguiente análisis de SPICE: (Figura<a href="#22032.png">  below</a>)
+</p>
+<pre>
+twin-t bandstop filter
+v1 1 0 ac 1 sin 
+r1 1 2 200      
+c1 2 0 2u       
+r2 2 3 200      
+c2 1 4 1u       
+r3 4 0 100      
+c3 4 3 1u       
+rload 3 0 1k    
+.ac lin 20 200 1.5k     
+.plot ac v(3)   
+.end    
+</pre>
+<!--freq       v(3)  1.000E-02  3.162E-02  1.000E-01    3.162E-01-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<!--2.000E+02  5.400E-01 .         .           .             .      *.-->
+<!--2.684E+02  4.512E-01 .         .           .             .   *   .-->
+<!--3.368E+02  3.686E-01 .         .           .             . *     .-->
+<!--4.053E+02  2.946E-01 .         .           .            *.       .-->
+<!--4.737E+02  2.290E-01 .         .           .         *   .       .-->
+<!--5.421E+02  1.707E-01 .         .           .      *      .       .-->
+<!--6.105E+02  1.185E-01 .         .           . *           .       .-->
+<!--6.789E+02  7.134E-02 .         .       *   .             .       .-->
+<!--7.474E+02  2.832E-02 .        *.           .             .       .-->
+<!--8.158E+02  1.126E-02 .*        .           .             .       .-->
+<!--8.842E+02  4.796E-02 .         .    *      .             .       .-->
+<!--9.526E+02  8.222E-02 .         .         * .             .       .-->
+<!--1.021E+03  1.144E-01 .         .           . *           .       .-->
+<!--1.089E+03  1.447E-01 .         .           .   *         .       .-->
+<!--1.158E+03  1.734E-01 .         .           .      *      .       .-->
+<!--1.226E+03  2.007E-01 .         .           .       *     .       .-->
+<!--1.295E+03  2.267E-01 .         .           .         *   .       .-->
+<!--1.363E+03  2.515E-01 .         .           .          *  .       .-->
+<!--1.432E+03  2.752E-01 .         .           .           * .       .-->
+<!--1.500E+03  2.980E-01 .         .           .            *.       .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<br/>
+<a name="22032.png"></a>
+<p> <img src="22032.png"/> </p>
+<p><i>Respuesta del filtro eliminador de banda “twin-T”.</i></p>
+<br/>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>A <i>parada de banda</i>El filtro funciona para filtrar las frecuencias que están dentro de un cierto rango, permitiendo el paso fácil sólo a las frecuencias fuera de ese rango.  También conocido como<i>eliminacion de banda</i>, <i>rechazo de banda</i>, o<i>muesca</i>filtros.</li>
+<li>Los filtros de eliminación de banda se pueden fabricar colocando un filtro de paso bajo en paralelo con un filtro de paso alto.  Por lo general, tanto la sección de filtro de paso bajo como la de paso alto tienen la configuración "T", lo que da el nombre de "Twin-T" a la combinación de banda eliminada.</li>
+<li>La frecuencia de máxima atenuación se llama<i>muesca</i>frecuencia.</li>
+</ul>
+<h2><u><a name="xtocid89305">Resonant filters</a></u></h2>
+<a name="Resonant filter"></a>
+<a name="Filter, resonant"></a>
+<p>Hasta ahora, los diseños de filtros en los que nos hemos concentrado han empleado<i>cualquiera</i>condensadores<i>or</i>inductores, pero nunca ambos al mismo tiempo.  A estas alturas ya deberíamos saber que las combinaciones de L y C tenderán a resonar, y esta propiedad puede explotarse en el diseño de circuitos de filtro de paso de banda y supresión de banda.</p>
+<p>Los circuitos LC en serie brindan una impedancia mínima en resonancia, mientras que los circuitos LC (“tanque”) en paralelo brindan una impedancia máxima en su frecuencia de resonancia.  Sabiendo esto, tenemos dos estrategias básicas para diseñar filtros de paso de banda o filtros de eliminación de banda.</p>
+<p>Para los filtros de paso de banda, las dos estrategias resonantes básicas son las siguientes: serie LC para pasar una señal (Figura<a href="#02124.png">  below</a>),
+<!--split for double ref-->o LC paralelo (Figura<a href="#02125.png">  below</a>) para acortar una señal.  Los dos esquemas se contrastarán y simularán aquí:</p>
+<a name="02124.png"></a>
+<p> <img src="02124.png"/> </p>
+<p><i>Filtro paso banda LC resonante serie.</i></p>
+<p>Los componentes de la serie LC pasan la señal en resonancia y bloquean las señales de cualquier otra frecuencia para que no lleguen a la carga. (Cifra<a href="#22033.png">  below</a>)
+</p>
+<pre>
+series resonant bandpass filter
+v1 1 0 ac 1 sin 
+l1 1 2 1
+c1 2 3 1u       
+rload 3 0 1k    
+.ac lin 20 50 250       
+.plot ac v(3)   
+.end    
+</pre>
+<!--freq       v(3)   2.512E-01   3.981E-01    6.310E-01    1.000E+00-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--5.000E+01  3.291E-01 .     *     .             .             .-->
+<!--6.053E+01  4.063E-01 .           .*            .             .-->
+<!--7.105E+01  4.870E-01 .           .     *       .             .-->
+<!--8.158E+01  5.708E-01 .           .          *  .             .-->
+<!--9.211E+01  6.564E-01 .           .             .*            .-->
+<!--1.026E+02  7.411E-01 .           .             .    *        .-->
+<!--1.132E+02  8.210E-01 .           .             .       *     .-->
+<!--1.237E+02  8.910E-01 .           .             .         *   .-->
+<!--1.342E+02  9.460E-01 .           .             .           * .-->
+<!--1.447E+02  9.824E-01 .           .             .            *.-->
+<!--1.553E+02  9.988E-01 .           .             .             *-->
+<!--1.658E+02  9.967E-01 .           .             .             *-->
+<!--1.763E+02  9.796E-01 .           .             .            *.-->
+<!--1.868E+02  9.518E-01 .           .             .           * .-->
+<!--1.974E+02  9.174E-01 .           .             .          *  .-->
+<!--2.079E+02  8.797E-01 .           .             .         *   .-->
+<!--2.184E+02  8.408E-01 .           .             .        *    .-->
+<!--2.289E+02  8.026E-01 .           .             .      *      .-->
+<!--2.395E+02  7.657E-01 .           .             .     *       .-->
+<!--2.500E+02  7.307E-01 .           .             .   *         .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<a name="22033.png"></a>
+<p> <img src="22033.png"/> </p>
+<p><i>Filtro paso banda resonante en serie: picos de tensión a frecuencia de resonancia de 159,15 Hz.</i></p>
+<a name="Selectivity"></a>
+<a name="Filter “selectivity”"></a>
+<p>Un par de puntos a tener en cuenta: observe cómo prácticamente no hay atenuación de la señal dentro de la “banda de paso” (el rango de frecuencias cerca del pico de voltaje de carga), a diferencia de los filtros de paso de banda hechos solo con capacitores o inductores.  Además, dado que este filtro funciona según el principio de resonancia LC en serie, cuya frecuencia de resonancia no se ve afectada por la resistencia del circuito, el valor de la resistencia de carga no sesgará la frecuencia máxima.  Sin embargo, diferentes valores para la resistencia de carga<i>voluntad</i>cambiar la “inclinación” del diagrama de Bode (la “selectividad” del filtro).</p>
+<p>El otro estilo básico de filtros de paso de banda resonantes emplea un circuito de tanque (combinación LC paralela) para evitar que las señales de frecuencia demasiado altas o demasiado bajas lleguen a la carga: (Figura<a href="#02125.png">  below</a>)
+</p>
+<a name="02125.png"></a>
+<p> <img src="02125.png"/> </p>
+<p><i>Filtro paso banda resonante paralelo.</i></p>
+<p>El circuito del tanque tendrá mucha impedancia en resonancia, lo que permitirá que la señal llegue a la carga con una atenuación mínima.  Sin embargo, por debajo o por encima de la frecuencia de resonancia, el circuito del tanque tendrá una baja impedancia, lo que provocará un cortocircuito en la señal y dejará caer la mayor parte a través de la resistencia en serie R.<sub>1</sub>. (Cifra<a href="#22034.png">  below</a>)
+</p>
+<pre>
+parallel resonant bandpass filter            
+v1 1 0 ac 1 sin 
+r1 1 2 500      
+l1 2 0 100m     
+c1 2 0 10u      
+rload 2 0 1k    
+.ac lin 20 50 250       
+.plot ac v(2)   
+.end    
+</pre>
+<!--freq       v(2)   3.162E-02   1.000E-01    3.162E-01     1.000E+00-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--5.000E+01  6.933E-02 .       *   .             .             .-->
+<!--6.053E+01  8.814E-02 .         * .             .             .-->
+<!--7.105E+01  1.100E-01 .           .*            .             .-->
+<!--8.158E+01  1.361E-01 .           .   *         .             .-->
+<!--9.211E+01  1.684E-01 .           .     *       .             .-->
+<!--1.026E+02  2.096E-01 .           .        *    .             .-->
+<!--1.132E+02  2.640E-01 .           .           * .             .-->
+<!--1.237E+02  3.382E-01 .           .             .*            .-->
+<!--1.342E+02  4.392E-01 .           .             .   *         .-->
+<!--1.447E+02  5.630E-01 .           .             .      *      .-->
+<!--1.553E+02  6.578E-01 .           .             .        *    .-->
+<!--1.658E+02  6.432E-01 .           .             .        *    .-->
+<!--1.763E+02  5.503E-01 .           .             .      *      .-->
+<!--1.868E+02  4.543E-01 .           .             .   *         .-->
+<!--1.974E+02  3.792E-01 .           .             . *           .-->
+<!--2.079E+02  3.234E-01 .           .             *             .-->
+<!--2.184E+02  2.816E-01 .           .            *.             .-->
+<!--2.289E+02  2.495E-01 .           .          *  .             .-->
+<!--2.395E+02  2.242E-01 .           .         *   .             .-->
+<!--2.500E+02  2.038E-01 .           .        *    .             .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<a name="22034.png"></a>
+<p> <img src="22034.png"/> </p>
+<p><i>Filtro resonante paralelo: el voltaje alcanza un pico de frecuencia resonante de 159,15 Hz.</i></p>
+<p>Al igual que los diseños de filtros de paso bajo y paso alto que se basan en una resistencia en serie y un componente de “cortocircuito” paralelo para atenuar frecuencias no deseadas, este circuito resonante nunca puede proporcionar voltaje de entrada (fuente) completo a la carga.  Esa resistencia en serie siempre reducirá una cierta cantidad de voltaje siempre que haya una resistencia de carga conectada a la salida del filtro.</p>
+<a name="Tuner circuit, radio"></a>
+<p>Cabe señalar que esta forma de circuito de filtro de paso de banda es muy popular en los circuitos de sintonización de radio analógica, para seleccionar una frecuencia de radio particular entre la multitud de frecuencias disponibles en la antena.  En la mayoría de los circuitos sintonizadores de radio analógicos, el dial giratorio para la selección de estaciones mueve un condensador variable en un circuito tanque.</p>
+<a name="52004.jpg"></a>
+<p> <img src="52004.jpg"/> </p>
+<p><i>El condensador variable sintoniza el circuito del tanque del receptor de radio para seleccionar una entre muchas estaciones de transmisión.</i></p>
+<p>El condensador variable y el inductor de núcleo de aire que se muestran en la Figura<a href="#52004.jpg">  above</a>Fotografía de una radio simple comprende los elementos principales del filtro del circuito del tanque utilizado para discriminar la señal de una estación de radio de otra.</p>
+<p>Así como podemos usar circuitos resonantes LC en serie y paralelo para pasar solo aquellas frecuencias dentro de un cierto rango, también podemos usarlos para bloquear frecuencias dentro de un cierto rango, creando un filtro de eliminación de banda.  Nuevamente, tenemos dos estrategias principales a seguir para hacer esto: usar resonancia en serie o en paralelo.  Primero, veremos la variedad de series: (Figura<a href="#02126.png">  below</a>)
+</p>
+<a name="02126.png"></a>
+<p> <img src="02126.png"/> </p>
+<p><i>Filtro de parada de banda resonante en serie.</i></p>
+<p>Cuando la combinación LC en serie alcanza la resonancia, su muy baja impedancia corta la señal y la deja caer a través de la resistencia R.<sub>1</sub>e impidiendo su paso sobre la carga. (Cifra<a href="#22035.png">  below</a>)
+</p>
+<pre>
+series resonant bandstop filter    
+v1 1 0 ac 1 sin 
+r1 1 2 500      
+l1 2 3 100m     
+c1 3 0 10u      
+rload 2 0 1k    
+.ac lin 20 70 230       
+.plot ac v(2)   
+.end    
+</pre>
+<!--freq       v(2)   1.000E-03  1.000E-02   1.000E-01     1.000E+00-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<!--7.000E+01  3.213E-01 .         .             .      *      .-->
+<!--7.842E+01  2.791E-01 .         .             .     *       .-->
+<!--8.684E+01  2.401E-01 .         .             .    *        .-->
+<!--9.526E+01  2.041E-01 .         .             .   *         .-->
+<!--1.037E+02  1.708E-01 .         .             .  *          .-->
+<!--1.121E+02  1.399E-01 .         .             . *           .-->
+<!--1.205E+02  1.111E-01 .         .             .*            .-->
+<!--1.289E+02  8.413E-02 .         .            *.             .-->
+<!--1.374E+02  5.887E-02 .         .          *  .             .-->
+<!--1.458E+02  3.508E-02 .         .       *     .             .-->
+<!--1.542E+02  1.262E-02 .         .*            .             .-->
+<!--1.626E+02  8.644E-03 .        *.             .             .-->
+<!--1.711E+02  2.884E-02 .         .     *       .             .-->
+<!--1.795E+02  4.805E-02 .         .         *   .             .-->
+<!--1.879E+02  6.638E-02 .         .           * .             .-->
+<!--1.963E+02  8.388E-02 .         .            *.             .-->
+<!--2.047E+02  1.006E-01 .         .             *             .-->
+<!--2.132E+02  1.167E-01 .         .             .*            .-->
+<!--2.216E+02  1.321E-01 .         .             . *           .-->
+<!--2.300E+02  1.469E-01 .         .             . *           .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<a name="22035.png"></a>
+<p> <img src="22035.png"/> </p>
+<p><i>Filtro supresor de banda resonante en serie: Frecuencia de muesca = frecuencia resonante LC (159,15 Hz).</i></p>
+<p>A continuación, examinaremos el filtro de eliminación de banda resonante paralelo: (Figura<a href="#02127.png">  below</a>)
+</p>
+<a name="02127.png"></a>
+<p> <img src="02127.png"/> </p>
+<p><i>Filtro de parada de banda resonante paralelo.</i></p>
+<p>Los componentes LC paralelos presentan una alta impedancia en frecuencia de resonancia, bloqueando así la señal de la carga en esa frecuencia.  Por el contrario, pasa señales a la carga en cualquier otra frecuencia. (Cifra<a href="#22036.png">  below</a>)
+</p>
+<pre>
+parallel resonant bandstop filter  
+v1 1 0 ac 1 sin 
+l1 1 2 100m     
+c1 1 2 10u      
+rload 2 0 1k    
+.ac lin 20 100 200      
+.plot ac v(2)   
+.end    
+</pre>
+<!--freq       v(2)  3.162E-02  1.000E-01    3.162E-01    1.000E+00 -->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<!--1.000E+02  9.947E-01 .         .             .             *     .-->
+<!--1.053E+02  9.932E-01 .         .             .             *     .-->
+<!--1.105E+02  9.911E-01 .         .             .             *     .-->
+<!--1.158E+02  9.883E-01 .         .             .             *     .-->
+<!--1.211E+02  9.841E-01 .         .             .             *     .-->
+<!--1.263E+02  9.778E-01 .         .             .             *     .-->
+<!--1.316E+02  9.675E-01 .         .             .             *     .-->
+<!--1.368E+02  9.497E-01 .         .             .            *.     .-->
+<!--1.421E+02  9.152E-01 .         .             .            *.     .-->
+<!--1.474E+02  8.388E-01 .         .             .           * .     .-->
+<!--1.526E+02  6.420E-01 .         .             .        *    .     .-->
+<!--1.579E+02  1.570E-01 .         .    *        .             .     .-->
+<!--1.632E+02  4.450E-01 .         .             .   *         .     .-->
+<!--1.684E+02  7.496E-01 .         .             .         *   .     .-->
+<!--1.737E+02  8.682E-01 .         .             .           * .     .-->
+<!--1.789E+02  9.201E-01 .         .             .            *.     .-->
+<!--1.842E+02  9.465E-01 .         .             .            *.     .-->
+<!--1.895E+02  9.616E-01 .         .             .             *     .-->
+<!--1.947E+02  9.710E-01 .         .             .             *     .-->
+<!--2.000E+02  9.773E-01 .         .             .             *     .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<a name="22036.png"></a>
+<p> <img src="22036.png"/> </p>
+<p><i>Filtro supresor de banda resonante paralelo: Frecuencia de muesca = frecuencia resonante LC (159,15 Hz).</i></p>
+<p>Una vez más, observe cómo la ausencia de una resistencia en serie genera una atenuación mínima para todas las señales deseadas (pasadas).  Por el contrario, la amplitud en la frecuencia de muesca es muy baja.  En otras palabras, se trata de un filtro muy “selectivo”.</p>
+<p>En todos estos diseños de filtros resonantes, la selectividad depende en gran medida de la "pureza" de la inductancia y capacitancia utilizadas.  Si hay alguna resistencia parásita (especialmente probable en el inductor), esto disminuirá la capacidad del filtro para discriminar frecuencias con precisión, además de introducir efectos antiresonantes que sesgarán la frecuencia pico/muesca.</p>
+<p>En este punto es necesario hacer una advertencia a quienes diseñan filtros de paso bajo y paso alto.  Después de evaluar los diseños de filtros de paso bajo y paso alto estándar RC y LR, a un estudiante se le podría ocurrir que se podría lograr un diseño mejor y más efectivo de filtro de paso bajo o paso alto combinando elementos capacitivos e inductivos como en la Figura<a href="#02128.png">  below</a>.
+</p>
+<a name="02128.png"></a>
+<p> <img src="02128.png"/> </p>
+<p><i>Filtro de paso bajo inductivo capacitivo.</i></p>
+<p>Los inductores deben bloquear las frecuencias altas, mientras que el capacitor también debe cortocircuitar las frecuencias altas, ambos trabajando juntos para permitir que solo las señales de baja frecuencia lleguen a la carga.</p>
+<p>Al principio, esto parece ser una buena estrategia y elimina la necesidad de una resistencia en serie.  Sin embargo, el estudiante más perspicaz reconocerá que cualquier combinación de condensadores e inductores juntos en un circuito probablemente cause efectos resonantes a una determinada frecuencia.  La resonancia, como hemos visto antes, puede provocar que sucedan cosas extrañas.  Tracemos un análisis SPICE y veamos qué sucede en un amplio rango de frecuencia: (Figura<a href="#22037.png">  below</a>)
+</p>
+<pre>
+lc lowpass filter  
+v1 1 0 ac 1 sin 
+l1 1 2 100m     
+c1 2 0 1u       
+l2 2 3 100m     
+rload 3 0 1k    
+.ac lin 20 100 1k       
+.plot ac v(3)   
+.end    
+</pre>
+<!--freq       v(3)  1.000E-01  3.162E-01    1.000E+00    3.162E+00-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<!--1.000E+02  1.033E+00 .         .             *             .-->
+<!--1.474E+02  1.074E+00 .         .             .*            .-->
+<!--1.947E+02  1.136E+00 .         .             . *           .-->
+<!--2.421E+02  1.228E+00 .         .             . *           .-->
+<!--2.895E+02  1.361E+00 .         .             .   *         . -->
+<!--3.368E+02  1.557E+00 .         .             .    *        .-->
+<!--3.842E+02  1.853E+00 .         .             .       *     .-->
+<!--4.316E+02  2.308E+00 .         .             .         *   .-->
+<!--4.789E+02  2.919E+00 .         .             .            *.-->
+<!--5.263E+02  3.185E+00 .         .             .             * -->
+<!--5.737E+02  2.553E+00 .         .             .          *  .-->
+<!--6.211E+02  1.802E+00 .         .             .      *      .-->
+<!--6.684E+02  1.298E+00 .         .             .  *          .-->
+<!--7.158E+02  9.778E-01 .         .             *             .-->
+<!--7.632E+02  7.650E-01 .         .          *  .             .-->
+<!--8.105E+02  6.165E-01 .         .       *     .             .-->
+<!--8.579E+02  5.084E-01 .         .     *       .             .-->
+<!--9.053E+02  4.268E-01 .         .   *         .             .-->
+<!--9.526E+02  3.635E-01 .         . *           .             .-->
+<!--1.000E+03  3.133E-01 .         *             .             .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+<br/>
+<a name="22037.png"></a>
+<p> <img src="22037.png"/> </p>
+<p><i>Respuesta inesperada del filtro de paso bajo LC.</i></p>
+<p>Lo que se suponía que era un filtro de paso bajo resulta ser un filtro de paso de banda con un pico alrededor de 526 Hz.  La capacitancia y la inductancia en este circuito de filtro alcanzan resonancia en ese punto, creando una gran caída de voltaje alrededor de C.<sub>1</sub>, que se ve en la carga, independientemente de L<sub>2</sub>La influencia atenuante.  ¡El voltaje de salida a la carga en este punto en realidad excede el voltaje de entrada (fuente)!  Un poco más de reflexión revela que si L<sub>1</sub>y C<sub>2</sub>están en resonancia, impondrán una carga muy pesada (impedancia muy baja) en la fuente de CA, lo que podría no ser bueno tampoco.  Realizaremos el mismo análisis nuevamente, solo que esta vez trazando C<sub>1</sub>voltaje, vm(2) en la figura<a href="#22038.png">  below</a>, y la corriente de la fuente, I(v1), junto con el voltaje de carga, vm(3):</p>
+<!--legend:-->
+<!--*: v(3)-->
+<!--+: v(2)-->
+<!--=: i(v1)-->
+<!--freq       v(3) -->
+<!--( *)---------  1.000E-01     3.162E-01     1.000E+00     3.162E+00-->
+<!--(+)----------  3.162E-01     1.000E+00     3.162E+00     1.000E+01-->
+<!--(=)----------  1.000E-03     3.162E-03     1.000E-02     3.162E-02-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--1.000E+02  1.033E+00 . =           +             *             .-->
+<!--1.474E+02  1.074E+00 .   =         .+            .*            .-->
+<!--1.947E+02  1.136E+00 .     =       . +           . *           .-->
+<!--2.421E+02  1.228E+00 .        =    .  +          . *           .-->
+<!--2.895E+02  1.361E+00 .           = .   +         .   *         .-->
+<!--3.368E+02  1.557E+00 .             .=    +       .    *        .-->
+<!--3.842E+02  1.853E+00 .             .   =   +     .       *     .-->
+<!--4.316E+02  2.308E+00 .             .       =  +  .         *   .-->
+<!--4.789E+02  2.919E+00 .             .           = +            *.-->
+<!--5.263E+02  3.185E+00 .             .             .x            *-->
+<!--5.737E+02  2.553E+00 .             .           +=.          *  .-->
+<!--6.211E+02  1.802E+00 .             .       + =   .      *      .-->
+<!--6.684E+02  1.298E+00 .             .   +  =      .  *          .-->
+<!--7.158E+02  9.778E-01 .             .+  =         *             .-->
+<!--7.632E+02  7.650E-01 .           + . =        *  .             .-->
+<!--8.105E+02  6.165E-01 .         +   =       *     .             .-->
+<!--8.579E+02  5.084E-01 .      +     =.     *       .             .-->
+<!--9.053E+02  4.268E-01 .    +      = .   *         .             .-->
+<!--9.526E+02  3.635E-01 .   +     =   . *           .             .-->
+<!--1.000E+03  3.133E-01 . +      =    *             .             .-->
+<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<a name="22038.png"></a>
+<p> <img src="22038.png"/> </p>
+<p><i>La corriente aumenta ante la resonancia no deseada del filtro de paso bajo LC.</i></p>
+<p>Efectivamente, vemos el voltaje en C<sub>1</sub>y la corriente de la fuente alcanza un punto alto a la misma frecuencia donde el voltaje de carga es máximo.  Si esperáramos que este filtro proporcionara una función de paso bajo simple, los resultados podrían decepcionarnos.</p>
+<p>El problema es que un filtro LC tiene una impedancia de entrada y una impedancia de salida que deben coincidir. La impedancia de la fuente de voltaje debe coincidir con la impedancia de entrada del filtro, y la impedancia de salida del filtro debe coincidir con "rload" para obtener una respuesta plana. La impedancia de entrada y salida viene dada por la raíz cuadrada de (L/C).</p>
+<pre>
+           Z = (L/C)<sup>1/2</sup>
+</pre>
+<p>Tomando los valores de los componentes de (Figura<a href="#02128.png">  below</a>), podemos encontrar la impedancia del filtro y la , R requerida.<sub>g</sub>y r<sub>carga</sub>para igualarlo.</p>
+<pre>
+                For L= 100 mH,   C= 1µF
+           Z = (L/C)<sup>1/2</sup>=((100 mH)/(1 µF))<sup>1/2</sup> = 316 Ω
+</pre>
+<p>En la figura<a href="#02517.png">  below</a>hemos agregado R<sub>g</sub>= 316 Ω al generador, y cambió la carga R<sub>carga</sub>de 1000 Ω a 316 Ω.  Tenga en cuenta que si necesitáramos manejar una carga de 1000 Ω, la relación L/C podría haberse ajustado para igualar esa resistencia.</p>
+<a name="02517.png"></a>
+<p> <img src="02517.png"/> </p>
+<p><i>Circuito de fuente y carga combinados con filtro de paso bajo LC.</i></p>
+<pre>
+LC matched lowpass filter  
+V1 1 0 ac 1 SIN
+Rg 1 4 316
+L1 4 2 100m
+C1 2 0 1.0u
+L2 2 3 100m
+Rload 3 0 316
+.ac lin 20 100 1k       
+.plot ac v(3)   
+.end    
+</pre>
+<p>Cifra<a href="#22056.png">  below</a>muestra la respuesta "plana" del filtro de paso bajo LC cuando la impedancia de fuente y carga coincide con las impedancias de entrada y salida del filtro.</p>
+<a name="22056.png"></a>
+<p> <img src="22056.png"/> </p>
+<p><i>La respuesta del filtro de paso bajo LC de impedancia adaptada es casi plana hasta la frecuencia de corte.</i></p>
+<a name="swinging choke"></a>
+<a name="choke, swinging"></a>
+<p>El punto a destacar al comparar la respuesta del filtro inigualable (Figura<a href="#22037.png">  above</a>)
+<!--split for double ref-->al filtro correspondiente (Figura<a href="#22056.png">  above</a>) es que la carga variable en el filtro produce un cambio considerable de voltaje. Esta propiedad es directamente aplicable a las fuentes de alimentación con filtro LC:<i>regulación</i>es pobre. El voltaje de la fuente de alimentación cambia con un cambio en la carga. Esto es indeseable.</p>
+<p>Esta mala regulación de la carga puede mitigarse mediante un<i>estrangulador oscilante</i>. Este es un<i>ahogo</i>, inductor, diseñado para<i>saturar</i>cuando una gran corriente continua lo atraviesa. Por saturar queremos decir que la corriente CC crea un nivel "demasiado" alto de flujo en el núcleo magnético, de modo que el componente CA de la corriente no puede variar el flujo. Dado que la inducción es proporcional a dΦ/dt, la fuerte corriente continua disminuye la inductancia.  La disminución de la inductancia disminuye la reactancia X.<sub>L</sub>. La disminución de la reactancia reduce la caída de voltaje a través del inductor; aumentando así el voltaje en la salida del filtro. Esto mejora la regulación de tensión respecto a cargas variables.</p>
+<p>A pesar de la resonancia no deseada, los filtros de paso bajo formados por condensadores e inductores se utilizan con frecuencia como etapas finales en fuentes de alimentación de CA/CC para filtrar el voltaje de "ondulación" de CA no deseado fuera de la CC convertida de CA.  ¿A qué se debe esto, si este diseño de filtro en particular posee un punto de resonancia potencialmente problemático?</p>
+<p>La respuesta está en la selección de los tamaños de los componentes del filtro y las frecuencias encontradas en un convertidor CA/CC (rectificador).  Lo que intentamos hacer en un filtro de fuente de alimentación de CA/CC es separar el voltaje de CC de una pequeña cantidad de voltaje de CA de frecuencia relativamente alta.  Los inductores y condensadores del filtro son generalmente bastante grandes (lo típico son varios Henrys para los inductores y miles de µF para los condensadores), lo que hace que la frecuencia de resonancia del filtro sea muy, muy baja.  CC, por supuesto, tiene una “frecuencia” de cero, por lo que no hay forma de que pueda hacer resonar un circuito LC.  La tensión de ondulación, por otro lado, es una tensión alterna no sinusoidal que consta de una frecuencia fundamental al menos dos veces la frecuencia de la tensión alterna convertida, con armónicos muchas veces mayores.  Para fuentes de alimentación enchufables que funcionan con alimentación de CA de 60 Hz (60 Hz en Estados Unidos; 50 Hz en Europa), la frecuencia más baja que verá el filtro es de 120 Hz (100 Hz en Europa), que está muy por encima de su punto de resonancia.  Por lo tanto, se evita por completo el punto de resonancia potencialmente problemático en un filtro de este tipo.</p>
+<p>El siguiente análisis SPICE calcula la salida de voltaje (CA y CC) para dicho filtro, con fuentes de voltaje en serie CC y CA (120 Hz) que proporcionan una aproximación aproximada de la salida de frecuencia mixta de un convertidor CA/CC.</p>
+<br/>
+<a name="02129.png"></a>
+<p> <img src="02129.png"/> </p>
+<p><i>El filtro de fuente de alimentación CA/CC proporciona energía CC "sin ondulaciones".</i></p>
+<pre>
+ac/dc power supply filter  
+v1 1 0 ac 1 sin 
+v2 2 1 dc       
+l1 2 3 3
+c1 3 0 9500u    
+l2 3 4 2
+rload 4 0 1k    
+.dc v2 12 12 1  
+.ac lin 1 120 120       
+.print dc v(4)  
+.print ac v(4)  
+.end    
+</pre>
+<pre>
+v2            v(4)            
+1.200E+01     1.200E+01   DC voltage at load = 12 volts
+ 
+freq          v(4)            
+1.200E+02     3.412E-05   AC voltage at load = 34.12 microvolts
+</pre>
+<p>Con 12 voltios CC completos en la carga y solo 34,12 µV de CA restantes de la fuente de 1 voltio CA impuesta a través de la carga, este diseño de circuito demuestra ser un filtro de fuente de alimentación muy eficaz.</p>
+<p>La lección aprendida aquí sobre los efectos resonantes también se aplica al diseño de filtros de paso alto que utilizan tanto condensadores como inductores.  Siempre que las frecuencias deseadas y no deseadas estén a ambos lados del punto de resonancia, el filtro funcionará bien.  Pero si se aplica cualquier señal de magnitud significativa cercana a la frecuencia de resonancia a la entrada del filtro, ¡sucederán cosas extrañas!</p>
+<ul>
+<li><b>REVISAR:</b></li>
+<li>Se pueden emplear combinaciones resonantes de capacitancia e inductancia para crear filtros de paso de banda y de eliminación de banda muy efectivos sin la necesidad de agregar resistencia en un circuito que disminuiría el paso de las frecuencias deseadas.</li>
+<li>
+<p> <img src="12091.png"/> </p>
+</li>
+</ul>
+<h2><u><a name="xtocid89306">Summary</a></u></h2>
+<p>Por muy extenso que haya sido este capítulo hasta este punto, sólo comienza a arañar la superficie del diseño de filtros.  Una lectura rápida de cualquier libro de texto sobre diseño de filtros avanzado es suficiente para demostrar mi punto.  Las matemáticas involucradas con la selección de componentes y la predicción de la respuesta de frecuencia son, como mínimo, desalentadoras, mucho más allá del alcance del estudiante principiante en electrónica.  Mi intención aquí ha sido presentar los principios básicos del diseño de filtros con la menor cantidad de matemáticas posible, apoyándome en el poder del programa de análisis de circuitos SPICE para explorar el rendimiento del filtro.  No se pueden subestimar los beneficios de este tipo de software de simulación por ordenador, ni para el estudiante principiante ni para el ingeniero en activo.</p>
+<p>El software de simulación de circuitos permite al estudiante explorar diseños de circuitos mucho más allá del alcance de sus habilidades matemáticas.  Con la capacidad de generar diagramas de Bode y figuras precisas, se puede lograr una comprensión intuitiva de los conceptos de circuitos, algo que a menudo se pierde cuando un estudiante tiene la tarea de resolver largas ecuaciones a mano.  Si no está familiarizado con el uso de SPICE u otros programas de simulación de circuitos, ¡tómese el tiempo para estarlo!  Será de gran beneficio para tu estudio.  Ver los análisis de SPICE presentados en este libro es una ayuda para comprender los circuitos, pero configurar y analizar sus propias simulaciones de circuitos es un esfuerzo mucho más interesante y valioso como estudiante.</p>
+<h2><u><a name="xtocid89307">Contributors</a></u></h2>
+<p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>
+<p>
+<b>Jason Stark</b>(Junio ​​de 2000): Formato de documentos HTML, que dio lugar a una segunda edición mucho más atractiva.</p>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="AC_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="AC_7.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="AC_9.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

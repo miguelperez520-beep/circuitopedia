@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen V (Referencia) - Capítulo 1 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #ef4444; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen V (Referencia) - Capítulo 1</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen V</h1>
+<h1>Capítulo 1</h1>
+<!--modified 10/29/2005 (DC) added torque conversions -->
+<h1>ECUACIONES ÚTILES Y FACTORES DE CONVERSIÓN</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid93040"><u>DC circuit equations and laws</u></a></li>
+<ul>
+<li><a href="#xtocid93041"><u>Ohm's and Joule's Laws</u></a></li>
+<li><a href="#xtocid93042"><u>Kirchhoff's Laws</u></a></li>
+</ul>
+<li><a href="#xtocid93043"><u>Series circuit rules</u></a></li>
+<li><a href="#xtocid93044"><u>Parallel circuit rules</u></a></li>
+<li><a href="#xtocid93045"><u>Series and parallel component equivalent values</u></a></li>
+<ul>
+<li><a href="#xtocid93046"><u>Series and parallel resistances</u></a></li>
+<li><a href="#xtocid93047"><u>Series and parallel inductances</u></a></li>
+<li><a href="#xtocid93048"><u>Series and Parallel Capacitances</u></a></li>
+</ul>
+<li><a href="#xtocid93049"><u>Capacitor sizing equation</u></a></li>
+<li><a href="#xtocid930410"><u>Inductor sizing equation</u></a></li>
+<ul>
+<ul>
+<li><a href="#xtocid930411">Wire sizing for inductors</a></li>
+</ul>
+</ul>
+<li><a href="#xtocid930412"><u>Time constant equations</u></a></li>
+<ul>
+<li><a href="#xtocid930413"><u>Value of time constant in series RC and RL circuits</u></a></li>
+<li><a href="#xtocid930414"><u>Calculating voltage or current at specified time</u></a></li>
+<li><a href="#xtocid930415"><u>Calculating time at specified voltage or current</u></a></li>
+</ul>
+<li><a href="#xtocid930416"><u>AC circuit equations</u></a></li>
+<ul>
+<li><a href="#xtocid930417"><u>Inductive reactance</u></a></li>
+<li><a href="#xtocid930418"><u>Capacitive reactance</u></a></li>
+<li><a href="#xtocid930419"><u>Impedance in relation to R and X</u></a></li>
+<li><a href="#xtocid930420"><u>Ohm's Law for AC</u></a></li>
+<li><a href="#xtocid930421"><u>Series and Parallel Impedances</u></a></li>
+<li><a href="#xtocid930422"><u>Resonance</u></a></li>
+<li><a href="#xtocid930423"><u>AC power</u></a></li>
+</ul>
+<li><a href="#xtocid930424"><u>Decibels</u></a></li>
+<li><a href="#xtocid930425"><u>Metric prefixes and unit conversions</u></a></li>
+<li><a href="#xtocid930426"><u>Data</u></a></li>
+<li><a href="#xtocid930427"><u>Contributors</u></a></li></ul>
+<h2><u><a name="xtocid93040">DC circuit equations and laws</a></u></h2>
+<h3><u><a name="xtocid93041">Ohm's and Joule's Laws</a></u></h3>
+<a name="Ohm's Law"></a>
+<a name="Joule's Law"></a>
+<a name="E, symbol for voltage"></a>
+<a name="I, symbol for current"></a>
+<a name="R, symbol for resistance"></a>
+<a name="P, symbol for power"></a>
+<p> <img src="11001.png"/> </p>
+<p>NOTA: el símbolo "V" ("U" en Europa) se utiliza a veces para representar el voltaje en lugar de "E".  En algunos casos, un autor o diseñador de circuitos puede optar por utilizar exclusivamente "V" para voltaje, sin utilizar nunca el símbolo "E".  Otras veces, los dos símbolos se usan indistintamente, o "E" se usa para representar el voltaje de una fuente de energía, mientras que "V" se usa para representar el voltaje a través de una carga ("caída" de voltaje).</p>
+<br/>
+<h3><u><a name="xtocid93042">Kirchhoff's Laws</a></u></h3>
+<blockquote>
+<p>
+<i>"La suma algebraica de todos los voltajes en un bucle debe ser igual a cero".</i>
+</p>
+<p>
+<b>Ley de voltaje de Kirchhoff (KVL)</b>
+</p>
+</blockquote>
+<br/>
+<blockquote>
+<p>
+<i>"La suma algebraica de todas las corrientes que entran y salen de un nodo debe ser igual a cero".</i>
+</p>
+<p>
+<b>Ley actual de Kirchhoff (KCL)</b>
+</p>
+</blockquote>
+<h2><u><a name="xtocid93043">Series circuit rules</a></u></h2>
+<ul>
+<li>Los componentes de un circuito en serie comparten la misma corriente.  I<sub>total</sub> = I<sub>1</sub> = I<sub>2</sub>= . . . I<sub>n</sub></li>
+<li>La resistencia total en un circuito en serie es igual a la suma de las resistencias individuales, por lo que<i>mayor que</i>que cualquiera de las resistencias individuales.  R<sub>total</sub> = R<sub>1</sub> + R<sub>2</sub>+ . . . R<sub>n</sub></li>
+<li>El voltaje total en un circuito en serie es igual a la suma de las caídas de voltaje individuales.  mi<sub>total</sub> = E<sub>1</sub> + E<sub>2</sub>+ . . . mi<sub>n</sub></li>
+</ul>
+<h2><u><a name="xtocid93044">Parallel circuit rules</a></u></h2>
+<ul>
+<li>Los componentes de un circuito en paralelo comparten el mismo voltaje.  mi<sub>total</sub> = E<sub>1</sub> = E<sub>2</sub>= . . . mi<sub>n</sub></li>
+<li>La resistencia total en un circuito paralelo es<i>menos</i>que cualquiera de las resistencias individuales.  R<sub>total</sub>= 1 / (1/R<sub>1</sub>+ 1/R<sub>2</sub>+ . . . 1/R<sub>n</sub>)</li>
+<li>La corriente total en un circuito en paralelo es igual a la suma de las corrientes de las ramas individuales.  I<sub>total</sub> = I<sub>1</sub> + I<sub>2</sub>+ . . . I<sub>n</sub></li>
+</ul>
+<h2><u><a name="xtocid93045">Series and parallel component equivalent values</a></u></h2>
+<a name="Series circuits"></a>
+<a name="Parallel circuits"></a>
+<h3><u><a name="xtocid93046">Series and parallel resistances</a></u></h3>
+<p> <img src="11002.png"/> </p>
+<br/>
+<h3><u><a name="xtocid93047">Series and parallel inductances</a></u></h3>
+<p> <img src="11003.png"/> </p>
+<br/>
+<h3><u><a name="xtocid93048">Series and Parallel Capacitances</a></u></h3>
+<p> <img src="11004.png"/> </p>
+<h2><u><a name="xtocid93049">Capacitor sizing equation</a></u></h2>
+<a name="Capacitance equation"></a>
+<p> <img src="10230.png"/> </p>
+<p>
+<p> <img src="11095.png"/> </p>
+</p>
+<p>
+<p> <img src="11096.png"/> </p>
+</p>
+<p>Una fórmula para capacitancia en picofaradios usando dimensiones prácticas:</p>
+<p> <img src="10277.png"/> </p>
+<h2><u><a name="xtocid930410">Inductor sizing equation</a></u></h2>
+<a name="Inductance equation"></a>
+<p> <img src="11102.png"/> </p>
+<p>Las fórmulas de Wheeler para la inductancia de bobinas con núcleo de aire que aparecen a continuación son útiles para inductores de radiofrecuencia. La siguiente fórmula para la inductancia de una bobina de solenoide con núcleo de aire de una sola capa tiene una precisión de aproximadamente el 1 % para 2r/l &lt; 3. La fórmula de la bobina gruesa tiene una precisión del 1 % cuando los términos del denominador son aproximadamente iguales. La fórmula en espiral de Wheeler tiene una precisión del 1% para c&gt;0,2r. Si bien se trata de una fórmula de "alambre redondo", aún puede ser aplicable a inductores en espiral de circuitos impresos con una precisión reducida.</p>
+<p> <img src="11098.png"/> </p>
+<p>La inductancia en henrios de un inductor de circuito impreso cuadrado viene dada por dos fórmulas donde p=q y p≠q.</p>
+<p> <img src="11100.png"/> </p>
+<h4><a name="xtocid930411">Wire sizing for inductors </a></h4>
+<a name="AWGcm"></a>
+<p>La tabla de cables proporciona "vueltas por pulgada" para cables magnéticos esmaltados que se utilizan con las fórmulas de inductancia para bobinas.  El área de la sección transversal circular en mil determina la capacidad de carga de corriente de los cables.</p>
+<p> <img src="11099.png"/> </p>
+<h2><u><a name="xtocid930412">Time constant equations</a></u></h2>
+<a name="Time constant equations"></a>
+<h3><u><a name="xtocid930413">Value of time constant in series RC and RL circuits</a></u></h3>
+<p>Constante de tiempo en segundos = RC</p>
+<p>Constante de tiempo en segundos = L/R</p>
+<br/>
+<h3><u><a name="xtocid930414">Calculating voltage or current at specified time</a></u></h3>
+<p> <img src="10245.png"/> </p>
+<br/>
+<h3><u><a name="xtocid930415">Calculating time at specified voltage or current</a></u></h3>
+<p> <img src="10264.png"/> </p>
+<h2><u><a name="xtocid930416">AC circuit equations</a></u></h2>
+<a name="Reactance"></a>
+<a name="Impedance"></a>
+<a name="Resonance"></a>
+<a name="Power factor"></a>
+<h3><u><a name="xtocid930417">Inductive reactance</a></u></h3>
+<p> <img src="11005.png"/> </p>
+<br/>
+<h3><u><a name="xtocid930418">Capacitive reactance</a></u></h3>
+<p> <img src="11006.png"/> </p>
+<br/>
+<h3><u><a name="xtocid930419">Impedance in relation to R and X</a></u></h3>
+<blockquote>
+Z<sub>L</sub>= R + jX<sub>L</sub>
+</blockquote>
+<blockquote>
+Z<sub>C</sub>= R - jX<sub>C</sub>
+</blockquote>
+<br/>
+<h3><u><a name="xtocid930420">Ohm's Law for AC</a></u></h3>
+<a name="Ohm's Law, AC"></a>
+<p> <img src="11009.png"/> </p>
+<br/>
+<h3><u><a name="xtocid930421">Series and Parallel Impedances</a></u></h3>
+<p> <img src="11008.png"/> </p>
+<p>NOTA: Todas las impedancias deben calcularse en<i>complejo</i>forma numérica para que estas ecuaciones funcionen.</p>
+<br/>
+<h3><u><a name="xtocid930422">Resonance</a></u></h3>
+<p> <img src="11010.png"/> </p>
+<p>NOTA: Esta ecuación se aplica a un circuito LC no resistivo.  En circuitos que contienen resistencia además de inductancia y capacitancia, esta ecuación se aplica sólo a configuraciones en serie y en paralelo donde R es muy pequeño.</p>
+<br/>
+<h3><u><a name="xtocid930423">AC power</a></u></h3>
+<p> <img src="12123.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="11011.png"/> </p>
+<h2><u><a name="xtocid930424">Decibels</a></u></h2>
+<p> <img src="11063.png"/> </p>
+<br/>
+<h2><u><a name="xtocid930425">Metric prefixes and unit conversions</a></u></h2>
+<a name="Metric system"></a>
+<a name="Prefix, metric"></a>
+<a name="Conversion factor"></a>
+<a name="Factor, conversion"></a>
+<ul>
+<li><b>Prefijos métricos</b></li>
+<li>Yotta = 10<sup>24</sup>Símbolo: Y</li>
+<li>Zetta = 10<sup>21</sup>Símbolo: Z</li>
+<li>Exa = 10<sup>18</sup>Símbolo: E</li>
+<li>Peta = 10<sup>15</sup>Símbolo: P</li>
+<li>Tera = 10<sup>12</sup>Símbolo: T</li>
+<li>Giga = 10<sup>9</sup>Símbolo: G</li>
+<li>Mega = 10<sup>6</sup>Símbolo: M</li>
+<li>Kilo = 10<sup>3</sup>Símbolo: k</li>
+<li>Hecto = 10<sup>2</sup>Símbolo: h</li>
+<li>Deca = 10<sup>1</sup>Símbolo: da</li>
+<li>Deci = 10<sup>-1</sup>Símbolo: d</li>
+<li>Centi = 10<sup>-2</sup>Símbolo: c</li>
+<li>Milli = 10<sup>-3</sup>Símbolo: m</li>
+<li>Micro = 10<sup>-6</sup>Símbolo: µ</li>
+<li>Nano = 10<sup>-9</sup>Símbolo: norte</li>
+<li>Pico = 10<sup>-12</sup>Símbolo: p</li>
+<li>Femto = 10<sup>-15</sup>Símbolo: f</li>
+<li>Atto = 10<sup>-18</sup>Símbolo: un</li>
+<li>Zepto = 10<sup>-21</sup>Símbolo: z</li>
+<li>Yocto = 10<sup>-24</sup>Símbolo: y</li>
+</ul>
+<p> <img src="00356.png"/> </p>
+<br/>
+<ul>
+<li><b>Factores de conversión para temperatura.</b></li>
+<li><sup>o</sup>F = (<sup>o</sup>C)(9/5) + 32</li>
+<li><sup>o</sup>C = (<sup>o</sup>F - 32)(5/9)</li>
+<li><sup>o</sup>R = <sup>o</sup>F+459,67</li>
+<li><sup>o</sup>K = <sup>o</sup>C+273,15</li>
+</ul>
+<br/>
+<p>
+<b>Equivalencias de conversión para volumen</b>
+</p>
+<blockquote>
+1 US gallon (gal) = 231.0 cubic inches (in<sup>3</sup>) = 4 cuartos (qt) = 8 pintas (pt) = 128 onzas líquidas (fl. oz.) = 3,7854 litros (l)</blockquote>
+<blockquote>
+1 Imperial gallon (gal) = 160 fluid ounces (fl. oz.) = 4.546 liters (l)
+</blockquote>
+<br/>
+<p>
+<b>Equivalencias de conversión para distancia</b>
+</p>
+<blockquote>
+1 inch (in) = 2.540000 centimeter (cm)
+</blockquote>
+<br/>
+<p>
+<b>Equivalencias de conversión para velocidad</b>
+</p>
+<blockquote>
+1 mile per hour (mi/h) = 88 feet per minute (ft/m) = 1.46667 feet per second (ft/s) = 1.60934 kilometer per hour (km/h) = 0.44704 meter per second (m/s) = 0.868976 knot (knot -- international)
+</blockquote>
+<br/>
+<p>
+<b>Equivalencias de conversión de peso</b>
+</p>
+<blockquote>
+1 pound (lb) = 16 ounces (oz) = 0.45359 kilogram (kg)
+</blockquote>
+<br/>
+<p>
+<b>Equivalencias de conversión para fuerza</b>
+</p>
+<blockquote>
+1 pound-force (lbf) = 4.44822 newton (N)
+</blockquote>
+<br/>
+<p>
+<b>Aceleración de la gravedad (caída libre), estándar terrestre</b>
+</p>
+<blockquote>
+9.806650 meters per second per second (m/s<sup>2</sup>) = 32.1740 pies por segundo por segundo (pies/s<sup>2</sup>)
+</blockquote>
+<br/>
+<p>
+<b>Equivalencias de conversión para área</b>
+</p>
+<blockquote>
+1 acre = 43560 square feet (ft<sup>2</sup>) = 4840 yardas cuadradas (yd<sup>2</sup>) = 4046,86 metros cuadrados (m<sup>2</sup>)
+</blockquote>
+<br/>
+<p>
+<b>Equivalencias de conversión para presión</b>
+</p>
+<blockquote>
+1 pound per square inch (psi) = 2.03603 inches of mercury (in. Hg) = 27.6807 inches of water (in. W.C.) = 6894.757 pascals (Pa) = 0.0680460 atmospheres (Atm) = 0.0689476 bar (bar)
+</blockquote>
+<br/>
+<p>
+<b>Equivalencias de conversión de energía o trabajo</b>
+</p>
+<blockquote>
+1 british thermal unit (BTU -- "International Table") = 251.996 calories (cal -- "International Table") = 1055.06 joules (J) = 1055.06 watt-seconds (W-s) = 0.293071 watt-hour (W-hr) = 1.05506 x 10<sup>10</sup>ergios (ergio) = 778,169 pie-libra-fuerza (ft-lbf)</blockquote>
+<br/>
+<p>
+<b>Equivalencias de conversión de potencia</b>
+</p>
+<blockquote>
+1 horsepower (hp -- 550 ft-lbf/s) = 745.7 watts (W) = 2544.43 british thermal units per hour (BTU/hr) = 0.0760181 boiler horsepower (hp -- boiler)
+</blockquote>
+<br/>
+<p>
+<b>Equivalencias de conversión del par motor</b>
+</p>
+<p> <img src="11094.png"/> </p>
+<p>Ubique la fila correspondiente a la unidad de torsión conocida a lo largo de la izquierda de la tabla. Multiplique por el factor debajo de la columna para obtener las unidades deseadas. Por ejemplo, para convertir 2 oz-in de torque a n-m, ubique la fila de oz-in en la tabla de la izquierda. Localice 7.062 x 10<sup>-3</sup>en la intersección de la columna de unidades n-m deseadas. Multiplica 2 oz-pulg x (7,062 x 10<sup>-3</sup>) = 14,12 x 10<sup>-3</sup>Nuevo Méjico.</p>
+<br/>
+<p>Convertir entre unidades es fácil si tienes un conjunto de equivalencias con las que trabajar.  Supongamos que quisiéramos convertir una cantidad de energía de 2500 calorías en vatios-hora.  Lo que necesitaríamos hacer es encontrar un conjunto de cifras equivalentes para esas unidades.  En nuestra referencia aquí, vemos que 251,996 calorías equivalen físicamente a 0,293071 vatios hora.  Para convertir calorías a vatios-hora, debemos formar una "fracción unitaria" con estas cifras físicamente iguales (una fracción compuesta de diferentes cifras y diferentes unidades, siendo el numerador y el denominador<i>físicamente</i>iguales entre sí), colocando la unidad deseada en el numerador y la unidad inicial en el denominador, y luego multiplicamos nuestro valor inicial de calorías por esa fracción.</p>
+<p>Dado que ambos términos de la "fracción unitaria" son físicamente iguales entre sí, la fracción en su conjunto tiene una<i>físico</i>valor de 1, por lo que no cambia el valor verdadero de ninguna cifra cuando se multiplica por ella.  Sin embargo, cuando se cancelen unidades, habrá un cambio de unidades.  Por ejemplo, 2500 calorías multiplicadas por la fracción unitaria de (0,293071 w-hr / 251,996 cal) = 2,9075 vatios-hora.</p>
+<p> <img src="11064.png"/> </p>
+<p>El enfoque de la "fracción unitaria" para la conversión de unidades puede extenderse más allá de pasos individuales.  Supongamos que queremos convertir una medida de flujo de fluido de 175 galones por hora en litros por día.  Tenemos dos unidades para convertir aquí: galones a litros y horas a días.  Recuerde que la palabra "por" en matemáticas significa "dividido por", por lo que nuestra cifra inicial de 175 galones<i>per</i>hora significa 175 galones divididos por horas.  Expresando nuestra cifra original como tal fracción, la multiplicamos por las fracciones unitarias necesarias para convertir galones a litros (3,7854 litros = 1 galón) y horas a días (1 día = 24 horas).  Las unidades deben estar dispuestas en la fracción unitaria de tal manera que las unidades no deseadas se cancelen entre sí por encima y por debajo de las barras de fracción.  Para este problema, significa usar una fracción unitaria de galones a litros de (3,7854 litros / 1 galón) y una fracción unitaria de horas a días de (24 horas / 1 día):</p>
+<p> <img src="11065.png"/> </p>
+<p>Nuestra respuesta final (convertida) es 15898,68 litros por día.</p>
+<h2><u><a name="xtocid930426">Data</a></u></h2>
+<p>Los factores de conversión se encontraron en los 78<sup>th</sup>edición de la<i>Manual CRC de química y física</i>, y los 3<sup>rd</sup>edición de Bela Liptak<i>Manual de ingenieros de instrumentos: medición y análisis de procesos</i>. 
+</p>
+<h2><u><a name="xtocid930427">Contributors</a></u></h2>
+<p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>
+<p>
+<b>Gerardo Gardner</b>(Enero de 2003): Adición de la conversión de galones imperiales.</p>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="REF_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="index.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="REF_10.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

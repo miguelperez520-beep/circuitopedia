@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen V (Referencia) - Capítulo 4 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #ef4444; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen V (Referencia) - Capítulo 4</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen V</h1>
+<h1>Capítulo 4</h1>
+<h1>REFERENCIA DE ÁLGEBRA</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid93310"><u>Basic identities</u></a></li>
+<li><a href="#xtocid93311"><u>Arithmetic properties</u></a></li>
+<ul>
+<li><a href="#xtocid93312"><u>The associative property</u></a></li>
+<li><a href="#xtocid93313"><u>The commutative property</u></a></li>
+<li><a href="#xtocid93314"><u>The distributive property</u></a></li>
+</ul>
+<li><a href="#xtocid93315"><u>Properties of exponents</u></a></li>
+<li><a href="#xtocid93316"><u>Radicals</u></a></li>
+<ul>
+<li><a href="#xtocid93317"><u>Definition of a radical</u></a></li>
+<li><a href="#xtocid93318"><u>Properties of radicals</u></a></li>
+</ul>
+<li><a href="#xtocid93319"><u>Important constants</u></a></li>
+<ul>
+<li><a href="#xtocid933110"><u>Euler's number</u></a></li>
+<li><a href="#xtocid933111"><u>Pi</u></a></li>
+</ul>
+<li><a href="#xtocid933112"><u>Logarithms</u></a></li>
+<ul>
+<li><a href="#xtocid933113"><u>Definition of a logarithm</u></a></li>
+<li><a href="#xtocid933114"><u>Properties of logarithms</u></a></li>
+</ul>
+<li><a href="#xtocid933115"><u>Factoring equivalencies</u></a></li>
+<li><a href="#xtocid933116"><u>The quadratic formula</u></a></li>
+<li><a href="#xtocid933117"><u>Sequences</u></a></li>
+<ul>
+<li><a href="#xtocid933118"><u>Arithmetic sequences</u></a></li>
+<li><a href="#xtocid933119"><u>Geometric sequences</u></a></li>
+</ul>
+<li><a href="#xtocid933120"><u>Factorials</u></a></li>
+<ul>
+<li><a href="#xtocid933121"><u>Definition of a factorial</u></a></li>
+<li><a href="#xtocid933122"><u>Strange factorials</u></a></li>
+</ul>
+<li><a href="#xtocid933123"><u>Solving simultaneous equations</u></a></li>
+<ul>
+<li><a href="#xtocid933124"><u>Substitution method</u></a></li>
+<li><a href="#xtocid933125"><u>Addition method</u></a></li>
+</ul>
+<li><a href="#xtocid933126"><u>Contributors</u></a></li></ul>
+<h2><u><a name="xtocid93310">Basic identities</a></u></h2>
+<a name="Algebraic identities"></a>
+<p> <img src="11018.png"/> </p>
+<p>Nota: aunque popularmente se piensa que la división por cero es igual a infinito, esto no es técnicamente cierto.  En algunas aplicaciones prácticas puede resultar útil pensar que el resultado de dicha fracción<i>que se acerca</i>infinito positivo como denominador positivo<i>aproches</i>cero (imagínese calcular la corriente I = E/R en un circuito con una resistencia acercándose a cero; la corriente se acercaría al infinito), pero la fracción real de cualquier cosa dividida por cero no está definida en el alcance de los números reales o complejos.</p>
+<h2><u><a name="xtocid93311">Arithmetic properties</a></u></h2>
+<a name="Properties, arithmetic"></a>
+<h3><u><a name="xtocid93312">The associative property</a></u></h3>
+<p>Además y en la multiplicación, los términos pueden ser arbitrariamente<i>asociado</i>entre sí mediante el uso de paréntesis:</p>
+<p> <img src="11019.png"/> </p>
+<h3><u><a name="xtocid93313">The commutative property</a></u></h3>
+<p>Además y en la multiplicación, los términos pueden intercambiarse arbitrariamente, o<i>conmutado</i>:
+</p>
+<p> <img src="11020.png"/> </p>
+<h3><u><a name="xtocid93314">The distributive property</a></u></h3>
+<p> <img src="11021.png"/> </p>
+<h2><u><a name="xtocid93315">Properties of exponents</a></u></h2>
+<a name="Properties, exponents"></a>
+<p> <img src="11022.png"/> </p>
+<h2><u><a name="xtocid93316">Radicals</a></u></h2>
+<a name="Properties, radicals "></a>
+<h3><u><a name="xtocid93317">Definition of a radical</a></u></h3>
+<p>Cuando la gente habla de "raíz cuadrada", se refiere a un radical con raíz de 2. Esto es matemáticamente equivalente a un número elevado a la potencia de 1/2.  Es útil saber esta equivalencia cuando se utiliza una calculadora para determinar una raíz extraña.  Supongamos, por ejemplo, que necesita encontrar la raíz cuarta de un número, pero su calculadora carece de un botón o función de "raíz cuarta".  si tiene una y<sup>x</sup>función (que cualquier calculadora científica debería tener), puedes encontrar la raíz cuarta elevando ese número a la potencia 1/4, o x<sup>0.25</sup>.
+</p>
+<p> <img src="11023.png"/> </p>
+<p>Es importante recordar que al resolver para un<i>incluso</i>raíz (raíz cuadrada, raíz cuarta, etc.) de cualquier número, existen<i>two</i>respuestas válidas.  Por ejemplo, la mayoría de la gente sabe que la raíz cuadrada de nueve es tres, pero<i>negativo</i>tres también es una respuesta válida, ya que (-3)<sup>2</sup>= 9 igual que 3<sup>2</sup>= 9.</p>
+<h3><u><a name="xtocid93318">Properties of radicals</a></u></h3>
+<p> <img src="11024.png"/> </p>
+<h2><u><a name="xtocid93319">Important constants</a></u></h2>
+<a name="Constants, mathematical"></a>
+<h3><u><a name="xtocid933110">Euler's number</a></u></h3>
+<p>La constante de Euler es un valor importante para funciones exponenciales, especialmente aplicaciones científicas que involucran desintegración (como la desintegración de una sustancia radiactiva).  Es especialmente importante en cálculo debido a sus propiedades singularmente autosemejantes de integración y diferenciación.</p>
+<pre>
+e approximately equals:
+2.71828 18284 59045 23536 02874 71352 66249 77572 47093 69996
+</pre>
+<p> <img src="11025.png"/> </p>
+<h3><u><a name="xtocid933111">Pi</a></u></h3>
+<p>Pi (π) se define como la relación entre la circunferencia de un círculo y su diámetro.</p>
+<pre>
+Pi approximately equals:
+3.14159 26535 89793 23846 26433 83279 50288 41971 69399 37511
+</pre>
+<br/>
+<p>
+<b>Nota:</b>Para ambas constantes de Euler (<i>e</i>) y pi (π), los espacios que se muestran entre cada conjunto de cinco dígitos no tienen significado matemático.  Se colocan allí solo para que a sus ojos les resulte más fácil "dividir" el número en grupos de cinco dígitos al copiar manualmente.</p>
+<h2><u><a name="xtocid933112">Logarithms</a></u></h2>
+<h3><u><a name="xtocid933113">Definition of a logarithm</a></u></h3>
+<a name="Logarithm"></a>
+<p> <img src="11026.png"/> </p>
+<p>"log" denota un logaritmo común (base = 10), mientras que "ln" denota un logaritmo natural (base = e).</p>
+<h3><u><a name="xtocid933114">Properties of logarithms</a></u></h3>
+<p> <img src="11027.png"/> </p>
+<a name="Transform function, definition of"></a>
+<p>Estas propiedades de los logaritmos resultan útiles para realizar operaciones complejas de multiplicación y división.  Son un ejemplo de algo llamado<i>función de transformación</i>, mediante el cual un tipo de operación matemática se transforma en otro tipo de operación matemática que es más sencilla de resolver.  Usando una tabla de cifras de logaritmos, se pueden multiplicar o dividir números sumando o restando sus logaritmos, respectivamente. luego buscar esa cifra del logaritmo en la tabla y ver cuál es el producto o cociente final.</p>
+<a name="Slide rule"></a>
+<p>Las reglas de cálculo funcionan según este principio de los logaritmos al realizar la multiplicación y división mediante la suma y resta de distancias en la diapositiva.</p>
+<p> <img src="01044.png"/> </p>
+<p>Las marcas en las escalas de una regla de cálculo están espaciadas de forma logarítmica, de modo que una posición lineal de la escala o del cursor da como resultado una indicación no lineal tal como se lee en las escalas.  Sumar o restar longitudes en estas escalas logarítmicas da como resultado una indicación equivalente al producto o cociente, respectivamente, de esas longitudes.</p>
+<p>La mayoría de las reglas de cálculo también estaban equipadas con escalas especiales para funciones trigonométricas, potencias, raíces y otras funciones aritméticas útiles.</p>
+<h2><u><a name="xtocid933115">Factoring equivalencies</a></u></h2>
+<a name="Factoring"></a>
+<p> <img src="11028.png"/> </p>
+<h2><u><a name="xtocid933116">The quadratic formula</a></u></h2>
+<a name="Quadratic formula"></a>
+<p> <img src="11029.png"/> </p>
+<h2><u><a name="xtocid933117">Sequences</a></u></h2>
+<a name="Sequences"></a>
+<a name="Arithmetic sequence"></a>
+<a name="Common difference"></a>
+<a name="Difference, common"></a>
+<h3><u><a name="xtocid933118">Arithmetic sequences</a></u></h3>
+<p>
+An <i>secuencia aritmética</i>es una serie de números obtenidos sumando (o restando) el mismo valor en cada paso.  La secuencia de conteo de un niño (1, 2, 3, 4,...) es una secuencia aritmética simple, donde<i>diferencia común</i>es 1: es decir, cada número adyacente en la secuencia difiere en un valor de uno.  Una secuencia aritmética que cuente sólo números pares (2, 4, 6, 8,...) o sólo números impares (1, 3, 5, 7, 9,...) tendría una diferencia común de 2.</p>
+<p>En la notación estándar de secuencias, una letra minúscula "a" representa un elemento (un solo número) en la secuencia.  El término "un<sub>n</sub>" se refiere al elemento en el n<sup>th</sup>paso en la secuencia.  Por ejemplo, "un<sub>3</sub>" en una secuencia aritmética de conteo par (diferencia común = 2) que comienza en 2 sería el número 6, "a<sub></sub>" representando 4 y "a<sub>1</sub>" que representa el punto inicial de la secuencia (indicado en este ejemplo como 2).</p>
+<p>La letra "A" mayúscula representa la<i>sum</i>de una secuencia aritmética.  Por ejemplo, en la misma secuencia de conteo par que comienza en 2, A<sub>4</sub>es igual a la suma de todos los elementos de un<sub>1</sub>a través de un<sub>4</sub>, que por supuesto sería 2 + 4 + 6 + 8, o 20.</p>
+<p> <img src="11030.png"/> </p>
+<h3><u><a name="xtocid933119">Geometric sequences</a></u></h3>
+<a name="Geometric sequence"></a>
+<a name="Common ratio"></a>
+<a name="Ratio, common"></a>
+<p>
+A <i>secuencia geométrica</i>, por otro lado, es una serie de números que se obtienen multiplicando (o dividiendo) por el mismo valor en cada paso.  Una secuencia binaria de peso posicional (1, 2, 4, 8, 16, 32, 64,...) es una secuencia geométrica simple, donde la<i>proporción común</i>es 2: es decir, cada número adyacente en la secuencia difiere en un<i>factor</i>de dos.</p>
+<p> <img src="11031.png"/> </p>
+<h2><u><a name="xtocid933120">Factorials</a></u></h2>
+<a name="Factorial"></a>
+<a name="! (factorial)"></a>
+<h3><u><a name="xtocid933121">Definition of a factorial</a></u></h3>
+<p>Indicado por el símbolo "!" después de un número entero; el producto de ese número entero y todos los números enteros en descenso a 1.</p>
+<p>Ejemplo de factorial:</p>
+<p> <img src="11032.png"/> </p>
+<h3><u><a name="xtocid933122">Strange factorials</a></u></h3>
+<p> <img src="11033.png"/> </p>
+<h2><u><a name="xtocid933123">Solving simultaneous equations</a></u></h2>
+<a name="Simultaneous equations"></a>
+<a name="Systems of linear equations"></a>
+<p>los términos<i>ecuaciones simultáneas</i> and <i>sistemas de ecuaciones</i>se refieren a condiciones en las que dos o más variables desconocidas están relacionadas entre sí a través de un número igual de ecuaciones.  Considere el siguiente ejemplo:</p>
+<p> <img src="11068.png"/> </p>
+<p>Para este conjunto de ecuaciones, sólo hay una única combinación de valores para<tt>x</tt> and <tt>y</tt>eso satisfará a ambos.  Cualquiera de las dos ecuaciones, consideradas por separado, tiene una infinidad de valores válidos.<tt>(x,y)</tt>soluciones, pero<i>juntos</i>solo hay uno.  Trazada en un gráfico, esta condición se vuelve obvia:</p>
+<p> <img src="11069.png"/> </p>
+<p>Cada línea es en realidad un continuo de puntos que representan posibles<tt>x</tt> and <tt>y</tt>pares de soluciones para cada ecuación.  Cada ecuación, por separado, tiene un número infinito de pares ordenados (<tt>x</tt>,<tt>y</tt>) soluciones.  Sólo hay un punto donde las dos funciones lineales<tt>x + y = 24</tt> and <tt>2x - y = -6</tt>se cruzan (donde una de sus muchas soluciones independientes funciona para ambas ecuaciones), y ahí es donde<tt>x</tt>es igual a un valor de 6 y<tt>y</tt>es igual a un valor de 18.</p>
+<p>Sin embargo, por lo general, representar gráficamente no es una forma muy eficiente de determinar el conjunto de soluciones simultáneas para dos o más ecuaciones.  Es especialmente impráctico para sistemas de tres o más variables.  En un sistema de tres variables, por ejemplo, la solución se encontraría mediante la intersección de tres planos en un espacio de coordenadas tridimensional, lo que no es un escenario fácil de visualizar.</p>
+<h3><u><a name="xtocid933124">Substitution method</a></u></h3>
+<a name="Substitution method, simultaneous equations"></a>
+<p>Existen varias técnicas algebraicas para resolver ecuaciones simultáneas.  Quizás lo más fácil de comprender sea el<i>sustitución</i>método.  Tomemos, por ejemplo, nuestro problema de ejemplo de dos variables:</p>
+<p> <img src="11068.png"/> </p>
+<p>En el método de sustitución, manipulamos una de las ecuaciones de manera que una variable se define en términos de la otra:</p>
+<p> <img src="11070.png"/> </p>
+<p>Entonces, tomamos este nuevo<i>definición</i>de una variable y<i>sustituto</i>para la misma variable en la otra ecuación.  En este caso tomamos la definición de<tt>y</tt>, que es<tt>24 - x</tt>y sustituir esto por el<tt>y</tt>término encontrado en la otra ecuación:</p>
+<p> <img src="11071.png"/> </p>
+<p>Ahora que tenemos una ecuación con una sola variable (<tt>x</tt>), podemos resolverlo usando técnicas algebraicas "normales":</p>
+<p> <img src="11072.png"/> </p>
+<p>Ahora que<tt>x</tt>se conoce, podemos sustituir este valor en cualquiera de las ecuaciones originales y obtener un valor para y.  O, para ahorrarnos algo de trabajo, podemos introducir este valor (6) en la ecuación que acabamos de generar para definir<tt>y</tt>en términos de<tt>x</tt>, siendo que ya está en una forma para resolver<tt>y</tt>:
+</p>
+<p> <img src="11073.png"/> </p>
+<p>La aplicación del método de sustitución a sistemas de tres o más variables implica un patrón similar, sólo que requiere más trabajo.  Esto generalmente es cierto para cualquier método de solución: el número de pasos necesarios para obtener soluciones aumenta rápidamente con cada variable adicional en el sistema.</p>
+<p>Para resolver tres variables desconocidas, necesitamos al menos tres ecuaciones.  Considere este ejemplo:</p>
+<p> <img src="11074.png"/> </p>
+<p>Siendo que la primera ecuación tiene los coeficientes más simples (1, -1 y 1, para<tt>x</tt>, <tt>y</tt>, y<tt>z</tt>, respectivamente), parece lógico utilizarlo para desarrollar una definición de una variable en términos de las otras dos.  En este ejemplo, resolveré<tt>x</tt>en términos de<tt>y</tt> and <tt>z</tt>:
+</p>
+<p> <img src="11075.png"/> </p>
+<p>Ahora podemos sustituir esta definición de<tt>x</tt>dónde<tt>x</tt>aparece en las otras dos ecuaciones:</p>
+<p> <img src="11076.png"/> </p>
+<p>Reduciendo estas dos ecuaciones a sus formas más simples:</p>
+<p> <img src="11077.png"/> </p>
+<p>Hasta ahora, nuestros esfuerzos han reducido el sistema de tres variables en tres ecuaciones a dos variables en dos ecuaciones.  Ahora podemos aplicar nuevamente la técnica de sustitución a las dos ecuaciones.<tt>4y - z = 4</tt> and <tt>-3y + 4z = 36</tt>para resolver cualquiera de los dos<tt>y</tt> or <tt>z</tt>.  Primero, manipularé la primera ecuación para definir<tt>z</tt>en términos de<tt>y</tt>:
+</p>
+<p> <img src="11078.png"/> </p>
+<p>A continuación, sustituiremos esta definición de<tt>z</tt>en términos de<tt>y</tt>donde vemos<tt>z</tt>en la otra ecuación:</p>
+<p> <img src="11079.png"/> </p>
+<p>Ahora que<tt>y</tt>es un valor conocido, podemos introducirlo en la ecuación que define<tt>z</tt>en términos de<tt>y</tt>y obtener una cifra para<tt>z</tt>:
+</p>
+<p> <img src="11080.png"/> </p>
+<p>Ahora, con valores para<tt>y</tt> and <tt>z</tt>conocido, podemos introducirlos en la ecuación donde definimos<tt>x</tt>en términos de<tt>y</tt> and <tt>z</tt>, para obtener un valor de<tt>x</tt>:
+</p>
+<p> <img src="11081.png"/> </p>
+<p>Para terminar, hemos encontrado valores para<tt>x</tt>, <tt>y</tt>, y<tt>z</tt>de 2, 4 y 12, respectivamente, que satisfacen las tres ecuaciones.</p>
+<h3><u><a name="xtocid933125">Addition method</a></u></h3>
+<a name="Addition method, simultaneous equations"></a>
+<p>Si bien el método de sustitución puede ser el más fácil de comprender a nivel conceptual, existen otros métodos de solución a nuestra disposición.  Uno de esos métodos es el llamado<i>suma</i>método, mediante el cual las ecuaciones se suman entre sí con el fin de cancelar términos variables.</p>
+<p>Tomemos nuestro sistema de dos variables utilizado para demostrar el método de sustitución:</p>
+<p> <img src="11068.png"/> </p>
+<p>Una de las reglas de álgebra más utilizadas es que puedes realizar cualquier operación aritmética que desees con una ecuación siempre que la hagas.<i>igualmente a ambos lados</i>.  Con referencia a la suma, esto significa que podemos sumar cualquier cantidad que queramos a ambos lados de una ecuación, siempre que sea la<i>mismo</i>cantidad, sin alterar la verdad de la ecuación.</p>
+<p>Entonces, una opción que tenemos es sumar los lados correspondientes de las ecuaciones para formar una nueva ecuación.  Dado que cada ecuación es una expresión de igualdad (la misma cantidad en cada lado de la ecuación)<tt>=</tt>signo), sumar el lado izquierdo de una ecuación al lado izquierdo de la otra ecuación es válido siempre que sumemos también los lados derechos de las dos ecuaciones.  En nuestro conjunto de ecuaciones de ejemplo, por ejemplo, podemos sumar<tt>x + y</tt> to <tt>2x - y</tt>y agregar<tt>24</tt> and <tt>-6</tt>juntos también para formar una nueva ecuación.  ¿Qué beneficio tiene esto para nosotros?  Examina lo que sucede cuando hacemos esto con nuestro conjunto de ecuaciones de ejemplo:</p>
+<p> <img src="11082.png"/> </p>
+<p>Debido a que la ecuación superior contenía un valor positivo<tt>y</tt>término mientras que la ecuación inferior contenía un valor negativo<tt>y</tt>término, estos dos términos se cancelaron entre sí en el proceso de suma, sin dejar<tt>y</tt>término en la suma.  Lo que nos queda es una nueva ecuación, pero con una sola variable desconocida,<tt>x</tt>!  Esto nos permite resolver fácilmente el valor de<tt>x</tt>:
+</p>
+<p> <img src="11083.png"/> </p>
+<p>Una vez que tengamos un valor conocido para<tt>x</tt>, por supuesto, determinando<tt>y</tt>El valor de es una simple cuestión de sustitución (reemplazar<tt>x</tt>con el numero<tt>6</tt>) en una de las ecuaciones originales.  En este ejemplo, la técnica de sumar las ecuaciones funcionó bien para producir una ecuación con una única variable desconocida.  ¿Qué tal un ejemplo donde las cosas no son tan simples?  Considere el siguiente conjunto de ecuaciones:</p>
+<p> <img src="11084.png"/> </p>
+<p>Podríamos sumar estas dos ecuaciones (siendo ésta una operación algebraica completamente válida), pero no nos beneficiaría en el objetivo de obtener valores para<tt>x</tt> and <tt>y</tt>:
+</p>
+<p> <img src="11085.png"/> </p>
+<p>La ecuación resultante todavía contiene dos variables desconocidas, al igual que las ecuaciones originales, por lo que no hemos avanzado más en la obtención de una solución.  Sin embargo, ¿qué pasaría si pudiéramos manipular una de las ecuaciones para tener un término negativo que<i>quería</i>cancelar el término respectivo en la otra ecuación cuando se suma?  Entonces, el sistema se reduciría a una sola ecuación con una única variable desconocida, tal como en el último ejemplo (fortuito).</p>
+<p>Si tan solo pudiéramos girar el<tt>y</tt>término en la ecuación inferior en un<tt>- 2 años</tt>término, de modo que cuando se sumaron las dos ecuaciones, ambas<tt>y</tt>Los términos de las ecuaciones se cancelarían, dejándonos sólo con una<tt>x</tt>plazo, esto nos acercaría a una solución.  Afortunadamente, esto no es difícil de hacer.  si nosotros<i>multiplicar</i>todos y cada uno de los términos de la ecuación inferior por un<tt>-2</tt>, producirá el resultado que buscamos:</p>
+<p> <img src="11086.png"/> </p>
+<p>Ahora, podemos agregar esta nueva ecuación a la ecuación superior original:</p>
+<p> <img src="11087.png"/> </p>
+<p>Resolviendo para<tt>x</tt>, obtenemos un valor de<tt>3</tt>:
+</p>
+<p> <img src="11088.png"/> </p>
+<p>Sustituyendo este nuevo valor por<tt>x</tt>en una de las ecuaciones originales, el valor de<tt>y</tt>se determina fácilmente:</p>
+<p> <img src="11089.png"/> </p>
+<p>Usar esta técnica de solución en un sistema de tres variables es un poco más complejo.  Al igual que con la sustitución, debes usar esta técnica para reducir el sistema de tres ecuaciones de tres variables a dos ecuaciones con dos variables y luego aplicarla nuevamente para obtener una sola ecuación con una variable desconocida.  Para demostrarlo, usaré el sistema de ecuaciones de tres variables de la sección de sustitución:</p>
+<p> <img src="11074.png"/> </p>
+<p>Siendo que la ecuación superior tiene valores de coeficientes de<tt>1</tt>para cada variable, será una ecuación fácil de manipular y utilizar como herramienta de cancelación.  Por ejemplo, si deseamos cancelar el<tt>3x</tt>término de la ecuación del medio, todo lo que tenemos que hacer es tomar la ecuación superior, multiplicar cada uno de sus términos por<tt>-3</tt>, luego agréguelo a la ecuación del medio de esta manera:</p>
+<p> <img src="11090.png"/> </p>
+<p>Podemos eliminar la ecuación inferior de su<tt>-5x</tt>término de la misma manera: tome la ecuación superior original, multiplique cada uno de sus términos por<tt>5</tt>, luego agregue esa ecuación modificada a la ecuación inferior, dejando una nueva ecuación con solo<tt>y</tt> and <tt>z</tt>términos:</p>
+<p> <img src="11091.png"/> </p>
+<p>En este punto, tenemos dos ecuaciones con las mismas dos variables desconocidas,<tt>y</tt> and <tt>z</tt>:
+</p>
+<p> <img src="11092.png"/> </p>
+<p>Mediante inspección, debe ser evidente que el<tt>-z</tt>El término de la ecuación superior podría aprovecharse para cancelar la<tt>4z</tt>término en la ecuación inferior si sólo multiplicamos cada término de la ecuación superior por<tt>4</tt>y sumamos las dos ecuaciones:</p>
+<p> <img src="11093.png"/> </p>
+<p>Tomando la nueva ecuación<tt>13y = 52</tt>y resolviendo<tt>y</tt>(dividiendo ambos lados por<tt>13</tt>), obtenemos un valor de<tt>4</tt> for <tt>y</tt>.  Sustituyendo este valor de<tt>4</tt> for <tt>y</tt>en cualquiera de las ecuaciones de dos variables nos permite resolver para<tt>z</tt>.  Sustituyendo ambos valores de<tt>y</tt> and <tt>z</tt>en cualquiera de las ecuaciones originales de tres variables nos permite resolver<tt>x</tt>.  El resultado final (¡te ahorraré los pasos algebraicos, ya que ya deberías estar familiarizado con ellos!) es que<tt>x = 2</tt>, <tt>y = 4</tt>, y<tt>z = 12</tt>.
+</p>
+<h2><u><a name="xtocid933126">Contributors</a></u></h2>
+<p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>
+<p>
+<b>Chirvasuta Constantin</b>(2 de abril de 2003): Error señalado en la fórmula de la ecuación cuadrática.</p>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="REF_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="REF_3.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="REF_5.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

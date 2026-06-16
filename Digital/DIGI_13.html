@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 13 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #f59e0b; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 13</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen IV</h1>
+<h1>Capítulo 13</h1>
+<h1>CONVERSIÓN DIGITAL-ANALOGICA</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid92520"><u>Introduction</u></a></li>
+<li><a href="#xtocid92521"><u>The R/2<sup>n</sup>R DAC</u></a></li>
+<li><a href="#xtocid92522"><u>The R/2R DAC</u></a></li>
+<li><a href="#xtocid92523"><u>Flash ADC</u></a></li>
+<li><a href="#xtocid92524"><u>Digital ramp ADC</u></a></li>
+<li><a href="#xtocid92525"><u>Successive approximation ADC</u></a></li>
+<li><a href="#xtocid92526"><u>Tracking ADC</u></a></li>
+<li><a href="#xtocid92527"><u>Slope (integrating) ADC</u></a></li>
+<li><a href="#xtocid92528"><u>Delta-Sigma (ΔΣ) ADC</u></a></li>
+<li><a href="#xtocid92529"><u>Practical considerations of ADC circuits</u></a></li></ul>
+<h2><u><a name="xtocid92520">Introduction</a></u></h2>
+<p>Conectar circuitos digitales a dispositivos sensores es sencillo si los dispositivos sensores son inherentemente digitales.  Los interruptores, relés y codificadores se interconectan fácilmente con circuitos de compuerta debido a la naturaleza de encendido/apagado de sus señales.  Sin embargo, cuando se trata de dispositivos analógicos, la interfaz se vuelve mucho más compleja.  Lo que se necesita es una manera de traducir electrónicamente señales analógicas en cantidades digitales (binarias) y viceversa.  Un<i>convertidor analógico a digital</i>, o ADC, realiza la primera tarea mientras un<i>convertidor digital a analógico</i>, o DAC, realiza lo último.</p>
+<p>Un ADC ingresa una señal eléctrica analógica, como voltaje o corriente, y genera un número binario.  En forma de diagrama de bloques, se puede representar como tal:</p>
+<p> <img src="04249.png"/> </p>
+<p>Un DAC, por otro lado, ingresa un número binario y emite una señal analógica de voltaje o corriente.  En forma de diagrama de bloques, se ve así:</p>
+<p> <img src="04250.png"/> </p>
+<p>Juntos, se utilizan a menudo en sistemas digitales para proporcionar una interfaz completa con sensores analógicos y dispositivos de salida para sistemas de control como los que se utilizan en los controles de motores de automóviles:</p>
+<p> <img src="04251.png"/> </p>
+<p>Es mucho más fácil convertir una señal digital en una señal analógica que hacer lo contrario.  Por lo tanto, comenzaremos con los circuitos DAC y luego pasaremos a los circuitos ADC.</p>
+<h2><u><a name="xtocid92521">The R/2</a><sup>n</sup>RDAC</u></h2>
+<p>Este circuito DAC, también conocido como<i>entrada ponderada binaria</i>DAC, es una variación del circuito inversor de amplificador operacional de verano.  Si recuerda, el circuito de verano inversor clásico es un amplificador operacional que utiliza retroalimentación negativa para una ganancia controlada, con varias entradas de voltaje y una salida de voltaje.  El voltaje de salida es la suma invertida (polaridad opuesta) de todos los voltajes de entrada:</p>
+<p> <img src="04269.png"/> </p>
+<p>Para un circuito verano inversor simple, todas las resistencias deben tener el mismo valor.  Si cualquiera de las resistencias de entrada fuera diferente, los voltajes de entrada tendrían diferentes grados de efecto en la salida y el voltaje de salida no sería una suma verdadera.  Sin embargo, consideremos configurar intencionalmente las resistencias de entrada en diferentes valores.  Supongamos que establecemos los valores de la resistencia de entrada en múltiples potencias de dos: R, 2R y 4R, en lugar de que todos tengan el mismo valor R:</p>
+<p> <img src="04270.png"/> </p>
+<p>A partir de V<sub>1</sub>y pasando por V<sub>3</sub>, esto le daría a cada voltaje de entrada exactamente la mitad del efecto en la salida que el voltaje anterior.  En otras palabras, el voltaje de entrada V<sub>1</sub>tiene un efecto 1:1 en el voltaje de salida (ganancia de 1), mientras que el voltaje de entrada V<sub>2</sub>tiene la mitad de ese efecto en la salida (una ganancia de 1/2), y V<sub>3</sub>la mitad de eso (una ganancia de 1/4).  Estas proporciones no fueron elegidas arbitrariamente: son las mismas proporciones que corresponden a los pesos de lugar en el sistema de numeración binario.  Si manejamos las entradas de este circuito con puertas digitales de modo que cada entrada sea de 0 voltios o voltaje de suministro completo, el voltaje de salida será una representación analógica del valor binario de estos tres bits.</p>
+<p> <img src="04271.png"/> </p>
+<p>Si trazamos los voltajes de salida para las ocho combinaciones de bits binarios (000 a 111) de entrada a este circuito, obtendremos la siguiente progresión de voltajes:</p>
+<br/>
+<pre>
+---------------------------------
+|  Binary  |   Output voltage   |
+---------------------------------
+|   000    |        0.00 V      |
+---------------------------------
+|   001    |       -1.25 V      |
+---------------------------------
+|   010    |       -2.50 V      |
+---------------------------------
+|   011    |       -3.75 V      |
+---------------------------------
+|   100    |       -5.00 V      |
+---------------------------------
+|   101    |       -6.25 V      |
+---------------------------------
+|   110    |       -7.50 V      |
+---------------------------------
+|   111    |       -8.75 V      |
+---------------------------------
+</pre>
+<br/>
+<p>Tenga en cuenta que con cada paso en la secuencia de conteo binario, se produce un cambio de 1,25 voltios en la salida.  Este circuito es muy fácil de simular usando SPICE.  En la siguiente simulación, configuré el circuito DAC con una entrada binaria de 110 (tenga en cuenta los primeros números de nodo para las resistencias R<sub>1</sub>, R<sub>2</sub>y R<sub>3</sub>: un número de nodo "1" lo conecta al lado positivo de una batería de 5 voltios y un número de nodo "0" lo conecta a tierra).  El voltaje de salida aparece en el nodo 6 en la simulación:</p>
+<p> <img src="04272.png"/> </p>
+<br/>
+<pre>
+binary-weighted dac     
+ v1 1 0 dc 5     
+ rbogus 1 0 99k  
+ r1 1 5 1k       
+ r2 1 5 2k       
+ r3 0 5 4k       
+ rfeedbk 5 6 1k  
+ e1 6 0 5 0 999k 
+ .end    
+
+node  voltage      node  voltage      node  voltage
+(1)   5.0000       (5)   0.0000       (6)  -7.5000
+</pre>
+<br/>
+<p>Podemos ajustar los valores de las resistencias en este circuito para obtener voltajes de salida directamente correspondientes a la entrada binaria.  Por ejemplo, al hacer que la resistencia de retroalimentación sea de 800 Ω en lugar de 1 kΩ, el DAC generará -1 voltio para la entrada binaria 001, -4 voltios para la entrada binaria 100, -7 voltios para la entrada binaria 111, y así sucesivamente.</p>
+<br/>
+<pre>
+(with feedback resistor set at 800 ohms)
+---------------------------------
+|  Binary  |   Output voltage   |
+---------------------------------
+|   000    |        0.00 V      |
+---------------------------------
+|   001    |       -1.00 V      |
+---------------------------------
+|   010    |       -2.00 V      |
+---------------------------------
+|   011    |       -3.00 V      |
+---------------------------------
+|   100    |       -4.00 V      |
+---------------------------------
+|   101    |       -5.00 V      |
+---------------------------------
+|   110    |       -6.00 V      |
+---------------------------------
+|   111    |       -7.00 V      |
+---------------------------------
+</pre>
+<br/>
+<p>Si deseamos expandir la resolución de este DAC (agregar más bits a la entrada), todo lo que necesitamos hacer es agregar más resistencias de entrada, manteniendo la misma secuencia de valores de potencia de dos:</p>
+<p> <img src="04273.png"/> </p>
+<p>Cabe señalar que todas las puertas lógicas deben generar exactamente los mismos voltajes cuando están en el estado "alto".  Si una puerta emite +5,02 voltios para un "alto" mientras que otra emite solo +4,86 voltios, la salida analógica del DAC se verá afectada negativamente.  Del mismo modo, todos los niveles de voltaje "bajos" deben ser idénticos entre puertas, idealmente exactamente 0,00 voltios.  Se recomienda utilizar puertas de salida CMOS y elegir valores de resistencia de entrada/retroalimentación para minimizar la cantidad de corriente que cada puerta tiene que generar o hundir.</p>
+<h2><u><a name="xtocid92522">The R/2R DAC</a></u></h2>
+<p>Una alternativa al DAC de entrada binaria ponderada es el llamado DAC R/2R, que utiliza menos valores de resistencia únicos.  Una desventaja del diseño anterior del DAC era el requisito de varios valores de resistencia de entrada precisos y diferentes: un valor único por bit de entrada binaria.  La fabricación puede simplificarse si hay menos valores de resistencia diferentes para comprar, almacenar y clasificar antes del ensamblaje.</p>
+<p>Por supuesto, podríamos tomar nuestro último circuito DAC y modificarlo para usar un único valor de resistencia de entrada, conectando múltiples resistencias en serie:</p>
+<p> <img src="04274.png"/> </p>
+<p>Desafortunadamente, este enfoque simplemente sustituye un tipo de complejidad por otro: volumen de componentes sobre diversidad de valores de componentes.  Sin embargo, existe una metodología de diseño más eficiente.</p>
+<p>Al construir un tipo diferente de red de resistencias en la entrada de nuestro circuito sumador, podemos lograr el mismo tipo de ponderación binaria con sólo dos tipos de valores de resistencia y con sólo un modesto aumento en el número de resistencias.  Esta red "escalera" se ve así:</p>
+<p> <img src="04275.png"/> </p>
+<p>El análisis matemático de esta red en escalera es un poco más complejo que el del circuito anterior, donde cada resistencia de entrada proporcionaba una ganancia fácil de calcular para ese bit.  Para aquellos que estén interesados ​​en profundizar más en las complejidades de este circuito, pueden optar por utilizar el teorema de Thevenin para cada entrada binaria (recuerde considerar los efectos de la<i>terreno virtual</i>), y/o utilizar un programa de simulación como SPICE para determinar la respuesta del circuito.  De cualquier manera, deberás obtener la siguiente tabla de cifras:</p>
+<br/>
+<pre>
+---------------------------------
+|  Binary  |   Output voltage   |
+---------------------------------
+|   000    |        0.00 V      |
+---------------------------------
+|   001    |       -1.25 V      |
+---------------------------------
+|   010    |       -2.50 V      |
+---------------------------------
+|   011    |       -3.75 V      |
+---------------------------------
+|   100    |       -5.00 V      |
+---------------------------------
+|   101    |       -6.25 V      |
+---------------------------------
+|   110    |       -7.50 V      |
+---------------------------------
+|   111    |       -8.75 V      |
+---------------------------------
+</pre>
+<br/>
+<p>Como fue el caso con el diseño DAC ponderado binario, podemos modificar el valor de la resistencia de retroalimentación para obtener cualquier "intervalo" deseado.  Por ejemplo, si usamos +5 voltios para un nivel de voltaje "alto" y 0 voltios para un nivel de voltaje "bajo", podemos obtener una salida analógica que corresponde directamente a la entrada binaria (011 = -3 voltios, 101 = -5 voltios, 111 = -7 voltios, etc.) usando una resistencia de retroalimentación con un valor de 1.6R en lugar de 2R.</p>
+<h2><u><a name="xtocid92523">Flash ADC</a></u></h2>
+<a name="Flash ADC"></a>
+<a name="ADC, flash"></a>
+<p>También llamado el<i>paralelo</i>Convertidor A/D, este circuito es el más sencillo de entender.  Está formado por una serie de comparadores, cada uno de los cuales compara la señal de entrada con un voltaje de referencia único.  Las salidas del comparador se conectan a las entradas de un circuito codificador de prioridad, que luego produce una salida binaria.  La siguiente ilustración muestra un circuito ADC flash de 3 bits:</p>
+<p> <img src="04256.png"/> </p>
+<p>
+V<sub>ref</sub>es un voltaje de referencia estable proporcionado por un regulador de voltaje de precisión como parte del circuito convertidor, que no se muestra en el esquema.  A medida que el voltaje de entrada analógica excede el voltaje de referencia en cada comparador, las salidas del comparador se saturarán secuencialmente a un estado alto.  El codificador de prioridad genera un número binario basado en la entrada activa de orden más alto, ignorando todas las demás entradas activas.</p>
+<p>Cuando se utiliza, el ADC flash produce una salida similar a esta:</p>
+<p> <img src="04266.png"/> </p>
+<p>Para esta aplicación en particular, no es necesario un codificador de prioridad normal con toda su complejidad inherente.  Debido a la naturaleza de los estados de salida del comparador secuencial (cada comparador satura "alto" en secuencia de menor a mayor), el mismo efecto de "selección de entrada de orden más alto" se puede lograr a través de un conjunto de puertas OR exclusivas, lo que permite el uso de un codificador más simple y sin prioridad:</p>
+<p> <img src="04257.png"/> </p>
+<p>Y, por supuesto, el circuito codificador en sí se puede fabricar a partir de una matriz de diodos, lo que demuestra cuán simple se puede construir este diseño de convertidor:</p>
+<p> <img src="04258.png"/> </p>
+<p>El convertidor flash no sólo es el más simple en términos de teoría operativa, sino que también es la más eficiente de las tecnologías ADC en términos de velocidad, ya que está limitado únicamente en los retrasos de propagación del comparador y de la puerta.  Desafortunadamente, es el que requiere más componentes para cualquier número determinado de bits de salida.  Este ADC flash de tres bits requiere siete comparadores.  Una versión de cuatro bits requeriría 15 comparadores.  Con cada bit de salida adicional se duplica el número de comparadores necesarios.  Teniendo en cuenta que ocho bits generalmente se considera el mínimo necesario para cualquier ADC práctico (¡se necesitan 255 comparadores!), la metodología flash muestra rápidamente su debilidad.</p>
+<p>Una ventaja adicional del convertidor flash, que a menudo se pasa por alto, es su capacidad de producir una salida no lineal.  Con resistencias de igual valor en la red divisora ​​de voltaje de referencia, cada conteo binario sucesivo representa la misma cantidad de aumento de señal analógica, proporcionando una respuesta proporcional.  Sin embargo, para aplicaciones especiales, los valores de resistencia en la red divisoria pueden no ser iguales.  Esto le da al ADC una respuesta personalizada y no lineal a la señal de entrada analógica.  Ningún otro diseño de ADC es capaz de otorgar este comportamiento de acondicionamiento de señal con solo unos pocos cambios en el valor de los componentes.</p>
+<h2><u><a name="xtocid92524">Digital ramp ADC</a></u></h2>
+<a name="Digital ramp ADC"></a>
+<a name="ADC, digital ramp"></a>
+<p>También conocido como el<i>rampa de escalera</i>, o simplemente<i>encimera</i>Convertidor A/D, esto también es bastante fácil de entender, pero lamentablemente adolece de varias limitaciones.</p>
+<p>La idea básica es conectar la salida de un contador binario de funcionamiento libre a la entrada de un DAC, luego comparar la salida analógica del DAC con la señal de entrada analógica que se va a digitalizar y usar la salida del comparador para indicarle al contador cuándo detener el conteo y reiniciar.  El siguiente esquema muestra la idea básica:</p>
+<p> <img src="04259.png"/> </p>
+<p>A medida que el contador cuenta con cada pulso de reloj, el DAC genera un voltaje ligeramente más alto (más positivo).  El comparador compara este voltaje con el voltaje de entrada.  Si el voltaje de entrada es mayor que la salida del DAC, la salida del comparador será alta y el contador continuará contando normalmente.  Sin embargo, eventualmente, la salida del DAC excederá el voltaje de entrada, lo que provocará que la salida del comparador baje.  Esto hará que sucedan dos cosas: primero, la transición de alto a bajo de la salida del comparador hará que el registro de desplazamiento "cargue" cualquier conteo binario que esté generando el contador, actualizando así la salida del circuito ADC; en segundo lugar, el contador recibirá una señal baja en la entrada LOAD activa-baja, lo que provocará que se reinicie a 00000000 en el siguiente pulso de reloj.</p>
+<p>El efecto de este circuito es producir una salida DAC que aumenta hasta cualquier nivel en el que se encuentre la señal de entrada analógica, genera el número binario correspondiente a ese nivel y comienza de nuevo.  Trazado en el tiempo, se ve así:</p>
+<p> <img src="04260.png"/> </p>
+<p>Observe cómo el tiempo entre actualizaciones (nuevos valores de salida digital) cambia dependiendo de qué tan alto sea el voltaje de entrada.  Para niveles de señal bajos, las actualizaciones son bastante espaciadas.  Para niveles de señal más altos, están más espaciados en el tiempo:</p>
+<p> <img src="04261.png"/> </p>
+<p>Para muchas aplicaciones ADC, esta variación en la frecuencia de actualización (tiempo de muestreo) no sería aceptable.  Esto, y el hecho de que la necesidad del circuito de contar desde 0 al comienzo de cada ciclo de conteo hace que el muestreo de la señal analógica sea relativamente lento, coloca al ADC de rampa digital en desventaja frente a otras estrategias de contador.</p>
+<h2><u><a name="xtocid92525">Successive approximation ADC</a></u></h2>
+<a name="Successive approximation ADC"></a>
+<a name="ADC, successive approximation"></a>
+<a name="Register, successive approximation"></a>
+<p>Un método para abordar las deficiencias del ADC de rampa digital es el llamado<i>aproximación-sucesiva</i>ADC.  El único cambio en este diseño es un circuito contador muy especial conocido como<i>registro de aproximación sucesiva</i>.  En lugar de contar en secuencia binaria, este registro cuenta probando todos los valores de bits comenzando con el bit más significativo y terminando en el bit menos significativo.  Durante todo el proceso de conteo, el registro monitorea la salida del comparador para ver si el conteo binario es menor o mayor que la entrada de la señal analógica, ajustando los valores de bits en consecuencia.  La forma en que cuenta el registro es idéntica al método de "prueba y ajuste" de conversión de decimal a binario, mediante el cual se prueban diferentes valores de bits de MSB a LSB para obtener un número binario que sea igual al número decimal original.  La ventaja de esta estrategia de conteo es que los resultados son mucho más rápidos: la salida del DAC converge en la entrada de la señal analógica en pasos mucho mayores que con la secuencia de conteo de 0 a completo de un contador normal.</p>
+<p>Sin mostrar el funcionamiento interno del registro de aproximación sucesiva (SAR), el circuito se ve así:</p>
+<p> <img src="04262.png"/> </p>
+<p>Cabe señalar que el SAR generalmente es capaz de generar el número binario en<i>de serie</i>(un bit a la vez), eliminando así la necesidad de un registro de desplazamiento.  Trazado en el tiempo, el funcionamiento de un ADC de aproximación sucesiva se ve así:</p>
+<p> <img src="04263.png"/> </p>
+<p>Observe cómo las actualizaciones para este ADC ocurren a intervalos regulares, a diferencia del circuito ADC de rampa digital.</p>
+<h2><u><a name="xtocid92526">Tracking ADC</a></u></h2>
+<a name="Tracking ADC"></a>
+<a name="ADC, tracking"></a>
+<p>Una tercera variación del tema del convertidor basado en DAC es, en mi opinión, la más elegante.  En lugar de un contador "ascendente" normal que impulsa el DAC, este circuito utiliza un contador ascendente/descendente.  El contador se sincroniza continuamente y la línea de control arriba/abajo es impulsada por la salida del comparador.  Entonces, cuando la señal de entrada analógica excede la salida del DAC, el contador entra en el modo de "cuenta ascendente".  Cuando la salida del DAC excede la entrada analógica, el contador cambia al modo de "cuenta regresiva".  De cualquier manera, la salida DAC siempre cuenta en la dirección correcta para<i>pista</i>la señal de entrada.</p>
+<p> <img src="04264.png"/> </p>
+<p>Observe cómo no se necesita ningún registro de desplazamiento para amortiguar el recuento binario al final de un ciclo.  Dado que la salida del contador rastrea continuamente la entrada (en lugar de contar para alcanzar la entrada y luego restablecerla a cero), la salida binaria se actualiza legítimamente con cada pulso de reloj.</p>
+<p>Una ventaja de este circuito convertidor es la velocidad, ya que el contador nunca tiene que reiniciarse.  Tenga en cuenta el comportamiento de este circuito:</p>
+<p> <img src="04265.png"/> </p>
+<p>Tenga en cuenta el tiempo de actualización mucho más rápido que cualquiera de los otros circuitos ADC de "conteo".  También observe cómo al comienzo del gráfico, donde el contador tenía que "alcanzar" la señal analógica, la tasa de cambio de la salida era idéntica a la del primer ADC de conteo.  Además, sin un registro de desplazamiento en este circuito, la salida binaria en realidad aumentaría en lugar de saltar de cero a un conteo preciso como lo hizo con el contador y los sucesivos circuitos ADC de aproximación.</p>
+<a name="Bit bobble"></a>
+<p>Quizás el mayor inconveniente de este diseño de ADC es el hecho de que la salida binaria nunca es estable: siempre cambia entre conteos con cada pulso de reloj, incluso con una señal de entrada analógica perfectamente estable.  Este fenómeno se conoce informalmente como<i>poco burbuja</i>, y puede resultar problemático en algunos sistemas digitales.</p>
+<p>Sin embargo, esta tendencia puede superarse mediante el uso creativo de un registro de desplazamiento.  Por ejemplo, la salida del contador se puede bloquear a través de un registro de desplazamiento de entrada/salida en paralelo sólo cuando la salida cambia en dos o más pasos.  Construir un circuito para detectar dos o más conteos sucesivos en la misma dirección requiere un poco de ingenio, pero vale la pena el esfuerzo.</p>
+<h2><u><a name="xtocid92527">Slope (integrating) ADC</a></u></h2>
+<a name="Slope (integrating) ADC"></a>
+<a name="ADC, slope"></a>
+<a name="ADC, integrating"></a>
+<p>Hasta ahora, solo hemos podido escapar del gran volumen de componentes en el convertidor flash usando un DAC como parte de nuestro circuito ADC.  Sin embargo, esta no es nuestra única opción.  Es posible evitar el uso de un DAC si lo sustituimos por un circuito de rampa analógico y un contador digital con sincronización precisa.</p>
+<p>Esta es la idea básica detrás del llamado<i>pendiente única</i>, o<i>integrando</i>ADC.  En lugar de usar un DAC con una salida en rampa, usamos un circuito de amplificador operacional llamado<i>integrador</i>para generar una forma de onda en diente de sierra que luego se compara con la entrada analógica mediante un comparador.  El tiempo que tarda la forma de onda en diente de sierra en exceder el nivel de voltaje de la señal de entrada se mide mediante un contador digital sincronizado con una onda cuadrada de frecuencia precisa (generalmente de un oscilador de cristal).  El diagrama esquemático básico se muestra aquí:</p>
+<p> <img src="04267.png"/> </p>
+<p>El esquema del transistor de descarga de capacitor IGFET que se muestra aquí está un poco simplificado.  En realidad, lo más probable es que se deba conectar un circuito de enclavamiento sincronizado con la señal del reloj a la puerta IGFET para garantizar la descarga completa del capacitor cuando la salida del comparador sube.  La idea básica, sin embargo, es evidente en este diagrama.  Cuando la salida del comparador es baja (voltaje de entrada mayor que la salida del integrador), se permite que el integrador cargue el capacitor de forma lineal.  Mientras tanto, el contador cuenta a una velocidad fijada por la frecuencia del reloj de precisión.  El tiempo que tarda el condensador en cargarse hasta el mismo nivel de voltaje que la entrada depende del nivel de la señal de entrada y de la combinación de -V<sub>ref</sub>, R y C. Cuando el capacitor alcanza ese nivel de voltaje, la salida del comparador se vuelve alta, cargando la salida del contador en el registro de desplazamiento para una salida final.  El IGFET se activa "encendido" por la alta salida del comparador, descargando el condensador de nuevo a cero voltios.  Cuando el voltaje de salida del integrador cae a cero, la salida del comparador vuelve a un estado bajo, borrando el contador y permitiendo que el integrador aumente el voltaje nuevamente.</p>
+<p>Este circuito ADC se comporta de manera muy similar al ADC de rampa digital, excepto que el voltaje de referencia del comparador es una forma de onda de diente de sierra suave en lugar de un "escalón":</p>
+<p> <img src="04268.png"/> </p>
+<p>El ADC de pendiente única sufre todas las desventajas del ADC de rampa digital, con el inconveniente añadido de<i>deriva de calibración</i>.  La correspondencia precisa de la salida de este ADC con su entrada depende de que la pendiente de voltaje del integrador coincida con la velocidad de conteo del contador (la frecuencia del reloj).  Con el ADC de rampa digital, la frecuencia del reloj no tuvo ningún efecto en la precisión de la conversión, solo en el tiempo de actualización.  En este circuito, dado que la tasa de integración y la tasa de conteo son independientes entre sí, la variación entre las dos es inevitable a medida que envejece y resultará en una pérdida de precisión.  Lo único bueno que se puede decir de este circuito es que evita el uso de un DAC, lo que reduce la complejidad del circuito.</p>
+<p>Una respuesta a este dilema de la desviación de la calibración se encuentra en una variación de diseño llamada<i>doble pendiente</i>convertidor.  En el convertidor de doble pendiente, un circuito integrador se activa de manera positiva y negativa en ciclos alternos para bajar y luego subir, en lugar de restablecerse a 0 voltios al final de cada ciclo.  En una dirección de rampa, el integrador es impulsado por la señal de entrada analógica positiva (produciendo una tasa variable negativa de cambio de voltaje de salida, o salida<i>pendiente</i>) durante un período de tiempo fijo, medido por un contador con un reloj de frecuencia de precisión.  Luego, en la otra dirección, con un voltaje de referencia fijo (que produce una tasa fija de cambio de voltaje de salida) con el tiempo medido por el mismo contador.  El contador deja de contar cuando la salida del integrador alcanza el mismo voltaje que tenía cuando inició la parte del ciclo de tiempo fijo.  La cantidad de tiempo que tarda el capacitor del integrador en descargarse nuevamente a su voltaje de salida original, medido por la magnitud acumulada por el contador, se convierte en la salida digital del circuito ADC.</p>
+<p>El método de doble pendiente se puede considerar de manera análoga en términos de un resorte giratorio como el que se usa en un mecanismo de reloj mecánico.  Imaginemos que estábamos construyendo un mecanismo para medir la velocidad de rotación de un eje.  Por lo tanto, la velocidad del eje es nuestra "señal de entrada" que este dispositivo medirá.  El ciclo de medición comienza con el resorte en estado relajado.  Luego, el eje giratorio (señal de entrada) hace girar o "enrolla" el resorte durante un período de tiempo fijo.  Esto coloca al resorte en una cierta cantidad de tensión proporcional a la velocidad del eje: una mayor velocidad del eje corresponde a una velocidad de enrollado más rápida. y se acumuló una mayor cantidad de tensión de resorte durante ese período de tiempo.  Después de eso, el resorte se desacopla del eje y se le permite desenrollarse a un ritmo fijo; el tiempo necesario para que se desenrolle y vuelva a un estado relajado se mide mediante un dispositivo temporizador.  la cantidad de<i>tiempo</i>que tarda el resorte en desenrollarse a esa tasa fija será directamente proporcional a la<i>velocidad</i>al que se enrolló (magnitud de la señal de entrada) durante la parte de tiempo fijo del ciclo.</p>
+<p>Esta técnica de conversión de analógico a digital evita el problema de deriva de calibración del ADC de pendiente única porque tanto el coeficiente de integración del integrador (o "ganancia") como la tasa de velocidad del contador están vigentes durante todas las partes del ciclo de "bobinado" y "desenrollado".  Si la velocidad del reloj del contador aumentara repentinamente, esto acortaría el período de tiempo fijo en el que el integrador "termina" (lo que resulta en un menor voltaje acumulado por el integrador), pero también significaría que contaría más rápido durante el período de tiempo en el que al integrador se le permitió "desactivarse" a una velocidad fija.  La proporción en que el contador cuenta más rápido será la misma proporción en la que el voltaje acumulado del integrador disminuye antes del cambio de velocidad del reloj.  Por lo tanto, el error de velocidad del reloj se cancelaría y la salida digital sería exactamente la que debería ser.</p>
+<p>Otra ventaja importante de este método es que la señal de entrada se promedia a medida que impulsa el integrador durante la parte del ciclo de tiempo fijo.  Cualquier cambio en la señal analógica durante ese período de tiempo tiene un efecto acumulativo en la salida digital al final de ese ciclo.  Otras estrategias de ADC simplemente "capturan" el nivel de la señal analógica en un único momento en cada ciclo.  Si la señal analógica es "ruidosa" (contiene niveles significativos de picos/caídas de voltaje espurios), una de las otras tecnologías de convertidor ADC puede ocasionalmente convertir un pico o caída porque captura la señal repetidamente en un solo momento.  Por otro lado, un ADC de doble pendiente promedia todos los picos y caídas dentro del período de integración, proporcionando así una salida con mayor inmunidad al ruido.  Los ADC de doble pendiente se utilizan en aplicaciones que exigen alta precisión.</p>
+<h2><u><a name="xtocid92528">Delta-Sigma (ΔΣ) ADC</a></u></h2>
+<a name="ΔΣ ADC"></a>
+<a name="Delta-sigma ADC"></a>
+<a name="ADC, delta-sigma"></a>
+<p>Una de las tecnologías ADC más avanzadas es la llamada delta-sigma o ΔΣ (usando la notación de letras griegas adecuada).  En matemáticas y física, la letra griega mayúscula delta (Δ) representa<i>diferencia</i> or <i>cambiar</i>, mientras que la letra mayúscula sigma (Σ) representa<i>suma</i>: la suma de varios términos juntos.  A veces, se hace referencia a este convertidor con las mismas letras griegas en orden inverso: sigma-delta o ΣΔ.</p>
+<p>En un convertidor ΔΣ, la señal de voltaje de entrada analógica se conecta a la entrada de un integrador, lo que produce una tasa de cambio de voltaje, o pendiente, en la salida correspondiente a la magnitud de entrada.  Luego, un comparador compara este voltaje de rampa con el potencial de tierra (0 voltios).  El comparador actúa como una especie de ADC de 1 bit, produciendo 1 bit de salida ("alta" o "baja") dependiendo de si la salida del integrador es positiva o negativa.  Luego, la salida del comparador se bloquea a través de un flip-flop tipo D sincronizado a alta frecuencia, y<i>retroalimentado</i>a otro canal de entrada en el integrador, para conducir el integrador en la dirección de una salida de 0 voltios.  El circuito básico se ve así:</p>
+<p> <img src="04276.png"/> </p>
+<p>El amplificador operacional más a la izquierda es el integrador (sumador).  El siguiente amplificador operacional al que se alimenta el integrador es el comparador, o ADC de 1 bit.  Luego viene el flip-flop tipo D, que bloquea la salida del comparador en cada pulso de reloj, enviando una señal "alta" o "baja" al siguiente comparador en la parte superior del circuito.  Este comparador final es necesario para convertir el voltaje de salida de nivel lógico de polaridad única de 0 V/5 V del flip-flop en una señal de voltaje de + V/-V para ser devuelta al integrador.</p>
+<p>Si la salida del integrador es positiva, el primer comparador emitirá una señal "alta" a la entrada D del flip-flop.  En el siguiente pulso de reloj, esta señal "alta" saldrá de la línea Q a la entrada no inversora del último comparador.  Este último comparador, al ver un voltaje de entrada mayor que el voltaje umbral de 1/2 +V, se satura en dirección positiva, enviando una señal +V completa a la otra entrada del integrador.  Esta señal de retroalimentación +V tiende a impulsar la salida del integrador en una dirección negativa.  Si ese voltaje de salida alguna vez se vuelve negativo, el circuito de retroalimentación enviará una señal correctiva (-V) a la entrada superior del integrador para impulsarlo en una dirección positiva.  Éste es el concepto delta-sigma en acción: el primer comparador detecta una<i>diferencia</i>(Δ) entre la salida del integrador y cero voltios.  el integrador<i>sumas</i>(Σ) la salida del comparador con la señal de entrada analógica.</p>
+<p>Funcionalmente, esto da como resultado un flujo en serie de bits emitidos por el flip-flop.  Si la entrada analógica es de cero voltios, el integrador no tendrá tendencia a aumentar ni positiva ni negativamente, excepto en respuesta al voltaje de retroalimentación.  En este escenario, la salida del flip-flop oscilará continuamente entre "alta" y "baja", mientras el sistema de retroalimentación "busca" hacia adelante y hacia atrás, tratando de mantener la salida del integrador a cero voltios:</p>
+<p> <img src="04277.png"/> </p>
+<p>Sin embargo, si aplicamos un voltaje de entrada analógico negativo, el integrador tenderá a aumentar su salida en dirección positiva.  La retroalimentación sólo puede aumentar la rampa del integrador mediante un voltaje fijo durante un tiempo fijo, por lo que la salida del flujo de bits del flip-flop no será exactamente la misma:</p>
+<p> <img src="04278.png"/> </p>
+<p>Al aplicar una señal de entrada analógica más grande (negativa) al integrador, forzamos su salida a una rampa más pronunciada en la dirección positiva.  Por lo tanto, el sistema de retroalimentación tiene que generar más unos que antes para que la salida del integrador vuelva a cero voltios:</p>
+<p> <img src="04279.png"/> </p>
+<p>A medida que la señal de entrada analógica aumenta en magnitud, también aumenta la aparición de unos en la salida digital del flip-flop:</p>
+<p> <img src="04280.png"/> </p>
+<p>A partir de este circuito se obtiene una salida de número binario paralelo promediando el flujo en serie de bits.  Por ejemplo, se podría diseñar un circuito contador para recopilar el número total de unos emitidos por el flip-flop en un número determinado de pulsos de reloj.  Este recuento sería entonces indicativo del voltaje de entrada analógica.</p>
+<a name="Oversampling, ADC"></a>
+<p>Existen variaciones sobre este tema, que emplean múltiples etapas integradoras y/o circuitos comparadores que generan más de 1 bit, pero un concepto común a todos los convertidores ΔΣ es el de<i>sobremuestreo</i>.  El sobremuestreo se produce cuando un ADC (en este caso, un ADC de 1 bit) toma varias muestras de una señal analógica y esas muestras digitalizadas se promedian.  El resultado final es un aumento efectivo en el número de bits resueltos de la señal.  En otras palabras, un ADC de 1 bit sobremuestreado puede hacer el mismo trabajo que un ADC de 8 bits con muestreo único, aunque a una velocidad más lenta.</p>
+<h2><u><a name="xtocid92529">Practical considerations of ADC circuits</a></u></h2>
+<a name="Resolution, ADC"></a>
+<p>Quizás la consideración más importante de un ADC es su<i>resolución</i>.  La resolución es el número de bits binarios emitidos por el convertidor.  Debido a que los circuitos ADC toman una señal analógica, que es continuamente variable, y la resuelven en uno de muchos pasos discretos, es importante saber cuántos de estos pasos hay en total.</p>
+<p>Por ejemplo, un ADC con una salida de 10 bits puede representar hasta 1024 (2<sup>10</sup>) condiciones únicas de medición de señales.  En el rango de medición de 0% a 100%, el convertidor generará exactamente 1024 números binarios únicos (de 0000000000 a 1111111111, inclusive).  Un ADC de 11 bits tendrá el doble de estados en su salida (2048, o 2<sup>11</sup>), que representa el doble de condiciones únicas de medición de señal entre 0% y 100%.</p>
+<p>La resolución es muy importante en los sistemas de adquisición de datos (circuitos diseñados para interpretar y registrar mediciones físicas en formato electrónico).  Supongamos que estamos midiendo la altura del agua en un tanque de almacenamiento de 40 pies de altura usando un instrumento con un ADC de 10 bits.  0 pies de agua en el tanque corresponden al 0% de la medición, mientras que 40 pies de agua en el tanque corresponden al 100% de la medición.  Debido a que el ADC está fijado en 10 bits de salida de datos binarios, interpretará cualquier nivel de tanque dado como uno de 1024 estados posibles.  Para determinar cuánto nivel físico de agua estará representado en cada<i>paso</i>del ADC, necesitamos dividir los 40 pies de alcance de medición por el número de pasos en el rango de posibilidades de 0 a 1024, que es 1023 (uno menos que 1024).  Haciendo esto obtenemos una cifra de 0,039101 pies por paso.  Esto equivale a 0,46921 pulgadas por paso, un poco menos de media pulgada de nivel de agua representado por cada recuento binario del ADC.</p>
+<p> <img src="04307.png"/> </p>
+<p>Este valor de paso de 0,039101 pies (0,46921 pulgadas) representa la cantidad más pequeña de cambio de nivel del tanque detectable por el instrumento.  Es cierto que esta es una cantidad pequeña, menos del 0,1% del alcance total de la medición de 40 pies.  Sin embargo, para algunas aplicaciones puede que no sea lo suficientemente bueno.  Supongamos que necesitáramos que este instrumento pudiera indicar cambios de nivel del tanque de hasta un décimo de pulgada.  Para lograr este grado de resolución y aún mantener un alcance de medición de 40 pies, necesitaríamos un instrumento con más de diez bits ADC.</p>
+<p>Para determinar cuántos bits ADC son necesarios, primero debemos determinar cuántos pasos de 1/10 de pulgada hay en 40 pies.  La respuesta a esto es 40/(0,1/12), o 4800 pasos de 1/10 de pulgada en 40 pies.  Por tanto, necesitamos suficientes bits para proporcionar al menos 4800 pasos discretos en una secuencia de conteo binaria.  10 bits nos dieron 1023 pasos, y lo supimos calculando 2 elevado a 10 (2<sup>10</sup>= 1024) y luego restar uno.  Siguiendo el mismo procedimiento matemático, 2<sup>11</sup>-1 = 2047, 2<sup>12</sup>-1 = 4095, and 2<sup>13</sup>-1 = 8191.  12 bits falls shy of the amount needed for 4800 steps, while 13 bits is more than enough.  Therefore, we need an instrument with at least 13 bits of resolution.
+</p>
+<a name="Sample frequency, ADC"></a>
+<a name="Conversion rate, ADC"></a>
+<p>Otra consideración importante de los circuitos ADC es su<i>frecuencia de muestreo</i>, o<i>tasa de conversión</i>.  Esta es simplemente la velocidad a la que el convertidor genera un nuevo número binario.  Al igual que la resolución, esta consideración está vinculada a la aplicación específica de la ADC.  Si el convertidor se utiliza para medir señales que cambian lentamente, como el nivel en un tanque de almacenamiento de agua, probablemente podría tener una frecuencia de muestreo muy lenta y aún así funcionar adecuadamente.  Por el contrario, si se utiliza para digitalizar una señal de frecuencia de audio que realiza ciclos de varios miles de veces por segundo, el convertidor debe ser considerablemente más rápido.</p>
+<p>Considere la siguiente ilustración de la tasa de conversión del ADC frente al tipo de señal, típica de un ADC de aproximación sucesiva con intervalos de muestreo regulares:</p>
+<p> <img src="04252.png"/> </p>
+<p>Aquí, para esta señal que cambia lentamente, la frecuencia de muestreo es más que adecuada para capturar su tendencia general.  Pero considera<i>este</i>ejemplo con el mismo tiempo de muestra:</p>
+<p> <img src="04253.png"/> </p>
+<p>Cuando el período de muestreo es demasiado largo (demasiado lento), se perderán detalles sustanciales de la señal analógica.  Observe cómo, especialmente en las últimas partes de la señal analógica, la salida digital no logra reproducir la forma real.  Incluso en la primera sección de la forma de onda analógica, la reproducción digital se desvía sustancialmente de la forma real de la onda.</p>
+<a name="Nyquist frequency"></a>
+<a name="Frequency, Nyquist"></a>
+<p>Es imperativo que el tiempo de muestreo de un ADC sea lo suficientemente rápido para capturar cambios esenciales en la forma de onda analógica.  En terminología de adquisición de datos, la forma de onda de mayor frecuencia que un ADC puede capturar teóricamente es la llamada<i>Frecuencia de Nyquist</i>, igual a la mitad de la frecuencia de muestreo del ADC.  Por lo tanto, si un circuito ADC tiene una frecuencia de muestreo de 5000 Hz, la forma de onda de mayor frecuencia que podrá resolver con éxito será la frecuencia de Nyquist de 2500 Hz.</p>
+<a name="Aliasing, ADC"></a>
+<p>Si un ADC se somete a una señal de entrada analógica cuya frecuencia excede la frecuencia de Nyquist para ese ADC, el convertidor emitirá una señal digitalizada de frecuencia falsamente baja.  Este fenómeno se conoce como<i>alias</i>.  Observe la siguiente ilustración para ver cómo se produce el alias:</p>
+<p> <img src="04254.png"/> </p>
+<p>Observe cómo el período de la forma de onda de salida es mucho más largo (más lento) que el de la forma de onda de entrada, y cómo las dos formas de onda ni siquiera son similares:</p>
+<p> <img src="04255.png"/> </p>
+<p>Debe entenderse que la frecuencia de Nyquist es una<i>absoluto</i>límite de frecuencia máxima para un ADC, y no representa el límite más alto<i>práctico</i>frecuencia medible.  Para estar seguro, no se debe esperar que un ADC resuelva con éxito cualquier frecuencia mayor que un quinto o un décimo de su frecuencia de muestra.</p>
+<p>Un medio práctico para evitar el aliasing es colocar un filtro de paso bajo antes de la entrada del ADC, para bloquear cualquier frecuencia de señal mayor que el límite práctico.  De esta manera, se evitará que el circuito ADC vea frecuencias excesivas y, por lo tanto, no intentará digitalizarlas.  En general, se considera mejor que dichas frecuencias no se conviertan que tener un "alias" y aparecer en la salida como señales falsas.</p>
+<a name="Step recovery, ADC"></a>
+<p>Otra medida más del rendimiento del ADC es algo llamado<i>paso de recuperación</i>.  Esta es una medida de la rapidez con la que un ADC cambia su salida para adaptarse a un cambio grande y repentino en la entrada analógica.  Especialmente en algunas tecnologías de conversión, la recuperación por pasos es una limitación importante.  Un ejemplo es el convertidor de seguimiento, que normalmente tiene un período de actualización rápido pero un paso de recuperación desproporcionadamente lento.</p>
+<p>Un ADC ideal tiene una gran cantidad de bits para una resolución muy fina, muestra a velocidades ultrarrápidas y se recupera de los pasos al instante.  Desafortunadamente, tampoco existe en el mundo real.  Por supuesto, cualquiera de estas características se puede mejorar mediante una complejidad adicional del circuito, ya sea en términos de un mayor número de componentes y/o diseños de circuitos especiales hechos para funcionar a velocidades de reloj más altas.  Sin embargo, las diferentes tecnologías ADC tienen diferentes puntos fuertes.  Aquí te dejamos un resumen de ellos clasificados de mejor a peor:</p>
+<br/>
+<p>
+<b>Relación resolución/complejidad:</b>
+</p>
+<p>Integración de pendiente simple, integración de pendiente doble, contador, seguimiento, aproximación sucesiva, flash.</p>
+<br/>
+<p>
+<b>Velocidad:</b>
+</p>
+<p>Flash, seguimiento, aproximación sucesiva, integración y contador de pendiente única, integración de pendiente doble.</p>
+<br/>
+<p>
+<b>Paso de recuperación:</b>
+</p>
+<p>Flash, aproximación sucesiva, integración y contador de pendiente única, integración de pendiente doble, seguimiento.</p>
+<br/>
+<p>Tenga en cuenta que las clasificaciones de estas diferentes tecnologías ADC dependen de otros factores.  Por ejemplo, la forma en que un ADC califica la recuperación de pasos depende de la naturaleza del cambio de paso.  Un ADC de seguimiento es igualmente lento para responder a todos los cambios de paso, mientras que un ADC de pendiente única o de contador registrará un cambio de paso de alto a bajo más rápido que un cambio de paso de bajo a alto.  Los ADC de aproximación sucesiva son casi igualmente rápidos a la hora de resolver cualquier señal analógica, pero un ADC de seguimiento superará consistentemente a un ADC de aproximación sucesiva si la señal cambia más lentamente que un paso de resolución por pulso de reloj.   Clasifiqué que los convertidores integradores tienen una mayor relación resolución/complejidad que los convertidores contadores, pero esto supone que los circuitos integradores analógicos de precisión son menos complejos de diseñar y fabricar que los DAC de precisión requeridos dentro de los convertidores basados ​​en contadores.  Es posible que otros no estén de acuerdo con esta suposición.</p>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="DIGI_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="DIGI_12.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="DIGI_14.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

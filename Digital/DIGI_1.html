@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 1 | Lecciones de Circuitos Eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #f59e0b; }</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar en el sitio…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <nav class="sidebar-nav">
+<div class="vol-group">
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <ul class="cap-list">
+    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
+    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
+    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
+    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
+    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
+    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
+    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
+    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
+    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
+    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
+    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
+    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
+    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
+    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
+    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
+    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
+    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
+    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
+    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <ul class="cap-list">
+    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
+    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
+    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
+    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
+    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
+    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
+    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
+    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
+    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
+    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
+    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
+    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
+    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
+    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
+    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
+    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
+    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <ul class="cap-list">
+    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
+    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
+    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
+    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
+    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
+    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
+    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
+    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
+    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
+    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
+    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
+    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
+    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
+    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
+    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
+    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <ul class="cap-list">
+    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
+    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
+    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
+    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
+    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
+    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
+    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
+    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
+    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
+    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
+    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
+    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
+    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
+    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
+    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
+    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
+    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
+    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
+    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <ul class="cap-list">
+    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
+    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
+    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
+    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
+    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
+    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
+    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
+    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
+    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
+    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
+    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
+    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
+    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <ul class="cap-list">
+    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
+    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
+    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
+    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
+    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
+    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
+    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
+    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
+    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
+    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
+    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+  </ul>
+</div>
+<div class="vol-group">
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+</div>
+</nav>
+
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+      <span class="page-title">Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 1</span>
+      <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
+    </header>
+    <article class="content" id="content">
+      
+<body bgcolor="white">
+
+
+
+<hr/>
+<h1>Lecciones de circuitos eléctricos - Volumen IV</h1>
+<h1>Capítulo 1</h1>
+<h1>SISTEMAS DE NUMERACIÓN</h1>
+<!--minitoc-->
+<ul>
+<li><a href="#xtocid91420"><u>Numbers and symbols</u></a></li>
+<li><a href="#xtocid91421"><u>Systems of numeration</u></a></li>
+<li><a href="#xtocid91422"><u>Decimal versus binary numeration</u></a></li>
+<li><a href="#xtocid91423"><u>Octal and hexadecimal numeration</u></a></li>
+<li><a href="#xtocid91424"><u>Octal and hexadecimal to decimal conversion</u></a></li>
+<li><a href="#xtocid91425"><u>Conversion from decimal numeration</u></a></li></ul>
+<blockquote>
+<p>
+<i>"Hay tres tipos de personas: las que saben contar y las que no".</i>
+</p>
+<p>
+<b>Anónimo</b>
+</p>
+</blockquote>
+<h2><u><a name="xtocid91420">Numbers and symbols</a></u></h2>
+<p>La expresión de cantidades numéricas es algo que tendemos a dar por sentado.  Esto es tanto bueno como malo en el estudio de la electrónica.  Es bueno porque estamos acostumbrados al uso y manipulación de números para los numerosos cálculos utilizados en el análisis de circuitos electrónicos.  Por otro lado, el sistema particular de notación que nos han enseñado desde la escuela primaria en adelante es<i>not</i>el sistema utilizado internamente en los dispositivos informáticos electrónicos modernos, y aprender cualquier sistema de notación diferente requiere un nuevo examen de suposiciones profundamente arraigadas.</p>
+<p>Primero, tenemos que distinguir la diferencia entre números y los símbolos que usamos para representarlos.  A<i>número</i>es una cantidad matemática, generalmente correlacionada en electrónica con una cantidad física como voltaje, corriente o resistencia.  Hay muchos tipos diferentes de números.  Éstos son sólo algunos tipos, por ejemplo:</p>
+<br/>
+<pre>
+WHOLE NUMBERS:
+1, 2, 3, 4, 5, 6, 7, 8, 9 . . .
+</pre>
+<br/>
+<pre>
+INTEGERS:
+-4, -3, -2, -1, 0, 1, 2, 3, 4 . . .
+</pre>
+<br/>
+<pre>
+IRRATIONAL NUMBERS:
+π (approx. 3.1415927), <i>e</i> (approx. 2.718281828),
+square root of any prime
+</pre>
+<br/>
+<pre>
+REAL NUMBERS:
+(All one-dimensional numerical values, negative and positive,
+ including zero, whole, integer, and irrational numbers) 
+</pre>
+<br/>
+<pre>
+COMPLEX NUMBERS:
+3 - j4 ,  34.5 ∠ 20<sup>o</sup>
+</pre>
+<br/>
+<p>Los diferentes tipos de números encuentran diferentes aplicaciones en el mundo físico.  Los números enteros funcionan bien para contar objetos discretos, como la cantidad de resistencias en un circuito.  Los números enteros son necesarios cuando se requieren equivalentes negativos de números enteros.  Los números irracionales son números que no se pueden expresar exactamente como la razón de dos números enteros, y la razón entre la circunferencia de un círculo perfecto y su diámetro (π) es un buen ejemplo físico de esto.  Las cantidades no enteras de voltaje, corriente y resistencia con las que estamos acostumbrados a tratar en los circuitos de CC se pueden expresar como números reales, ya sea en forma fraccionaria o decimal.  Sin embargo, para el análisis de circuitos de CA, los números reales no logran capturar la esencia dual de magnitud y ángulo de fase, por lo que recurrimos al uso de números complejos en forma rectangular o polar.</p>
+<p>Si vamos a utilizar números para comprender procesos en el mundo físico, hacer predicciones científicas o equilibrar nuestras chequeras, debemos tener una manera de denotarlos simbólicamente.  En otras palabras, podemos saber cuánto dinero tenemos en nuestra cuenta corriente, pero para mantener un registro necesitamos tener algún sistema diseñado para simbolizar esa cantidad en papel, o en algún otro tipo de forma para el mantenimiento de registros y el seguimiento.  Hay dos formas básicas de hacer esto: analógica y digital.  En la representación analógica, la cantidad se simboliza de forma infinitamente divisible.  Con la representación digital, la cantidad se simboliza de una manera discretamente empaquetada.</p>
+<p>Probablemente ya estés familiarizado con una representación analógica del dinero y no te hayas dado cuenta de lo que es.  ¿Alguna vez has visto un cartel de recaudación de fondos hecho con la imagen de un termómetro, donde la altura de la columna roja indicaba la cantidad de dinero recaudado para la causa?  Cuanto más dinero se recauda, ​​más alta es la columna de tinta roja en el cartel.</p>
+<p> <img src="04096.png"/> </p>
+<p>Este es un ejemplo de una representación analógica de un número.  No existe un límite real en cuanto a cuán finamente se puede dividir la altura de esa columna para simbolizar la cantidad de dinero en la cuenta.  Cambiar la altura de esa columna es algo que se puede hacer sin cambiar la naturaleza esencial de lo que es.  La longitud es una cantidad física que se puede dividir en cantidades tan pequeñas como se desee, sin límite práctico.  La regla de cálculo es un dispositivo mecánico que utiliza la misma cantidad física (longitud) para representar números y para ayudar a realizar operaciones aritméticas con dos o más números a la vez.  También es un dispositivo analógico.</p>
+<p>Por otra parte, un<i>digital</i>La representación de esa misma cifra monetaria, escrita con símbolos estándar (a veces llamados cifrados), se ve así:</p>
+<br/>
+<pre>
+$35,955.38
+</pre>
+<br/>
+<p>A diferencia del cartel del "termómetro" con su columna roja, los caracteres simbólicos de arriba no se pueden dividir finamente: esa combinación particular de cifras representa una cantidad y sólo una cantidad.  Si se agrega más dinero a la cuenta (+ $40,12), se deben utilizar diferentes símbolos para representar el nuevo saldo ($35.995,50), o al menos los mismos símbolos dispuestos en diferentes patrones.  Este es un ejemplo de representación digital.  La contraparte de la regla de cálculo (analógica) es también un dispositivo digital: el ábaco, con cuentas que se mueven hacia adelante y hacia atrás sobre varillas para simbolizar cantidades numéricas:</p>
+<p> <img src="04097.png"/> </p>
+<p>
+</p>
+<br/>
+<p> <img src="04098.png"/> </p>
+<p>Comparemos estos dos métodos de representación numérica:</p>
+<br/>
+<pre>
+ANALOG                              DIGITAL
+------------------------------------------------------------------
+Intuitively understood  ----------- Requires training to interpret
+Infinitely divisible -------------- Discrete
+Prone to errors of precision ------ Absolute precision
+</pre>
+<br/>
+<p>La interpretación de símbolos numéricos es algo que tendemos a dar por sentado, porque nos lo han enseñado durante muchos años.  Sin embargo, si intentaras comunicar una cantidad de algo a una persona que ignora los números decimales, ¡esa persona aún podría entender el simple gráfico del termómetro!</p>
+<p>Las comparaciones infinitamente divisibles versus discretas y de precisión son en realidad las dos caras de la misma moneda.  El hecho de que la representación digital esté compuesta de símbolos individuales y discretos (dígitos decimales y cuentas de ábaco) significa necesariamente que podrá simbolizar cantidades en pasos precisos.  Por otro lado, una representación analógica (como la longitud de una regla de cálculo) no se compone de pasos individuales, sino de un rango de movimiento continuo.  La capacidad de una regla de cálculo para caracterizar una cantidad numérica con una resolución infinita es una compensación por la imprecisión.  Si se golpea una regla de cálculo, se introducirá un error en la representación del número que se "ingresó" en ella.  Sin embargo, es necesario golpear un ábaco con mucha más fuerza antes de que sus cuentas se desalojen completamente de su lugar (lo suficiente para representar un número diferente).</p>
+<p>No malinterprete esta diferencia de precisión pensando que la representación digital es necesariamente más<i>preciso</i>que analógico.  El hecho de que un reloj sea digital no significa que siempre leerá la hora con mayor precisión que un reloj analógico, simplemente significa que el<i>interpretación</i>de su exhibición es menos ambiguo.</p>
+<p>La divisibilidad de la representación analógica frente a la digital puede aclararse aún más hablando de la representación de números irracionales.  Los números como π se llaman irracionales porque no pueden expresarse exactamente como fracción de números enteros o números enteros.  Aunque es posible que hayas aprendido en el pasado que la fracción 22/7 se puede utilizar para π en los cálculos, esto es sólo una aproximación.  El número real "pi" no puede expresarse exactamente mediante ningún número finito o limitado de decimales.  Los dígitos de π continúan para siempre:</p>
+<br/>
+<pre>
+3.1415926535897932384 . . . . .
+</pre>
+<br/>
+<p>Es posible, al menos teóricamente, establecer una regla de cálculo (o incluso una columna de termómetro) para representar perfectamente el número π, porque los símbolos analógicos no tienen un límite mínimo en cuanto al grado en que se pueden aumentar o disminuir.  Si mi regla de cálculo muestra una cifra de 3,141593 en lugar de 3,141592654, puedo mover la diapositiva un poco más (o menos) para acercarla aún más.  Sin embargo, con la representación digital, como con un ábaco, necesitaría barras adicionales (marcadores de posición o dígitos) para representar π con mayores grados de precisión.  Un ábaco con 10 varillas simplemente no puede representar más de 10 dígitos del número π, sin importar cómo coloque las cuentas.  Para representar perfectamente a π, ¡un ábaco tendría que tener un número infinito de cuentas y varillas!  La desventaja, por supuesto, es la limitación práctica para ajustar y leer símbolos analógicos.  En la práctica, no se puede leer la escala de una regla de cálculo hasta el décimo dígito de precisión, porque las marcas en la escala son demasiado toscas y la visión humana es demasiado limitada.  Un ábaco, por otro lado, se puede configurar y leer sin ningún error de interpretación.</p>
+<p>Además, los símbolos analógicos requieren algún tipo de estándar mediante el cual puedan compararse para una interpretación precisa.  Las reglas de cálculo tienen marcas impresas a lo largo de las diapositivas para traducir la longitud en cantidades estándar.  Incluso el gráfico del termómetro tiene números escritos a lo largo de su altura para mostrar cuánto dinero (en dólares) representa la columna roja para una altura determinada.  Imagínese si todos intentáramos comunicar números simples entre nosotros separando nuestras manos a diferentes distancias.  El número 1 podría significarse manteniendo nuestras manos a 1 pulgada de distancia, el número 2 a 2 pulgadas, y así sucesivamente.  Si alguien mantuviera sus manos a 17 pulgadas de distancia para representar el número 17, ¿podrían todos los que lo rodearan interpretar de manera inmediata y precisa esa distancia como 17?  Probablemente no.  Algunos dirían que son cortos (15 o 16) y otros que son largos (18 o 19).  ¡Por supuesto, a los pescadores que se jactan de sus capturas no les importan las sobreestimaciones en cantidad!</p>
+<p>Quizás esta sea la razón por la que la gente generalmente se ha decidido por símbolos digitales para representar números, especialmente números enteros y enteros, que encuentran la mayor aplicación en la vida cotidiana.  Usando los dedos de nuestras manos, tenemos un medio listo para simbolizar números enteros del 0 al 10. Podemos hacer marcas en papel, madera o piedra para representar las mismas cantidades con bastante facilidad:</p>
+<p> <img src="04281.png"/> </p>
+<p>Sin embargo, para números grandes, el sistema de numeración "marca de almohadilla" es demasiado ineficiente.</p>
+<h2><u><a name="xtocid91421">Systems of numeration</a></u></h2>
+<a name="Cipher"></a>
+<p>Los romanos idearon un sistema que supuso una mejora sustancial con respecto a las marcas de almohadilla, porque utilizaba una variedad de símbolos (o<i>cifrados</i>) para representar cantidades cada vez mayores.  La notación para 1 es la letra mayúscula.<tt>I</tt>.  La notación para 5 es la letra mayúscula.<tt>V</tt>.  Otros cifrados poseen valores crecientes:</p>
+<br/>
+<pre>
+X = 10
+L = 50
+C = 100
+D = 500
+M = 1000
+</pre>
+<br/>
+<p>Si un cifrado va acompañado de otro cifrado de igual o menor valor inmediatamente a su derecha, sin ningún cifrado mayor que ese otro cifrado a la derecha de ese otro cifrado, el valor de ese otro cifrado se suma a la cantidad total.  De este modo,<tt>VIII</tt>simboliza el número 8, y<tt>CLVII</tt>simboliza el número 157. Por otro lado, si un cifrado va acompañado de otro cifrado de menor valor inmediatamente a la izquierda, el valor de ese otro cifrado es<i>restado</i>desde el primero.  Por lo tanto,<tt>IV</tt>simboliza el número 4 (<tt>V</tt>menos<tt>I</tt>), y<tt>CM</tt>simboliza el número 900 (<tt>M</tt>menos<tt>C</tt>).  Es posible que hayas notado que las secuencias de créditos finales de la mayoría de las películas contienen un aviso con la fecha de producción, en números romanos.  Para el año 1987, diría:<tt>MCMLXXXVII</tt>.  Dividamos este número en sus partes constituyentes, de izquierda a derecha:</p>
+<br/>
+<pre>
+M = 1000
++
+CM = 900
++
+L = 50
++
+XXX = 30
++
+V = 5
++
+II = 2
+</pre>
+<br/>
+<p>¿No te alegra que no utilicemos este sistema de numeración?  Los números grandes son muy difíciles de denotar de esta manera, y la combinación de valores izquierda versus derecha / resta versus suma también puede ser muy confusa.  Otro problema importante de este sistema es que no existe ninguna posibilidad de representar el número cero o los números negativos, ambos conceptos muy importantes en matemáticas.  La cultura romana, sin embargo, era más pragmática con respecto a las matemáticas que la mayoría, y optó por desarrollar su sistema de numeración sólo en la medida en que fuera necesario para su uso en la vida diaria.</p>
+<a name="Place value"></a>
+<p>Una de las ideas más importantes en numeración se la debemos a los antiguos babilonios, quienes fueron los primeros (hasta donde sabemos) en desarrollar el concepto de posición de cifrado, o valor posicional, para representar números más grandes.  En lugar de inventar nuevos cifrados para representar números mayores, como hicieron los romanos, reutilizaron los mismos cifrados, colocándolos en diferentes posiciones de derecha a izquierda.  Nuestro propio sistema de numeración decimal utiliza este concepto, con sólo diez cifras (0, 1, 2, 3, 4, 5, 6, 7, 8 y 9) utilizadas en posiciones "ponderadas" para representar números muy grandes y muy pequeños.</p>
+<a name="Weight, numeration system"></a>
+<p>Cada cifrado representa una cantidad entera y cada lugar de derecha a izquierda en la notación representa una constante multiplicadora, o<i>peso</i>, para cada cantidad entera.  Por ejemplo, si vemos la notación decimal "1206", sabemos que se puede descomponer en sus productos de peso constituyentes como tales:</p>
+<br/>
+<pre>
+1206 = 1000 + 200 + 6
+1206  =  (1 x 1000) + (2 x 100) + (0 x 10) + (6 x 1)
+</pre>
+<br/>
+<a name="Digit"></a>
+<a name="Place value, numeration system"></a>
+<p>Cada cifrado se llama<i>dígito</i>en el sistema de numeración decimal, y cada peso, o<i>valor posicional</i>, es diez veces mayor que el de la derecha inmediata.  Entonces, tenemos un<i>unos</i>lugar, un<i>decenas</i>lugar, un<i>cientos</i>lugar, un<i>miles</i>lugar, y así sucesivamente, de derecha a izquierda.</p>
+<p>Ahora mismo probablemente te estés preguntando por qué me esfuerzo en describir lo obvio.  ¿Quién necesita que le digan cómo funciona la numeración decimal, después de haber estudiado matemáticas tan avanzadas como álgebra y trigonometría?  La razón es comprender mejor otros sistemas de numeración, conociendo primero el cómo y el por qué del que ya estás acostumbrado.</p>
+<p>El sistema de numeración decimal utiliza diez cifras y pesos posicionales que son múltiplos de diez.  ¿Qué pasaría si hiciéramos un sistema de numeración con la misma estrategia de lugares ponderados, excepto con menos o más cifras?</p>
+<a name="Binary numeration"></a>
+<p>El sistema de numeración binaria es uno de esos sistemas.  En lugar de diez símbolos de cifrado diferentes, donde cada constante de peso es diez veces mayor que la anterior, sólo tenemos<i>two</i>símbolos de cifrado, y cada constante de peso es<i>dos veces</i>tanto como el anterior.  Los dos símbolos de cifrado permitidos para el sistema binario de numeración son "1" y "0", y estos cifrados están ordenados de derecha a izquierda en valores que duplican el peso.  El lugar más a la derecha es el<i>unos</i>lugar, al igual que con la notación decimal.  Siguiendo hacia la izquierda tenemos el<i>dos</i>lugar, el<i>cuatro</i>lugar, el<i>ochos</i>lugar, el<i>dieciséis</i>lugar, etcétera.  Por ejemplo, el siguiente número binario se puede expresar, al igual que el número decimal 1206, como la suma de cada valor de cifrado multiplicado por su respectiva constante de peso:</p>
+<br/>
+<pre>
+11010 = 2 + 8 + 16 = 26
+11010 = (1 x 16) + (1 x 8) + (0 x 4) + (1 x 2) + (0 x 1)
+</pre>
+<br/>
+<p>Esto puede resultar bastante confuso, ya que escribí un número con numeración binaria (11010) y luego mostré sus valores posicionales y el total en forma de numeración decimal estándar (16 + 8 + 2 = 26).  En el ejemplo anterior, mezclamos dos tipos diferentes de notación numérica.  Para evitar confusiones innecesarias, debemos indicar qué forma de numeración utilizamos cuando escribimos (¡o tecleamos!).  Normalmente, esto se hace en forma de subíndice, con un "2" para binario y un "10" para decimal, por lo que el número binario 11010<sub>2</sub>es igual al numero decimal 26<sub>10</sub>.
+</p>
+<p>Los subíndices no son símbolos de operaciones matemáticas como lo son los superíndices (exponentes).  Lo único que hacen es indicar qué sistema de numeración utilizamos cuando escribimos estos símbolos para que otras personas los lean.  Si ves "3<sub>10</sub>", todo esto significa es el número tres escrito usando<i>decimal</i>numeración.  Sin embargo, si ve "3<sup>10</sup>", esto significa algo completamente diferente: tres elevado a la décima potencia (59,049). Como de costumbre, si no se muestra ningún subíndice, se supone que los cifrados representan un número decimal.</p>
+<a name="Base, numeration system"></a>
+<a name="Digit, decimal"></a>
+<a name="Bit, binary"></a>
+<p>Comúnmente, el número de tipos de cifrado (y por lo tanto, el multiplicador del valor posicional) utilizados en un sistema de numeración se denomina número de ese sistema.<i>base</i>.  Al binario se le conoce como numeración de "base dos" y al decimal como "base diez".  Además, nos referimos a cada posición de cifrado en binario como<i>bit</i>en lugar de la palabra familiar<i>dígito</i>utilizado en el sistema decimal.</p>
+<p>Ahora bien, ¿por qué alguien usaría numeración binaria?  El sistema decimal, con sus diez cifras, tiene mucho sentido, ya que tenemos diez dedos para contar entre las dos manos.  (Es interesante que algunas culturas antiguas de América Central usaban sistemas de numeración con una base de veinte. ¡¡Presumiblemente, usaban los dedos de las manos y de los pies para contar!!).  Pero la razón principal por la que se utiliza el sistema de numeración binaria en las computadoras electrónicas modernas es la facilidad de representar dos estados de cifrado (0 y 1) electrónicamente.  Con circuitos relativamente simples, podemos realizar operaciones matemáticas con números binarios representando cada bit de los números mediante un circuito que está encendido (con corriente) o apagado (sin corriente).  Al igual que el ábaco, en el que cada varilla representa otro dígito decimal, simplemente agregamos más circuitos para obtener más bits para simbolizar números más grandes.  La numeración binaria también se presta bien al almacenamiento y recuperación de información numérica: en cintas magnéticas (manchas de óxido de hierro en la cinta que están magnetizadas para un "1" binario o desmagnetizadas para un "0" binario), discos ópticos (un hoyo quemado con láser en el papel de aluminio que representa un "1" binario y un punto sin quemar que representa un "0" binario), o una variedad de otros tipos de medios.</p>
+<p>Antes de pasar a aprender exactamente cómo se hace todo esto en los circuitos digitales, debemos familiarizarnos más con los sistemas de numeración binarios y otros sistemas asociados.</p>
+<h2><u><a name="xtocid91422">Decimal versus binary numeration</a></u></h2>
+<p>Contemos de cero a veinte usando cuatro tipos diferentes de sistemas de numeración: marcas de almohadilla, números romanos, decimal y binario:</p>
+<br/>
+<pre>
+System:    Hash Marks               Roman     Decimal     Binary
+-------    ----------               -----     -------     ------
+Zero       n/a                       n/a         0          0 
+One        |                          I          1          1 
+Two        ||                         II         2          10
+Three      |||                        III        3          11
+Four       ||||                       IV         4          100
+Five       /|||/                      V          5          101
+Six        /|||/ |                    VI         6          110
+Seven      /|||/ ||                   VII        7          111
+Eight      /|||/ |||                  VIII       8          1000
+Nine       /|||/ ||||                 IX         9          1001
+Ten        /|||/ /|||/                X          10         1010
+Eleven     /|||/ /|||/ |              XI         11         1011
+Twelve     /|||/ /|||/ ||             XII        12         1100
+Thirteen   /|||/ /|||/ |||            XIII       13         1101
+Fourteen   /|||/ /|||/ ||||           XIV        14         1110
+Fifteen    /|||/ /|||/ /|||/          XV         15         1111
+Sixteen    /|||/ /|||/ /|||/ |        XVI        16         10000
+Seventeen  /|||/ /|||/ /|||/ ||       XVII       17         10001
+Eighteen   /|||/ /|||/ /|||/ |||      XVIII      18         10010
+Nineteen   /|||/ /|||/ /|||/ ||||     XIX        19         10011
+Twenty     /|||/ /|||/ /|||/ /|||/    XX         20         10100
+</pre>
+<br/>
+<p>Ni las almohadillas ni el sistema romano son muy prácticos para simbolizar números grandes.  Obviamente, los sistemas de ponderación posicional como el decimal y el binario son más eficientes para la tarea.  Sin embargo, observe cuánto más corta es la notación decimal que la notación binaria, para el mismo número de cantidades.  Lo que se necesitan cinco bits en notación binaria sólo se necesitan dos dígitos en notación decimal.</p>
+<p>Esto plantea una pregunta interesante con respecto a los diferentes sistemas de numeración: ¿qué tamaño de un número se puede representar con un número limitado de posiciones o lugares de cifrado?  Con el crudo sistema de marcas hash, el número de lugares ES el número más grande que se puede representar, ya que se requiere un "lugar" de marca hash para cada paso de un entero.  Sin embargo, para los sistemas de numeración ponderados por lugares, la respuesta se encuentra tomando la base del sistema de numeración (10 para decimal, 2 para binario) y elevándola a la potencia del número de lugares.  Por ejemplo, 5 dígitos en un sistema de numeración decimal pueden representar 100.000 valores de números enteros diferentes, del 0 al 99.999 (10 elevado a la quinta potencia = 100.000).  8 bits en un sistema de numeración binario pueden representar 256 valores numéricos enteros diferentes, de 0 a 11111111 (binario) o de 0 a 255 (decimal), porque 2 elevado a la octava potencia equivale a 256. Con cada posición adicional en el campo numérico, la capacidad para representar números aumenta en un factor de la base (10 para decimal, 2 para binario).</p>
+<a name="Eniac computer"></a>
+<a name="Ring counter"></a>
+<a name="Counter, ring"></a>
+<p>Una nota a pie de página interesante para este tema es la de las primeras computadoras digitales electrónicas, la Eniac.  Los diseñadores de Eniac optaron por representar números en forma decimal, digitalmente, utilizando una serie de circuitos llamados "contadores de anillos" en lugar de simplemente utilizar el sistema de numeración binario, en un esfuerzo por minimizar la cantidad de circuitos necesarios para representar y calcular números muy grandes.  Este enfoque resultó contraproducente y, desde entonces, prácticamente todas las computadoras digitales han tenido un diseño puramente binario.</p>
+<p>Para convertir un número en numeración binaria a su equivalente en forma decimal, lo único que hay que hacer es calcular la suma de todos los productos de bits con sus respectivas constantes de peso posicional.  Para ilustrar:</p>
+<br/>
+<pre>
+Convert 11001101<sub>2</sub>  to decimal form:
+bits =         1  1  0  0  1  1  0  1             
+.              -  -  -  -  -  -  -  -
+weight =       1  6  3  1  8  4  2  1 
+(in decimal    2  4  2  6
+notation)      8    
+</pre>
+<br/>
+<a name="Bit, least significant"></a>
+<a name="LSB"></a>
+<a name="Bit, most significant"></a>
+<a name="MSB"></a>
+<p>El bit del extremo derecho se llama bit menos significativo (LSB), porque ocupa el lugar del peso más bajo (el lugar de las unidades).  El bit en el extremo izquierdo se llama Bit Más Significativo (MSB), porque se encuentra en el lugar de mayor peso (el lugar de los ciento veintiocho).  Recuerde, un valor de bit de "1" significa que el peso de posición respectivo se suma al valor total, y un valor de bit de "0" significa que el peso de posición respectivo no<i>not</i>se suman al valor total.  Con el ejemplo anterior, tenemos:</p>
+<br/>
+<pre>
+128<sub>10</sub>  + 64<sub>10</sub>  + 8<sub>10</sub>  + 4<sub>10</sub>  + 1<sub>10</sub>  = 205<sub>10</sub>
+</pre>
+<br/>
+<a name="Point, decimal"></a>
+<a name="Point, binary"></a>
+<a name="Decimal point"></a>
+<a name="Binary point"></a>
+<p>Si encontramos un número binario con un punto (.), llamado "punto binario" en lugar de punto decimal, seguimos el mismo procedimiento, dándonos cuenta de que cada peso a la derecha del punto es la mitad del valor del que está a la izquierda (así como cada peso a la derecha de un<i>decimal</i>punto es una décima parte del peso del que está a su izquierda).  Por ejemplo:</p>
+<br/>
+<pre>
+Convert 101.011<sub>2</sub>  to decimal form:
+.
+bits =         1  0  1  .  0  1  1               
+.              -  -  -  -  -  -  -  
+weight =       4  2  1     1  1  1   
+(in decimal                /  /  /
+notation)                  2  4  8
+</pre>
+<br/>
+<pre>
+4<sub>10</sub>  + 1<sub>10</sub>  + 0.25<sub>10</sub>  + 0.125<sub>10</sub>  = 5.375<sub>10</sub>
+</pre>
+<br/>
+<h2><u><a name="xtocid91423">Octal and hexadecimal numeration</a></u></h2>
+<p>Debido a que la numeración binaria requiere tantos bits para representar números relativamente pequeños en comparación con la economía del sistema decimal, analizar los estados numéricos dentro de los circuitos electrónicos digitales puede ser una tarea tediosa.  Los programadores de computadoras que diseñan secuencias de códigos numéricos que instruyen a una computadora qué hacer tendrían una tarea muy difícil si se les obligara a trabajar únicamente con largas cadenas de unos y ceros, el "lenguaje nativo" de cualquier circuito digital.  Para que a los ingenieros, técnicos y programadores humanos les resulte más fácil "hablar" este lenguaje del mundo digital, se han creado otros sistemas de numeración ponderada que son muy fáciles de convertir hacia y desde binario.</p>
+<a name="Octal numeration"></a>
+<p>Uno de esos sistemas de numeración se llama<i>octal</i>, porque es un sistema de ponderación posicional con base ocho.  Los cifrados válidos incluyen los símbolos 0, 1, 2, 3, 4, 5, 6 y 7. El peso de cada lugar difiere del que está al lado en un factor de ocho.</p>
+<a name="Hexadecimal numeration"></a>
+<p>Otro sistema se llama<i>hexadecimal</i>, porque es un sistema ponderado por posición con una base de dieciséis.  Los cifrados válidos incluyen los símbolos decimales normales 0, 1, 2, 3, 4, 5, 6, 7, 8 y 9, más seis caracteres alfabéticos A, B, C, D, E y F, para hacer un total de dieciséis.  Como ya habrás adivinado, el peso de cada lugar difiere del anterior en un factor de dieciséis.</p>
+<p>Contemos nuevamente de cero a veinte usando decimal, binario, octal y hexadecimal para contrastar estos sistemas de numeración:</p>
+<br/>
+<pre>
+Number       Decimal      Binary        Octal      Hexadecimal
+------       -------      -------       -----      -----------
+Zero            0           0             0             0
+One             1           1             1             1 
+Two             2           10            2             2
+Three           3           11            3             3
+Four            4           100           4             4
+Five            5           101           5             5
+Six             6           110           6             6
+Seven           7           111           7             7
+Eight           8           1000          10            8
+Nine            9           1001          11            9            
+Ten             10          1010          12            A
+Eleven          11          1011          13            B
+Twelve          12          1100          14            C
+Thirteen        13          1101          15            D
+Fourteen        14          1110          16            E
+Fifteen         15          1111          17            F
+Sixteen         16          10000         20            10
+Seventeen       17          10001         21            11
+Eighteen        18          10010         22            12
+Nineteen        19          10011         23            13
+Twenty          20          10100         24            14
+</pre>
+<br/>
+<p>Los sistemas de numeración octal y hexadecimal no tendrían sentido si no fuera por su capacidad de convertirse fácilmente hacia y desde notación binaria.  Su propósito principal es servir como un método "taquigráfico" para denotar un número representado electrónicamente en forma binaria.  Debido a que las bases de octal (ocho) y hexadecimal (dieciséis) son incluso múltiplos de la base del binario (dos), los bits binarios se pueden agrupar y convertir directamente hacia o desde sus respectivos dígitos octales o hexadecimales.  Con octal, los bits binarios se agrupan en tres (porque 2<sup>3</sup>= 8), y con hexadecimal, los bits binarios se agrupan de cuatro (porque 2<sup>4</sup>= 16):</p>
+<br/>
+<pre>
+BINARY TO OCTAL CONVERSION
+Convert 10110111.1<sub>2</sub>  to octal:
+.
+.                         implied zero       implied zeros
+.                              |                  ||
+.                              010   110   111   100
+Convert each group of bits     ###   ###   ### . ###
+to its octal equivalent:        2     6     7     4
+.
+Answer:     10110111.1<sub>2</sub>  =  267.4<sub>8</sub>      
+</pre>
+<br/>
+<p>Tuvimos que agrupar los bits de tres en tres, desde el punto binario a la izquierda y desde el punto binario a la derecha, añadiendo ceros (implícitos) según fuera necesario para formar grupos completos de 3 bits.  Cada dígito octal se tradujo de los grupos binarios de 3 bits.  La conversión de binario a hexadecimal es muy parecida:</p>
+<br/>
+<pre>
+BINARY TO HEXADECIMAL CONVERSION
+Convert 10110111.1<sub>2</sub>  to hexadecimal:
+.
+.                                        implied zeros
+.                                             |||
+.                              1011   0111   1000
+Convert each group of bits     ----   ---- . ----
+to its hexadecimal equivalent:   B      7      8
+.
+Answer:     10110111.1<sub>2</sub>  =  B7.8<sub>16</sub>      
+</pre>
+<br/>
+<p>Aquí tuvimos que agrupar los bits en cuatro, desde el punto binario izquierdo y desde el punto binario derecho, agregando ceros (implícitos) según sea necesario para hacer grupos completos de 4 bits:</p>
+<p>Del mismo modo, la conversión de octal o hexadecimal a binario se realiza tomando cada dígito octal o hexadecimal y convirtiéndolo a su grupo binario equivalente (3 o 4 bits), luego juntando todos los grupos de bits binarios.</p>
+<p>Por cierto, la notación hexadecimal es más popular, porque las agrupaciones de bits binarios en los equipos digitales suelen ser múltiplos de ocho (8, 16, 32, 64 y 128 bits), que también son múltiplos de 4. El octal, al estar basado en grupos de bits binarios de 3, no funciona de manera uniforme con esos tamaños de grupos de bits comunes.</p>
+<h2><u><a name="xtocid91424">Octal and hexadecimal to decimal conversion</a></u></h2>
+<p>Aunque la intención principal de los sistemas de numeración octal y hexadecimal es la representación "taquigráfica" de números binarios en la electrónica digital, a veces tenemos la necesidad de convertir cualquiera de esos sistemas a la forma decimal.  Por supuesto, podríamos simplemente convertir el formato hexadecimal u octal a binario, y luego convertir de binario a decimal, ya que ya sabemos hacer ambas cosas, pero también podemos convertir directamente.</p>
+<p>Dado que el octal es un sistema de numeración de base ocho, cada valor de peso posicional difiere de cualquier lugar adyacente en un factor de ocho.  Por ejemplo, el número octal 245,37 se puede descomponer en valores posicionales como estos:</p>
+<br/>
+<pre>
+octal
+digits =       2  4  5  .  3  7            
+.              -  -  -  -  -  -
+weight =       6  8  1     1  1
+(in decimal    4           /  /
+notation)                  8  6
+.                             4
+</pre>
+<br/>
+<p>El valor decimal de cada peso posicional octal multiplicado por su respectivo multiplicador de cifrado se puede determinar de la siguiente manera:</p>
+<br/>
+<pre>
+(2 x 64<sub>10</sub>)  +  (4 x 8<sub>10</sub>)  +  (5 x 1<sub>10</sub>)  +  (3 x 0.125<sub>10</sub>)  +
+(7 x 0.015625<sub>10</sub>)  =  165.484375<sub>10</sub>
+</pre>
+<br/>
+<p>La técnica para convertir la notación hexadecimal a decimal es la misma, excepto que cada peso posicional sucesivo cambia en un factor de dieciséis.  Simplemente indique el peso de cada dígito, multiplique el valor de cada dígito hexadecimal por su peso respectivo (en forma decimal) y luego sume todos los valores decimales para obtener un total.  Por ejemplo, el número hexadecimal 30F.A9<sub>16</sub>se puede convertir así:</p>
+<br/>
+<pre>
+hexadecimal
+digits =       3  0  F  .  A  9            
+.              -  -  -  -  -  -
+weight =       2  1  1     1  1
+(in decimal    5  6        /  /
+notation)      6           1  2
+.                          6  5
+.                             6
+</pre>
+<br/>
+<pre>
+(3 x 256<sub>10</sub>)  +  (0 x 16<sub>10</sub>)  +  (15 x 1<sub>10</sub>)  +  (10 x 0.0625<sub>10</sub>)  +  
+(9 x 0.00390625<sub>10</sub>)  = 783.66015625<sub>10</sub>
+</pre>
+<br/>
+<p>Estas técnicas básicas se pueden utilizar para convertir una notación numérica de<i>any</i>base a forma decimal, si conoce el valor de la base de ese sistema de numeración.</p>
+<h2><u><a name="xtocid91425">Conversion from decimal numeration</a></u></h2>
+<p>Debido a que los sistemas de numeración octal y hexadecimal tienen bases que son múltiplos de binario (base 2), la conversión entre hexadecimal u octal y binario es muy fácil.  Además, debido a que estamos muy familiarizados con el sistema decimal, convertir binario, octal o hexadecimal a decimal es relativamente fácil (simplemente sume los productos de los valores cifrados y los pesos posicionales).  Sin embargo, la conversión de decimal a cualquiera de estos "extraños" sistemas de numeración es un asunto diferente.</p>
+<p>El método que probablemente tendrá más sentido es el método de "prueba y ajuste", en el que se intenta "ajustar" la notación binaria, octal o hexadecimal al valor deseado representado en forma decimal.  Por ejemplo, digamos que quiero representar el valor decimal de 87 en forma binaria.  Comencemos dibujando un campo numérico binario, completo con valores de peso posicional:</p>
+<br/>
+<pre>
+.
+.              -  -  -  -  -  -  -  -
+weight =       1  6  3  1  8  4  2  1
+(in decimal    2  4  2  6
+notation)      8   
+</pre>
+<br/>
+<p>Bueno, sabemos que no tendremos un bit "1" en el lugar de 128, porque eso inmediatamente nos daría un valor mayor que 87. Sin embargo, dado que el siguiente peso a la derecha (64) es menor que 87, sabemos que debemos tener un "1" allí.</p>
+<br/>
+<pre>
+.              1
+.              -  -  -  -  -  -  -    Decimal value so far = 64<sub>10</sub>
+weight =       6  3  1  8  4  2  1                              
+(in decimal    4  2  6
+notation)       
+
+</pre>
+<br/>
+<p>Si tuviéramos que convertir el siguiente lugar a la derecha en "1" también, nuestro valor total sería 64<sub>10</sub>+ 32<sub>10</sub>, o 96<sub>10</sub>.  Esto es mayor que 87.<sub>10</sub>, entonces sabemos que este bit debe ser un "0".  Si hacemos que el siguiente bit de posición (16) sea igual a "1", esto lleva nuestro valor total a 64.<sub>10</sub>+ 16<sub>10</sub>, o 80<sub>10</sub>, que está más cerca de nuestro valor deseado (87<sub>10</sub>) sin excederlo:</p>
+<br/>
+<pre>
+.              1  0  1
+.              -  -  -  -  -  -  -    Decimal value so far = 80<sub>10</sub>
+weight =       6  3  1  8  4  2  1   
+(in decimal    4  2  6
+notation)       
+</pre>
+<br/>
+<p>Si continuamos con esta progresión, configurando cada bit de menor peso según necesitemos para llegar al valor total deseado sin excederlo, eventualmente llegaremos a la cifra correcta:</p>
+<br/>
+<pre>
+.              1  0  1  0  1  1  1
+.              -  -  -  -  -  -  -    Decimal value so far = 87<sub>10</sub>
+weight =       6  3  1  8  4  2  1  
+(in decimal    4  2  6
+notation)       
+</pre>
+<br/>
+<p>Esta estrategia de prueba y ajuste también funcionará con conversiones octales y hexadecimales.  Tomemos la misma cifra decimal, 87.<sub>10</sub>y convertirlo a numeración octal:</p>
+<br/>
+<pre>
+.
+.              -  -  -  
+weight =       6  8  1  
+(in decimal    4  
+notation)       
+</pre>
+<br/>
+<p>Si ponemos un cifrado de "1" en lugar del 64, tendríamos un valor total de 64<sub>10</sub>(menos de 87<sub>10</sub>).  Si ponemos un cifrado de "2" en lugar de 64, tendríamos un valor total de 128<sub>10</sub>(mayor que 87<sub>10</sub>).  Esto nos dice que nuestra numeración octal debe comenzar con un "1" en el lugar del 64:</p>
+<br/>
+<pre>
+.              1
+.              -  -  -    Decimal value so far = 64<sub>10</sub>
+weight =       6  8  1 
+(in decimal    4  
+notation)       
+</pre>
+<br/>
+<p>Ahora, necesitamos experimentar con valores de cifrado en lugar de los 8 para intentar obtener un valor total (decimal) lo más cercano posible a 87 sin excederlo.  Al probar las primeras opciones de cifrado, obtenemos:</p>
+<br/>
+<pre>
+"1" = 64<sub>10</sub> + 8<sub>10</sub>  = 72<sub>10</sub>
+"2" = 64<sub>10</sub> + 16<sub>10</sub> = 80<sub>10</sub>
+"3" = 64<sub>10</sub> + 24<sub>10</sub> = 88<sub>10</sub> 
+</pre>
+<br/>
+<p>Un valor cifrado de "3" en lugar del 8 nos colocaría por encima del total deseado de 87<sub>10</sub>, ¡entonces "2" es!</p>
+<br/>
+<pre>
+.              1  2
+.              -  -  -    Decimal value so far = 80<sub>10</sub>   
+weight =       6  8  1 
+(in decimal    4  
+notation)       
+</pre>
+<br/>
+<p>Ahora, todo lo que necesitamos para hacer un total de 87 es un código de "7" en lugar de los 1:</p>
+<br/>
+<pre>
+.              1  2  7
+.              -  -  -    Decimal value so far = 87<sub>10</sub>   
+weight =       6  8  1  
+(in decimal    4  
+notation)       
+</pre>
+<br/>
+<p>Por supuesto, si estuviste prestando atención durante la última sección sobre conversiones octal/binaria, te darás cuenta de que podemos tomar la representación binaria de (decimal) 87<sub>10</sub>, que previamente determinamos que era 1010111<sub>2</sub>y convertirlo fácilmente a octal para comprobar nuestro trabajo:</p>
+<br/>
+<pre>
+.          Implied zeros
+.               ||
+.               001 010 111   Binary
+.               — --- — 
+.                1   2   7    Octal
+.
+Answer: 1010111<sub>2</sub> = 127<sub>8</sub>
+</pre>
+<br/>
+<p>¿Podemos hacer la conversión de decimal a hexadecimal de la misma manera?  Claro, pero ¿quién querría hacerlo?  Este método es sencillo de entender, pero laborioso de realizar.  Hay otra forma de realizar estas conversiones, que es esencialmente la misma (matemáticamente), pero más fácil de realizar.</p>
+<p>Este otro método utiliza ciclos repetidos de división (usando notación decimal) para dividir la numeración decimal en múltiplos de valores de peso posicional binarios, octales o hexadecimales.  En el primer ciclo de división, tomamos el número decimal original y lo dividimos por la base del sistema de numeración al que estamos convirtiendo (binario=2 octal=8, hexadecimal=16).  Luego, tomamos la porción entera del resultado de la división (cociente) y la dividimos nuevamente por el valor base, y así sucesivamente, hasta que terminemos con un cociente menor que 1. Los dígitos binarios, octales o hexadecimales están determinados por los "restos" que quedan en cada paso de la división.  Veamos cómo funciona esto para binario, con el ejemplo decimal de 87.<sub>10</sub>:
+</p>
+<br/>
+<pre>
+.   87               Divide 87 by 2, to get a quotient of 43.5
+.  — = 43.5        Division "remainder" = 1, or the &lt; 1 portion
+.   2                of the quotient times the divisor (0.5 x 2)
+.
+.   43               Take the whole-number portion of 43.5 (43)
+.  — = 21.5        and divide it by 2 to get 21.5, or 21 with 
+.   2                a remainder of 1
+.
+.   21               And so on . . . remainder = 1 (0.5 x 2)
+.  — = 10.5
+.   2
+.
+.   10               And so on . . . remainder = 0
+.  — = 5.0
+.   2
+.
+.   5                And so on . . . remainder = 1 (0.5 x 2)
+.  — = 2.5
+.   2
+.
+.   2                And so on . . . remainder = 0
+.  — = 1.0
+.   2
+.
+.   1                . . . until we get a quotient of less than 1
+.  — = 0.5         remainder = 1 (0.5 x 2)
+.   2
+</pre>
+<br/>
+<p>Los bits binarios se ensamblan a partir de los restos de los sucesivos pasos de división, comenzando con el LSB y continuando hasta el MSB.  En este caso llegamos a una notación binaria de 1010111.<sub>2</sub>.  Cuando dividimos entre 2, siempre obtendremos un cociente que termina en ".0" o ".5", es decir, un resto de 0 o 1. Como se dijo antes, esta técnica de conversión de división repetida funcionará para sistemas de numeración distintos del binario.  Si tuviéramos que realizar divisiones sucesivas usando un número diferente, como por ejemplo 8 para la conversión a octal, necesariamente obtendríamos restos entre 0 y 7. Intentemos esto con el mismo número decimal, 87.<sub>10</sub>:
+</p>
+<br/>
+<pre>
+.   87               Divide 87 by 8, to get a quotient of 10.875 
+.  — = 10.875      Division "remainder" = 7, or the &lt; 1 portion
+.   8                of the quotient times the divisor (.875 x 8)
+.
+.   10
+.  — = 1.25        Remainder = 2 
+.   8
+.
+.   1
+.  — = 0.125       Quotient is less than 1, so we'll stop here.
+.   8                Remainder = 1
+.
+.  RESULT:   87<sub>10</sub>   = 127<sub>8</sub>
+</pre>
+<br/>
+<p>También podemos utilizar una técnica similar para convertir sistemas de numeración que tratan con cantidades menores que 1.  Para convertir un número decimal menor que 1 a binario, octal o hexadecimal, utilizamos la multiplicación repetida, tomando la porción entera del producto en cada paso como el siguiente dígito de nuestro número convertido.  Usemos el número decimal 0.8125<sub>10</sub>como ejemplo, convirtiendo a binario:</p>
+<br/>
+<pre>
+.  0.8125 x 2 = 1.625     Integer portion of product = 1
+.
+.  0.625 x 2 = 1.25       Take &lt; 1 portion of product and remultiply
+.                         Integer portion of product = 1
+.
+.  0.25 x 2 = 0.5         Integer portion of product = 0
+.
+.  0.5 x 2 = 1.0          Integer portion of product = 1
+.                         Stop when product is a pure integer 
+.                         (ends with .0)
+.
+.  RESULT:   0.8125<sub>10</sub>   = 0.1101<sub>2</sub>
+</pre>
+<br/>
+<p>Al igual que con el proceso de división repetida de números enteros, cada paso nos da el siguiente dígito (o bit) más alejado del "punto".  Con números enteros (división), trabajamos del LSB al MSB (de derecha a izquierda), pero con la multiplicación repetida, trabajamos de izquierda a derecha.  Para convertir un número decimal mayor que 1, con un componente &lt; 1, debemos usar<i>ambos</i>técnicas, una a la vez.  Tome el ejemplo decimal de 54,40625.<sub>10</sub>, convirtiendo a binario:</p>
+<br/>
+<pre>
+REPEATED DIVISION FOR THE INTEGER PORTION:
+.   
+.     54
+.    — = 27.0          Remainder = 0
+.     2 
+.
+.     27
+.    — = 13.5          Remainder = 1  (0.5 x 2)
+.     2
+.
+.     13
+.    — = 6.5           Remainder = 1 (0.5 x 2)
+.     2
+.
+.     6
+.    — = 3.0           Remainder = 0 
+.     2
+.
+.     3
+.    — = 1.5           Remainder = 1 (0.5 x 2) 
+.     2
+.
+.     1
+.    — = 0.5           Remainder = 1 (0.5 x 2)
+.     2
+.
+PARTIAL ANSWER:  54<sub>10</sub>   = 110110<sub>2</sub>
+</pre>
+<br/>
+<pre>
+REPEATED MULTIPLICATION FOR THE &lt; 1 PORTION:
+.  
+.  0.40625 x 2 = 0.8125  Integer portion of product = 0
+.
+.  0.8125 x 2 = 1.625    Integer portion of product = 1
+.
+.  0.625 x 2 = 1.25      Integer portion of product = 1
+.
+.  0.25 x 2 = 0.5        Integer portion of product = 0
+.
+.  0.5 x 2 = 1.0         Integer portion of product = 1
+.
+.  PARTIAL ANSWER:  0.40625<sub>10</sub>  = 0.01101<sub>2</sub>
+.
+.  COMPLETE ANSWER: 54<sub>10</sub>  + 0.40625<sub>10</sub>  = 54.40625<sub>10</sub>
+.
+.                   110110<sub>2</sub> + 0.01101<sub>2</sub> = 110110.01101<sub>2</sub>
+</pre>
+<br/>
+<hr/>
+<p>
+<i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="DIGI_A3.html">CC BY License</a>.
+</p>
+
+
+
+</body>
+
+    </article>
+    <nav class="chapter-nav">
+      <a href="index.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
+      <a href="DIGI_10.html" class="nav-btn" id="btn-next">Siguiente →</a>
+    </nav>
+    <footer class="site-footer">
+      <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>
+      <p>Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Traducción automática al español</p>
+    </footer>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>
