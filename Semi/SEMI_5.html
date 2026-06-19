@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>!function(){var t=localStorage.getItem("liec-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();</script>
 <meta charset="UTF-8">
+    <meta name="description" content="A transistorEs un dispositivo semiconductor lineal que controla la corriente con la aplicación de una señal eléctrica de menor potencia. Los transistores se…">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Circuitopedia">
+    <meta property="og:title" content="Transistores de Efecto de Campo JFET — Circuitopedia">
+    <meta property="og:description" content="A transistorEs un dispositivo semiconductor lineal que controla la corriente con la aplicación de una señal eléctrica de menor potencia. Los transistores s">
+    <meta property="og:url" content="https://circuitopedia.io/Semi/SEMI_5.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Transistores de Efecto de Campo JFET — Circuitopedia">
+    <meta name="twitter:description" content="A transistorEs un dispositivo semiconductor lineal que controla la corriente con la aplicación de una señal eléctrica de menor potencia. Los transistores s">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecciones de circuitos eléctricos - Volumen III (Semiconductores) - Capítulo 5 | Lecciones de Circuitos Eléctricos</title>
+<title>Transistores de Efecto de Campo JFET — Circuitopedia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.34.0/dist/tabler-icons.min.css">
 <style>:root { --accent: #10b981; }</style>
 </head>
 <body>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <a href="../index.html" class="logo">Circuitopedia</a>
       <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
     </div>
     <div class="search-box">
@@ -22,132 +34,153 @@
     </div>
     <nav class="sidebar-nav">
 <div class="vol-group">
-  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">
+    <span class="vol-ic"><i class="ti ti-bolt" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Continua</span><span class="vol-lb">Vol. I · DC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
-    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
-    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
-    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
-    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
-    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
-    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
-    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
-    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
-    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
-    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
-    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
-    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
-    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
-    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
-    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
-    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
-    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
-    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+    <li><a href="../DC/DC_1.html"><span class="cap-num">01</span><span class="cap-name">Conceptos Básicos de Electricidad</span></a></li>
+    <li><a href="../DC/DC_2.html"><span class="cap-num">02</span><span class="cap-name">Ley de Ohm</span></a></li>
+    <li><a href="../DC/DC_3.html"><span class="cap-num">03</span><span class="cap-name">Seguridad Eléctrica</span></a></li>
+    <li><a href="../DC/DC_4.html"><span class="cap-num">04</span><span class="cap-name">Notación Científica y Prefijos</span></a></li>
+    <li><a href="../DC/DC_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Serie y Paralelo</span></a></li>
+    <li><a href="../DC/DC_6.html"><span class="cap-num">06</span><span class="cap-name">Divisores y Leyes de Kirchhoff</span></a></li>
+    <li><a href="../DC/DC_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Serie-Paralelo</span></a></li>
+    <li><a href="../DC/DC_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos de Medición CC</span></a></li>
+    <li><a href="../DC/DC_9.html"><span class="cap-num">09</span><span class="cap-name">Señales de Instrumentación</span></a></li>
+    <li><a href="../DC/DC_10.html"><span class="cap-num">10</span><span class="cap-name">Análisis de Red CC</span></a></li>
+    <li><a href="../DC/DC_11.html"><span class="cap-num">11</span><span class="cap-name">Baterías y Sistemas de Energía</span></a></li>
+    <li><a href="../DC/DC_12.html"><span class="cap-num">12</span><span class="cap-name">Conductores y Aisladores</span></a></li>
+    <li><a href="../DC/DC_13.html"><span class="cap-num">13</span><span class="cap-name">Condensadores</span></a></li>
+    <li><a href="../DC/DC_14.html"><span class="cap-num">14</span><span class="cap-name">Magnetismo y Electromagnetismo</span></a></li>
+    <li><a href="../DC/DC_15.html"><span class="cap-num">15</span><span class="cap-name">Inductores</span></a></li>
+    <li><a href="../DC/DC_16.html"><span class="cap-num">16</span><span class="cap-name">Constantes de Tiempo RC y L/R</span></a></li>
+    <li><a href="../DC/DC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../DC/DC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../DC/DC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">
+    <span class="vol-ic"><i class="ti ti-wave-sine" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Alterna</span><span class="vol-lb">Vol. II · AC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
-    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
-    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
-    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
-    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
-    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
-    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
-    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
-    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
-    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
-    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
-    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
-    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
-    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
-    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
-    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
-    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+    <li><a href="../AC/AC_1.html"><span class="cap-num">01</span><span class="cap-name">Teoría Básica de CA</span></a></li>
+    <li><a href="../AC/AC_2.html"><span class="cap-num">02</span><span class="cap-name">Números Complejos</span></a></li>
+    <li><a href="../AC/AC_3.html"><span class="cap-num">03</span><span class="cap-name">Reactancia e Impedancia Inductiva</span></a></li>
+    <li><a href="../AC/AC_4.html"><span class="cap-num">04</span><span class="cap-name">Reactancia e Impedancia Capacitiva</span></a></li>
+    <li><a href="../AC/AC_5.html"><span class="cap-num">05</span><span class="cap-name">Reactancia e Impedancia R, L y C</span></a></li>
+    <li><a href="../AC/AC_6.html"><span class="cap-num">06</span><span class="cap-name">Resonancia</span></a></li>
+    <li><a href="../AC/AC_7.html"><span class="cap-num">07</span><span class="cap-name">Señales CA de Frecuencia Mixta</span></a></li>
+    <li><a href="../AC/AC_8.html"><span class="cap-num">08</span><span class="cap-name">Filtros</span></a></li>
+    <li><a href="../AC/AC_9.html"><span class="cap-num">09</span><span class="cap-name">Transformadores</span></a></li>
+    <li><a href="../AC/AC_10.html"><span class="cap-num">10</span><span class="cap-name">Circuitos CA Polifásicos</span></a></li>
+    <li><a href="../AC/AC_11.html"><span class="cap-num">11</span><span class="cap-name">Factor de Potencia</span></a></li>
+    <li><a href="../AC/AC_12.html"><span class="cap-num">12</span><span class="cap-name">Circuitos de Medición CA</span></a></li>
+    <li><a href="../AC/AC_13.html"><span class="cap-num">13</span><span class="cap-name">Motores de CA</span></a></li>
+    <li><a href="../AC/AC_14.html"><span class="cap-num">14</span><span class="cap-name">Líneas de Transmisión</span></a></li>
+    <li><a href="../AC/AC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../AC/AC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../AC/AC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">
+    <span class="vol-ic"><i class="ti ti-cpu" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Semiconductores</span><span class="vol-lb">Vol. III</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
-    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
-    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
-    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
-    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
-    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
-    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
-    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
-    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
-    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
-    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
-    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
-    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
-    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
-    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
-    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+    <li><a href="../Semi/SEMI_1.html"><span class="cap-num">01</span><span class="cap-name">Amplificadores y Dispositivos Activos</span></a></li>
+    <li><a href="../Semi/SEMI_2.html"><span class="cap-num">02</span><span class="cap-name">Dispositivos de Estado Sólido</span></a></li>
+    <li><a href="../Semi/SEMI_3.html"><span class="cap-num">03</span><span class="cap-name">Diodos y Rectificadores</span></a></li>
+    <li><a href="../Semi/SEMI_4.html"><span class="cap-num">04</span><span class="cap-name">Transistores Bipolares (BJT)</span></a></li>
+    <li><a href="../Semi/SEMI_5.html"><span class="cap-num">05</span><span class="cap-name">Transistores de Efecto de Campo JFET</span></a></li>
+    <li><a href="../Semi/SEMI_6.html"><span class="cap-num">06</span><span class="cap-name">Transistores de Efecto de Campo IGFET</span></a></li>
+    <li><a href="../Semi/SEMI_7.html"><span class="cap-num">07</span><span class="cap-name">Tiristores</span></a></li>
+    <li><a href="../Semi/SEMI_8.html"><span class="cap-num">08</span><span class="cap-name">Amplificadores Operacionales</span></a></li>
+    <li><a href="../Semi/SEMI_9.html"><span class="cap-num">09</span><span class="cap-name">Circuitos Analógicos Prácticos</span></a></li>
+    <li><a href="../Semi/SEMI_10.html"><span class="cap-num">10</span><span class="cap-name">Filtros Activos</span></a></li>
+    <li><a href="../Semi/SEMI_11.html"><span class="cap-num">11</span><span class="cap-name">Motores de CC</span></a></li>
+    <li><a href="../Semi/SEMI_12.html"><span class="cap-num">12</span><span class="cap-name">Inversores y Accionadores de CA</span></a></li>
+    <li><a href="../Semi/SEMI_13.html"><span class="cap-num">13</span><span class="cap-name">Tubos de Electrones</span></a></li>
+    <li><a href="../Semi/SEMI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Semi/SEMI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Semi/SEMI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">
+    <span class="vol-ic"><i class="ti ti-binary" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Circuitos Digitales</span><span class="vol-lb">Vol. IV</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
-    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
-    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
-    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
-    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
-    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
-    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
-    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
-    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
-    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
-    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
-    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
-    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
-    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
-    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
-    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
-    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
-    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
-    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+    <li><a href="../Digital/DIGI_1.html"><span class="cap-num">01</span><span class="cap-name">Sistemas de Numeración</span></a></li>
+    <li><a href="../Digital/DIGI_2.html"><span class="cap-num">02</span><span class="cap-name">Aritmética Binaria</span></a></li>
+    <li><a href="../Digital/DIGI_3.html"><span class="cap-num">03</span><span class="cap-name">Puertas Lógicas</span></a></li>
+    <li><a href="../Digital/DIGI_4.html"><span class="cap-num">04</span><span class="cap-name">Interruptores</span></a></li>
+    <li><a href="../Digital/DIGI_5.html"><span class="cap-num">05</span><span class="cap-name">Relés Electromecánicos</span></a></li>
+    <li><a href="../Digital/DIGI_6.html"><span class="cap-num">06</span><span class="cap-name">Lógica de Escalera</span></a></li>
+    <li><a href="../Digital/DIGI_7.html"><span class="cap-num">07</span><span class="cap-name">Álgebra Booleana</span></a></li>
+    <li><a href="../Digital/DIGI_8.html"><span class="cap-num">08</span><span class="cap-name">Mapeo de Karnaugh</span></a></li>
+    <li><a href="../Digital/DIGI_9.html"><span class="cap-num">09</span><span class="cap-name">Funciones Lógicas Combinacionales</span></a></li>
+    <li><a href="../Digital/DIGI_10.html"><span class="cap-num">10</span><span class="cap-name">Multivibradores</span></a></li>
+    <li><a href="../Digital/DIGI_11.html"><span class="cap-num">11</span><span class="cap-name">Circuitos Secuenciales</span></a></li>
+    <li><a href="../Digital/DIGI_12.html"><span class="cap-num">12</span><span class="cap-name">Registros de Desplazamiento</span></a></li>
+    <li><a href="../Digital/DIGI_13.html"><span class="cap-num">13</span><span class="cap-name">Conversión Digital-Analógica</span></a></li>
+    <li><a href="../Digital/DIGI_14.html"><span class="cap-num">14</span><span class="cap-name">Comunicación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_15.html"><span class="cap-num">15</span><span class="cap-name">Almacenamiento Digital (Memoria)</span></a></li>
+    <li><a href="../Digital/DIGI_16.html"><span class="cap-num">16</span><span class="cap-name">Principios de Computación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Digital/DIGI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Digital/DIGI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">
+    <span class="vol-ic"><i class="ti ti-book-2" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Referencia</span><span class="vol-lb">Vol. V</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
-    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
-    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
-    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
-    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
-    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
-    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
-    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
-    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
-    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
-    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
-    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
-    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+    <li><a href="../Ref/REF_1.html"><span class="cap-num">01</span><span class="cap-name">Ecuaciones y Factores de Conversión</span></a></li>
+    <li><a href="../Ref/REF_2.html"><span class="cap-num">02</span><span class="cap-name">Códigos de Color</span></a></li>
+    <li><a href="../Ref/REF_3.html"><span class="cap-num">03</span><span class="cap-name">Tablas de Conductores y Aisladores</span></a></li>
+    <li><a href="../Ref/REF_4.html"><span class="cap-num">04</span><span class="cap-name">Referencia de Álgebra</span></a></li>
+    <li><a href="../Ref/REF_5.html"><span class="cap-num">05</span><span class="cap-name">Referencia de Trigonometría</span></a></li>
+    <li><a href="../Ref/REF_6.html"><span class="cap-num">06</span><span class="cap-name">Referencia de Cálculo</span></a></li>
+    <li><a href="../Ref/REF_7.html"><span class="cap-num">07</span><span class="cap-name">Simulación de Circuitos con SPICE</span></a></li>
+    <li><a href="../Ref/REF_8.html"><span class="cap-num">08</span><span class="cap-name">Solución de Problemas</span></a></li>
+    <li><a href="../Ref/REF_9.html"><span class="cap-num">09</span><span class="cap-name">Símbolos de Esquemas de Circuito</span></a></li>
+    <li><a href="../Ref/REF_10.html"><span class="cap-num">10</span><span class="cap-name">Tabla Periódica de los Elementos</span></a></li>
+    <li><a href="../Ref/REF_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Ref/REF_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Ref/REF_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">
+    <span class="vol-ic"><i class="ti ti-flask" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Experimentos</span><span class="vol-lb">Vol. VI</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
-    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
-    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
-    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
-    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
-    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
-    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
-    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
-    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
-    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
-    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+    <li><a href="../Exper/EXP_1.html"><span class="cap-num">01</span><span class="cap-name">Introducción</span></a></li>
+    <li><a href="../Exper/EXP_2.html"><span class="cap-num">02</span><span class="cap-name">Conceptos Básicos y Equipos de Prueba</span></a></li>
+    <li><a href="../Exper/EXP_3.html"><span class="cap-num">03</span><span class="cap-name">Circuitos CC</span></a></li>
+    <li><a href="../Exper/EXP_4.html"><span class="cap-num">04</span><span class="cap-name">Circuitos CA</span></a></li>
+    <li><a href="../Exper/EXP_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Semiconductores Discretos</span></a></li>
+    <li><a href="../Exper/EXP_6.html"><span class="cap-num">06</span><span class="cap-name">Circuitos Integrados Analógicos</span></a></li>
+    <li><a href="../Exper/EXP_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Integrados Digitales</span></a></li>
+    <li><a href="../Exper/EXP_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos con Temporizador 555</span></a></li>
+    <li><a href="../Exper/EXP_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Exper/EXP_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Exper/EXP_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">
+    <span class="vol-ic"><i class="ti ti-code" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Desarrollo</span><span class="vol-lb">Info técnica</span></span>
+  </a>
 </div>
 </nav>
 
@@ -156,35 +189,15 @@
   <main class="main-content">
     <header class="top-bar">
       <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
-      <span class="page-title">Lecciones de circuitos eléctricos - Volumen III (Semiconductores) - Capítulo 5</span>
+      <span class="page-title">Transistores de Efecto de Campo JFET</span>
       <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
     </header>
     <article class="content" id="content">
-      
-<body bgcolor="white">
-
-
-
-<hr/>
-<h1>Lecciones de circuitos eléctricos - Volumen III</h1>
-<h1>Capítulo 5</h1>
-<h1>TRANSISTORES DE EFECTO DE CAMPO DE UNIÓN</h1>
-<!--minitoc-->
-<ul>
-<li><a href="#xtocid90450"><u>Introduction</u></a></li>
-<li><a href="#xtocid90451"><u>The transistor as a switch</u></a></li>
-<li><a href="#xtocid90452"><u>Meter check of a transistor</u></a></li>
-<li><a href="#xtocid90453"><u>Active-mode operation</u></a></li>
-<li><a href="#xtocid90454"><u>The common-source amplifier -- PENDING</u></a></li>
-<li><a href="#xtocid90455"><u>The common-drain amplifier -- PENDING</u></a></li>
-<li><a href="#xtocid90456"><u>The common-gate amplifier -- PENDING</u></a></li>
-<li><a href="#xtocid90457"><u>Biasing techniques -- PENDING</u></a></li>
-<li><a href="#xtocid90458"><u>Transistor ratings and packages -- PENDING</u></a></li>
-<li><a href="#xtocid90459"><u>JFET quirks -- PENDING</u></a></li></ul>
+<h1>Transistores de Efecto de Campo JFET</h1>
 <p>
 <b>*** INCOMPLETO ***</b>
 </p>
-<h2><u><a name="xtocid90450">Introduction</a></u></h2>
+<h2><a name="xtocid90450">Introducción</a></h2>
 <p>
 A <i>transistor</i>Es un dispositivo semiconductor lineal que controla la corriente con la aplicación de una señal eléctrica de menor potencia.  Los transistores se pueden agrupar a grandes rasgos en dos divisiones principales:<i>bipolar</i> and <i>efecto de campo</i>.  En el último capítulo estudiamos los transistores bipolares, que utilizan una corriente pequeña para controlar una corriente grande.  En este capítulo, presentaremos el concepto general del transistor de efecto de campo: un dispositivo que utiliza un pequeño<i>Voltaje</i>para controlar la corriente, y luego centrarse en un tipo particular: el<i>unión</i>transistor de efecto de campo.  En el próximo capítulo exploraremos otro tipo de transistor de efecto de campo, el<i>puerta aislada</i>variedad.</p>
 <p>Todos los transistores de efecto de campo son<i>unipolar</i>en vez de<i>bipolar</i>dispositivos.  Es decir, la corriente principal que los atraviesa está compuesta por electrones a través de un semiconductor de tipo N o por huecos a través de un semiconductor de tipo P.  Esto se hace más evidente cuando se ve un diagrama físico del dispositivo:</p>
@@ -198,7 +211,7 @@ A <i>transistor</i>Es un dispositivo semiconductor lineal que controla la corrie
 </p>
 <p>Si la unión PN puerta-fuente tiene polarización directa con un voltaje pequeño, el canal JFET se "abrirá" un poco más para permitir el paso de mayores corrientes.  Sin embargo, la unión PN de un JFET no está diseñada para manejar una corriente sustancial por sí misma y, por lo tanto, no se recomienda polarizar directamente la unión bajo ninguna circunstancia.</p>
 <p>Esta es una descripción general muy condensada del funcionamiento de JFET.  En la siguiente sección, exploraremos el uso del JFET como dispositivo de conmutación.</p>
-<h2><u><a name="xtocid90451">The transistor as a switch</a></u></h2>
+<h2><a name="xtocid90451">El transistor como interruptor</a></h2>
 <p>Al igual que su primo bipolar, el transistor de efecto de campo se puede utilizar como interruptor de encendido/apagado que controla la energía eléctrica enviada a una carga.  Comencemos nuestra investigación del JFET como un interruptor con nuestro conocido circuito de interruptor/lámpara:</p>
 <p> <img src="03074.png"/> </p>
 <p>Recordando que el<i>revisado</i>La corriente en un JFET fluye entre la fuente y el drenaje, sustituimos las conexiones de fuente y drenaje de un JFET por los dos extremos del interruptor en el circuito anterior:</p>
@@ -223,7 +236,7 @@ A <i>transistor</i>Es un dispositivo semiconductor lineal que controla la corrie
 <li>Los JFET son dispositivos normalmente encendidos (normalmente saturados).  La aplicación de un voltaje de polarización inversa entre la puerta y la fuente hace que la región de agotamiento de esa unión se expanda, "pellizcando" así el canal entre la fuente y el drenaje a través del cual viaja la corriente controlada.</li>
 <li>Puede ser necesario conectar una resistencia de "purga" entre la puerta y la fuente para descargar la carga almacenada acumulada en la capacitancia natural de la unión cuando se elimina el voltaje de control.  De lo contrario, es posible que quede una carga para mantener el JFET en modo de corte incluso después de que se haya desconectado la fuente de voltaje.</li>
 </ul>
-<h2><u><a name="xtocid90452">Meter check of a transistor</a></u></h2>
+<h2><a name="xtocid90452">Verificación de un transistor con multímetro</a></h2>
 <p>Probar un JFET con un multímetro puede parecer una tarea relativamente fácil, ya que solo tiene una unión PN para probar: ya sea medida entre la compuerta y la fuente, o entre la compuerta y el drenaje.</p>
 <p> <img src="03156.png"/> </p>
 <p>
@@ -235,7 +248,7 @@ A <i>transistor</i>Es un dispositivo semiconductor lineal que controla la corrie
 <a name="Foam, anti-static"></a>
 <p>Una buena estrategia a seguir al probar un JFET es insertar las clavijas del transistor en espuma antiestática (el material utilizado para enviar y almacenar componentes electrónicos sensibles a la estática) justo antes de la prueba.  La conductividad de la espuma creará una conexión resistiva entre todos los terminales del transistor cuando se inserte.  Esta conexión garantizará que todo el voltaje residual acumulado a través de la unión PN del canal de puerta se neutralice, "abriendo" así el canal para una prueba precisa del medidor de continuidad entre la fuente y el drenaje.</p>
 <p>Dado que el canal JFET es una pieza única e ininterrumpida de material semiconductor, generalmente no hay diferencia entre los terminales de fuente y drenaje.  Una verificación de resistencia desde la fuente hasta el drenaje debería arrojar el mismo valor que una verificación desde el drenaje hasta la fuente.  Esta resistencia debe ser relativamente baja (unos pocos cientos de ohmios como máximo) cuando el voltaje de la unión PN puerta-fuente es cero.  Al aplicar un voltaje de polarización inversa entre la puerta y la fuente, el pellizco del canal debería ser evidente mediante una mayor lectura de resistencia en el medidor.</p>
-<h2><u><a name="xtocid90453">Active-mode operation</a></u></h2>
+<h2><a name="xtocid90453">Operación en modo activo</a></h2>
 <p>Los JFET, al igual que los transistores bipolares, pueden "estrangular" la corriente en un modo entre corte y saturación llamado<i>activo</i>modo.  Para comprender mejor el funcionamiento de JFET, configuremos una simulación SPICE similar a la utilizada para explorar la función básica del transistor bipolar:</p>
 <p> <img src="03159.png"/> </p>
 <br/>
@@ -524,7 +537,7 @@ v1 3 0 dc 25
 <li>La relación entre el voltaje puerta-fuente (control) y la corriente de drenaje (controlada) no es lineal: a medida que disminuye el voltaje puerta-fuente, la corriente de drenaje aumenta exponencialmente.  Es decir, la transconductancia de un JFET no es constante en su rango de operación.</li>
 <li>En su región de triodo, los JFET regulan el drenaje a la fuente.<i>resistencia</i>de acuerdo con la cantidad de voltaje de polarización inversa aplicada entre la puerta y la fuente.  En otras palabras, actúan como resistencias controladas por voltaje.</li>
 </ul>
-<h2><u><a name="xtocid90454">The common-source amplifier -- PENDING</a></u></h2>
+<h2><a name="xtocid90454">El amplificador de fuente común</a></h2>
 <p>
 <b>*** PENDIENTE ***</b>
 </p>
@@ -534,7 +547,7 @@ v1 3 0 dc 25
 <li></li>
 <li></li>
 </ul>
-<h2><u><a name="xtocid90455">The common-drain amplifier -- PENDING</a></u></h2>
+<h2><a name="xtocid90455">El amplificador de drenaje común</a></h2>
 <p>
 <b>*** PENDIENTE ***</b>
 </p>
@@ -544,7 +557,7 @@ v1 3 0 dc 25
 <li></li>
 <li></li>
 </ul>
-<h2><u><a name="xtocid90456">The common-gate amplifier -- PENDING</a></u></h2>
+<h2><a name="xtocid90456">El amplificador de compuerta común</a></h2>
 <p>
 <b>*** PENDIENTE ***</b>
 </p>
@@ -554,7 +567,7 @@ v1 3 0 dc 25
 <li></li>
 <li></li>
 </ul>
-<h2><u><a name="xtocid90457">Biasing techniques -- PENDING</a></u></h2>
+<h2><a name="xtocid90457">Técnicas de polarización</a></h2>
 <p>
 <b>*** PENDIENTE ***</b>
 </p>
@@ -564,7 +577,7 @@ v1 3 0 dc 25
 <li></li>
 <li></li>
 </ul>
-<h2><u><a name="xtocid90458">Transistor ratings and packages -- PENDING</a></u></h2>
+<h2><a name="xtocid90458">Especificaciones y encapsulados de transistores</a></h2>
 <p>
 <b>*** PENDIENTE ***</b>
 </p>
@@ -574,7 +587,7 @@ v1 3 0 dc 25
 <li></li>
 <li></li>
 </ul>
-<h2><u><a name="xtocid90459">JFET quirks -- PENDING</a></u></h2>
+<h2><a name="xtocid90459">JFET quirks -- PENDING</a></h2>
 <p>
 <b>*** PENDIENTE ***</b>
 </p>

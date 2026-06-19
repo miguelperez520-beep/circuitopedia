@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>!function(){var t=localStorage.getItem("liec-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();</script>
 <meta charset="UTF-8">
+    <meta name="description" content="Con esta lección, espero evitar un error común que se encuentra en los libros de texto de electrónica de ignorar o no cubrir con suficiente detalle el tema de…">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Circuitopedia">
+    <meta property="og:title" content="Seguridad Eléctrica — Circuitopedia">
+    <meta property="og:description" content="Con esta lección, espero evitar un error común que se encuentra en los libros de texto de electrónica de ignorar o no cubrir con suficiente detalle el tema">
+    <meta property="og:url" content="https://circuitopedia.io/DC/DC_3.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Seguridad Eléctrica — Circuitopedia">
+    <meta name="twitter:description" content="Con esta lección, espero evitar un error común que se encuentra en los libros de texto de electrónica de ignorar o no cubrir con suficiente detalle el tema">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecciones de circuitos eléctricos - Volumen I (DC) - Capítulo 3 | Lecciones de Circuitos Eléctricos</title>
+<title>Seguridad Eléctrica — Circuitopedia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.34.0/dist/tabler-icons.min.css">
 <style>:root { --accent: #3b82f6; }</style>
 </head>
 <body>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <a href="../index.html" class="logo">Circuitopedia</a>
       <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
     </div>
     <div class="search-box">
@@ -22,132 +34,153 @@
     </div>
     <nav class="sidebar-nav">
 <div class="vol-group">
-  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">
+    <span class="vol-ic"><i class="ti ti-bolt" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Continua</span><span class="vol-lb">Vol. I · DC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
-    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
-    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
-    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
-    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
-    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
-    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
-    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
-    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
-    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
-    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
-    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
-    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
-    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
-    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
-    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
-    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
-    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
-    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+    <li><a href="../DC/DC_1.html"><span class="cap-num">01</span><span class="cap-name">Conceptos Básicos de Electricidad</span></a></li>
+    <li><a href="../DC/DC_2.html"><span class="cap-num">02</span><span class="cap-name">Ley de Ohm</span></a></li>
+    <li><a href="../DC/DC_3.html"><span class="cap-num">03</span><span class="cap-name">Seguridad Eléctrica</span></a></li>
+    <li><a href="../DC/DC_4.html"><span class="cap-num">04</span><span class="cap-name">Notación Científica y Prefijos</span></a></li>
+    <li><a href="../DC/DC_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Serie y Paralelo</span></a></li>
+    <li><a href="../DC/DC_6.html"><span class="cap-num">06</span><span class="cap-name">Divisores y Leyes de Kirchhoff</span></a></li>
+    <li><a href="../DC/DC_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Serie-Paralelo</span></a></li>
+    <li><a href="../DC/DC_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos de Medición CC</span></a></li>
+    <li><a href="../DC/DC_9.html"><span class="cap-num">09</span><span class="cap-name">Señales de Instrumentación</span></a></li>
+    <li><a href="../DC/DC_10.html"><span class="cap-num">10</span><span class="cap-name">Análisis de Red CC</span></a></li>
+    <li><a href="../DC/DC_11.html"><span class="cap-num">11</span><span class="cap-name">Baterías y Sistemas de Energía</span></a></li>
+    <li><a href="../DC/DC_12.html"><span class="cap-num">12</span><span class="cap-name">Conductores y Aisladores</span></a></li>
+    <li><a href="../DC/DC_13.html"><span class="cap-num">13</span><span class="cap-name">Condensadores</span></a></li>
+    <li><a href="../DC/DC_14.html"><span class="cap-num">14</span><span class="cap-name">Magnetismo y Electromagnetismo</span></a></li>
+    <li><a href="../DC/DC_15.html"><span class="cap-num">15</span><span class="cap-name">Inductores</span></a></li>
+    <li><a href="../DC/DC_16.html"><span class="cap-num">16</span><span class="cap-name">Constantes de Tiempo RC y L/R</span></a></li>
+    <li><a href="../DC/DC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../DC/DC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../DC/DC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">
+    <span class="vol-ic"><i class="ti ti-wave-sine" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Alterna</span><span class="vol-lb">Vol. II · AC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
-    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
-    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
-    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
-    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
-    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
-    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
-    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
-    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
-    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
-    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
-    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
-    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
-    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
-    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
-    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
-    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+    <li><a href="../AC/AC_1.html"><span class="cap-num">01</span><span class="cap-name">Teoría Básica de CA</span></a></li>
+    <li><a href="../AC/AC_2.html"><span class="cap-num">02</span><span class="cap-name">Números Complejos</span></a></li>
+    <li><a href="../AC/AC_3.html"><span class="cap-num">03</span><span class="cap-name">Reactancia e Impedancia Inductiva</span></a></li>
+    <li><a href="../AC/AC_4.html"><span class="cap-num">04</span><span class="cap-name">Reactancia e Impedancia Capacitiva</span></a></li>
+    <li><a href="../AC/AC_5.html"><span class="cap-num">05</span><span class="cap-name">Reactancia e Impedancia R, L y C</span></a></li>
+    <li><a href="../AC/AC_6.html"><span class="cap-num">06</span><span class="cap-name">Resonancia</span></a></li>
+    <li><a href="../AC/AC_7.html"><span class="cap-num">07</span><span class="cap-name">Señales CA de Frecuencia Mixta</span></a></li>
+    <li><a href="../AC/AC_8.html"><span class="cap-num">08</span><span class="cap-name">Filtros</span></a></li>
+    <li><a href="../AC/AC_9.html"><span class="cap-num">09</span><span class="cap-name">Transformadores</span></a></li>
+    <li><a href="../AC/AC_10.html"><span class="cap-num">10</span><span class="cap-name">Circuitos CA Polifásicos</span></a></li>
+    <li><a href="../AC/AC_11.html"><span class="cap-num">11</span><span class="cap-name">Factor de Potencia</span></a></li>
+    <li><a href="../AC/AC_12.html"><span class="cap-num">12</span><span class="cap-name">Circuitos de Medición CA</span></a></li>
+    <li><a href="../AC/AC_13.html"><span class="cap-num">13</span><span class="cap-name">Motores de CA</span></a></li>
+    <li><a href="../AC/AC_14.html"><span class="cap-num">14</span><span class="cap-name">Líneas de Transmisión</span></a></li>
+    <li><a href="../AC/AC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../AC/AC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../AC/AC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">
+    <span class="vol-ic"><i class="ti ti-cpu" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Semiconductores</span><span class="vol-lb">Vol. III</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
-    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
-    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
-    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
-    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
-    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
-    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
-    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
-    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
-    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
-    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
-    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
-    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
-    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
-    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
-    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+    <li><a href="../Semi/SEMI_1.html"><span class="cap-num">01</span><span class="cap-name">Amplificadores y Dispositivos Activos</span></a></li>
+    <li><a href="../Semi/SEMI_2.html"><span class="cap-num">02</span><span class="cap-name">Dispositivos de Estado Sólido</span></a></li>
+    <li><a href="../Semi/SEMI_3.html"><span class="cap-num">03</span><span class="cap-name">Diodos y Rectificadores</span></a></li>
+    <li><a href="../Semi/SEMI_4.html"><span class="cap-num">04</span><span class="cap-name">Transistores Bipolares (BJT)</span></a></li>
+    <li><a href="../Semi/SEMI_5.html"><span class="cap-num">05</span><span class="cap-name">Transistores de Efecto de Campo JFET</span></a></li>
+    <li><a href="../Semi/SEMI_6.html"><span class="cap-num">06</span><span class="cap-name">Transistores de Efecto de Campo IGFET</span></a></li>
+    <li><a href="../Semi/SEMI_7.html"><span class="cap-num">07</span><span class="cap-name">Tiristores</span></a></li>
+    <li><a href="../Semi/SEMI_8.html"><span class="cap-num">08</span><span class="cap-name">Amplificadores Operacionales</span></a></li>
+    <li><a href="../Semi/SEMI_9.html"><span class="cap-num">09</span><span class="cap-name">Circuitos Analógicos Prácticos</span></a></li>
+    <li><a href="../Semi/SEMI_10.html"><span class="cap-num">10</span><span class="cap-name">Filtros Activos</span></a></li>
+    <li><a href="../Semi/SEMI_11.html"><span class="cap-num">11</span><span class="cap-name">Motores de CC</span></a></li>
+    <li><a href="../Semi/SEMI_12.html"><span class="cap-num">12</span><span class="cap-name">Inversores y Accionadores de CA</span></a></li>
+    <li><a href="../Semi/SEMI_13.html"><span class="cap-num">13</span><span class="cap-name">Tubos de Electrones</span></a></li>
+    <li><a href="../Semi/SEMI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Semi/SEMI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Semi/SEMI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">
+    <span class="vol-ic"><i class="ti ti-binary" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Circuitos Digitales</span><span class="vol-lb">Vol. IV</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
-    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
-    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
-    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
-    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
-    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
-    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
-    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
-    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
-    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
-    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
-    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
-    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
-    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
-    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
-    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
-    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
-    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
-    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+    <li><a href="../Digital/DIGI_1.html"><span class="cap-num">01</span><span class="cap-name">Sistemas de Numeración</span></a></li>
+    <li><a href="../Digital/DIGI_2.html"><span class="cap-num">02</span><span class="cap-name">Aritmética Binaria</span></a></li>
+    <li><a href="../Digital/DIGI_3.html"><span class="cap-num">03</span><span class="cap-name">Puertas Lógicas</span></a></li>
+    <li><a href="../Digital/DIGI_4.html"><span class="cap-num">04</span><span class="cap-name">Interruptores</span></a></li>
+    <li><a href="../Digital/DIGI_5.html"><span class="cap-num">05</span><span class="cap-name">Relés Electromecánicos</span></a></li>
+    <li><a href="../Digital/DIGI_6.html"><span class="cap-num">06</span><span class="cap-name">Lógica de Escalera</span></a></li>
+    <li><a href="../Digital/DIGI_7.html"><span class="cap-num">07</span><span class="cap-name">Álgebra Booleana</span></a></li>
+    <li><a href="../Digital/DIGI_8.html"><span class="cap-num">08</span><span class="cap-name">Mapeo de Karnaugh</span></a></li>
+    <li><a href="../Digital/DIGI_9.html"><span class="cap-num">09</span><span class="cap-name">Funciones Lógicas Combinacionales</span></a></li>
+    <li><a href="../Digital/DIGI_10.html"><span class="cap-num">10</span><span class="cap-name">Multivibradores</span></a></li>
+    <li><a href="../Digital/DIGI_11.html"><span class="cap-num">11</span><span class="cap-name">Circuitos Secuenciales</span></a></li>
+    <li><a href="../Digital/DIGI_12.html"><span class="cap-num">12</span><span class="cap-name">Registros de Desplazamiento</span></a></li>
+    <li><a href="../Digital/DIGI_13.html"><span class="cap-num">13</span><span class="cap-name">Conversión Digital-Analógica</span></a></li>
+    <li><a href="../Digital/DIGI_14.html"><span class="cap-num">14</span><span class="cap-name">Comunicación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_15.html"><span class="cap-num">15</span><span class="cap-name">Almacenamiento Digital (Memoria)</span></a></li>
+    <li><a href="../Digital/DIGI_16.html"><span class="cap-num">16</span><span class="cap-name">Principios de Computación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Digital/DIGI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Digital/DIGI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">
+    <span class="vol-ic"><i class="ti ti-book-2" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Referencia</span><span class="vol-lb">Vol. V</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
-    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
-    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
-    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
-    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
-    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
-    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
-    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
-    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
-    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
-    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
-    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
-    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+    <li><a href="../Ref/REF_1.html"><span class="cap-num">01</span><span class="cap-name">Ecuaciones y Factores de Conversión</span></a></li>
+    <li><a href="../Ref/REF_2.html"><span class="cap-num">02</span><span class="cap-name">Códigos de Color</span></a></li>
+    <li><a href="../Ref/REF_3.html"><span class="cap-num">03</span><span class="cap-name">Tablas de Conductores y Aisladores</span></a></li>
+    <li><a href="../Ref/REF_4.html"><span class="cap-num">04</span><span class="cap-name">Referencia de Álgebra</span></a></li>
+    <li><a href="../Ref/REF_5.html"><span class="cap-num">05</span><span class="cap-name">Referencia de Trigonometría</span></a></li>
+    <li><a href="../Ref/REF_6.html"><span class="cap-num">06</span><span class="cap-name">Referencia de Cálculo</span></a></li>
+    <li><a href="../Ref/REF_7.html"><span class="cap-num">07</span><span class="cap-name">Simulación de Circuitos con SPICE</span></a></li>
+    <li><a href="../Ref/REF_8.html"><span class="cap-num">08</span><span class="cap-name">Solución de Problemas</span></a></li>
+    <li><a href="../Ref/REF_9.html"><span class="cap-num">09</span><span class="cap-name">Símbolos de Esquemas de Circuito</span></a></li>
+    <li><a href="../Ref/REF_10.html"><span class="cap-num">10</span><span class="cap-name">Tabla Periódica de los Elementos</span></a></li>
+    <li><a href="../Ref/REF_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Ref/REF_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Ref/REF_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">
+    <span class="vol-ic"><i class="ti ti-flask" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Experimentos</span><span class="vol-lb">Vol. VI</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
-    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
-    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
-    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
-    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
-    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
-    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
-    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
-    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
-    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
-    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+    <li><a href="../Exper/EXP_1.html"><span class="cap-num">01</span><span class="cap-name">Introducción</span></a></li>
+    <li><a href="../Exper/EXP_2.html"><span class="cap-num">02</span><span class="cap-name">Conceptos Básicos y Equipos de Prueba</span></a></li>
+    <li><a href="../Exper/EXP_3.html"><span class="cap-num">03</span><span class="cap-name">Circuitos CC</span></a></li>
+    <li><a href="../Exper/EXP_4.html"><span class="cap-num">04</span><span class="cap-name">Circuitos CA</span></a></li>
+    <li><a href="../Exper/EXP_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Semiconductores Discretos</span></a></li>
+    <li><a href="../Exper/EXP_6.html"><span class="cap-num">06</span><span class="cap-name">Circuitos Integrados Analógicos</span></a></li>
+    <li><a href="../Exper/EXP_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Integrados Digitales</span></a></li>
+    <li><a href="../Exper/EXP_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos con Temporizador 555</span></a></li>
+    <li><a href="../Exper/EXP_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Exper/EXP_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Exper/EXP_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">
+    <span class="vol-ic"><i class="ti ti-code" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Desarrollo</span><span class="vol-lb">Info técnica</span></span>
+  </a>
 </div>
 </nav>
 
@@ -156,39 +189,16 @@
   <main class="main-content">
     <header class="top-bar">
       <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
-      <span class="page-title">Lecciones de circuitos eléctricos - Volumen I (DC) - Capítulo 3</span>
+      <span class="page-title">Seguridad Eléctrica</span>
       <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
     </header>
     <article class="content" id="content">
-      
-<body bgcolor="white">
-
-
-
-<hr/>
-<h1>Lecciones de circuitos eléctricos - Volumen I</h1>
-<h1>Capítulo 3</h1>
-<h1>SEGURIDAD ELÉCTRICA</h1>
-<!--minitoc-->
-<ul>
-<li><a href="#xtocid87250"><u>The importance of electrical safety</u></a></li>
-<li><a href="#xtocid87251"><u>Physiological effects of electricity</u></a></li>
-<li><a href="#xtocid87252"><u>Shock current path</u></a></li>
-<li><a href="#xtocid87253"><u>Ohm's Law (again!)</u></a></li>
-<li><a href="#xtocid87254"><u>Safe practices</u></a></li>
-<li><a href="#xtocid87255"><u>Emergency response</u></a></li>
-<li><a href="#xtocid87256"><u>Common sources of hazard</u></a></li>
-<li><a href="#xtocid87257"><u>Safe circuit design</u></a></li>
-<li><a href="#xtocid87258"><u>Safe meter usage</u></a></li>
-<li><a href="#xtocid87259"><u>Electric shock data</u></a></li>
-<li><a href="#xtocid872510"><u>Contributors</u></a></li>
-<li><a href="#xtocid872511">Bibliography</a></li></ul>
-<h2><u><a name="xtocid87250">The importance of electrical safety</a></u></h2>
+<h1>Seguridad Eléctrica</h1>
+<h2><a name="xtocid87250">La importancia de la seguridad eléctrica</a></h2>
 <p>Con esta lección, espero evitar un error común que se encuentra en los libros de texto de electrónica de ignorar o no cubrir con suficiente detalle el tema de la seguridad eléctrica.  Supongo que quien lea este libro tendrá al menos un interés pasajero en trabajar con electricidad y, como tal, el tema de la seguridad es de suma importancia.  Aquellos autores, editores y editoriales que no incorporan este tema en sus textos introductorios están privando al lector de información que puede salvarle la vida.</p>
 <p>Como instructor de electrónica industrial, paso una semana completa con mis alumnos repasando los aspectos teóricos y prácticos de la seguridad eléctrica.  Los mismos libros de texto que encontré carentes de claridad técnica también carecían de cobertura de seguridad eléctrica, de ahí la creación de este capítulo.  Su ubicación después de los dos primeros capítulos es intencional: para que los conceptos de seguridad eléctrica tengan el mayor sentido, es necesario tener algunos conocimientos básicos de electricidad.</p>
 <p>Otro beneficio de incluir una lección detallada sobre seguridad eléctrica es el contexto práctico que establece para los conceptos básicos de voltaje, corriente, resistencia y diseño de circuitos.  Cuanto más relevante pueda ser un tema técnico, más probabilidades habrá de que el estudiante preste atención y lo comprenda.  ¿Y qué podría ser más relevante que aplicarlo a su propia seguridad personal?  Además, dado que la energía eléctrica es una presencia tan cotidiana en la vida moderna, casi cualquiera puede identificarse con las ilustraciones que se dan en dicha lección.  ¿Alguna vez te has preguntado por qué los pájaros no reciben descargas eléctricas mientras descansan sobre cables eléctricos?  ¡Sigue leyendo y descúbrelo!</p>
-<h2><u><a name="xtocid87251">Physiological effects of electricity</a></u></h2>
-<a name="Electric shock"></a>
+<h2><a name="xtocid87251">Efectos fisiológicos de la electricidad</a></h2>
 <a name="Shock, electric"></a>
 <p>La mayoría de nosotros hemos experimentado algún tipo de "descarga" eléctrica, en la que la electricidad provoca que nuestro cuerpo experimente dolor o trauma.  Si tenemos suerte, el alcance de esa experiencia se limita a hormigueos o sacudidas de dolor debido a la acumulación de electricidad estática que se descarga a través de nuestro cuerpo.  Cuando trabajamos con circuitos eléctricos capaces de suministrar alta potencia a cargas, la descarga eléctrica se convierte en un problema mucho más grave y el dolor es el resultado menos significativo de la descarga.</p>
 <p>A medida que la corriente eléctrica se conduce a través de un material, cualquier oposición a ese flujo de electrones (resistencia) resulta en una disipación de energía, generalmente en forma de calor.  Éste es el efecto más básico y fácil de entender de la electricidad sobre el tejido vivo: la corriente hace que se caliente.  Si la cantidad de calor generada es suficiente, el tejido puede quemarse.  El efecto es fisiológicamente el mismo que el daño causado por una llama abierta u otra fuente de calor de alta temperatura, excepto que la electricidad tiene la capacidad de quemar tejido muy debajo de la piel de una víctima, incluso quemando órganos internos.</p>
@@ -222,7 +232,7 @@
 <li>El diafragma (pulmón) y los músculos del corazón se ven afectados de manera similar por la corriente eléctrica.  Incluso corrientes demasiado pequeñas para inducir el tétanos pueden ser lo suficientemente fuertes como para interferir con las neuronas marcapasos del corazón, haciendo que el corazón aletee en lugar de latir con fuerza.</li>
 <li>Es más probable que la corriente continua (CC) cause tétanos muscular que la corriente alterna (CA), lo que hace que la CC tenga más probabilidades de "congelar" a una víctima en un escenario de shock.  Sin embargo, es más probable que la CA provoque que el corazón de la víctima fibrile, lo cual es una condición más peligrosa para la víctima una vez que se ha detenido la corriente impactante.</li>
 </ul>
-<h2><u><a name="xtocid87252">Shock current path</a></u></h2>
+<h2><a name="xtocid87252">Trayecto de la corriente de choque eléctrico</a></h2>
 <p>Como ya hemos aprendido, la electricidad requiere un camino (circuito) completo para fluir continuamente.  Por eso el choque recibido de la electricidad estática es sólo una sacudida momentánea: el flujo de electrones es necesariamente breve cuando las cargas estáticas se igualan entre dos objetos.  Los shocks de duración autolimitada como este rara vez son peligrosos.</p>
 <p>Sin dos puntos de contacto en el cuerpo para que la corriente entre y salga, respectivamente, no hay riesgo de descarga eléctrica.  Por este motivo, las aves pueden descansar con seguridad sobre las líneas eléctricas de alto voltaje sin recibir descargas eléctricas: sólo entran en contacto con el circuito en un punto.</p>
 <p> <img src="00055.png"/> </p>
@@ -277,7 +287,7 @@
 <li>Se fabrican zapatos y tapetes especiales con aislamiento para proteger a las personas de descargas eléctricas por conducción a tierra, pero incluso estos equipos deben estar en condiciones limpias y secas para que sean efectivos.  El calzado normal no es lo suficientemente bueno para brindar protección contra golpes aislando a su usuario de la tierra.</li>
 <li>Aunque la suciedad es un mal conductor, puede conducir suficiente corriente como para herir o matar a un ser humano.</li>
 </ul>
-<h2><u><a name="xtocid87253">Ohm's Law (again!)</a></u></h2>
+<h2><a name="xtocid87253">Ohm's Law (again!)</a></h2>
 <p>Una frase común que se escucha en referencia a la seguridad eléctrica es algo como esto: "<i>¡No es el voltaje lo que mata, es la corriente!</i>" Si bien hay un elemento de verdad en esto, hay más que entender sobre el riesgo de descarga eléctrica que este simple dicho. Si el voltaje no presentara ningún peligro, nadie imprimiría ni exhibiría carteles que dijeran:<b>PELIGRO: ¡ALTO VOLTAJE!</b>
 </p>
 <p>El principio de que "la corriente mata" es esencialmente correcto.  Es una corriente eléctrica que quema tejidos, congela músculos y fibrila corazones.  Sin embargo, la corriente eléctrica no ocurre por sí sola: debe haber voltaje disponible para motivar a los electrones a fluir a través de una víctima.  El cuerpo de una persona también presenta resistencia a la corriente, lo cual hay que tener en cuenta.</p>
@@ -424,8 +434,7 @@ E = 17 volts
 <li>Los voltajes bajos aún pueden ser peligrosos incluso si son demasiado bajos como para causar directamente una lesión por descarga eléctrica.  Pueden ser suficientes para asustar a la víctima, haciendo que retroceda y entre en contacto con algo más peligroso en las inmediaciones.</li>
 <li>Cuando sea necesario trabajar en un circuito "activo", es mejor realizar el trabajo con una mano para evitar una trayectoria de corriente de choque mortal entre manos (a través del pecho).</li>
 </ul>
-<h2><u><a name="xtocid87254">Safe practices</a></u></h2>
-<a name="Zero energy state"></a>
+<h2><a name="xtocid87254">Safe practices</a></h2>
 <p>Si es posible, corte la alimentación de un circuito antes de realizar cualquier trabajo en él.  Debe proteger todas las fuentes de energía dañina antes de que se pueda considerar seguro trabajar en un sistema.  En la industria, asegurar un circuito, dispositivo o sistema en esta condición se conoce comúnmente como colocarlo en un<i>Estado de energía cero</i>.  El objetivo de esta lección es, por supuesto, la seguridad eléctrica.  Sin embargo, muchos de estos principios también se aplican a sistemas no eléctricos.</p>
 <p>Asegurar algo en un estado de energía cero significa eliminar cualquier tipo de energía potencial o almacenada, que incluye, entre otros:</p>
 <ul>
@@ -476,8 +485,7 @@ E = 17 volts
 <li>Siempre verifique que un circuito se haya asegurado en un estado de energía cero con un equipo de prueba después de "bloquearlo".  Asegúrese de probar su medidor antes y después de revisar el circuito para verificar que esté funcionando correctamente.</li>
 <li>Cuando llegue el momento de hacer contacto con los conductores de un sistema de energía supuestamente muerto, hágalo primero con el dorso de una mano, de modo que si se produce una descarga, la reacción muscular aleje los dedos del conductor.</li>
 </ul>
-<h2><u><a name="xtocid87255">Emergency response</a></u></h2>
-<a name="Emergency response"></a>
+<h2><a name="xtocid87255">Emergency response</a></h2>
 <p>A pesar de los procedimientos de bloqueo/etiquetado y las múltiples repeticiones de reglas de seguridad eléctrica en la industria, todavía ocurren accidentes.  La gran mayoría de las veces, estos accidentes son el resultado de no seguir los procedimientos de seguridad adecuados.  Pero, independientemente de cómo ocurran, siguen sucediendo, y cualquiera que trabaje cerca de sistemas eléctricos debe ser consciente de lo que se debe hacer ante una víctima de una descarga eléctrica.</p>
 <p>Si ve a alguien inconsciente o "congelado en el circuito", lo primero que debe hacer es cortar la energía abriendo el interruptor de desconexión o el disyuntor correspondiente.  Si alguien toca a otra persona que está recibiendo una descarga, es posible que caiga suficiente voltaje en el cuerpo de la víctima para electrocutar al posible rescatador, "congelando" así a dos personas en lugar de una.  No seas un héroe.  Los electrones no respetan el heroísmo.  Asegúrese de que la situación sea segura para usted, o de lo contrario<i>voluntad</i>Sea la próxima víctima y nadie se beneficiará de sus esfuerzos.</p>
 <p>Un problema con esta regla es que es posible que no se conozca la fuente de energía o que no se la encuentre fácilmente a tiempo para salvar a la víctima del shock.  Si la respiración y los latidos del corazón de una víctima de una descarga eléctrica quedan paralizados por la corriente eléctrica, su tiempo de supervivencia es muy limitado.  Si la corriente de choque es de magnitud suficiente, su carne y órganos internos pueden quemarse rápidamente por el poder que la corriente disipa a medida que recorre su cuerpo.</p>
@@ -493,7 +501,7 @@ E = 17 volts
 <li>Si una víctima todavía está consciente después de haber recibido una descarga eléctrica, es necesario vigilarla y cuidarla de cerca hasta que llegue personal capacitado en respuesta a emergencias.  Existe peligro de shock fisiológico, así que mantenga a la víctima abrigada y cómoda.</li>
 <li>Las víctimas de una descarga eléctrica pueden sufrir problemas cardíacos hasta varias horas después de recibir la descarga.  El peligro de descarga eléctrica no termina después de la atención médica inmediata.</li>
 </ul>
-<h2><u><a name="xtocid87256">Common sources of hazard</a></u></h2>
+<h2><a name="xtocid87256">Fuentes comunes de peligro eléctrico</a></h2>
 <p>Por supuesto, existe peligro de descarga eléctrica al realizar trabajos manuales directamente en un sistema de energía eléctrica.  Sin embargo, el riesgo de descarga eléctrica existe en muchos otros lugares, gracias al uso generalizado de la energía eléctrica en nuestras vidas.</p>
 <p>Como vimos anteriormente, la resistencia de la piel y el cuerpo tiene mucho que ver con el peligro relativo de los circuitos eléctricos.  Cuanto mayor sea la resistencia del cuerpo, es menos probable que se produzca una corriente dañina a partir de cualquier cantidad de voltaje determinada.  Por el contrario, cuanto menor sea la resistencia del cuerpo, mayor será la probabilidad de que se produzcan lesiones por la aplicación de un voltaje.</p>
 <p>La forma más sencilla de disminuir la resistencia de la piel es mojarla.  Por lo tanto, tocar dispositivos eléctricos con las manos mojadas, los pies mojados o especialmente cuando se está sudando (el agua salada es mucho mejor conductora de la electricidad que el agua dulce) es peligroso.  En el hogar, el baño es uno de los lugares donde es más probable que las personas mojadas entren en contacto con los aparatos eléctricos, por lo que el peligro de descarga eléctrica es un claro peligro allí.  Un buen diseño de baño ubicará los receptáculos de energía lejos de bañeras, duchas y lavabos para desalentar el uso de electrodomésticos cercanos.  Los teléfonos que se conectan a un enchufe de pared también son fuentes de voltaje peligroso (el voltaje del circuito abierto es de 48 voltios CC y la señal de timbre es de 150 voltios CA; ¡recuerde que cualquier voltaje superior a 30 se considera potencialmente peligroso!).  Nunca, jamás, se deben utilizar aparatos como teléfonos y radios mientras se está sentado en una bañera.  Incluso se deben evitar los dispositivos que funcionan con baterías.  Algunos dispositivos que funcionan con baterías emplean circuitos que aumentan el voltaje y son capaces de generar potenciales letales.</p>
@@ -519,7 +527,7 @@ E = 17 volts
 <li>Reemplace inmediatamente los cables de extensión y las herramientas eléctricas desgastados o dañados.  Puede evitar el uso inocente de un cable o herramienta en mal estado cortando el enchufe macho del cable (mientras está desenchufado del receptáculo, por supuesto).</li>
 <li>Las líneas eléctricas son muy peligrosas y deben evitarse a toda costa.  Si ve una línea a punto de tocar el suelo, párese sobre un pie o corra (solo un pie en contacto con el suelo) para evitar descargas causadas por la caída de voltaje en el suelo entre la línea y el punto de tierra del sistema.</li>
 </ul>
-<h2><u><a name="xtocid87257">Safe circuit design</a></u></h2>
+<h2><a name="xtocid87257">Diseño seguro de circuitos</a></h2>
 <a hot""="" name="Conductor, "></a>
 <a name="Conductor, " neutral""=""></a>
 <a name="Hot wire"></a>
@@ -573,7 +581,7 @@ The <i>interruptor de circuito por falla de arco (AFCI)</i>, un disyuntor diseñ
 <li>La seguridad eléctrica de un electrodoméstico u otra carga se puede mejorar mediante una buena ingeniería: enchufes polarizados, doble aislamiento y enchufes de "conexión a tierra" de tres clavijas son todas formas de maximizar la seguridad en el lado de la carga.</li>
 <li><i>Interruptores de corriente de falla a tierra</i>(GFCI) funcionan detectando una diferencia de corriente entre los dos conductores que suministran energía a la carga.  No debería haber ninguna diferencia en la corriente.  Cualquier diferencia significa que la corriente debe entrar o salir de la carga por algún medio distinto de los dos conductores principales, lo cual no es bueno.  Una diferencia de corriente significativa abrirá automáticamente un mecanismo de interruptor de desconexión, cortando la energía por completo.</li>
 </ul>
-<h2><u><a name="xtocid87258">Safe meter usage</a></u></h2>
+<h2><a name="xtocid87258">Safe meter usage</a></h2>
 <p>Usar un medidor eléctrico de manera segura y eficiente es quizás la habilidad más valiosa que un técnico en electrónica puede dominar, tanto por su seguridad personal como por su competencia en su oficio.  Al principio puede resultar desalentador utilizar un medidor, sabiendo que lo está conectando a circuitos activos que pueden albergar niveles de voltaje y corriente potencialmente mortales.  Esta preocupación no es infundada y siempre es mejor proceder con cautela al utilizar medidores.  El descuido, más que cualquier otro factor, es lo que provoca que los técnicos experimentados tengan accidentes eléctricos.</p>
 <a name="Multimeter"></a>
 <p>El equipo de prueba eléctrica más común es un medidor llamado<i>multímetro</i>.  Los multímetros se llaman así porque tienen la capacidad de medir múltiples variables: voltaje, corriente, resistencia y, a menudo, muchas otras, algunas de las cuales no pueden explicarse aquí debido a su complejidad.  En manos de un técnico capacitado, el multímetro es a la vez una herramienta de trabajo eficaz y un dispositivo de seguridad.  Sin embargo, en manos de alguien ignorante y/o descuidado, el multímetro puede convertirse en una fuente de peligro cuando se conecta a un circuito "vivo".</p>
@@ -637,19 +645,19 @@ The <i>interruptor de circuito por falla de arco (AFCI)</i>, un disyuntor diseñ
 <li>Los medidores de corriente ("amperímetros") siempre están conectados en un circuito, por lo que los electrones tienen que fluir<i>a través de</i>el medidor.</li>
 <li>Cuando están en el modo de medición de corriente ("amperímetro"), los multímetros prácticamente no tienen resistencia entre sus cables.  Esto tiene como objetivo permitir que los electrones fluyan a través del medidor con la menor dificultad posible.  Si este no fuera el caso, el medidor agregaría resistencia adicional en el circuito, afectando así la corriente.</li>
 </ul>
-<h2><u><a name="xtocid87259">Electric shock data</a></u></h2>
+<h2><a name="xtocid87259">Electric shock data</a></h2>
 <p>La tabla de corrientes eléctricas y sus diversos efectos corporales se obtuvo de fuentes en línea (Internet): la página de seguridad del Instituto Tecnológico de Massachusetts (sitio web:<a href="https://ehs.mit.edu/workplace-safety-program/electrical-safety/">[*]</a>) y un manual de seguridad publicado por Cooper Bussmann, Inc (sitio web:<a href="http://www.bussmann.com">[*]</a>).  En el manual de Bussmann, la tabla se titula apropiadamente<i>Efectos nocivos de la descarga eléctrica</i>, y acreditado al Sr. Charles F. Dalziel.  Investigaciones posteriores revelaron que Dalziel era a la vez un pionero científico y una autoridad en los efectos de la electricidad en el cuerpo humano.</p>
 <p>La tabla que se encuentra en el manual de Bussmann difiere ligeramente de la disponible en el MIT: para el umbral de percepción de CC (hombres), la tabla del MIT da 5,2 mA mientras que la tabla de Bussmann da una cifra ligeramente mayor de 6,2 mA.  Además, para el umbral de CA de 60 Hz "incapaz de soltar" (hombres), la tabla del MIT proporciona 20 mA, mientras que la tabla de Bussmann proporciona una cifra menor de 16 mA.  Como todavía tengo que obtener una copia primaria de la investigación de Dalziel, las cifras citadas aquí son conservadoras: he enumerado los valores más bajos en mi tabla donde difieren las fuentes de datos.</p>
 <p>Estas diferencias, por supuesto, son académicas.  La cuestión aquí es que magnitudes relativamente pequeñas de corriente eléctrica a través del cuerpo pueden ser dañinas, si no letales.</p>
 <p>Los datos sobre la resistencia eléctrica de los puntos de contacto corporal se tomaron de una página de seguridad (documento 16.1) del Laboratorio Nacional Lawrence Livermore (sitio web<a href="http://www-ais.llnl.gov">[*]</a>), citando a Ralph H. Lee como fuente de datos.  El trabajo de Lee se enumera aquí en un documento titulado "Hoja eléctrica humana", compuesto mientras era miembro del IEEE en E.I. duPont de Nemours &amp; Co., y también en un artículo titulado "Seguridad eléctrica en plantas industriales" que apareció en la edición de junio de 1971 de<i>Espectro IEEE</i>revista.</p>
 <p>Para los curiosos morbosos, la experimentación de Charles Dalziel realizada en la Universidad de California (Berkeley) comenzó con una subvención estatal para investigar los efectos corporales de la corriente eléctrica subletal.  Su método de prueba fue el siguiente: se pidió a sujetos voluntarios, hombres y mujeres sanos, que sostuvieran un alambre de cobre en una mano y colocaran la otra mano sobre una placa redonda de latón.  Luego se aplicó un voltaje entre el cable y la placa, lo que provocó que los electrones fluyeran a través de los brazos y el pecho del sujeto.  La corriente se detuvo y luego se reanudó a un nivel superior.  El objetivo aquí era ver cuánta corriente podía tolerar el sujeto y aún así mantener su mano presionada contra la placa de latón.  Cuando se alcanzó este umbral, los asistentes de laboratorio mantuvieron con fuerza la mano del sujeto en contacto con la placa y la corriente se incrementó nuevamente.  Se pidió al sujeto que soltara el cable que sostenía, para ver a qué nivel de corriente la contracción muscular involuntaria (tétanos) le impedía hacerlo.  Para cada sujeto, el experimento se realizó utilizando CC y también CA a varias frecuencias.  Se probaron más de dos docenas de voluntarios humanos y posteriormente se realizaron estudios sobre la fibrilación cardíaca con sujetos animales.</p>
-<h2><u><a name="xtocid872510">Contributors</a></u></h2>
+<h2><a name="xtocid872510">Colaboradores</a></h2>
 <p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>
 <p>
 <b>Jason Stark</b>(Junio ​​de 2000): Formato de documentos HTML, que dio lugar a una segunda edición mucho más atractiva.</p>
 <!--John Grant, &ldquo;Arc Fault Tester from Fox Meter Inc.,&rdquo; National Electrical Code Connection, 8/15/2002 in  http://www.mikeholt.com/mojonewsarchive/AFCI-HTML/HTML/AFCITesterStory~20020826.htm
 -->
-<h2><a name="xtocid872511">Bibliography</a></h2><br/>
+<h2><a name="xtocid872511">Bibliografía</a></h2><br/>
 <ol>
 <li><a name="MMOM.bibitem">[MMOM]Robert S. Porter, MD, editor, “The Merck Manuals Online Medical Library”, “Electrical Injuries,” at  <a href="http://www.merck.com/mmpe/sec21/ch316/ch316b.html">http://www.merck.com/mmpe/sec21/ch316/ch316b.html</a></a> </li>
 </ol>

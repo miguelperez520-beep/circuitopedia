@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>!function(){var t=localStorage.getItem("liec-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();</script>
 <meta charset="UTF-8">
+    <meta name="description" content="¿Por qué aprender sobrekarnaughmapas? El mapa de Karnaugh, al igual que el álgebra de Boole, es una herramienta de simplificación aplicable a la lógica…">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Circuitopedia">
+    <meta property="og:title" content="Mapeo de Karnaugh — Circuitopedia">
+    <meta property="og:description" content="¿Por qué aprender sobrekarnaughmapas? El mapa de Karnaugh, al igual que el álgebra de Boole, es una herramienta de simplificación aplicable a la lógica…">
+    <meta property="og:url" content="https://circuitopedia.io/Digital/DIGI_8.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mapeo de Karnaugh — Circuitopedia">
+    <meta name="twitter:description" content="¿Por qué aprender sobrekarnaughmapas? El mapa de Karnaugh, al igual que el álgebra de Boole, es una herramienta de simplificación aplicable a la lógica…">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 8 | Lecciones de Circuitos Eléctricos</title>
+<title>Mapeo de Karnaugh — Circuitopedia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.34.0/dist/tabler-icons.min.css">
 <style>:root { --accent: #f59e0b; }</style>
 </head>
-<body>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <a href="../index.html" class="logo">Circuitopedia</a>
       <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
     </div>
     <div class="search-box">
@@ -22,132 +33,153 @@
     </div>
     <nav class="sidebar-nav">
 <div class="vol-group">
-  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">
+    <span class="vol-ic"><i class="ti ti-bolt" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Continua</span><span class="vol-lb">Vol. I · DC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
-    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
-    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
-    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
-    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
-    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
-    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
-    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
-    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
-    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
-    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
-    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
-    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
-    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
-    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
-    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
-    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
-    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
-    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+    <li><a href="../DC/DC_1.html"><span class="cap-num">01</span><span class="cap-name">Conceptos Básicos de Electricidad</span></a></li>
+    <li><a href="../DC/DC_2.html"><span class="cap-num">02</span><span class="cap-name">Ley de Ohm</span></a></li>
+    <li><a href="../DC/DC_3.html"><span class="cap-num">03</span><span class="cap-name">Seguridad Eléctrica</span></a></li>
+    <li><a href="../DC/DC_4.html"><span class="cap-num">04</span><span class="cap-name">Notación Científica y Prefijos</span></a></li>
+    <li><a href="../DC/DC_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Serie y Paralelo</span></a></li>
+    <li><a href="../DC/DC_6.html"><span class="cap-num">06</span><span class="cap-name">Divisores y Leyes de Kirchhoff</span></a></li>
+    <li><a href="../DC/DC_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Serie-Paralelo</span></a></li>
+    <li><a href="../DC/DC_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos de Medición CC</span></a></li>
+    <li><a href="../DC/DC_9.html"><span class="cap-num">09</span><span class="cap-name">Señales de Instrumentación</span></a></li>
+    <li><a href="../DC/DC_10.html"><span class="cap-num">10</span><span class="cap-name">Análisis de Red CC</span></a></li>
+    <li><a href="../DC/DC_11.html"><span class="cap-num">11</span><span class="cap-name">Baterías y Sistemas de Energía</span></a></li>
+    <li><a href="../DC/DC_12.html"><span class="cap-num">12</span><span class="cap-name">Conductores y Aisladores</span></a></li>
+    <li><a href="../DC/DC_13.html"><span class="cap-num">13</span><span class="cap-name">Condensadores</span></a></li>
+    <li><a href="../DC/DC_14.html"><span class="cap-num">14</span><span class="cap-name">Magnetismo y Electromagnetismo</span></a></li>
+    <li><a href="../DC/DC_15.html"><span class="cap-num">15</span><span class="cap-name">Inductores</span></a></li>
+    <li><a href="../DC/DC_16.html"><span class="cap-num">16</span><span class="cap-name">Constantes de Tiempo RC y L/R</span></a></li>
+    <li><a href="../DC/DC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../DC/DC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../DC/DC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">
+    <span class="vol-ic"><i class="ti ti-wave-sine" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Alterna</span><span class="vol-lb">Vol. II · AC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
-    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
-    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
-    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
-    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
-    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
-    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
-    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
-    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
-    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
-    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
-    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
-    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
-    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
-    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
-    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
-    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+    <li><a href="../AC/AC_1.html"><span class="cap-num">01</span><span class="cap-name">Teoría Básica de CA</span></a></li>
+    <li><a href="../AC/AC_2.html"><span class="cap-num">02</span><span class="cap-name">Números Complejos</span></a></li>
+    <li><a href="../AC/AC_3.html"><span class="cap-num">03</span><span class="cap-name">Reactancia e Impedancia Inductiva</span></a></li>
+    <li><a href="../AC/AC_4.html"><span class="cap-num">04</span><span class="cap-name">Reactancia e Impedancia Capacitiva</span></a></li>
+    <li><a href="../AC/AC_5.html"><span class="cap-num">05</span><span class="cap-name">Reactancia e Impedancia R, L y C</span></a></li>
+    <li><a href="../AC/AC_6.html"><span class="cap-num">06</span><span class="cap-name">Resonancia</span></a></li>
+    <li><a href="../AC/AC_7.html"><span class="cap-num">07</span><span class="cap-name">Señales CA de Frecuencia Mixta</span></a></li>
+    <li><a href="../AC/AC_8.html"><span class="cap-num">08</span><span class="cap-name">Filtros</span></a></li>
+    <li><a href="../AC/AC_9.html"><span class="cap-num">09</span><span class="cap-name">Transformadores</span></a></li>
+    <li><a href="../AC/AC_10.html"><span class="cap-num">10</span><span class="cap-name">Circuitos CA Polifásicos</span></a></li>
+    <li><a href="../AC/AC_11.html"><span class="cap-num">11</span><span class="cap-name">Factor de Potencia</span></a></li>
+    <li><a href="../AC/AC_12.html"><span class="cap-num">12</span><span class="cap-name">Circuitos de Medición CA</span></a></li>
+    <li><a href="../AC/AC_13.html"><span class="cap-num">13</span><span class="cap-name">Motores de CA</span></a></li>
+    <li><a href="../AC/AC_14.html"><span class="cap-num">14</span><span class="cap-name">Líneas de Transmisión</span></a></li>
+    <li><a href="../AC/AC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../AC/AC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../AC/AC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">
+    <span class="vol-ic"><i class="ti ti-cpu" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Semiconductores</span><span class="vol-lb">Vol. III</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
-    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
-    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
-    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
-    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
-    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
-    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
-    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
-    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
-    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
-    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
-    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
-    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
-    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
-    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
-    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+    <li><a href="../Semi/SEMI_1.html"><span class="cap-num">01</span><span class="cap-name">Amplificadores y Dispositivos Activos</span></a></li>
+    <li><a href="../Semi/SEMI_2.html"><span class="cap-num">02</span><span class="cap-name">Dispositivos de Estado Sólido</span></a></li>
+    <li><a href="../Semi/SEMI_3.html"><span class="cap-num">03</span><span class="cap-name">Diodos y Rectificadores</span></a></li>
+    <li><a href="../Semi/SEMI_4.html"><span class="cap-num">04</span><span class="cap-name">Transistores Bipolares (BJT)</span></a></li>
+    <li><a href="../Semi/SEMI_5.html"><span class="cap-num">05</span><span class="cap-name">Transistores de Efecto de Campo JFET</span></a></li>
+    <li><a href="../Semi/SEMI_6.html"><span class="cap-num">06</span><span class="cap-name">Transistores de Efecto de Campo IGFET</span></a></li>
+    <li><a href="../Semi/SEMI_7.html"><span class="cap-num">07</span><span class="cap-name">Tiristores</span></a></li>
+    <li><a href="../Semi/SEMI_8.html"><span class="cap-num">08</span><span class="cap-name">Amplificadores Operacionales</span></a></li>
+    <li><a href="../Semi/SEMI_9.html"><span class="cap-num">09</span><span class="cap-name">Circuitos Analógicos Prácticos</span></a></li>
+    <li><a href="../Semi/SEMI_10.html"><span class="cap-num">10</span><span class="cap-name">Filtros Activos</span></a></li>
+    <li><a href="../Semi/SEMI_11.html"><span class="cap-num">11</span><span class="cap-name">Motores de CC</span></a></li>
+    <li><a href="../Semi/SEMI_12.html"><span class="cap-num">12</span><span class="cap-name">Inversores y Accionadores de CA</span></a></li>
+    <li><a href="../Semi/SEMI_13.html"><span class="cap-num">13</span><span class="cap-name">Tubos de Electrones</span></a></li>
+    <li><a href="../Semi/SEMI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Semi/SEMI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Semi/SEMI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">
+    <span class="vol-ic"><i class="ti ti-binary" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Circuitos Digitales</span><span class="vol-lb">Vol. IV</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
-    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
-    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
-    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
-    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
-    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
-    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
-    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
-    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
-    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
-    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
-    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
-    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
-    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
-    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
-    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
-    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
-    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
-    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+    <li><a href="../Digital/DIGI_1.html"><span class="cap-num">01</span><span class="cap-name">Sistemas de Numeración</span></a></li>
+    <li><a href="../Digital/DIGI_2.html"><span class="cap-num">02</span><span class="cap-name">Aritmética Binaria</span></a></li>
+    <li><a href="../Digital/DIGI_3.html"><span class="cap-num">03</span><span class="cap-name">Puertas Lógicas</span></a></li>
+    <li><a href="../Digital/DIGI_4.html"><span class="cap-num">04</span><span class="cap-name">Interruptores</span></a></li>
+    <li><a href="../Digital/DIGI_5.html"><span class="cap-num">05</span><span class="cap-name">Relés Electromecánicos</span></a></li>
+    <li><a href="../Digital/DIGI_6.html"><span class="cap-num">06</span><span class="cap-name">Lógica de Escalera</span></a></li>
+    <li><a href="../Digital/DIGI_7.html"><span class="cap-num">07</span><span class="cap-name">Álgebra Booleana</span></a></li>
+    <li><a href="../Digital/DIGI_8.html"><span class="cap-num">08</span><span class="cap-name">Mapeo de Karnaugh</span></a></li>
+    <li><a href="../Digital/DIGI_9.html"><span class="cap-num">09</span><span class="cap-name">Funciones Lógicas Combinacionales</span></a></li>
+    <li><a href="../Digital/DIGI_10.html"><span class="cap-num">10</span><span class="cap-name">Multivibradores</span></a></li>
+    <li><a href="../Digital/DIGI_11.html"><span class="cap-num">11</span><span class="cap-name">Circuitos Secuenciales</span></a></li>
+    <li><a href="../Digital/DIGI_12.html"><span class="cap-num">12</span><span class="cap-name">Registros de Desplazamiento</span></a></li>
+    <li><a href="../Digital/DIGI_13.html"><span class="cap-num">13</span><span class="cap-name">Conversión Digital-Analógica</span></a></li>
+    <li><a href="../Digital/DIGI_14.html"><span class="cap-num">14</span><span class="cap-name">Comunicación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_15.html"><span class="cap-num">15</span><span class="cap-name">Almacenamiento Digital (Memoria)</span></a></li>
+    <li><a href="../Digital/DIGI_16.html"><span class="cap-num">16</span><span class="cap-name">Principios de Computación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Digital/DIGI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Digital/DIGI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">
+    <span class="vol-ic"><i class="ti ti-book-2" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Referencia</span><span class="vol-lb">Vol. V</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
-    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
-    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
-    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
-    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
-    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
-    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
-    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
-    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
-    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
-    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
-    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
-    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+    <li><a href="../Ref/REF_1.html"><span class="cap-num">01</span><span class="cap-name">Ecuaciones y Factores de Conversión</span></a></li>
+    <li><a href="../Ref/REF_2.html"><span class="cap-num">02</span><span class="cap-name">Códigos de Color</span></a></li>
+    <li><a href="../Ref/REF_3.html"><span class="cap-num">03</span><span class="cap-name">Tablas de Conductores y Aisladores</span></a></li>
+    <li><a href="../Ref/REF_4.html"><span class="cap-num">04</span><span class="cap-name">Referencia de Álgebra</span></a></li>
+    <li><a href="../Ref/REF_5.html"><span class="cap-num">05</span><span class="cap-name">Referencia de Trigonometría</span></a></li>
+    <li><a href="../Ref/REF_6.html"><span class="cap-num">06</span><span class="cap-name">Referencia de Cálculo</span></a></li>
+    <li><a href="../Ref/REF_7.html"><span class="cap-num">07</span><span class="cap-name">Simulación de Circuitos con SPICE</span></a></li>
+    <li><a href="../Ref/REF_8.html"><span class="cap-num">08</span><span class="cap-name">Solución de Problemas</span></a></li>
+    <li><a href="../Ref/REF_9.html"><span class="cap-num">09</span><span class="cap-name">Símbolos de Esquemas de Circuito</span></a></li>
+    <li><a href="../Ref/REF_10.html"><span class="cap-num">10</span><span class="cap-name">Tabla Periódica de los Elementos</span></a></li>
+    <li><a href="../Ref/REF_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Ref/REF_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Ref/REF_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">
+    <span class="vol-ic"><i class="ti ti-flask" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Experimentos</span><span class="vol-lb">Vol. VI</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
-    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
-    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
-    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
-    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
-    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
-    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
-    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
-    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
-    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
-    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+    <li><a href="../Exper/EXP_1.html"><span class="cap-num">01</span><span class="cap-name">Introducción</span></a></li>
+    <li><a href="../Exper/EXP_2.html"><span class="cap-num">02</span><span class="cap-name">Conceptos Básicos y Equipos de Prueba</span></a></li>
+    <li><a href="../Exper/EXP_3.html"><span class="cap-num">03</span><span class="cap-name">Circuitos CC</span></a></li>
+    <li><a href="../Exper/EXP_4.html"><span class="cap-num">04</span><span class="cap-name">Circuitos CA</span></a></li>
+    <li><a href="../Exper/EXP_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Semiconductores Discretos</span></a></li>
+    <li><a href="../Exper/EXP_6.html"><span class="cap-num">06</span><span class="cap-name">Circuitos Integrados Analógicos</span></a></li>
+    <li><a href="../Exper/EXP_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Integrados Digitales</span></a></li>
+    <li><a href="../Exper/EXP_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos con Temporizador 555</span></a></li>
+    <li><a href="../Exper/EXP_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Exper/EXP_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Exper/EXP_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">
+    <span class="vol-ic"><i class="ti ti-code" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Desarrollo</span><span class="vol-lb">Info técnica</span></span>
+  </a>
 </div>
 </nav>
 
@@ -156,43 +188,25 @@
   <main class="main-content">
     <header class="top-bar">
       <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
-      <span class="page-title">Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 8</span>
+      <span class="page-title">Mapeo de Karnaugh</span>
       <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
     </header>
     <article class="content" id="content">
       
-<body bgcolor="white">
-
-
-
-<hr/>
-<h1>Lecciones de circuitos eléctricos - Volumen IV</h1>
-<h1>Capítulo 8</h1>
-<!--Created 04/27/2004 to 06/30/2004 (DC)-->
-<!--Modified-->
-<!--Modified 11/14/2004 (DC) -- Added Paul Stokes name to the contributor's list see contrib.sml for change details-->
-<!--Modified 11/14/2004 (DC) -- changed logic diagrams to include cross-overs &amp; dots according to Tony's style-->
-<!--Modified 01/13/2005 (DC) -- converted subsections and subsubsections to sections for better html at www.allaboutcircuits.com-->
-<!--Modified 01/30/2005 (DC) -- fixed 14094.eps top of map incorrect double bar, minor corrections 14162.eps, 14163.eps-->
-<!--Modified 06/19/2005 (DC) -- minor near "This migh be easier" -->
-<!--04366.eps re-used from Boolean algebra chapter good for .html bad for printed book-->
-<!--14066.eps re-used from Boolean algebra chapter, as above -->
-<!--first table/equation image 14072.eps-->
-<!--last table/equation image 14163.eps-->
-<h1>MAPEO DE KARNAUGH</h1>
+<h1>Mapeo de Karnaugh</h1>
 <!--minitoc-->
 <ul>
-<li><a href="#xtocid92050"><u>Introduction</u></a></li>
-<li><a href="#xtocid92051"><u>Venn diagrams and sets</u></a></li>
-<li><a href="#xtocid92052"><u>Boolean Relationships on Venn Diagrams</u></a></li>
-<li><a href="#xtocid92053"><u>Making a Venn diagram look like a Karnaugh map</u></a></li>
-<li><a href="#xtocid92054"><u>Karnaugh maps, truth tables, and Boolean expressions</u></a></li>
-<li><a href="#xtocid92055"><u>Logic simplification with Karnaugh maps</u></a></li>
-<li><a href="#xtocid92056"><u>Larger 4-variable Karnaugh maps</u></a></li>
-<li><a href="#xtocid92057"><u>Minterm vs maxterm  solution</u></a></li>
-<li><a href="#xtocid92058"><u>Σ (sum) and Π (product) notation</u></a></li>
-<li><a href="#xtocid92059"><u>Don't care cells in the Karnaugh map</u></a></li>
-<li><a href="#xtocid920510"><u>Larger 5 &amp; 6-variable Karnaugh maps</u></a></li></ul>
+<li><a href="#xtocid92050"><u>Introducción</u></a></li>
+<li><a href="#xtocid92051"><u>Diagramas de Venn y conjuntos</u></a></li>
+<li><a href="#xtocid92052"><u>Relaciones booleanas en diagramas de Venn</u></a></li>
+<li><a href="#xtocid92053"><u>Transformar un diagrama de Venn en un mapa de Karnaugh</u></a></li>
+<li><a href="#xtocid92054"><u>Mapas de Karnaugh, tablas de verdad y expresiones booleanas</u></a></li>
+<li><a href="#xtocid92055"><u>Simplificación lógica con mapas de Karnaugh</u></a></li>
+<li><a href="#xtocid92056"><u>Mapas de Karnaugh de 4 variables</u></a></li>
+<li><a href="#xtocid92057"><u>Solución por mintérminos y maxtérminos</u></a></li>
+<li><a href="#xtocid92058"><u>Notación Σ (suma) y Π (producto)</u></a></li>
+<li><a href="#xtocid92059"><u>Celdas indiferentes en el mapa de Karnaugh</u></a></li>
+<li><a href="#xtocid920510"><u>Mapas de Karnaugh de 5 y 6 variables</u></a></li></ul>
 <p>
 <b>Autor original: Dennis Crunkilton</b>
 </p>
@@ -200,8 +214,7 @@
 <p>
 <p> <img src="14093.png"/> </p> <!-- 3-Kmap- real -->
 </p>
-<h2><u><a name="xtocid92050">Introduction</a></u></h2>
-<a name="Karnaugh map"></a>
+<h2><a name="xtocid92050">Introducción</a></h2>
 <a name="logic simplification"></a>
 <p>¿Por qué aprender sobre<i>karnaugh</i>mapas? El mapa de Karnaugh, al igual que el álgebra de Boole, es una herramienta de simplificación aplicable a la lógica digital. Consulte "Incinerador de desechos tóxicos" en el capítulo de álgebra booleana para ver un ejemplo de simplificación booleana de la lógica digital. El mapa de Karnaugh simplificará la lógica de forma más rápida y sencilla en la mayoría de los casos.</p>
 <a name="CAD"></a>
@@ -217,8 +230,7 @@
 <a name="VHDL"></a>
 <a name="CUPL"></a>
 <p>Ejemplos de lenguajes de diseño automatizados por computadora para la simplificación de la lógica son PALASM, ABEL, CUPL, Verilog y VHDL. Estos programas aceptan un<i>lenguaje descriptivo de hardware</i>archivo de entrada que se basa en ecuaciones booleanas y produce un archivo de salida que describe una<i>reducido</i>(o simplificada) solución booleana. No necesitaremos tales herramientas en este capítulo. Pasemos a los diagramas de Venn como introducción a los mapas de Karnaugh.</p>
-<h2><u><a name="xtocid92051">Venn diagrams and sets</a></u></h2>
-<a name="Venn Diagram"></a>
+<h2><a name="xtocid92051">Diagramas de Venn y conjuntos</a></h2>
 <a name="Venn diagram"></a>
 <a name="sets"></a>
 <a name="element of set"></a>
@@ -289,7 +301,7 @@ A <i>set</i>es una colección de objetos de un universo como se muestra a contin
 <p>conjunto A = {1,2,3,4}<br/>conjunto B = {3,4,5,6}</p>
 </blockquote>
 <p>El conjunto A y el conjunto B tienen los elementos 3 y 4 en común. Estos elementos son la razón de la superposición en el centro común a A y B. Necesitamos analizar más de cerca esta situación.</p>
-<h2><u><a name="xtocid92052">Boolean Relationships on Venn Diagrams</a></u></h2>
+<h2><a name="xtocid92052">Relaciones booleanas en diagramas de Venn</a></h2>
 <p>El cuarto ejemplo tiene<b>A</b>parcialmente superpuesto<b>B</b>.  Sin embargo, primero veremos toda el área sombreada a continuación y luego solo la región superpuesta. Asignemos algunas expresiones booleanas a las regiones anteriores como se muestra a continuación.
 Abajo a la izquierda hay un área rayada horizontal roja para<b>A</b>. Hay un área rayada vertical azul para<b>B</b>.
 </p>
@@ -423,7 +435,7 @@ Abajo a la izquierda hay un área rayada horizontal roja para<b>A</b>. Hay un á
 </ul>
 </p>
 <a name="Karnaugh map"></a>
-<h2><u><a name="xtocid92053">Making a Venn diagram look like a Karnaugh map</a></u></h2>
+<h2><a name="xtocid92053">Transformar un diagrama de Venn en un mapa de Karnaugh</a></h2>
 <p>comenzando con el circulo<b>A</b>en un rectangular<b>Un 'universo</b>En la figura (a) a continuación, transformamos un diagrama de Venn en casi un mapa de Karnaugh.</p>
 <br/>
 <p>
@@ -484,8 +496,7 @@ Variables booleanas (<b>A, B, C</b>). Por ejemplo,<b>ABECEDARIO'</b>selecciona d
 <br/>
 <p>Las dos formas diferentes anteriores de un mapa de Karnaugh de 3 variables son equivalentes y es la forma final que adopta. La versión de la derecha es un poco más fácil de usar, ya que no tenemos que escribir tantos encabezados alfabéticos booleanos y barras de complemento, solo<b>1</b>arena<b>0</b>s Utilice la forma de mapa de la derecha y busque el de la izquierda en algunos textos.  Los encabezados de las columnas de la izquierda.<b>B'C', B'C, BC, BC'</b>son equivalentes a<b>00, 01, 11, 10</b>A la derecha. Los encabezados de fila<b>A, A'</b>son equivalentes a<b>0, 1</b>en el mapa correcto.</p>
 <br/>
-<h2><u><a name="xtocid92054">Karnaugh maps, truth tables, and Boolean expressions</a></u></h2>
-<a name="Karnaugh map"></a>
+<h2><a name="xtocid92054">Mapas de Karnaugh, tablas de verdad y expresiones booleanas</a></h2>
 <a name="Karnaugh, Maurice"></a>
 <p>Maurice Karnaugh, un ingeniero de telecomunicaciones, desarrolló el mapa de Karnaugh en Bell Labs en 1953 mientras diseñaba circuitos de conmutación telefónica basados ​​en lógica digital.</p>
 <p>Ahora que hemos desarrollado el mapa de Karnaugh con la ayuda de diagramas de Venn, vamos a utilizarlo. mapas de karnaugh<i>reducir</i>funciones lógicas más rápida y fácilmente en comparación con el álgebra booleana. Por reducir queremos decir simplificar, reducir el número de puertas y entradas.  Nos gusta simplificar la lógica a un<i>costo más bajo</i>forma de ahorrar costes mediante la eliminación de componentes.  Definimos el costo más bajo como el menor número de puertas con el menor número de entradas por puerta.</p>
@@ -665,8 +676,7 @@ Finalmente, χ y δ tienen valores booleanos.<b>A</b>(A=1) en común. Compara lo
 </ul>
 </p>
 <p>No es posible ninguna simplificación lógica para el diagrama anterior. Esto sucede a veces.  Ni los métodos de los mapas de Karnaugh ni el álgebra de Boole pueden simplificar más esta lógica. Mostramos un símbolo esquemático OR exclusivo arriba; sin embargo, esto no es una simplificación lógica. Simplemente hace que un diagrama esquemático se vea mejor. Dado que no es posible simplificar la lógica OR exclusiva y se usa ampliamente, los fabricantes la proporcionan como un circuito integrado básico (7486).</p>
-<h2><u><a name="xtocid92055">Logic simplification with Karnaugh maps</a></u></h2>
-<a name="Karnaugh map"></a>
+<h2><a name="xtocid92055">Simplificación lógica con mapas de Karnaugh</a></h2>
 <p>Los ejemplos de simplificación lógica que hemos hecho podrían haberse realizado con álgebra de Boole con la misma rapidez. Los problemas de simplificación lógica del mundo real exigen mapas de Karnaugh más grandes para que podamos realizar un trabajo serio. Trabajaremos algunos ejemplos artificiales en esta sección, dejando la mayoría de las aplicaciones del mundo real para el capítulo de Lógica Combinatoria. Por artificial nos referimos a ejemplos que ilustran técnicas. Este enfoque desarrollará las herramientas que necesitamos para la transición a las aplicaciones más complejas del capítulo de Lógica Combinatoria.</p>
 <p>Mostramos nuestro mapa de Karnaugh desarrollado previamente. Usaremos el formulario de la derecha.</p>
 <br/>
@@ -767,7 +777,7 @@ Finalmente, χ y δ tienen valores booleanos.<b>A</b>(A=1) en común. Compara lo
 <br/>
 <br/>
 <a name="Karnaugh map"></a>
-<h2><u><a name="xtocid92056">Larger 4-variable Karnaugh maps</a></u></h2>
+<h2><a name="xtocid92056">Mapas de Karnaugh de 4 variables</a></h2>
 <p>Saber cómo generar código Gray debería permitirnos construir mapas más grandes. En realidad, todo lo que tenemos que hacer es mirar la secuencia de izquierda a derecha en la parte superior del mapa de 3 variables y copiarla en el lado izquierdo del mapa de 4 variables. Vea abajo.<p>
 <br/>
 <p>
@@ -858,7 +868,7 @@ Finalmente, χ y δ tienen valores booleanos.<b>A</b>(A=1) en común. Compara lo
 <a name="Product-Of-Sums"></a>
 <a name="SOP"></a>
 <a name="POS"></a>
-<h2><u><a name="xtocid92057">Minterm vs maxterm  solution</a></u></h2>
+<h2><a name="xtocid92057">Solución por mintérminos y maxtérminos</a></h2>
 <p>Hasta ahora hemos estado encontrando soluciones de suma de productos (SOP) para problemas de reducción lógica. Para cada una de estas soluciones SOP, también existe una solución de producto de sumas (POS), que podría ser más útil, según la aplicación.  Antes de trabajar en una solución de producto de sumas, debemos introducir alguna terminología nueva. El siguiente procedimiento para mapear términos de productos no es nuevo en este capítulo. Solo queremos establecer un procedimiento formal para minterms para compararlo con el nuevo procedimiento para maxterms.</p>
 <p>
 <p> <img src="14126.png"/> </p> <!--3-Kmap POS-->
@@ -1084,7 +1094,7 @@ A <i>término máximo</i>es una expresión booleana que da como resultado una<b>
 <a name="nand-nand logic"></a>
 <p>El resultado se muestra arriba. Es la única forma práctica de construirlo con puertas TTL mediante el uso de lógica NAND-NAND que reemplaza la lógica AND-OR.</p>
 <br/>
-<h2><u><a name="xtocid92058">Σ (sum) and Π (product) notation</a></u></h2>
+<h2><a name="xtocid92058">Notación Σ (suma) y Π (producto)</a></h2>
 <p>Como referencia, esta sección presenta la terminología utilizada en algunos textos para describir los minterms y maxterms asignados a un mapa de Karnaugh. De lo contrario, no hay material nuevo aquí.</p>
 <a name="minterm sum Σ "></a>
 <p>Σ (sigma) indica suma y "m" minúscula indica mintérminos. Σm indica suma de mintérminos. Se revisa el siguiente ejemplo para ilustrar nuestro punto. En lugar de una descripción de una ecuación booleana de lógica no simplificada, enumeramos los minitérminos.</p>
@@ -1122,7 +1132,7 @@ A <i>término máximo</i>es una expresión booleana que da como resultado una<b>
 </p>
 <br/>
 <a name="don't cares in Karnaugh map"></a>
-<h2><u><a name="xtocid92059">Don't care cells in the Karnaugh map</a></u></h2>
+<h2><a name="xtocid92059">Celdas indiferentes en el mapa de Karnaugh</a></h2>
 <p>Hasta este punto hemos considerado problemas de reducción lógica donde las condiciones de entrada estaban completamente especificadas. Es decir, una tabla de verdad de 3 variables o mapa de Karnaugh tenía 2<sup>n</sup>= 2<sup>3</sup>u 8 entradas, una tabla o mapa completo. No siempre es necesario completar la tabla de verdad completa para algunos problemas del mundo real. Es posible que tengamos la opción de no completar la tabla completa.</p>
 <p>Por ejemplo, cuando trabajamos con números BCD (decimal codificado en binario) codificados como cuatro bits, es posible que no nos importe ningún código por encima del rango BCD de (0, 1, 2...9). Los códigos binarios de 4 bits para números hexadecimales (Ah, Bh, Ch, Eh, Fh) no son códigos BCD válidos. Por lo tanto, no tenemos que completar esos códigos al final de una tabla de verdad, o K-map, si no nos interesa. Normalmente no nos importaría completar esos códigos porque esos códigos (1010, 1011, 1100, 1101, 1110, 1111) nunca existirán mientras tratemos solo con números codificados en BCD.  Estos seis códigos inválidos son<i>no me importa</i>en lo que a nosotros respecta. Es decir, no nos importa qué salida produce nuestro circuito lógico, ya que a estos no les importa.</p>
 <p>No me importa en un mapa de Karnaugh, o en una tabla de verdad, puede ser cualquiera de las dos cosas<b>1</b>s o<b>0</b>s, siempre y cuando no nos importe cuál sea la salida para una condición de entrada que nunca esperamos ver. Trazamos estas celdas con un asterisco, *, entre las normales<b>1</b>arena<b>0</b>s. Al formar grupos de células, trate la célula que no le importa como una<b>1</b>o un<b>0</b>, o ignorar los "no me importa". Esto es útil si nos permite formar un grupo más grande del que sería posible sin el "no me importa". No es necesario agrupar todos o alguno de los "no le importa". Úselos solo en grupo si simplifica la lógica.</p>
@@ -1162,7 +1172,7 @@ A <i>término máximo</i>es una expresión booleana que da como resultado una<b>
 <p>El diagrama de puerta para el circuito está arriba. Las salidas de las cinco ecuaciones de K-map impulsan los inversores. Tenga en cuenta que la L1<b>OR</b>La puerta no es una puerta de 3 entradas sino una puerta de 2 entradas que tiene entradas.<b>(A+B), C</b>, salida<b>A+B+C</b> The <i>colector abierto</i>inversores,<b>7406</b>, son deseables para controlar los LED, aunque no forman parte del diseño lógico de K-map. La salida de una compuerta de colector abierto o inversor tiene un circuito abierto en el colector interno del paquete de circuito integrado para que toda la corriente del colector pueda fluir a través de una carga externa. Un nivel alto activo en cualquiera de los inversores reduce la salida, extrayendo corriente a través del LED y la resistencia limitadora de corriente. Los LED probablemente serían parte de un relé de estado sólido que acciona lámparas de 120 VCA para una exhibición de museo, que no se muestra aquí.</p>
 <a name="Karnaugh map"></a>
 <a name="fan-in"></a>
-<h2><u><a name="xtocid920510">Larger 5 &amp; 6-variable Karnaugh maps</a></u></h2>
+<h2><a name="xtocid920510">Mapas de Karnaugh de 5 y 6 variables</a></h2>
 <p>Los mapas de Karnaugh más grandes reducen los diseños lógicos más grandes. ¿Qué tan grande es lo suficientemente grande? Eso depende del número de entradas,<i>fanáticos</i>, al circuito lógico considerado. Una de las grandes empresas de lógica programable tiene la respuesta.</p>
 <blockquote>Los propios datos de Altera, extraídos de su biblioteca de diseños de clientes, respaldan el valor de la heterogeneidad. Al examinar los conos lógicos, mapearlos en nodos basados ​​en LUT y ordenarlos por la cantidad de entradas que serían mejores en cada nodo, Altera descubrió que la distribución de fan-ins era casi plana entre dos y seis entradas, con un buen pico en cinco.</blockquote>
 <p>La respuesta es no más de seis entradas para la mayoría de los diseños y cinco entradas para el diseño lógico promedio. A continuación se muestra el mapa de Karnaugh de cinco variables.</p>
@@ -1256,12 +1266,9 @@ El segundo grupo de 8 celdas está compuesto por un grupo similar de 4 celdas en
 <li>Las expresiones de producto de sumas, que se utilizan con menos frecuencia, se implementan como puertas OR (sumas) que se alimentan de una única puerta AND (producto). Las expresiones de producto de sumas se basan en la<b>0</b>s, maxterms, en un mapa de Karnaugh.</li>
 </ul>
 <br/>
-<hr/>
 <p>
 <i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="DIGI_A3.html">CC BY License</a>.
 </p>
-
-
 
 </p></p></p></body>
 

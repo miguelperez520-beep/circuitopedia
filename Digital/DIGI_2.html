@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>!function(){var t=localStorage.getItem("liec-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();</script>
 <meta charset="UTF-8">
+    <meta name="description" content="Es imperativo comprender que el tipo de sistema de numeración utilizado para representar números no tiene impacto en el resultado de ninguna función…">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Circuitopedia">
+    <meta property="og:title" content="Aritmética Binaria — Circuitopedia">
+    <meta property="og:description" content="Es imperativo comprender que el tipo de sistema de numeración utilizado para representar números no tiene impacto en el resultado de ninguna función…">
+    <meta property="og:url" content="https://circuitopedia.io/Digital/DIGI_2.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Aritmética Binaria — Circuitopedia">
+    <meta name="twitter:description" content="Es imperativo comprender que el tipo de sistema de numeración utilizado para representar números no tiene impacto en el resultado de ninguna función…">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 2 | Lecciones de Circuitos Eléctricos</title>
+<title>Aritmética Binaria — Circuitopedia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.34.0/dist/tabler-icons.min.css">
 <style>:root { --accent: #f59e0b; }</style>
 </head>
-<body>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <a href="../index.html" class="logo">Circuitopedia</a>
       <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
     </div>
     <div class="search-box">
@@ -22,132 +33,153 @@
     </div>
     <nav class="sidebar-nav">
 <div class="vol-group">
-  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">
+    <span class="vol-ic"><i class="ti ti-bolt" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Continua</span><span class="vol-lb">Vol. I · DC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
-    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
-    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
-    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
-    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
-    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
-    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
-    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
-    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
-    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
-    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
-    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
-    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
-    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
-    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
-    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
-    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
-    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
-    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+    <li><a href="../DC/DC_1.html"><span class="cap-num">01</span><span class="cap-name">Conceptos Básicos de Electricidad</span></a></li>
+    <li><a href="../DC/DC_2.html"><span class="cap-num">02</span><span class="cap-name">Ley de Ohm</span></a></li>
+    <li><a href="../DC/DC_3.html"><span class="cap-num">03</span><span class="cap-name">Seguridad Eléctrica</span></a></li>
+    <li><a href="../DC/DC_4.html"><span class="cap-num">04</span><span class="cap-name">Notación Científica y Prefijos</span></a></li>
+    <li><a href="../DC/DC_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Serie y Paralelo</span></a></li>
+    <li><a href="../DC/DC_6.html"><span class="cap-num">06</span><span class="cap-name">Divisores y Leyes de Kirchhoff</span></a></li>
+    <li><a href="../DC/DC_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Serie-Paralelo</span></a></li>
+    <li><a href="../DC/DC_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos de Medición CC</span></a></li>
+    <li><a href="../DC/DC_9.html"><span class="cap-num">09</span><span class="cap-name">Señales de Instrumentación</span></a></li>
+    <li><a href="../DC/DC_10.html"><span class="cap-num">10</span><span class="cap-name">Análisis de Red CC</span></a></li>
+    <li><a href="../DC/DC_11.html"><span class="cap-num">11</span><span class="cap-name">Baterías y Sistemas de Energía</span></a></li>
+    <li><a href="../DC/DC_12.html"><span class="cap-num">12</span><span class="cap-name">Conductores y Aisladores</span></a></li>
+    <li><a href="../DC/DC_13.html"><span class="cap-num">13</span><span class="cap-name">Condensadores</span></a></li>
+    <li><a href="../DC/DC_14.html"><span class="cap-num">14</span><span class="cap-name">Magnetismo y Electromagnetismo</span></a></li>
+    <li><a href="../DC/DC_15.html"><span class="cap-num">15</span><span class="cap-name">Inductores</span></a></li>
+    <li><a href="../DC/DC_16.html"><span class="cap-num">16</span><span class="cap-name">Constantes de Tiempo RC y L/R</span></a></li>
+    <li><a href="../DC/DC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../DC/DC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../DC/DC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">
+    <span class="vol-ic"><i class="ti ti-wave-sine" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Alterna</span><span class="vol-lb">Vol. II · AC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
-    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
-    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
-    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
-    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
-    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
-    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
-    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
-    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
-    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
-    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
-    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
-    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
-    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
-    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
-    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
-    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+    <li><a href="../AC/AC_1.html"><span class="cap-num">01</span><span class="cap-name">Teoría Básica de CA</span></a></li>
+    <li><a href="../AC/AC_2.html"><span class="cap-num">02</span><span class="cap-name">Números Complejos</span></a></li>
+    <li><a href="../AC/AC_3.html"><span class="cap-num">03</span><span class="cap-name">Reactancia e Impedancia Inductiva</span></a></li>
+    <li><a href="../AC/AC_4.html"><span class="cap-num">04</span><span class="cap-name">Reactancia e Impedancia Capacitiva</span></a></li>
+    <li><a href="../AC/AC_5.html"><span class="cap-num">05</span><span class="cap-name">Reactancia e Impedancia R, L y C</span></a></li>
+    <li><a href="../AC/AC_6.html"><span class="cap-num">06</span><span class="cap-name">Resonancia</span></a></li>
+    <li><a href="../AC/AC_7.html"><span class="cap-num">07</span><span class="cap-name">Señales CA de Frecuencia Mixta</span></a></li>
+    <li><a href="../AC/AC_8.html"><span class="cap-num">08</span><span class="cap-name">Filtros</span></a></li>
+    <li><a href="../AC/AC_9.html"><span class="cap-num">09</span><span class="cap-name">Transformadores</span></a></li>
+    <li><a href="../AC/AC_10.html"><span class="cap-num">10</span><span class="cap-name">Circuitos CA Polifásicos</span></a></li>
+    <li><a href="../AC/AC_11.html"><span class="cap-num">11</span><span class="cap-name">Factor de Potencia</span></a></li>
+    <li><a href="../AC/AC_12.html"><span class="cap-num">12</span><span class="cap-name">Circuitos de Medición CA</span></a></li>
+    <li><a href="../AC/AC_13.html"><span class="cap-num">13</span><span class="cap-name">Motores de CA</span></a></li>
+    <li><a href="../AC/AC_14.html"><span class="cap-num">14</span><span class="cap-name">Líneas de Transmisión</span></a></li>
+    <li><a href="../AC/AC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../AC/AC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../AC/AC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">
+    <span class="vol-ic"><i class="ti ti-cpu" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Semiconductores</span><span class="vol-lb">Vol. III</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
-    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
-    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
-    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
-    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
-    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
-    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
-    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
-    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
-    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
-    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
-    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
-    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
-    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
-    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
-    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+    <li><a href="../Semi/SEMI_1.html"><span class="cap-num">01</span><span class="cap-name">Amplificadores y Dispositivos Activos</span></a></li>
+    <li><a href="../Semi/SEMI_2.html"><span class="cap-num">02</span><span class="cap-name">Dispositivos de Estado Sólido</span></a></li>
+    <li><a href="../Semi/SEMI_3.html"><span class="cap-num">03</span><span class="cap-name">Diodos y Rectificadores</span></a></li>
+    <li><a href="../Semi/SEMI_4.html"><span class="cap-num">04</span><span class="cap-name">Transistores Bipolares (BJT)</span></a></li>
+    <li><a href="../Semi/SEMI_5.html"><span class="cap-num">05</span><span class="cap-name">Transistores de Efecto de Campo JFET</span></a></li>
+    <li><a href="../Semi/SEMI_6.html"><span class="cap-num">06</span><span class="cap-name">Transistores de Efecto de Campo IGFET</span></a></li>
+    <li><a href="../Semi/SEMI_7.html"><span class="cap-num">07</span><span class="cap-name">Tiristores</span></a></li>
+    <li><a href="../Semi/SEMI_8.html"><span class="cap-num">08</span><span class="cap-name">Amplificadores Operacionales</span></a></li>
+    <li><a href="../Semi/SEMI_9.html"><span class="cap-num">09</span><span class="cap-name">Circuitos Analógicos Prácticos</span></a></li>
+    <li><a href="../Semi/SEMI_10.html"><span class="cap-num">10</span><span class="cap-name">Filtros Activos</span></a></li>
+    <li><a href="../Semi/SEMI_11.html"><span class="cap-num">11</span><span class="cap-name">Motores de CC</span></a></li>
+    <li><a href="../Semi/SEMI_12.html"><span class="cap-num">12</span><span class="cap-name">Inversores y Accionadores de CA</span></a></li>
+    <li><a href="../Semi/SEMI_13.html"><span class="cap-num">13</span><span class="cap-name">Tubos de Electrones</span></a></li>
+    <li><a href="../Semi/SEMI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Semi/SEMI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Semi/SEMI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">
+    <span class="vol-ic"><i class="ti ti-binary" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Circuitos Digitales</span><span class="vol-lb">Vol. IV</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
-    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
-    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
-    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
-    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
-    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
-    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
-    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
-    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
-    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
-    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
-    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
-    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
-    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
-    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
-    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
-    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
-    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
-    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+    <li><a href="../Digital/DIGI_1.html"><span class="cap-num">01</span><span class="cap-name">Sistemas de Numeración</span></a></li>
+    <li><a href="../Digital/DIGI_2.html"><span class="cap-num">02</span><span class="cap-name">Aritmética Binaria</span></a></li>
+    <li><a href="../Digital/DIGI_3.html"><span class="cap-num">03</span><span class="cap-name">Puertas Lógicas</span></a></li>
+    <li><a href="../Digital/DIGI_4.html"><span class="cap-num">04</span><span class="cap-name">Interruptores</span></a></li>
+    <li><a href="../Digital/DIGI_5.html"><span class="cap-num">05</span><span class="cap-name">Relés Electromecánicos</span></a></li>
+    <li><a href="../Digital/DIGI_6.html"><span class="cap-num">06</span><span class="cap-name">Lógica de Escalera</span></a></li>
+    <li><a href="../Digital/DIGI_7.html"><span class="cap-num">07</span><span class="cap-name">Álgebra Booleana</span></a></li>
+    <li><a href="../Digital/DIGI_8.html"><span class="cap-num">08</span><span class="cap-name">Mapeo de Karnaugh</span></a></li>
+    <li><a href="../Digital/DIGI_9.html"><span class="cap-num">09</span><span class="cap-name">Funciones Lógicas Combinacionales</span></a></li>
+    <li><a href="../Digital/DIGI_10.html"><span class="cap-num">10</span><span class="cap-name">Multivibradores</span></a></li>
+    <li><a href="../Digital/DIGI_11.html"><span class="cap-num">11</span><span class="cap-name">Circuitos Secuenciales</span></a></li>
+    <li><a href="../Digital/DIGI_12.html"><span class="cap-num">12</span><span class="cap-name">Registros de Desplazamiento</span></a></li>
+    <li><a href="../Digital/DIGI_13.html"><span class="cap-num">13</span><span class="cap-name">Conversión Digital-Analógica</span></a></li>
+    <li><a href="../Digital/DIGI_14.html"><span class="cap-num">14</span><span class="cap-name">Comunicación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_15.html"><span class="cap-num">15</span><span class="cap-name">Almacenamiento Digital (Memoria)</span></a></li>
+    <li><a href="../Digital/DIGI_16.html"><span class="cap-num">16</span><span class="cap-name">Principios de Computación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Digital/DIGI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Digital/DIGI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">
+    <span class="vol-ic"><i class="ti ti-book-2" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Referencia</span><span class="vol-lb">Vol. V</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
-    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
-    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
-    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
-    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
-    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
-    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
-    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
-    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
-    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
-    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
-    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
-    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+    <li><a href="../Ref/REF_1.html"><span class="cap-num">01</span><span class="cap-name">Ecuaciones y Factores de Conversión</span></a></li>
+    <li><a href="../Ref/REF_2.html"><span class="cap-num">02</span><span class="cap-name">Códigos de Color</span></a></li>
+    <li><a href="../Ref/REF_3.html"><span class="cap-num">03</span><span class="cap-name">Tablas de Conductores y Aisladores</span></a></li>
+    <li><a href="../Ref/REF_4.html"><span class="cap-num">04</span><span class="cap-name">Referencia de Álgebra</span></a></li>
+    <li><a href="../Ref/REF_5.html"><span class="cap-num">05</span><span class="cap-name">Referencia de Trigonometría</span></a></li>
+    <li><a href="../Ref/REF_6.html"><span class="cap-num">06</span><span class="cap-name">Referencia de Cálculo</span></a></li>
+    <li><a href="../Ref/REF_7.html"><span class="cap-num">07</span><span class="cap-name">Simulación de Circuitos con SPICE</span></a></li>
+    <li><a href="../Ref/REF_8.html"><span class="cap-num">08</span><span class="cap-name">Solución de Problemas</span></a></li>
+    <li><a href="../Ref/REF_9.html"><span class="cap-num">09</span><span class="cap-name">Símbolos de Esquemas de Circuito</span></a></li>
+    <li><a href="../Ref/REF_10.html"><span class="cap-num">10</span><span class="cap-name">Tabla Periódica de los Elementos</span></a></li>
+    <li><a href="../Ref/REF_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Ref/REF_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Ref/REF_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">
+    <span class="vol-ic"><i class="ti ti-flask" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Experimentos</span><span class="vol-lb">Vol. VI</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
-    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
-    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
-    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
-    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
-    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
-    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
-    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
-    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
-    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
-    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+    <li><a href="../Exper/EXP_1.html"><span class="cap-num">01</span><span class="cap-name">Introducción</span></a></li>
+    <li><a href="../Exper/EXP_2.html"><span class="cap-num">02</span><span class="cap-name">Conceptos Básicos y Equipos de Prueba</span></a></li>
+    <li><a href="../Exper/EXP_3.html"><span class="cap-num">03</span><span class="cap-name">Circuitos CC</span></a></li>
+    <li><a href="../Exper/EXP_4.html"><span class="cap-num">04</span><span class="cap-name">Circuitos CA</span></a></li>
+    <li><a href="../Exper/EXP_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Semiconductores Discretos</span></a></li>
+    <li><a href="../Exper/EXP_6.html"><span class="cap-num">06</span><span class="cap-name">Circuitos Integrados Analógicos</span></a></li>
+    <li><a href="../Exper/EXP_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Integrados Digitales</span></a></li>
+    <li><a href="../Exper/EXP_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos con Temporizador 555</span></a></li>
+    <li><a href="../Exper/EXP_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Exper/EXP_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Exper/EXP_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">
+    <span class="vol-ic"><i class="ti ti-code" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Desarrollo</span><span class="vol-lb">Info técnica</span></span>
+  </a>
 </div>
 </nav>
 
@@ -156,35 +188,26 @@
   <main class="main-content">
     <header class="top-bar">
       <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
-      <span class="page-title">Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 2</span>
+      <span class="page-title">Aritmética Binaria</span>
       <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
     </header>
     <article class="content" id="content">
       
-<body bgcolor="white">
-
-
-
-<hr/>
-<h1>Lecciones de circuitos eléctricos - Volumen IV</h1>
-<h1>Capítulo 2</h1>
-<!--Modified 11/14/2004 (DC) -- Added Paul Stokes name to the contributor's list see contrib.sml for change details-->
-<h1>ARITMÉTICA BINARIA</h1>
+<h1>Aritmética Binaria</h1>
 <!--minitoc-->
 <ul>
-<li><a href="#xtocid91510"><u>Numbers versus numeration</u></a></li>
-<li><a href="#xtocid91511"><u>Binary addition</u></a></li>
-<li><a href="#xtocid91512"><u>Negative binary numbers</u></a></li>
-<li><a href="#xtocid91513"><u>Subtraction</u></a></li>
-<li><a href="#xtocid91514"><u>Overflow</u></a></li>
-<li><a href="#xtocid91515"><u>Bit groupings</u></a></li></ul>
-<h2><u><a name="xtocid91510">Numbers versus numeration</a></u></h2>
-<a name="Number"></a>
+<li><a href="#xtocid91510"><u>Números frente a numeración</u></a></li>
+<li><a href="#xtocid91511"><u>Suma binaria</u></a></li>
+<li><a href="#xtocid91512"><u>Números binarios negativos</u></a></li>
+<li><a href="#xtocid91513"><u>Resta</u></a></li>
+<li><a href="#xtocid91514"><u>Desbordamiento</u></a></li>
+<li><a href="#xtocid91515"><u>Agrupaciones de bits</u></a></li></ul>
+<h2><a name="xtocid91510">Números frente a numeración</a></h2>
 <a name="Numeration system"></a>
 <p>Es imperativo comprender que el tipo de sistema de numeración utilizado para representar números no tiene impacto en el resultado de ninguna función aritmética (suma, resta, multiplicación, división, raíces, potencias o logaritmos).  Un número es un número es un número; uno más uno siempre será igual a dos (siempre que estemos tratando con<i>real</i>números), no importa cómo simbolices uno, uno y dos.  Un número primo en forma decimal sigue siendo primo si se muestra en forma binaria, octal o hexadecimal.  π sigue siendo la relación entre la circunferencia y el diámetro de un círculo, sin importar qué símbolo utilice para indicar su valor.  Las funciones esenciales y las interrelaciones de las matemáticas no se ven afectadas por el sistema particular de símbolos que podríamos elegir para representar cantidades.  Esta distinción entre<i>números</i> and <i>sistemas de numeración</i>Es fundamental comprenderlo.</p>
 <p>La distinción esencial entre los dos es muy parecida a la que existe entre un objeto y las palabras habladas que asociamos con él.  Una casa sigue siendo una casa independientemente de si la llamamos por su nombre en inglés.<i>casa</i>o su nombre español<i>casa</i>.  El primero es la cosa real, mientras que el segundo es simplemente el símbolo de la cosa.</p>
 <p>Dicho esto, realizar una operación aritmética simple como la suma (a mano) en forma binaria puede resultar confuso para una persona acostumbrada a trabajar únicamente con numeración decimal.  En esta lección, exploraremos las técnicas utilizadas para realizar funciones aritméticas simples en números binarios, ya que estas técnicas se emplearán en el diseño de circuitos electrónicos para hacer lo mismo.  Es posible que dé por sentado la suma y la resta a mano, después de haber usado una calculadora durante tanto tiempo, pero en lo más profundo del circuito de esa calculadora, todas esas operaciones se realizan "a mano", utilizando numeración binaria.  Para comprender cómo se logra esto, debemos repasar los conceptos básicos de la aritmética.</p>
-<h2><u><a name="xtocid91511">Binary addition</a></u></h2>
+<h2><a name="xtocid91511">Suma binaria</a></h2>
 <p>Sumar números binarios es una tarea muy sencilla y muy similar a la suma manual de números decimales.  Al igual que con los números decimales, se comienza sumando los bits (dígitos) en una columna, o colocando el peso, a la vez, de derecha a izquierda.  A diferencia de la suma decimal, hay poco que memorizar en cuanto a reglas para la suma de bits binarios:</p>
 <br/>
 <pre>
@@ -207,7 +230,7 @@
 <br/>
 <p>El problema de suma de la izquierda no requería que se transportaran bits, ya que la suma de bits en cada columna era 1 o 0, no 10 u 11. En los otros dos problemas, definitivamente había bits que transportar, pero el proceso de suma sigue siendo bastante simple.</p>
 <p>Como veremos más adelante, hay maneras de construir circuitos electrónicos para realizar esta misma tarea de suma, representando cada bit de cada número binario como una señal de voltaje (ya sea "alta" para un 1 o "baja" para un 0).  Ésta es la base misma de toda la aritmética que realizan las computadoras digitales modernas.</p>
-<h2><u><a name="xtocid91512">Negative binary numbers</a></u></h2>
+<h2><a name="xtocid91512">Números binarios negativos</a></h2>
 <p>Como la suma se realiza fácilmente, podemos realizar la operación de resta con la misma técnica simplemente haciendo que uno de los números sea negativo.  Por ejemplo, el problema de resta de 7 - 5 es esencialmente el mismo que el problema de suma 7 + (-5).  Como ya sabemos cómo representar números positivos en binario, todo lo que necesitamos saber ahora es cómo representar sus contrapartes negativas y podremos restar.</p>
 <p>Normalmente representamos un número decimal negativo colocando un signo menos directamente a la izquierda del dígito más significativo, como en el ejemplo anterior, con -5.  Sin embargo, el propósito de usar notación binaria es construir circuitos de encendido/apagado que puedan representar valores de bits en términos de voltaje (2 valores alternativos: "alto" o "bajo").  En este contexto, no podemos darnos el lujo de un tercer símbolo como un signo "menos", ya que estos circuitos sólo pueden estar encendidos o apagados (dos estados posibles).  Una solución es reservar un bit (circuito) que no haga más que representar el signo matemático:</p>
 <br/>
@@ -277,7 +300,7 @@ positive number       two's complement
 <p>Curiosamente, generar el complemento a dos de un número binario funciona igual si manipulas<i>all</i>los bits, incluido el bit más a la izquierda (signo) al mismo tiempo que los bits de magnitud.  Intentemos esto con el ejemplo anterior, convirtiendo un cinco positivo en un cinco negativo, pero realizando el proceso de complementación en los cuatro bits.  Debemos asegurarnos de incluir el bit de signo 0 (positivo) en el número original, cinco (0101<sub>2</sub>).  Primero, invirtiendo todos los bits para obtener el complemento a uno: 1010<sub>2</sub>.  Luego sumando uno obtenemos la respuesta final: 1011<sub>2</sub>, o -5<sub>10</sub>expresado en forma de complemento a dos de cuatro bits.</p>
 <p>Es de vital importancia recordar que el lugar del bit de peso negativo ya debe estar determinado antes de poder realizar cualquier conversión en complemento a dos.  Si nuestro campo de numeración binaria fuera tal que el octavo bit fuera designado como bit de peso negativo (10000000<sub>2</sub>), tendríamos que determinar el complemento a dos basándose en los siete bits restantes.  Aquí, el complemento a dos de cinco (0000101<sub>2</sub>) sería 1111011<sub>2</sub>.  Un cinco positivo en este sistema se representaría como 00000101<sub>2</sub>y un cinco negativo como 11111011<sub>2</sub>.
 </p>
-<h2><u><a name="xtocid91513">Subtraction</a></u></h2>
+<h2><a name="xtocid91513">Resta</a></h2>
 <p>Podemos restar un número binario de otro utilizando las técnicas estándar adaptadas para números decimales (resta de cada par de bits, de derecha a izquierda, "tomar prestado" según sea necesario de los bits de la izquierda).  Sin embargo, si podemos aprovechar la técnica ya familiar (y más sencilla) de la suma binaria para restar, sería mejor.  Como acabamos de aprender, podemos representar números binarios negativos utilizando el método del "complemento a dos" y un bit de peso posicional negativo.  Aquí, usaremos esos números binarios negativos para restar mediante suma.  Aquí hay un problema de muestra:</p>
 <br/>
 <pre>
@@ -340,8 +363,7 @@ One's complement + 1 = two's complement = 100111<sub>2</sub>
 <br/>
 <p>De hecho -7<sub>10</sub>es la suma adecuada de -25<sub>10</sub>y 18<sub>10</sub>.
 </p>
-<h2><u><a name="xtocid91514">Overflow</a></u></h2>
-<a name="Overflow"></a>
+<h2><a name="xtocid91514">Desbordamiento</a></h2>
 <p>Una advertencia con los números binarios con signo es la de<i>rebosar</i>, donde la respuesta a un problema de suma o resta excede la magnitud que se puede representar con el número de bits asignado.  Recuerde que el lugar del bit de signo está fijado desde el inicio del problema.  En el último problema de ejemplo, utilizamos cinco bits binarios para representar la magnitud del número y el bit más a la izquierda (sexto) como bit de peso negativo o signo.  Con cinco bits para representar la magnitud, tenemos un rango de representación de 2<sup>5</sup>, o treinta y dos pasos enteros desde 0 hasta el máximo.  Esto significa que podemos representar un número tan alto como +31.<sub>10</sub>(011111<sub>2</sub>), o tan bajo como -32<sub>10</sub>(100000<sub>2</sub>).  Si configuramos un problema de suma con dos números binarios, el sexto bit se usa como signo y el resultado excede +31<sub>10</sub>o es menor que -32<sub>10</sub>, nuestra respuesta será incorrecta.  Intentemos sumar 17<sub>10</sub>y 19<sub>10</sub>Para ver cómo funciona esta condición de desbordamiento para números positivos excesivos:</p>
 <br/>
 <pre>
@@ -394,7 +416,7 @@ FINAL ANSWER:   011100<sub>2</sub>   = +28<sub>10</sub>
 <p>Lo que necesitamos es un método simple de detección de errores que no requiera ninguna aritmética adicional.  Quizás la solución más elegante sea comprobar la<i>firmar</i>de la suma y compararla con los signos de los números sumados.  Obviamente, dos números positivos sumados deberían dar un resultado positivo, y dos números negativos sumados deberían dar un resultado negativo.  Observe que siempre que tuvimos una condición de desbordamiento en los problemas de ejemplo, el signo de la suma siempre fue<i>opuesto</i>de los dos números sumados: +17<sub>10</sub>más +19<sub>10</sub>dando -28<sub>10</sub>, o -17<sub>10</sub>más -19<sub>10</sub>dando +28<sub>10</sub>.  Sólo con comprobar las señales podemos darnos cuenta de que algo anda mal.</p>
 <p>Pero ¿qué pasa con los casos en los que se suma un número positivo a un número negativo?  ¿Qué signo debe tener la suma para que sea correcta?  O, más precisamente, ¿qué signo de suma indicaría necesariamente un error de desbordamiento?  La respuesta a esto es igualmente elegante: habrá<i>nunca</i>¡Será un error de desbordamiento cuando se sumen dos números de signos opuestos!  La razón de esto es evidente cuando se considera la naturaleza del desbordamiento.  El desbordamiento ocurre cuando la magnitud de un número excede el rango permitido por el tamaño del campo de bits.  La suma de dos números con signos idénticos puede muy bien exceder el rango del campo de bits de esos dos números, por lo que en este caso el desbordamiento es una posibilidad.  Sin embargo, si se suma un número positivo a un número negativo, la suma siempre será más cercana a cero que cualquiera de los dos números sumados: su magnitud<i>debe</i>ser menor que la magnitud de cualquiera de los números originales, por lo que el desbordamiento es imposible.</p>
 <p>Afortunadamente, esta técnica de detección de desbordamiento se implementa fácilmente en circuitos electrónicos y es una característica estándar en los circuitos sumadores digitales: un tema para un capítulo posterior.</p>
-<h2><u><a name="xtocid91515">Bit groupings</a></u></h2>
+<h2><a name="xtocid91515">Agrupaciones de bits</a></h2>
 <p>La razón singular para aprender y utilizar el sistema de numeración binaria en electrónica es comprender cómo diseñar, construir y solucionar problemas de circuitos que representan y procesan cantidades numéricas en forma digital.  Dado que el sistema bivalente (de dos valores) de numeración de bits binarios se presta tan fácilmente a la representación mediante estados de transistores "encendidos" y "apagados" (saturación y corte, respectivamente), tiene sentido diseñar y construir circuitos aprovechando este principio para realizar cálculos binarios.</p>
 <p>Si tuviéramos que construir un circuito para representar un número binario, tendríamos que asignar suficientes circuitos de transistores para representar tantos bits como deseemos.  En otras palabras, al diseñar un circuito digital, primero debemos decidir cuántos bits (máximo) nos gustaría poder representar, ya que cada bit requiere un circuito de encendido/apagado para representarlo.  Esto es análogo a diseñar un ábaco para representar digitalmente números decimales: debemos decidir cuántos dígitos queremos manejar en este primitivo dispositivo de "calculadora", ya que cada dígito requiere una varilla separada con sus propias cuentas.</p>
 <p> <img src="04315.png"/> </p>
@@ -429,18 +451,15 @@ FINAL ANSWER:   011100<sub>2</sub>   = +28<sub>10</sub>
 </p>
 <p>Las definiciones de los términos de agrupación de bits se tomaron del "Jargon Lexicon" de Eric S. Raymond, una colección indexada de términos, tanto comunes como oscuros, relacionados con el mundo de la programación informática.</p>
 <br/>
-<hr/>
 <p>
 <i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="DIGI_A3.html">CC BY License</a>.
 </p>
-
-
 
 </body>
 
     </article>
     <nav class="chapter-nav">
-      <a href="DIGI_16.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="DIGI_1.html" class="nav-btn" id="btn-prev">← Anterior</a>
       <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
       <a href="DIGI_3.html" class="nav-btn" id="btn-next">Siguiente →</a>
     </nav>

@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>!function(){var t=localStorage.getItem("liec-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();</script>
 <meta charset="UTF-8">
+    <meta name="description" content="El amplificador operacional es posiblemente el dispositivo más útil en los circuitos electrónicos analógicos. Con sólo un puñado de componentes externos, se…">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Circuitopedia">
+    <meta property="og:title" content="Amplificadores Operacionales — Circuitopedia">
+    <meta property="og:description" content="El amplificador operacional es posiblemente el dispositivo más útil en los circuitos electrónicos analógicos. Con sólo un puñado de componentes externos, s">
+    <meta property="og:url" content="https://circuitopedia.io/Semi/SEMI_8.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Amplificadores Operacionales — Circuitopedia">
+    <meta name="twitter:description" content="El amplificador operacional es posiblemente el dispositivo más útil en los circuitos electrónicos analógicos. Con sólo un puñado de componentes externos, s">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecciones de circuitos eléctricos - Volumen III (Semiconductores) - Capítulo 8 | Lecciones de Circuitos Eléctricos</title>
+<title>Amplificadores Operacionales — Circuitopedia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.34.0/dist/tabler-icons.min.css">
 <style>:root { --accent: #10b981; }</style>
 </head>
 <body>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <a href="../index.html" class="logo">Circuitopedia</a>
       <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
     </div>
     <div class="search-box">
@@ -22,132 +34,153 @@
     </div>
     <nav class="sidebar-nav">
 <div class="vol-group">
-  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">
+    <span class="vol-ic"><i class="ti ti-bolt" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Continua</span><span class="vol-lb">Vol. I · DC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
-    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
-    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
-    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
-    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
-    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
-    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
-    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
-    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
-    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
-    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
-    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
-    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
-    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
-    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
-    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
-    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
-    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
-    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+    <li><a href="../DC/DC_1.html"><span class="cap-num">01</span><span class="cap-name">Conceptos Básicos de Electricidad</span></a></li>
+    <li><a href="../DC/DC_2.html"><span class="cap-num">02</span><span class="cap-name">Ley de Ohm</span></a></li>
+    <li><a href="../DC/DC_3.html"><span class="cap-num">03</span><span class="cap-name">Seguridad Eléctrica</span></a></li>
+    <li><a href="../DC/DC_4.html"><span class="cap-num">04</span><span class="cap-name">Notación Científica y Prefijos</span></a></li>
+    <li><a href="../DC/DC_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Serie y Paralelo</span></a></li>
+    <li><a href="../DC/DC_6.html"><span class="cap-num">06</span><span class="cap-name">Divisores y Leyes de Kirchhoff</span></a></li>
+    <li><a href="../DC/DC_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Serie-Paralelo</span></a></li>
+    <li><a href="../DC/DC_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos de Medición CC</span></a></li>
+    <li><a href="../DC/DC_9.html"><span class="cap-num">09</span><span class="cap-name">Señales de Instrumentación</span></a></li>
+    <li><a href="../DC/DC_10.html"><span class="cap-num">10</span><span class="cap-name">Análisis de Red CC</span></a></li>
+    <li><a href="../DC/DC_11.html"><span class="cap-num">11</span><span class="cap-name">Baterías y Sistemas de Energía</span></a></li>
+    <li><a href="../DC/DC_12.html"><span class="cap-num">12</span><span class="cap-name">Conductores y Aisladores</span></a></li>
+    <li><a href="../DC/DC_13.html"><span class="cap-num">13</span><span class="cap-name">Condensadores</span></a></li>
+    <li><a href="../DC/DC_14.html"><span class="cap-num">14</span><span class="cap-name">Magnetismo y Electromagnetismo</span></a></li>
+    <li><a href="../DC/DC_15.html"><span class="cap-num">15</span><span class="cap-name">Inductores</span></a></li>
+    <li><a href="../DC/DC_16.html"><span class="cap-num">16</span><span class="cap-name">Constantes de Tiempo RC y L/R</span></a></li>
+    <li><a href="../DC/DC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../DC/DC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../DC/DC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">
+    <span class="vol-ic"><i class="ti ti-wave-sine" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Alterna</span><span class="vol-lb">Vol. II · AC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
-    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
-    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
-    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
-    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
-    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
-    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
-    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
-    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
-    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
-    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
-    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
-    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
-    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
-    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
-    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
-    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+    <li><a href="../AC/AC_1.html"><span class="cap-num">01</span><span class="cap-name">Teoría Básica de CA</span></a></li>
+    <li><a href="../AC/AC_2.html"><span class="cap-num">02</span><span class="cap-name">Números Complejos</span></a></li>
+    <li><a href="../AC/AC_3.html"><span class="cap-num">03</span><span class="cap-name">Reactancia e Impedancia Inductiva</span></a></li>
+    <li><a href="../AC/AC_4.html"><span class="cap-num">04</span><span class="cap-name">Reactancia e Impedancia Capacitiva</span></a></li>
+    <li><a href="../AC/AC_5.html"><span class="cap-num">05</span><span class="cap-name">Reactancia e Impedancia R, L y C</span></a></li>
+    <li><a href="../AC/AC_6.html"><span class="cap-num">06</span><span class="cap-name">Resonancia</span></a></li>
+    <li><a href="../AC/AC_7.html"><span class="cap-num">07</span><span class="cap-name">Señales CA de Frecuencia Mixta</span></a></li>
+    <li><a href="../AC/AC_8.html"><span class="cap-num">08</span><span class="cap-name">Filtros</span></a></li>
+    <li><a href="../AC/AC_9.html"><span class="cap-num">09</span><span class="cap-name">Transformadores</span></a></li>
+    <li><a href="../AC/AC_10.html"><span class="cap-num">10</span><span class="cap-name">Circuitos CA Polifásicos</span></a></li>
+    <li><a href="../AC/AC_11.html"><span class="cap-num">11</span><span class="cap-name">Factor de Potencia</span></a></li>
+    <li><a href="../AC/AC_12.html"><span class="cap-num">12</span><span class="cap-name">Circuitos de Medición CA</span></a></li>
+    <li><a href="../AC/AC_13.html"><span class="cap-num">13</span><span class="cap-name">Motores de CA</span></a></li>
+    <li><a href="../AC/AC_14.html"><span class="cap-num">14</span><span class="cap-name">Líneas de Transmisión</span></a></li>
+    <li><a href="../AC/AC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../AC/AC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../AC/AC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">
+    <span class="vol-ic"><i class="ti ti-cpu" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Semiconductores</span><span class="vol-lb">Vol. III</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
-    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
-    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
-    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
-    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
-    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
-    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
-    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
-    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
-    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
-    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
-    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
-    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
-    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
-    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
-    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+    <li><a href="../Semi/SEMI_1.html"><span class="cap-num">01</span><span class="cap-name">Amplificadores y Dispositivos Activos</span></a></li>
+    <li><a href="../Semi/SEMI_2.html"><span class="cap-num">02</span><span class="cap-name">Dispositivos de Estado Sólido</span></a></li>
+    <li><a href="../Semi/SEMI_3.html"><span class="cap-num">03</span><span class="cap-name">Diodos y Rectificadores</span></a></li>
+    <li><a href="../Semi/SEMI_4.html"><span class="cap-num">04</span><span class="cap-name">Transistores Bipolares (BJT)</span></a></li>
+    <li><a href="../Semi/SEMI_5.html"><span class="cap-num">05</span><span class="cap-name">Transistores de Efecto de Campo JFET</span></a></li>
+    <li><a href="../Semi/SEMI_6.html"><span class="cap-num">06</span><span class="cap-name">Transistores de Efecto de Campo IGFET</span></a></li>
+    <li><a href="../Semi/SEMI_7.html"><span class="cap-num">07</span><span class="cap-name">Tiristores</span></a></li>
+    <li><a href="../Semi/SEMI_8.html"><span class="cap-num">08</span><span class="cap-name">Amplificadores Operacionales</span></a></li>
+    <li><a href="../Semi/SEMI_9.html"><span class="cap-num">09</span><span class="cap-name">Circuitos Analógicos Prácticos</span></a></li>
+    <li><a href="../Semi/SEMI_10.html"><span class="cap-num">10</span><span class="cap-name">Filtros Activos</span></a></li>
+    <li><a href="../Semi/SEMI_11.html"><span class="cap-num">11</span><span class="cap-name">Motores de CC</span></a></li>
+    <li><a href="../Semi/SEMI_12.html"><span class="cap-num">12</span><span class="cap-name">Inversores y Accionadores de CA</span></a></li>
+    <li><a href="../Semi/SEMI_13.html"><span class="cap-num">13</span><span class="cap-name">Tubos de Electrones</span></a></li>
+    <li><a href="../Semi/SEMI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Semi/SEMI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Semi/SEMI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">
+    <span class="vol-ic"><i class="ti ti-binary" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Circuitos Digitales</span><span class="vol-lb">Vol. IV</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
-    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
-    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
-    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
-    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
-    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
-    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
-    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
-    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
-    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
-    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
-    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
-    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
-    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
-    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
-    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
-    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
-    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
-    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+    <li><a href="../Digital/DIGI_1.html"><span class="cap-num">01</span><span class="cap-name">Sistemas de Numeración</span></a></li>
+    <li><a href="../Digital/DIGI_2.html"><span class="cap-num">02</span><span class="cap-name">Aritmética Binaria</span></a></li>
+    <li><a href="../Digital/DIGI_3.html"><span class="cap-num">03</span><span class="cap-name">Puertas Lógicas</span></a></li>
+    <li><a href="../Digital/DIGI_4.html"><span class="cap-num">04</span><span class="cap-name">Interruptores</span></a></li>
+    <li><a href="../Digital/DIGI_5.html"><span class="cap-num">05</span><span class="cap-name">Relés Electromecánicos</span></a></li>
+    <li><a href="../Digital/DIGI_6.html"><span class="cap-num">06</span><span class="cap-name">Lógica de Escalera</span></a></li>
+    <li><a href="../Digital/DIGI_7.html"><span class="cap-num">07</span><span class="cap-name">Álgebra Booleana</span></a></li>
+    <li><a href="../Digital/DIGI_8.html"><span class="cap-num">08</span><span class="cap-name">Mapeo de Karnaugh</span></a></li>
+    <li><a href="../Digital/DIGI_9.html"><span class="cap-num">09</span><span class="cap-name">Funciones Lógicas Combinacionales</span></a></li>
+    <li><a href="../Digital/DIGI_10.html"><span class="cap-num">10</span><span class="cap-name">Multivibradores</span></a></li>
+    <li><a href="../Digital/DIGI_11.html"><span class="cap-num">11</span><span class="cap-name">Circuitos Secuenciales</span></a></li>
+    <li><a href="../Digital/DIGI_12.html"><span class="cap-num">12</span><span class="cap-name">Registros de Desplazamiento</span></a></li>
+    <li><a href="../Digital/DIGI_13.html"><span class="cap-num">13</span><span class="cap-name">Conversión Digital-Analógica</span></a></li>
+    <li><a href="../Digital/DIGI_14.html"><span class="cap-num">14</span><span class="cap-name">Comunicación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_15.html"><span class="cap-num">15</span><span class="cap-name">Almacenamiento Digital (Memoria)</span></a></li>
+    <li><a href="../Digital/DIGI_16.html"><span class="cap-num">16</span><span class="cap-name">Principios de Computación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Digital/DIGI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Digital/DIGI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">
+    <span class="vol-ic"><i class="ti ti-book-2" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Referencia</span><span class="vol-lb">Vol. V</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
-    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
-    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
-    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
-    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
-    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
-    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
-    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
-    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
-    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
-    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
-    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
-    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+    <li><a href="../Ref/REF_1.html"><span class="cap-num">01</span><span class="cap-name">Ecuaciones y Factores de Conversión</span></a></li>
+    <li><a href="../Ref/REF_2.html"><span class="cap-num">02</span><span class="cap-name">Códigos de Color</span></a></li>
+    <li><a href="../Ref/REF_3.html"><span class="cap-num">03</span><span class="cap-name">Tablas de Conductores y Aisladores</span></a></li>
+    <li><a href="../Ref/REF_4.html"><span class="cap-num">04</span><span class="cap-name">Referencia de Álgebra</span></a></li>
+    <li><a href="../Ref/REF_5.html"><span class="cap-num">05</span><span class="cap-name">Referencia de Trigonometría</span></a></li>
+    <li><a href="../Ref/REF_6.html"><span class="cap-num">06</span><span class="cap-name">Referencia de Cálculo</span></a></li>
+    <li><a href="../Ref/REF_7.html"><span class="cap-num">07</span><span class="cap-name">Simulación de Circuitos con SPICE</span></a></li>
+    <li><a href="../Ref/REF_8.html"><span class="cap-num">08</span><span class="cap-name">Solución de Problemas</span></a></li>
+    <li><a href="../Ref/REF_9.html"><span class="cap-num">09</span><span class="cap-name">Símbolos de Esquemas de Circuito</span></a></li>
+    <li><a href="../Ref/REF_10.html"><span class="cap-num">10</span><span class="cap-name">Tabla Periódica de los Elementos</span></a></li>
+    <li><a href="../Ref/REF_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Ref/REF_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Ref/REF_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">
+    <span class="vol-ic"><i class="ti ti-flask" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Experimentos</span><span class="vol-lb">Vol. VI</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
-    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
-    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
-    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
-    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
-    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
-    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
-    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
-    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
-    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
-    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+    <li><a href="../Exper/EXP_1.html"><span class="cap-num">01</span><span class="cap-name">Introducción</span></a></li>
+    <li><a href="../Exper/EXP_2.html"><span class="cap-num">02</span><span class="cap-name">Conceptos Básicos y Equipos de Prueba</span></a></li>
+    <li><a href="../Exper/EXP_3.html"><span class="cap-num">03</span><span class="cap-name">Circuitos CC</span></a></li>
+    <li><a href="../Exper/EXP_4.html"><span class="cap-num">04</span><span class="cap-name">Circuitos CA</span></a></li>
+    <li><a href="../Exper/EXP_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Semiconductores Discretos</span></a></li>
+    <li><a href="../Exper/EXP_6.html"><span class="cap-num">06</span><span class="cap-name">Circuitos Integrados Analógicos</span></a></li>
+    <li><a href="../Exper/EXP_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Integrados Digitales</span></a></li>
+    <li><a href="../Exper/EXP_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos con Temporizador 555</span></a></li>
+    <li><a href="../Exper/EXP_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Exper/EXP_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Exper/EXP_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">
+    <span class="vol-ic"><i class="ti ti-code" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Desarrollo</span><span class="vol-lb">Info técnica</span></span>
+  </a>
 </div>
 </nav>
 
@@ -156,49 +189,18 @@
   <main class="main-content">
     <header class="top-bar">
       <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
-      <span class="page-title">Lecciones de circuitos eléctricos - Volumen III (Semiconductores) - Capítulo 8</span>
+      <span class="page-title">Amplificadores Operacionales</span>
       <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
     </header>
     <article class="content" id="content">
-      
-<body bgcolor="white">
-
-
-
-<hr/>
-<h1>Lecciones de circuitos eléctricos - Volumen III</h1>
-<h1>Capítulo 8</h1>
-<h1>AMPLIFICADORES OPERACIONALES</h1>
-<!--minitoc-->
-<ul>
-<li><a href="#xtocid90720"><u>Introduction</u></a></li>
-<li><a href="#xtocid90721"><u>Single-ended and differential amplifiers</u></a></li>
-<li><a href="#xtocid90722"><u>The "operational" amplifier</u></a></li>
-<li><a href="#xtocid90723"><u>Negative feedback</u></a></li>
-<li><a href="#xtocid90724"><u>Divided feedback</u></a></li>
-<li><a href="#xtocid90725"><u>An analogy for divided feedback</u></a></li>
-<li><a href="#xtocid90726"><u>Voltage-to-current signal conversion</u></a></li>
-<li><a href="#xtocid90727"><u>Averager and summer circuits</u></a></li>
-<li><a href="#xtocid90728"><u>Building a differential amplifier</u></a></li>
-<li><a href="#xtocid90729"><u>The instrumentation amplifier</u></a></li>
-<li><a href="#xtocid907210"><u>Differentiator and integrator circuits</u></a></li>
-<li><a href="#xtocid907211"><u>Positive feedback</u></a></li>
-<li><a href="#xtocid907212"><u>Practical considerations</u></a></li>
-<ul>
-<li><a href="#xtocid907213"><u>Common-mode gain</u></a></li>
-<li><a href="#xtocid907214"><u>Offset voltage</u></a></li>
-<li><a href="#xtocid907215"><u>Bias current</u></a></li>
-<li><a href="#xtocid907216"><u>Drift</u></a></li>
-<li><a href="#xtocid907217"><u>Frequency response</u></a></li>
-<li><a href="#xtocid907218"><u>Input to output phase shift</u></a></li>
-</ul>
-<li><a href="#xtocid907219"><u>Operational amplifier models</u></a></li>
-<li><a href="#xtocid907220"><u>Data</u></a></li>
-<li><a href="#xtocid907221"><u>Contributors</u></a></li></ul>
-<h2><u><a name="xtocid90720">Introduction</a></u></h2>
+<h1>Amplificadores Operacionales</h1>
+<li><a href="#xtocid907219"><u>Modelos de amplificadores operacionales</u></a></li>
+<li><a href="#xtocid907220"><u>Datos</u></a></li>
+<li><a href="#xtocid907221"><u>Colaboradores</u></a></li></ul>
+<h2><a name="xtocid90720">Introducción</a></h2>
 <p>El amplificador operacional es posiblemente el dispositivo más útil en los circuitos electrónicos analógicos.  Con sólo un puñado de componentes externos, se puede hacer que realice una amplia variedad de tareas de procesamiento de señales analógicas.  También es bastante asequible y la mayoría de los amplificadores de uso general se venden por menos de un dólar cada uno.  Los diseños modernos también se han diseñado teniendo en cuenta la durabilidad: se fabrican varios "amplificadores operacionales" que pueden soportar cortocircuitos directos en sus salidas sin sufrir daños.</p>
 <p>Una clave de la utilidad de estos pequeños circuitos está en el principio técnico de retroalimentación, particularmente<i>negativo</i>retroalimentación, que constituye la base de casi todos los procesos de control automático.  Por lo tanto, los principios presentados aquí en circuitos amplificadores operacionales se extienden mucho más allá del alcance inmediato de la electrónica.  Bien vale la pena que el estudiante de electrónica dedique tiempo a aprender estos principios y a aprenderlos bien.</p>
-<h2><u><a name="xtocid90721">Single-ended and differential amplifiers</a></u></h2>
+<h2><a name="xtocid90721">Amplificadores de un extremo y diferenciales</a></h2>
 <p>Para facilitar la elaboración de diagramas de circuitos complejos, los amplificadores electrónicos suelen simbolizarse con una forma de triángulo simple, donde los componentes internos no están representados individualmente.  Esta simbología es muy útil para los casos en los que la construcción de un amplificador es irrelevante para la función general del circuito general, y vale la pena familiarizarse con ella:</p>
 <p> <img src="03022.png"/> </p>
 <a name="Ground"></a>
@@ -239,7 +241,7 @@
 <li>La mayoría de los amplificadores tienen una entrada y una salida.<i>amplificadores diferenciales</i>tener dos entradas y una salida, siendo la señal de salida proporcional a la diferencia de señales entre las dos entradas.</li>
 <li>La salida de voltaje de un amplificador diferencial está determinada por la siguiente ecuación: V<sub>out</sub> = A<sub>V</sub>(V<sub>no inv</sub> - V<sub>inv</sub>)</li>
 </ul>
-<h2><u><a name="xtocid90722">The "operational" amplifier</a></u></h2>
+<h2><a name="xtocid90722">El amplificador operacional</a></h2>
 <p>Mucho antes de la llegada de la tecnología electrónica digital, las computadoras se construyeron para realizar cálculos electrónicamente empleando voltajes y corrientes para representar cantidades numéricas.  Esto resultó especialmente útil para la simulación de procesos físicos.  Un voltaje variable, por ejemplo, podría representar la velocidad o la fuerza en un sistema físico.  Mediante el uso de divisores de voltaje resistivos y amplificadores de voltaje, las operaciones matemáticas de división y multiplicación podrían realizarse fácilmente en estas señales.</p>
 <a name="Calculus"></a>
 <p>Las propiedades reactivas de condensadores e inductores se prestan bien a la simulación de variables relacionadas mediante funciones de cálculo.  Recuerde cómo la corriente a través de un capacitor era función de la tasa de cambio del voltaje, y cómo esa tasa de cambio se designaba en cálculo como la<i>derivado</i>?  Bueno, si el voltaje a través de un capacitor representara la velocidad de un objeto, la corriente a través del capacitor representaría la fuerza requerida para acelerar o desacelerar ese objeto, la capacitancia del capacitor representaría la masa del objeto:</p>
@@ -290,7 +292,7 @@
 <li>A veces los amplificadores operacionales se utilizan como señal.<i>comparadores</i>, funcionando en modo de corte total o saturación dependiendo de qué entrada (invertida o no inversora) tenga el mayor voltaje.  Los comparadores son útiles para detectar condiciones de señal "mayores que" (comparando una con otra).</li>
 <li>Una aplicación de comparación se llama<i>modulador de ancho de pulso</i>, y se obtiene comparando una señal de CA de onda sinusoidal con un voltaje de referencia de CC.  A medida que se ajusta el voltaje de referencia de CC, la salida de onda cuadrada del comparador cambia su ciclo de trabajo (tiempos positivos versus negativos).  Por lo tanto, los controles de voltaje de referencia de CC, o<i>modula</i>el ancho de pulso del voltaje de salida.</li>
 </ul>
-<h2><u><a name="xtocid90723">Negative feedback</a></u></h2>
+<h2><a name="xtocid90723">Negative feedback</a></h2>
 <p>Si conectamos la salida de un amplificador operacional a su entrada inversora y aplicamos una señal de voltaje a la entrada no inversora, encontramos que el voltaje de salida del amplificador operacional sigue de cerca ese voltaje de entrada (he olvidado dibujar la fuente de alimentación, los cables +V/-V y el símbolo de tierra para simplificar):</p>
 <p> <img src="03034.png"/> </p>
 <p>como v<sub>in</sub>aumenta, V<sub>out</sub>aumentará de acuerdo con la ganancia diferencial.  Sin embargo, como V<sub>out</sub>aumenta, ese voltaje de salida se retroalimenta a la entrada inversora, actuando así para disminuir el diferencial de voltaje entre las entradas, lo que actúa para reducir la salida.  Lo que sucederá para cualquier entrada de voltaje dada es que el amplificador operacional generará un voltaje casi igual a V<sub>in</sub>, pero lo suficientemente bajo como para que quede suficiente diferencia de voltaje entre V<sub>in</sub>y la entrada (-) a amplificar para generar el voltaje de salida.</p>
@@ -322,7 +324,7 @@
 <li>Un amplificador operacional con retroalimentación negativa intentará llevar su voltaje de salida a cualquier nivel necesario para que el voltaje diferencial entre las dos entradas sea prácticamente cero.  Cuanto mayor sea la ganancia diferencial del amplificador operacional, más cerca estará el voltaje diferencial de cero.</li>
 <li>Algunos amplificadores operacionales no pueden producir un voltaje de salida igual a su voltaje de suministro cuando están saturados.  El modelo 741 es uno de ellos.  Los límites superior e inferior de la oscilación del voltaje de salida de un amplificador operacional se conocen como<i>voltaje de saturación positivo</i> and <i>voltaje de saturación negativo</i>, respectivamente.</li>
 </ul>
-<h2><u><a name="xtocid90724">Divided feedback</a></u></h2>
+<h2><a name="xtocid90724">Divided feedback</a></h2>
 <p>Si agregamos un divisor de voltaje al cableado de retroalimentación negativa de modo que solo un<i>fracción</i>del voltaje de salida se devuelve a la entrada inversora en lugar de la cantidad total, el voltaje de salida será un<i>múltiple</i>del voltaje de entrada (tenga en cuenta que las conexiones de la fuente de alimentación al amplificador operacional se han omitido una vez más por razones de simplicidad):</p>
 <p> <img src="03037.png"/> </p>
 <p>Si R<sub>1</sub>y r<sub>2</sub>son ambos iguales y V<sub>in</sub>es de 6 voltios, el amplificador operacional generará cualquier voltaje necesario para caer 6 voltios en R<sub>1</sub>(para hacer que el voltaje de entrada inversora también sea igual a 6 voltios, manteniendo la diferencia de voltaje entre las dos entradas igual a cero).  Con el divisor de voltaje 2:1 de R<sub>1</sub>y r<sub>2</sub>, esto requerirá 12 voltios en la salida del amplificador operacional para lograrlo.</p>
@@ -356,7 +358,7 @@
 <li>Un circuito amplificador operacional de retroalimentación negativa con la señal de entrada yendo a la entrada no inversora (+) se llama<i>amplificador no inversor</i>.  El voltaje de salida tendrá la misma polaridad que el de entrada.  La ganancia de voltaje viene dada por la siguiente ecuación: A<sub>V</sub>= (R<sub>2</sub>/R<sub>1</sub>) + 1</li>
 <li>Un circuito amplificador operacional de retroalimentación negativa con la señal de entrada yendo al "fondo" del divisor de voltaje resistivo, con la entrada no inversora (+) conectada a tierra, se llama<i>amplificador inversor</i>.  Su voltaje de salida será la polaridad opuesta a la de entrada.  La ganancia de voltaje viene dada por la siguiente ecuación: A<sub>V</sub>= -R<sub>2</sub>/R<sub>1</sub></li>
 </ul>
-<h2><u><a name="xtocid90725">An analogy for divided feedback</a></u></h2>
+<h2><a name="xtocid90725">Una analogía para la realimentación dividida</a></h2>
 <p>Una analogía útil para comprender los circuitos amplificadores de retroalimentación dividida es la de una palanca mecánica, en la que el movimiento relativo de los extremos de la palanca representa el cambio en los voltajes de entrada y salida, y el fulcro (punto de pivote) representa la ubicación del punto de tierra, real o virtual.</p>
 <p>Tomemos, por ejemplo, el siguiente circuito de amplificador operacional no inversor.  Sabemos por la sección anterior que la ganancia de voltaje de una configuración de amplificador no inversor nunca puede ser menor que la unidad (1).  Si dibujamos un diagrama de palanca al lado del esquema del amplificador, con la distancia entre el punto de apoyo y los extremos de la palanca representativos de los valores de resistencia, el movimiento de la palanca significará cambios en el voltaje en los terminales de entrada y salida del amplificador:</p>
 <p> <img src="03236.png"/> </p>
@@ -377,7 +379,7 @@
 <p> <img src="03243.png"/> </p>
 <p>Sin embargo, con la configuración del amplificador inversor son posibles ganancias inferiores a 1, al igual que con las palancas de primera clase.  R reversible<sub>2</sub>y r<sub>1</sub>valores es análogo a mover el punto de apoyo a su posición complementaria en la palanca: un tercio del camino desde el extremo de salida.  Allí, el desplazamiento de salida será la mitad del desplazamiento de entrada:</p>
 <p> <img src="03244.png"/> </p>
-<h2><u><a name="xtocid90726">Voltage-to-current signal conversion</a></u></h2>
+<h2><a name="xtocid90726">Conversión de señal de tensión a corriente</a></h2>
 <p>En los circuitos de instrumentación, las señales de CC se utilizan a menudo como representaciones analógicas de mediciones físicas como temperatura, presión, flujo, peso y movimiento.  Más comúnmente,<i>corriente continua</i>Las señales se utilizan con preferencia a<i>voltaje CC</i>señales, porque las señales de corriente son exactamente iguales en magnitud a lo largo del circuito en serie que transporta corriente desde la fuente (dispositivo de medición) a la carga (indicador, registrador o controlador), mientras que las señales de voltaje en un circuito paralelo pueden variar de un extremo al otro debido a pérdidas resistivas en los cables.  Además, los instrumentos de detección de corriente suelen tener impedancias bajas (mientras que los instrumentos de detección de voltaje tienen impedancias altas), lo que les da a los instrumentos de detección de corriente una mayor inmunidad al ruido eléctrico.</p>
 <a name="Current source"></a>
 <p>Para utilizar la corriente como representación analógica de una cantidad física, debemos tener alguna forma de generar una cantidad precisa de corriente dentro del circuito de señal.  Pero, ¿cómo generamos una señal de corriente precisa cuando es posible que no conozcamos la resistencia del bucle?  La respuesta es utilizar un amplificador diseñado para mantener la corriente en un valor prescrito, aplicando tanto o tan poco voltaje como sea necesario al circuito de carga para mantener ese valor.  Un amplificador de este tipo cumple la función de un<i>fuente actual</i>.  Un amplificador operacional con retroalimentación negativa es un candidato perfecto para tal tarea:</p>
@@ -397,7 +399,7 @@
 <li>En la industria, las señales de corriente CC se utilizan a menudo con preferencia a las señales de voltaje CC como representaciones analógicas de cantidades físicas.  La corriente en un circuito en serie es absolutamente igual en todos los puntos de ese circuito, independientemente de la resistencia del cableado, mientras que el voltaje en un circuito conectado en paralelo puede variar de un extremo a otro debido a la resistencia del cable, lo que hace que la señalización de corriente sea más precisa desde el instrumento "transmisor" al "receptor".</li>
 <li>Las señales de voltaje son relativamente fáciles de producir directamente desde dispositivos transductores, mientras que las señales de corriente precisas no lo son.  Los amplificadores operacionales se pueden utilizar para "convertir" una señal de voltaje en una señal de corriente con bastante facilidad.  En este modo, el amplificador operacional generará cualquier voltaje necesario para mantener la corriente a través del circuito de señalización en el valor adecuado.</li>
 </ul>
-<h2><u><a name="xtocid90727">Averager and summer circuits</a></u></h2>
+<h2><a name="xtocid90727">Circuitos promediadores y sumadores</a></h2>
 <p>Si tomamos tres resistencias iguales y conectamos un extremo de cada una a un punto común, luego aplicamos tres voltajes de entrada (uno a cada uno de los extremos libres de las resistencias), el voltaje visto en el punto común será el matemático<i>promedio</i>de los tres.</p>
 <p> <img src="03040.png"/> </p>
 <p>Este circuito en realidad no es más que una aplicación práctica del Teorema de Millman:</p>
@@ -422,7 +424,7 @@
 <li><b>REVISAR:</b></li>
 <li>A <i>verano</i>circuito es aquel que<i>sumas</i>, o suma, varias señales de voltaje analógicas juntas.  Hay dos variedades básicas de circuitos de verano con amplificadores operacionales: inversores y no inversores.</li>
 </ul>
-<h2><u><a name="xtocid90728">Building a differential amplifier</a></u></h2>
+<h2><a name="xtocid90728">Building a differential amplifier</a></h2>
 <p>Un amplificador operacional sin retroalimentación ya es un amplificador diferencial que amplifica la diferencia de voltaje entre las dos entradas.  Sin embargo, su ganancia no se puede controlar y, en general, es demasiado alta para tener alguna utilidad práctica.  Hasta ahora, nuestra aplicación de retroalimentación negativa a los amplificadores operacionales ha resultado en la pérdida práctica de una de las entradas, el amplificador resultante solo sirve para amplificar una entrada de señal de voltaje único.  Sin embargo, con un poco de ingenio, podemos construir un circuito de amplificador operacional que mantenga ambas entradas de voltaje, pero con una ganancia controlada establecida por resistencias externas.</p>
 <p> <img src="03044.png"/> </p>
 <p>Si todos los valores de resistencia son iguales, este amplificador tendrá una ganancia de voltaje diferencial de 1. El análisis de este circuito es esencialmente el mismo que el de un amplificador inversor, excepto que la entrada no inversora (+) del amplificador operacional está a un voltaje igual a una fracción de V.<sub>2</sub>, en lugar de estar conectado directamente a tierra.  Como sería lógico, V<sub>2</sub>funciona como entrada no inversora y V<sub>1</sub>Funciona como entrada inversora del circuito amplificador final.  Por lo tanto:</p>
@@ -431,7 +433,7 @@
 <p>Otra limitación del diseño de este amplificador es el hecho de que sus impedancias de entrada son bastante bajas en comparación con las de otras configuraciones de amplificadores operacionales, en particular el amplificador no inversor (entrada de un solo extremo).  Cada fuente de voltaje de entrada tiene que conducir corriente a través de una resistencia, que constituye mucha menos impedancia que la entrada desnuda de un amplificador operacional por sí sola.  La solución a este problema, afortunadamente, es bastante sencilla.  Todo lo que necesitamos hacer es "amortiguar" cada señal de voltaje de entrada a través de un seguidor de voltaje como este:</p>
 <p> <img src="03045.png"/> </p>
 <p>Ahora la V<sub>1</sub>y v<sub>2</sub>Las líneas de entrada están conectadas directamente a las entradas de dos amplificadores operacionales seguidores de voltaje, lo que proporciona una impedancia muy alta.  Los dos amplificadores operacionales de la izquierda ahora manejan la conducción de corriente a través de las resistencias en lugar de dejar que las fuentes de voltaje de entrada (cualesquiera que sean) lo hagan.  La mayor complejidad de nuestro circuito es mínima para obtener un beneficio sustancial.</p>
-<h2><u><a name="xtocid90729">The instrumentation amplifier</a></u></h2>
+<h2><a name="xtocid90729">El amplificador de instrumentación</a></h2>
 <p>Como se sugirió anteriormente, es beneficioso poder ajustar la ganancia del circuito amplificador sin tener que cambiar más de un valor de resistencia, como era necesario con el diseño anterior de amplificador diferencial.  el llamado<i>instrumentación</i>se basa en la última versión del amplificador diferencial para brindarnos esa capacidad:</p>
 <p> <img src="03046.png"/> </p>
 <p>Este circuito intimidante está construido a partir de una etapa de amplificador diferencial amortiguado con tres nuevas resistencias que unen los dos circuitos de amortiguamiento.  Considere que todas las resistencias son del mismo valor excepto R<sub>ganar</sub>.  La retroalimentación negativa del amplificador operacional superior izquierdo hace que el voltaje en el punto 1 (parte superior de R<sub>ganar</sub>) para ser igual a V<sub>1</sub>.  Asimismo, el voltaje en el punto 2 (parte inferior de R<sub>ganar</sub>) se mantiene en un valor igual a V<sub>2</sub>.  Esto establece una caída de voltaje en R<sub>ganar</sub>igual a la diferencia de voltaje entre V<sub>1</sub>y v<sub>2</sub>.  Esa caída de voltaje provoca una corriente a través de R<sub>ganar</sub>, y dado que los bucles de retroalimentación de los dos amplificadores operacionales de entrada no consumen corriente, esa misma cantidad de corriente a través de R<sub>ganar</sub>debe pasar por las dos resistencias "R" encima y debajo de él.  Esto produce una caída de tensión entre los puntos 3 y 4 igual a:</p>
@@ -443,7 +445,7 @@
 <li><b>REVISAR:</b></li>
 <li>An <i>amplificador de instrumentación</i>es un circuito de amplificador operacional diferencial que proporciona altas impedancias de entrada con facilidad de ajuste de ganancia mediante la variación de una sola resistencia.</li>
 </ul>
-<h2><u><a name="xtocid907210">Differentiator and integrator circuits</a></u></h2>
+<h2><a name="xtocid907210">Circuitos diferenciadores e integradores</a></h2>
 <p>Al introducir reactancia eléctrica en los bucles de retroalimentación de los circuitos amplificadores de amplificador operacional, podemos hacer que la salida responda a cambios en el voltaje de entrada a lo largo de<i>tiempo</i>.  Tomando sus nombres de sus respectivas funciones de cálculo, los<i>integrador</i>produce una salida de voltaje proporcional al producto (multiplicación) del voltaje de entrada y el tiempo; y el<i>diferenciador</i>(no confundir con<i>diferencial</i>) produce una salida de voltaje proporcional a la tasa de cambio del voltaje de entrada.</p>
 <p>La capacitancia se puede definir como la medida de la oposición de un capacitor a los cambios de voltaje.  Cuanto mayor es la capacitancia, mayor es la oposición.  Los condensadores se oponen al cambio de voltaje creando corriente en el circuito: es decir, se cargan o descargan en respuesta a un cambio en el voltaje aplicado.  Entonces, cuanto más capacitancia tenga un capacitor, mayor será su corriente de carga o descarga para cualquier tasa dada de cambio de voltaje a través de él.  La ecuación para esto es bastante simple:</p>
 <p> <img src="03047.png"/> </p>
@@ -477,7 +479,7 @@ The <i>dv/dt</i>La fracción es una expresión de cálculo que representa la tas
 <li>An <i>integrador</i>El circuito produce un voltaje de salida que cambia constantemente para un voltaje de entrada constante.</li>
 <li>Ambos tipos de dispositivos se construyen fácilmente y utilizan componentes reactivos (normalmente condensadores en lugar de inductores) en la parte de retroalimentación del circuito.</li>
 </ul>
-<h2><u><a name="xtocid907211">Positive feedback</a></u></h2>
+<h2><a name="xtocid907211">Positive feedback</a></h2>
 <p>Como hemos visto, la retroalimentación negativa es un principio increíblemente útil cuando se aplica a amplificadores operacionales.  Es lo que nos permite crear todos estos circuitos prácticos, pudiendo establecer con precisión ganancias, tasas y otros parámetros importantes con solo unos pocos cambios en los valores de resistencia.  La retroalimentación negativa hace que todos estos circuitos sean estables y autocorregibles.</p>
 <p>El principio básico de la retroalimentación negativa es que la producción tiende a moverse en una dirección que crea una condición de equilibrio (equilibrio).  En un circuito de amplificador operacional sin retroalimentación, no hay ningún mecanismo correctivo y el voltaje de salida se saturará con la más mínima cantidad de voltaje diferencial aplicado entre las entradas.  El resultado es un comparador:</p>
 <p>Con retroalimentación negativa (el voltaje de salida "realimentado" de alguna manera a la entrada inversora), el circuito tiende a evitar que la salida alcance la saturación total.  Más bien, el voltaje de salida es tan alto o tan bajo como sea necesario para equilibrar los voltajes de las dos entradas:</p>
@@ -515,9 +517,9 @@ The <i>dv/dt</i>La fracción es una expresión de cálculo que representa la tas
 <li>La retroalimentación negativa crea una condición de<i>equilibrio</i>(balance).  La retroalimentación positiva crea una condición de<i>histéresis</i>(la tendencia a "prenderse" en uno de dos estados extremos).</li>
 <li>An <i>oscilador</i>es un dispositivo que produce un voltaje de salida alterno o pulsante.</li>
 </ul>
-<h2><u><a name="xtocid907212">Practical considerations</a></u></h2>
+<h2><a name="xtocid907212">Consideraciones prácticas</a></h2>
 <p>El funcionamiento real tiene algunas imperfecciones en comparación con un modelo “ideal”. Un dispositivo real se diferencia de un amplificador diferencial perfecto. Uno menos uno puede no ser cero. Es posible que tenga una compensación como un medidor analógico que no está puesto a cero. Las entradas pueden consumir corriente. Las características pueden variar con la edad y la temperatura. La ganancia puede reducirse en frecuencias altas y la fase puede cambiar de entrada a salida. Estas imperfecciones pueden causar errores no perceptibles en algunas aplicaciones y errores inaceptables en otras. En algunos casos, estos errores pueden compensarse. A veces se requiere un dispositivo de mayor calidad y mayor costo.</p>
-<h3><u><a name="xtocid907213">Common-mode gain</a></u></h3>
+<h3><u><a name="xtocid907213">Ganancia de modo común</a></u></h3>
 <p>Como se dijo antes, un amplificador diferencial ideal solo amplifica el voltaje<i>diferencia</i>entre sus dos entradas.  Si las dos entradas de un amplificador diferencial se pusieran en cortocircuito (asegurando así una diferencia de potencial cero entre ellas), no debería haber ningún cambio en el voltaje de salida para cualquier cantidad de voltaje aplicado entre esas dos entradas en cortocircuito y tierra:</p>
 <p> <img src="03059.png"/> </p>
 <a name="Common-mode voltage"></a>
@@ -595,7 +597,7 @@ v1           v(9)
 <p>Una peculiaridad de algunos modelos de amplificadores operacionales es la de la salida.<i>engancharse</i>, generalmente causado porque el voltaje de entrada de modo común excede los límites permitidos.  Si el voltaje del modo común cae fuera de los límites especificados por el fabricante, la salida puede "bloquearse" repentinamente en el modo alto (saturarse al voltaje de salida total).  En los amplificadores operacionales con entrada JFET, puede ocurrir un enganche si el voltaje de entrada de modo común se acerca demasiado al voltaje negativo del riel de suministro de energía.  En el amplificador operacional TL082, por ejemplo, esto ocurre cuando el voltaje de entrada de modo común se encuentra dentro de aproximadamente 0,7 voltios del voltaje negativo del riel de suministro de energía.  Esta situación puede ocurrir fácilmente en un circuito de suministro único, donde el riel de suministro de energía negativo está a tierra (0 voltios) y la señal de entrada puede oscilar libremente a 0 voltios.</p>
 <p>El enganche también puede ser activado por el voltaje de entrada de modo común<i>excesivo</i>Tensiones del carril de alimentación, negativas o positivas.  Como regla general, nunca debe permitir que el voltaje de entrada aumente por encima del voltaje positivo del riel de suministro de energía o que caiga por debajo del voltaje negativo del riel de suministro de energía, incluso si el amplificador operacional en cuestión está protegido contra el enganche (como lo están los modelos de amplificador operacional 741 y 1458).  Como mínimo, el comportamiento del amplificador operacional puede volverse impredecible.  En el peor de los casos, el tipo de bloqueo provocado por voltajes de entrada que exceden los voltajes de la fuente de alimentación puede ser destructivo para el amplificador operacional.</p>
 <p>Si bien este problema puede parecer fácil de evitar, su posibilidad es más probable de lo que piensa.  Considere el caso de un circuito amplificador operacional durante el encendido.  Si el circuito recibe voltaje de señal de entrada completo<i>antes</i>Si su propia fuente de alimentación ha tenido tiempo suficiente para cargar los condensadores del filtro, la tensión de entrada en modo común puede exceder fácilmente las tensiones del riel de la fuente de alimentación durante un breve periodo de tiempo.  Si el amplificador operacional recibe voltaje de señal de un circuito suministrado por una fuente de energía diferente y su propia fuente de energía falla, los voltajes de la señal pueden exceder los voltajes del riel de suministro de energía por un período de tiempo indefinido.</p>
-<h3><u><a name="xtocid907214">Offset voltage</a></u></h3>
+<h3><u><a name="xtocid907214">Tensión de offset</a></u></h3>
 <a name="Offset voltage, op-amp"></a>
 <p>Otra preocupación práctica para el rendimiento del amplificador operacional es<i>compensación de voltaje</i>.  Es decir, el efecto de tener un voltaje de salida distinto de cero voltios cuando los dos terminales de entrada están en cortocircuito.  Recuerde que los amplificadores operacionales son ante todo amplificadores diferenciales: se supone que amplifican la diferencia de voltaje entre las dos conexiones de entrada y nada más.  Cuando esa diferencia de voltaje de entrada es exactamente cero voltios, (idealmente) esperaríamos tener exactamente cero voltios presentes en la salida.  Sin embargo, en el mundo real esto rara vez sucede.  Incluso si el amplificador operacional en cuestión tiene ganancia de modo común cero (CMRR infinito), es posible que el voltaje de salida no sea cero cuando ambas entradas están en cortocircuito.  Esta desviación de cero se llama<i>compensar</i>.  
 </p>
@@ -607,7 +609,7 @@ v1           v(9)
 <p>El voltaje de compensación tenderá a introducir ligeros errores en cualquier circuito de amplificador operacional.  Entonces, ¿cómo lo compensamos?  A diferencia de la ganancia de modo común, el fabricante generalmente toma medidas para recortar el desplazamiento de un amplificador operacional empaquetado.  Por lo general, se reservan dos terminales adicionales en el paquete del amplificador operacional para conectar un potenciómetro de "recorte" externo.  Estos puntos de conexión están etiquetados<i>compensación nula</i>y se utilizan de esta manera general:</p>
 <p> <img src="03063.png"/> </p>
 <p>En amplificadores operacionales individuales como el 741 y el 3130, los puntos de conexión nulos desplazados son los pines 1 y 5 en el paquete DIP de 8 pines.  Otros modelos de amplificador operacional pueden tener conexiones nulas desplazadas ubicadas en pines diferentes y/o requerir una configuración ligeramente diferente de la conexión del potenciómetro de ajuste.  ¡Algunos amplificadores operacionales no proporcionan ningún pin nulo desplazado!  Consulte las especificaciones del fabricante para más detalles.</p>
-<h3><u><a name="xtocid907215">Bias current</a></u></h3>
+<h3><u><a name="xtocid907215">Corriente de polarización</a></u></h3>
 <a name="Bias current, op-amp"></a>
 <p>Las entradas de un amplificador operacional tienen impedancias de entrada extremadamente altas.  Es decir, las corrientes de entrada que entran o salen de las dos conexiones de señal de entrada de un amplificador operacional son extremadamente pequeñas.  Para la mayoría de los propósitos del análisis de circuitos de amplificadores operacionales, los tratamos como si no existieran en absoluto.  Analizamos el circuito como si no hubiera absolutamente ninguna corriente entrando o saliendo de las conexiones de entrada.</p>
 <p>Esta imagen idílica, sin embargo, no es del todo cierta.  Los amplificadores operacionales, especialmente aquellos con entradas de transistores bipolares, deben tener cierta cantidad de corriente a través de sus conexiones de entrada para que sus circuitos internos estén polarizados adecuadamente.  Estas corrientes, lógicamente, se denominan<i>corrientes de polarización</i>.  Bajo ciertas condiciones, las corrientes de polarización del amplificador operacional pueden ser problemáticas.  El siguiente circuito ilustra una de esas condiciones problemáticas:</p>
@@ -703,7 +705,7 @@ v1           v(9)
 <p><i>OPA227 Av=50dB @ 220kHz</i></p>
 <p>
 </p>
-<h2><u><a name="xtocid907219">Operational amplifier models</a></u></h2>
+<h2><a name="xtocid907219">Modelos de amplificadores operacionales</a></h2>
 <p>Si bien la mención de amplificadores operacionales suele provocar visiones de dispositivos semiconductores construidos como circuitos integrados en un chip de silicio en miniatura, los primeros amplificadores operacionales fueron en realidad circuitos de tubos de vacío.  El primer amplificador operacional comercial de propósito general fue fabricado por George A. Philbrick Researches, Incorporated, en 1952. Designado como K2-W, se construyó alrededor de dos tubos de triodo doble montados en un conjunto con un zócalo octal (8 pines) para una fácil instalación y mantenimiento en chasis de equipos electrónicos de esa época.  La asamblea quedó más o menos así:</p>
 <p> <img src="03234.png"/> </p>
 <p>El diagrama esquemático muestra los dos tubos, junto con diez resistencias y dos condensadores, un diseño de circuito bastante simple incluso para los estándares de 1952:</p>
@@ -730,7 +732,7 @@ v1           v(9)
 <p>Según los estándares de los circuitos integrados, el 741 es un dispositivo muy simple: un ejemplo de<i>integración a pequeña escala</i>, o<i>SSI</i>tecnología.  No sería un asunto menor construir este circuito utilizando componentes discretos, por lo que se pueden ver las ventajas de incluso la tecnología de circuito integrado más primitiva sobre los componentes discretos donde hay un gran número de piezas involucradas.</p>
 <p>Para el aficionado, estudiante o ingeniero que desea un mayor rendimiento, hay literalmente cientos de modelos de amplificadores operacionales para elegir.  Muchos se venden por menos de un dólar cada uno, ¡incluso al por menor!  La instrumentación de propósito especial y los amplificadores operacionales de radiofrecuencia (RF) pueden ser un poco más caros.  En esta sección mostraré varios amplificadores operacionales populares y asequibles, comparando y contrastando sus especificaciones de rendimiento.  El venerable 741 se incluye como "referencia" a modo de comparación, aunque, como dije antes, se considera un diseño obsoleto.</p>
 <a name="opamp1.tbl"><p><i>Widely used operational amplifiers</i></p></a>
-<table border="1" style="background-color: #E0FFFF; ">
+<div class="table-wrap"><table border="1" style="background-color: #E0FFFF; ">
 <tr>
 <th>Modelo</th><th>Dispositivos/paquete</th><th>Fuente de alimentación</th><th>Ancho de banda</th><th>Corriente de polarización</th><th>velocidad de giro</th><th>Corriente de salida</th>
 </tr>
@@ -770,7 +772,7 @@ v1           v(9)
 <tr>
 <td>CA3130</td><td>1</td><td>5 / 16</td><td>15</td><td>0.05</td><td>10</td><td>20</td>
 </tr>
-</table>
+</table></div>
 <p>Listado en la tabla<a href="#opamp1.tbl">  above</a>son sólo algunos de los modelos de amplificadores operacionales de bajo costo ampliamente disponibles en los proveedores de productos electrónicos.  La mayoría de ellos están disponibles en tiendas minoristas de suministros como Radio Shack.  Todos cuestan menos de $1,00 directamente del fabricante (precios del año 2001).  Como puede ver, existe una variación sustancial en el rendimiento entre algunas de estas unidades.  Tomemos, por ejemplo, el parámetro de corriente de polarización de entrada: el CA3130 gana el premio por el más bajo, con 0,05 nA (o 50 pA), y el LM833 tiene el más alto con un poco más de 1 µA.  El modelo CA3130 logra su corriente de polarización increíblemente baja mediante el uso de transistores MOSFET en su etapa de entrada.  Un fabricante anuncia la impedancia de entrada del 3130 como 1,5 tera-ohmios o 1,5 x 10<sup>12</sup>¡Oh!  Otros amplificadores operacionales que se muestran aquí con cifras de corriente de polarización baja usan transistores de entrada JFET, mientras que los modelos de corriente de polarización alta usan transistores de entrada bipolares.</p>
 <p>Si bien el 741 se especifica en muchos esquemas de proyectos electrónicos y se muestra en muchos libros de texto, su rendimiento ha sido superado durante mucho tiempo por otros diseños en todos los aspectos.  Incluso algunos diseños originalmente basados ​​en el 741 se han mejorado a lo largo de los años hasta superar con creces las especificaciones de diseño originales.  Un ejemplo de ello es el modelo 1458, dos amplificadores operacionales en un paquete DIP de 8 pines, que en un momento tuvo exactamente las mismas especificaciones de rendimiento que el 741. En su última encarnación, cuenta con un rango de voltaje de fuente de alimentación más amplio, una velocidad de respuesta 50 veces mayor y casi el doble de la capacidad de corriente de salida de un 741, al tiempo que conserva la característica de protección contra cortocircuitos de salida del 741. Amplificadores operacionales con JFET y Transistores de entrada MOSFET<i>far</i>superan el rendimiento del 741 en términos de corriente de polarización y, en general, también logran superar al 741 en términos de ancho de banda y velocidad de respuesta.</p>
 <p>Mis recomendaciones personales para los amplificadores operacionales son las siguientes: cuando la corriente de polarización baja es una prioridad (como en los circuitos integradores de baja velocidad), elija el 3130. Para trabajos de amplificador de CC de uso general, el 1458 ofrece un buen rendimiento (y obtiene dos amplificadores operacionales en el espacio de un paquete).  Para mejorar el rendimiento, elija el modelo 353, ya que es un reemplazo compatible con pines para el 1458. El 353 está diseñado con circuitos de entrada JFET para una corriente de polarización muy baja y tiene un ancho de banda 4 veces mayor que el 1458, aunque su límite de corriente de salida es más bajo (pero aún está protegido contra cortocircuitos).  Puede que sea más difícil encontrarlo en el estante de su tienda local de suministros electrónicos, pero tiene un precio tan razonable como el 1458.</p>
@@ -778,7 +780,7 @@ v1           v(9)
 <p>Hay amplificadores operacionales de propósito especial disponibles a un costo modesto que brindan mejores especificaciones de rendimiento.  Muchos de ellos están diseñados para un tipo específico de ventaja de rendimiento, como un ancho de banda máximo o una corriente de polarización mínima.  Tomemos, por ejemplo, los amplificadores operacionales, ambos diseñados para un gran ancho de banda en la Tabla<a href="#opamp2.tbl">  below</a>.
 </p>
 <a name="opamp2.tbl"><p><i>High bandwidth operational amplifiers</i></p></a>
-<table border="1" style="background-color: #E0FFFF; ">
+<div class="table-wrap"><table border="1" style="background-color: #E0FFFF; ">
 <tr>
 <th>Modelo</th><th>Dispositivos/paquete</th><th>Fuente de alimentación</th><th>Ancho de banda</th><th>Corriente de polarización</th><th>velocidad de giro</th><th>Corriente de salida</th>
 </tr>
@@ -791,11 +793,11 @@ v1           v(9)
 <tr>
 <td>CLC425</td><td>1</td><td>5 / 14</td><td>1900</td><td>40,000</td><td>350</td><td>90</td>
 </tr>
-</table>
+</table></div>
 <p>El CLC404 tiene un precio de 21,80 dólares (casi tanto como el primer amplificador operacional comercial de George Philbrick, aunque sin corrección por inflación), mientras que el CLC425 es bastante menos costoso, 3,23 dólares por unidad.  En ambos casos, se logra una alta velocidad a expensas de altas corrientes de polarización y rangos de voltaje de suministro de energía restrictivos.  Algunos amplificadores operacionales, diseñados para una salida de alta potencia, se enumeran en la tabla<a href="#opamp3.tbl">  below</a>.
 </p>
 <a name="opamp3.tbl"><p><i>High current operational amplifiers</i></p></a>
-<table border="1" style="background-color: #E0FFFF; ">
+<div class="table-wrap"><table border="1" style="background-color: #E0FFFF; ">
 <tr>
 <th>Modelo</th><th>Dispositivos/paquete</th><th>Fuente de alimentación</th><th>Ancho de banda</th><th>Corriente de polarización</th><th>velocidad de giro</th><th>Corriente de salida</th>
 </tr>
@@ -808,12 +810,12 @@ v1           v(9)
 <tr>
 <td>LM7171</td><td>1</td><td>5.5 / 36</td><td>200</td><td>12,000</td><td>4100</td><td>100</td>
 </tr>
-</table>
+</table></div>
 <p>Sí, el LM12CL en realidad tiene una clasificación de corriente de salida de<i>13 amps</i>(13.000 miliamperios)!  Su precio es de $14.40, lo cual no es mucho dinero, considerando la potencia bruta del dispositivo.  El LM7171, por otro lado, intercambia una alta capacidad de salida de corriente por una capacidad de salida de voltaje rápida (una alta velocidad de respuesta).  Su precio es de 1,19 dólares, casi tan bajo como algunos amplificadores operacionales de "propósito general".</p>
 <p>Los paquetes de amplificadores también se pueden comprar como circuitos de aplicación completos en lugar de amplificadores operacionales simples.  Las corporaciones Burr-Brown y Analog Devices, por ejemplo, ambas conocidas desde hace mucho tiempo por sus líneas de productos de amplificadores de precisión, ofrecen amplificadores de instrumentación en paquetes prediseñados, así como otros dispositivos amplificadores especializados.  En diseños donde la alta precisión y repetibilidad después de la reparación son importantes, podría ser ventajoso para el diseñador del circuito elegir un "bloque" de amplificador prediseñado en lugar de construir el circuito a partir de amplificadores operacionales individuales.  Por supuesto, estas unidades suelen costar bastante más que los amplificadores operacionales individuales.</p>
-<h2><u><a name="xtocid907220">Data</a></u></h2>
+<h2><a name="xtocid907220">Datos</a></h2>
 <p>Datos paramétricos para todos los modelos de amplificadores operacionales de semiconductores.<i>excepto</i>el CA3130 proviene de los recursos en línea de National Semiconductor, disponibles en este sitio web:<a href="http://www.national.com">[*]</a>.  Los datos para el CA3130 provienen de la hoja de datos CA3130/CA3130A de Harris Semiconductor (número de archivo 817.4).</p>
-<h2><u><a name="xtocid907221">Contributors</a></u></h2>
+<h2><a name="xtocid907221">Colaboradores</a></h2>
 <p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>
 <p>
 <b>Wayne pequeño</b>(Junio ​​de 2007): Autor, subsección “Desplazamiento de fase de entrada a salida”, en la sección “Consideraciones prácticas”.</p>

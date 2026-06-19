@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>!function(){var t=localStorage.getItem("liec-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();</script>
 <meta charset="UTF-8">
+    <meta name="description" content="Un área de estudio a menudo descuidada en la electrónica moderna es la detubos, más precisamente conocido comotubos de vacío or tubos de electrones. Casi…">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Circuitopedia">
+    <meta property="og:title" content="Tubos de Electrones — Circuitopedia">
+    <meta property="og:description" content="Un área de estudio a menudo descuidada en la electrónica moderna es la detubos, más precisamente conocido comotubos de vacío or tubos de electrones. Casi…">
+    <meta property="og:url" content="https://circuitopedia.io/Semi/SEMI_13.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Tubos de Electrones — Circuitopedia">
+    <meta name="twitter:description" content="Un área de estudio a menudo descuidada en la electrónica moderna es la detubos, más precisamente conocido comotubos de vacío or tubos de electrones. Casi…">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecciones de circuitos eléctricos - Volumen III (Semiconductores) - Capítulo 13 | Lecciones de Circuitos Eléctricos</title>
+<title>Tubos de Electrones — Circuitopedia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.34.0/dist/tabler-icons.min.css">
 <style>:root { --accent: #10b981; }</style>
 </head>
 <body>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <a href="../index.html" class="logo">Circuitopedia</a>
       <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
     </div>
     <div class="search-box">
@@ -22,132 +34,153 @@
     </div>
     <nav class="sidebar-nav">
 <div class="vol-group">
-  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">
+    <span class="vol-ic"><i class="ti ti-bolt" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Continua</span><span class="vol-lb">Vol. I · DC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
-    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
-    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
-    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
-    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
-    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
-    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
-    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
-    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
-    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
-    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
-    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
-    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
-    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
-    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
-    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
-    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
-    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
-    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+    <li><a href="../DC/DC_1.html"><span class="cap-num">01</span><span class="cap-name">Conceptos Básicos de Electricidad</span></a></li>
+    <li><a href="../DC/DC_2.html"><span class="cap-num">02</span><span class="cap-name">Ley de Ohm</span></a></li>
+    <li><a href="../DC/DC_3.html"><span class="cap-num">03</span><span class="cap-name">Seguridad Eléctrica</span></a></li>
+    <li><a href="../DC/DC_4.html"><span class="cap-num">04</span><span class="cap-name">Notación Científica y Prefijos</span></a></li>
+    <li><a href="../DC/DC_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Serie y Paralelo</span></a></li>
+    <li><a href="../DC/DC_6.html"><span class="cap-num">06</span><span class="cap-name">Divisores y Leyes de Kirchhoff</span></a></li>
+    <li><a href="../DC/DC_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Serie-Paralelo</span></a></li>
+    <li><a href="../DC/DC_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos de Medición CC</span></a></li>
+    <li><a href="../DC/DC_9.html"><span class="cap-num">09</span><span class="cap-name">Señales de Instrumentación</span></a></li>
+    <li><a href="../DC/DC_10.html"><span class="cap-num">10</span><span class="cap-name">Análisis de Red CC</span></a></li>
+    <li><a href="../DC/DC_11.html"><span class="cap-num">11</span><span class="cap-name">Baterías y Sistemas de Energía</span></a></li>
+    <li><a href="../DC/DC_12.html"><span class="cap-num">12</span><span class="cap-name">Conductores y Aisladores</span></a></li>
+    <li><a href="../DC/DC_13.html"><span class="cap-num">13</span><span class="cap-name">Condensadores</span></a></li>
+    <li><a href="../DC/DC_14.html"><span class="cap-num">14</span><span class="cap-name">Magnetismo y Electromagnetismo</span></a></li>
+    <li><a href="../DC/DC_15.html"><span class="cap-num">15</span><span class="cap-name">Inductores</span></a></li>
+    <li><a href="../DC/DC_16.html"><span class="cap-num">16</span><span class="cap-name">Constantes de Tiempo RC y L/R</span></a></li>
+    <li><a href="../DC/DC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../DC/DC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../DC/DC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">
+    <span class="vol-ic"><i class="ti ti-wave-sine" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Alterna</span><span class="vol-lb">Vol. II · AC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
-    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
-    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
-    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
-    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
-    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
-    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
-    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
-    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
-    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
-    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
-    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
-    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
-    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
-    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
-    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
-    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+    <li><a href="../AC/AC_1.html"><span class="cap-num">01</span><span class="cap-name">Teoría Básica de CA</span></a></li>
+    <li><a href="../AC/AC_2.html"><span class="cap-num">02</span><span class="cap-name">Números Complejos</span></a></li>
+    <li><a href="../AC/AC_3.html"><span class="cap-num">03</span><span class="cap-name">Reactancia e Impedancia Inductiva</span></a></li>
+    <li><a href="../AC/AC_4.html"><span class="cap-num">04</span><span class="cap-name">Reactancia e Impedancia Capacitiva</span></a></li>
+    <li><a href="../AC/AC_5.html"><span class="cap-num">05</span><span class="cap-name">Reactancia e Impedancia R, L y C</span></a></li>
+    <li><a href="../AC/AC_6.html"><span class="cap-num">06</span><span class="cap-name">Resonancia</span></a></li>
+    <li><a href="../AC/AC_7.html"><span class="cap-num">07</span><span class="cap-name">Señales CA de Frecuencia Mixta</span></a></li>
+    <li><a href="../AC/AC_8.html"><span class="cap-num">08</span><span class="cap-name">Filtros</span></a></li>
+    <li><a href="../AC/AC_9.html"><span class="cap-num">09</span><span class="cap-name">Transformadores</span></a></li>
+    <li><a href="../AC/AC_10.html"><span class="cap-num">10</span><span class="cap-name">Circuitos CA Polifásicos</span></a></li>
+    <li><a href="../AC/AC_11.html"><span class="cap-num">11</span><span class="cap-name">Factor de Potencia</span></a></li>
+    <li><a href="../AC/AC_12.html"><span class="cap-num">12</span><span class="cap-name">Circuitos de Medición CA</span></a></li>
+    <li><a href="../AC/AC_13.html"><span class="cap-num">13</span><span class="cap-name">Motores de CA</span></a></li>
+    <li><a href="../AC/AC_14.html"><span class="cap-num">14</span><span class="cap-name">Líneas de Transmisión</span></a></li>
+    <li><a href="../AC/AC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../AC/AC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../AC/AC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">
+    <span class="vol-ic"><i class="ti ti-cpu" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Semiconductores</span><span class="vol-lb">Vol. III</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
-    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
-    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
-    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
-    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
-    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
-    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
-    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
-    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
-    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
-    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
-    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
-    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
-    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
-    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
-    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+    <li><a href="../Semi/SEMI_1.html"><span class="cap-num">01</span><span class="cap-name">Amplificadores y Dispositivos Activos</span></a></li>
+    <li><a href="../Semi/SEMI_2.html"><span class="cap-num">02</span><span class="cap-name">Dispositivos de Estado Sólido</span></a></li>
+    <li><a href="../Semi/SEMI_3.html"><span class="cap-num">03</span><span class="cap-name">Diodos y Rectificadores</span></a></li>
+    <li><a href="../Semi/SEMI_4.html"><span class="cap-num">04</span><span class="cap-name">Transistores Bipolares (BJT)</span></a></li>
+    <li><a href="../Semi/SEMI_5.html"><span class="cap-num">05</span><span class="cap-name">Transistores de Efecto de Campo JFET</span></a></li>
+    <li><a href="../Semi/SEMI_6.html"><span class="cap-num">06</span><span class="cap-name">Transistores de Efecto de Campo IGFET</span></a></li>
+    <li><a href="../Semi/SEMI_7.html"><span class="cap-num">07</span><span class="cap-name">Tiristores</span></a></li>
+    <li><a href="../Semi/SEMI_8.html"><span class="cap-num">08</span><span class="cap-name">Amplificadores Operacionales</span></a></li>
+    <li><a href="../Semi/SEMI_9.html"><span class="cap-num">09</span><span class="cap-name">Circuitos Analógicos Prácticos</span></a></li>
+    <li><a href="../Semi/SEMI_10.html"><span class="cap-num">10</span><span class="cap-name">Filtros Activos</span></a></li>
+    <li><a href="../Semi/SEMI_11.html"><span class="cap-num">11</span><span class="cap-name">Motores de CC</span></a></li>
+    <li><a href="../Semi/SEMI_12.html"><span class="cap-num">12</span><span class="cap-name">Inversores y Accionadores de CA</span></a></li>
+    <li><a href="../Semi/SEMI_13.html"><span class="cap-num">13</span><span class="cap-name">Tubos de Electrones</span></a></li>
+    <li><a href="../Semi/SEMI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Semi/SEMI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Semi/SEMI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">
+    <span class="vol-ic"><i class="ti ti-binary" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Circuitos Digitales</span><span class="vol-lb">Vol. IV</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
-    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
-    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
-    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
-    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
-    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
-    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
-    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
-    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
-    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
-    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
-    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
-    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
-    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
-    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
-    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
-    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
-    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
-    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+    <li><a href="../Digital/DIGI_1.html"><span class="cap-num">01</span><span class="cap-name">Sistemas de Numeración</span></a></li>
+    <li><a href="../Digital/DIGI_2.html"><span class="cap-num">02</span><span class="cap-name">Aritmética Binaria</span></a></li>
+    <li><a href="../Digital/DIGI_3.html"><span class="cap-num">03</span><span class="cap-name">Puertas Lógicas</span></a></li>
+    <li><a href="../Digital/DIGI_4.html"><span class="cap-num">04</span><span class="cap-name">Interruptores</span></a></li>
+    <li><a href="../Digital/DIGI_5.html"><span class="cap-num">05</span><span class="cap-name">Relés Electromecánicos</span></a></li>
+    <li><a href="../Digital/DIGI_6.html"><span class="cap-num">06</span><span class="cap-name">Lógica de Escalera</span></a></li>
+    <li><a href="../Digital/DIGI_7.html"><span class="cap-num">07</span><span class="cap-name">Álgebra Booleana</span></a></li>
+    <li><a href="../Digital/DIGI_8.html"><span class="cap-num">08</span><span class="cap-name">Mapeo de Karnaugh</span></a></li>
+    <li><a href="../Digital/DIGI_9.html"><span class="cap-num">09</span><span class="cap-name">Funciones Lógicas Combinacionales</span></a></li>
+    <li><a href="../Digital/DIGI_10.html"><span class="cap-num">10</span><span class="cap-name">Multivibradores</span></a></li>
+    <li><a href="../Digital/DIGI_11.html"><span class="cap-num">11</span><span class="cap-name">Circuitos Secuenciales</span></a></li>
+    <li><a href="../Digital/DIGI_12.html"><span class="cap-num">12</span><span class="cap-name">Registros de Desplazamiento</span></a></li>
+    <li><a href="../Digital/DIGI_13.html"><span class="cap-num">13</span><span class="cap-name">Conversión Digital-Analógica</span></a></li>
+    <li><a href="../Digital/DIGI_14.html"><span class="cap-num">14</span><span class="cap-name">Comunicación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_15.html"><span class="cap-num">15</span><span class="cap-name">Almacenamiento Digital (Memoria)</span></a></li>
+    <li><a href="../Digital/DIGI_16.html"><span class="cap-num">16</span><span class="cap-name">Principios de Computación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Digital/DIGI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Digital/DIGI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">
+    <span class="vol-ic"><i class="ti ti-book-2" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Referencia</span><span class="vol-lb">Vol. V</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
-    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
-    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
-    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
-    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
-    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
-    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
-    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
-    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
-    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
-    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
-    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
-    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+    <li><a href="../Ref/REF_1.html"><span class="cap-num">01</span><span class="cap-name">Ecuaciones y Factores de Conversión</span></a></li>
+    <li><a href="../Ref/REF_2.html"><span class="cap-num">02</span><span class="cap-name">Códigos de Color</span></a></li>
+    <li><a href="../Ref/REF_3.html"><span class="cap-num">03</span><span class="cap-name">Tablas de Conductores y Aisladores</span></a></li>
+    <li><a href="../Ref/REF_4.html"><span class="cap-num">04</span><span class="cap-name">Referencia de Álgebra</span></a></li>
+    <li><a href="../Ref/REF_5.html"><span class="cap-num">05</span><span class="cap-name">Referencia de Trigonometría</span></a></li>
+    <li><a href="../Ref/REF_6.html"><span class="cap-num">06</span><span class="cap-name">Referencia de Cálculo</span></a></li>
+    <li><a href="../Ref/REF_7.html"><span class="cap-num">07</span><span class="cap-name">Simulación de Circuitos con SPICE</span></a></li>
+    <li><a href="../Ref/REF_8.html"><span class="cap-num">08</span><span class="cap-name">Solución de Problemas</span></a></li>
+    <li><a href="../Ref/REF_9.html"><span class="cap-num">09</span><span class="cap-name">Símbolos de Esquemas de Circuito</span></a></li>
+    <li><a href="../Ref/REF_10.html"><span class="cap-num">10</span><span class="cap-name">Tabla Periódica de los Elementos</span></a></li>
+    <li><a href="../Ref/REF_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Ref/REF_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Ref/REF_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">
+    <span class="vol-ic"><i class="ti ti-flask" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Experimentos</span><span class="vol-lb">Vol. VI</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
-    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
-    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
-    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
-    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
-    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
-    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
-    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
-    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
-    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
-    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+    <li><a href="../Exper/EXP_1.html"><span class="cap-num">01</span><span class="cap-name">Introducción</span></a></li>
+    <li><a href="../Exper/EXP_2.html"><span class="cap-num">02</span><span class="cap-name">Conceptos Básicos y Equipos de Prueba</span></a></li>
+    <li><a href="../Exper/EXP_3.html"><span class="cap-num">03</span><span class="cap-name">Circuitos CC</span></a></li>
+    <li><a href="../Exper/EXP_4.html"><span class="cap-num">04</span><span class="cap-name">Circuitos CA</span></a></li>
+    <li><a href="../Exper/EXP_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Semiconductores Discretos</span></a></li>
+    <li><a href="../Exper/EXP_6.html"><span class="cap-num">06</span><span class="cap-name">Circuitos Integrados Analógicos</span></a></li>
+    <li><a href="../Exper/EXP_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Integrados Digitales</span></a></li>
+    <li><a href="../Exper/EXP_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos con Temporizador 555</span></a></li>
+    <li><a href="../Exper/EXP_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Exper/EXP_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Exper/EXP_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">
+    <span class="vol-ic"><i class="ti ti-code" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Desarrollo</span><span class="vol-lb">Info técnica</span></span>
+  </a>
 </div>
 </nav>
 
@@ -156,38 +189,16 @@
   <main class="main-content">
     <header class="top-bar">
       <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
-      <span class="page-title">Lecciones de circuitos eléctricos - Volumen III (Semiconductores) - Capítulo 13</span>
+      <span class="page-title">Tubos de Electrones</span>
       <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
     </header>
     <article class="content" id="content">
-      
-<body bgcolor="white">
-
-
-
-<hr/>
-<h1>Lecciones de circuitos eléctricos - Volumen III</h1>
-<h1>Capítulo 13</h1>
-<h1>TUBOS DE ELECTRONES</h1>
-<!--minitoc-->
-<ul>
-<li><a href="#xtocid91170"><u>Introduction</u></a></li>
-<li><a href="#xtocid91171"><u>Early tube history</u></a></li>
-<li><a href="#xtocid91172"><u>The triode</u></a></li>
-<li><a href="#xtocid91173"><u>The tetrode</u></a></li>
-<li><a href="#xtocid91174"><u>Beam power tubes</u></a></li>
-<li><a href="#xtocid91175"><u>The pentode</u></a></li>
-<li><a href="#xtocid91176"><u>Combination tubes</u></a></li>
-<li><a href="#xtocid91177"><u>Tube parameters</u></a></li>
-<li><a href="#xtocid91178"><u>Ionization (gas-filled) tubes</u></a></li>
-<li><a href="#xtocid91179"><u>Display tubes</u></a></li>
-<li><a href="#xtocid911710"><u>Microwave tubes</u></a></li>
-<li><a href="#xtocid911711"><u>Tubes versus Semiconductors</u></a></li></ul>
-<h2><u><a name="xtocid91170">Introduction</a></u></h2>
+<h1>Tubos de Electrones</h1>
+<h2><a name="xtocid91170">Introducción</a></h2>
 <p>Un área de estudio a menudo descuidada en la electrónica moderna es la de<i>tubos</i>, más precisamente conocido como<i>tubos de vacío</i> or <i>tubos de electrones</i>.  Casi completamente eclipsada por los semiconductores o componentes de "estado sólido" en la mayoría de las aplicaciones modernas, la tecnología de tubos alguna vez dominó el diseño de circuitos electrónicos.</p>
 <p>De hecho, la transición histórica de los circuitos "eléctricos" a los "electrónicos" realmente comenzó con los tubos, porque fueron con los tubos con los que entramos en un ámbito completamente nuevo de función de circuito: una forma de controlar el flujo de electrones (corriente) en un circuito por medio de otra señal eléctrica (en el caso de la mayoría de los tubos, la señal de control es un pequeño voltaje).  La contraparte semiconductora del tubo es, por supuesto, el transistor.  Los transistores realizan prácticamente la misma función que los tubos: controlar el flujo de electrones en un circuito mediante otro flujo de electrones en el caso del transistor bipolar, y controlar el flujo de electrones mediante un voltaje en el caso del transistor de efecto de campo.  En cualquier caso, una señal eléctrica relativamente pequeña controla una corriente eléctrica relativamente grande.  Ésta es la esencia de la palabra "electrónico", para distinguirla de "eléctrico", que tiene más que ver con cómo el flujo de electrones está regulado por la Ley de Ohm y los atributos físicos de los cables y los componentes.</p>
 <p>Aunque los tubos ahora están obsoletos para todas las aplicaciones especializadas, excepto para unas pocas, siguen siendo un área de estudio que vale la pena.  Al menos, es fascinante explorar "la forma en que se hacían las cosas antes" para apreciar mejor la tecnología moderna.</p>
-<h2><u><a name="xtocid91171">Early tube history</a></u></h2>
+<h2><a name="xtocid91171">Early tube history</a></h2>
 <p>A Thomas Edison, ese prolífico inventor estadounidense, a menudo se le atribuye la invención de la lámpara incandescente.  Más exactamente, se podría decir que Edison fue el hombre que<i>perfeccionado</i>la lámpara incandescente.  El exitoso diseño de Edison de 1879 fue en realidad precedido por 77 años por el científico británico Sir Humphry Davy, quien demostró por primera vez el principio de usar corriente eléctrica para calentar una delgada tira de metal (llamada "filamento") hasta el punto de incandescencia (brillando al rojo vivo).</p>
 <p>Edison pudo lograr su éxito colocando su filamento (hecho de hilo de coser carbonizado) dentro de una bombilla de vidrio transparente de la que se había extraído el aire a la fuerza.  En este vacío, el filamento podría brillar a temperaturas candentes sin ser consumido por la combustión:</p>
 <p> <img src="03001.png"/> </p>
@@ -210,8 +221,7 @@
 <p>El semiconductor equivalente más cercano al tubo Audion, y a todos sus equivalentes de tubo más modernos, es un MOSFET tipo D de canal n.  Es un dispositivo controlado por voltaje con una gran ganancia de corriente.</p>
 <p>Llamó a su invento "Audion" y lo aplicó vigorosamente al desarrollo de la tecnología de las comunicaciones.  En 1912 vendió los derechos de su tubo Audion como amplificador de señal telefónica a la American Telephone and Telegraph Company (AT y T), lo que hizo práctica la comunicación telefónica de larga distancia.  Al año siguiente, demostró el uso de un tubo Audion para generar señales de CA de radiofrecuencia.  En 1915 logró la notable hazaña de transmitir señales de voz por radio desde Arlington, Virginia, a París, y en 1916 inauguró la primera transmisión de noticias por radio.  Estos logros le valieron a De Forest el título de "Padre de la radio" en Estados Unidos.</p>
 <p> <img src="53001.jpg"/> </p>
-<h2><u><a name="xtocid91172">The triode</a></u></h2>
-<a name="Triode tube"></a>
+<h2><a name="xtocid91172">El triodo</a></h2>
 <a name="Diode tube"></a>
 <a name="Cathode"></a>
 <a name="Electrode, cathode"></a>
@@ -229,8 +239,7 @@
 <p>Otro problema con el comportamiento del triodo es el de la capacitancia parásita.  Recordemos que siempre que tengamos dos superficies conductoras separadas por un medio aislante se formará un condensador.  Cualquier voltaje entre esas dos superficies conductoras generará un campo eléctrico dentro de esa región aislante, potencialmente almacenando energía e introduciendo reactancia en un circuito.  Tal es el caso del triodo, que resulta más problemático entre la rejilla y la placa.  Es como si hubiera pequeños condensadores conectados entre los pares de elementos del tubo:</p>
 <p> <img src="03009.png"/> </p>
 <p>Ahora bien, esta capacitancia parásita es bastante pequeña y las impedancias reactivas suelen ser altas.  Por lo general, es decir, a menos que se trate de frecuencias de radio.  Como vimos con el tubo Audion de De Forest, la radio fue probablemente la principal aplicación de esta nueva tecnología, por lo que estas "pequeñas" capacitancias se convirtieron en algo más que un problema potencial.  Fue necesario otro refinamiento en la tecnología de los tubos para superar las limitaciones del triodo.</p>
-<h2><u><a name="xtocid91173">The tetrode</a></u></h2>
-<a name="Tetrode tube"></a>
+<h2><a name="xtocid91173">El tetrado</a></h2>
 <a name="Screen"></a>
 <a name="Electrode, screen"></a>
 <p>Como sugiere el nombre, el<i>tetrodo</i>El tubo contenía cuatro elementos: cátodo (con el filamento implícito o "calentador"), rejilla, placa y un nuevo elemento llamado<i>pantalla</i>.  De construcción similar a la rejilla, la pantalla era una malla de alambre o bobina colocada entre la rejilla y la placa, conectada a una fuente de potencial CC positivo (con respecto al cátodo, como es habitual) igual a una fracción del voltaje de la placa.  Cuando se conectaba a tierra a través de un condensador externo, la pantalla tenía el efecto de proteger electrostáticamente la rejilla de la placa.  Sin la pantalla, la conexión capacitiva entre la placa y la rejilla podría provocar una importante retroalimentación de la señal a altas frecuencias, lo que provocaría oscilaciones no deseadas.</p>
@@ -240,15 +249,13 @@
 <a name="Secondary emission"></a>
 <p>A pesar de las ventajas obtenidas con la adición de una pantalla, también hubo algunas desventajas.  La desventaja más significativa estaba relacionada con algo conocido como<i>emisión secundaria</i>.  Cuando los electrones del cátodo golpean la placa a alta velocidad, pueden provocar que los electrones libres se suelten de los átomos del metal de la placa.  Se dice que estos electrones, arrancados de la placa por el impacto de los electrones del cátodo, son "emitidos secundariamente".  En un tubo triodo, la emisión secundaria no es un gran problema, pero en un tetrodo con una rejilla de pantalla cargada positivamente cerca, estos electrones secundarios serán atraídos hacia la pantalla en lugar de hacia la placa de la que provienen, lo que resultará en una pérdida de corriente de placa.  Menos corriente de placa significa menos ganancia para el amplificador, lo cual no es bueno.</p>
 <p>Se desarrollaron dos estrategias diferentes para abordar este problema del tubo tetrodo:<i>potencia del haz</i>tubos y<i>pentodos</i>.  Ambas soluciones dieron como resultado nuevos diseños de tubos con aproximadamente las mismas características eléctricas.</p>
-<h2><u><a name="xtocid91174">Beam power tubes</a></u></h2>
-<a name="Beam power tube"></a>
+<h2><a name="xtocid91174">Tubos de potencia de haz</a></h2>
 <p>En el tubo de potencia del haz, se mantuvo la estructura básica de cuatro elementos del tetrodo, pero la rejilla y los cables de la pantalla se dispusieron cuidadosamente junto con un par de placas auxiliares para crear un efecto interesante: haces enfocados o "láminas" de electrones que viajan desde el cátodo hasta la placa.  Estos haces de electrones formaron una "nube" estacionaria de electrones entre la pantalla y la placa (llamada "carga espacial") que actuaba para repeler los electrones secundarios emitidos desde la placa hacia la placa.  Se añadió un conjunto de placas "formadoras de haces", cada una de ellas conectada al cátodo, para ayudar a mantener el enfoque adecuado del haz de electrones.  Las bobinas de alambre de rejilla y de pantalla se dispusieron de tal manera que cada vuelta o envoltura de la pantalla cayera directamente detrás de una envoltura de la rejilla, lo que colocó los alambres de la pantalla en la "sombra" formada por la rejilla.  Esta alineación precisa permitió que la pantalla aún realizara su función de blindaje con una interferencia mínima en el paso de los electrones del cátodo a la placa.</p>
 <p> <img src="03011.png"/> </p>
 <p>Esto resultó en una corriente de pantalla más baja (¡y más corriente de placa!) que un tubo tetrodo ordinario, con poco gasto adicional para la construcción del tubo.</p>
 <p>Los tetrodos de potencia de haz a menudo se distinguían de sus homólogos que no eran de haz por un símbolo esquemático diferente, que mostraba las placas formadoras de haces:</p>
 <p> <img src="03172.png"/> </p>
-<h2><u><a name="xtocid91175">The pentode</a></u></h2>
-<a name="Suppressor"></a>
+<h2><a name="xtocid91175">El pentodo</a></h2>
 <a name="Electrode, suppressor"></a>
 <p>Otra estrategia para abordar el problema de la atracción de electrones secundarios por la pantalla fue la adición de un quinto elemento de alambre a la estructura del tubo: un<i>supresor</i>.  Estos tubos de cinco elementos se denominaron naturalmente<i>pentodos</i>.
 </p>
@@ -256,7 +263,7 @@
 <p>El supresor era otra bobina o malla de alambre situada entre la pantalla y la placa, generalmente conectada directamente al potencial de tierra.  En algunos diseños de tubos de pentodo, el supresor estaba conectado internamente al cátodo para minimizar la cantidad de clavijas de conexión que tenían que penetrar la envoltura del tubo:</p>
 <p> <img src="03013.png"/> </p>
 <p>El trabajo del supresor era repeler cualquier electrón emitido secundariamente hacia la placa: un equivalente estructural de la carga espacial del tubo de potencia del haz.  Esto, por supuesto, aumentó la corriente de la placa y disminuyó la corriente de la pantalla, lo que resultó en una mejor ganancia y rendimiento general.  En algunos casos, también permitió un mayor voltaje de la placa operativa.</p>
-<h2><u><a name="xtocid91176">Combination tubes</a></u></h2>
+<h2><a name="xtocid91176">Combination tubes</a></h2>
 <p>De manera similar a la idea del circuito integrado, los diseñadores de tubos intentaron integrar diferentes funciones de los tubos en envolturas de un solo tubo para reducir los requisitos de espacio en los equipos electrónicos de tipo tubo más modernos.  Una combinación común vista dentro de una sola carcasa de vidrio era dos diodos o dos triodos.  La idea de colocar pares de diodos dentro de una sola envoltura tiene mucho sentido a la luz de los diseños de rectificadores de onda completa de suministro de energía, que siempre requieren múltiples diodos.</p>
 <p>Por supuesto, habría sido bastante imposible combinar miles de elementos de tubos en una sola envoltura de tubo de la misma manera que se pueden grabar miles de transistores en una sola pieza de silicio, pero los ingenieros aun así hicieron todo lo posible para superar los límites de la miniaturización y consolidación de tubos.  Algunos de estos tubos, caprichosamente llamados<i>compactadores</i>, contenía cuatro o más elementos tubulares completos dentro de un solo sobre.</p>
 <a name="Pentagrid tube"></a>
@@ -275,8 +282,7 @@
 <p>Otros diseños de tubos simplemente incorporaron estructuras de tubos separados dentro de una única envoltura de vidrio para mayor economía.  Los tubos de doble diodo (rectificador) eran bastante comunes, al igual que los tubos de doble triodo, especialmente cuando la disipación de potencia de cada tubo era relativamente baja.</p>
 <p> <img src="03328.png"/> </p>
 <p>Los modelos 12AX7 y 12AU7 son ejemplos comunes de válvulas de triodo dual, ambos de baja potencia.  El 12AX7 es especialmente común como válvula preamplificadora en circuitos amplificadores de guitarra eléctrica.</p>
-<h2><u><a name="xtocid91177">Tube parameters</a></u></h2>
-<a name="Beta ratio, bipolar transistor"></a>
+<h2><a name="xtocid91177">Tube parameters</a></h2>
 <p>Para los transistores de unión bipolar, la medida fundamental de amplificación es la relación Beta (β), definida como la relación entre la corriente del colector y la corriente de la base (I<sub>C</sub>/I<sub>B</sub>).  Otras características del transistor, como la resistencia de la unión, que en algunos circuitos amplificadores pueden afectar el rendimiento hasta β, se cuantifican para beneficio del análisis del circuito.  Los tubos de electrones no son diferentes, ya que sus características de rendimiento han sido exploradas y cuantificadas hace mucho tiempo por ingenieros eléctricos.</p>
 <p>Antes de que podamos hablar significativamente sobre estas características, debemos definir varias variables matemáticas utilizadas para expresar mediciones comunes de voltaje, corriente y resistencia, así como algunas de las cantidades más complejas:</p>
 <p> <img src="13038.png"/> </p>
@@ -288,7 +294,7 @@
 <p> <img src="13041.png"/> </p>
 <p>Estas tres medidas de rendimiento de los tubos están sujetas a cambios de un tubo a otro (así como las relaciones β entre dos transistores bipolares "idénticos" nunca son exactamente las mismas) y entre diferentes condiciones de funcionamiento.  Esta variabilidad se debe en parte a las inevitables no linealidades de los tubos de electrones y en parte a cómo se definen.  Incluso suponiendo la existencia de un tubo perfectamente lineal, será imposible que estas tres medidas sean constantes en los rangos de operación permitidos.  Considere un tubo que<i>perfectamente</i>regula la corriente en cualquier cantidad dada de voltaje de la red (como un transistor bipolar con un β absolutamente constante): la resistencia de la placa de ese tubo<i>debe</i>varían con el voltaje de la placa, porque la corriente de la placa no cambiará aunque el voltaje de la placa sí lo haga.</p>
 <p>Sin embargo, los tubos fueron (y son) clasificados según estos valores en determinadas condiciones de funcionamiento, y pueden tener sus curvas características publicadas al igual que los transistores.</p>
-<h2><u><a name="xtocid91178">Ionization (gas-filled) tubes</a></u></h2>
+<h2><a name="xtocid91178">Ionization (gas-filled) tubes</a></h2>
 <p>Hasta ahora hemos explorado tubos que están totalmente "evacuados" de todo gas y vapor dentro de sus envolturas de vidrio, conocidos propiamente como<i>tubos de vacío</i>.  Sin embargo, con la adición de ciertos gases o vapores, los tubos adquieren características significativamente diferentes y pueden cumplir ciertas funciones especiales en los circuitos electrónicos.</p>
 <a name="Ionization"></a>
 <a name="Plasma"></a>
@@ -331,7 +337,7 @@
 <p> <img src="03018.png"/> </p>
 <p>Cabe señalar que el esquema que se muestra arriba está muy simplificado para la mayoría de los propósitos y diseños de tubos de tiratrón.  Algunos tiratrones, por ejemplo, requerían que el voltaje de la red cambiara la polaridad entre sus estados "encendido" y "apagado" para poder funcionar correctamente.  Además, ¡algunos tiratrones tenían más de una rejilla!</p>
 <p>Los tiratrones encontraron uso de la misma manera que los SCR encuentran uso hoy en día: controlando CA rectificada para grandes cargas, como motores.  Los tubos Thyratron se han fabricado con diferentes tipos de rellenos de gas para diferentes características: gas inerte (químicamente no reactivo), gas hidrógeno y mercurio (se vaporiza en forma de gas cuando se activa).  El deuterio, un isótopo raro del hidrógeno, se utilizó en algunas aplicaciones especiales que requerían la conmutación de altos voltajes.</p>
-<h2><u><a name="xtocid91179">Display tubes</a></u></h2>
+<h2><a name="xtocid91179">Display tubes</a></h2>
 <p>Además de realizar tareas de amplificación y conmutación, los tubos pueden diseñarse para que sirvan como dispositivos de visualización.</p>
 <a name="CRT"></a>
 <a name="Cathode Ray Tube"></a>
@@ -351,7 +357,7 @@
 <p>El cátodo, la rejilla del amplificador y la placa actúan como un triodo para crear grandes cambios en el voltaje de la placa al cátodo para pequeños cambios en el voltaje de la rejilla al cátodo.  Debido a que el electrodo de control está conectado internamente a la placa, es eléctricamente común a ella y por lo tanto posee la misma cantidad de voltaje con respecto al cátodo que la placa.  Así, los grandes cambios de voltaje inducidos en la placa debido a pequeños cambios de voltaje en la rejilla del amplificador terminan provocando grandes cambios en el ancho de la sombra vista por quien observa el tubo.</p>
 <p> <img src="03029.png"/> </p>
 <p>Los tubos "ojo de gato" nunca fueron lo suficientemente precisos como para estar equipados con una escala graduada como es el caso de los CRT y los movimientos de los medidores electromecánicos, pero sirvieron bien como detectores nulos en circuitos puente y como indicadores de intensidad de señal en circuitos de sintonización de radio.  Una desafortunada limitación del tubo "ojo de gato" como detector nulo fue el hecho de que no era directamente capaz de indicar voltaje en ambas polaridades.</p>
-<h2><u><a name="xtocid911710">Microwave tubes</a></u></h2>
+<h2><a name="xtocid911710">Microwave tubes</a></h2>
 <p>Para aplicaciones de frecuencia extremadamente alta (por encima de 1 GHz), las capacitancias entre electrodos y los retrasos en el tiempo de tránsito de la construcción de tubos de electrones estándar se vuelven prohibitivos.  Sin embargo, las formas creativas en que se pueden construir los tubos parecen no tener fin, y se han creado varios diseños de tubos de electrones de alta frecuencia para superar estos desafíos.</p>
 <a name="Inductive output tube"></a>
 <a name="Coupling loop, resonator"></a>
@@ -377,7 +383,7 @@
 <a name="Coupling loop, resonator"></a>
 <p>Una vez más, los resonadores de cavidad se utilizan como "circuitos de tanque" de frecuencia de microondas, extrayendo energía del haz de electrones que pasa de forma inductiva.  Como todos los dispositivos de frecuencia de microondas que utilizan un resonador de cavidad, al menos una de las cavidades del resonador se golpea con un<i>bucle de acoplamiento</i>: un bucle de alambre que acopla magnéticamente el cable coaxial a la estructura resonante de la cavidad, lo que permite que la energía de RF se dirija fuera del tubo hacia una carga.  En el caso del horno microondas, la potencia de salida se dirige a través de una guía de ondas a la comida o bebida que se va a calentar, y las moléculas de agua que contiene actúan como pequeñas resistencias de carga, disipando la energía eléctrica en forma de calor.</p>
 <p>El imán necesario para el funcionamiento del magnetrón no se muestra en el diagrama.  El flujo magnético corre perpendicular al plano de la trayectoria circular del electrón.  En otras palabras, desde la vista del tubo que se muestra en el diagrama, estás mirando directamente a uno de los polos magnéticos.</p>
-<h2><u><a name="xtocid911711">Tubes versus Semiconductors</a></u></h2>
+<h2><a name="xtocid911711">Tubes versus Semiconductors</a></h2>
 <p>Dedicar un capítulo entero en un texto de electrónica moderna al diseño y función de los tubos de electrones puede parecer un poco extraño, considerando que la tecnología de semiconductores tiene tubos casi obsoletos en casi todas las aplicaciones.  Sin embargo, tiene sentido explorar los tubos no sólo con fines históricos, sino también para aquellas aplicaciones específicas que requieren la frase calificativa "<i>casi</i>cada aplicación" en lo que respecta a la supremacía de los semiconductores.</p>
 <p>En algunas aplicaciones, los tubos de electrones no sólo siguen teniendo uso práctico, sino que realizan sus respectivas tareas mejor que cualquier dispositivo de estado sólido inventado hasta ahora.  En algunos casos, el rendimiento y la confiabilidad de la tecnología de tubos de electrones son<i>far</i>superior.</p>
 <p>En los campos de la conmutación de circuitos de alta potencia y alta velocidad, tubos especializados como los tiratrones y krytrones de hidrógeno son capaces de conmutar cantidades de corriente mucho mayores, mucho más rápido que cualquier dispositivo semiconductor diseñado hasta la fecha.  Los límites térmicos y temporales de la física de los semiconductores imponen limitaciones a la capacidad de conmutación de las que están exentos los tubos, que no funcionan según los mismos principios.</p>
@@ -415,7 +421,7 @@
     <nav class="chapter-nav">
       <a href="SEMI_12.html" class="nav-btn" id="btn-prev">← Anterior</a>
       <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
-      <a href="SEMI_2.html" class="nav-btn" id="btn-next">Siguiente →</a>
+      <a href="SEMI_A1.html" class="nav-btn" id="btn-next">Siguiente →</a>
     </nav>
     <footer class="site-footer">
       <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>

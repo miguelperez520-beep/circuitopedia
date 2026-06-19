@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>!function(){var t=localStorage.getItem("liec-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();</script>
 <meta charset="UTF-8">
+    <meta name="description" content="El diagrama esquemático del sistema de energía monofásico muestra poco sobre el cableado de un circuito de energía práctico.">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Circuitopedia">
+    <meta property="og:title" content="Circuitos CA Polifásicos — Circuitopedia">
+    <meta property="og:description" content="El diagrama esquemático del sistema de energía monofásico muestra poco sobre el cableado de un circuito de energía práctico.">
+    <meta property="og:url" content="https://circuitopedia.io/AC/AC_10.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Circuitos CA Polifásicos — Circuitopedia">
+    <meta name="twitter:description" content="El diagrama esquemático del sistema de energía monofásico muestra poco sobre el cableado de un circuito de energía práctico.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecciones de circuitos eléctricos - Volumen II (CA) - Capítulo 10 | Lecciones de Circuitos Eléctricos</title>
+<title>Circuitos CA Polifásicos — Circuitopedia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.34.0/dist/tabler-icons.min.css">
 <style>:root { --accent: #8b5cf6; }</style>
 </head>
-<body>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <a href="../index.html" class="logo">Circuitopedia</a>
       <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
     </div>
     <div class="search-box">
@@ -22,132 +33,153 @@
     </div>
     <nav class="sidebar-nav">
 <div class="vol-group">
-  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">
+    <span class="vol-ic"><i class="ti ti-bolt" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Continua</span><span class="vol-lb">Vol. I · DC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
-    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
-    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
-    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
-    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
-    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
-    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
-    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
-    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
-    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
-    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
-    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
-    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
-    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
-    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
-    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
-    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
-    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
-    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+    <li><a href="../DC/DC_1.html"><span class="cap-num">01</span><span class="cap-name">Conceptos Básicos de Electricidad</span></a></li>
+    <li><a href="../DC/DC_2.html"><span class="cap-num">02</span><span class="cap-name">Ley de Ohm</span></a></li>
+    <li><a href="../DC/DC_3.html"><span class="cap-num">03</span><span class="cap-name">Seguridad Eléctrica</span></a></li>
+    <li><a href="../DC/DC_4.html"><span class="cap-num">04</span><span class="cap-name">Notación Científica y Prefijos</span></a></li>
+    <li><a href="../DC/DC_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Serie y Paralelo</span></a></li>
+    <li><a href="../DC/DC_6.html"><span class="cap-num">06</span><span class="cap-name">Divisores y Leyes de Kirchhoff</span></a></li>
+    <li><a href="../DC/DC_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Serie-Paralelo</span></a></li>
+    <li><a href="../DC/DC_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos de Medición CC</span></a></li>
+    <li><a href="../DC/DC_9.html"><span class="cap-num">09</span><span class="cap-name">Señales de Instrumentación</span></a></li>
+    <li><a href="../DC/DC_10.html"><span class="cap-num">10</span><span class="cap-name">Análisis de Red CC</span></a></li>
+    <li><a href="../DC/DC_11.html"><span class="cap-num">11</span><span class="cap-name">Baterías y Sistemas de Energía</span></a></li>
+    <li><a href="../DC/DC_12.html"><span class="cap-num">12</span><span class="cap-name">Conductores y Aisladores</span></a></li>
+    <li><a href="../DC/DC_13.html"><span class="cap-num">13</span><span class="cap-name">Condensadores</span></a></li>
+    <li><a href="../DC/DC_14.html"><span class="cap-num">14</span><span class="cap-name">Magnetismo y Electromagnetismo</span></a></li>
+    <li><a href="../DC/DC_15.html"><span class="cap-num">15</span><span class="cap-name">Inductores</span></a></li>
+    <li><a href="../DC/DC_16.html"><span class="cap-num">16</span><span class="cap-name">Constantes de Tiempo RC y L/R</span></a></li>
+    <li><a href="../DC/DC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../DC/DC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../DC/DC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">
+    <span class="vol-ic"><i class="ti ti-wave-sine" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Alterna</span><span class="vol-lb">Vol. II · AC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
-    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
-    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
-    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
-    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
-    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
-    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
-    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
-    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
-    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
-    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
-    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
-    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
-    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
-    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
-    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
-    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+    <li><a href="../AC/AC_1.html"><span class="cap-num">01</span><span class="cap-name">Teoría Básica de CA</span></a></li>
+    <li><a href="../AC/AC_2.html"><span class="cap-num">02</span><span class="cap-name">Números Complejos</span></a></li>
+    <li><a href="../AC/AC_3.html"><span class="cap-num">03</span><span class="cap-name">Reactancia e Impedancia Inductiva</span></a></li>
+    <li><a href="../AC/AC_4.html"><span class="cap-num">04</span><span class="cap-name">Reactancia e Impedancia Capacitiva</span></a></li>
+    <li><a href="../AC/AC_5.html"><span class="cap-num">05</span><span class="cap-name">Reactancia e Impedancia R, L y C</span></a></li>
+    <li><a href="../AC/AC_6.html"><span class="cap-num">06</span><span class="cap-name">Resonancia</span></a></li>
+    <li><a href="../AC/AC_7.html"><span class="cap-num">07</span><span class="cap-name">Señales CA de Frecuencia Mixta</span></a></li>
+    <li><a href="../AC/AC_8.html"><span class="cap-num">08</span><span class="cap-name">Filtros</span></a></li>
+    <li><a href="../AC/AC_9.html"><span class="cap-num">09</span><span class="cap-name">Transformadores</span></a></li>
+    <li><a href="../AC/AC_10.html"><span class="cap-num">10</span><span class="cap-name">Circuitos CA Polifásicos</span></a></li>
+    <li><a href="../AC/AC_11.html"><span class="cap-num">11</span><span class="cap-name">Factor de Potencia</span></a></li>
+    <li><a href="../AC/AC_12.html"><span class="cap-num">12</span><span class="cap-name">Circuitos de Medición CA</span></a></li>
+    <li><a href="../AC/AC_13.html"><span class="cap-num">13</span><span class="cap-name">Motores de CA</span></a></li>
+    <li><a href="../AC/AC_14.html"><span class="cap-num">14</span><span class="cap-name">Líneas de Transmisión</span></a></li>
+    <li><a href="../AC/AC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../AC/AC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../AC/AC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">
+    <span class="vol-ic"><i class="ti ti-cpu" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Semiconductores</span><span class="vol-lb">Vol. III</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
-    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
-    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
-    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
-    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
-    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
-    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
-    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
-    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
-    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
-    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
-    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
-    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
-    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
-    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
-    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+    <li><a href="../Semi/SEMI_1.html"><span class="cap-num">01</span><span class="cap-name">Amplificadores y Dispositivos Activos</span></a></li>
+    <li><a href="../Semi/SEMI_2.html"><span class="cap-num">02</span><span class="cap-name">Dispositivos de Estado Sólido</span></a></li>
+    <li><a href="../Semi/SEMI_3.html"><span class="cap-num">03</span><span class="cap-name">Diodos y Rectificadores</span></a></li>
+    <li><a href="../Semi/SEMI_4.html"><span class="cap-num">04</span><span class="cap-name">Transistores Bipolares (BJT)</span></a></li>
+    <li><a href="../Semi/SEMI_5.html"><span class="cap-num">05</span><span class="cap-name">Transistores de Efecto de Campo JFET</span></a></li>
+    <li><a href="../Semi/SEMI_6.html"><span class="cap-num">06</span><span class="cap-name">Transistores de Efecto de Campo IGFET</span></a></li>
+    <li><a href="../Semi/SEMI_7.html"><span class="cap-num">07</span><span class="cap-name">Tiristores</span></a></li>
+    <li><a href="../Semi/SEMI_8.html"><span class="cap-num">08</span><span class="cap-name">Amplificadores Operacionales</span></a></li>
+    <li><a href="../Semi/SEMI_9.html"><span class="cap-num">09</span><span class="cap-name">Circuitos Analógicos Prácticos</span></a></li>
+    <li><a href="../Semi/SEMI_10.html"><span class="cap-num">10</span><span class="cap-name">Filtros Activos</span></a></li>
+    <li><a href="../Semi/SEMI_11.html"><span class="cap-num">11</span><span class="cap-name">Motores de CC</span></a></li>
+    <li><a href="../Semi/SEMI_12.html"><span class="cap-num">12</span><span class="cap-name">Inversores y Accionadores de CA</span></a></li>
+    <li><a href="../Semi/SEMI_13.html"><span class="cap-num">13</span><span class="cap-name">Tubos de Electrones</span></a></li>
+    <li><a href="../Semi/SEMI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Semi/SEMI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Semi/SEMI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">
+    <span class="vol-ic"><i class="ti ti-binary" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Circuitos Digitales</span><span class="vol-lb">Vol. IV</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
-    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
-    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
-    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
-    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
-    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
-    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
-    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
-    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
-    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
-    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
-    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
-    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
-    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
-    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
-    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
-    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
-    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
-    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+    <li><a href="../Digital/DIGI_1.html"><span class="cap-num">01</span><span class="cap-name">Sistemas de Numeración</span></a></li>
+    <li><a href="../Digital/DIGI_2.html"><span class="cap-num">02</span><span class="cap-name">Aritmética Binaria</span></a></li>
+    <li><a href="../Digital/DIGI_3.html"><span class="cap-num">03</span><span class="cap-name">Puertas Lógicas</span></a></li>
+    <li><a href="../Digital/DIGI_4.html"><span class="cap-num">04</span><span class="cap-name">Interruptores</span></a></li>
+    <li><a href="../Digital/DIGI_5.html"><span class="cap-num">05</span><span class="cap-name">Relés Electromecánicos</span></a></li>
+    <li><a href="../Digital/DIGI_6.html"><span class="cap-num">06</span><span class="cap-name">Lógica de Escalera</span></a></li>
+    <li><a href="../Digital/DIGI_7.html"><span class="cap-num">07</span><span class="cap-name">Álgebra Booleana</span></a></li>
+    <li><a href="../Digital/DIGI_8.html"><span class="cap-num">08</span><span class="cap-name">Mapeo de Karnaugh</span></a></li>
+    <li><a href="../Digital/DIGI_9.html"><span class="cap-num">09</span><span class="cap-name">Funciones Lógicas Combinacionales</span></a></li>
+    <li><a href="../Digital/DIGI_10.html"><span class="cap-num">10</span><span class="cap-name">Multivibradores</span></a></li>
+    <li><a href="../Digital/DIGI_11.html"><span class="cap-num">11</span><span class="cap-name">Circuitos Secuenciales</span></a></li>
+    <li><a href="../Digital/DIGI_12.html"><span class="cap-num">12</span><span class="cap-name">Registros de Desplazamiento</span></a></li>
+    <li><a href="../Digital/DIGI_13.html"><span class="cap-num">13</span><span class="cap-name">Conversión Digital-Analógica</span></a></li>
+    <li><a href="../Digital/DIGI_14.html"><span class="cap-num">14</span><span class="cap-name">Comunicación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_15.html"><span class="cap-num">15</span><span class="cap-name">Almacenamiento Digital (Memoria)</span></a></li>
+    <li><a href="../Digital/DIGI_16.html"><span class="cap-num">16</span><span class="cap-name">Principios de Computación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Digital/DIGI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Digital/DIGI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">
+    <span class="vol-ic"><i class="ti ti-book-2" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Referencia</span><span class="vol-lb">Vol. V</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
-    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
-    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
-    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
-    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
-    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
-    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
-    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
-    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
-    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
-    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
-    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
-    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+    <li><a href="../Ref/REF_1.html"><span class="cap-num">01</span><span class="cap-name">Ecuaciones y Factores de Conversión</span></a></li>
+    <li><a href="../Ref/REF_2.html"><span class="cap-num">02</span><span class="cap-name">Códigos de Color</span></a></li>
+    <li><a href="../Ref/REF_3.html"><span class="cap-num">03</span><span class="cap-name">Tablas de Conductores y Aisladores</span></a></li>
+    <li><a href="../Ref/REF_4.html"><span class="cap-num">04</span><span class="cap-name">Referencia de Álgebra</span></a></li>
+    <li><a href="../Ref/REF_5.html"><span class="cap-num">05</span><span class="cap-name">Referencia de Trigonometría</span></a></li>
+    <li><a href="../Ref/REF_6.html"><span class="cap-num">06</span><span class="cap-name">Referencia de Cálculo</span></a></li>
+    <li><a href="../Ref/REF_7.html"><span class="cap-num">07</span><span class="cap-name">Simulación de Circuitos con SPICE</span></a></li>
+    <li><a href="../Ref/REF_8.html"><span class="cap-num">08</span><span class="cap-name">Solución de Problemas</span></a></li>
+    <li><a href="../Ref/REF_9.html"><span class="cap-num">09</span><span class="cap-name">Símbolos de Esquemas de Circuito</span></a></li>
+    <li><a href="../Ref/REF_10.html"><span class="cap-num">10</span><span class="cap-name">Tabla Periódica de los Elementos</span></a></li>
+    <li><a href="../Ref/REF_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Ref/REF_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Ref/REF_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">
+    <span class="vol-ic"><i class="ti ti-flask" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Experimentos</span><span class="vol-lb">Vol. VI</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
-    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
-    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
-    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
-    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
-    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
-    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
-    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
-    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
-    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
-    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+    <li><a href="../Exper/EXP_1.html"><span class="cap-num">01</span><span class="cap-name">Introducción</span></a></li>
+    <li><a href="../Exper/EXP_2.html"><span class="cap-num">02</span><span class="cap-name">Conceptos Básicos y Equipos de Prueba</span></a></li>
+    <li><a href="../Exper/EXP_3.html"><span class="cap-num">03</span><span class="cap-name">Circuitos CC</span></a></li>
+    <li><a href="../Exper/EXP_4.html"><span class="cap-num">04</span><span class="cap-name">Circuitos CA</span></a></li>
+    <li><a href="../Exper/EXP_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Semiconductores Discretos</span></a></li>
+    <li><a href="../Exper/EXP_6.html"><span class="cap-num">06</span><span class="cap-name">Circuitos Integrados Analógicos</span></a></li>
+    <li><a href="../Exper/EXP_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Integrados Digitales</span></a></li>
+    <li><a href="../Exper/EXP_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos con Temporizador 555</span></a></li>
+    <li><a href="../Exper/EXP_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Exper/EXP_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Exper/EXP_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">
+    <span class="vol-ic"><i class="ti ti-code" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Desarrollo</span><span class="vol-lb">Info técnica</span></span>
+  </a>
 </div>
 </nav>
 
@@ -156,46 +188,24 @@
   <main class="main-content">
     <header class="top-bar">
       <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
-      <span class="page-title">Lecciones de circuitos eléctricos - Volumen II (CA) - Capítulo 10</span>
+      <span class="page-title">Circuitos CA Polifásicos</span>
       <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
     </header>
     <article class="content" id="content">
       
-<body bgcolor="white">
-
-
-
-<hr/>
-<h1>Lecciones de circuitos eléctricos - Volumen II</h1>
-<h1>Capítulo 10</h1>
-<!-- Added spice-Nutmeg plot and Fourier impulse plot (DC) 4-30-2005-->
-<!--How to make spice impulse plots with gnuplot from spice Fourier analysis data-->
-<!-- edit Fourier analysis data (filename.for) so that it contains only numerical data lines for the harmonics, remove headings. words before and after these lines. Then add a line of zero's data to the head of the harmonic data, a zero over each column of data. This is to shift the plot to the right -->
-<!--gnuplot-->
-<!--set xlabel&ldquo;Harmonic number&rdquo;-->
-<!--set ylabel &ldquo;Relative amplitude &rdquo;-->
-<!--plot &ldquo;filename.for&rdquo;  using 0:3 with impulse linewidth 30-->
-<!--if plot looks ok, let's put it in eps-->
-<!--set size 0.6,0.6-->
-<!--set terminal postscript eps color &ldquo;Helvetius&rdquo; 18-->
-<!--set output &ldquo;filename.eps&rdquo;-->
-<!--plot &ldquo;filename.for&rdquo;  using 0:3 with impulse linewidth 30-->
-<!--output goes from filename.for to filename.eps-->
-<!--repeat last two steps for any other files, changing filename.{for,eps}-->
-<h1>CIRCUITOS DE CA POLIFÁSICOS</h1>
+<h1>Circuitos CA Polifásicos</h1>
 <!--minitoc-->
 <ul>
-<li><a href="#xtocid89480"><u>Single-phase power systems</u></a></li>
-<li><a href="#xtocid89481"><u>Three-phase power systems</u></a></li>
-<li><a href="#xtocid89482"><u>Phase rotation</u></a></li>
-<li><a href="#xtocid89483"><u>Polyphase motor design</u></a></li>
-<li><a href="#xtocid89484"><u>Three-phase Y and Delta configurations</u></a></li>
-<li><a href="#xtocid89485"><u>Three-phase transformer circuits</u></a></li>
-<li><a href="#xtocid89486"><u>Harmonics in polyphase power systems</u></a></li>
-<li><a href="#xtocid89487"><u>Harmonic phase sequences</u></a></li>
-<li><a href="#xtocid89488"><u>Contributors</u></a></li></ul>
-<h2><u><a name="xtocid89480">Single-phase power systems</a></u></h2>
-<a name="02164.png"></a>
+<li><a href="#xtocid89480"><u>Sistemas eléctricos monofásicos</u></a></li>
+<li><a href="#xtocid89481"><u>Sistemas eléctricos trifásicos</u></a></li>
+<li><a href="#xtocid89482"><u>Rotación de fase</u></a></li>
+<li><a href="#xtocid89483"><u>Diseño de motores polifásicos</u></a></li>
+<li><a href="#xtocid89484"><u>Configuraciones trifásicas en Y y en Delta</u></a></li>
+<li><a href="#xtocid89485"><u>Circuitos de transformadores trifásicos</u></a></li>
+<li><a href="#xtocid89486"><u>Armónicos en sistemas eléctricos polifásicos</u></a></li>
+<li><a href="#xtocid89487"><u>Secuencias de fase armónicas</u></a></li>
+<li><a href="#xtocid89488"><u>Colaboradores</u></a></li></ul>
+<h2><a name="xtocid89480">Sistemas eléctricos monofásicos</a></h2>
 <p> <img src="02164.png"/> </p>
 <p><i>El diagrama esquemático del sistema de energía monofásico muestra poco sobre el cableado de un circuito de energía práctico.</i></p>
 <a name="Single-phase"></a>
@@ -270,8 +280,7 @@
 <li>A <i>fase dividida</i>Un sistema de energía es aquel con múltiples fuentes de voltaje CA (en fase) conectadas en serie, que entregan energía a cargas a más de un voltaje, con más de dos cables.  Se utilizan principalmente para lograr el equilibrio entre la eficiencia del sistema (corrientes de conductor bajas) y la seguridad (voltajes de carga bajos).</li>
 <li>Las fuentes de CA de fase dividida se pueden crear fácilmente tocando en el centro los devanados de las bobinas de transformadores o alternadores.</li>
 </ul>
-<h2><u><a name="xtocid89481">Three-phase power systems</a></u></h2>
-<a name="Three-phase"></a>
+<h2><a name="xtocid89481">Sistemas eléctricos trifásicos</a></h2>
 <a name="Polyphase"></a>
 <a name="Three-wire DC system"></a>
 <p>Los sistemas de energía de fase dividida logran su alta eficiencia de conductor<i>and</i>Bajo riesgo de seguridad al dividir el voltaje total en partes menores y alimentar múltiples cargas en esos voltajes menores, mientras consume corrientes a niveles típicos de un sistema de voltaje completo.  Esta técnica, por cierto, funciona tan bien para sistemas de alimentación de CC como para sistemas de CA monofásicos.  A este tipo de sistemas se les suele denominar<i>tres hilos</i>sistemas en lugar de<i>fase dividida</i>porque “fase” es un concepto restringido a AC.</p>
@@ -377,8 +386,7 @@ freq        i(v1)       i(v2)       i(v3)
 <li>A <i>polifásico</i>El sistema de energía utiliza múltiples fuentes de voltaje en diferentes ángulos de fase entre sí (muchas “fases” de formas de onda de voltaje en funcionamiento).  Un sistema de energía polifásico puede entregar más energía a menos voltaje con conductores de menor calibre que los sistemas monofásicos o divididos.</li>
 <li>Las fuentes de voltaje desfasadas necesarias para un sistema de energía polifásico se crean en alternadores con múltiples juegos de devanados de cables.  Estos conjuntos de devanado están espaciados alrededor de la circunferencia de rotación del rotor en los ángulos deseados.</li>
 </ul>
-<h2><u><a name="xtocid89482">Phase rotation</a></u></h2>
-<a name="Phase rotation"></a>
+<h2><a name="xtocid89482">Rotación de fase</a></h2>
 <p>Tomemos el diseño del alternador trifásico presentado anteriormente (Figura<a href="#02180.png">  below</a>) y observa lo que sucede mientras el imán gira.</p>
 <a name="02180.png"></a>
 <p> <img src="02180.png"/> </p>
@@ -457,8 +465,7 @@ freq          v(1,4)      v(2,4)      v(3,4)
 <li>La rotación de fases no tiene impacto en las cargas resistivas, pero sí tendrá impacto en las cargas reactivas desequilibradas, como se muestra en el funcionamiento de un circuito detector de rotación de fases.</li>
 <li>La rotación de fases se puede revertir intercambiando dos de los tres cables "calientes" que suministran energía trifásica a una carga trifásica.</li>
 </ul>
-<h2><u><a name="xtocid89483">Polyphase motor design</a></u></h2>
-<a name="Motor"></a>
+<h2><a name="xtocid89483">Diseño de motores polifásicos</a></h2>
 <p>Quizás el beneficio más importante de la alimentación de CA polifásica sobre la monofásica es el diseño y funcionamiento de los motores de CA.  Como estudiamos en el primer capítulo de este libro, algunos tipos de motores de CA son prácticamente idénticos en construcción a sus contrapartes de alternador (generador), y consisten en devanados de alambre estacionarios y un conjunto de imán giratorio.  (Otros diseños de motores de CA no son tan simples, pero dejaremos esos detalles para otra lección).</p>
 <a name="02186.png"></a>
 <p> <img src="02186.png"/> </p>
@@ -519,8 +526,7 @@ freq          v(1,4)      v(2,4)      v(3,4)
 <li>Los motores polifásicos no necesitan tales medidas; su dirección de rotación está fijada por la secuencia de fases del voltaje que les alimenta.</li>
 <li>Intercambiar dos cables "calientes" en un motor de CA polifásico invertirá su secuencia de fases, invirtiendo así la rotación del eje.</li>
 </ul>
-<h2><u><a name="xtocid89484">Three-phase Y and Delta configurations</a></u></h2>
-<a name="Y configuration"></a>
+<h2><a name="xtocid89484">Configuraciones trifásicas en Y y en Delta</a></h2>
 <a name="Star configuration"></a>
 <a name="Delta configuration"></a>
 <p>Inicialmente exploramos la idea de sistemas de energía trifásicos conectando tres fuentes de voltaje en lo que comúnmente se conoce como configuración "Y" (o "estrella").  Esta configuración de fuentes de tensión se caracteriza por un punto de conexión común que une un lado de cada fuente. (Cifra<a href="#02194.png">  below</a>)
@@ -604,7 +610,7 @@ freq          v(1,4)      v(2,4)      v(3,4)
 </li>
 <li>Las fuentes de tensión trifásicas conectadas en Δ ofrecen mayor fiabilidad en caso de fallo del devanado que las fuentes conectadas en Y.  Sin embargo, las fuentes conectadas en Y pueden entregar la misma cantidad de energía con menos corriente de línea que las fuentes conectadas en Δ.</li>
 </ul>
-<h2><u><a name="xtocid89485">Three-phase transformer circuits</a></u></h2>
+<h2><a name="xtocid89485">Circuitos de transformadores trifásicos</a></h2>
 <p>Dado que el sistema trifásico se utiliza con tanta frecuencia para los sistemas de distribución de energía, tiene sentido que necesitemos transformadores trifásicos para poder aumentar o reducir los voltajes.  Esto es sólo parcialmente cierto, ya que los transformadores monofásicos normales se pueden agrupar para transformar la energía entre dos sistemas trifásicos en una variedad de configuraciones, eliminando la necesidad de un transformador trifásico especial.  Sin embargo, se construyen transformadores trifásicos especiales para esas tareas y pueden funcionar con menos necesidad de material, menos tamaño y menos peso que sus contrapartes modulares.</p>
 <p>Un transformador trifásico está formado por tres conjuntos de devanados primarios y secundarios, cada uno enrollado alrededor de una pata de un conjunto de núcleo de hierro.   Básicamente, parece tres transformadores monofásicos que comparten un núcleo unido como en la Figura<a href="#02203.png">  below</a>.
 </p>
@@ -665,8 +671,7 @@ freq          v(1,4)      v(2,4)      v(3,4)
 <a name="52011.jpg"></a>
 <p> <img src="52011.jpg"/> </p>
 <p><i>Banco transformador elevador en la presa hidroeléctrica Grand Coulee, estado de Washington, EE.UU.</i></p>
-<h2><u><a name="xtocid89486">Harmonics in polyphase power systems</a></u></h2>
-<a name="Harmonic"></a>
+<h2><a name="xtocid89486">Armónicos en sistemas eléctricos polifásicos</a></h2>
 <p>En el capítulo sobre señales de frecuencia mixta, exploramos el concepto de<i>armonía</i>en sistemas de CA: frecuencias que son múltiplos enteros de la frecuencia de la fuente fundamental.  En los sistemas de alimentación de CA en los que se supone que la forma de onda del voltaje de la fuente procedente de un generador de CA (alternador) es una onda sinusoidal de frecuencia única, sin distorsión, no debería haber contenido armónico. . . idealmente.</p>
 <a name="Nonlinear components"></a>
 <p>Esto sería cierto si no fuera por<i>componentes no lineales</i>.  Los componentes no lineales consumen corriente de manera desproporcionada con respecto al voltaje de la fuente, lo que genera formas de onda de corriente no sinusoidales.  Ejemplos de componentes no lineales incluyen lámparas de descarga de gas, dispositivos semiconductores de control de potencia (diodos, transistores, SCR, TRIAC), transformadores (la corriente de magnetización del devanado primario suele ser no sinusoidal debido a la curva de saturación B/H del núcleo) y motores eléctricos (nuevamente, cuando los campos magnéticos dentro del núcleo del motor operan cerca de niveles de saturación).  Incluso las lámparas incandescentes generan corrientes ligeramente no sinusoidales, ya que la resistencia del filamento cambia a lo largo del ciclo debido a las rápidas fluctuaciones de temperatura.  Como aprendimos en el capítulo de frecuencia mixta,<i>any</i>La distorsión de una forma de onda que de otro modo tendría forma de onda sinusoidal constituye la presencia de frecuencias armónicas.</p>
@@ -1331,8 +1336,7 @@ total harmonic distortion =     58.961298  percent
 <li>En un sistema Y-Y de 4 hilos, se suman corrientes armónicas triples dentro del conductor neutro.</li>
 <li>Las corrientes armónicas triples en un conjunto de componentes conectados en Δ circulan dentro del bucle formado por Δ.</li>
 </ul>
-<h2><u><a name="xtocid89487">Harmonic phase sequences</a></u></h2>
-<a name="Triplen harmonics"></a>
+<h2><a name="xtocid89487">Secuencias de fase armónicas</a></h2>
 <a name="Harmonics, triplen"></a>
 <p>En la última sección, vimos cómo el tercer armónico y todos sus múltiplos enteros (llamados colectivamente<i>triplicar</i>armónicos) generados por 120<sup>o</sup>Las formas de onda fundamentales con desplazamiento de fase están en realidad en fase entre sí.  En un sistema de potencia trifásico de 60 Hz, donde las fases<b>A</b>, <b>B</b>, y<b>C</b>son 120<sup>o</sup>aparte, los múltiplos del tercer armónico de esas frecuencias (180 Hz) caen perfectamente en fase entre sí.  Esto se puede considerar en términos gráficos (Figura<a href="#02335.png">  below</a>) y/o en términos matemáticos:</p>
 <a name="02335.png"></a>
@@ -1353,7 +1357,7 @@ total harmonic distortion =     58.961298  percent
 <p>Este patrón de positivo-cero-negativo-positivo continúa indefinidamente para todos los armónicos impares, prestándose a expresarse en una tabla como esta:</p>
 <p> <img src="12143.png"/> </p>
 <p>La secuencia es especialmente importante cuando se trata de motores de CA, ya que la rotación mecánica del rotor depende del par producido por la "rotación" secuencial de la potencia trifásica aplicada.  Las frecuencias de secuencia positiva funcionan para empujar el rotor en la dirección correcta, mientras que las frecuencias de secuencia negativa en realidad funcionan.<i>contra</i>la dirección de rotación del rotor.  Las frecuencias de secuencia cero no contribuyen ni disminuyen el par del rotor.  Un exceso de armónicos de secuencia negativa (5.°, 11.°, 17.° y/o 23.°) en la energía suministrada a un motor de CA trifásico resultará en una degradación del rendimiento y un posible sobrecalentamiento.  Dado que los armónicos de orden superior tienden a atenuarse más por las inductancias del sistema y las pérdidas del núcleo magnético, y generalmente se originan con menos amplitud de todos modos, el principal armónico de preocupación es el quinto, que es 300 Hz en sistemas de energía de 60 Hz y 250 Hz en sistemas de energía de 50 Hz.</p>
-<h2><u><a name="xtocid89488">Contributors</a></u></h2>
+<h2><a name="xtocid89488">Colaboradores</a></h2>
 <p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>
 <p>
 <b>Ed Beroset</b>(6 de mayo de 2002): Sugirió mejores formas de ilustrar el significado del prefijo “poli-”.</p>
@@ -1361,18 +1365,15 @@ total harmonic distortion =     58.961298  percent
 <b>Jason Stark</b>(Junio ​​de 2000): Formato de documentos HTML, que dio lugar a una segunda edición mucho más atractiva.</p>
 <!--Effects of negative phase sequences on three-phase motors.-->
 <br/>
-<hr/>
 <p>
 <i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="AC_A3.html">CC BY License</a>.
 </p>
-
-
 
 </body>
 
     </article>
     <nav class="chapter-nav">
-      <a href="AC_1.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="AC_9.html" class="nav-btn" id="btn-prev">← Anterior</a>
       <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
       <a href="AC_11.html" class="nav-btn" id="btn-next">Siguiente →</a>
     </nav>

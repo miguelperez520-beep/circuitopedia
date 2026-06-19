@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>!function(){var t=localStorage.getItem("liec-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();</script>
 <meta charset="UTF-8">
+    <meta name="description" content="En términos generales,análisis de redes cualquier técnica estructurada utilizada para analizar matemáticamente un circuito (una "red" de componentes…">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Circuitopedia">
+    <meta property="og:title" content="Análisis de Red CC — Circuitopedia">
+    <meta property="og:description" content="En términos generales,análisis de redes cualquier técnica estructurada utilizada para analizar matemáticamente un circuito (una">
+    <meta property="og:url" content="https://circuitopedia.io/DC/DC_10.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Análisis de Red CC — Circuitopedia">
+    <meta name="twitter:description" content="En términos generales,análisis de redes cualquier técnica estructurada utilizada para analizar matemáticamente un circuito (una">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecciones sobre circuitos eléctricos - Volumen I (DC) - Capítulo 10 | Lecciones de Circuitos Eléctricos</title>
+<title>Análisis de Red CC — Circuitopedia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.34.0/dist/tabler-icons.min.css">
 <style>:root { --accent: #3b82f6; }</style>
 </head>
 <body>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <a href="../index.html" class="logo">Circuitopedia</a>
       <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
     </div>
     <div class="search-box">
@@ -22,132 +34,153 @@
     </div>
     <nav class="sidebar-nav">
 <div class="vol-group">
-  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">
+    <span class="vol-ic"><i class="ti ti-bolt" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Continua</span><span class="vol-lb">Vol. I · DC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
-    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
-    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
-    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
-    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
-    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
-    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
-    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
-    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
-    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
-    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
-    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
-    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
-    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
-    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
-    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
-    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
-    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
-    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+    <li><a href="../DC/DC_1.html"><span class="cap-num">01</span><span class="cap-name">Conceptos Básicos de Electricidad</span></a></li>
+    <li><a href="../DC/DC_2.html"><span class="cap-num">02</span><span class="cap-name">Ley de Ohm</span></a></li>
+    <li><a href="../DC/DC_3.html"><span class="cap-num">03</span><span class="cap-name">Seguridad Eléctrica</span></a></li>
+    <li><a href="../DC/DC_4.html"><span class="cap-num">04</span><span class="cap-name">Notación Científica y Prefijos</span></a></li>
+    <li><a href="../DC/DC_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Serie y Paralelo</span></a></li>
+    <li><a href="../DC/DC_6.html"><span class="cap-num">06</span><span class="cap-name">Divisores y Leyes de Kirchhoff</span></a></li>
+    <li><a href="../DC/DC_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Serie-Paralelo</span></a></li>
+    <li><a href="../DC/DC_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos de Medición CC</span></a></li>
+    <li><a href="../DC/DC_9.html"><span class="cap-num">09</span><span class="cap-name">Señales de Instrumentación</span></a></li>
+    <li><a href="../DC/DC_10.html"><span class="cap-num">10</span><span class="cap-name">Análisis de Red CC</span></a></li>
+    <li><a href="../DC/DC_11.html"><span class="cap-num">11</span><span class="cap-name">Baterías y Sistemas de Energía</span></a></li>
+    <li><a href="../DC/DC_12.html"><span class="cap-num">12</span><span class="cap-name">Conductores y Aisladores</span></a></li>
+    <li><a href="../DC/DC_13.html"><span class="cap-num">13</span><span class="cap-name">Condensadores</span></a></li>
+    <li><a href="../DC/DC_14.html"><span class="cap-num">14</span><span class="cap-name">Magnetismo y Electromagnetismo</span></a></li>
+    <li><a href="../DC/DC_15.html"><span class="cap-num">15</span><span class="cap-name">Inductores</span></a></li>
+    <li><a href="../DC/DC_16.html"><span class="cap-num">16</span><span class="cap-name">Constantes de Tiempo RC y L/R</span></a></li>
+    <li><a href="../DC/DC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../DC/DC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../DC/DC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">
+    <span class="vol-ic"><i class="ti ti-wave-sine" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Alterna</span><span class="vol-lb">Vol. II · AC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
-    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
-    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
-    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
-    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
-    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
-    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
-    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
-    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
-    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
-    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
-    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
-    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
-    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
-    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
-    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
-    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+    <li><a href="../AC/AC_1.html"><span class="cap-num">01</span><span class="cap-name">Teoría Básica de CA</span></a></li>
+    <li><a href="../AC/AC_2.html"><span class="cap-num">02</span><span class="cap-name">Números Complejos</span></a></li>
+    <li><a href="../AC/AC_3.html"><span class="cap-num">03</span><span class="cap-name">Reactancia e Impedancia Inductiva</span></a></li>
+    <li><a href="../AC/AC_4.html"><span class="cap-num">04</span><span class="cap-name">Reactancia e Impedancia Capacitiva</span></a></li>
+    <li><a href="../AC/AC_5.html"><span class="cap-num">05</span><span class="cap-name">Reactancia e Impedancia R, L y C</span></a></li>
+    <li><a href="../AC/AC_6.html"><span class="cap-num">06</span><span class="cap-name">Resonancia</span></a></li>
+    <li><a href="../AC/AC_7.html"><span class="cap-num">07</span><span class="cap-name">Señales CA de Frecuencia Mixta</span></a></li>
+    <li><a href="../AC/AC_8.html"><span class="cap-num">08</span><span class="cap-name">Filtros</span></a></li>
+    <li><a href="../AC/AC_9.html"><span class="cap-num">09</span><span class="cap-name">Transformadores</span></a></li>
+    <li><a href="../AC/AC_10.html"><span class="cap-num">10</span><span class="cap-name">Circuitos CA Polifásicos</span></a></li>
+    <li><a href="../AC/AC_11.html"><span class="cap-num">11</span><span class="cap-name">Factor de Potencia</span></a></li>
+    <li><a href="../AC/AC_12.html"><span class="cap-num">12</span><span class="cap-name">Circuitos de Medición CA</span></a></li>
+    <li><a href="../AC/AC_13.html"><span class="cap-num">13</span><span class="cap-name">Motores de CA</span></a></li>
+    <li><a href="../AC/AC_14.html"><span class="cap-num">14</span><span class="cap-name">Líneas de Transmisión</span></a></li>
+    <li><a href="../AC/AC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../AC/AC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../AC/AC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">
+    <span class="vol-ic"><i class="ti ti-cpu" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Semiconductores</span><span class="vol-lb">Vol. III</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
-    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
-    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
-    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
-    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
-    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
-    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
-    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
-    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
-    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
-    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
-    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
-    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
-    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
-    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
-    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+    <li><a href="../Semi/SEMI_1.html"><span class="cap-num">01</span><span class="cap-name">Amplificadores y Dispositivos Activos</span></a></li>
+    <li><a href="../Semi/SEMI_2.html"><span class="cap-num">02</span><span class="cap-name">Dispositivos de Estado Sólido</span></a></li>
+    <li><a href="../Semi/SEMI_3.html"><span class="cap-num">03</span><span class="cap-name">Diodos y Rectificadores</span></a></li>
+    <li><a href="../Semi/SEMI_4.html"><span class="cap-num">04</span><span class="cap-name">Transistores Bipolares (BJT)</span></a></li>
+    <li><a href="../Semi/SEMI_5.html"><span class="cap-num">05</span><span class="cap-name">Transistores de Efecto de Campo JFET</span></a></li>
+    <li><a href="../Semi/SEMI_6.html"><span class="cap-num">06</span><span class="cap-name">Transistores de Efecto de Campo IGFET</span></a></li>
+    <li><a href="../Semi/SEMI_7.html"><span class="cap-num">07</span><span class="cap-name">Tiristores</span></a></li>
+    <li><a href="../Semi/SEMI_8.html"><span class="cap-num">08</span><span class="cap-name">Amplificadores Operacionales</span></a></li>
+    <li><a href="../Semi/SEMI_9.html"><span class="cap-num">09</span><span class="cap-name">Circuitos Analógicos Prácticos</span></a></li>
+    <li><a href="../Semi/SEMI_10.html"><span class="cap-num">10</span><span class="cap-name">Filtros Activos</span></a></li>
+    <li><a href="../Semi/SEMI_11.html"><span class="cap-num">11</span><span class="cap-name">Motores de CC</span></a></li>
+    <li><a href="../Semi/SEMI_12.html"><span class="cap-num">12</span><span class="cap-name">Inversores y Accionadores de CA</span></a></li>
+    <li><a href="../Semi/SEMI_13.html"><span class="cap-num">13</span><span class="cap-name">Tubos de Electrones</span></a></li>
+    <li><a href="../Semi/SEMI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Semi/SEMI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Semi/SEMI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">
+    <span class="vol-ic"><i class="ti ti-binary" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Circuitos Digitales</span><span class="vol-lb">Vol. IV</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
-    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
-    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
-    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
-    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
-    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
-    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
-    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
-    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
-    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
-    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
-    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
-    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
-    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
-    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
-    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
-    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
-    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
-    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+    <li><a href="../Digital/DIGI_1.html"><span class="cap-num">01</span><span class="cap-name">Sistemas de Numeración</span></a></li>
+    <li><a href="../Digital/DIGI_2.html"><span class="cap-num">02</span><span class="cap-name">Aritmética Binaria</span></a></li>
+    <li><a href="../Digital/DIGI_3.html"><span class="cap-num">03</span><span class="cap-name">Puertas Lógicas</span></a></li>
+    <li><a href="../Digital/DIGI_4.html"><span class="cap-num">04</span><span class="cap-name">Interruptores</span></a></li>
+    <li><a href="../Digital/DIGI_5.html"><span class="cap-num">05</span><span class="cap-name">Relés Electromecánicos</span></a></li>
+    <li><a href="../Digital/DIGI_6.html"><span class="cap-num">06</span><span class="cap-name">Lógica de Escalera</span></a></li>
+    <li><a href="../Digital/DIGI_7.html"><span class="cap-num">07</span><span class="cap-name">Álgebra Booleana</span></a></li>
+    <li><a href="../Digital/DIGI_8.html"><span class="cap-num">08</span><span class="cap-name">Mapeo de Karnaugh</span></a></li>
+    <li><a href="../Digital/DIGI_9.html"><span class="cap-num">09</span><span class="cap-name">Funciones Lógicas Combinacionales</span></a></li>
+    <li><a href="../Digital/DIGI_10.html"><span class="cap-num">10</span><span class="cap-name">Multivibradores</span></a></li>
+    <li><a href="../Digital/DIGI_11.html"><span class="cap-num">11</span><span class="cap-name">Circuitos Secuenciales</span></a></li>
+    <li><a href="../Digital/DIGI_12.html"><span class="cap-num">12</span><span class="cap-name">Registros de Desplazamiento</span></a></li>
+    <li><a href="../Digital/DIGI_13.html"><span class="cap-num">13</span><span class="cap-name">Conversión Digital-Analógica</span></a></li>
+    <li><a href="../Digital/DIGI_14.html"><span class="cap-num">14</span><span class="cap-name">Comunicación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_15.html"><span class="cap-num">15</span><span class="cap-name">Almacenamiento Digital (Memoria)</span></a></li>
+    <li><a href="../Digital/DIGI_16.html"><span class="cap-num">16</span><span class="cap-name">Principios de Computación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Digital/DIGI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Digital/DIGI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">
+    <span class="vol-ic"><i class="ti ti-book-2" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Referencia</span><span class="vol-lb">Vol. V</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
-    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
-    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
-    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
-    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
-    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
-    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
-    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
-    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
-    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
-    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
-    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
-    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+    <li><a href="../Ref/REF_1.html"><span class="cap-num">01</span><span class="cap-name">Ecuaciones y Factores de Conversión</span></a></li>
+    <li><a href="../Ref/REF_2.html"><span class="cap-num">02</span><span class="cap-name">Códigos de Color</span></a></li>
+    <li><a href="../Ref/REF_3.html"><span class="cap-num">03</span><span class="cap-name">Tablas de Conductores y Aisladores</span></a></li>
+    <li><a href="../Ref/REF_4.html"><span class="cap-num">04</span><span class="cap-name">Referencia de Álgebra</span></a></li>
+    <li><a href="../Ref/REF_5.html"><span class="cap-num">05</span><span class="cap-name">Referencia de Trigonometría</span></a></li>
+    <li><a href="../Ref/REF_6.html"><span class="cap-num">06</span><span class="cap-name">Referencia de Cálculo</span></a></li>
+    <li><a href="../Ref/REF_7.html"><span class="cap-num">07</span><span class="cap-name">Simulación de Circuitos con SPICE</span></a></li>
+    <li><a href="../Ref/REF_8.html"><span class="cap-num">08</span><span class="cap-name">Solución de Problemas</span></a></li>
+    <li><a href="../Ref/REF_9.html"><span class="cap-num">09</span><span class="cap-name">Símbolos de Esquemas de Circuito</span></a></li>
+    <li><a href="../Ref/REF_10.html"><span class="cap-num">10</span><span class="cap-name">Tabla Periódica de los Elementos</span></a></li>
+    <li><a href="../Ref/REF_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Ref/REF_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Ref/REF_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">
+    <span class="vol-ic"><i class="ti ti-flask" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Experimentos</span><span class="vol-lb">Vol. VI</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
-    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
-    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
-    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
-    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
-    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
-    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
-    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
-    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
-    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
-    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+    <li><a href="../Exper/EXP_1.html"><span class="cap-num">01</span><span class="cap-name">Introducción</span></a></li>
+    <li><a href="../Exper/EXP_2.html"><span class="cap-num">02</span><span class="cap-name">Conceptos Básicos y Equipos de Prueba</span></a></li>
+    <li><a href="../Exper/EXP_3.html"><span class="cap-num">03</span><span class="cap-name">Circuitos CC</span></a></li>
+    <li><a href="../Exper/EXP_4.html"><span class="cap-num">04</span><span class="cap-name">Circuitos CA</span></a></li>
+    <li><a href="../Exper/EXP_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Semiconductores Discretos</span></a></li>
+    <li><a href="../Exper/EXP_6.html"><span class="cap-num">06</span><span class="cap-name">Circuitos Integrados Analógicos</span></a></li>
+    <li><a href="../Exper/EXP_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Integrados Digitales</span></a></li>
+    <li><a href="../Exper/EXP_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos con Temporizador 555</span></a></li>
+    <li><a href="../Exper/EXP_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Exper/EXP_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Exper/EXP_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">
+    <span class="vol-ic"><i class="ti ti-code" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Desarrollo</span><span class="vol-lb">Info técnica</span></span>
+  </a>
 </div>
 </nav>
 
@@ -156,42 +189,24 @@
   <main class="main-content">
     <header class="top-bar">
       <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
-      <span class="page-title">Lecciones sobre circuitos eléctricos - Volumen I (DC) - Capítulo 10</span>
+      <span class="page-title">Análisis de Red CC</span>
       <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
     </header>
     <article class="content" id="content">
-      
-<body bgcolor="white">
-
-
-
-<hr/>
-<h1>Lecciones de circuitos eléctricos - Volumen I</h1>
-<h1>Capítulo 10</h1>
-<h1>ANÁLISIS DE RED CC</h1>
-<!--minitoc-->
-<ul>
-<li><a href="#xtocid87880"><u>What is network analysis?</u></a></li>
-<li><a href="#xtocid87881"><u>Branch current method</u></a></li>
-<li><a href="#xtocid87882"><u>Mesh current method</u></a></li>
-<ul>
-<li><a href="#xtocid87883"><u>Mesh Current, conventional method</u></a></li>
-<li><a href="#xtocid87884"><u>Mesh current by inspection</u></a></li>
-</ul>
-<li><a href="#xtocid87885"><u>Node voltage method </u></a></li>
-<li><a href="#xtocid87886"><u>Introduction to network theorems</u></a></li>
-<li><a href="#xtocid87887"><u>Millman's Theorem</u></a></li>
-<li><a href="#xtocid87888"><u>Superposition Theorem</u></a></li>
-<li><a href="#xtocid87889"><u>Thevenin's Theorem</u></a></li>
-<li><a href="#xtocid878810"><u>Norton's Theorem</u></a></li>
-<li><a href="#xtocid878811"><u>Thevenin-Norton equivalencies</u></a></li>
-<li><a href="#xtocid878812"><u>Millman's Theorem revisited</u></a></li>
-<li><a href="#xtocid878813"><u>Maximum Power Transfer Theorem</u></a></li>
-<li><a href="#xtocid878814"><u>Δ-Y and Y-Δ conversions</u></a></li>
-<li><a href="#xtocid878815"><u>Contributors</u></a></li>
-<li><a href="#xtocid878816">Bibliography</a></li></ul>
-<h2><u><a name="xtocid87880">What is network analysis?</a></u></h2>
-<a name="Analysis, network"></a>
+<h1>Análisis de Red CC</h1>
+<li><a href="#xtocid87885"><u>Método de tensión de nodos </u></a></li>
+<li><a href="#xtocid87886"><u>Introducción a los teoremas de redes</u></a></li>
+<li><a href="#xtocid87887"><u>Teorema de Millman</u></a></li>
+<li><a href="#xtocid87888"><u>Teorema de Superposición</u></a></li>
+<li><a href="#xtocid87889"><u>Teorema de Thévenin</u></a></li>
+<li><a href="#xtocid878810"><u>Teorema de Norton</u></a></li>
+<li><a href="#xtocid878811"><u>Equivalencias Thévenin-Norton</u></a></li>
+<li><a href="#xtocid878812"><u>Revisión del Teorema de Millman</u></a></li>
+<li><a href="#xtocid878813"><u>Teorema de Máxima Transferencia de Potencia</u></a></li>
+<li><a href="#xtocid878814"><u>Conversiones Δ-Y e Y-Δ</u></a></li>
+<li><a href="#xtocid878815"><u>Colaboradores</u></a></li>
+<li><a href="#xtocid878816">Bibliografía</a></li></ul>
+<h2><a name="xtocid87880">¿Qué es el análisis de redes?</a></h2>
 <a name="Network analysis"></a>
 <p>En términos generales,<i>análisis de red</i>es cualquier técnica estructurada utilizada para analizar matemáticamente un circuito (una "red" de componentes interconectados).  Muy a menudo, el técnico o ingeniero encontrará circuitos que contienen múltiples fuentes de energía o configuraciones de componentes que desafían la simplificación mediante técnicas de análisis en serie/paralelo.  En esos casos, se verá obligado a utilizar otros medios.  Este capítulo presenta algunas técnicas útiles para analizar circuitos tan complejos.</p>
 <p>Para ilustrar cómo incluso un circuito simple puede desafiar el análisis al dividirlo en partes en serie y en paralelo, comience con este circuito en serie-paralelo:</p>
@@ -220,8 +235,7 @@
 <li>Algunas configuraciones de circuitos (“redes”) no se pueden resolver mediante reducción de acuerdo con las reglas de circuitos en serie/paralelo, debido a múltiples valores desconocidos.</li>
 <li>Las técnicas matemáticas para resolver múltiples incógnitas (llamadas “ecuaciones simultáneas” o “sistemas”) se pueden aplicar a leyes básicas de circuitos para resolver redes.</li>
 </ul>
-<h2><u><a name="xtocid87881">Branch current method</a></u></h2>
-<a name="Analysis, Branch Current method"></a>
+<h2><a name="xtocid87881">Método de corrientes de rama</a></h2>
 <a name="Branch Current analysis"></a>
 <p>La primera y más sencilla técnica de análisis de redes se llama<i>Método de corriente de rama</i>.  En este método, asumimos direcciones de las corrientes en una red y luego escribimos ecuaciones que describen sus relaciones entre sí mediante las leyes de Kirchhoff y Ohm.  Una vez que tenemos una ecuación para cada corriente desconocida, podemos resolver las ecuaciones simultáneas y determinar todas las corrientes y, por lo tanto, todas las caídas de voltaje en la red.</p>
 <p>Usemos este circuito para ilustrar el método:</p>
@@ -320,14 +334,13 @@ v1            v(1,2)      v(2)        v(2,3)
 <li>(6) Si alguna solución es negativa, entonces la dirección supuesta de la corriente para esa solución es incorrecta.</li>
 <li>(7) Resuelva las caídas de voltaje en todas las resistencias (E=IR).</li>
 </ul>
-<h2><u><a name="xtocid87882">Mesh current method</a></u></h2>
-<a name="Analysis, Mesh Current method"></a>
+<h2><a name="xtocid87882">Método de corrientes de malla</a></h2>
 <a name="Mesh Current analysis"></a>
 <a name="Analysis, Loop Current method"></a>
 <a name="Loop Current analysis"></a>
 <p>
 The <i>Método de corriente de malla</i>, también conocido como el<i>Método de corriente de bucle</i>, es bastante similar al método de corriente de rama en que utiliza ecuaciones simultáneas, la ley de voltaje de Kirchhoff y la ley de Ohm para determinar corrientes desconocidas en una red.  Se diferencia del método de corriente de rama en que no<i>not</i>use la ley actual de Kirchhoff y, por lo general, podrá resolver un circuito con menos variables desconocidas y menos ecuaciones simultáneas, lo cual es especialmente bueno si se ve obligado a resolver sin una calculadora.</p>
-<h3><u><a name="xtocid87883">Mesh Current, conventional method</a></u></h3>
+<h3><u><a name="xtocid87883">Corriente de malla, método convencional</a></u></h3>
 <p>Veamos cómo funciona este método en el mismo problema de ejemplo:</p>
 <p> <img src="00209.png"/> </p>
 <p>El primer paso en el método de corriente de malla es identificar "bucles" dentro del circuito que abarca todos los componentes.  En nuestro circuito de ejemplo, el bucle formado por B<sub>1</sub>, R<sub>1</sub>y R<sub>2</sub>será el primero mientras el bucle formado por B<sub>2</sub>, R<sub>2</sub>y R<sub>3</sub>será el segundo.  La parte más extraña del método Mesh Current es visualizar corrientes circulantes en cada uno de los bucles.  De hecho, este método recibe su nombre de la idea de que estas corrientes se engranan entre bucles como conjuntos de engranajes giratorios:</p>
@@ -502,7 +515,7 @@ Sin embargo, las corrientes de resistencia se comparan con los valores anteriore
 <li>(6) Agregue algebraicamente corrientes de malla para encontrar corrientes en componentes que comparten múltiples corrientes de malla.</li>
 <li>(7) Resuelva las caídas de voltaje en todas las resistencias (E=IR).</li>
 </ul>
-<h3><u><a name="xtocid87884">Mesh current by inspection</a></u></h3>
+<h3><u><a name="xtocid87884">Corriente de malla por inspección</a></u></h3>
 <p>Echamos un segundo vistazo al “método de corriente de malla” con todas las corrientes funcionando en sentido antihorario (ccw). La motivación es simplificar la escritura de ecuaciones de malla ignorando la polaridad de la caída de voltaje de la resistencia. Sin embargo, debemos prestar atención a la polaridad de las fuentes de voltaje con respecto a la dirección de corriente supuesta. El signo de las caídas de voltaje de la resistencia seguirá un patrón fijo.</p>
 <p>Si escribimos un conjunto de ecuaciones de corriente de malla convencionales para el siguiente circuito, donde prestamos atención a los signos de la caída de voltaje a través de las resistencias, podemos reorganizar los coeficientes en un patrón fijo:</p>
 <p> <img src="00501.png"/> </p>
@@ -554,8 +567,7 @@ Sin embargo, las corrientes de resistencia se comparan con los valores anteriore
 <li>Sin embargo, sí necesitamos determinar el signo de cualquier fuente de voltaje en el circuito. La fuente de voltaje es positiva si la corriente supuesta en sentido antihorario fluye con la batería (fuente). El signo es negativo si la corriente supuesta en sentido antihorario fluye contra la batería.</li>
 <li>Consulte las reglas anteriores para obtener más detalles.</li>
 </ul>
-<h2><u><a name="xtocid87885">Node voltage method </a></u></h2>
-<a name="Node voltage analysis"></a>
+<h2><a name="xtocid87885">Método de tensión de nodos </a></h2>
 <a name="Analysis, node voltage"></a>
 <p>El método de análisis de voltaje de nodo resuelve voltajes desconocidos en los nodos del circuito en términos de un sistema de ecuaciones KCL. Este análisis parece extraño porque implica reemplazar fuentes de voltaje con fuentes de corriente equivalentes. Además, los valores de resistencia en ohmios se reemplazan por conductancias equivalentes en siemens, G = 1/R. El siemens (S) es la unidad de conductancia, habiendo sustituido a la unidad mho. En cualquier caso S = Ω<sup>-1</sup>. Y S = mho (obsoleto).</p>
 <p>Comenzamos con un circuito que tiene fuentes de voltaje convencionales. Un nodo común E<sub>0</sub>Se elige como punto de referencia. Las tensiones de nodo E<sub>1</sub>y E<sub>2</sub>se calculan con respecto a este punto.</p>
@@ -667,14 +679,12 @@ Sin embargo, las corrientes de resistencia se comparan con los valores anteriore
 <li>Consulte las reglas anteriores para obtener detalles sobre cómo escribir las ecuaciones mediante inspección.</li>
 <li>La unidad de conductancia G es el siemens S. La conductancia es el recíproco de la resistencia: G = 1/R</li>
 </ul>
-<h2><u><a name="xtocid87886">Introduction to network theorems</a></u></h2>
-<a name="Network theorem"></a>
+<h2><a name="xtocid87886">Introducción a los teoremas de redes</a></h2>
 <a name="Theorem, network"></a>
 <p>Cualquiera que haya estudiado geometría debería estar familiarizado con el concepto de<i>teorema</i>: una regla relativamente simple utilizada para resolver un problema, derivada de un análisis más intensivo utilizando reglas fundamentales de las matemáticas.  Al menos hipotéticamente, cualquier problema de matemáticas se puede resolver simplemente usando las simples reglas de la aritmética (de hecho, así es como las computadoras digitales modernas realizan los cálculos matemáticos más complejos: ¡repitiendo muchos ciclos de sumas y restas!), pero los seres humanos no son tan consistentes ni tan rápidos como una computadora digital.  Necesitamos métodos “atajos” para evitar errores de procedimiento.</p>
 <p>En el análisis de redes eléctricas, las reglas fundamentales son la Ley de Ohm y las Leyes de Kirchhoff.  Si bien estas humildes leyes pueden aplicarse para analizar casi cualquier configuración de circuito (incluso si tenemos que recurrir a un álgebra compleja para manejar múltiples incógnitas), existen algunos métodos de análisis “atajos” para facilitar las matemáticas al ser humano promedio.</p>
 <p>Como ocurre con cualquier teorema de geometría o álgebra, estos teoremas de redes se derivan de reglas fundamentales.  En este capítulo no voy a profundizar en las demostraciones formales de ninguno de estos teoremas.  Si dudas de su validez, siempre puedes probarlos empíricamente configurando circuitos de ejemplo y calculando valores usando los métodos “antiguos” (ecuaciones simultáneas) versus los “nuevos” teoremas, para ver si las respuestas coinciden.  ¡Siempre deberían hacerlo!</p>
-<h2><u><a name="xtocid87887">Millman's Theorem</a></u></h2>
-<a name="Millman's Theorem"></a>
+<h2><a name="xtocid87887">Teorema de Millman</a></h2>
 <a name="Theorem, Millman's"></a>
 <p>En el teorema de Millman, el circuito se vuelve a dibujar como una red paralela de ramas, cada rama contiene una resistencia o una combinación de batería/resistencia en serie.  El teorema de Millman es aplicable sólo a aquellos circuitos que se pueden volver a dibujar en consecuencia.  Aquí nuevamente está nuestro circuito de ejemplo utilizado para los dos últimos métodos de análisis:</p>
 <p> <img src="00209.png"/> </p>
@@ -701,8 +711,7 @@ Sin embargo, las corrientes de resistencia se comparan con los valores anteriore
 <li>El teorema de Millman trata los circuitos como un conjunto paralelo de ramas de componentes en serie.</li>
 <li>Todos los voltajes ingresados ​​y resueltos en el teorema de Millman tienen referencia de polaridad en el mismo punto del circuito (generalmente el cable inferior de la red paralela).</li>
 </ul>
-<h2><u><a name="xtocid87888">Superposition Theorem</a></u></h2>
-<a name="Superposition Theorem"></a>
+<h2><a name="xtocid87888">Teorema de Superposición</a></h2>
 <a name="Theorem, Superposition"></a>
 <p>El teorema de superposición es uno de esos golpes de genio que toma un tema complejo y lo simplifica de una manera que tiene perfecto sentido.  Un teorema como el de Millman ciertamente funciona bien, pero no es del todo obvio.<i>why</i>Funciona muy bien.  La superposición, por otra parte, es obvia.</p>
 <p>La estrategia utilizada en el teorema de superposición es eliminar todas las fuentes de energía menos una dentro de una red a la vez, utilizando análisis en serie/paralelo para determinar las caídas de voltaje (y/o corrientes) dentro de la red modificada para cada fuente de energía por separado.  Luego, una vez que se han determinado las caídas de voltaje y/o corrientes para cada fuente de energía que funciona por separado, todos los valores se "superponen" uno encima del otro (se suman algebraicamente) para encontrar las caídas de voltaje/corrientes reales con todas las fuentes activas.  Veamos nuestro circuito de ejemplo nuevamente y le apliquemos el teorema de superposición:</p>
@@ -741,8 +750,7 @@ Sin embargo, las corrientes de resistencia se comparan con los valores anteriore
 <li>El teorema de superposición establece que un circuito se puede analizar con una sola fuente de energía a la vez, sumando algebraicamente los voltajes y corrientes de los componentes correspondientes para descubrir qué harán con todas las fuentes de energía vigentes.</li>
 <li>Para anular todas las fuentes de energía excepto una para el análisis, reemplace cualquier fuente de voltaje (baterías) con un cable; reemplace cualquier fuente actual con una abierta (interrupción).</li>
 </ul>
-<h2><u><a name="xtocid87889">Thevenin's Theorem</a></u></h2>
-<a name="Thevenin's Theorem"></a>
+<h2><a name="xtocid87889">Teorema de Thévenin</a></h2>
 <a name="Theorem, Thevenin's"></a>
 <a name="Nonlinear circuit"></a>
 <a name="Circuits, nonlinear"></a>
@@ -786,8 +794,7 @@ Sin embargo, las corrientes de resistencia se comparan con los valores anteriore
 <li>(3) Dibuje el circuito equivalente de Thevenin, con la fuente de voltaje de Thevenin en serie con la resistencia de Thevenin.  La resistencia de carga se vuelve a conectar entre los dos puntos abiertos del circuito equivalente.</li>
 <li>(4) Analice el voltaje y la corriente de la resistencia de carga siguiendo las reglas para circuitos en serie.</li>
 </ul>
-<h2><u><a name="xtocid878810">Norton's Theorem</a></u></h2>
-<a name="Norton's Theorem"></a>
+<h2><a name="xtocid878810">Teorema de Norton</a></h2>
 <a name="Theorem, Norton's"></a>
 <p>El teorema de Norton establece que es posible simplificar cualquier circuito lineal, por complejo que sea, a un circuito equivalente con una sola fuente de corriente y una resistencia en paralelo conectada a una carga.  Al igual que con el teorema de Thevenin, la calificación de “lineal” es idéntica a la que se encuentra en el teorema de superposición: todas las ecuaciones subyacentes deben ser lineales (sin exponentes ni raíces).</p>
 <p>Comparando nuestro circuito de ejemplo original con el equivalente de Norton: se parece a esto:</p>
@@ -822,8 +829,7 @@ Sin embargo, las corrientes de resistencia se comparan con los valores anteriore
 <li>(3) Dibuje el circuito equivalente de Norton, con la fuente de corriente Norton en paralelo con la resistencia Norton.  La resistencia de carga se vuelve a conectar entre los dos puntos abiertos del circuito equivalente.</li>
 <li>(4) Analice el voltaje y la corriente para la resistencia de carga siguiendo las reglas para circuitos en paralelo.</li>
 </ul>
-<h2><u><a name="xtocid878811">Thevenin-Norton equivalencies</a></u></h2>
-<a name="Equivalent circuit"></a>
+<h2><a name="xtocid878811">Equivalencias Thévenin-Norton</a></h2>
 <a name="Circuit, equivalent"></a>
 <p>Dado que los teoremas de Thevenin y Norton son dos métodos igualmente válidos para reducir una red compleja a algo más simple de analizar, debe haber alguna manera de convertir un circuito equivalente de Thevenin en un circuito equivalente de Norton, y viceversa (justo lo que te morías por saber, ¿verdad?).  Pues el procedimiento es muy sencillo.</p>
 <p>Es posible que haya notado que el procedimiento para calcular la resistencia de Thevenin es idéntico al procedimiento para calcular la resistencia de Norton: retire todas las fuentes de energía y determine la resistencia entre los puntos de conexión de carga abiertos.  Como tal, las resistencias de Thevenin y Norton para la misma red original deben ser iguales.  Usando los circuitos de ejemplo de las dos últimas secciones, podemos ver que las dos resistencias son iguales:</p>
@@ -849,8 +855,7 @@ Sin embargo, las corrientes de resistencia se comparan con los valores anteriore
 <li>El voltaje de Thevenin es igual a la corriente de Norton multiplicada por la resistencia de Norton.</li>
 <li>La corriente de Norton es igual al voltaje de Thevenin dividido por la resistencia de Thevenin.</li>
 </ul>
-<h2><u><a name="xtocid878812">Millman's Theorem revisited</a></u></h2>
-<a name="Millman's Theorem"></a>
+<h2><a name="xtocid878812">Revisión del Teorema de Millman</a></h2>
 <a name="Theorem, Millman's"></a>
 <p>Quizás se haya preguntado de dónde obtuvimos esa extraña ecuación para la determinación del "voltaje Millman" a través de ramas paralelas de un circuito donde cada rama contiene una resistencia en serie y una fuente de voltaje:</p>
 <p> <img src="10188.png"/> </p>
@@ -874,8 +879,7 @@ Sin embargo, las corrientes de resistencia se comparan con los valores anteriore
 <p>Resumamos lo que sabemos sobre el circuito hasta ahora.  Sabemos que la corriente total en este circuito viene dada por la suma de todos los voltajes de las ramas dividida por sus respectivas resistencias.  También sabemos que la resistencia total se encuentra tomando el recíproco de todos los recíprocos de resistencia de las ramas.  Además, debemos ser conscientes del hecho de que el voltaje total en todas las ramas se puede encontrar multiplicando la corriente total por la resistencia total (E=IR).  Todo lo que tenemos que hacer es juntar las dos ecuaciones que teníamos antes para la corriente total del circuito y la resistencia total, multiplicándolas para encontrar el voltaje total:</p>
 <p> <img src="10203.png"/> </p>
 <p>La ecuación de Millman no es más que una conversión de Thevenin a Norton combinada con la fórmula de resistencia en paralelo para encontrar el voltaje total en todas las ramas del circuito.  Entonces, ¡es de esperar que parte del misterio ya haya desaparecido!</p>
-<h2><u><a name="xtocid878813">Maximum Power Transfer Theorem</a></u></h2>
-<a name="Maximum Power Transfer Theorem"></a>
+<h2><a name="xtocid878813">Teorema de Máxima Transferencia de Potencia</a></h2>
 <a name="Theorem, Maximum Power Transfer"></a>
 <p>El teorema de transferencia de potencia máxima no es tanto un medio de análisis sino una ayuda para el diseño de sistemas.  En pocas palabras, la cantidad máxima de energía será disipada por una resistencia de carga cuando esa resistencia de carga sea igual a la resistencia Thevenin/Norton de la red que suministra la energía.  Si la resistencia de carga es menor o mayor que la resistencia Thevenin/Norton de la red fuente, su potencia disipada será menor que el máximo.</p>
 <a name="Impedance"></a>
@@ -899,8 +903,7 @@ Sin embargo, las corrientes de resistencia se comparan con los valores anteriore
 <li>The <i>Teorema de transferencia de potencia máxima</i>establece que la cantidad máxima de energía será disipada por una resistencia de carga si es igual a la resistencia de Thevenin o Norton de la red que suministra energía.</li>
 <li>El teorema de transferencia de potencia máxima no<b>not</b>satisfacer el objetivo de máxima eficiencia.</li>
 </ul>
-<h2><u><a name="xtocid878814">Δ-Y and Y-Δ conversions</a></u></h2>
-<a name="Delta-Y conversion"></a>
+<h2><a name="xtocid878814">Conversiones Δ-Y e Y-Δ</a></h2>
 <a name="Y-Delta conversion"></a>
 <p>En muchas aplicaciones de circuitos, encontramos componentes conectados entre sí de dos maneras para formar una red de tres terminales: la configuración “Delta” o Δ (también conocida como “Pi” o π) y la configuración “Y” (también conocida como “T”).</p>
 <p> <img src="00250.png"/> </p>
@@ -966,7 +969,7 @@ v1            v(1,2)      v(1,3)      v(2,3)      v(2)        v(3)
 <li>Las redes Δ e Y se pueden convertir en sus contrapartes equivalentes con las ecuaciones de resistencia adecuadas.  Por "equivalente" quiero decir que las dos redes serán eléctricamente idénticas medidas desde los tres terminales (A, B y C).</li>
 <li>Un circuito puente se puede simplificar a un circuito en serie/paralelo convirtiendo la mitad del mismo de una red Δ a una red Y.  Una vez resueltas las caídas de voltaje entre los tres puntos de conexión originales (A, B y C), esos voltajes se pueden transferir nuevamente al circuito puente original, a través de esos mismos puntos equivalentes.</li>
 </ul>
-<h2><u><a name="xtocid878815">Contributors</a></u></h2>
+<h2><a name="xtocid878815">Colaboradores</a></h2>
 <p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>
 <p>
 <b>Dejan Budimir</b>(Enero de 2003): Aclaraciones sugeridas para explicar el método de análisis de circuitos de corriente de malla.</p>
@@ -976,7 +979,7 @@ v1            v(1,2)      v(1,3)      v(2,3)      v(2)        v(3)
 <b>Jason Stark</b>(Junio ​​de 2000): Formato de documentos HTML, que dio lugar a una segunda edición mucho más atractiva.</p>
 <p>
 <b>Davy Van Nieuwenborgh</b>(Abril de 2004): Error señalado en la sección actual de Mesh, material editorial proporcionado, final de la sección.</p>
-<h2><a name="xtocid878816">Bibliography</a></h2><br/>
+<h2><a name="xtocid878816">Bibliografía</a></h2><br/>
 <ol>
 <li><a name="aef.bibitem">[aef] A.E. Fitzergerald, David E. Higginbotham, Arvin Grabel, <i>Basic Electrical Engineering</i>, (McGraw-Hill, 1975).</a></li>
 <li><a name="spi.bibitem">[spi] Tony Kuphaldt,<i>Using the Spice Circuit Simulation Program</i>, in“Lessons in Electricity, Reference”, Volume 5, Chapter 7, at <a href="http://www.ibiblio.org/obp/electricCircuits/Ref/">http://www.ibiblio.org/obp/electricCircuits/Ref/</a></a></li>
@@ -997,7 +1000,7 @@ v1            v(1,2)      v(1,3)      v(2,3)      v(2)        v(3)
 
     </article>
     <nav class="chapter-nav">
-      <a href="DC_1.html" class="nav-btn" id="btn-prev">← Anterior</a>
+      <a href="DC_9.html" class="nav-btn" id="btn-prev">← Anterior</a>
       <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
       <a href="DC_11.html" class="nav-btn" id="btn-next">Siguiente →</a>
     </nav>

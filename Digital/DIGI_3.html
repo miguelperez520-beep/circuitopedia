@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>!function(){var t=localStorage.getItem("liec-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();</script>
 <meta charset="UTF-8">
+    <meta name="description" content="Si bien el sistema de numeración binaria es una abstracción matemática interesante, todavía no hemos visto su aplicación práctica a la electrónica. Este…">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Circuitopedia">
+    <meta property="og:title" content="Puertas Lógicas — Circuitopedia">
+    <meta property="og:description" content="Si bien el sistema de numeración binaria es una abstracción matemática interesante, todavía no hemos visto su aplicación práctica a la electrónica. Este…">
+    <meta property="og:url" content="https://circuitopedia.io/Digital/DIGI_3.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Puertas Lógicas — Circuitopedia">
+    <meta name="twitter:description" content="Si bien el sistema de numeración binaria es una abstracción matemática interesante, todavía no hemos visto su aplicación práctica a la electrónica. Este…">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 3 | Lecciones de Circuitos Eléctricos</title>
+<title>Puertas Lógicas — Circuitopedia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.34.0/dist/tabler-icons.min.css">
 <style>:root { --accent: #f59e0b; }</style>
 </head>
 <body>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <a href="../index.html" class="logo">Circuitopedia</a>
       <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
     </div>
     <div class="search-box">
@@ -22,132 +34,153 @@
     </div>
     <nav class="sidebar-nav">
 <div class="vol-group">
-  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">
+    <span class="vol-ic"><i class="ti ti-bolt" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Continua</span><span class="vol-lb">Vol. I · DC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
-    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
-    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
-    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
-    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
-    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
-    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
-    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
-    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
-    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
-    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
-    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
-    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
-    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
-    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
-    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
-    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
-    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
-    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+    <li><a href="../DC/DC_1.html"><span class="cap-num">01</span><span class="cap-name">Conceptos Básicos de Electricidad</span></a></li>
+    <li><a href="../DC/DC_2.html"><span class="cap-num">02</span><span class="cap-name">Ley de Ohm</span></a></li>
+    <li><a href="../DC/DC_3.html"><span class="cap-num">03</span><span class="cap-name">Seguridad Eléctrica</span></a></li>
+    <li><a href="../DC/DC_4.html"><span class="cap-num">04</span><span class="cap-name">Notación Científica y Prefijos</span></a></li>
+    <li><a href="../DC/DC_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Serie y Paralelo</span></a></li>
+    <li><a href="../DC/DC_6.html"><span class="cap-num">06</span><span class="cap-name">Divisores y Leyes de Kirchhoff</span></a></li>
+    <li><a href="../DC/DC_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Serie-Paralelo</span></a></li>
+    <li><a href="../DC/DC_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos de Medición CC</span></a></li>
+    <li><a href="../DC/DC_9.html"><span class="cap-num">09</span><span class="cap-name">Señales de Instrumentación</span></a></li>
+    <li><a href="../DC/DC_10.html"><span class="cap-num">10</span><span class="cap-name">Análisis de Red CC</span></a></li>
+    <li><a href="../DC/DC_11.html"><span class="cap-num">11</span><span class="cap-name">Baterías y Sistemas de Energía</span></a></li>
+    <li><a href="../DC/DC_12.html"><span class="cap-num">12</span><span class="cap-name">Conductores y Aisladores</span></a></li>
+    <li><a href="../DC/DC_13.html"><span class="cap-num">13</span><span class="cap-name">Condensadores</span></a></li>
+    <li><a href="../DC/DC_14.html"><span class="cap-num">14</span><span class="cap-name">Magnetismo y Electromagnetismo</span></a></li>
+    <li><a href="../DC/DC_15.html"><span class="cap-num">15</span><span class="cap-name">Inductores</span></a></li>
+    <li><a href="../DC/DC_16.html"><span class="cap-num">16</span><span class="cap-name">Constantes de Tiempo RC y L/R</span></a></li>
+    <li><a href="../DC/DC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../DC/DC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../DC/DC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">
+    <span class="vol-ic"><i class="ti ti-wave-sine" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Alterna</span><span class="vol-lb">Vol. II · AC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
-    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
-    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
-    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
-    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
-    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
-    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
-    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
-    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
-    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
-    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
-    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
-    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
-    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
-    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
-    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
-    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+    <li><a href="../AC/AC_1.html"><span class="cap-num">01</span><span class="cap-name">Teoría Básica de CA</span></a></li>
+    <li><a href="../AC/AC_2.html"><span class="cap-num">02</span><span class="cap-name">Números Complejos</span></a></li>
+    <li><a href="../AC/AC_3.html"><span class="cap-num">03</span><span class="cap-name">Reactancia e Impedancia Inductiva</span></a></li>
+    <li><a href="../AC/AC_4.html"><span class="cap-num">04</span><span class="cap-name">Reactancia e Impedancia Capacitiva</span></a></li>
+    <li><a href="../AC/AC_5.html"><span class="cap-num">05</span><span class="cap-name">Reactancia e Impedancia R, L y C</span></a></li>
+    <li><a href="../AC/AC_6.html"><span class="cap-num">06</span><span class="cap-name">Resonancia</span></a></li>
+    <li><a href="../AC/AC_7.html"><span class="cap-num">07</span><span class="cap-name">Señales CA de Frecuencia Mixta</span></a></li>
+    <li><a href="../AC/AC_8.html"><span class="cap-num">08</span><span class="cap-name">Filtros</span></a></li>
+    <li><a href="../AC/AC_9.html"><span class="cap-num">09</span><span class="cap-name">Transformadores</span></a></li>
+    <li><a href="../AC/AC_10.html"><span class="cap-num">10</span><span class="cap-name">Circuitos CA Polifásicos</span></a></li>
+    <li><a href="../AC/AC_11.html"><span class="cap-num">11</span><span class="cap-name">Factor de Potencia</span></a></li>
+    <li><a href="../AC/AC_12.html"><span class="cap-num">12</span><span class="cap-name">Circuitos de Medición CA</span></a></li>
+    <li><a href="../AC/AC_13.html"><span class="cap-num">13</span><span class="cap-name">Motores de CA</span></a></li>
+    <li><a href="../AC/AC_14.html"><span class="cap-num">14</span><span class="cap-name">Líneas de Transmisión</span></a></li>
+    <li><a href="../AC/AC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../AC/AC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../AC/AC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">
+    <span class="vol-ic"><i class="ti ti-cpu" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Semiconductores</span><span class="vol-lb">Vol. III</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
-    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
-    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
-    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
-    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
-    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
-    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
-    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
-    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
-    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
-    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
-    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
-    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
-    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
-    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
-    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+    <li><a href="../Semi/SEMI_1.html"><span class="cap-num">01</span><span class="cap-name">Amplificadores y Dispositivos Activos</span></a></li>
+    <li><a href="../Semi/SEMI_2.html"><span class="cap-num">02</span><span class="cap-name">Dispositivos de Estado Sólido</span></a></li>
+    <li><a href="../Semi/SEMI_3.html"><span class="cap-num">03</span><span class="cap-name">Diodos y Rectificadores</span></a></li>
+    <li><a href="../Semi/SEMI_4.html"><span class="cap-num">04</span><span class="cap-name">Transistores Bipolares (BJT)</span></a></li>
+    <li><a href="../Semi/SEMI_5.html"><span class="cap-num">05</span><span class="cap-name">Transistores de Efecto de Campo JFET</span></a></li>
+    <li><a href="../Semi/SEMI_6.html"><span class="cap-num">06</span><span class="cap-name">Transistores de Efecto de Campo IGFET</span></a></li>
+    <li><a href="../Semi/SEMI_7.html"><span class="cap-num">07</span><span class="cap-name">Tiristores</span></a></li>
+    <li><a href="../Semi/SEMI_8.html"><span class="cap-num">08</span><span class="cap-name">Amplificadores Operacionales</span></a></li>
+    <li><a href="../Semi/SEMI_9.html"><span class="cap-num">09</span><span class="cap-name">Circuitos Analógicos Prácticos</span></a></li>
+    <li><a href="../Semi/SEMI_10.html"><span class="cap-num">10</span><span class="cap-name">Filtros Activos</span></a></li>
+    <li><a href="../Semi/SEMI_11.html"><span class="cap-num">11</span><span class="cap-name">Motores de CC</span></a></li>
+    <li><a href="../Semi/SEMI_12.html"><span class="cap-num">12</span><span class="cap-name">Inversores y Accionadores de CA</span></a></li>
+    <li><a href="../Semi/SEMI_13.html"><span class="cap-num">13</span><span class="cap-name">Tubos de Electrones</span></a></li>
+    <li><a href="../Semi/SEMI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Semi/SEMI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Semi/SEMI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">
+    <span class="vol-ic"><i class="ti ti-binary" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Circuitos Digitales</span><span class="vol-lb">Vol. IV</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
-    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
-    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
-    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
-    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
-    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
-    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
-    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
-    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
-    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
-    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
-    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
-    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
-    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
-    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
-    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
-    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
-    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
-    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+    <li><a href="../Digital/DIGI_1.html"><span class="cap-num">01</span><span class="cap-name">Sistemas de Numeración</span></a></li>
+    <li><a href="../Digital/DIGI_2.html"><span class="cap-num">02</span><span class="cap-name">Aritmética Binaria</span></a></li>
+    <li><a href="../Digital/DIGI_3.html"><span class="cap-num">03</span><span class="cap-name">Puertas Lógicas</span></a></li>
+    <li><a href="../Digital/DIGI_4.html"><span class="cap-num">04</span><span class="cap-name">Interruptores</span></a></li>
+    <li><a href="../Digital/DIGI_5.html"><span class="cap-num">05</span><span class="cap-name">Relés Electromecánicos</span></a></li>
+    <li><a href="../Digital/DIGI_6.html"><span class="cap-num">06</span><span class="cap-name">Lógica de Escalera</span></a></li>
+    <li><a href="../Digital/DIGI_7.html"><span class="cap-num">07</span><span class="cap-name">Álgebra Booleana</span></a></li>
+    <li><a href="../Digital/DIGI_8.html"><span class="cap-num">08</span><span class="cap-name">Mapeo de Karnaugh</span></a></li>
+    <li><a href="../Digital/DIGI_9.html"><span class="cap-num">09</span><span class="cap-name">Funciones Lógicas Combinacionales</span></a></li>
+    <li><a href="../Digital/DIGI_10.html"><span class="cap-num">10</span><span class="cap-name">Multivibradores</span></a></li>
+    <li><a href="../Digital/DIGI_11.html"><span class="cap-num">11</span><span class="cap-name">Circuitos Secuenciales</span></a></li>
+    <li><a href="../Digital/DIGI_12.html"><span class="cap-num">12</span><span class="cap-name">Registros de Desplazamiento</span></a></li>
+    <li><a href="../Digital/DIGI_13.html"><span class="cap-num">13</span><span class="cap-name">Conversión Digital-Analógica</span></a></li>
+    <li><a href="../Digital/DIGI_14.html"><span class="cap-num">14</span><span class="cap-name">Comunicación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_15.html"><span class="cap-num">15</span><span class="cap-name">Almacenamiento Digital (Memoria)</span></a></li>
+    <li><a href="../Digital/DIGI_16.html"><span class="cap-num">16</span><span class="cap-name">Principios de Computación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Digital/DIGI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Digital/DIGI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">
+    <span class="vol-ic"><i class="ti ti-book-2" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Referencia</span><span class="vol-lb">Vol. V</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
-    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
-    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
-    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
-    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
-    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
-    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
-    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
-    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
-    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
-    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
-    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
-    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+    <li><a href="../Ref/REF_1.html"><span class="cap-num">01</span><span class="cap-name">Ecuaciones y Factores de Conversión</span></a></li>
+    <li><a href="../Ref/REF_2.html"><span class="cap-num">02</span><span class="cap-name">Códigos de Color</span></a></li>
+    <li><a href="../Ref/REF_3.html"><span class="cap-num">03</span><span class="cap-name">Tablas de Conductores y Aisladores</span></a></li>
+    <li><a href="../Ref/REF_4.html"><span class="cap-num">04</span><span class="cap-name">Referencia de Álgebra</span></a></li>
+    <li><a href="../Ref/REF_5.html"><span class="cap-num">05</span><span class="cap-name">Referencia de Trigonometría</span></a></li>
+    <li><a href="../Ref/REF_6.html"><span class="cap-num">06</span><span class="cap-name">Referencia de Cálculo</span></a></li>
+    <li><a href="../Ref/REF_7.html"><span class="cap-num">07</span><span class="cap-name">Simulación de Circuitos con SPICE</span></a></li>
+    <li><a href="../Ref/REF_8.html"><span class="cap-num">08</span><span class="cap-name">Solución de Problemas</span></a></li>
+    <li><a href="../Ref/REF_9.html"><span class="cap-num">09</span><span class="cap-name">Símbolos de Esquemas de Circuito</span></a></li>
+    <li><a href="../Ref/REF_10.html"><span class="cap-num">10</span><span class="cap-name">Tabla Periódica de los Elementos</span></a></li>
+    <li><a href="../Ref/REF_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Ref/REF_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Ref/REF_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">
+    <span class="vol-ic"><i class="ti ti-flask" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Experimentos</span><span class="vol-lb">Vol. VI</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
-    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
-    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
-    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
-    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
-    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
-    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
-    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
-    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
-    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
-    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+    <li><a href="../Exper/EXP_1.html"><span class="cap-num">01</span><span class="cap-name">Introducción</span></a></li>
+    <li><a href="../Exper/EXP_2.html"><span class="cap-num">02</span><span class="cap-name">Conceptos Básicos y Equipos de Prueba</span></a></li>
+    <li><a href="../Exper/EXP_3.html"><span class="cap-num">03</span><span class="cap-name">Circuitos CC</span></a></li>
+    <li><a href="../Exper/EXP_4.html"><span class="cap-num">04</span><span class="cap-name">Circuitos CA</span></a></li>
+    <li><a href="../Exper/EXP_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Semiconductores Discretos</span></a></li>
+    <li><a href="../Exper/EXP_6.html"><span class="cap-num">06</span><span class="cap-name">Circuitos Integrados Analógicos</span></a></li>
+    <li><a href="../Exper/EXP_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Integrados Digitales</span></a></li>
+    <li><a href="../Exper/EXP_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos con Temporizador 555</span></a></li>
+    <li><a href="../Exper/EXP_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Exper/EXP_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Exper/EXP_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">
+    <span class="vol-ic"><i class="ti ti-code" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Desarrollo</span><span class="vol-lb">Info técnica</span></span>
+  </a>
 </div>
 </nav>
 
@@ -156,52 +189,28 @@
   <main class="main-content">
     <header class="top-bar">
       <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
-      <span class="page-title">Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 3</span>
+      <span class="page-title">Puertas Lógicas</span>
       <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
     </header>
     <article class="content" id="content">
-      
-<body bgcolor="white">
-
-
-
-<hr/>
-<h1>Lecciones de circuitos eléctricos - Volumen IV</h1>
-<h1>Capítulo 3</h1>
-<h1>PUERTAS LÓGICAS</h1>
-<!--minitoc-->
+<h1>Puertas Lógicas</h1>
+<li><a href="#xtocid916012"><u>Puertas TTL NAND y AND</u></a></li>
+<li><a href="#xtocid916013"><u>Puertas TTL NOR y OR</u></a></li>
+<li><a href="#xtocid916014"><u>Circuitería de puertas CMOS</u></a></li>
+<li><a href="#xtocid916015"><u>Puertas de salida especial</u></a></li>
+<li><a href="#xtocid916016"><u>Universalidad de las puertas lógicas</u></a></li>
 <ul>
-<li><a href="#xtocid91600"><u>Digital signals and gates</u></a></li>
-<li><a href="#xtocid91601"><u>The NOT gate</u></a></li>
-<li><a href="#xtocid91602"><u>The "buffer" gate</u></a></li>
-<li><a href="#xtocid91603"><u>Multiple-input gates</u></a></li>
-<ul>
-<li><a href="#xtocid91604"><u>The AND gate</u></a></li>
-<li><a href="#xtocid91605"><u>The NAND gate</u></a></li>
-<li><a href="#xtocid91606"><u>The OR gate</u></a></li>
-<li><a href="#xtocid91607"><u>The NOR gate</u></a></li>
-<li><a href="#xtocid91608"><u>The Negative-AND gate</u></a></li>
-<li><a href="#xtocid91609"><u>The Negative-OR gate</u></a></li>
-<li><a href="#xtocid916010"><u>The Exclusive-OR gate</u></a></li>
-<li><a href="#xtocid916011"><u>The Exclusive-NOR gate</u></a></li>
+<li><a href="#xtocid916017"><u>Construir la función NOT</u></a></li>
+<li><a href="#xtocid916018"><u>Construir la función buffer</u></a></li>
+<li><a href="#xtocid916019"><u>Construir la función AND</u></a></li>
+<li><a href="#xtocid916020"><u>Construir la función NAND</u></a></li>
+<li><a href="#xtocid916021"><u>Construir la función OR</u></a></li>
+<li><a href="#xtocid916022"><u>Construir la función NOR</u></a></li>
 </ul>
-<li><a href="#xtocid916012"><u>TTL NAND and AND gates</u></a></li>
-<li><a href="#xtocid916013"><u>TTL NOR and OR gates</u></a></li>
-<li><a href="#xtocid916014"><u>CMOS gate circuitry</u></a></li>
-<li><a href="#xtocid916015"><u>Special-output gates</u></a></li>
-<li><a href="#xtocid916016"><u>Gate universality</u></a></li>
-<ul>
-<li><a href="#xtocid916017"><u>Constructing the NOT function</u></a></li>
-<li><a href="#xtocid916018"><u>Constructing the "buffer" function</u></a></li>
-<li><a href="#xtocid916019"><u>Constructing the AND function</u></a></li>
-<li><a href="#xtocid916020"><u>Constructing the NAND function</u></a></li>
-<li><a href="#xtocid916021"><u>Constructing the OR function</u></a></li>
-<li><a href="#xtocid916022"><u>Constructing the NOR function</u></a></li>
-</ul>
-<li><a href="#xtocid916023"><u>Logic signal voltage levels</u></a></li>
-<li><a href="#xtocid916024"><u>DIP gate packaging</u></a></li>
-<li><a href="#xtocid916025"><u>Contributors</u></a></li></ul>
-<h2><u><a name="xtocid91600">Digital signals and gates</a></u></h2>
+<li><a href="#xtocid916023"><u>Niveles de tensión de señales lógicas</u></a></li>
+<li><a href="#xtocid916024"><u>Encapsulado DIP de puertas lógicas</u></a></li>
+<li><a href="#xtocid916025"><u>Colaboradores</u></a></li></ul>
+<h2><a name="xtocid91600">Señales digitales y puertas lógicas</a></h2>
 <p>Si bien el sistema de numeración binaria es una abstracción matemática interesante, todavía no hemos visto su aplicación práctica a la electrónica.  Este capítulo está dedicado precisamente a eso: aplicar de forma práctica el concepto de bits binarios a los circuitos.  Lo que hace que la numeración binaria sea tan importante para la aplicación de la electrónica digital es la facilidad con la que los bits pueden representarse en términos físicos.  Debido a que un bit binario sólo puede tener uno de dos valores diferentes, 0 o 1, se puede utilizar cualquier medio físico capaz de cambiar entre dos estados saturados para representar un bit.  En consecuencia, cualquier sistema físico capaz de representar bits binarios es capaz de representar cantidades numéricas y potencialmente tiene la capacidad de manipular esos números.  Este es el concepto básico que subyace a la informática digital.</p>
 <p>Los circuitos electrónicos son sistemas físicos que se prestan bien a la representación de números binarios.  Los transistores, cuando funcionan en sus límites de polarización, pueden estar en uno de dos estados diferentes: corte (sin corriente controlada) o saturación (corriente máxima controlada).  Si un circuito de transistores está diseñado para maximizar la probabilidad de caer en cualquiera de estos estados (y no operar en forma lineal o<i>activo</i>, modo), puede servir como una representación física de un bit binario.  Una señal de voltaje medida en la salida de dicho circuito también puede servir como representación de un solo bit, un voltaje bajo representa un "0" binario y un voltaje (relativamente) alto representa un "1" binario.  Tenga en cuenta el siguiente circuito de transistores:</p>
 <p> <img src="04068.png"/> </p>
@@ -242,7 +251,7 @@
 <li>Al igual que con los amplificadores operacionales, las conexiones de alimentación a las puertas a menudo se omiten en los diagramas esquemáticos en aras de la simplicidad.</li>
 <li>A <i>tabla de verdad</i>es una forma estándar de representar las relaciones de entrada/salida de un circuito de puerta, enumerando todas las posibles combinaciones de niveles lógicos de entrada con sus respectivos niveles lógicos de salida.</li>
 </ul>
-<h2><u><a name="xtocid91601">The NOT gate</a></u></h2>
+<h2><a name="xtocid91601">La puerta NOT</a></h2>
 <p>El circuito inversor de un solo transistor ilustrado anteriormente es en realidad demasiado tosco para ser de uso práctico como puerta.  Los circuitos inversores reales contienen más de un transistor para maximizar la ganancia de voltaje (para garantizar que el transistor de salida final esté en corte total o en saturación total) y otros componentes diseñados para reducir la posibilidad de daños accidentales.</p>
 <a name="Inverter gate"></a>
 <a name="NOT gate"></a>
@@ -331,7 +340,7 @@
 <li>Se dice que una puerta es<i>hundimiento</i>corriente cuando proporciona un camino para la corriente entre el terminal de salida y tierra.  En otras palabras, está poniendo a tierra (hundiendo) el terminal de salida.</li>
 <li>Circuitos de puerta con<i>tótem</i>las etapas de salida son capaces de<i>fuente</i> and <i>hundir</i>actual.  Circuitos de puerta con<i>coleccionista abierto</i>las etapas de salida solo pueden absorber corriente y no generar corriente.  Las compuertas de colector abierto son prácticas cuando se usan para controlar entradas de compuerta TTL porque las entradas TTL no requieren fuente de corriente.</li>
 </ul>
-<h2><u><a name="xtocid91602">The "buffer" gate</a></u></h2>
+<h2><a name="xtocid91602">La puerta "buffer" (seguidor)</a></h2>
 <p>Si tuviéramos que conectar dos puertas inversoras para que la salida de una alimentara la entrada de la otra, las dos funciones de inversión se "cancelarían" entre sí para que no hubiera inversión desde la entrada hasta la salida final:</p>
 <p> <img src="04087.png"/> </p>
 <p>Si bien esto puede parecer algo inútil, tiene una aplicación práctica.  Recuerde que los circuitos de puerta son señales.<i>amplificadores</i>, independientemente de qué función lógica puedan realizar.  Una fuente de señal débil (una que no es capaz de suministrar o suministrar mucha corriente a una carga) puede reforzarse mediante dos inversores como el par que se muestra en la ilustración anterior.  El nivel lógico no cambia, pero todas las capacidades de suministro o hundimiento de corriente del inversor final están disponibles para impulsar una resistencia de carga si es necesario.</p>
@@ -358,13 +367,13 @@
 <li>Los circuitos buffer están simbolizados por un símbolo de triángulo sin "burbuja" de inversor.</li>
 <li>Los buffers, al igual que los inversores, pueden fabricarse en forma de salida de colector abierto o de salida de tótem.</li>
 </ul>
-<h2><u><a name="xtocid91603">Multiple-input gates</a></u></h2>
+<h2><a name="xtocid91603">Multiple-input gates</a></h2>
 <p>Los inversores y buffers agotan las posibilidades de los circuitos de puerta de entrada única.  ¿Qué más se puede hacer con una sola señal lógica sino amortiguarla o invertirla?  Para explorar más posibilidades de puertas lógicas, debemos agregar más terminales de entrada a los circuitos.</p>
 <p>Agregar más terminales de entrada a una puerta lógica aumenta la cantidad de posibilidades de estado de entrada.  Con una puerta de entrada única, como el inversor o el buffer, solo puede haber dos estados de entrada posibles: o la entrada es "alta" (1) o es "baja" (0).  Como se mencionó anteriormente en este capítulo, una puerta de dos entradas tiene<i>cuatro</i>posibilidades (00, 01, 10 y 11).  Una puerta de tres entradas tiene<i>ocho</i>posibilidades (000, 001, 010, 011, 100, 101, 110 y 111) para estados de entrada.  El número de posibles estados de entrada es igual a dos elevado a la potencia del número de entradas:</p>
 <p> <img src="14004.png"/> </p>
 <p>Este aumento en el número de posibles estados de entrada obviamente permite un comportamiento de puerta más complejo.  Ahora, en lugar de simplemente invertir o amplificar (almacenar) un único nivel lógico "alto" o "bajo", la salida de la puerta estará determinada por cualquier<i>combinación</i>de unos y ceros está presente en los terminales de entrada.</p>
 <p>Dado que son posibles tantas combinaciones con solo unos pocos terminales de entrada, existen muchos tipos diferentes de compuertas de entrada múltiple, a diferencia de las compuertas de entrada única que solo pueden ser inversores o buffers.  En esta sección se presentará cada tipo de puerta básica, mostrando su símbolo estándar, tabla de verdad y operación práctica.  Los circuitos TTL reales de estas diferentes puertas se explorarán en secciones posteriores.</p>
-<h3><u><a name="xtocid91604">The AND gate</a></u></h3>
+<h3><u><a name="xtocid91604">La puerta AND</a></u></h3>
 <a name="AND gate"></a>
 <p>Una de las puertas de entradas múltiples más fáciles de entender es la puerta AND, llamada así porque la salida de esta puerta será "alta" (1) si y sólo si<i>all</i>entradas (primera entrada<i>and</i>la segunda entrada<i>and</i>. . .) son "altos" (1).  Si alguna entrada está "baja" (0), se garantiza que la salida también estará en un estado "bajo".</p>
 <p> <img src="04100.png"/> </p>
@@ -388,12 +397,12 @@
 <br/>
 <p> <img src="04105.png"/> </p>
 <p>Sólo con todas las entradas elevadas a niveles lógicos "altos" la salida de la puerta AND pasa a "alto", energizando así el LED sólo para uno de los cuatro estados de combinación de entradas.</p>
-<h3><u><a name="xtocid91605">The NAND gate</a></u></h3>
+<h3><u><a name="xtocid91605">La puerta NAND</a></u></h3>
 <a name="NAND gate"></a>
 <p>Una variación de la idea de la puerta AND se llama puerta NAND.  La palabra "NAND" es una contracción verbal de las palabras NOT y AND.  Esencialmente, una puerta NAND se comporta igual que una puerta AND con una puerta NOT (inversora) conectada al terminal de salida.  Para simbolizar esta inversión de la señal de salida, el símbolo de la puerta NAND tiene una burbuja en la línea de salida.  La tabla de verdad para una puerta NAND es, como cabría esperar, exactamente opuesta a la de una puerta AND:</p>
 <p> <img src="04106.png"/> </p>
 <p>Al igual que las puertas AND, las puertas NAND se fabrican con más de dos entradas.  En tales casos, se aplica el mismo principio general: la salida será "baja" (0) si y sólo si todas las entradas son "altas" (1).  Si alguna entrada es "baja" (0), la salida pasará a "alta" (1).</p>
-<h3><u><a name="xtocid91606">The OR gate</a></u></h3>
+<h3><u><a name="xtocid91606">La puerta OR</a></u></h3>
 <a name="OR gate"></a>
 <p>Nuestra siguiente puerta a investigar es la puerta OR, llamada así porque la salida de esta puerta será "alta" (1) si<i>any</i>de las entradas (primera entrada<i>or</i>la segunda entrada<i>or</i>. . .) son "altos" (1).  La salida de una puerta OR pasa a "baja" (0) si y sólo si todas las entradas son "bajas" (0).</p>
 <p> <img src="04107.png"/> </p>
@@ -414,20 +423,20 @@
 <br/>
 <p> <img src="04112.png"/> </p>
 <p>Una condición en la que cualquier entrada se eleva a un nivel lógico "alto" hace que la salida de la puerta OR pase a "alto", energizando así el LED para tres de los cuatro estados de combinación de entrada.</p>
-<h3><u><a name="xtocid91607">The NOR gate</a></u></h3>
+<h3><u><a name="xtocid91607">La puerta NOR</a></u></h3>
 <a name="NOR gate"></a>
 <p>Como habrás sospechado, la puerta NOR es una puerta O con su salida invertida, al igual que una puerta NAND es una puerta Y con una salida invertida.</p>
 <p> <img src="04113.png"/> </p>
 <p>Las puertas NOR, como todas las demás puertas de entradas múltiples vistas hasta ahora, se pueden fabricar con más de dos entradas.  Aun así, se aplica el mismo principio lógico: la salida pasa a "baja" (0) si alguna de las entradas se vuelve "alta" (1).  La salida es "alta" (1) sólo cuando todas las entradas son "bajas" (0).</p>
-<h3><u><a name="xtocid91608">The Negative-AND gate</a></u></h3>
+<h3><u><a name="xtocid91608">La puerta AND negativa</a></u></h3>
 <a name="Negative-AND gate"></a>
 <p>Una puerta AND negativa funciona igual que una puerta AND con todas sus entradas invertidas (conectadas a través de puertas NOT).  De acuerdo con la convención estándar de símbolos de puerta, estas entradas invertidas se indican mediante burbujas.  Contrariamente al primer instinto de la mayoría de las personas, el comportamiento lógico de una puerta AND Negativa es<i>not</i>Lo mismo que una puerta NAND.  Su tabla de verdad, en realidad, es idéntica a una puerta NOR:</p>
 <p> <img src="04114.png"/> </p>
-<h3><u><a name="xtocid91609">The Negative-OR gate</a></u></h3>
+<h3><u><a name="xtocid91609">La puerta OR negativa</a></u></h3>
 <a name="Negative-OR gate"></a>
 <p>Siguiendo el mismo patrón, una puerta O negativa funciona igual que una puerta O con todas sus entradas invertidas.  De acuerdo con la convención estándar de símbolos de puerta, estas entradas invertidas se indican mediante burbujas.  El comportamiento y la tabla de verdad de una puerta OR Negativo es el mismo que el de una puerta NAND:</p>
 <p> <img src="04115.png"/> </p>
-<h3><u><a name="xtocid916010">The Exclusive-OR gate</a></u></h3>
+<h3><u><a name="xtocid916010">La puerta OR exclusiva (XOR)</a></u></h3>
 <a name="Exclusive-OR gate"></a>
 <p>Los últimos seis tipos de puertas son variaciones bastante directas de tres funciones básicas: Y, O y NO.  La puerta OR Exclusiva, sin embargo, es algo bastante diferente.</p>
 <a name="XOR gate"></a>
@@ -439,7 +448,7 @@
 <p>Otro circuito equivalente para la puerta OR exclusiva utiliza una estrategia de dos puertas AND con inversores, configuradas para generar salidas "altas" (1) para las condiciones de entrada 01 y 10. Una puerta OR final permite que cualquiera de las salidas "altas" de las puertas AND cree una salida "alta" final:</p>
 <p> <img src="04118.png"/> </p>
 <p>Las puertas OR exclusivas son muy útiles para circuitos donde se van a comparar dos o más números binarios bit por bit, y también para la detección de errores (verificación de paridad) y la conversión de códigos (binario a Gray y viceversa).</p>
-<h3><u><a name="xtocid916011">The Exclusive-NOR gate</a></u></h3>
+<h3><u><a name="xtocid916011">La puerta NOR exclusiva (XNOR)</a></u></h3>
 <a name="Exclusive-NOR gate"></a>
 <a name="XNOR gate"></a>
 <p>Finalmente, nuestra última puerta de análisis es la puerta NOR exclusiva, también conocida como puerta XNOR.  Es equivalente a una puerta OR exclusiva con salida invertida.  La tabla de verdad para esta puerta es exactamente opuesta a la de la puerta OR Exclusivo:</p>
@@ -456,7 +465,7 @@
 <li>Regla para una puerta OR exclusiva: la salida es "alta" si los niveles lógicos de entrada son<i>diferente</i>.</li>
 <li>Regla para una puerta NOR exclusiva: la salida es "alta" si los niveles lógicos de entrada son los<i>mismo</i>.</li>
 </ul>
-<h2><u><a name="xtocid916012">TTL NAND and AND gates</a></u></h2>
+<h2><a name="xtocid916012">Puertas TTL NAND y AND</a></h2>
 <p>Supongamos que modificamos nuestro circuito inversor de colector abierto básico, agregando un segundo terminal de entrada como el primero:</p>
 <p> <img src="04094.png"/> </p>
 <p>Este esquema ilustra un circuito real, pero no se llama "inversor de dos entradas".  A través del análisis descubriremos cuál es la función lógica de este circuito y, en consecuencia, cómo debería designarse.</p>
@@ -491,7 +500,7 @@
 <li>Se puede crear una puerta TTL NAND tomando un circuito inversor TTL y agregando otra entrada.</li>
 <li>Se puede crear una puerta AND agregando una etapa inversora a la salida del circuito de puerta NAND.</li>
 </ul>
-<h2><u><a name="xtocid916013">TTL NOR and OR gates</a></u></h2>
+<h2><a name="xtocid916013">Puertas TTL NOR y OR</a></h2>
 <p>Examinemos el siguiente circuito TTL y analicemos su funcionamiento:</p>
 <a name="NOR gate, TTL"></a>
 <p> <img src="04127.png"/> </p>
@@ -511,7 +520,7 @@
 <li><b>REVISAR:</b></li>
 <li>Se puede crear una puerta OR agregando una etapa inversora a la salida del circuito de la puerta NOR.</li>
 </ul>
-<h2><u><a name="xtocid916014">CMOS gate circuitry</a></u></h2>
+<h2><a name="xtocid916014">Circuitería de puertas CMOS</a></h2>
 <p>Hasta este punto, nuestro análisis de circuitos lógicos de transistores se ha limitado a<i>TTL</i>paradigma de diseño, mediante el cual se utilizan transistores bipolares, y la estrategia general de entradas flotantes es equivalente a "alta" (conectada a V<sub>cc</sub>) entradas y, en consecuencia, se mantiene la asignación de etapas de salida de "colector abierto".  Sin embargo, esta no es la única forma en que podemos construir puertas lógicas.</p>
 <a name="NOT gate, CMOS"></a>
 <a name="Inverter gate, CMOS"></a>
@@ -609,8 +618,7 @@
 <li>Las puertas CMOS tienden a tener una frecuencia operativa máxima mucho más baja que las puertas TTL debido a las capacitancias de entrada causadas por las puertas MOSFET.</li>
 <li><i>Serie B</i>Las puertas CMOS tienen salidas "amortiguadas" para aumentar la ganancia de voltaje de entrada a salida, lo que resulta en una respuesta de salida más rápida a los cambios de señal de entrada.  Esto ayuda a superar la lentitud inherente de las puertas CMOS debido a la capacitancia de entrada del MOSFET y la constante de tiempo RC generada por ello.</li>
 </ul>
-<h2><u><a name="xtocid916015">Special-output gates</a></u></h2>
-<a name="Complementary output gate"></a>
+<h2><a name="xtocid916015">Puertas de salida especial</a></h2>
 <a name="Gate, complementary output"></a>
 <p>A veces es deseable tener una puerta lógica que proporcione salidas tanto invertidas como no invertidas.  Por ejemplo, una puerta de entrada única que es a la vez buffer e inversor, con un terminal de salida independiente para cada función.  O una puerta de dos entradas que proporciona las funciones AND y NAND en un solo circuito.  Estas puertas existen y se las conoce como<i>salida complementaria</i>puertas.</p>
 <p>La simbología general de dicha puerta es la figura básica de la puerta con una barra y dos líneas de salida que sobresalen de ella.  En la siguiente ilustración se muestra una serie de símbolos de puerta complementarios:</p>
@@ -641,36 +649,36 @@
 <li><i>triestado</i>Las compuertas proporcionan tres estados de salida diferentes: alto, bajo y flotante (High-Z).  Estas puertas son comandadas a sus modos de salida de alta impedancia por un terminal de entrada separado llamado<i>permitir</i>.</li>
 <li><i>Cambios bilaterales</i>son circuitos MOSFET que proporcionan conmutación de encendido/apagado para una variedad de tipos de señales eléctricas (analógicas y digitales), controladas por señales de voltaje de nivel lógico.  En esencia, son relés de estado sólido con muy baja capacidad de manejo de corriente.</li>
 </ul>
-<h2><u><a name="xtocid916016">Gate universality</a></u></h2>
+<h2><a name="xtocid916016">Universalidad de las puertas lógicas</a></h2>
 <p>Las puertas NAND y NOR poseen una propiedad especial: son universales.  Es decir, dadas suficientes puertas, cualquier tipo de puerta es capaz de imitar el funcionamiento de<i>any</i>otro tipo de puerta.  Por ejemplo, es posible construir un circuito que exhiba la función OR utilizando tres puertas NAND interconectadas.  La capacidad de que un solo tipo de puerta pueda imitar cualquier otro tipo de puerta es algo que solo disfrutan NAND y NOR.  De hecho, los sistemas de control digital se han diseñado únicamente en torno a puertas NAND o NOR, y todas las funciones lógicas necesarias se derivan de conjuntos de NAND o NOR interconectados.</p>
 <p>Como prueba de esta propiedad, esta sección se dividirá en subsecciones que muestran cómo se pueden formar todos los tipos de puertas básicas utilizando solo NAND o solo NOR.</p>
-<h3><u><a name="xtocid916017">Constructing the NOT function</a></u></h3>
+<h3><u><a name="xtocid916017">Construir la función NOT</a></u></h3>
 <a name="NOT function, from a NOR gate"></a>
 <a name="NOT function, from a NAND gate"></a>
 <p> <img src="04154.png"/> </p>
 <p>Como puede ver, hay dos formas de utilizar una puerta NAND como inversor y dos formas de utilizar una puerta NOR como inversor.  Cualquiera de los métodos funciona, aunque conectar entradas TTL juntas aumenta la cantidad de carga de corriente en la puerta de conducción.  Para las puertas CMOS, los terminales de entrada comunes disminuyen la velocidad de conmutación de la puerta debido al aumento de la capacitancia de entrada.</p>
 <p>Los inversores son la herramienta fundamental para transformar un tipo de función lógica en otro, por lo que se mostrarán muchos inversores en las siguientes ilustraciones.  En esos diagramas, solo mostraré un método de inversión, y será donde la entrada de la puerta NAND no utilizada se conecta a +V (ya sea V<sub>cc</sub>o V<sub>dd</sub>, dependiendo de si el circuito es TTL o CMOS) y donde la entrada no utilizada para la puerta NOR está conectada a tierra.  Tenga en cuenta que el otro método de inversión (conectar ambas entradas NAND o NOR juntas) funciona igual de bien desde un punto de vista lógico (1 y 0), pero no es deseable desde las perspectivas prácticas de mayor carga de corriente para TTL y mayor capacitancia de entrada para CMOS.</p>
-<h3><u><a name="xtocid916018">Constructing the "buffer" function</a></u></h3>
+<h3><u><a name="xtocid916018">Construir la función buffer</a></u></h3>
 <p>Dado que es bastante fácil emplear puertas NAND y NOR para realizar la función de inversor (NO), es lógico que dos de estas etapas de puertas darán como resultado una función de búfer, donde la salida tiene el mismo estado lógico que la entrada.</p>
 <a name="Buffer function, from a NOR gate"></a>
 <a name="Buffer function, from a NAND gate"></a>
 <p> <img src="04155.png"/> </p>
-<h3><u><a name="xtocid916019">Constructing the AND function</a></u></h3>
+<h3><u><a name="xtocid916019">Construir la función AND</a></u></h3>
 <p>Para realizar la función AND desde puertas NAND, todo lo que se necesita es una etapa inversora (NO) en la salida de una puerta NAND.  Esta inversión adicional "anula" la primera<i>N</i> in <i>NAND</i>, dejando la función AND.  Se necesita un poco más de trabajo para lograr la misma funcionalidad de las puertas NOR, pero se puede hacer invirtiendo ("NO") todas las entradas a una puerta NOR.</p>
 <a name="AND function, from NOR gates"></a>
 <a name="AND function, from NAND gates"></a>
 <p> <img src="04156.png"/> </p>
-<h3><u><a name="xtocid916020">Constructing the NAND function</a></u></h3>
+<h3><u><a name="xtocid916020">Construir la función NAND</a></u></h3>
 <p>Sería inútil mostrarle cómo "construir" la función NAND utilizando una puerta NAND, ya que no hay nada que hacer.  Para que una puerta NOR realice la función NAND, debemos invertir todas las entradas a la puerta NOR así como la salida de la puerta NOR.  Para una puerta de dos entradas, esto requiere tres puertas NOR más conectadas como inversores.</p>
 <a name="NAND function, from NOR gates"></a>
 <p> <img src="04157.png"/> </p>
-<h3><u><a name="xtocid916021">Constructing the OR function</a></u></h3>
+<h3><u><a name="xtocid916021">Construir la función OR</a></u></h3>
 <a name="DeMorgan's Theorem"></a>
 <p>Invertir la salida de una puerta NOR (con otra puerta NOR conectada como inversor) da como resultado la función OR.  La puerta NAND, por otro lado, requiere la inversión de todas las entradas para imitar la función OR, tal como necesitábamos invertir todas las entradas de una puerta NOR para obtener la función AND.  Recuerde que la inversión de todas las entradas a una puerta da como resultado el cambio de la función esencial de esa puerta de Y a O (o viceversa), además de una salida invertida.  Por lo tanto, con todas las entradas invertidas, una NAND se comporta como una OR, una NOR se comporta como una AND, una AND se comporta como una NOR y una OR se comporta como una NAND.  En álgebra booleana, esta transformación se conoce como<i>Teorema de De Morgan</i>, tratado con más detalle en un capítulo posterior de este libro.</p>
 <a name="OR function, from NOR gates"></a>
 <a name="OR function, from NAND gates"></a>
 <p> <img src="04158.png"/> </p>
-<h3><u><a name="xtocid916022">Constructing the NOR function</a></u></h3>
+<h3><u><a name="xtocid916022">Construir la función NOR</a></u></h3>
 <p>Al igual que el procedimiento para hacer que una puerta NOR se comporte como una NAND, debemos invertir todas las entradas y la salida para que una puerta NAND funcione como una NOR.</p>
 <a name="NOR function, from NAND gates"></a>
 <p> <img src="04159.png"/> </p>
@@ -678,7 +686,7 @@
 <li><b>REVISAR:</b></li>
 <li>Las puertas NAND y NOR son universales: es decir, tienen la capacidad de imitar cualquier tipo de puerta, si están interconectadas en número suficiente.</li>
 </ul>
-<h2><u><a name="xtocid916023">Logic signal voltage levels</a></u></h2>
+<h2><a name="xtocid916023">Niveles de tensión de señales lógicas</a></h2>
 <p>Los circuitos de puerta lógica están diseñados para recibir y emitir solo dos tipos de señales: "alta" (1) y "baja" (0), representadas por un voltaje variable: voltaje de suministro de energía total para un estado "alto" y voltaje cero para un estado "bajo".  En un mundo perfecto, todas las señales del circuito lógico existirían en estos límites de voltaje extremos y nunca se desviarían de ellos (es decir, menos del voltaje total para un "alto" o más de cero voltaje para un "bajo").  Sin embargo, en realidad, los niveles de voltaje de la señal lógica rara vez alcanzan estos límites perfectos debido a caídas de voltaje parásitas en el circuito del transistor, por lo que debemos comprender las limitaciones del nivel de señal de los circuitos de compuerta cuando intentan interpretar los voltajes de señal que se encuentran en algún lugar.<i>entre</i>tensión de alimentación total y cero.</p>
 <p>Las puertas TTL funcionan con una tensión de alimentación nominal de 5 voltios, +/- 0,25 voltios.  Idealmente, una señal TTL "alta" sería exactamente de 5,00 voltios y una señal TTL "baja" de 0,00 voltios exactamente.  Sin embargo, los circuitos de compuerta TTL reales no pueden generar niveles de voltaje tan perfectos y están diseñados para aceptar señales "altas" y "bajas" que se desvían sustancialmente de estos valores ideales.  Los voltajes de señal de entrada "aceptables" varían de 0 voltios a 0,8 voltios para un estado lógico "bajo" y de 2 voltios a 5 voltios para un estado lógico "alto".  Los voltajes de señal de salida "aceptables" (niveles de voltaje garantizados por el fabricante de la puerta en un rango específico de condiciones de carga) varían de 0 voltios a 0,5 voltios para un estado lógico "bajo" y de 2,7 voltios a 5 voltios para un estado lógico "alto":</p>
 <p> <img src="04312.png"/> </p>
@@ -724,8 +732,7 @@
 <p>Cuando la puerta CMOS en cuestión está alimentada por una fuente de voltaje superior a 5 voltios (V<sub>cc</sub>), sin embargo, se producirá un problema.  El estado de salida "alto" de la puerta CMOS, al ser superior a 5 voltios, excederá los límites de entrada aceptables de la puerta TTL para una señal "alta".  Una solución a este problema es crear un circuito inversor de "colector abierto" utilizando un transistor NPN discreto y utilizarlo para interconectar las dos puertas:</p>
 <p> <img src="04329.png"/> </p>
 <p>La "R<sub>pull-up</sub>"La resistencia es opcional, ya que las entradas TTL asumen automáticamente un estado "alto" cuando se dejan flotando, que es lo que sucederá cuando la salida de la puerta CMOS sea "baja" y el transistor se corte. Por supuesto, una consecuencia muy importante de implementar esta solución es la inversión lógica creada por el transistor: cuando la puerta CMOS emite una señal "baja", la puerta TTL ve una entrada "alta"; y cuando la puerta CMOS emite una señal "alta", el transistor se satura y la puerta TTL ve una entrada "baja" Siempre que esta inversión se tenga en cuenta en el esquema lógico del sistema, todo estará bien.</p>
-<h2><u><a name="xtocid916024">DIP gate packaging</a></u></h2>
-<a name="DIP gate packaging"></a>
+<h2><a name="xtocid916024">Encapsulado DIP de puertas lógicas</a></h2>
 <a name="Dual Inline Package"></a>
 <p>Los circuitos de puerta lógica digital se fabrican como circuitos integrados: todos los transistores y resistencias que los constituyen están construidos en una sola pieza de material semiconductor.  El ingeniero, técnico o aficionado que utilice una pequeña cantidad de puertas probablemente encontrará lo que necesita encerrado en un DIP (<b>D</b>ual <b>I</b>en línea<b>P</b>paquete) vivienda.  Los circuitos integrados encapsulados en DIP están disponibles con números pares de pines, ubicados a intervalos de 0,100 pulgadas entre sí para compatibilidad con el diseño de la placa de circuito estándar.  Los recuentos de pines de 8, 14, 16, 18 y 24 son comunes para los "chips" DIP.</p>
 <p>Los números de pieza proporcionados a estos paquetes DIP especifican qué tipo de puertas están incluidas y cuántas.  Estos números de pieza son estándares de la industria, lo que significa que un "74LS02" fabricado por Motorola tendrá una función idéntica a un "74LS02" fabricado por Fairchild o por cualquier otro fabricante.  Los códigos de letras antepuestos al número de pieza son exclusivos del fabricante y no son códigos estándar de la industria.  Por ejemplo, un SN74LS02 es una puerta TTL NOR cuádruple de 2 entradas fabricada por Motorola, mientras que un DM74LS02 es exactamente el mismo circuito fabricado por Fairchild.</p>
@@ -736,7 +743,7 @@
 </p>
 <br/>
 <p> <img src="04161.png"/> </p>
-<h2><u><a name="xtocid916025">Contributors</a></u></h2>
+<h2><a name="xtocid916025">Colaboradores</a></h2>
 <p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>
 <p>
 <b>Jan-Willem Rensman</b>(2 de mayo de 2002): Sugirió la inclusión de activadores Schmitt e histéresis de puerta en este capítulo.</p>

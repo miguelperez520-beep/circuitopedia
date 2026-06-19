@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>!function(){var t=localStorage.getItem("liec-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();</script>
 <meta charset="UTF-8">
+    <meta name="description" content="El capítulo 1.1 del Volumen I analiza la electricidad estática y cómo se crea. Esto tiene mucha más importancia de lo que podría suponerse en un principio, ya…">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Circuitopedia">
+    <meta property="og:title" content="Circuitos Analógicos Prácticos — Circuitopedia">
+    <meta property="og:description" content="El capítulo 1.1 del Volumen I analiza la electricidad estática y cómo se crea. Esto tiene mucha más importancia de lo que podría suponerse en un principio,">
+    <meta property="og:url" content="https://circuitopedia.io/Semi/SEMI_9.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Circuitos Analógicos Prácticos — Circuitopedia">
+    <meta name="twitter:description" content="El capítulo 1.1 del Volumen I analiza la electricidad estática y cómo se crea. Esto tiene mucha más importancia de lo que podría suponerse en un principio,">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecciones de circuitos eléctricos - Volumen III (Semiconductores) - Capítulo 9 | Lecciones de Circuitos Eléctricos</title>
+<title>Circuitos Analógicos Prácticos — Circuitopedia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.34.0/dist/tabler-icons.min.css">
 <style>:root { --accent: #10b981; }</style>
 </head>
 <body>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <a href="../index.html" class="logo">Circuitopedia</a>
       <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
     </div>
     <div class="search-box">
@@ -22,132 +34,153 @@
     </div>
     <nav class="sidebar-nav">
 <div class="vol-group">
-  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">
+    <span class="vol-ic"><i class="ti ti-bolt" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Continua</span><span class="vol-lb">Vol. I · DC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
-    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
-    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
-    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
-    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
-    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
-    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
-    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
-    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
-    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
-    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
-    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
-    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
-    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
-    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
-    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
-    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
-    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
-    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+    <li><a href="../DC/DC_1.html"><span class="cap-num">01</span><span class="cap-name">Conceptos Básicos de Electricidad</span></a></li>
+    <li><a href="../DC/DC_2.html"><span class="cap-num">02</span><span class="cap-name">Ley de Ohm</span></a></li>
+    <li><a href="../DC/DC_3.html"><span class="cap-num">03</span><span class="cap-name">Seguridad Eléctrica</span></a></li>
+    <li><a href="../DC/DC_4.html"><span class="cap-num">04</span><span class="cap-name">Notación Científica y Prefijos</span></a></li>
+    <li><a href="../DC/DC_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Serie y Paralelo</span></a></li>
+    <li><a href="../DC/DC_6.html"><span class="cap-num">06</span><span class="cap-name">Divisores y Leyes de Kirchhoff</span></a></li>
+    <li><a href="../DC/DC_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Serie-Paralelo</span></a></li>
+    <li><a href="../DC/DC_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos de Medición CC</span></a></li>
+    <li><a href="../DC/DC_9.html"><span class="cap-num">09</span><span class="cap-name">Señales de Instrumentación</span></a></li>
+    <li><a href="../DC/DC_10.html"><span class="cap-num">10</span><span class="cap-name">Análisis de Red CC</span></a></li>
+    <li><a href="../DC/DC_11.html"><span class="cap-num">11</span><span class="cap-name">Baterías y Sistemas de Energía</span></a></li>
+    <li><a href="../DC/DC_12.html"><span class="cap-num">12</span><span class="cap-name">Conductores y Aisladores</span></a></li>
+    <li><a href="../DC/DC_13.html"><span class="cap-num">13</span><span class="cap-name">Condensadores</span></a></li>
+    <li><a href="../DC/DC_14.html"><span class="cap-num">14</span><span class="cap-name">Magnetismo y Electromagnetismo</span></a></li>
+    <li><a href="../DC/DC_15.html"><span class="cap-num">15</span><span class="cap-name">Inductores</span></a></li>
+    <li><a href="../DC/DC_16.html"><span class="cap-num">16</span><span class="cap-name">Constantes de Tiempo RC y L/R</span></a></li>
+    <li><a href="../DC/DC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../DC/DC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../DC/DC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">
+    <span class="vol-ic"><i class="ti ti-wave-sine" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Alterna</span><span class="vol-lb">Vol. II · AC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
-    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
-    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
-    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
-    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
-    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
-    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
-    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
-    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
-    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
-    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
-    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
-    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
-    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
-    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
-    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
-    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+    <li><a href="../AC/AC_1.html"><span class="cap-num">01</span><span class="cap-name">Teoría Básica de CA</span></a></li>
+    <li><a href="../AC/AC_2.html"><span class="cap-num">02</span><span class="cap-name">Números Complejos</span></a></li>
+    <li><a href="../AC/AC_3.html"><span class="cap-num">03</span><span class="cap-name">Reactancia e Impedancia Inductiva</span></a></li>
+    <li><a href="../AC/AC_4.html"><span class="cap-num">04</span><span class="cap-name">Reactancia e Impedancia Capacitiva</span></a></li>
+    <li><a href="../AC/AC_5.html"><span class="cap-num">05</span><span class="cap-name">Reactancia e Impedancia R, L y C</span></a></li>
+    <li><a href="../AC/AC_6.html"><span class="cap-num">06</span><span class="cap-name">Resonancia</span></a></li>
+    <li><a href="../AC/AC_7.html"><span class="cap-num">07</span><span class="cap-name">Señales CA de Frecuencia Mixta</span></a></li>
+    <li><a href="../AC/AC_8.html"><span class="cap-num">08</span><span class="cap-name">Filtros</span></a></li>
+    <li><a href="../AC/AC_9.html"><span class="cap-num">09</span><span class="cap-name">Transformadores</span></a></li>
+    <li><a href="../AC/AC_10.html"><span class="cap-num">10</span><span class="cap-name">Circuitos CA Polifásicos</span></a></li>
+    <li><a href="../AC/AC_11.html"><span class="cap-num">11</span><span class="cap-name">Factor de Potencia</span></a></li>
+    <li><a href="../AC/AC_12.html"><span class="cap-num">12</span><span class="cap-name">Circuitos de Medición CA</span></a></li>
+    <li><a href="../AC/AC_13.html"><span class="cap-num">13</span><span class="cap-name">Motores de CA</span></a></li>
+    <li><a href="../AC/AC_14.html"><span class="cap-num">14</span><span class="cap-name">Líneas de Transmisión</span></a></li>
+    <li><a href="../AC/AC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../AC/AC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../AC/AC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">
+    <span class="vol-ic"><i class="ti ti-cpu" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Semiconductores</span><span class="vol-lb">Vol. III</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
-    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
-    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
-    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
-    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
-    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
-    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
-    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
-    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
-    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
-    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
-    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
-    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
-    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
-    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
-    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+    <li><a href="../Semi/SEMI_1.html"><span class="cap-num">01</span><span class="cap-name">Amplificadores y Dispositivos Activos</span></a></li>
+    <li><a href="../Semi/SEMI_2.html"><span class="cap-num">02</span><span class="cap-name">Dispositivos de Estado Sólido</span></a></li>
+    <li><a href="../Semi/SEMI_3.html"><span class="cap-num">03</span><span class="cap-name">Diodos y Rectificadores</span></a></li>
+    <li><a href="../Semi/SEMI_4.html"><span class="cap-num">04</span><span class="cap-name">Transistores Bipolares (BJT)</span></a></li>
+    <li><a href="../Semi/SEMI_5.html"><span class="cap-num">05</span><span class="cap-name">Transistores de Efecto de Campo JFET</span></a></li>
+    <li><a href="../Semi/SEMI_6.html"><span class="cap-num">06</span><span class="cap-name">Transistores de Efecto de Campo IGFET</span></a></li>
+    <li><a href="../Semi/SEMI_7.html"><span class="cap-num">07</span><span class="cap-name">Tiristores</span></a></li>
+    <li><a href="../Semi/SEMI_8.html"><span class="cap-num">08</span><span class="cap-name">Amplificadores Operacionales</span></a></li>
+    <li><a href="../Semi/SEMI_9.html"><span class="cap-num">09</span><span class="cap-name">Circuitos Analógicos Prácticos</span></a></li>
+    <li><a href="../Semi/SEMI_10.html"><span class="cap-num">10</span><span class="cap-name">Filtros Activos</span></a></li>
+    <li><a href="../Semi/SEMI_11.html"><span class="cap-num">11</span><span class="cap-name">Motores de CC</span></a></li>
+    <li><a href="../Semi/SEMI_12.html"><span class="cap-num">12</span><span class="cap-name">Inversores y Accionadores de CA</span></a></li>
+    <li><a href="../Semi/SEMI_13.html"><span class="cap-num">13</span><span class="cap-name">Tubos de Electrones</span></a></li>
+    <li><a href="../Semi/SEMI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Semi/SEMI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Semi/SEMI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">
+    <span class="vol-ic"><i class="ti ti-binary" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Circuitos Digitales</span><span class="vol-lb">Vol. IV</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
-    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
-    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
-    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
-    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
-    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
-    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
-    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
-    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
-    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
-    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
-    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
-    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
-    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
-    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
-    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
-    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
-    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
-    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+    <li><a href="../Digital/DIGI_1.html"><span class="cap-num">01</span><span class="cap-name">Sistemas de Numeración</span></a></li>
+    <li><a href="../Digital/DIGI_2.html"><span class="cap-num">02</span><span class="cap-name">Aritmética Binaria</span></a></li>
+    <li><a href="../Digital/DIGI_3.html"><span class="cap-num">03</span><span class="cap-name">Puertas Lógicas</span></a></li>
+    <li><a href="../Digital/DIGI_4.html"><span class="cap-num">04</span><span class="cap-name">Interruptores</span></a></li>
+    <li><a href="../Digital/DIGI_5.html"><span class="cap-num">05</span><span class="cap-name">Relés Electromecánicos</span></a></li>
+    <li><a href="../Digital/DIGI_6.html"><span class="cap-num">06</span><span class="cap-name">Lógica de Escalera</span></a></li>
+    <li><a href="../Digital/DIGI_7.html"><span class="cap-num">07</span><span class="cap-name">Álgebra Booleana</span></a></li>
+    <li><a href="../Digital/DIGI_8.html"><span class="cap-num">08</span><span class="cap-name">Mapeo de Karnaugh</span></a></li>
+    <li><a href="../Digital/DIGI_9.html"><span class="cap-num">09</span><span class="cap-name">Funciones Lógicas Combinacionales</span></a></li>
+    <li><a href="../Digital/DIGI_10.html"><span class="cap-num">10</span><span class="cap-name">Multivibradores</span></a></li>
+    <li><a href="../Digital/DIGI_11.html"><span class="cap-num">11</span><span class="cap-name">Circuitos Secuenciales</span></a></li>
+    <li><a href="../Digital/DIGI_12.html"><span class="cap-num">12</span><span class="cap-name">Registros de Desplazamiento</span></a></li>
+    <li><a href="../Digital/DIGI_13.html"><span class="cap-num">13</span><span class="cap-name">Conversión Digital-Analógica</span></a></li>
+    <li><a href="../Digital/DIGI_14.html"><span class="cap-num">14</span><span class="cap-name">Comunicación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_15.html"><span class="cap-num">15</span><span class="cap-name">Almacenamiento Digital (Memoria)</span></a></li>
+    <li><a href="../Digital/DIGI_16.html"><span class="cap-num">16</span><span class="cap-name">Principios de Computación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Digital/DIGI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Digital/DIGI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">
+    <span class="vol-ic"><i class="ti ti-book-2" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Referencia</span><span class="vol-lb">Vol. V</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
-    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
-    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
-    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
-    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
-    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
-    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
-    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
-    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
-    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
-    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
-    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
-    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+    <li><a href="../Ref/REF_1.html"><span class="cap-num">01</span><span class="cap-name">Ecuaciones y Factores de Conversión</span></a></li>
+    <li><a href="../Ref/REF_2.html"><span class="cap-num">02</span><span class="cap-name">Códigos de Color</span></a></li>
+    <li><a href="../Ref/REF_3.html"><span class="cap-num">03</span><span class="cap-name">Tablas de Conductores y Aisladores</span></a></li>
+    <li><a href="../Ref/REF_4.html"><span class="cap-num">04</span><span class="cap-name">Referencia de Álgebra</span></a></li>
+    <li><a href="../Ref/REF_5.html"><span class="cap-num">05</span><span class="cap-name">Referencia de Trigonometría</span></a></li>
+    <li><a href="../Ref/REF_6.html"><span class="cap-num">06</span><span class="cap-name">Referencia de Cálculo</span></a></li>
+    <li><a href="../Ref/REF_7.html"><span class="cap-num">07</span><span class="cap-name">Simulación de Circuitos con SPICE</span></a></li>
+    <li><a href="../Ref/REF_8.html"><span class="cap-num">08</span><span class="cap-name">Solución de Problemas</span></a></li>
+    <li><a href="../Ref/REF_9.html"><span class="cap-num">09</span><span class="cap-name">Símbolos de Esquemas de Circuito</span></a></li>
+    <li><a href="../Ref/REF_10.html"><span class="cap-num">10</span><span class="cap-name">Tabla Periódica de los Elementos</span></a></li>
+    <li><a href="../Ref/REF_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Ref/REF_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Ref/REF_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">
+    <span class="vol-ic"><i class="ti ti-flask" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Experimentos</span><span class="vol-lb">Vol. VI</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
-    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
-    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
-    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
-    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
-    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
-    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
-    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
-    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
-    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
-    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+    <li><a href="../Exper/EXP_1.html"><span class="cap-num">01</span><span class="cap-name">Introducción</span></a></li>
+    <li><a href="../Exper/EXP_2.html"><span class="cap-num">02</span><span class="cap-name">Conceptos Básicos y Equipos de Prueba</span></a></li>
+    <li><a href="../Exper/EXP_3.html"><span class="cap-num">03</span><span class="cap-name">Circuitos CC</span></a></li>
+    <li><a href="../Exper/EXP_4.html"><span class="cap-num">04</span><span class="cap-name">Circuitos CA</span></a></li>
+    <li><a href="../Exper/EXP_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Semiconductores Discretos</span></a></li>
+    <li><a href="../Exper/EXP_6.html"><span class="cap-num">06</span><span class="cap-name">Circuitos Integrados Analógicos</span></a></li>
+    <li><a href="../Exper/EXP_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Integrados Digitales</span></a></li>
+    <li><a href="../Exper/EXP_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos con Temporizador 555</span></a></li>
+    <li><a href="../Exper/EXP_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Exper/EXP_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Exper/EXP_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">
+    <span class="vol-ic"><i class="ti ti-code" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Desarrollo</span><span class="vol-lb">Info técnica</span></span>
+  </a>
 </div>
 </nav>
 
@@ -156,49 +189,33 @@
   <main class="main-content">
     <header class="top-bar">
       <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
-      <span class="page-title">Lecciones de circuitos eléctricos - Volumen III (Semiconductores) - Capítulo 9</span>
+      <span class="page-title">Circuitos Analógicos Prácticos</span>
       <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
     </header>
     <article class="content" id="content">
-      
-<body bgcolor="white">
-
-
-
-<hr/>
-<h1>Lecciones de circuitos eléctricos - Volumen III</h1>
-<h1>Capítulo 9</h1>
-<h1>CIRCUITOS SEMICONDUCTOR ANALÓGICOS PRÁCTICOS</h1>
-<!--minitoc-->
+<h1>Circuitos Analógicos Prácticos</h1>
+<li><a href="#xtocid90814"><u>Circuitos de fuentes de alimentación</u></a></li>
 <ul>
-<li><a href="#xtocid90810"><u>ElectroStatic Discharge</u></a></li>
-<ul>
-<li><a href="#xtocid90811"><u>ESD Damage Prevention</u></a></li>
-<li><a href="#xtocid90812"><u>Storage and Transportation of ESD sensitive component and boards</u></a></li>
-<li><a href="#xtocid90813"><u>Conclusion</u></a></li>
+<li><a href="#xtocid90815"><u>Tipos de fuentes de alimentación</u></a></li>
+<li><a href="#xtocid90816"><u>Introducción a las fuentes de alimentación</u></a></li>
+<li><a href="#xtocid90817"><u>Fuentes de alimentación lineales</u></a></li>
 </ul>
-<li><a href="#xtocid90814"><u>Power Supply circuits</u></a></li>
+<li><a href="#xtocid90818"><u>Circuitos amplificadores</u></a></li>
+<li><a href="#xtocid90819"><u>Circuitos osciladores</u></a></li>
 <ul>
-<li><a href="#xtocid90815"><u>Power Supply types</u></a></li>
-<li><a href="#xtocid90816"><u>Power Supply Introduction</u></a></li>
-<li><a href="#xtocid90817"><u>Linear power supplies</u></a></li>
+<li><a href="#xtocid908110"><u>Multiplicador con varactor</u></a></li>
 </ul>
-<li><a href="#xtocid90818"><u>Amplifier circuits -- PENDING</u></a></li>
-<li><a href="#xtocid90819"><u>Oscillator circuits -- INCOMPLETE</u></a></li>
-<ul>
-<li><a href="#xtocid908110"><u>Varactor multiplier</u></a></li>
-</ul>
-<li><a href="#xtocid908111"><u>Phase-locked loops -- PENDING</u></a></li>
-<li><a href="#xtocid908112"><u>Radio circuits -- INCOMPLETE</u></a></li>
-<li><a href="#xtocid908113"><u>Computational circuits</u></a></li>
-<li><a href="#xtocid908114"><u>Measurement circuits -- INCOMPLETE</u></a></li>
-<li><a href="#xtocid908115"><u>Control circuits -- PENDING</u></a></li>
-<li><a href="#xtocid908116"><u>Contributors</u></a></li>
-<li><a href="#xtocid908117">Bibliography</a></li></ul>
+<li><a href="#xtocid908111"><u>Lazos de enganche de fase (PLL)</u></a></li>
+<li><a href="#xtocid908112"><u>Circuitos de radio</u></a></li>
+<li><a href="#xtocid908113"><u>Circuitos de cómputo</u></a></li>
+<li><a href="#xtocid908114"><u>Circuitos de medición</u></a></li>
+<li><a href="#xtocid908115"><u>Circuitos de control</u></a></li>
+<li><a href="#xtocid908116"><u>Colaboradores</u></a></li>
+<li><a href="#xtocid908117">Bibliografía</a></li></ul>
 <p>
 <b>*** INCOMPLETO ***</b>
 </p>
-<h2><u><a name="xtocid90810">ElectroStatic Discharge</a></u></h2>
+<h2><a name="xtocid90810">ElectroStatic Discharge</a></h2>
 <p>El capítulo 1.1 del Volumen I analiza la electricidad estática y cómo se crea. Esto tiene mucha más importancia de lo que podría suponerse en un principio, ya que el control de la electricidad estática desempeña un papel importante en la electrónica moderna y otras profesiones. Un evento de descarga electrostática ocurre cuando una carga estática se elimina de manera incontrolada y en lo sucesivo se denominará ESD.</p>
 <p>La ESD se presenta en muchas formas, puede ser tan pequeña como 50 voltios de electricidad y se ecualiza hasta decenas de miles de voltios. La potencia real es extremadamente pequeña, tan pequeña que generalmente no representa ningún peligro para alguien que se encuentre en el camino de descarga de ESD. Por lo general, se necesitan varios miles de voltios para que una persona note la ESD en forma de chispa y el familiar golpe que la acompaña. El problema con las ESD es que incluso una pequeña descarga que puede pasar completamente desapercibida puede arruinar los semiconductores. Una carga estática de miles de voltios es común; sin embargo, la razón por la que no es una amenaza es que no hay ninguna corriente de duración sustancial detrás de ella. Estos voltajes extremos permiten la ionización del aire y permiten que otros materiales se descompongan, que es la raíz de donde proviene el daño.</p>
 <p>La ESD no es un problema nuevo. La fabricación de pólvora negra y otras industrias pirotécnicas siempre han sido peligrosas si se produce un evento de ESD en circunstancias equivocadas. Durante la era de los tubos (también conocidos como válvulas), la ESD era un problema inexistente para la electrónica, pero con la llegada de los semiconductores y el aumento de la miniaturización, se ha vuelto mucho más grave.</p>
@@ -227,7 +244,7 @@
 <p>El aire en movimiento también puede generar importantes cargas estáticas. Cuando soplas el polvo de tus dispositivos electrónicos, se genera estática. Una solución industrial a este problema es doble: en primer lugar, las pistolas de aire comprimido tienen un material radiactivo pequeño y bien protegido implantado dentro de la pistola de aire para ionizar el aire. El aire ionizado es un conductor y elimina bastante bien las cargas estáticas. En segundo lugar, utilice electricidad de alto voltaje para ionizar el aire que sale de un ventilador, que tiene el mismo efecto que la pistola de aire comprimido. Esto ayudará efectivamente a que una estación de trabajo reduzca en gran medida el potencial de generación de ESD.</p>
 <p>Otra protección ESD es la más sencilla de todas, la distancia. Muchas industrias tienen reglas que establecen que todos los materiales Neutrales y Generativos estarán al menos a 12 pulgadas o más de cualquier trabajo en progreso.</p>
 <p>El usuario también puede reducir la posibilidad de daños por ESD simplemente no sacando la pieza de su embalaje protector hasta que llegue el momento de insertarla en el circuito. Esto reducirá la probabilidad de exposición a ESD y, si bien el circuito seguirá siendo vulnerable, el componente tendrá una protección menor del resto de los componentes, ya que los otros componentes ofrecerán diferentes rutas de descarga para ESD.</p>
-<h3><u><a name="xtocid90812">Storage and Transportation of ESD sensitive component and boards</a></u></h3>
+<h3><u><a name="xtocid90812">Almacenamiento y transporte de componentes sensibles a ESD</a></u></h3>
 <p>No sirve de nada seguir las protecciones ESD en el banco de trabajo si las piezas se dañan durante el almacenamiento o el transporte. El método más común es utilizar una variación de una jaula de Faraday, una bolsa ESD. Una bolsa ESD rodea el componente con un blindaje conductor y normalmente tiene en su interior una capa aislante que genera electricidad estática. En jaulas de Faraday permanentes este escudo está conectado a tierra, como en el caso de las salas RFI, pero con contenedores portátiles esto no es práctico. Al colocar una bolsa ESD sobre una superficie conectada a tierra se logra lo mismo. Las jaulas de Faraday funcionan dirigiendo la carga eléctrica alrededor de su contenido y conectándolos a tierra inmediatamente. Un coche alcanzado por un rayo es un ejemplo extremo de jaula de Faraday.</p>
 <p>Las bolsas estáticas son, con diferencia, el método más común para almacenar componentes y placas. Están fabricados con capas de metal extremadamente finas, tan finas que resultan casi transparentes. Una bolsa con un agujero, aunque sea pequeño, o una que no esté doblada en la parte superior para sellar el contenido de las cargas exteriores es ineficaz.</p>
 <p>Otro método para proteger las piezas almacenadas son los contenedores o tubos. En estos casos las piezas se introducen en cajas conductoras, con tapa del mismo material. Esto efectivamente forma una jaula de Faraday. Un tubo está diseñado para circuitos integrados y otros dispositivos con muchas clavijas, y almacena las piezas en un tubo de plástico conductor moldeado que mantiene las piezas seguras tanto mecánica como eléctricamente.</p>
@@ -238,13 +255,13 @@
 <h3><u><a name="xtocid90813">Conclusion</a></u></h3>
 <p>La ESD puede ser un evento menor no sentido que mide unos pocos voltios o un evento masivo que presenta peligros reales para los operadores. Todas las protecciones contra ESD pueden verse superadas por las circunstancias, pero esto se puede evitar si se es consciente de qué es y cómo prevenirlo. Muchos proyectos se han construido sin ninguna protección ESD y han funcionado bien. Dado que proteger estos proyectos es un inconveniente menor, es mejor hacer el esfuerzo.</p>
 <p>La industria se toma el problema muy en serio, como un problema potencial que pone en peligro la vida y como un problema de calidad. Alguien que compra un dispositivo electrónico caro o hardware de alta tecnología no estará contento si tiene que devolverlo en 6 meses. Cuando la reputación está en juego, es más fácil hacer lo correcto.</p>
-<h2><u><a name="xtocid90814">Power Supply circuits</a></u></h2>
-<h3><u><a name="xtocid90815">Power Supply types</a></u></h3>
+<h2><a name="xtocid90814">Circuitos de fuentes de alimentación</a></h2>
+<h3><u><a name="xtocid90815">Tipos de fuentes de alimentación</a></u></h3>
 <p>Hay tres tipos principales de fuentes de alimentación:<i>no regulado</i>(también llamado<i>fuerza bruta</i>), <i>lineal regulado</i>, y<i>traspuesta</i>.  Un cuarto tipo de circuito de suministro de energía llamado<i>regulado por ondulación</i>, es un híbrido entre los diseños de "fuerza bruta" y "cambio", y merece una subsección aparte.</p>
 <b>No regulado</b>
 <p>Una fuente de alimentación no regulada es el tipo más rudimentario y consta de un transformador, un rectificador y un filtro de paso bajo.  Estas fuentes de alimentación suelen presentar una gran cantidad de voltaje ondulado (es decir, inestabilidad que varía rápidamente) y otros "ruidos" de CA superpuestos a la alimentación de CC.  Si el voltaje de entrada varía, el voltaje de salida variará en una cantidad proporcional.  La ventaja de un suministro no regulado es que es barato, sencillo y eficiente.</p>
 <p>
-See <a href="SEMI_3.html#half-W-R">Rectifier circuits</a>en el capítulo Diodos para las diversas configuraciones de los rectificadores utilizados en fuentes de alimentación no reguladas. Tenga en cuenta que esos circuitos no están filtrados. Normalmente se agrega un filtro de paso bajo a la salida del circuito rectificador para eliminar parte de la ondulación.</p>
+See <a href="SEMI_3.html#Rectifier">Rectifier circuits</a>en el capítulo Diodos para las diversas configuraciones de los rectificadores utilizados en fuentes de alimentación no reguladas. Tenga en cuenta que esos circuitos no están filtrados. Normalmente se agrega un filtro de paso bajo a la salida del circuito rectificador para eliminar parte de la ondulación.</p>
 <p>Una fuente de alimentación regulada lineal es simplemente una fuente de alimentación de "fuerza bruta" (no regulada) seguida de un circuito de transistores que funciona en su modo "activo" o "lineal", de ahí el nombre.<i>lineal</i>regulador.  (Obvio en retrospectiva, ¿no?) Un regulador lineal típico está diseñado para generar un voltaje fijo para una amplia gama de voltajes de entrada, y simplemente reduce cualquier exceso de voltaje de entrada para permitir un voltaje de salida máximo a la carga.  Esta caída excesiva de voltaje da como resultado una importante disipación de energía en forma de calor.  Si el voltaje de entrada baja demasiado, el circuito del transistor perderá la regulación, lo que significa que no podrá mantener el voltaje constante.  Sólo puede reducir el exceso de voltaje, no compensar una deficiencia de voltaje de la sección de fuerza bruta del circuito.  Por lo tanto, debe mantener el voltaje de entrada al menos entre 1 y 3 voltios por encima de la salida deseada, dependiendo del tipo de regulador.  Esto significa la potencia equivalente de al menos<i>el menos</i> 1 to 3 volts multiplied by the full load current will be dissipated by the regulator circuit, generating a lot of heat.  This makes linear regulated power supplies rather inefficient.  Also, to get rid of all that heat they have to use large heat sinks which makes them large, heavy, and expensive.
 </p>
 <b>Traspuesta</b>
@@ -254,7 +271,7 @@ See <a href="SEMI_3.html#half-W-R">Rectifier circuits</a>en el capítulo Diodos 
 <b>Ondulación regulada</b>
 <p>Una fuente de alimentación regulada por ondulación es una alternativa al esquema de diseño regulado lineal: una fuente de alimentación de "fuerza bruta" (transformador, rectificador, filtro) constituye el "extremo frontal" del circuito, pero un transistor operado estrictamente en sus modos de encendido/apagado (saturación/corte) transfiere energía CC a un condensador grande según sea necesario para mantener el voltaje de salida entre un punto de ajuste alto y bajo.  Al igual que en los conmutadores, el transistor en un regulador de ondulación nunca pasa corriente mientras está en su modo "activo" o "lineal" durante un período de tiempo sustancial, lo que significa que se desperdiciará muy poca energía en forma de calor.  Sin embargo, el mayor inconveniente de este esquema de regulación es la presencia necesaria de cierta tensión de rizado en la salida, ya que la tensión CC varía entre los dos puntos de ajuste de control de tensión.  Además, este voltaje de ondulación varía en frecuencia dependiendo de la corriente de carga, lo que dificulta el filtrado final de la potencia CC.</p>
 <p>Los circuitos reguladores de ondulación tienden a ser bastante más simples que los circuitos de conmutación y no necesitan manejar los altos voltajes de línea de alimentación que deben manejar los transistores de conmutación, lo que los hace más seguros para trabajar.</p>
-<h3><u><a name="xtocid90816">Power Supply Introduction</a></u></h3>
+<h3><u><a name="xtocid90816">Introducción a las fuentes de alimentación</a></u></h3>
 <p>Los circuitos de suministro de energía son una clase de circuitos que están diseñados para convertir energía eléctrica para alguna carga. Cada fuente de alimentación consta de al menos tres partes:<ul>
 <li>Una fuente de alimentación de entrada, que entrega energía a algún voltaje o rango de voltajes V1</li>
 <li>Una carga que requiere energía entregada a algún voltaje o rango de voltajes V2</li>
@@ -288,7 +305,7 @@ See <a href="SEMI_3.html#half-W-R">Rectifier circuits</a>en el capítulo Diodos 
 </radic></radic></p>
 <p>Los diseños de mayor potencia tienden a introducir ruido del orden de decenas o cientos de milivoltios, concentrado en frecuencias específicas, en función de su construcción. Aunque existen algunos diseños que pueden controlar estrictamente incluso el ruido del suministro de alta potencia, son costosos y, por lo tanto, están reservados para equipos especializados de prueba y medición. Prácticamente todas las fuentes de alimentación prácticas de más de unos pocos vatios generarán milivoltios de ruido en la salida y, para muchos tipos de carga, esto no afecta en lo más mínimo el rendimiento del dispositivo. Es común utilizar una fuente de alimentación eficaz pero ruidosa para cargas insensibles y como entrada a una segunda fuente de alimentación más silenciosa.</p>
 <!--*****************-->
-<h3><u><a name="xtocid90817">Linear power supplies</a></u></h3>
+<h3><u><a name="xtocid90817">Fuentes de alimentación lineales</a></u></h3>
 <p>Hay dos tipos principales de fuentes de alimentación cuyo comportamiento de salida se puede determinar según ecuaciones lineales: reguladores en derivación y reguladores en serie. Reguladores de derivación (en la figura<a href="#03511.png">  below</a>Se llaman así porque desvían la corriente de carga innecesaria para mantener la salida regulada. En un regulador en derivación, es necesaria una corriente de reposo alta, ya que la derivación debe poder redirigir la corriente de carga completa en condiciones sin carga. Esto puede conducir a una alta disipación de potencia, especialmente para corrientes de carga plena apreciablemente grandes. Lo bueno es que son relativamente simples, a menudo están hechos de elementos totalmente pasivos y pueden reducirse a dispositivos de dos terminales.</p>
 <a name="03511.png"></a>
 <p> <img src="03511.png"/> </p>
@@ -389,32 +406,31 @@ See <a href="SEMI_3.html#half-W-R">Rectifier circuits</a>en el capítulo Diodos 
 <p>Los diodos Zener de alto voltaje funcionan con el efecto de avalancha, donde un portador choca con muchos otros y provoca una multiplicación de avalancha de movimientos de portador, lo que resulta en un ruido de ancho de banda amplio que puede exceder el ruido de disparo simple en órdenes de magnitud. De hecho, la ecuación es casi idéntica, pero depende hasta cierto punto del tiempo de recombinación de cada nuevo electrón en la avalancha. Sin profundizar demasiado en la física, suele ser suficiente introducir un multiplicador grande en la ecuación del ruido de disparo original. Mientras que un diodo Zener de bajo voltaje podría medir su ruido de banda ancha en cientos de nV, un diodo Zener de alto voltaje podría medir su ruido de banda ancha en cientos de µvoltios o incluso milivoltios bajos.</p>
 <p>Para mantener un diodo Zener con el menor ruido posible, sólo hay dos requisitos: primero, utilizar un diodo Zener de bajo voltaje, para minimizar el ruido de avalancha; en segundo lugar, utilice una corriente Zener grande, incluso a plena carga. Aunque aumentar la corriente aumenta la disipación de potencia, lo que podría provocar un mayor ruido térmico, recuerde que el ruido térmico es proporcional a la impedancia Zener y que la impedancia Zener se reduce más rápido de lo que crece la temperatura absoluta. En el diseño de fuentes de alimentación, el ruido Zener rara vez es un problema, ya que se pueden crear otros reguladores con menos ruido, más eficiencia y mejor regulación de línea y carga.</p>
 <p>En general, los reguladores en derivación se utilizan en casos en los que la disipación de potencia es insignificante y la corriente de carga es pequeña (decenas de miliamperios o menos). Los reguladores de derivación más complejos pueden incorporar esquemas de compensación que minimicen los efectos de las variaciones de línea, carga y temperatura. Los mecanismos exactos de estos esquemas de compensación están más allá del alcance de esta discusión, pero se pueden lograr valores de regulación de línea y carga de &lt;1% con esquemas de regulación en derivación, en un rango muy amplio de temperaturas y voltajes de entrada.</p>
-<h2><u><a name="xtocid90818">Amplifier circuits -- PENDING</a></u></h2>
+<h2><a name="xtocid90818">Circuitos amplificadores</a></h2>
 <p>Nota, Q<sub>3</sub>y q<sub>4</sub>en la figura<a href="#03475.png">  below</a>son complementarios, NPN y PNP respectivamente. Este circuito funciona bien para amplificadores de audio de potencia moderada.  Para obtener una explicación de este circuito, consulte "Par complementario de acoplamiento directo".<!--split for double ref-->
-<a href="SEMI_4.html#03474.png">Ch 4 </a>.
+<a href="SEMI_4.html">Ch 4 </a>.
 </p>
 <a name="03475.png"></a>
 <p> <img src="03475.png"/> </p>
 <p><i>Amplificador de audio de 3 w de simetría complementaria de acoplamiento directo. Después de Mullard.<a href="#MUL.bibitem">[MUL]</a></i></p>
-<h2><u><a name="xtocid90819">Oscillator circuits -- INCOMPLETE</a></u></h2>
-<a name="oscillator, phase shift"></a>
+<h2><a name="xtocid90819">Circuitos osciladores</a></h2>
 <a name="03473.png"></a>
 <p> <img src="03473.png"/> </p>
 <p><i>Oscilador de cambio de fase. R<sub>1</sub>C<sub>1</sub>, R<sub>2</sub>C<sub>2</sub>y R<sub>3</sub>C<sub>3</sub>cada uno proporciona 60<sup>o</sup>de cambio de fase.</i></p>
 <p>El oscilador de cambio de fase de la figura<a href="#03473.png">  above</a>produce una salida de onda sinusoidal en el rango de frecuencia de audio. La retroalimentación resistiva del colector sería una retroalimentación negativa debido a 180<sup>o</sup>fase (inversión de fase de base a colector). Sin embargo, los tres 60<sup>o</sup>Desfasadores RC ( R<sub>1</sub>C<sub>1</sub>, R<sub>2</sub>C<sub>2</sub>y R<sub>3</sub>C<sub>3</sub>) proporcionar 180 adicionales<sup>o</sup>para un total de 360<sup>o</sup>. Esta retroalimentación en fase constituye una retroalimentación positiva. Se producen oscilaciones si la ganancia del transistor excede las pérdidas de la red de retroalimentación.</p>
 <a name="Multiplier, frequency, varactor"></a>
 <a name="varactormul"></a>
-<h3><u><a name="xtocid908110">Varactor multiplier</a></u></h3>
+<h3><u><a name="xtocid908110">Multiplicador con varactor</a></u></h3>
 <p>Un varactor o diodo de capacitancia variable con una característica de capacitancia versus frecuencia no lineal distorsiona la onda sinusoidal aplicada f1 en la Figura<a href="#03457.png">  below</a>, generando armónicos, f3.</p>
 <a name="03457.png"></a>
 <p> <img src="03457.png"/> </p>
 <p><i>El diodo varactor, que tiene una característica de capacitancia versus voltaje no lineal, sirve como multiplicador de frecuencia.</i></p>
 <p>El filtro fundamental pasa por f1, bloqueando el regreso de los armónicos al generador. El estrangulador pasa CC y bloquea la entrada de frecuencias de radio (RF) al V.<sub>inclinación</sub>suministrar. El filtro de armónicos pasa el armónico deseado, digamos el tercero, a la salida f3. El condensador en la parte inferior del inductor es de gran valor y baja reactancia, para bloquear CC pero conectar a tierra el inductor para RF. El diodo varicap en paralelo con el indicador constituye una red resonante paralela. Está sintonizado al armónico deseado. Tenga en cuenta que el sesgo inverso, V<sub>inclinación</sub>, está arreglado.</p>
 <p>El multiplicador varicap se utiliza principalmente para generar señales de microondas que los osciladores no pueden producir directamente. La representación del circuito agrupado en la figura.<a href="#03457.png">  above</a>son en realidad secciones de línea de banda o guía de ondas. Los multiplicadores de varactor pueden producir frecuencias de hasta cientos de GHz.</p>
-<h2><u><a name="xtocid908111">Phase-locked loops -- PENDING</a></u></h2>
+<h2><a name="xtocid908111">Lazos de enganche de fase (PLL)</a></h2>
 <p>
 </p>
-<h2><u><a name="xtocid908112">Radio circuits -- INCOMPLETE</a></u></h2>
+<h2><a name="xtocid908112">Circuitos de radio</a></h2>
 <p>
 </p>
 <a name="Crystal radio"></a>
@@ -431,7 +447,7 @@ See <a href="SEMI_3.html#half-W-R">Rectifier circuits</a>en el capítulo Diodos 
     <nav class="chapter-nav">
       <a href="SEMI_8.html" class="nav-btn" id="btn-prev">← Anterior</a>
       <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
-      <a href="SEMI_A1.html" class="nav-btn" id="btn-next">Siguiente →</a>
+      <a href="SEMI_10.html" class="nav-btn" id="btn-next">Siguiente →</a>
     </nav>
     <footer class="site-footer">
       <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>

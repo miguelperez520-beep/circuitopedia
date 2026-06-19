@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>!function(){var t=localStorage.getItem("liec-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();</script>
 <meta charset="UTF-8">
+    <meta name="description" content="Supongamos que enrollamos una bobina de cable aislado alrededor de un bucle de material ferromagnético y energizamos esta bobina con una fuente de voltaje de…">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Circuitopedia">
+    <meta property="og:title" content="Transformadores — Circuitopedia">
+    <meta property="og:description" content="Supongamos que enrollamos una bobina de cable aislado alrededor de un bucle de material ferromagnético y energizamos esta bobina con una fuente de voltaje ">
+    <meta property="og:url" content="https://circuitopedia.io/AC/AC_9.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Transformadores — Circuitopedia">
+    <meta name="twitter:description" content="Supongamos que enrollamos una bobina de cable aislado alrededor de un bucle de material ferromagnético y energizamos esta bobina con una fuente de voltaje ">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecciones de circuitos eléctricos - Volumen II (CA) - Capítulo 9 | Lecciones de Circuitos Eléctricos</title>
+<title>Transformadores — Circuitopedia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.34.0/dist/tabler-icons.min.css">
 <style>:root { --accent: #8b5cf6; }</style>
 </head>
-<body>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <a href="../index.html" class="logo">Circuitopedia</a>
       <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
     </div>
     <div class="search-box">
@@ -22,132 +33,153 @@
     </div>
     <nav class="sidebar-nav">
 <div class="vol-group">
-  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">
+    <span class="vol-ic"><i class="ti ti-bolt" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Continua</span><span class="vol-lb">Vol. I · DC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
-    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
-    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
-    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
-    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
-    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
-    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
-    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
-    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
-    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
-    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
-    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
-    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
-    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
-    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
-    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
-    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
-    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
-    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+    <li><a href="../DC/DC_1.html"><span class="cap-num">01</span><span class="cap-name">Conceptos Básicos de Electricidad</span></a></li>
+    <li><a href="../DC/DC_2.html"><span class="cap-num">02</span><span class="cap-name">Ley de Ohm</span></a></li>
+    <li><a href="../DC/DC_3.html"><span class="cap-num">03</span><span class="cap-name">Seguridad Eléctrica</span></a></li>
+    <li><a href="../DC/DC_4.html"><span class="cap-num">04</span><span class="cap-name">Notación Científica y Prefijos</span></a></li>
+    <li><a href="../DC/DC_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Serie y Paralelo</span></a></li>
+    <li><a href="../DC/DC_6.html"><span class="cap-num">06</span><span class="cap-name">Divisores y Leyes de Kirchhoff</span></a></li>
+    <li><a href="../DC/DC_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Serie-Paralelo</span></a></li>
+    <li><a href="../DC/DC_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos de Medición CC</span></a></li>
+    <li><a href="../DC/DC_9.html"><span class="cap-num">09</span><span class="cap-name">Señales de Instrumentación</span></a></li>
+    <li><a href="../DC/DC_10.html"><span class="cap-num">10</span><span class="cap-name">Análisis de Red CC</span></a></li>
+    <li><a href="../DC/DC_11.html"><span class="cap-num">11</span><span class="cap-name">Baterías y Sistemas de Energía</span></a></li>
+    <li><a href="../DC/DC_12.html"><span class="cap-num">12</span><span class="cap-name">Conductores y Aisladores</span></a></li>
+    <li><a href="../DC/DC_13.html"><span class="cap-num">13</span><span class="cap-name">Condensadores</span></a></li>
+    <li><a href="../DC/DC_14.html"><span class="cap-num">14</span><span class="cap-name">Magnetismo y Electromagnetismo</span></a></li>
+    <li><a href="../DC/DC_15.html"><span class="cap-num">15</span><span class="cap-name">Inductores</span></a></li>
+    <li><a href="../DC/DC_16.html"><span class="cap-num">16</span><span class="cap-name">Constantes de Tiempo RC y L/R</span></a></li>
+    <li><a href="../DC/DC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../DC/DC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../DC/DC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">
+    <span class="vol-ic"><i class="ti ti-wave-sine" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Alterna</span><span class="vol-lb">Vol. II · AC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
-    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
-    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
-    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
-    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
-    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
-    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
-    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
-    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
-    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
-    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
-    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
-    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
-    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
-    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
-    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
-    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+    <li><a href="../AC/AC_1.html"><span class="cap-num">01</span><span class="cap-name">Teoría Básica de CA</span></a></li>
+    <li><a href="../AC/AC_2.html"><span class="cap-num">02</span><span class="cap-name">Números Complejos</span></a></li>
+    <li><a href="../AC/AC_3.html"><span class="cap-num">03</span><span class="cap-name">Reactancia e Impedancia Inductiva</span></a></li>
+    <li><a href="../AC/AC_4.html"><span class="cap-num">04</span><span class="cap-name">Reactancia e Impedancia Capacitiva</span></a></li>
+    <li><a href="../AC/AC_5.html"><span class="cap-num">05</span><span class="cap-name">Reactancia e Impedancia R, L y C</span></a></li>
+    <li><a href="../AC/AC_6.html"><span class="cap-num">06</span><span class="cap-name">Resonancia</span></a></li>
+    <li><a href="../AC/AC_7.html"><span class="cap-num">07</span><span class="cap-name">Señales CA de Frecuencia Mixta</span></a></li>
+    <li><a href="../AC/AC_8.html"><span class="cap-num">08</span><span class="cap-name">Filtros</span></a></li>
+    <li><a href="../AC/AC_9.html"><span class="cap-num">09</span><span class="cap-name">Transformadores</span></a></li>
+    <li><a href="../AC/AC_10.html"><span class="cap-num">10</span><span class="cap-name">Circuitos CA Polifásicos</span></a></li>
+    <li><a href="../AC/AC_11.html"><span class="cap-num">11</span><span class="cap-name">Factor de Potencia</span></a></li>
+    <li><a href="../AC/AC_12.html"><span class="cap-num">12</span><span class="cap-name">Circuitos de Medición CA</span></a></li>
+    <li><a href="../AC/AC_13.html"><span class="cap-num">13</span><span class="cap-name">Motores de CA</span></a></li>
+    <li><a href="../AC/AC_14.html"><span class="cap-num">14</span><span class="cap-name">Líneas de Transmisión</span></a></li>
+    <li><a href="../AC/AC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../AC/AC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../AC/AC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">
+    <span class="vol-ic"><i class="ti ti-cpu" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Semiconductores</span><span class="vol-lb">Vol. III</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
-    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
-    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
-    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
-    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
-    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
-    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
-    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
-    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
-    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
-    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
-    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
-    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
-    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
-    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
-    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+    <li><a href="../Semi/SEMI_1.html"><span class="cap-num">01</span><span class="cap-name">Amplificadores y Dispositivos Activos</span></a></li>
+    <li><a href="../Semi/SEMI_2.html"><span class="cap-num">02</span><span class="cap-name">Dispositivos de Estado Sólido</span></a></li>
+    <li><a href="../Semi/SEMI_3.html"><span class="cap-num">03</span><span class="cap-name">Diodos y Rectificadores</span></a></li>
+    <li><a href="../Semi/SEMI_4.html"><span class="cap-num">04</span><span class="cap-name">Transistores Bipolares (BJT)</span></a></li>
+    <li><a href="../Semi/SEMI_5.html"><span class="cap-num">05</span><span class="cap-name">Transistores de Efecto de Campo JFET</span></a></li>
+    <li><a href="../Semi/SEMI_6.html"><span class="cap-num">06</span><span class="cap-name">Transistores de Efecto de Campo IGFET</span></a></li>
+    <li><a href="../Semi/SEMI_7.html"><span class="cap-num">07</span><span class="cap-name">Tiristores</span></a></li>
+    <li><a href="../Semi/SEMI_8.html"><span class="cap-num">08</span><span class="cap-name">Amplificadores Operacionales</span></a></li>
+    <li><a href="../Semi/SEMI_9.html"><span class="cap-num">09</span><span class="cap-name">Circuitos Analógicos Prácticos</span></a></li>
+    <li><a href="../Semi/SEMI_10.html"><span class="cap-num">10</span><span class="cap-name">Filtros Activos</span></a></li>
+    <li><a href="../Semi/SEMI_11.html"><span class="cap-num">11</span><span class="cap-name">Motores de CC</span></a></li>
+    <li><a href="../Semi/SEMI_12.html"><span class="cap-num">12</span><span class="cap-name">Inversores y Accionadores de CA</span></a></li>
+    <li><a href="../Semi/SEMI_13.html"><span class="cap-num">13</span><span class="cap-name">Tubos de Electrones</span></a></li>
+    <li><a href="../Semi/SEMI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Semi/SEMI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Semi/SEMI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">
+    <span class="vol-ic"><i class="ti ti-binary" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Circuitos Digitales</span><span class="vol-lb">Vol. IV</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
-    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
-    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
-    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
-    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
-    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
-    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
-    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
-    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
-    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
-    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
-    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
-    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
-    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
-    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
-    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
-    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
-    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
-    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+    <li><a href="../Digital/DIGI_1.html"><span class="cap-num">01</span><span class="cap-name">Sistemas de Numeración</span></a></li>
+    <li><a href="../Digital/DIGI_2.html"><span class="cap-num">02</span><span class="cap-name">Aritmética Binaria</span></a></li>
+    <li><a href="../Digital/DIGI_3.html"><span class="cap-num">03</span><span class="cap-name">Puertas Lógicas</span></a></li>
+    <li><a href="../Digital/DIGI_4.html"><span class="cap-num">04</span><span class="cap-name">Interruptores</span></a></li>
+    <li><a href="../Digital/DIGI_5.html"><span class="cap-num">05</span><span class="cap-name">Relés Electromecánicos</span></a></li>
+    <li><a href="../Digital/DIGI_6.html"><span class="cap-num">06</span><span class="cap-name">Lógica de Escalera</span></a></li>
+    <li><a href="../Digital/DIGI_7.html"><span class="cap-num">07</span><span class="cap-name">Álgebra Booleana</span></a></li>
+    <li><a href="../Digital/DIGI_8.html"><span class="cap-num">08</span><span class="cap-name">Mapeo de Karnaugh</span></a></li>
+    <li><a href="../Digital/DIGI_9.html"><span class="cap-num">09</span><span class="cap-name">Funciones Lógicas Combinacionales</span></a></li>
+    <li><a href="../Digital/DIGI_10.html"><span class="cap-num">10</span><span class="cap-name">Multivibradores</span></a></li>
+    <li><a href="../Digital/DIGI_11.html"><span class="cap-num">11</span><span class="cap-name">Circuitos Secuenciales</span></a></li>
+    <li><a href="../Digital/DIGI_12.html"><span class="cap-num">12</span><span class="cap-name">Registros de Desplazamiento</span></a></li>
+    <li><a href="../Digital/DIGI_13.html"><span class="cap-num">13</span><span class="cap-name">Conversión Digital-Analógica</span></a></li>
+    <li><a href="../Digital/DIGI_14.html"><span class="cap-num">14</span><span class="cap-name">Comunicación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_15.html"><span class="cap-num">15</span><span class="cap-name">Almacenamiento Digital (Memoria)</span></a></li>
+    <li><a href="../Digital/DIGI_16.html"><span class="cap-num">16</span><span class="cap-name">Principios de Computación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Digital/DIGI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Digital/DIGI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">
+    <span class="vol-ic"><i class="ti ti-book-2" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Referencia</span><span class="vol-lb">Vol. V</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
-    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
-    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
-    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
-    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
-    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
-    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
-    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
-    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
-    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
-    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
-    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
-    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+    <li><a href="../Ref/REF_1.html"><span class="cap-num">01</span><span class="cap-name">Ecuaciones y Factores de Conversión</span></a></li>
+    <li><a href="../Ref/REF_2.html"><span class="cap-num">02</span><span class="cap-name">Códigos de Color</span></a></li>
+    <li><a href="../Ref/REF_3.html"><span class="cap-num">03</span><span class="cap-name">Tablas de Conductores y Aisladores</span></a></li>
+    <li><a href="../Ref/REF_4.html"><span class="cap-num">04</span><span class="cap-name">Referencia de Álgebra</span></a></li>
+    <li><a href="../Ref/REF_5.html"><span class="cap-num">05</span><span class="cap-name">Referencia de Trigonometría</span></a></li>
+    <li><a href="../Ref/REF_6.html"><span class="cap-num">06</span><span class="cap-name">Referencia de Cálculo</span></a></li>
+    <li><a href="../Ref/REF_7.html"><span class="cap-num">07</span><span class="cap-name">Simulación de Circuitos con SPICE</span></a></li>
+    <li><a href="../Ref/REF_8.html"><span class="cap-num">08</span><span class="cap-name">Solución de Problemas</span></a></li>
+    <li><a href="../Ref/REF_9.html"><span class="cap-num">09</span><span class="cap-name">Símbolos de Esquemas de Circuito</span></a></li>
+    <li><a href="../Ref/REF_10.html"><span class="cap-num">10</span><span class="cap-name">Tabla Periódica de los Elementos</span></a></li>
+    <li><a href="../Ref/REF_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Ref/REF_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Ref/REF_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">
+    <span class="vol-ic"><i class="ti ti-flask" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Experimentos</span><span class="vol-lb">Vol. VI</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
-    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
-    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
-    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
-    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
-    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
-    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
-    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
-    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
-    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
-    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+    <li><a href="../Exper/EXP_1.html"><span class="cap-num">01</span><span class="cap-name">Introducción</span></a></li>
+    <li><a href="../Exper/EXP_2.html"><span class="cap-num">02</span><span class="cap-name">Conceptos Básicos y Equipos de Prueba</span></a></li>
+    <li><a href="../Exper/EXP_3.html"><span class="cap-num">03</span><span class="cap-name">Circuitos CC</span></a></li>
+    <li><a href="../Exper/EXP_4.html"><span class="cap-num">04</span><span class="cap-name">Circuitos CA</span></a></li>
+    <li><a href="../Exper/EXP_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Semiconductores Discretos</span></a></li>
+    <li><a href="../Exper/EXP_6.html"><span class="cap-num">06</span><span class="cap-name">Circuitos Integrados Analógicos</span></a></li>
+    <li><a href="../Exper/EXP_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Integrados Digitales</span></a></li>
+    <li><a href="../Exper/EXP_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos con Temporizador 555</span></a></li>
+    <li><a href="../Exper/EXP_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Exper/EXP_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Exper/EXP_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">
+    <span class="vol-ic"><i class="ti ti-code" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Desarrollo</span><span class="vol-lb">Info técnica</span></span>
+  </a>
 </div>
 </nav>
 
@@ -156,60 +188,44 @@
   <main class="main-content">
     <header class="top-bar">
       <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
-      <span class="page-title">Lecciones de circuitos eléctricos - Volumen II (CA) - Capítulo 9</span>
+      <span class="page-title">Transformadores</span>
       <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
     </header>
     <article class="content" id="content">
       
-<body bgcolor="white">
-
-
-
-<hr/>
-<h1>Lecciones de circuitos eléctricos - Volumen II</h1>
-<h1>Capítulo 9</h1>
-<!-- Added Scott-T subsection 09/18/2005 (DC)-->
-<!-- Added to Air core transformers subsection 09/18/2005 (DC)-->
-<!-- Added Spice-Nutmeg plots 04/30/2005 (DC)-->
-<!-- images used 02131.png -02163.png-->
-<!--02278.png, 02295.png-->
-<!--02305.png-2316.png, 02334.png 02336.png, 02340-02346.png-->
-<!--02411.png-->
-<!--12100.png-12108.png, 12138.png -12140.png-->
-<!--22039.png -22040.png-->
-<h1>TRANSFORMADORES</h1>
+<h1>Transformadores</h1>
 <!--minitoc-->
 <ul>
-<li><a href="#xtocid89390"><u>Mutual inductance and basic operation</u></a></li>
-<li><a href="#xtocid89391"><u>Step-up and step-down transformers</u></a></li>
-<li><a href="#xtocid89392"><u>Electrical isolation</u></a></li>
-<li><a href="#xtocid89393"><u>Phasing</u></a></li>
-<li><a href="#xtocid89394"><u>Winding configurations</u></a></li>
-<li><a href="#xtocid89395"><u>Voltage regulation</u></a></li>
-<li><a href="#xtocid89396"><u>Special transformers and applications</u></a></li>
+<li><a href="#xtocid89390"><u>Inductancia mutua y operación básica</u></a></li>
+<li><a href="#xtocid89391"><u>Transformadores elevadores y reductores</u></a></li>
+<li><a href="#xtocid89392"><u>Aislamiento eléctrico</u></a></li>
+<li><a href="#xtocid89393"><u>Desfase y polaridad de devanados</u></a></li>
+<li><a href="#xtocid89394"><u>Configuraciones de devanados</u></a></li>
+<li><a href="#xtocid89395"><u>Regulación de tensión</u></a></li>
+<li><a href="#xtocid89396"><u>Transformadores especiales y aplicaciones</u></a></li>
 <ul>
-<li><a href="#xtocid89397"><u>Impedance matching</u></a></li>
-<li><a href="#xtocid89398"><u>Potential transformers </u></a></li>
-<li><a href="#xtocid89399"><u>Current transformers</u></a></li>
-<li><a href="#xtocid893910"><u>Air core transformers</u></a></li>
-<li><a href="#xtocid893911"><u>Tesla Coil </u></a></li>
-<li><a href="#xtocid893912"><u>Saturable reactors </u></a></li>
-<li><a href="#xtocid893913"><u>Scott-T transformer</u></a></li>
-<li><a href="#xtocid893914"><u>Linear Variable Differential Transformer</u></a></li>
+<li><a href="#xtocid89397"><u>Adaptación de impedancias</u></a></li>
+<li><a href="#xtocid89398"><u>Transformadores de tensión </u></a></li>
+<li><a href="#xtocid89399"><u>Transformadores de corriente</u></a></li>
+<li><a href="#xtocid893910"><u>Transformadores de núcleo de aire</u></a></li>
+<li><a href="#xtocid893911"><u>Bobina de Tesla </u></a></li>
+<li><a href="#xtocid893912"><u>Reactores saturables </u></a></li>
+<li><a href="#xtocid893913"><u>Transformador Scott-T</u></a></li>
+<li><a href="#xtocid893914"><u>Transformador diferencial variable lineal (LVDT)</u></a></li>
 </ul>
-<li><a href="#xtocid893915"><u>Practical considerations</u></a></li>
+<li><a href="#xtocid893915"><u>Consideraciones prácticas</u></a></li>
 <ul>
-<li><a href="#xtocid893916"><u>Power capacity</u></a></li>
-<li><a href="#xtocid893917"><u>Winding design </u></a></li>
-<li><a href="#xtocid893918"><u>Energy losses</u></a></li>
-<li><a href="#xtocid893919"><u>Stray capacitance and inductance</u></a></li>
-<li><a href="#xtocid893920"><u>Core saturation</u></a></li>
-<li><a href="#xtocid893921"><u>Inrush current</u></a></li>
-<li><a href="#xtocid893922"><u>Heat and Noise</u></a></li>
+<li><a href="#xtocid893916"><u>Capacidad de potencia</u></a></li>
+<li><a href="#xtocid893917"><u>Diseño de devanados </u></a></li>
+<li><a href="#xtocid893918"><u>Pérdidas de energía</u></a></li>
+<li><a href="#xtocid893919"><u>Capacitancia e inductancia parásitas</u></a></li>
+<li><a href="#xtocid893920"><u>Saturación del núcleo</u></a></li>
+<li><a href="#xtocid893921"><u>Corriente de arranque</u></a></li>
+<li><a href="#xtocid893922"><u>Calor y ruido</u></a></li>
 </ul>
-<li><a href="#xtocid893923"><u>Contributors</u></a></li>
-<li><a href="#xtocid893924">Bibliography</a></li></ul>
-<h2><u><a name="xtocid89390">Mutual inductance and basic operation</a></u></h2>
+<li><a href="#xtocid893923"><u>Colaboradores</u></a></li>
+<li><a href="#xtocid893924">Bibliografía</a></li></ul>
+<h2><a name="xtocid89390">Inductancia mutua y operación básica</a></h2>
 <p>Supongamos que enrollamos una bobina de cable aislado alrededor de un bucle de material ferromagnético y energizamos esta bobina con una fuente de voltaje de CA: (Figura<a href="#02305.png">  below</a>(a))</p>
 <a name="02305.png"></a>
 <p> <img src="02305.png"/> </p>
@@ -474,7 +490,7 @@ freq          v(3,5)      i(vi1)
 <li>El flujo del núcleo induce un voltaje en cualquier bobina enrollada alrededor del núcleo.  Lo ideal es que los voltajes inducidos estén en fase con el voltaje de la fuente del devanado primario y compartan la misma forma de onda.</li>
 <li>Cualquier corriente consumida a través del devanado secundario por una carga será "reflejada" hacia el devanado primario y extraída de la fuente de voltaje, como si la fuente estuviera alimentando directamente una carga similar.</li>
 </ul>
-<h2><u><a name="xtocid89391">Step-up and step-down transformers</a></u></h2>
+<h2><a name="xtocid89391">Transformadores elevadores y reductores</a></h2>
 <p>Hasta ahora, hemos observado simulaciones de transformadores donde los devanados primario y secundario tenían inductancia idéntica, dando niveles de voltaje y corriente aproximadamente iguales en ambos circuitos.  Sin embargo, la igualdad de voltaje y corriente entre los lados primario y secundario de un transformador no es la norma para todos los transformadores.  Si las inductancias de los dos devanados no son iguales sucede algo interesante:</p>
 <pre>
 transformer   
@@ -558,8 +574,7 @@ freq          v(3,5)      i(vi1)
 <p> <img src="12103.png"/> </p>
 </li>
 </ul>
-<h2><u><a name="xtocid89392">Electrical isolation</a></u></h2>
-<a name="Transformer isolation"></a>
+<h2><a name="xtocid89392">Aislamiento eléctrico</a></h2>
 <a name="Isolation, transformer"></a>
 <p>Además de la capacidad de convertir fácilmente entre diferentes niveles de voltaje y corriente en circuitos de CA y CC, los transformadores también brindan una característica extremadamente útil llamada<i>aislamiento</i>, que es la capacidad de acoplar un circuito a otro sin el uso de conexiones de cables directas.  Podemos demostrar una aplicación de este efecto con otra simulación de SPICE: esta vez mostrando conexiones de "tierra" para los dos circuitos, imponiendo un alto voltaje de CC entre un circuito y tierra mediante el uso de una fuente de voltaje adicional: (Figura<a href="#02136.png">  below</a>)
 </p>
@@ -607,8 +622,7 @@ freq          v(3,5)      i(1)
 <li>Al poder transferir energía de un circuito a otro sin el uso de conductores de interconexión entre los dos circuitos, los transformadores brindan la útil característica de<i>aislamiento electrico</i>.</li>
 <li>Los transformadores diseñados para proporcionar aislamiento eléctrico sin aumentar o disminuir el voltaje y la corriente se llaman<i>transformadores de aislamiento</i>.</li>
 </ul>
-<h2><u><a name="xtocid89393">Phasing</a></u></h2>
-<a name="Phase, transformer"></a>
+<h2><a name="xtocid89393">Desfase y polaridad de devanados</a></h2>
 <p>Dado que los transformadores son esencialmente dispositivos de CA, debemos conocer las relaciones de fase entre los circuitos primario y secundario.  Usando nuestro ejemplo de SPICE de antes, podemos trazar las formas de onda (Figura<a href="#22039.png">  below</a>) para los circuitos primario y secundario y veamos las relaciones de fase por nosotros mismos:</p>
 <br/>
 <pre>
@@ -753,7 +767,7 @@ plot I(L1#branch) I(L2#branch)
 <li>Las relaciones de fase para voltaje y corriente entre los circuitos primario y secundario de un transformador son directas: idealmente, cambio de fase cero.</li>
 <li>The <i>convención de puntos</i>es un tipo de marca de polaridad para los devanados de transformadores que muestra qué extremo del devanado es cuál, en relación con los otros devanados.</li>
 </ul>
-<h2><u><a name="xtocid89394">Winding configurations</a></u></h2>
+<h2><a name="xtocid89394">Configuraciones de devanados</a></h2>
 <p>Los transformadores son dispositivos muy versátiles.  El concepto básico de transferencia de energía entre inductores mutuos es bastante útil entre una única bobina primaria y una única bobina secundaria, pero no es necesario fabricar transformadores con solo dos juegos de devanados.  Considere este circuito transformador: (Figura<a href="#02141.png">  below</a>)
 </p>
 <a name="02141.png"></a>
@@ -825,8 +839,7 @@ plot I(L1#branch) I(L2#branch)
 <li>Un autotransformador es una bobina inductora única con derivación que se utiliza para aumentar o reducir el voltaje como un transformador, excepto que no proporciona aislamiento eléctrico.</li>
 <li>A <i>variac</i>es un autotransformador variable.</li>
 </ul>
-<h2><u><a name="xtocid89395">Voltage regulation</a></u></h2>
-<a name="Voltage regulation"></a>
+<h2><a name="xtocid89395">Regulación de tensión</a></h2>
 <p>Como vimos en algunos análisis de SPICE anteriormente en este capítulo, el voltaje de salida de un transformador varía un poco con diferentes resistencias de carga, incluso con una entrada de voltaje constante.  El grado de variación se ve afectado por las inductancias de los devanados primario y secundario, entre otros factores, entre los que se incluye la resistencia del devanado y el grado de inductancia mutua (acoplamiento magnético) entre los devanados primario y secundario.  Para aplicaciones de transformadores de potencia, donde la carga ve el transformador (idealmente) como una fuente constante de voltaje, es bueno que el voltaje secundario varíe lo menos posible para variaciones amplias en la corriente de carga.</p>
 <p>La medida de qué tan bien un transformador de potencia mantiene un voltaje secundario constante en un rango de corrientes de carga se llama magnitud del transformador.<i>regulación de voltaje</i>.  Se puede calcular a partir de la siguiente fórmula:</p>
 <p> <img src="12104.png"/> </p>
@@ -883,7 +896,7 @@ freq          v(3,5)      i(vi1)
 <li><i>Regulación de voltaje</i>es la medida de qué tan bien un transformador de potencia puede mantener un voltaje secundario constante dado un voltaje primario constante y una amplia variación en la corriente de carga.  Cuanto menor sea el porcentaje (más cercano a cero), más estable será el voltaje secundario y mejor será la regulación que proporcionará.</li>
 <li>A <i>ferroresonante</i>El transformador es un transformador especial diseñado para regular el voltaje a un nivel estable a pesar de una amplia variación en el voltaje de entrada.</li>
 </ul>
-<h2><u><a name="xtocid89396">Special transformers and applications</a></u></h2>
+<h2><a name="xtocid89396">Transformadores especiales y aplicaciones</a></h2>
 <h3><u><a name="xtocid89397">Impedance matching</a></u></h3>
 <p>Debido a que los transformadores pueden elevar el voltaje y la corriente a diferentes niveles, y debido a que la potencia se transfiere de manera equivalente entre los devanados primario y secundario, se pueden usar para "convertir" la impedancia de una carga a un nivel diferente.  Esa última frase merece alguna explicación, así que investiguemos qué significa.</p>
 <p>El propósito de una carga (normalmente) es hacer algo productivo con la potencia que disipa.  En el caso de un elemento calefactor resistivo, el propósito práctico de la potencia disipada es calentar algo.  Las cargas están diseñadas para disipar de forma segura una cierta cantidad máxima de energía, pero dos cargas de igual potencia nominal no son necesariamente idénticas.  Considere estos dos elementos calefactores resistivos de 1000 vatios: (Figura<a href="#02151.png">  below</a>)
@@ -935,7 +948,7 @@ freq          v(3,5)      i(vi1)
 <a name="52005.jpg"></a>
 <p> <img src="52005.jpg"/> </p>
 <p><i>Transformador de adaptación de impedancia de audio montado en una placa de circuito impreso, arriba a la derecha.</i></p>
-<h3><u><a name="xtocid89398">Potential transformers </a></u></h3>
+<h3><u><a name="xtocid89398">Transformadores de tensión </a></u></h3>
 <p>Los transformadores también se pueden utilizar en sistemas de instrumentación eléctrica.  Debido a la capacidad de los transformadores para aumentar o reducir el voltaje y la corriente, y al aislamiento eléctrico que proporcionan, pueden servir como una forma de conectar instrumentación eléctrica a sistemas de energía de alto voltaje y alta corriente.  Supongamos que quisiéramos medir con precisión el voltaje de un sistema de energía de 13,8 kV (un voltaje de distribución de energía muy común en la industria estadounidense): (Figura<a href="#02154.png">  below</a>)
 </p>
 <a name="02154.png"></a>
@@ -952,7 +965,7 @@ freq          v(3,5)      i(vi1)
 </p>
 <p>Los transformadores de potencial están diseñados para proporcionar una relación de reducción de voltaje lo más precisa posible.  Para ayudar a una regulación precisa del voltaje, la carga se mantiene al mínimo: el voltímetro está diseñado para tener una alta impedancia de entrada para extraer la menor corriente posible del PT.  Como puede ver, se ha conectado un fusible en serie con el devanado primario del PT, para mayor seguridad y facilidad a la hora de desconectar el PT del circuito.</p>
 <p>Un voltaje secundario estándar para un PT es de 120 voltios CA, para un voltaje de línea de alimentación nominal completo.  El rango de voltímetro estándar que acompaña a un PT es de 150 voltios, escala completa.  Se pueden fabricar PT con relaciones de bobinado personalizadas para adaptarse a cualquier aplicación.  Esto se presta bien a la estandarización industrial de los propios instrumentos voltímetros, ya que el PT tendrá el tamaño adecuado para reducir el voltaje del sistema a este nivel de instrumento estándar.</p>
-<h3><u><a name="xtocid89399">Current transformers</a></u></h3>
+<h3><u><a name="xtocid89399">Transformadores de corriente</a></u></h3>
 <p>Siguiendo la misma línea de pensamiento, podemos usar un transformador para reducir la corriente a través de una línea eléctrica, de modo que podamos medir de forma segura y sencilla las corrientes altas del sistema con amperímetros económicos.  Por supuesto, dicho transformador estaría conectado en serie con la línea eléctrica, como (Figura<a href="#02156.png">  below</a>).
 </p>
 <a name="02156.png"></a>
@@ -974,14 +987,14 @@ freq          v(3,5)      i(vi1)
 <p> <img src="02157.png"/> </p>
 <p><i>El interruptor de cortocircuito permite retirar el amperímetro de un circuito transformador de corriente activo.</i></p>
 <p>Aunque pueda parecer extraño<i>intencionalmente</i>cortocircuitar un componente del sistema eléctrico, es perfectamente apropiado y muy necesario cuando se trabaja con transformadores de corriente.</p>
-<h3><u><a name="xtocid893910">Air core transformers</a></u></h3>
+<h3><u><a name="xtocid893910">Transformadores de núcleo de aire</a></u></h3>
 <p>Otro tipo de transformador especial, que se ve a menudo en circuitos de radiofrecuencia, es el<i>núcleo de aire</i>transformador. (Cifra<a href="#02334.png">  below</a>) Fiel a su nombre, un transformador de núcleo de aire tiene sus devanados enrollados alrededor de una forma no magnética, generalmente un tubo hueco de algún material.  El grado de acoplamiento (inductancia mutua) entre los devanados de un transformador de este tipo es muchas veces menor que el de un transformador de núcleo de hierro equivalente, pero las características indeseables de un núcleo ferromagnético (pérdidas por corrientes parásitas, histéresis, saturación, etc.) se eliminan por completo.  Es en aplicaciones de alta frecuencia donde estos efectos de los núcleos de hierro son más problemáticos.</p>
 <a name="02334.png"></a>
 <p> <img src="02334.png"/> </p>
 <p><i>Los transformadores con núcleo de aire pueden enrollarse en forma cilíndrica (a) o toroidal (b). Centro aprovechado primario con secundario (a). Devanado bifilar en forma toroidal (b).</i></p>
 <p>El devanado del solenoide con toma interior (Figura (a)<a href="#02334.png">  above</a>), sin el sobrebobinado, podría igualar impedancias desiguales cuando no se requiere aislamiento de CC. Cuando se requiere aislamiento, el devanado adicional se agrega sobre un extremo del devanado principal. Los transformadores de núcleo de aire se utilizan en radiofrecuencias cuando las pérdidas del núcleo de hierro son demasiado altas. Con frecuencia, los transformadores de núcleo de aire se ponen en paralelo con un condensador para sintonizarlo en resonancia. El sobrebobinado está conectado entre una antena de radio y tierra para una de esas aplicaciones. El secundario está sintonizado en resonancia con un condensador variable. La salida se puede tomar del punto de derivación para amplificación o detección. En los receptores de radio se utilizan transformadores de núcleo de aire de pequeño tamaño milimétrico. Los transmisores de radio más grandes pueden utilizar bobinas del tamaño de un medidor. Los transformadores de solenoide con núcleo de aire sin blindaje se montan en ángulo recto entre sí para evitar acoplamientos parásitos.</p>
 <p>El acoplamiento parásito se minimiza cuando el transformador está enrollado en forma toroidal. (Figura (b)<a href="#02334.png">  above</a>) Los transformadores toroidales con núcleo de aire también muestran un mayor grado de acoplamiento, particularmente para<i>bifilar</i>devanados. Los devanados bifilares se enrollan a partir de un par de cables ligeramente torcidos. Esto implica una relación de vueltas de 1:1. Se pueden agrupar tres o cuatro cables para 1:2 y otras relaciones integrales. Los devanados no tienen por qué ser bifilares. Esto permite relaciones de vueltas arbitrarias. Sin embargo, el grado de acoplamiento se ve afectado. Los transformadores toroidales con núcleo de aire son raros, excepto para trabajos en VHF (muy alta frecuencia). Para frecuencias de radio más bajas se prefieren materiales de núcleo distintos del aire, como hierro en polvo o ferrita.</p>
-<h3><u><a name="xtocid893911">Tesla Coil </a></u></h3>
+<h3><u><a name="xtocid893911">Bobina de Tesla </a></u></h3>
 <a name="Tesla Coil"></a>
 <a name="Tesla, Nikola"></a>
 <a name="Coil, Tesla"></a>
@@ -1004,7 +1017,7 @@ freq          v(3,5)      i(vi1)
 <p><i>Descarga de alta frecuencia y alto voltaje de la bobina de Tesla.</i></p>
 <p>Las bobinas de Tesla encuentran aplicación principalmente como dispositivos novedosos, apareciendo en ferias de ciencias de escuelas secundarias, talleres en sótanos y, ocasionalmente, en películas de ciencia ficción de bajo presupuesto.</p>
 <p>Cabe señalar que las bobinas de Tesla pueden ser dispositivos extremadamente peligrosos.  Las quemaduras causadas por corriente de radiofrecuencia (“RF”), como todas las quemaduras eléctricas, pueden ser muy profundas, a diferencia de las quemaduras en la piel causadas por el contacto con objetos calientes o llamas.  Aunque la descarga de alta frecuencia de una bobina de Tesla tiene la curiosa propiedad de estar más allá de la frecuencia de “percepción de impacto” del sistema nervioso humano, ¡esto no significa que las bobinas de Tesla no puedan herirte o incluso matarte!  Le recomiendo encarecidamente que busque la ayuda de un experimentador experimentado en bobinas de Tesla si desea construir una usted mismo.</p>
-<h3><u><a name="xtocid893912">Saturable reactors </a></u></h3>
+<h3><u><a name="xtocid893912">Reactores saturables </a></u></h3>
 <p>
 </p>
 <a name="Amplifier"></a>
@@ -1036,7 +1049,7 @@ freq          v(3,5)      i(vi1)
 <a name="Transductor"></a>
 <p>Los reactores de núcleo saturable se conocen menos comúnmente como "inductores de núcleo saturable" o<i>transductores</i>. 
 </p>
-<h3><u><a name="xtocid893913">Scott-T transformer</a></u></h3>
+<h3><u><a name="xtocid893913">Transformador Scott-T</a></u></h3>
 <a name="Scott-T transformer"></a>
 <a name="transformer, Scott-T"></a>
 <a name="scott"></a>
@@ -1058,7 +1071,7 @@ trifásico mediante el uso de transformaciones Scott-T.<a href="#MYA.bibitem">[M
 <p> <img src="02416.png"/> </p>
 <p><i>Explicación gráfica de ecuaciones en la figura.<a href="#02415.png">  previous</a>.</i></p>
 <p>En la figura<a href="#02416.png">  above</a>Mostramos gráficamente los vectores 2-φ en (a). En (b), los vectores son escalados por los transformadores T1 y T2 a 0,5 y 0,866 respectivamente. En (c) 1∠120<sup>o</sup>= -0,5∠0<sup>o</sup>+ 0,866∠90<sup>o</sup>y 1∠240<sup>o</sup>= -0,5∠0<sup>o</sup>- 0,866∠90<sup>o</sup>. Las tres fases de salida son 1∠120<sup>o</sup>y 1∠240<sup>o</sup>de (c), junto con la entrada 1∠0<sup>o</sup>(a).</p>
-<h3><u><a name="xtocid893914">Linear Variable Differential Transformer</a></u></h3>
+<h3><u><a name="xtocid893914">Transformador diferencial variable lineal (LVDT)</a></u></h3>
 <a name="linear variable differential transformer"></a>
 <a name="LVDT"></a>
 <p>
@@ -1080,8 +1093,8 @@ A <i>transformador diferencial variable lineal</i>(LVDT) tiene una bobina primar
 <li>A <i>Transformador Scott-T</i>convierte potencia 3-φ en potencia 2-φ y viceversa.</li>
 <li>A <i>transformador diferencial variable lineal</i>, también conocido como LVDT, es un dispositivo de medición de distancia. Tiene un núcleo ferromagnético móvil para variar el acoplamiento entre el primario excitado y un par de secundarios.</li>
 </ul>
-<h2><u><a name="xtocid893915">Practical considerations</a></u></h2>
-<h3><u><a name="xtocid893916">Power capacity</a></u></h3>
+<h2><a name="xtocid893915">Consideraciones prácticas</a></h2>
+<h3><u><a name="xtocid893916">Capacidad de potencia</a></u></h3>
 <p>Como ya se ha observado, los transformadores deben estar bien diseñados para lograr un acoplamiento de potencia aceptable, una regulación estricta del voltaje y una baja distorsión de la corriente de excitación.  Además, los transformadores deben diseñarse para transportar los valores esperados de corriente del devanado primario y secundario sin ningún problema.  Esto significa que los conductores del devanado deben estar hechos de alambre del calibre adecuado para evitar problemas de calentamiento.  Un transformador ideal tendría un acoplamiento perfecto (sin inductancia de fuga), una regulación de voltaje perfecta, una corriente de excitación perfectamente sinusoidal, sin histéresis ni pérdidas por corrientes parásitas y un cable lo suficientemente grueso como para manejar cualquier cantidad de corriente.  Desafortunadamente, el transformador ideal tendría que ser infinitamente grande y pesado para cumplir estos objetivos de diseño.  Así, en el negocio de<i>práctico</i>diseño del transformador, se deben hacer concesiones.</p>
 <p>El núcleo de hierro del transformador debe tener el tamaño adecuado para soportar el flujo total sin una saturación indebida. La clasificación de voltamperaje y las propiedades magnéticas del material del núcleo determinan el flujo total permitido. Se requiere un núcleo más grande con menos vueltas de cable de mayor diámetro para un transformador con clasificación de voltamperaje más alto. Muy pocas vueltas para un tamaño de núcleo particular provocarán la saturación magnética del núcleo, lo que provoca una corriente excesiva y un calentamiento.</p>
 <p>Además, el aislamiento del conductor del devanado es una preocupación cuando se encuentran altos voltajes, como suele ocurrir en los transformadores de distribución de energía elevadores y reductores.  No sólo los devanados tienen que estar bien aislados del núcleo de hierro, sino que cada devanado tiene que estar suficientemente aislado del otro para mantener el aislamiento eléctrico entre los devanados.</p>
@@ -1090,7 +1103,7 @@ A <i>transformador diferencial variable lineal</i>(LVDT) tiene una bobina primar
 <p>Respetando estas limitaciones, los transformadores están clasificados para ciertos niveles de voltaje y corriente del devanado primario y secundario, aunque la clasificación de corriente generalmente se deriva de una clasificación de voltios-amperios (VA) asignada al transformador.  Por ejemplo, tome un transformador reductor con una tensión nominal primaria de 120 voltios, una tensión nominal secundaria de 48 voltios y una clasificación VA de 1 kVA (1000 VA).  Las corrientes máximas de los devanados se pueden determinar como tal:</p>
 <p> <img src="12108.png"/> </p>
 <p>A veces, los devanados soportarán corrientes nominales en amperios, pero esto suele verse en transformadores pequeños.  Los transformadores grandes casi siempre se clasifican en términos de voltaje de devanado y VA o kVA.</p>
-<h3><u><a name="xtocid893917">Winding design </a></u></h3>
+<h3><u><a name="xtocid893917">Diseño de devanados </a></u></h3>
 <p>El número de vueltas en el secundario de un transformador se calcula fácilmente en función de la relación de tensión y las vueltas del primario Ns=Np(Vs/Vp). El problema es la determinación del número de vueltas primarias de un transformador de potencia con núcleo de hierro. La densidad de flujo magnético y el área de sección transversal de un núcleo de hierro determinan el número mínimo de vueltas en el primario. Otros factores incluyen el voltaje y la frecuencia primarios y el aumento de temperatura permitido por encima de la temperatura ambiente. El propósito de esta sección es determinar el número mínimo de vueltas primarias para un tamaño de núcleo determinado.</p>
 <a name="12151.png"></a>
 <p> <img src="12151.png"/> </p>
@@ -1123,7 +1136,7 @@ Calcular el VA que soportará el núcleo con la ecuación (2) Tabla<a href="#121
 <p><i>Ecuaciones de diseño de transformadores, según ITT<a href="#RDR.bibitem">[RDR]</a> </i></p>
 <br/>
 <a name="cir-mils.tbl"><p><i>Transformer core and wire sizing. After ITT<a href="#RDR.bibitem">[RDR]</a></i></p></a>
-<table border="1" style="background-color: #E0FFFF; ">
+<div class="table-wrap"><table border="1" style="background-color: #E0FFFF; ">
 <tr>
 <td>VA</td><td>B</td><td>Amperios/pulgadas cuadradas</td><td>cir-mil/amperio</td>
 </tr>
@@ -1151,7 +1164,7 @@ Calcular el VA que soportará el núcleo con la ecuación (2) Tabla<a href="#121
 <tr>
 <td>525</td><td>10,500</td><td>1220</td><td>1041</td>
 </tr>
-</table>
+</table></div>
 <p>Mesa<a href="#cir-mils2.tbl">  below</a>muestra los resultados de los cálculos para los distintos núcleos en la tabla<a href="#cir-mils.tbl">  above</a>.
 </p>
 <ul>
@@ -1166,7 +1179,7 @@ Calcular el VA que soportará el núcleo con la ecuación (2) Tabla<a href="#121
 </ul>
 <!--Link to circular-mils to AWG  <a href="../Ref/REF_1.html#AWGcm">Table</a> Volume V - Reference, Ch 1 Useful Equations, Wire sizing for inductors-->
 <a name="cir-mils2.tbl"><p><i>Transformer core and wire sizing for example cores</i></p></a>
-<table border="1" style="background-color: #E0FFFF; ">
+<div class="table-wrap"><table border="1" style="background-color: #E0FFFF; ">
 <tr>
 <td>VA</td><td>Flujo</td><td>Centro</td><td>Centro</td><td>Actual</td><td>Actual</td><td>vueltas</td><td>cable</td><td>A</td>
 </tr>
@@ -1203,7 +1216,7 @@ Calcular el VA que soportará el núcleo con la ecuación (2) Tabla<a href="#121
 <tr>
 <td>525</td><td>10,500</td><td>4.106</td><td>26.49</td><td>1220</td><td>1041</td><td>162</td><td>4554</td><td>13</td>
 </tr>
-</table>
+</table></div>
 <h3><u><a name="xtocid893918">Energy losses</a></u></h3>
 <p>Cuando los transformadores transfieren energía, lo hacen con una pérdida mínima.  Como se indicó anteriormente, los diseños de transformadores de potencia modernos suelen superar el 95% de eficiencia.  Sin embargo, es bueno saber adónde va parte de esta energía perdida y qué causa que se pierda.</p>
 <p>Por supuesto, se pierde energía debido a la resistencia de los devanados del cable.  A menos que se utilicen cables superconductores, siempre habrá energía disipada en forma de calor a través de la resistencia de los conductores que transportan corriente.  Debido a que los transformadores requieren longitudes de cable tan largas, esta pérdida puede ser un factor importante.  Aumentar el calibre del alambre de bobinado es una forma de minimizar esta pérdida, pero sólo con aumentos sustanciales en costo, tamaño y peso.</p>
@@ -1231,7 +1244,7 @@ Calcular el VA que soportará el núcleo con la ecuación (2) Tabla<a href="#121
 <p>Otra "pérdida del núcleo" es la del campo magnético.<i>histéresis</i>.  Todos los materiales ferromagnéticos tienden a retener cierto grado de magnetización después de la exposición a un campo magnético externo.  Esta tendencia a permanecer magnetizado se llama "histéresis" y se necesita una cierta inversión de energía para superar esta oposición a cambiar cada vez que el campo magnético producido por el devanado primario cambia de polaridad (dos veces por ciclo de CA).  Este tipo de pérdida se puede mitigar mediante una buena selección del material del núcleo (eligiendo una aleación del núcleo con baja histéresis, como lo demuestra una curva de histéresis B/H “delgada”) y diseñando el núcleo para una densidad de flujo mínima (área de sección transversal grande).</p>
 <p>Las pérdidas de energía del transformador tienden a empeorar con el aumento de la frecuencia.  El efecto de piel dentro de los conductores devanados reduce el área de la sección transversal disponible para el flujo de electrones, aumentando así la resistencia efectiva a medida que aumenta la frecuencia y creando más potencia perdida a través de la disipación resistiva.  Las pérdidas del núcleo magnético también se exageran con frecuencias más altas, corrientes parásitas y efectos de histéresis que se vuelven más graves.  Por esta razón, los transformadores de tamaño significativo están diseñados para operar eficientemente en un rango limitado de frecuencias.  En la mayoría de los sistemas de distribución de energía donde la frecuencia de la línea es muy estable, uno pensaría que una frecuencia excesiva nunca plantearía un problema.  Desafortunadamente así es, en forma de armónicos creados por cargas no lineales.</p>
 <p>Como hemos visto en capítulos anteriores, las formas de onda no sinusoidales son equivalentes a series aditivas de múltiples formas de onda sinusoidales con diferentes amplitudes y frecuencias.  En los sistemas de energía, estas otras frecuencias son múltiplos de números enteros de la frecuencia fundamental (de línea), lo que significa que siempre serán mayores, no menores, que la frecuencia de diseño del transformador.  En gran medida, pueden provocar un sobrecalentamiento grave del transformador.  Los transformadores de potencia pueden diseñarse para manejar ciertos niveles de armónicos del sistema de potencia, y esta capacidad a veces se denota con una clasificación de “factor K”.</p>
-<h3><u><a name="xtocid893919">Stray capacitance and inductance</a></u></h3>
+<h3><u><a name="xtocid893919">Capacitancia e inductancia parásitas</a></u></h3>
 <a name="Resonance, transformer and inductor"></a>
 <p>Aparte de las potencias nominales y las pérdidas de potencia, los transformadores a menudo albergan otras limitaciones indeseables que los diseñadores de circuitos deben tener en cuenta.  Al igual que sus contrapartes más simples, los inductores, los transformadores exhiben capacitancia debido al aislamiento dieléctrico entre los conductores: de devanado a devanado, de vuelta a vuelta (en un solo devanado) y de devanado al núcleo.  Por lo general, esta capacitancia no es motivo de preocupación en una aplicación de energía, pero es posible que las aplicaciones de señales pequeñas (especialmente aquellas de alta frecuencia) no toleren bien esta peculiaridad.  Además, el efecto de tener capacitancia junto con la inductancia diseñada de los devanados le da a los transformadores la capacidad de<i>resonar</i>a una frecuencia particular, definitivamente una preocupación de diseño en aplicaciones de señales donde la frecuencia aplicada puede alcanzar este punto (generalmente la frecuencia resonante de un transformador de potencia está mucho más allá de la frecuencia de la alimentación de CA para la que fue diseñado).</p>
 <p>La contención de flujo (asegurarse de que el flujo magnético de un transformador no se escape para interferir con otro dispositivo y asegurarse de que el flujo magnético de otros dispositivos esté protegido del núcleo del transformador) es otra preocupación compartida tanto por los inductores como por los transformadores.</p>
@@ -1269,7 +1282,7 @@ Calcular el VA que soportará el núcleo con la ecuación (2) Tabla<a href="#121
 <p> <img src="02342.png"/> </p>
 <p><i>DC en primario, desplaza los picos de la forma de onda hacia el límite superior de saturación.</i></p>
 <p>Para la mayoría de los transformadores, la saturación del núcleo es un efecto muy indeseable y se evita mediante un buen diseño: diseñar los devanados y el núcleo de manera que las densidades de flujo magnético permanezcan muy por debajo de los niveles de saturación.  Esto asegura que la relación entre mmf y Φ sea más lineal a lo largo del ciclo de flujo, lo cual es bueno porque genera menos distorsión en la forma de onda de la corriente de magnetización.  Además, diseñar el núcleo para densidades de flujo bajas proporciona un margen seguro entre los picos de flujo normales y los límites de saturación del núcleo para adaptarse a condiciones anormales ocasionales, como la variación de frecuencia y la compensación de CC.</p>
-<h3><u><a name="xtocid893921">Inrush current</a></u></h3>
+<h3><u><a name="xtocid893921">Corriente de arranque</a></u></h3>
 <a name="Inrush current, transformer"></a>
 <a name="Transformer inrush current"></a>
 <p>Cuando un transformador se conecta inicialmente a una fuente de voltaje CA, puede haber un aumento sustancial de corriente a través del devanado primario llamado<i>corriente de irrupción</i>.   (Cifra<a href="#02346.png">  below</a>) Esto es análogo a la corriente de irrupción que presenta un motor eléctrico que se pone en marcha al conectarse repentinamente a una fuente de energía, aunque la irrupción del transformador es causada por un fenómeno diferente.</p>
@@ -1302,7 +1315,7 @@ Calcular el VA que soportará el núcleo con la ecuación (2) Tabla<a href="#121
 <p> <img src="02346.png"/> </p>
 <p><i>A partir de e=0 V, la corriente también aumenta al doble del valor normal para un núcleo insaturado, o considerablemente más en el caso (diseñado para) de saturación.</i></p>
 <p>Este es el mecanismo que causa la corriente de entrada en el devanado primario de un transformador cuando se conecta a una fuente de voltaje de CA.  Como puede ver, la magnitud de la corriente de entrada depende en gran medida del momento exacto en que se realiza la conexión eléctrica a la fuente.  Si el transformador tiene algo de magnetismo residual en su núcleo en el momento de la conexión a la fuente, la irrupción podría ser aún más grave.  Debido a esto, los dispositivos de protección contra sobrecorriente del transformador suelen ser del tipo "de acción lenta", para tolerar sobretensiones como esta sin abrir el circuito.</p>
-<h3><u><a name="xtocid893922">Heat and Noise</a></u></h3>
+<h3><u><a name="xtocid893922">Calor y ruido</a></u></h3>
 <a name="Magnetostriction"></a>
 <a name="Noise, transformer"></a>
 <p>Además de los efectos eléctricos no deseados, los transformadores también pueden presentar efectos físicos indeseables, siendo los más notables la producción de calor y ruido.  El ruido es principalmente un efecto molesto, pero el calor es un problema potencialmente grave porque el aislamiento del devanado se dañará si se permite que se sobrecaliente.  El calentamiento se puede minimizar mediante un buen diseño, asegurando que el núcleo no se acerque a niveles de saturación, que se minimicen las corrientes parásitas y que los devanados no se sobrecarguen ni se operen demasiado cerca de la ampacidad máxima.</p>
@@ -1334,24 +1347,21 @@ Calcular el VA que soportará el núcleo con la ecuación (2) Tabla<a href="#121
 <li>Los transformadores a menudo experimentan importantes<i>corrientes de irrupción</i>cuando se conecta inicialmente a una fuente de voltaje de CA.  La corriente de irrupción es más grave cuando la conexión a la fuente de CA se realiza en el momento en que el voltaje instantáneo de la fuente es cero.</li>
 <li>El ruido es un fenómeno común que presentan los transformadores, especialmente los transformadores de potencia, y es causado principalmente por<i>magnetoestricción</i>del núcleo.  Las fuerzas físicas que causan la vibración del devanado también pueden generar ruido en condiciones de carga pesada (alta corriente) del devanado secundario.</li>
 </ul>
-<h2><u><a name="xtocid893923">Contributors</a></u></h2>
+<h2><a name="xtocid893923">Colaboradores</a></h2>
 <p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>
 <p>
 <b>Bart Anderson</b>(Enero de 2004): Se corrigieron errores conceptuales relacionados con el funcionamiento y la seguridad de la bobina de Tesla.</p>
 <p>
 <b>Jason Stark</b>(Junio ​​de 2000): Formato de documentos HTML, que dio lugar a una segunda edición mucho más atractiva.</p>
-<h2><a name="xtocid893924">Bibliography</a></h2><br/>
+<h2><a name="xtocid893924">Bibliografía</a></h2><br/>
 <ol>
 <li><a name="MYA.bibitem">[MYA]Mitsuyoshi Yamamoto, Mitsugi Yamaguchi, “Electric Power In Japan, Rapid Electrification a Century Ago”,  EDN, (4/11/2002). <a href="http://www.ieee.org/organizations/pes/public/2005/mar/peshistory.html">http://www.ieee.org/organizations/pes/public/2005/mar/peshistory.html</a></a></li>
 <li><a name="RDR.bibitem">[RDR]“Reference Data for Radio Engineers, pp 274  ITT, 1956. </a></li>
 </ol>
 <br/>
-<hr/>
 <p>
 <i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="AC_A3.html">CC BY License</a>.
 </p>
-
-
 
 </body>
 
@@ -1359,7 +1369,7 @@ Calcular el VA que soportará el núcleo con la ecuación (2) Tabla<a href="#121
     <nav class="chapter-nav">
       <a href="AC_8.html" class="nav-btn" id="btn-prev">← Anterior</a>
       <a href="../index.html" class="nav-btn nav-home">🏠 Índice</a>
-      <a href="AC_A1.html" class="nav-btn" id="btn-next">Siguiente →</a>
+      <a href="AC_10.html" class="nav-btn" id="btn-next">Siguiente →</a>
     </nav>
     <footer class="site-footer">
       <p>Contenido original: <em>Lessons In Electric Circuits</em> por Tony R. Kuphaldt</p>

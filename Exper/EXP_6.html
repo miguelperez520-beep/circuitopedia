@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>!function(){var t=localStorage.getItem("liec-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();</script>
 <meta charset="UTF-8">
+    <meta name="description" content="Cosa análogaLos circuitos son circuitos que manejan señales libres de variar desde cero hasta el voltaje de alimentación total. Esto contrasta…">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Circuitopedia">
+    <meta property="og:title" content="Circuitos Integrados Analógicos — Circuitopedia">
+    <meta property="og:description" content="Cosa análogaLos circuitos son circuitos que manejan señales libres de variar desde cero hasta el voltaje de alimentación total. Esto contrasta…">
+    <meta property="og:url" content="https://circuitopedia.io/Exper/EXP_6.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Circuitos Integrados Analógicos — Circuitopedia">
+    <meta name="twitter:description" content="Cosa análogaLos circuitos son circuitos que manejan señales libres de variar desde cero hasta el voltaje de alimentación total. Esto contrasta…">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecciones de circuitos eléctricos - Volumen VI (Experimentos) - Capítulo 6 | Lecciones de Circuitos Eléctricos</title>
+<title>Circuitos Integrados Analógicos — Circuitopedia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.34.0/dist/tabler-icons.min.css">
 <style>:root { --accent: #ec4899; }</style>
 </head>
 <body>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <a href="../index.html" class="logo">Circuitopedia</a>
       <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
     </div>
     <div class="search-box">
@@ -22,132 +34,153 @@
     </div>
     <nav class="sidebar-nav">
 <div class="vol-group">
-  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">
+    <span class="vol-ic"><i class="ti ti-bolt" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Continua</span><span class="vol-lb">Vol. I · DC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
-    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
-    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
-    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
-    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
-    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
-    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
-    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
-    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
-    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
-    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
-    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
-    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
-    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
-    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
-    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
-    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
-    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
-    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+    <li><a href="../DC/DC_1.html"><span class="cap-num">01</span><span class="cap-name">Conceptos Básicos de Electricidad</span></a></li>
+    <li><a href="../DC/DC_2.html"><span class="cap-num">02</span><span class="cap-name">Ley de Ohm</span></a></li>
+    <li><a href="../DC/DC_3.html"><span class="cap-num">03</span><span class="cap-name">Seguridad Eléctrica</span></a></li>
+    <li><a href="../DC/DC_4.html"><span class="cap-num">04</span><span class="cap-name">Notación Científica y Prefijos</span></a></li>
+    <li><a href="../DC/DC_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Serie y Paralelo</span></a></li>
+    <li><a href="../DC/DC_6.html"><span class="cap-num">06</span><span class="cap-name">Divisores y Leyes de Kirchhoff</span></a></li>
+    <li><a href="../DC/DC_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Serie-Paralelo</span></a></li>
+    <li><a href="../DC/DC_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos de Medición CC</span></a></li>
+    <li><a href="../DC/DC_9.html"><span class="cap-num">09</span><span class="cap-name">Señales de Instrumentación</span></a></li>
+    <li><a href="../DC/DC_10.html"><span class="cap-num">10</span><span class="cap-name">Análisis de Red CC</span></a></li>
+    <li><a href="../DC/DC_11.html"><span class="cap-num">11</span><span class="cap-name">Baterías y Sistemas de Energía</span></a></li>
+    <li><a href="../DC/DC_12.html"><span class="cap-num">12</span><span class="cap-name">Conductores y Aisladores</span></a></li>
+    <li><a href="../DC/DC_13.html"><span class="cap-num">13</span><span class="cap-name">Condensadores</span></a></li>
+    <li><a href="../DC/DC_14.html"><span class="cap-num">14</span><span class="cap-name">Magnetismo y Electromagnetismo</span></a></li>
+    <li><a href="../DC/DC_15.html"><span class="cap-num">15</span><span class="cap-name">Inductores</span></a></li>
+    <li><a href="../DC/DC_16.html"><span class="cap-num">16</span><span class="cap-name">Constantes de Tiempo RC y L/R</span></a></li>
+    <li><a href="../DC/DC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../DC/DC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../DC/DC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">
+    <span class="vol-ic"><i class="ti ti-wave-sine" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Alterna</span><span class="vol-lb">Vol. II · AC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
-    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
-    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
-    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
-    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
-    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
-    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
-    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
-    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
-    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
-    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
-    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
-    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
-    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
-    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
-    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
-    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+    <li><a href="../AC/AC_1.html"><span class="cap-num">01</span><span class="cap-name">Teoría Básica de CA</span></a></li>
+    <li><a href="../AC/AC_2.html"><span class="cap-num">02</span><span class="cap-name">Números Complejos</span></a></li>
+    <li><a href="../AC/AC_3.html"><span class="cap-num">03</span><span class="cap-name">Reactancia e Impedancia Inductiva</span></a></li>
+    <li><a href="../AC/AC_4.html"><span class="cap-num">04</span><span class="cap-name">Reactancia e Impedancia Capacitiva</span></a></li>
+    <li><a href="../AC/AC_5.html"><span class="cap-num">05</span><span class="cap-name">Reactancia e Impedancia R, L y C</span></a></li>
+    <li><a href="../AC/AC_6.html"><span class="cap-num">06</span><span class="cap-name">Resonancia</span></a></li>
+    <li><a href="../AC/AC_7.html"><span class="cap-num">07</span><span class="cap-name">Señales CA de Frecuencia Mixta</span></a></li>
+    <li><a href="../AC/AC_8.html"><span class="cap-num">08</span><span class="cap-name">Filtros</span></a></li>
+    <li><a href="../AC/AC_9.html"><span class="cap-num">09</span><span class="cap-name">Transformadores</span></a></li>
+    <li><a href="../AC/AC_10.html"><span class="cap-num">10</span><span class="cap-name">Circuitos CA Polifásicos</span></a></li>
+    <li><a href="../AC/AC_11.html"><span class="cap-num">11</span><span class="cap-name">Factor de Potencia</span></a></li>
+    <li><a href="../AC/AC_12.html"><span class="cap-num">12</span><span class="cap-name">Circuitos de Medición CA</span></a></li>
+    <li><a href="../AC/AC_13.html"><span class="cap-num">13</span><span class="cap-name">Motores de CA</span></a></li>
+    <li><a href="../AC/AC_14.html"><span class="cap-num">14</span><span class="cap-name">Líneas de Transmisión</span></a></li>
+    <li><a href="../AC/AC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../AC/AC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../AC/AC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">
+    <span class="vol-ic"><i class="ti ti-cpu" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Semiconductores</span><span class="vol-lb">Vol. III</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
-    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
-    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
-    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
-    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
-    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
-    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
-    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
-    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
-    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
-    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
-    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
-    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
-    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
-    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
-    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+    <li><a href="../Semi/SEMI_1.html"><span class="cap-num">01</span><span class="cap-name">Amplificadores y Dispositivos Activos</span></a></li>
+    <li><a href="../Semi/SEMI_2.html"><span class="cap-num">02</span><span class="cap-name">Dispositivos de Estado Sólido</span></a></li>
+    <li><a href="../Semi/SEMI_3.html"><span class="cap-num">03</span><span class="cap-name">Diodos y Rectificadores</span></a></li>
+    <li><a href="../Semi/SEMI_4.html"><span class="cap-num">04</span><span class="cap-name">Transistores Bipolares (BJT)</span></a></li>
+    <li><a href="../Semi/SEMI_5.html"><span class="cap-num">05</span><span class="cap-name">Transistores de Efecto de Campo JFET</span></a></li>
+    <li><a href="../Semi/SEMI_6.html"><span class="cap-num">06</span><span class="cap-name">Transistores de Efecto de Campo IGFET</span></a></li>
+    <li><a href="../Semi/SEMI_7.html"><span class="cap-num">07</span><span class="cap-name">Tiristores</span></a></li>
+    <li><a href="../Semi/SEMI_8.html"><span class="cap-num">08</span><span class="cap-name">Amplificadores Operacionales</span></a></li>
+    <li><a href="../Semi/SEMI_9.html"><span class="cap-num">09</span><span class="cap-name">Circuitos Analógicos Prácticos</span></a></li>
+    <li><a href="../Semi/SEMI_10.html"><span class="cap-num">10</span><span class="cap-name">Filtros Activos</span></a></li>
+    <li><a href="../Semi/SEMI_11.html"><span class="cap-num">11</span><span class="cap-name">Motores de CC</span></a></li>
+    <li><a href="../Semi/SEMI_12.html"><span class="cap-num">12</span><span class="cap-name">Inversores y Accionadores de CA</span></a></li>
+    <li><a href="../Semi/SEMI_13.html"><span class="cap-num">13</span><span class="cap-name">Tubos de Electrones</span></a></li>
+    <li><a href="../Semi/SEMI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Semi/SEMI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Semi/SEMI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">
+    <span class="vol-ic"><i class="ti ti-binary" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Circuitos Digitales</span><span class="vol-lb">Vol. IV</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
-    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
-    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
-    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
-    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
-    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
-    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
-    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
-    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
-    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
-    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
-    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
-    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
-    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
-    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
-    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
-    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
-    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
-    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+    <li><a href="../Digital/DIGI_1.html"><span class="cap-num">01</span><span class="cap-name">Sistemas de Numeración</span></a></li>
+    <li><a href="../Digital/DIGI_2.html"><span class="cap-num">02</span><span class="cap-name">Aritmética Binaria</span></a></li>
+    <li><a href="../Digital/DIGI_3.html"><span class="cap-num">03</span><span class="cap-name">Puertas Lógicas</span></a></li>
+    <li><a href="../Digital/DIGI_4.html"><span class="cap-num">04</span><span class="cap-name">Interruptores</span></a></li>
+    <li><a href="../Digital/DIGI_5.html"><span class="cap-num">05</span><span class="cap-name">Relés Electromecánicos</span></a></li>
+    <li><a href="../Digital/DIGI_6.html"><span class="cap-num">06</span><span class="cap-name">Lógica de Escalera</span></a></li>
+    <li><a href="../Digital/DIGI_7.html"><span class="cap-num">07</span><span class="cap-name">Álgebra Booleana</span></a></li>
+    <li><a href="../Digital/DIGI_8.html"><span class="cap-num">08</span><span class="cap-name">Mapeo de Karnaugh</span></a></li>
+    <li><a href="../Digital/DIGI_9.html"><span class="cap-num">09</span><span class="cap-name">Funciones Lógicas Combinacionales</span></a></li>
+    <li><a href="../Digital/DIGI_10.html"><span class="cap-num">10</span><span class="cap-name">Multivibradores</span></a></li>
+    <li><a href="../Digital/DIGI_11.html"><span class="cap-num">11</span><span class="cap-name">Circuitos Secuenciales</span></a></li>
+    <li><a href="../Digital/DIGI_12.html"><span class="cap-num">12</span><span class="cap-name">Registros de Desplazamiento</span></a></li>
+    <li><a href="../Digital/DIGI_13.html"><span class="cap-num">13</span><span class="cap-name">Conversión Digital-Analógica</span></a></li>
+    <li><a href="../Digital/DIGI_14.html"><span class="cap-num">14</span><span class="cap-name">Comunicación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_15.html"><span class="cap-num">15</span><span class="cap-name">Almacenamiento Digital (Memoria)</span></a></li>
+    <li><a href="../Digital/DIGI_16.html"><span class="cap-num">16</span><span class="cap-name">Principios de Computación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Digital/DIGI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Digital/DIGI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">
+    <span class="vol-ic"><i class="ti ti-book-2" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Referencia</span><span class="vol-lb">Vol. V</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
-    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
-    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
-    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
-    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
-    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
-    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
-    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
-    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
-    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
-    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
-    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
-    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+    <li><a href="../Ref/REF_1.html"><span class="cap-num">01</span><span class="cap-name">Ecuaciones y Factores de Conversión</span></a></li>
+    <li><a href="../Ref/REF_2.html"><span class="cap-num">02</span><span class="cap-name">Códigos de Color</span></a></li>
+    <li><a href="../Ref/REF_3.html"><span class="cap-num">03</span><span class="cap-name">Tablas de Conductores y Aisladores</span></a></li>
+    <li><a href="../Ref/REF_4.html"><span class="cap-num">04</span><span class="cap-name">Referencia de Álgebra</span></a></li>
+    <li><a href="../Ref/REF_5.html"><span class="cap-num">05</span><span class="cap-name">Referencia de Trigonometría</span></a></li>
+    <li><a href="../Ref/REF_6.html"><span class="cap-num">06</span><span class="cap-name">Referencia de Cálculo</span></a></li>
+    <li><a href="../Ref/REF_7.html"><span class="cap-num">07</span><span class="cap-name">Simulación de Circuitos con SPICE</span></a></li>
+    <li><a href="../Ref/REF_8.html"><span class="cap-num">08</span><span class="cap-name">Solución de Problemas</span></a></li>
+    <li><a href="../Ref/REF_9.html"><span class="cap-num">09</span><span class="cap-name">Símbolos de Esquemas de Circuito</span></a></li>
+    <li><a href="../Ref/REF_10.html"><span class="cap-num">10</span><span class="cap-name">Tabla Periódica de los Elementos</span></a></li>
+    <li><a href="../Ref/REF_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Ref/REF_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Ref/REF_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">
+    <span class="vol-ic"><i class="ti ti-flask" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Experimentos</span><span class="vol-lb">Vol. VI</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
-    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
-    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
-    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
-    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
-    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
-    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
-    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
-    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
-    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
-    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+    <li><a href="../Exper/EXP_1.html"><span class="cap-num">01</span><span class="cap-name">Introducción</span></a></li>
+    <li><a href="../Exper/EXP_2.html"><span class="cap-num">02</span><span class="cap-name">Conceptos Básicos y Equipos de Prueba</span></a></li>
+    <li><a href="../Exper/EXP_3.html"><span class="cap-num">03</span><span class="cap-name">Circuitos CC</span></a></li>
+    <li><a href="../Exper/EXP_4.html"><span class="cap-num">04</span><span class="cap-name">Circuitos CA</span></a></li>
+    <li><a href="../Exper/EXP_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Semiconductores Discretos</span></a></li>
+    <li><a href="../Exper/EXP_6.html"><span class="cap-num">06</span><span class="cap-name">Circuitos Integrados Analógicos</span></a></li>
+    <li><a href="../Exper/EXP_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Integrados Digitales</span></a></li>
+    <li><a href="../Exper/EXP_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos con Temporizador 555</span></a></li>
+    <li><a href="../Exper/EXP_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Exper/EXP_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Exper/EXP_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">
+    <span class="vol-ic"><i class="ti ti-code" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Desarrollo</span><span class="vol-lb">Info técnica</span></span>
+  </a>
 </div>
 </nav>
 
@@ -156,33 +189,12 @@
   <main class="main-content">
     <header class="top-bar">
       <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
-      <span class="page-title">Lecciones de circuitos eléctricos - Volumen VI (Experimentos) - Capítulo 6</span>
+      <span class="page-title">Circuitos Integrados Analógicos</span>
       <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
     </header>
     <article class="content" id="content">
-      
-<body bgcolor="white">
-
-
-
-<hr/>
-<h1>Lecciones de circuitos eléctricos - Volumen VI</h1>
-<h1>Capítulo 6</h1>
-<h1>CIRCUITOS INTEGRADOS ANALÓGICOS</h1>
-<!--minitoc-->
-<ul>
-<li><a href="#xtocid94580"><u>Introduction</u></a></li>
-<li><a href="#xtocid94581"><u>Voltage comparator</u></a></li>
-<li><a href="#xtocid94582"><u>Precision voltage follower</u></a></li>
-<li><a href="#xtocid94583"><u>Noninverting amplifier</u></a></li>
-<li><a href="#xtocid94584"><u>High-impedance voltmeter</u></a></li>
-<li><a href="#xtocid94585"><u>Integrator</u></a></li>
-<li><a href="#xtocid94586"><u>555 audio oscillator</u></a></li>
-<li><a href="#xtocid94587"><u>555 ramp generator</u></a></li>
-<li><a href="#xtocid94588"><u>PWM power controller</u></a></li>
-<li><a href="#xtocid94589"><u>Class B audio amplifier</u></a></li></ul>
-<h2><u><a name="xtocid94580">Introduction</a></u></h2>
-<a name="Analog"></a>
+<h1>Circuitos Integrados Analógicos</h1>
+<h2><a name="xtocid94580">Introducción</a></h2>
 <a name="Digital"></a>
 <p>
 <i>Cosa análoga</i>Los circuitos son circuitos que manejan señales libres de variar desde cero hasta el voltaje de alimentación total.  Esto contrasta con<i>digital</i>circuitos, que emplean casi exclusivamente señales de "todo o nada": tensiones restringidas a valores de cero y tensión de alimentación total, sin ningún estado válido entre esos límites extremos.  Los circuitos analógicos a menudo se denominan<i>lineal</i>circuitos para enfatizar la continuidad válida del rango de señal prohibido en circuitos digitales, pero lamentablemente esta etiqueta es engañosa.  El hecho de que se permita que una señal de voltaje o corriente varíe suavemente entre los extremos de cero y los límites de suministro de energía total no significa necesariamente que todas las relaciones matemáticas entre estas señales sean lineales en el sentido de "línea recta" o "proporcional" de la palabra.  Como verá en este capítulo, muchos de los llamados circuitos "lineales" son bastante<i>non</i>lineal en su comportamiento, ya sea por necesidad de la física o por diseño.</p>
@@ -193,8 +205,7 @@
 <a name="Feedback"></a>
 <p>Quizás el circuito integrado analógico más versátil e importante que el estudiante debe dominar es el<i>amplificador operacional</i>, o<i>amplificador operacional</i>.  Esencialmente, nada más que un amplificador diferencial con una ganancia de voltaje muy alta, los amplificadores operacionales son el caballo de batalla del mundo del diseño analógico.  Al aplicar inteligentemente la retroalimentación de la salida de un amplificador operacional a una o más de sus entradas, se puede obtener una amplia variedad de comportamientos a partir de este único dispositivo.  Hay muchos modelos diferentes de amplificadores operacionales disponibles a bajo costo, pero los circuitos descritos en este capítulo incorporarán sólo modelos de amplificadores operacionales comúnmente disponibles.</p>
 <br/>
-<h2><u><a name="xtocid94581">Voltage comparator</a></u></h2>
-<a name="Experiment: Voltage comparator"></a>
+<h2><a name="xtocid94581">Comparador de tensión</a></h2>
 <p>
 <b>PIEZAS Y MATERIALES</b>
 </p>
@@ -242,8 +253,7 @@ A <i>comparador</i>El circuito compara dos señales de voltaje y determina cuál
 <p>Los circuitos comparadores se utilizan ampliamente para comparar mediciones físicas, siempre que esas variables físicas puedan traducirse en señales de voltaje.  Por ejemplo, si se conectara un pequeño generador a una rueda de anemómetro para producir un voltaje proporcional a la velocidad del viento, esa señal de velocidad del viento podría compararse con un voltaje de "punto de ajuste" y compararse con un amplificador operacional para activar una alarma de alta velocidad del viento:</p>
 <p> <img src="05208.png"/> </p>
 <br/>
-<h2><u><a name="xtocid94582">Precision voltage follower</a></u></h2>
-<a name="Experiment: Precision voltage follower"></a>
+<h2><a name="xtocid94582">Seguidor de tensión de precisión</a></h2>
 <p>
 <b>PIEZAS Y MATERIALES</b>
 </p>
@@ -319,8 +329,7 @@ rload 2 0 10k
 <p>Debido a que SPICE considera que la impedancia de entrada de una fuente dependiente es infinita, se debe incluir una cantidad finita de resistencia para evitar un error de análisis.  Este es el propósito de R<sub>falso</sub>: para proporcionar una ruta de CC a tierra para la V<sub>aporte</sub>fuente de voltaje.  Estas "falsas" resistencias deberían ser arbitrariamente grandes.  En esta simulación elegí 1 MΩ para una R<sub>falso</sub>valor.</p>
 <p>Se incluye una resistencia de carga en el circuito por la misma razón: proporcionar una ruta de CC para la corriente en la salida de la fuente de voltaje dependiente.  Como puedes ver, ¡a SPICE no le gustan los circuitos abiertos!</p>
 <br/>
-<h2><u><a name="xtocid94583">Noninverting amplifier</a></u></h2>
-<a name="Experiment: Noninverting amplifier"></a>
+<h2><a name="xtocid94583">Noninverting amplifier</a></h2>
 <p>
 <b>PIEZAS Y MATERIALES</b>
 </p>
@@ -394,8 +403,7 @@ rload 3 0 10k
 <br/>
 <p>con r<sub>1</sub>y r<sub>2</sub>establecido igualmente en 5 kΩ en la simulación, imita el potenciómetro de retroalimentación del circuito real en la posición media (50%).  Para simular el potenciómetro en la posición 75%, configure R<sub>2</sub>a 7,5 kΩ y R<sub>1</sub>a 2,5 kΩ.</p>
 <br/>
-<h2><u><a name="xtocid94584">High-impedance voltmeter</a></u></h2>
-<a name="Experiment: High-impedance voltmeter"></a>
+<h2><a name="xtocid94584">High-impedance voltmeter</a></h2>
 <p>
 <b>PIEZAS Y MATERIALES</b>
 </p>
@@ -454,8 +462,7 @@ rload 3 0 10k
 <p>Intente tocar tierra con la sonda de prueba del medidor.  Este<i>debería</i>Conduzca la aguja del medidor exactamente a 0 voltios como antes, ¡pero no lo hará!  Lo que está sucediendo aquí es un fenómeno de amplificador operacional llamado<i>engancharse</i>: donde la salida del amplificador operacional conduce a un voltaje positivo cuando el voltaje de modo común de entrada excede el límite permitido.  En este caso, como ocurre con muchos amplificadores operacionales de entrada JFET, no se debe permitir que ninguna entrada se acerque al voltaje del riel de suministro de energía.  Con un solo suministro, el riel de alimentación negativo del amplificador operacional está en potencial de tierra (0 voltios), por lo que conectar a tierra la sonda de prueba lleva la entrada no inversora (+) exactamente a ese voltaje del riel.  Esto es malo para un amplificador operacional JFET y hace que la salida sea fuertemente positiva, aunque no parece que debería, según cómo se supone que funcionan los amplificadores operacionales.</p>
 <p>Cuando el amplificador operacional funcionó con un suministro "doble" (+12/-12 voltios, en lugar de un suministro "único" de +24 voltios), el riel de suministro de energía negativo estaba a 12 voltios de tierra (0 voltios), por lo que conectar a tierra la sonda de prueba no violó el límite de voltaje de modo común del amplificador operacional.  Sin embargo, con el suministro "único" de +24 voltios, tenemos un problema.  Tenga en cuenta que algunos amplificadores operacionales no se "enganchan" como lo hace el modelo TL082.  Puede reemplazar el TL082 con un amplificador operacional LM1458, que es compatible pin por pin (no se necesitan cambios en el cableado de la placa).  El modelo 1458 no se "enganchará" cuando la sonda de prueba esté conectada a tierra, aunque es posible que aún obtenga lecturas incorrectas del medidor con el voltaje medido exactamente igual al riel negativo de suministro de energía.  Como regla general, siempre debe asegurarse de que los voltajes del riel de suministro de energía del amplificador operacional excedan los voltajes de entrada esperados.</p>
 <br/>
-<h2><u><a name="xtocid94585">Integrator</a></u></h2>
-<a name="Experiment: Integrator"></a>
+<h2><a name="xtocid94585">Integrator</a></h2>
 <p>
 <b>PIEZAS Y MATERIALES</b>
 </p>
@@ -547,8 +554,7 @@ e1 3 0 0 2 999k
 </pre>
 <br/>
 <br/>
-<h2><u><a name="xtocid94586">555 audio oscillator</a></u></h2>
-<a name="Experiment: 555 audio oscillator"></a>
+<h2><a name="xtocid94586">555 audio oscillator</a></h2>
 <p>
 <b>PIEZAS Y MATERIALES</b>
 </p>
@@ -603,8 +609,7 @@ e1 3 0 0 2 999k
 <p>La igualdad o desigualdad entre los tiempos "alto" y "bajo" de una onda cuadrada se expresa como el tiempo de esa onda.<i>ciclo de trabajo</i>.  Una onda cuadrada con un ciclo de trabajo del 50% es perfectamente simétrica: su tiempo "alto" es exactamente igual a su tiempo "bajo".  Se dice que una onda cuadrada que es "alta" el 10% del tiempo y "baja" el 90% del tiempo tiene un ciclo de trabajo del 10%.  En este circuito, la forma de onda de salida tiene un tiempo "alto" que excede el tiempo "bajo", lo que resulta en un ciclo de trabajo superior al 50%.</p>
 <p>Utilice el detector de audio (o un osciloscopio) para investigar las diferentes formas de onda de voltaje producidas por este circuito.  Pruebe diferentes valores de resistencia y/o valores de condensador para ver qué efectos tienen en la frecuencia de salida o los tiempos de carga/descarga.</p>
 <br/>
-<h2><u><a name="xtocid94587">555 ramp generator</a></u></h2>
-<a name="Experiment: 555 ramp generator"></a>
+<h2><a name="xtocid94587">555 ramp generator</a></h2>
 <p>
 <b>PIEZAS Y MATERIALES</b>
 </p>
@@ -664,8 +669,7 @@ e1 3 0 0 2 999k
 <p>Este circuito funciona tan bien en frecuencias altas como en frecuencias bajas.  Reemplace el capacitor de 470 µF con un capacitor de 0,1 µF y use un detector de audio para detectar la forma de onda de voltaje en el terminal de salida del 555.  El detector debe producir un tono de audio que sea fácil de escuchar.  El voltaje del capacitor ahora cambiará demasiado rápido para verlo con un voltímetro en el modo CC, pero aún podemos medir la corriente del capacitor con un amperímetro.</p>
 <p>Con el amperímetro conectado entre TP1 y TP3 (modo RC), mida tanto los microamperios de CC como los microamperios de CA.  Registre estas cifras actuales en papel.  Ahora conecte el amperímetro entre TP1 y TP2 (modo de corriente constante).  Mida tanto los microamperios de CC como los microamperios de CA, observando cualquier diferencia en las lecturas de corriente entre esta configuración de circuito y la última.  Medir la corriente CA además de la corriente CC es una manera fácil de determinar qué configuración de circuito proporciona la corriente de carga más estable.  Si el circuito espejo actual fuera perfecto (la corriente de carga del condensador absolutamente constante), el medidor mediría cero corriente alterna.</p>
 <br/>
-<h2><u><a name="xtocid94588">PWM power controller</a></u></h2>
-<a name="Experiment: PWM power controller"></a>
+<h2><a name="xtocid94588">Controlador de potencia por PWM</a></h2>
 <p>
 <b>PIEZAS Y MATERIALES</b>
 </p>
@@ -726,8 +730,7 @@ e1 3 0 0 2 999k
 <p>Es interesante escuchar la señal de salida del amplificador operacional a través de un detector de audio mientras el potenciómetro se ajusta en todo su rango de movimiento.  Ajustar el potenciómetro no tiene ningún efecto sobre la frecuencia de la señal, pero afecta en gran medida el ciclo de trabajo.  Note la diferencia en la calidad del tono, o<i>timbre</i>, ya que el potenciómetro varía el ciclo de trabajo de 0% a 50% a 100%.  Variar el ciclo de trabajo tiene el efecto de cambiar el contenido armónico de la forma de onda, lo que hace que el tono suene diferente.</p>
 <p>Es posible que notes una singularidad particular en el sonido que se escucha a través de los auriculares del detector cuando el potenciómetro está en la posición central (50% del ciclo de trabajo - 50% de potencia de carga), versus un tipo de similitud en el sonido justo por encima o por debajo del 50% del ciclo de trabajo.  Esto se debe a la ausencia o presencia de armónicos pares.  Cualquier forma de onda que sea simétrica por encima y por debajo de su línea central, como una onda cuadrada con un ciclo de trabajo del 50%, contiene<i>no</i>armónicos pares, solo impares.  Si el ciclo de trabajo está por debajo o por encima del 50%, la forma de onda<i>not</i>exhiben esta simetría y habrá armónicos pares.  La presencia de estas frecuencias armónicas pares puede ser detectada por el oído humano, ya que algunas de ellas corresponden a<i>octavas</i>de la frecuencia fundamental y así "encajar" más naturalmente en el esquema tonal.</p>
 <br/>
-<h2><u><a name="xtocid94589">Class B audio amplifier</a></u></h2>
-<a name="Experiment: Class B audio amplifier"></a>
+<h2><a name="xtocid94589">Class B audio amplifier</a></h2>
 <p>
 <b>PIEZAS Y MATERIALES</b>
 </p>

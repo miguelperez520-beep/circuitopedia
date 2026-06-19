@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>!function(){var t=localStorage.getItem("liec-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();</script>
 <meta charset="UTF-8">
+    <meta name="description" content="Los registros de desplazamiento, al igual que los contadores, son una forma delógica secuencial. La lógica secuencial, a diferencia de la lógica…">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Circuitopedia">
+    <meta property="og:title" content="Registros de Desplazamiento — Circuitopedia">
+    <meta property="og:description" content="Los registros de desplazamiento, al igual que los contadores, son una forma delógica secuencial. La lógica secuencial, a diferencia de la lógica…">
+    <meta property="og:url" content="https://circuitopedia.io/Digital/DIGI_12.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Registros de Desplazamiento — Circuitopedia">
+    <meta name="twitter:description" content="Los registros de desplazamiento, al igual que los contadores, son una forma delógica secuencial. La lógica secuencial, a diferencia de la lógica…">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 12 | Lecciones de Circuitos Eléctricos</title>
+<title>Registros de Desplazamiento — Circuitopedia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.34.0/dist/tabler-icons.min.css">
 <style>:root { --accent: #f59e0b; }</style>
 </head>
-<body>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <a href="../index.html" class="logo">Circuitopedia</a>
       <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
     </div>
     <div class="search-box">
@@ -22,132 +33,153 @@
     </div>
     <nav class="sidebar-nav">
 <div class="vol-group">
-  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">
+    <span class="vol-ic"><i class="ti ti-bolt" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Continua</span><span class="vol-lb">Vol. I · DC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
-    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
-    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
-    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
-    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
-    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
-    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
-    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
-    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
-    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
-    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
-    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
-    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
-    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
-    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
-    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
-    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
-    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
-    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+    <li><a href="../DC/DC_1.html"><span class="cap-num">01</span><span class="cap-name">Conceptos Básicos de Electricidad</span></a></li>
+    <li><a href="../DC/DC_2.html"><span class="cap-num">02</span><span class="cap-name">Ley de Ohm</span></a></li>
+    <li><a href="../DC/DC_3.html"><span class="cap-num">03</span><span class="cap-name">Seguridad Eléctrica</span></a></li>
+    <li><a href="../DC/DC_4.html"><span class="cap-num">04</span><span class="cap-name">Notación Científica y Prefijos</span></a></li>
+    <li><a href="../DC/DC_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Serie y Paralelo</span></a></li>
+    <li><a href="../DC/DC_6.html"><span class="cap-num">06</span><span class="cap-name">Divisores y Leyes de Kirchhoff</span></a></li>
+    <li><a href="../DC/DC_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Serie-Paralelo</span></a></li>
+    <li><a href="../DC/DC_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos de Medición CC</span></a></li>
+    <li><a href="../DC/DC_9.html"><span class="cap-num">09</span><span class="cap-name">Señales de Instrumentación</span></a></li>
+    <li><a href="../DC/DC_10.html"><span class="cap-num">10</span><span class="cap-name">Análisis de Red CC</span></a></li>
+    <li><a href="../DC/DC_11.html"><span class="cap-num">11</span><span class="cap-name">Baterías y Sistemas de Energía</span></a></li>
+    <li><a href="../DC/DC_12.html"><span class="cap-num">12</span><span class="cap-name">Conductores y Aisladores</span></a></li>
+    <li><a href="../DC/DC_13.html"><span class="cap-num">13</span><span class="cap-name">Condensadores</span></a></li>
+    <li><a href="../DC/DC_14.html"><span class="cap-num">14</span><span class="cap-name">Magnetismo y Electromagnetismo</span></a></li>
+    <li><a href="../DC/DC_15.html"><span class="cap-num">15</span><span class="cap-name">Inductores</span></a></li>
+    <li><a href="../DC/DC_16.html"><span class="cap-num">16</span><span class="cap-name">Constantes de Tiempo RC y L/R</span></a></li>
+    <li><a href="../DC/DC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../DC/DC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../DC/DC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">
+    <span class="vol-ic"><i class="ti ti-wave-sine" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Alterna</span><span class="vol-lb">Vol. II · AC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
-    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
-    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
-    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
-    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
-    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
-    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
-    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
-    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
-    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
-    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
-    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
-    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
-    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
-    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
-    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
-    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+    <li><a href="../AC/AC_1.html"><span class="cap-num">01</span><span class="cap-name">Teoría Básica de CA</span></a></li>
+    <li><a href="../AC/AC_2.html"><span class="cap-num">02</span><span class="cap-name">Números Complejos</span></a></li>
+    <li><a href="../AC/AC_3.html"><span class="cap-num">03</span><span class="cap-name">Reactancia e Impedancia Inductiva</span></a></li>
+    <li><a href="../AC/AC_4.html"><span class="cap-num">04</span><span class="cap-name">Reactancia e Impedancia Capacitiva</span></a></li>
+    <li><a href="../AC/AC_5.html"><span class="cap-num">05</span><span class="cap-name">Reactancia e Impedancia R, L y C</span></a></li>
+    <li><a href="../AC/AC_6.html"><span class="cap-num">06</span><span class="cap-name">Resonancia</span></a></li>
+    <li><a href="../AC/AC_7.html"><span class="cap-num">07</span><span class="cap-name">Señales CA de Frecuencia Mixta</span></a></li>
+    <li><a href="../AC/AC_8.html"><span class="cap-num">08</span><span class="cap-name">Filtros</span></a></li>
+    <li><a href="../AC/AC_9.html"><span class="cap-num">09</span><span class="cap-name">Transformadores</span></a></li>
+    <li><a href="../AC/AC_10.html"><span class="cap-num">10</span><span class="cap-name">Circuitos CA Polifásicos</span></a></li>
+    <li><a href="../AC/AC_11.html"><span class="cap-num">11</span><span class="cap-name">Factor de Potencia</span></a></li>
+    <li><a href="../AC/AC_12.html"><span class="cap-num">12</span><span class="cap-name">Circuitos de Medición CA</span></a></li>
+    <li><a href="../AC/AC_13.html"><span class="cap-num">13</span><span class="cap-name">Motores de CA</span></a></li>
+    <li><a href="../AC/AC_14.html"><span class="cap-num">14</span><span class="cap-name">Líneas de Transmisión</span></a></li>
+    <li><a href="../AC/AC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../AC/AC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../AC/AC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">
+    <span class="vol-ic"><i class="ti ti-cpu" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Semiconductores</span><span class="vol-lb">Vol. III</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
-    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
-    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
-    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
-    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
-    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
-    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
-    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
-    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
-    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
-    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
-    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
-    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
-    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
-    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
-    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+    <li><a href="../Semi/SEMI_1.html"><span class="cap-num">01</span><span class="cap-name">Amplificadores y Dispositivos Activos</span></a></li>
+    <li><a href="../Semi/SEMI_2.html"><span class="cap-num">02</span><span class="cap-name">Dispositivos de Estado Sólido</span></a></li>
+    <li><a href="../Semi/SEMI_3.html"><span class="cap-num">03</span><span class="cap-name">Diodos y Rectificadores</span></a></li>
+    <li><a href="../Semi/SEMI_4.html"><span class="cap-num">04</span><span class="cap-name">Transistores Bipolares (BJT)</span></a></li>
+    <li><a href="../Semi/SEMI_5.html"><span class="cap-num">05</span><span class="cap-name">Transistores de Efecto de Campo JFET</span></a></li>
+    <li><a href="../Semi/SEMI_6.html"><span class="cap-num">06</span><span class="cap-name">Transistores de Efecto de Campo IGFET</span></a></li>
+    <li><a href="../Semi/SEMI_7.html"><span class="cap-num">07</span><span class="cap-name">Tiristores</span></a></li>
+    <li><a href="../Semi/SEMI_8.html"><span class="cap-num">08</span><span class="cap-name">Amplificadores Operacionales</span></a></li>
+    <li><a href="../Semi/SEMI_9.html"><span class="cap-num">09</span><span class="cap-name">Circuitos Analógicos Prácticos</span></a></li>
+    <li><a href="../Semi/SEMI_10.html"><span class="cap-num">10</span><span class="cap-name">Filtros Activos</span></a></li>
+    <li><a href="../Semi/SEMI_11.html"><span class="cap-num">11</span><span class="cap-name">Motores de CC</span></a></li>
+    <li><a href="../Semi/SEMI_12.html"><span class="cap-num">12</span><span class="cap-name">Inversores y Accionadores de CA</span></a></li>
+    <li><a href="../Semi/SEMI_13.html"><span class="cap-num">13</span><span class="cap-name">Tubos de Electrones</span></a></li>
+    <li><a href="../Semi/SEMI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Semi/SEMI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Semi/SEMI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">
+    <span class="vol-ic"><i class="ti ti-binary" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Circuitos Digitales</span><span class="vol-lb">Vol. IV</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
-    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
-    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
-    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
-    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
-    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
-    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
-    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
-    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
-    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
-    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
-    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
-    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
-    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
-    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
-    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
-    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
-    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
-    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+    <li><a href="../Digital/DIGI_1.html"><span class="cap-num">01</span><span class="cap-name">Sistemas de Numeración</span></a></li>
+    <li><a href="../Digital/DIGI_2.html"><span class="cap-num">02</span><span class="cap-name">Aritmética Binaria</span></a></li>
+    <li><a href="../Digital/DIGI_3.html"><span class="cap-num">03</span><span class="cap-name">Puertas Lógicas</span></a></li>
+    <li><a href="../Digital/DIGI_4.html"><span class="cap-num">04</span><span class="cap-name">Interruptores</span></a></li>
+    <li><a href="../Digital/DIGI_5.html"><span class="cap-num">05</span><span class="cap-name">Relés Electromecánicos</span></a></li>
+    <li><a href="../Digital/DIGI_6.html"><span class="cap-num">06</span><span class="cap-name">Lógica de Escalera</span></a></li>
+    <li><a href="../Digital/DIGI_7.html"><span class="cap-num">07</span><span class="cap-name">Álgebra Booleana</span></a></li>
+    <li><a href="../Digital/DIGI_8.html"><span class="cap-num">08</span><span class="cap-name">Mapeo de Karnaugh</span></a></li>
+    <li><a href="../Digital/DIGI_9.html"><span class="cap-num">09</span><span class="cap-name">Funciones Lógicas Combinacionales</span></a></li>
+    <li><a href="../Digital/DIGI_10.html"><span class="cap-num">10</span><span class="cap-name">Multivibradores</span></a></li>
+    <li><a href="../Digital/DIGI_11.html"><span class="cap-num">11</span><span class="cap-name">Circuitos Secuenciales</span></a></li>
+    <li><a href="../Digital/DIGI_12.html"><span class="cap-num">12</span><span class="cap-name">Registros de Desplazamiento</span></a></li>
+    <li><a href="../Digital/DIGI_13.html"><span class="cap-num">13</span><span class="cap-name">Conversión Digital-Analógica</span></a></li>
+    <li><a href="../Digital/DIGI_14.html"><span class="cap-num">14</span><span class="cap-name">Comunicación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_15.html"><span class="cap-num">15</span><span class="cap-name">Almacenamiento Digital (Memoria)</span></a></li>
+    <li><a href="../Digital/DIGI_16.html"><span class="cap-num">16</span><span class="cap-name">Principios de Computación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Digital/DIGI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Digital/DIGI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">
+    <span class="vol-ic"><i class="ti ti-book-2" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Referencia</span><span class="vol-lb">Vol. V</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
-    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
-    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
-    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
-    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
-    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
-    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
-    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
-    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
-    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
-    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
-    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
-    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+    <li><a href="../Ref/REF_1.html"><span class="cap-num">01</span><span class="cap-name">Ecuaciones y Factores de Conversión</span></a></li>
+    <li><a href="../Ref/REF_2.html"><span class="cap-num">02</span><span class="cap-name">Códigos de Color</span></a></li>
+    <li><a href="../Ref/REF_3.html"><span class="cap-num">03</span><span class="cap-name">Tablas de Conductores y Aisladores</span></a></li>
+    <li><a href="../Ref/REF_4.html"><span class="cap-num">04</span><span class="cap-name">Referencia de Álgebra</span></a></li>
+    <li><a href="../Ref/REF_5.html"><span class="cap-num">05</span><span class="cap-name">Referencia de Trigonometría</span></a></li>
+    <li><a href="../Ref/REF_6.html"><span class="cap-num">06</span><span class="cap-name">Referencia de Cálculo</span></a></li>
+    <li><a href="../Ref/REF_7.html"><span class="cap-num">07</span><span class="cap-name">Simulación de Circuitos con SPICE</span></a></li>
+    <li><a href="../Ref/REF_8.html"><span class="cap-num">08</span><span class="cap-name">Solución de Problemas</span></a></li>
+    <li><a href="../Ref/REF_9.html"><span class="cap-num">09</span><span class="cap-name">Símbolos de Esquemas de Circuito</span></a></li>
+    <li><a href="../Ref/REF_10.html"><span class="cap-num">10</span><span class="cap-name">Tabla Periódica de los Elementos</span></a></li>
+    <li><a href="../Ref/REF_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Ref/REF_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Ref/REF_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">
+    <span class="vol-ic"><i class="ti ti-flask" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Experimentos</span><span class="vol-lb">Vol. VI</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
-    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
-    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
-    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
-    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
-    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
-    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
-    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
-    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
-    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
-    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+    <li><a href="../Exper/EXP_1.html"><span class="cap-num">01</span><span class="cap-name">Introducción</span></a></li>
+    <li><a href="../Exper/EXP_2.html"><span class="cap-num">02</span><span class="cap-name">Conceptos Básicos y Equipos de Prueba</span></a></li>
+    <li><a href="../Exper/EXP_3.html"><span class="cap-num">03</span><span class="cap-name">Circuitos CC</span></a></li>
+    <li><a href="../Exper/EXP_4.html"><span class="cap-num">04</span><span class="cap-name">Circuitos CA</span></a></li>
+    <li><a href="../Exper/EXP_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Semiconductores Discretos</span></a></li>
+    <li><a href="../Exper/EXP_6.html"><span class="cap-num">06</span><span class="cap-name">Circuitos Integrados Analógicos</span></a></li>
+    <li><a href="../Exper/EXP_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Integrados Digitales</span></a></li>
+    <li><a href="../Exper/EXP_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos con Temporizador 555</span></a></li>
+    <li><a href="../Exper/EXP_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Exper/EXP_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Exper/EXP_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">
+    <span class="vol-ic"><i class="ti ti-code" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Desarrollo</span><span class="vol-lb">Info técnica</span></span>
+  </a>
 </div>
 </nav>
 
@@ -156,56 +188,42 @@
   <main class="main-content">
     <header class="top-bar">
       <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
-      <span class="page-title">Lecciones de circuitos eléctricos - Volumen IV (Digital) - Capítulo 12</span>
+      <span class="page-title">Registros de Desplazamiento</span>
       <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
     </header>
     <article class="content" id="content">
       
-<body bgcolor="white">
-
-
-
-<hr/>
-<h1>Lecciones de circuitos eléctricos - Volumen IV</h1>
-<h1>Capítulo 12</h1>
-<!-- -->
-<!--Created 07/01/2004 to 04/09/2005 (DC)-->
-<!--Modified-->
-<!--first table/equation image 14164.eps-->
-<!--last table/equation image  14xxx.eps-->
-<!--first schematic image 04371.eps-->
-<!--last schematic image 043.eps-->
 <a name="shift register"></a>
 <a name="sequential logic, shift register"></a>
-<h1>REGISTROS DE TURNO</h1>
+<h1>Registros de Desplazamiento</h1>
 <!--minitoc-->
 <ul>
-<li><a href="#xtocid92430"><u>Introduction</u></a></li>
-<li><a href="#xtocid92431"><u>Serial-in/serial-out shift register</u></a></li>
+<li><a href="#xtocid92430"><u>Introducción</u></a></li>
+<li><a href="#xtocid92431"><u>Registro de desplazamiento de entrada y salida serie</u></a></li>
 <ul>
-<li><a href="#xtocid92432"><u>Serial-in/serial-out devices</u></a></li>
+<li><a href="#xtocid92432"><u>Dispositivos de entrada/salida serie</u></a></li>
 </ul>
-<li><a href="#xtocid92433"><u>Parallel-in, serial-out shift register</u></a></li>
+<li><a href="#xtocid92433"><u>Registro de desplazamiento de entrada paralela y salida serie</u></a></li>
 <ul>
-<li><a href="#xtocid92434"><u>Parallel-in/serial-out devices</u></a></li>
-<li><a href="#xtocid92435"><u>Practical applications</u></a></li>
+<li><a href="#xtocid92434"><u>Dispositivos de entrada paralela/salida serie</u></a></li>
+<li><a href="#xtocid92435"><u>Aplicaciones prácticas</u></a></li>
 </ul>
-<li><a href="#xtocid92436"><u>Serial-in, parallel-out shift register</u></a></li>
+<li><a href="#xtocid92436"><u>Registro de desplazamiento de entrada serie y salida paralela</u></a></li>
 <ul>
-<li><a href="#xtocid92437"><u>Serial-in/ parallel-out devices</u></a></li>
-<li><a href="#xtocid92438"><u>Practical applications</u></a></li>
+<li><a href="#xtocid92437"><u>Dispositivos de entrada serie/salida paralela</u></a></li>
+<li><a href="#xtocid92438"><u>Aplicaciones prácticas</u></a></li>
 </ul>
-<li><a href="#xtocid92439"><u>Parallel-in, parallel-out, universal shift register</u></a></li>
+<li><a href="#xtocid92439"><u>Registro de desplazamiento universal de entrada/salida en paralelo</u></a></li>
 <ul>
-<li><a href="#xtocid924310"><u>Parallel-in/ parallel-out and universal devices</u></a></li>
-<li><a href="#xtocid924311"><u>Practical applications</u></a></li>
+<li><a href="#xtocid924310"><u>Dispositivos paralelo-paralelo y universales</u></a></li>
+<li><a href="#xtocid924311"><u>Aplicaciones prácticas</u></a></li>
 </ul>
-<li><a href="#xtocid924312"><u>Ring counters</u></a></li>
+<li><a href="#xtocid924312"><u>Contadores de anillo</u></a></li>
 <ul>
-<li><a href="#xtocid924313"><u>Johnson counters</u></a></li>
+<li><a href="#xtocid924313"><u>Contadores Johnson</u></a></li>
 <ul>
-<li><a href="#xtocid924314">Johnson counter devices</a></li>
-<li><a href="#xtocid924315">Practical applications</a></li>
+<li><a href="#xtocid924314">Dispositivos con contador Johnson</a></li>
+<li><a href="#xtocid924315">Aplicaciones prácticas</a></li>
 </ul>
 </ul>
 <li><a href="#xtocid924316"><u> references</u></a></li></ul>
@@ -216,7 +234,7 @@
 <p>
 <!--inage image after author-->
 </p>
-<h2><u><a name="xtocid92430">Introduction</a></u></h2>
+<h2><a name="xtocid92430">Introducción</a></h2>
 <p>Los registros de desplazamiento, al igual que los contadores, son una forma de<i>lógica secuencial</i>. La lógica secuencial, a diferencia de la lógica combinacional, no solo se ve afectada por las entradas presentes, sino también por la historia anterior. En otras palabras, la lógica secuencial recuerda eventos pasados.</p>
 <p>Los registros de desplazamiento producen un retraso discreto de una señal o forma de onda digital. Una forma de onda sincronizada con un<i>reloj</i>, una onda cuadrada que se repite, se retrasa por<b>"n"</b>tiempos de reloj discretos, donde<b>"n"</b>es el número de etapas del registro de desplazamiento. Por lo tanto, un registro de desplazamiento de cuatro etapas retrasa la "entrada de datos" en cuatro relojes para la "salida de datos". Las etapas en un registro de desplazamiento son<i>etapas de retraso</i>, normalmente escribe<b>"D"</b>Chanclas o tipo<b>"JK"</b>Chanclas.</p>
 <p>Anteriormente, como memoria digital servían registros de desplazamiento muy largos (varios cientos de etapas). Esta aplicación obsoleta recuerda a las líneas de retardo acústico de mercurio utilizadas como memoria de las primeras computadoras.</p>
@@ -269,7 +287,7 @@ Después del segundo cronómetro, La vieja Q<sub>A</sub>los datos aparecen en Q<
 <br/>
 <p>Si la salida en serie de un registro de desplazamiento está conectada a la entrada en serie, los datos se pueden desplazar perpetuamente alrededor del anillo siempre que haya pulsos de reloj presentes.  Si la salida se invierte antes de ser retroalimentada como se muestra arriba, no tenemos que preocuparnos por cargar los datos iniciales en el "contador de anillo".</p>
 <a name="shift register, serial-in/serial-out"></a>
-<h2><u><a name="xtocid92431">Serial-in/serial-out shift register</a></u></h2>
+<h2><a name="xtocid92431">Registro de desplazamiento de entrada y salida serie</a></h2>
 <p>Los registros de desplazamiento de entrada y salida en serie retrasan los datos un tiempo de reloj para cada etapa. Almacenarán un poco de datos para cada registro. Un registro de desplazamiento de entrada y salida en serie puede tener de uno a 64 bits de longitud, más si los registros o paquetes están en cascada.</p>
 <p>A continuación se muestra un registro de desplazamiento de una sola etapa que recibe datos que no están sincronizados con el reloj del registro. Los "datos en" en el<b>D</b>pin del tipo<b>D</b> <b>FF</b>(Flip-Flop) no cambia de nivel cuando el reloj cambia de bajo a alto. Es posible que deseemos sincronizar los datos con un reloj de todo el sistema en una placa de circuito para mejorar la confiabilidad de un circuito lógico digital.</p>
 <br/>
@@ -339,7 +357,7 @@ t<sub>S</sub>es el<i>tiempo de configuración</i>, los datos de hora deben estar
 <p>
 Q<sub>C</sub>finalmente sube alto en el reloj t<sub>4</sub>debido a la alta alimentación a<b>D</b>de la etapa anterior Q<sub>B</sub>. Todas las etapas anteriores tienen<b>0</b>Se ha trasladado a ellos. Y, después del siguiente pulso de reloj en t<sub>5</sub>, toda lógica<b>1</b>s habrá sido desplazado, reemplazado por<b>0</b>s
 </p>
-<h3><u><a name="xtocid92432">Serial-in/serial-out devices</a></u></h3>
+<h3><u><a name="xtocid92432">Dispositivos de entrada/salida serie</a></u></h3>
 <p>Examinaremos más de cerca las siguientes piezas disponibles como circuitos integrados, cortesía de Texas Instruments. Para obtener hojas de datos completas del dispositivo, siga los enlaces.</p>
 <ul>
 <li>CD4006b Registro de desplazamiento de entrada/salida serie de 18 bits<p>
@@ -401,7 +419,7 @@ Q<sub>C</sub>finalmente sube alto en el reloj t<sub>4</sub>debido a la alta alim
 <p>Arriba mostramos un CD4517b conectado como un registro de desplazamiento de 16 bits para la sección B. El reloj para la sección B es CL<sub>B</sub>. Los datos están registrados en CL.<sub>B</sub>. Y los datos con un retraso de 16 relojes se extraen de Q<sub>16B</sub>.  NOSOTROS<sub>B</sub>, la habilitación de escritura, está conectada a tierra.</p>
 <p>Arriba también mostramos el mismo CD4517b conectado como un registro de desplazamiento de 64 bits para la sección independiente A. El reloj para la sección A es CL<sub>A</sub>. Los datos entran en CL<sub>A</sub>. Los datos retrasados ​​por pulsos de 64 relojes se recogen de Q<sub>64A</sub>.  NOSOTROS<sub>A</sub>, la habilitación de escritura para la sección A, está conectada a tierra.</p>
 <a name="shift register, parallel-in/serial-out"></a>
-<h2><u><a name="xtocid92433">Parallel-in, serial-out shift register</a></u></h2>
+<h2><a name="xtocid92433">Registro de desplazamiento de entrada paralela y salida serie</a></h2>
 <p>
 </p>
 <a name="parallel data"></a>
@@ -445,7 +463,7 @@ Q<sub>C</sub>finalmente sube alto en el reloj t<sub>4</sub>debido a la alta alim
 </p>
 <p>Después de t<sub>3</sub>, Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub> = <b>001</b>. Este<b>1</b>, que estaba originalmente presente en Q<sub>A</sub>después de t<sub>1</sub>, ahora está presente en SO y Q<sub>C</sub>. El último bit de datos se transfiere a un circuito integrado externo, si existe. Después de t<sub>4</sub>Todos los datos de la carga paralela han desaparecido. En el reloj t<sub>5</sub>mostramos el desplazamiento de un dato<b>1</b>presente en el SI, entrada serie.</p>
 <p>¿Por qué proporcionar pines SI y SO en un registro de desplazamiento?  Estas conexiones nos permiten conectar en cascada etapas de registro de cambios para proporcionar cambios más grandes que los disponibles en un solo paquete IC (circuito integrado). También permiten conexiones en serie hacia y desde otros circuitos integrados, como microprocesadores.</p>
-<h3><u><a name="xtocid92434">Parallel-in/serial-out devices</a></u></h3>
+<h3><u><a name="xtocid92434">Dispositivos de entrada paralela/salida serie</a></u></h3>
 <p>Echemos un vistazo más de cerca a los registros de desplazamiento de entrada/salida en paralelo disponibles como circuitos integrados, cortesía de Texas Instruments. Para obtener hojas de datos completas del dispositivo, siga estos enlaces.</p>
 <ul>
 <li>SN74ALS166 registro de desplazamiento de 8 bits de entrada/salida en paralelo, carga síncrona<p>
@@ -556,7 +574,7 @@ Q<sub>C</sub>finalmente sube alto en el reloj t<sub>4</sub>debido a la alta alim
 <p>
 The <b>SER</b>La línea del registro de desplazamiento puede ser impulsada por otro circuito CD4021B idéntico si es necesario leer más contactos del interruptor. En cuyo caso, el microprocesador genera pulsos de 16 cambios.  Lo más probable es que sea impulsado por algo más compatible con este formato de datos en serie, por ejemplo, un convertidor analógico a digital, un sensor de temperatura, un escáner de teclado, una memoria en serie de sólo lectura. En cuanto a los cierres de interruptor, pueden ser finales de carrera en el carro de una máquina, un sensor de sobretemperatura, un interruptor de láminas magnético, un interruptor de puerta o ventana, un presostato de aire o agua, o un interruptor óptico de estado sólido.</p>
 <a name="shift register, serial-in/parallel-out"></a>
-<h2><u><a name="xtocid92436">Serial-in, parallel-out shift register</a></u></h2>
+<h2><a name="xtocid92436">Registro de desplazamiento de entrada serie y salida paralela</a></h2>
 <p>Un registro de desplazamiento de entrada/salida en serie es similar al registro de desplazamiento de entrada/salida en serie en el sentido de que desplaza los datos a elementos de almacenamiento internos y los desplaza en el pin de salida y salida de datos. Se diferencia en que hace que todas las etapas internas estén disponibles como salidas. Por lo tanto, un registro de desplazamiento de entrada en serie/salida en paralelo convierte datos del formato en serie al formato paralelo. Si cuatro bits de datos se desplazan mediante cuatro pulsos de reloj a través de un solo cable en la entrada de datos, a continuación, los datos estarán disponibles simultáneamente en las cuatro salidas Q<sub>A</sub>a Q<sub>D</sub>después del cuarto pulso de reloj.</p>
 <br/>
 <p>
@@ -579,7 +597,7 @@ The <b>SER</b>La línea del registro de desplazamiento puede ser impulsada por o
 <br/>
 <p>El registro de turnos ha sido borrado antes de cualquier dato por<b>CLR'</b>, una señal baja activa, que borra todos los Flip-Flops tipo D dentro del registro de desplazamiento. Tenga en cuenta los datos de serie<b>1011</b>patrón presentado en el<b>SI</b>aporte. Estos datos se sincronizan con el reloj.<b>CLK</b>. Este sería el caso si se está desplazando desde algo así como otro registro de desplazamiento, por ejemplo, un registro de desplazamiento de entrada/salida en paralelo (no se muestra aquí). En el primer reloj a las<b>t1</b>, los datos<b>1</b> at <b>SI</b>se desplaza de<b>D</b> to <b>Q</b>de la primera etapa de registro de desplazamiento.    Después<b>t2</b>este primer bit de datos está en<b>Q<sub>B</sub></b>.  Después<b>t3</b>esta en<b>Q<sub>C</sub></b>. Después<b>t4</b>esta en<b>Q<sub>D</sub></b>. Cuatro pulsos de reloj han desplazado el primer bit de datos hasta la última etapa<b>Q<sub>D</sub></b>. El segundo bit de datos un<b>0</b>esta en<b>Q<sub>C</sub></b>después del cuarto reloj. El tercer bit de datos<b>1</b>esta en<b>Q<sub>B</sub></b>. El cuarto dato mordió a otro.<b>1</b>esta en<b>Q<sub>A</sub></b>.  Por tanto, el patrón de entrada de datos en serie<b>1011</b>está contenido en (<b>Q<sub>D</sub> Q<sub>C</sub>  Q<sub>B</sub>  Q<sub>A</sub></b>). Ahora está disponible en las cuatro salidas.</p>
 <p>Estará disponible en las cuatro salidas justo después del reloj.<b>t<sub>4</sub></b>justo antes<b>t<sub>5</sub></b>. Estos datos paralelos deben usarse o almacenarse entre estos dos momentos, o se perderán debido al cambio de Q<sub>D</sub>etapa en los siguientes relojes<b>t<sub>5</sub></b> to <b>t<sub>8</sub></b>como se muestra arriba.</p>
-<h3><u><a name="xtocid92437">Serial-in/ parallel-out devices</a></u></h3>
+<h3><u><a name="xtocid92437">Dispositivos de entrada serie/salida paralela</a></u></h3>
 <p>Echemos un vistazo más de cerca a los registros de desplazamiento de entrada serie/salida paralelo disponibles como circuitos integrados, cortesía de Texas Instruments. Para obtener hojas de datos completas del dispositivo, siga los enlaces.</p>
 <ul>
 <li>Registro de desplazamiento de 8 bits de entrada serie/salida paralela SN74ALS164A<p>
@@ -694,7 +712,7 @@ El microprocesador necesitaría transferir 16 bits de datos con 16 relojes antes
 </p>
 <a name="parallel-in/parallel-out  universal shift register"></a>
 <a name="shift register, parallel-in/parallel-out  universal shift register"></a>
-<h2><u><a name="xtocid92439">Parallel-in, parallel-out, universal shift register</a></u></h2>
+<h2><a name="xtocid92439">Registro de desplazamiento universal de entrada/salida en paralelo</a></h2>
 <p>
 </p>El propósito del registro de desplazamiento de entrada/salida en paralelo es tomar datos en paralelo, desplazarlos y luego generarlos como se muestra a continuación.  Un registro de desplazamiento universal es un dispositivo que lo hace todo además de la función de entrada y salida en paralelo.<br/>
 <p>
@@ -770,7 +788,7 @@ El microprocesador necesitaría transferir 16 bits de datos con 16 relojes antes
 <p>
 If <b>SH/LD'</b>se cambia a<b>SH/LD'=1</b>, las puertas AND etiquetadas como "carga" están deshabilitadas, permitiendo el control izquierdo/derecho.<b>L'/R</b>para establecer la dirección de cambio en el<b>L</b> or <b>R</b>Y puertas. El desplazamiento es como en las figuras anteriores.</p>
 <p>Lo único que se necesita para producir un dispositivo integrado viable es agregar la cuarta puerta AND al multiplexor como se mencionó para el 74ALS299. Esto se muestra en la siguiente sección de esa parte.</p>
-<h3><u><a name="xtocid924310">Parallel-in/ parallel-out and universal devices</a></u></h3>
+<h3><u><a name="xtocid924310">Dispositivos paralelo-paralelo y universales</a></u></h3>
 <p>Echemos un vistazo más de cerca a los registros de desplazamiento de entrada serie/salida paralelo disponibles como circuitos integrados, cortesía de Texas Instruments. Para obtener hojas de datos completas del dispositivo, siga los enlaces.</p>
 <a name="395, 74LS395, shift register"></a>
 <a name="299, 74ALS299, shift register"></a>
@@ -864,7 +882,7 @@ Cargar/cambiar' (<b>LD/SH'</b>) en el pasador (7) corresponde a las partes inter
 <p>Una vez<b>S0</b>baja, ocho relojes (<b>t0</b> to<b>t8</b>) cambiar los datos de cierre del interruptor fuera del<b>'299</b>a través del<b>Q<sub>h</sub>'</b>alfiler. Al mismo tiempo, los nuevos datos del LED se transfieren a<b>SR</b>del<b>299</b>por los mismos ocho relojes. Los datos del LED reemplazan los datos de cierre del interruptor a medida que avanza el cambio.</p>
 <p>Después del reloj del octavo turno,<b>t8</b>, <b>S1</b>baja al modo de retención de rendimiento (<b>S1 S0 = 00</b>). Los datos en el registro de desplazamiento siguen siendo los mismos incluso si hay más relojes, por ejemplo,<b>T9</b>, <b>t10</b>, etc. ¿De dónde vienen las formas de onda?  Podrían ser generados por un microprocesador si la velocidad del reloj no fuera superior a 100 kHz, en cuyo caso, sería inconveniente generar relojes después.<b>t8</b>. Si el reloj estuviera en el rango de megahercios, funcionaría continuamente. el reloj,<b>S1</b> and <b>S0</b>sería generado por lógica digital, que no se muestra aquí.</p>
 <a name="ring counters"></a>
-<h2><u><a name="xtocid924312">Ring counters</a></u></h2>
+<h2><a name="xtocid924312">Contadores de anillo</a></h2>
 <p>
 </p>
 <p>Si la salida de un registro de desplazamiento se retroalimenta a la entrada. resulta un contador de timbre. El patrón de datos contenido dentro del registro de desplazamiento recirculará siempre que se apliquen pulsos de reloj. Por ejemplo, el patrón de datos se repetirá cada cuatro pulsos de reloj en la figura siguiente.  Sin embargo, debemos cargar un patrón de datos. Todo<b>0</b>'s o todos<b>1</b>Eso no cuenta.  ¿Es útil un nivel lógico continuo a partir de tal condición?</p>
@@ -952,7 +970,7 @@ The  <i>contador de anillo de cola de interruptor</i>, también conocido como el
 <p>En teoría, no entraremos en ninguno de los estados no permitidos siempre que el registro de desplazamiento esté<b>REINICIAR</b>antes del primer uso.  Sin embargo, en el "mundo real", después de muchos días de funcionamiento continuo debido a ruidos imprevistos, perturbaciones en las líneas eléctricas, casi rayos, etc., el contador Johnson podría entrar en uno de los estados no permitidos. Para aplicaciones de alta confiabilidad, debemos planificar esta mínima posibilidad. Más grave es el caso en el que el circuito no se borra durante el encendido. En este caso, no hay forma de saber en cuál de los 16 estados se encenderá el circuito. Una vez en un estado no permitido, el contador Johnson no regresará a ninguno de los estados permitidos sin intervención. Ese es el propósito del<b>NOR</b>puertas.</p>
 <p>Examina la tabla para ver la secuencia (<b>Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub></b>) = (<b>010</b>). Esta secuencia no aparece en ninguna parte de la tabla de estados permitidos. Por lo tanto  (<b>010</b>) no está permitido. Nunca debería ocurrir. Si es así, el contador Johnson se encuentra en un estado no permitido, del cual necesita salir a cualquier estado permitido. Supongamos que (<b>Q<sub>A</sub> Q<sub>B</sub> Q<sub>C</sub></b>) = (<b>010</b>). el segundo<b>NOR</b>la puerta reemplazará<b>Q<sub>B</sub></b> = <b>1</b>con un<b>0</b>al<b>D</b>entrada a FF<b>Q<sub>C</sub></b>. En otras palabras, el delincuente<b>010</b>es reemplazado por<b>000</b>. Y<b>000</b>, que aparece en la tabla, se desplazará hacia la derecha. Es posible que haya secuencias triple-0 en la tabla. Así es como el<b>NOR</b>Las puertas sacan el contador Johnson de un estado no permitido a un estado permitido.</p>
 <p>No todos los estados no permitidos contienen un<b>010</b>secuencia. Sin embargo, después de unos cuantos relojes, esta secuencia aparecerá de modo que eventualmente se escapará de cualquier estado no permitido. Si el circuito se enciende sin<b>REINICIAR</b>, las salidas serán impredecibles durante algunos relojes hasta que se alcance un estado permitido. Si esto es un problema para una aplicación en particular, asegúrese de<b>REINICIAR</b>en el encendido.</p>
-<h4><a name="xtocid924314">Johnson counter devices</a></h4>
+<h4><a name="xtocid924314">Dispositivos con contador Johnson</a></h4>
 <p>Se encuentran disponibles un par de dispositivos contadores Johnson de circuito integrado con los estados de salida decodificados.  Ya hemos analizado la lógica interna del CD4017 en la discusión sobre los contadores de Johnson. Los dispositivos de la serie 4000 pueden funcionar con fuentes de alimentación de 3V a 15V. La pieza 74HC, diseñada para compatibilidad TTL, puede funcionar con un suministro de 2 V a 6 V, contar más rápido y tiene una mayor capacidad de accionamiento de salida. Para obtener hojas de datos completas del dispositivo, siga los enlaces.</p>
 <a name="4017, CD4017, 74HC4017, Johnson counter"></a>
 <a name="4022, CD4022, Johnson counter"></a>
@@ -1039,18 +1057,15 @@ The  <i>contador de anillo de cola de interruptor</i>, también conocido como el
 </p>
 <p>Una vez más, el CD4017B genera las formas de onda requeridas con un reinicio después del recuento de terminales.  Las salidas decodificadas<b>Q<sub>0</sub> Q<sub>1</sub> Q<sub>2</sub> Q<sub>3</sub></b>accionar sucesivamente los devanados del motor paso a paso, con<b>Q<sub>4</sub></b>restablecer el contador al final de cada grupo de cuatro pulsos.</p>
 <br/>
-<h2><u><a name="xtocid924316"> references</a></u></h2>
+<h2><a name="xtocid924316"> references</a></h2>
 <p>DataSheetCatalog.com http://www.datasheetcatalog.com/</p>
 <p>http://www.st.com/stonline/psearch/index.htm seleccione lógicas estándar</p>http://www.st.com/stonline/books/pdf/docs/2069.pdf<p>http://www.ti.com/ (Productos, Lógica, Árbol de Productos)</p>
 <p>
 </p>
 <br/>
-<hr/>
 <p>
 <i>Lecciones en circuitos eléctricos</i>copyright (C) 2000-2023 Tony R. Kuphaldt, según los términos y condiciones del<a href="DIGI_A3.html">CC BY License</a>.
 </p>
-
-
 
 </p></body>
 

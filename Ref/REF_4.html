@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>!function(){var t=localStorage.getItem("liec-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();</script>
 <meta charset="UTF-8">
+    <meta name="description" content="Nota: aunque popularmente se piensa que la división por cero es igual a infinito, esto no es técnicamente cierto. En algunas aplicaciones prácticas puede…">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Circuitopedia">
+    <meta property="og:title" content="Referencia de Álgebra — Circuitopedia">
+    <meta property="og:description" content="Nota: aunque popularmente se piensa que la división por cero es igual a infinito, esto no es técnicamente cierto. En algunas aplicaciones prácticas puede…">
+    <meta property="og:url" content="https://circuitopedia.io/Ref/REF_4.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Referencia de Álgebra — Circuitopedia">
+    <meta name="twitter:description" content="Nota: aunque popularmente se piensa que la división por cero es igual a infinito, esto no es técnicamente cierto. En algunas aplicaciones prácticas puede…">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecciones de circuitos eléctricos - Volumen V (Referencia) - Capítulo 4 | Lecciones de Circuitos Eléctricos</title>
+<title>Referencia de Álgebra — Circuitopedia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.34.0/dist/tabler-icons.min.css">
 <style>:root { --accent: #ef4444; }</style>
 </head>
 <body>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <a href="../index.html" class="logo">⚡ LIEC</a>
+      <a href="../index.html" class="logo">Circuitopedia</a>
       <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">✕</button>
     </div>
     <div class="search-box">
@@ -22,132 +34,153 @@
     </div>
     <nav class="sidebar-nav">
 <div class="vol-group">
-  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">Volumen I – Corriente Continua (DC)</a>
+  <a href="../DC/index.html" class="vol-title" style="--vc:#3b82f6">
+    <span class="vol-ic"><i class="ti ti-bolt" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Continua</span><span class="vol-lb">Vol. I · DC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../DC/DC_1.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 1</a></li>
-    <li><a href="../DC/DC_10.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 10</a></li>
-    <li><a href="../DC/DC_11.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 11</a></li>
-    <li><a href="../DC/DC_12.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 12</a></li>
-    <li><a href="../DC/DC_13.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 13</a></li>
-    <li><a href="../DC/DC_14.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 14</a></li>
-    <li><a href="../DC/DC_15.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 15</a></li>
-    <li><a href="../DC/DC_16.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 16</a></li>
-    <li><a href="../DC/DC_2.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 2</a></li>
-    <li><a href="../DC/DC_3.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 3</a></li>
-    <li><a href="../DC/DC_4.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 4</a></li>
-    <li><a href="../DC/DC_5.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 5</a></li>
-    <li><a href="../DC/DC_6.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 6</a></li>
-    <li><a href="../DC/DC_7.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 7</a></li>
-    <li><a href="../DC/DC_8.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 8</a></li>
-    <li><a href="../DC/DC_9.html">Lessons In Electric Circuits -- Volume I (DC) - Chapter 9</a></li>
-    <li><a href="../DC/DC_A1.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 1</a></li>
-    <li><a href="../DC/DC_A2.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 2</a></li>
-    <li><a href="../DC/DC_A3.html">Lessons In Electric Circuits -- Volume I (DC) - Appendix 3</a></li>
+    <li><a href="../DC/DC_1.html"><span class="cap-num">01</span><span class="cap-name">Conceptos Básicos de Electricidad</span></a></li>
+    <li><a href="../DC/DC_2.html"><span class="cap-num">02</span><span class="cap-name">Ley de Ohm</span></a></li>
+    <li><a href="../DC/DC_3.html"><span class="cap-num">03</span><span class="cap-name">Seguridad Eléctrica</span></a></li>
+    <li><a href="../DC/DC_4.html"><span class="cap-num">04</span><span class="cap-name">Notación Científica y Prefijos</span></a></li>
+    <li><a href="../DC/DC_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Serie y Paralelo</span></a></li>
+    <li><a href="../DC/DC_6.html"><span class="cap-num">06</span><span class="cap-name">Divisores y Leyes de Kirchhoff</span></a></li>
+    <li><a href="../DC/DC_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Serie-Paralelo</span></a></li>
+    <li><a href="../DC/DC_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos de Medición CC</span></a></li>
+    <li><a href="../DC/DC_9.html"><span class="cap-num">09</span><span class="cap-name">Señales de Instrumentación</span></a></li>
+    <li><a href="../DC/DC_10.html"><span class="cap-num">10</span><span class="cap-name">Análisis de Red CC</span></a></li>
+    <li><a href="../DC/DC_11.html"><span class="cap-num">11</span><span class="cap-name">Baterías y Sistemas de Energía</span></a></li>
+    <li><a href="../DC/DC_12.html"><span class="cap-num">12</span><span class="cap-name">Conductores y Aisladores</span></a></li>
+    <li><a href="../DC/DC_13.html"><span class="cap-num">13</span><span class="cap-name">Condensadores</span></a></li>
+    <li><a href="../DC/DC_14.html"><span class="cap-num">14</span><span class="cap-name">Magnetismo y Electromagnetismo</span></a></li>
+    <li><a href="../DC/DC_15.html"><span class="cap-num">15</span><span class="cap-name">Inductores</span></a></li>
+    <li><a href="../DC/DC_16.html"><span class="cap-num">16</span><span class="cap-name">Constantes de Tiempo RC y L/R</span></a></li>
+    <li><a href="../DC/DC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../DC/DC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../DC/DC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">Volumen II – Corriente Alterna (AC)</a>
+  <a href="../AC/index.html" class="vol-title" style="--vc:#8b5cf6">
+    <span class="vol-ic"><i class="ti ti-wave-sine" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Corriente Alterna</span><span class="vol-lb">Vol. II · AC</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../AC/AC_1.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 1</a></li>
-    <li><a href="../AC/AC_10.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 10</a></li>
-    <li><a href="../AC/AC_11.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 11</a></li>
-    <li><a href="../AC/AC_12.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 12</a></li>
-    <li><a href="../AC/AC_13.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 13</a></li>
-    <li><a href="../AC/AC_14.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 14</a></li>
-    <li><a href="../AC/AC_2.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 2</a></li>
-    <li><a href="../AC/AC_3.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 3</a></li>
-    <li><a href="../AC/AC_4.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 4</a></li>
-    <li><a href="../AC/AC_5.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 5</a></li>
-    <li><a href="../AC/AC_6.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 6</a></li>
-    <li><a href="../AC/AC_7.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 7</a></li>
-    <li><a href="../AC/AC_8.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 8</a></li>
-    <li><a href="../AC/AC_9.html">Lessons In Electric Circuits -- Volume II (AC) - Chapter 9</a></li>
-    <li><a href="../AC/AC_A1.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 1</a></li>
-    <li><a href="../AC/AC_A2.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 2</a></li>
-    <li><a href="../AC/AC_A3.html">Lessons In Electric Circuits -- Volume II (AC) - Appendix 3</a></li>
+    <li><a href="../AC/AC_1.html"><span class="cap-num">01</span><span class="cap-name">Teoría Básica de CA</span></a></li>
+    <li><a href="../AC/AC_2.html"><span class="cap-num">02</span><span class="cap-name">Números Complejos</span></a></li>
+    <li><a href="../AC/AC_3.html"><span class="cap-num">03</span><span class="cap-name">Reactancia e Impedancia Inductiva</span></a></li>
+    <li><a href="../AC/AC_4.html"><span class="cap-num">04</span><span class="cap-name">Reactancia e Impedancia Capacitiva</span></a></li>
+    <li><a href="../AC/AC_5.html"><span class="cap-num">05</span><span class="cap-name">Reactancia e Impedancia R, L y C</span></a></li>
+    <li><a href="../AC/AC_6.html"><span class="cap-num">06</span><span class="cap-name">Resonancia</span></a></li>
+    <li><a href="../AC/AC_7.html"><span class="cap-num">07</span><span class="cap-name">Señales CA de Frecuencia Mixta</span></a></li>
+    <li><a href="../AC/AC_8.html"><span class="cap-num">08</span><span class="cap-name">Filtros</span></a></li>
+    <li><a href="../AC/AC_9.html"><span class="cap-num">09</span><span class="cap-name">Transformadores</span></a></li>
+    <li><a href="../AC/AC_10.html"><span class="cap-num">10</span><span class="cap-name">Circuitos CA Polifásicos</span></a></li>
+    <li><a href="../AC/AC_11.html"><span class="cap-num">11</span><span class="cap-name">Factor de Potencia</span></a></li>
+    <li><a href="../AC/AC_12.html"><span class="cap-num">12</span><span class="cap-name">Circuitos de Medición CA</span></a></li>
+    <li><a href="../AC/AC_13.html"><span class="cap-num">13</span><span class="cap-name">Motores de CA</span></a></li>
+    <li><a href="../AC/AC_14.html"><span class="cap-num">14</span><span class="cap-name">Líneas de Transmisión</span></a></li>
+    <li><a href="../AC/AC_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../AC/AC_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../AC/AC_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">Volumen III – Semiconductores</a>
+  <a href="../Semi/index.html" class="vol-title" style="--vc:#10b981">
+    <span class="vol-ic"><i class="ti ti-cpu" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Semiconductores</span><span class="vol-lb">Vol. III</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Semi/SEMI_1.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 1</a></li>
-    <li><a href="../Semi/SEMI_10.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 10</a></li>
-    <li><a href="../Semi/SEMI_11.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 11</a></li>
-    <li><a href="../Semi/SEMI_12.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 12</a></li>
-    <li><a href="../Semi/SEMI_13.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 13</a></li>
-    <li><a href="../Semi/SEMI_2.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 2</a></li>
-    <li><a href="../Semi/SEMI_3.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 3</a></li>
-    <li><a href="../Semi/SEMI_4.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 4</a></li>
-    <li><a href="../Semi/SEMI_5.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 5</a></li>
-    <li><a href="../Semi/SEMI_6.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 6</a></li>
-    <li><a href="../Semi/SEMI_7.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 7</a></li>
-    <li><a href="../Semi/SEMI_8.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 8</a></li>
-    <li><a href="../Semi/SEMI_9.html">Lessons In Electric Circuits -- Volume III (Semiconductors) - Chapter 9</a></li>
-    <li><a href="../Semi/SEMI_A1.html">SEMI_A1</a></li>
-    <li><a href="../Semi/SEMI_A2.html">SEMI_A2</a></li>
-    <li><a href="../Semi/SEMI_A3.html">SEMI_A3</a></li>
+    <li><a href="../Semi/SEMI_1.html"><span class="cap-num">01</span><span class="cap-name">Amplificadores y Dispositivos Activos</span></a></li>
+    <li><a href="../Semi/SEMI_2.html"><span class="cap-num">02</span><span class="cap-name">Dispositivos de Estado Sólido</span></a></li>
+    <li><a href="../Semi/SEMI_3.html"><span class="cap-num">03</span><span class="cap-name">Diodos y Rectificadores</span></a></li>
+    <li><a href="../Semi/SEMI_4.html"><span class="cap-num">04</span><span class="cap-name">Transistores Bipolares (BJT)</span></a></li>
+    <li><a href="../Semi/SEMI_5.html"><span class="cap-num">05</span><span class="cap-name">Transistores de Efecto de Campo JFET</span></a></li>
+    <li><a href="../Semi/SEMI_6.html"><span class="cap-num">06</span><span class="cap-name">Transistores de Efecto de Campo IGFET</span></a></li>
+    <li><a href="../Semi/SEMI_7.html"><span class="cap-num">07</span><span class="cap-name">Tiristores</span></a></li>
+    <li><a href="../Semi/SEMI_8.html"><span class="cap-num">08</span><span class="cap-name">Amplificadores Operacionales</span></a></li>
+    <li><a href="../Semi/SEMI_9.html"><span class="cap-num">09</span><span class="cap-name">Circuitos Analógicos Prácticos</span></a></li>
+    <li><a href="../Semi/SEMI_10.html"><span class="cap-num">10</span><span class="cap-name">Filtros Activos</span></a></li>
+    <li><a href="../Semi/SEMI_11.html"><span class="cap-num">11</span><span class="cap-name">Motores de CC</span></a></li>
+    <li><a href="../Semi/SEMI_12.html"><span class="cap-num">12</span><span class="cap-name">Inversores y Accionadores de CA</span></a></li>
+    <li><a href="../Semi/SEMI_13.html"><span class="cap-num">13</span><span class="cap-name">Tubos de Electrones</span></a></li>
+    <li><a href="../Semi/SEMI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Semi/SEMI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Semi/SEMI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">Volumen IV – Digital</a>
+  <a href="../Digital/index.html" class="vol-title" style="--vc:#f59e0b">
+    <span class="vol-ic"><i class="ti ti-binary" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Circuitos Digitales</span><span class="vol-lb">Vol. IV</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Digital/DIGI_1.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 1</a></li>
-    <li><a href="../Digital/DIGI_10.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 10</a></li>
-    <li><a href="../Digital/DIGI_11.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 11</a></li>
-    <li><a href="../Digital/DIGI_12.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 12</a></li>
-    <li><a href="../Digital/DIGI_13.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 13</a></li>
-    <li><a href="../Digital/DIGI_14.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 14</a></li>
-    <li><a href="../Digital/DIGI_15.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 15</a></li>
-    <li><a href="../Digital/DIGI_16.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 16</a></li>
-    <li><a href="../Digital/DIGI_2.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 2</a></li>
-    <li><a href="../Digital/DIGI_3.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 3</a></li>
-    <li><a href="../Digital/DIGI_4.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 4</a></li>
-    <li><a href="../Digital/DIGI_5.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 5</a></li>
-    <li><a href="../Digital/DIGI_6.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 6</a></li>
-    <li><a href="../Digital/DIGI_7.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 7</a></li>
-    <li><a href="../Digital/DIGI_8.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 8</a></li>
-    <li><a href="../Digital/DIGI_9.html">Lessons In Electric Circuits -- Volume IV (Digital) - Chapter 9</a></li>
-    <li><a href="../Digital/DIGI_A1.html">DIGI_A1</a></li>
-    <li><a href="../Digital/DIGI_A2.html">DIGI_A2</a></li>
-    <li><a href="../Digital/DIGI_A3.html">DIGI_A3</a></li>
+    <li><a href="../Digital/DIGI_1.html"><span class="cap-num">01</span><span class="cap-name">Sistemas de Numeración</span></a></li>
+    <li><a href="../Digital/DIGI_2.html"><span class="cap-num">02</span><span class="cap-name">Aritmética Binaria</span></a></li>
+    <li><a href="../Digital/DIGI_3.html"><span class="cap-num">03</span><span class="cap-name">Puertas Lógicas</span></a></li>
+    <li><a href="../Digital/DIGI_4.html"><span class="cap-num">04</span><span class="cap-name">Interruptores</span></a></li>
+    <li><a href="../Digital/DIGI_5.html"><span class="cap-num">05</span><span class="cap-name">Relés Electromecánicos</span></a></li>
+    <li><a href="../Digital/DIGI_6.html"><span class="cap-num">06</span><span class="cap-name">Lógica de Escalera</span></a></li>
+    <li><a href="../Digital/DIGI_7.html"><span class="cap-num">07</span><span class="cap-name">Álgebra Booleana</span></a></li>
+    <li><a href="../Digital/DIGI_8.html"><span class="cap-num">08</span><span class="cap-name">Mapeo de Karnaugh</span></a></li>
+    <li><a href="../Digital/DIGI_9.html"><span class="cap-num">09</span><span class="cap-name">Funciones Lógicas Combinacionales</span></a></li>
+    <li><a href="../Digital/DIGI_10.html"><span class="cap-num">10</span><span class="cap-name">Multivibradores</span></a></li>
+    <li><a href="../Digital/DIGI_11.html"><span class="cap-num">11</span><span class="cap-name">Circuitos Secuenciales</span></a></li>
+    <li><a href="../Digital/DIGI_12.html"><span class="cap-num">12</span><span class="cap-name">Registros de Desplazamiento</span></a></li>
+    <li><a href="../Digital/DIGI_13.html"><span class="cap-num">13</span><span class="cap-name">Conversión Digital-Analógica</span></a></li>
+    <li><a href="../Digital/DIGI_14.html"><span class="cap-num">14</span><span class="cap-name">Comunicación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_15.html"><span class="cap-num">15</span><span class="cap-name">Almacenamiento Digital (Memoria)</span></a></li>
+    <li><a href="../Digital/DIGI_16.html"><span class="cap-num">16</span><span class="cap-name">Principios de Computación Digital</span></a></li>
+    <li><a href="../Digital/DIGI_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Digital/DIGI_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Digital/DIGI_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">Volumen V – Referencia</a>
+  <a href="../Ref/index.html" class="vol-title" style="--vc:#ef4444">
+    <span class="vol-ic"><i class="ti ti-book-2" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Referencia</span><span class="vol-lb">Vol. V</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Ref/REF_1.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 1</a></li>
-    <li><a href="../Ref/REF_10.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 10</a></li>
-    <li><a href="../Ref/REF_2.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 2</a></li>
-    <li><a href="../Ref/REF_3.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 3</a></li>
-    <li><a href="../Ref/REF_4.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 4</a></li>
-    <li><a href="../Ref/REF_5.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 5</a></li>
-    <li><a href="../Ref/REF_6.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 6</a></li>
-    <li><a href="../Ref/REF_7.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 7</a></li>
-    <li><a href="../Ref/REF_8.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 8</a></li>
-    <li><a href="../Ref/REF_9.html">Lessons In Electric Circuits -- Volume V (Reference) - Chapter 9</a></li>
-    <li><a href="../Ref/REF_A1.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 1</a></li>
-    <li><a href="../Ref/REF_A2.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 2</a></li>
-    <li><a href="../Ref/REF_A3.html">Lessons In Electric Circuits -- Volume V (Reference) - Appendix 3</a></li>
+    <li><a href="../Ref/REF_1.html"><span class="cap-num">01</span><span class="cap-name">Ecuaciones y Factores de Conversión</span></a></li>
+    <li><a href="../Ref/REF_2.html"><span class="cap-num">02</span><span class="cap-name">Códigos de Color</span></a></li>
+    <li><a href="../Ref/REF_3.html"><span class="cap-num">03</span><span class="cap-name">Tablas de Conductores y Aisladores</span></a></li>
+    <li><a href="../Ref/REF_4.html"><span class="cap-num">04</span><span class="cap-name">Referencia de Álgebra</span></a></li>
+    <li><a href="../Ref/REF_5.html"><span class="cap-num">05</span><span class="cap-name">Referencia de Trigonometría</span></a></li>
+    <li><a href="../Ref/REF_6.html"><span class="cap-num">06</span><span class="cap-name">Referencia de Cálculo</span></a></li>
+    <li><a href="../Ref/REF_7.html"><span class="cap-num">07</span><span class="cap-name">Simulación de Circuitos con SPICE</span></a></li>
+    <li><a href="../Ref/REF_8.html"><span class="cap-num">08</span><span class="cap-name">Solución de Problemas</span></a></li>
+    <li><a href="../Ref/REF_9.html"><span class="cap-num">09</span><span class="cap-name">Símbolos de Esquemas de Circuito</span></a></li>
+    <li><a href="../Ref/REF_10.html"><span class="cap-num">10</span><span class="cap-name">Tabla Periódica de los Elementos</span></a></li>
+    <li><a href="../Ref/REF_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Ref/REF_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Ref/REF_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">Volumen VI – Experimentos</a>
+  <a href="../Exper/index.html" class="vol-title" style="--vc:#ec4899">
+    <span class="vol-ic"><i class="ti ti-flask" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Experimentos</span><span class="vol-lb">Vol. VI</span></span>
+  </a>
   <ul class="cap-list">
-    <li><a href="../Exper/EXP_1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 1</a></li>
-    <li><a href="../Exper/EXP_2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 2</a></li>
-    <li><a href="../Exper/EXP_3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 3</a></li>
-    <li><a href="../Exper/EXP_4.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 4</a></li>
-    <li><a href="../Exper/EXP_5.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 5</a></li>
-    <li><a href="../Exper/EXP_6.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 6</a></li>
-    <li><a href="../Exper/EXP_7.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 7</a></li>
-    <li><a href="../Exper/EXP_8.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Chapter 8</a></li>
-    <li><a href="../Exper/EXP_A1.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 1</a></li>
-    <li><a href="../Exper/EXP_A2.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 2</a></li>
-    <li><a href="../Exper/EXP_A3.html">Lessons In Electric Circuits -- Volume VI (Experiments) - Appendix 3</a></li>
+    <li><a href="../Exper/EXP_1.html"><span class="cap-num">01</span><span class="cap-name">Introducción</span></a></li>
+    <li><a href="../Exper/EXP_2.html"><span class="cap-num">02</span><span class="cap-name">Conceptos Básicos y Equipos de Prueba</span></a></li>
+    <li><a href="../Exper/EXP_3.html"><span class="cap-num">03</span><span class="cap-name">Circuitos CC</span></a></li>
+    <li><a href="../Exper/EXP_4.html"><span class="cap-num">04</span><span class="cap-name">Circuitos CA</span></a></li>
+    <li><a href="../Exper/EXP_5.html"><span class="cap-num">05</span><span class="cap-name">Circuitos Semiconductores Discretos</span></a></li>
+    <li><a href="../Exper/EXP_6.html"><span class="cap-num">06</span><span class="cap-name">Circuitos Integrados Analógicos</span></a></li>
+    <li><a href="../Exper/EXP_7.html"><span class="cap-num">07</span><span class="cap-name">Circuitos Integrados Digitales</span></a></li>
+    <li><a href="../Exper/EXP_8.html"><span class="cap-num">08</span><span class="cap-name">Circuitos con Temporizador 555</span></a></li>
+    <li><a href="../Exper/EXP_A1.html"><span class="cap-num">A1</span><span class="cap-name">Acerca de este Libro</span></a></li>
+    <li><a href="../Exper/EXP_A2.html"><span class="cap-num">A2</span><span class="cap-name">Colaboradores</span></a></li>
+    <li><a href="../Exper/EXP_A3.html"><span class="cap-num">A3</span><span class="cap-name">Licencia CC BY</span></a></li>
   </ul>
 </div>
 <div class="vol-group">
-  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">Información de Desarrollo</a>
+  <a href="../Devel/index.html" class="vol-title" style="--vc:#6b7280">
+    <span class="vol-ic"><i class="ti ti-code" aria-hidden="true"></i></span>
+    <span class="vol-tx"><span class="vol-nm">Desarrollo</span><span class="vol-lb">Info técnica</span></span>
+  </a>
 </div>
 </nav>
 
@@ -156,99 +189,77 @@
   <main class="main-content">
     <header class="top-bar">
       <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
-      <span class="page-title">Lecciones de circuitos eléctricos - Volumen V (Referencia) - Capítulo 4</span>
+      <span class="page-title">Referencia de Álgebra</span>
       <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">🌙</button>
     </header>
     <article class="content" id="content">
-      
-<body bgcolor="white">
-
-
-
-<hr/>
-<h1>Lecciones de circuitos eléctricos - Volumen V</h1>
-<h1>Capítulo 4</h1>
-<h1>REFERENCIA DE ÁLGEBRA</h1>
-<!--minitoc-->
+<h1>Referencia de Álgebra</h1>
+<li><a href="#xtocid93315"><u>Propiedades de los exponentes</u></a></li>
+<li><a href="#xtocid93316"><u>Radicales</u></a></li>
 <ul>
-<li><a href="#xtocid93310"><u>Basic identities</u></a></li>
-<li><a href="#xtocid93311"><u>Arithmetic properties</u></a></li>
-<ul>
-<li><a href="#xtocid93312"><u>The associative property</u></a></li>
-<li><a href="#xtocid93313"><u>The commutative property</u></a></li>
-<li><a href="#xtocid93314"><u>The distributive property</u></a></li>
+<li><a href="#xtocid93317"><u>Definición de un radical</u></a></li>
+<li><a href="#xtocid93318"><u>Propiedades de los radicales</u></a></li>
 </ul>
-<li><a href="#xtocid93315"><u>Properties of exponents</u></a></li>
-<li><a href="#xtocid93316"><u>Radicals</u></a></li>
+<li><a href="#xtocid93319"><u>Constantes importantes</u></a></li>
 <ul>
-<li><a href="#xtocid93317"><u>Definition of a radical</u></a></li>
-<li><a href="#xtocid93318"><u>Properties of radicals</u></a></li>
+<li><a href="#xtocid933110"><u>El número de Euler</u></a></li>
+<li><a href="#xtocid933111"><u>Pi (π)</u></a></li>
 </ul>
-<li><a href="#xtocid93319"><u>Important constants</u></a></li>
+<li><a href="#xtocid933112"><u>Logaritmos</u></a></li>
 <ul>
-<li><a href="#xtocid933110"><u>Euler's number</u></a></li>
-<li><a href="#xtocid933111"><u>Pi</u></a></li>
+<li><a href="#xtocid933113"><u>Definición de un logaritmo</u></a></li>
+<li><a href="#xtocid933114"><u>Propiedades de los logaritmos</u></a></li>
 </ul>
-<li><a href="#xtocid933112"><u>Logarithms</u></a></li>
+<li><a href="#xtocid933115"><u>Equivalencias de factorización</u></a></li>
+<li><a href="#xtocid933116"><u>La fórmula cuadrática</u></a></li>
+<li><a href="#xtocid933117"><u>Sucesiones</u></a></li>
 <ul>
-<li><a href="#xtocid933113"><u>Definition of a logarithm</u></a></li>
-<li><a href="#xtocid933114"><u>Properties of logarithms</u></a></li>
+<li><a href="#xtocid933118"><u>Sucesiones aritméticas</u></a></li>
+<li><a href="#xtocid933119"><u>Sucesiones geométricas</u></a></li>
 </ul>
-<li><a href="#xtocid933115"><u>Factoring equivalencies</u></a></li>
-<li><a href="#xtocid933116"><u>The quadratic formula</u></a></li>
-<li><a href="#xtocid933117"><u>Sequences</u></a></li>
+<li><a href="#xtocid933120"><u>Factoriales</u></a></li>
 <ul>
-<li><a href="#xtocid933118"><u>Arithmetic sequences</u></a></li>
-<li><a href="#xtocid933119"><u>Geometric sequences</u></a></li>
+<li><a href="#xtocid933121"><u>Definición de factorial</u></a></li>
+<li><a href="#xtocid933122"><u>Factoriales especiales</u></a></li>
 </ul>
-<li><a href="#xtocid933120"><u>Factorials</u></a></li>
+<li><a href="#xtocid933123"><u>Resolución de sistemas de ecuaciones</u></a></li>
 <ul>
-<li><a href="#xtocid933121"><u>Definition of a factorial</u></a></li>
-<li><a href="#xtocid933122"><u>Strange factorials</u></a></li>
+<li><a href="#xtocid933124"><u>Método de sustitución</u></a></li>
+<li><a href="#xtocid933125"><u>Método de adición</u></a></li>
 </ul>
-<li><a href="#xtocid933123"><u>Solving simultaneous equations</u></a></li>
-<ul>
-<li><a href="#xtocid933124"><u>Substitution method</u></a></li>
-<li><a href="#xtocid933125"><u>Addition method</u></a></li>
-</ul>
-<li><a href="#xtocid933126"><u>Contributors</u></a></li></ul>
-<h2><u><a name="xtocid93310">Basic identities</a></u></h2>
-<a name="Algebraic identities"></a>
+<li><a href="#xtocid933126"><u>Colaboradores</u></a></li></ul>
+<h2><a name="xtocid93310">Basic identities</a></h2>
 <p> <img src="11018.png"/> </p>
 <p>Nota: aunque popularmente se piensa que la división por cero es igual a infinito, esto no es técnicamente cierto.  En algunas aplicaciones prácticas puede resultar útil pensar que el resultado de dicha fracción<i>que se acerca</i>infinito positivo como denominador positivo<i>aproches</i>cero (imagínese calcular la corriente I = E/R en un circuito con una resistencia acercándose a cero; la corriente se acercaría al infinito), pero la fracción real de cualquier cosa dividida por cero no está definida en el alcance de los números reales o complejos.</p>
-<h2><u><a name="xtocid93311">Arithmetic properties</a></u></h2>
-<a name="Properties, arithmetic"></a>
-<h3><u><a name="xtocid93312">The associative property</a></u></h3>
+<h2><a name="xtocid93311">Arithmetic properties</a></h2>
+<h3><u><a name="xtocid93312">La propiedad asociativa</a></u></h3>
 <p>Además y en la multiplicación, los términos pueden ser arbitrariamente<i>asociado</i>entre sí mediante el uso de paréntesis:</p>
 <p> <img src="11019.png"/> </p>
-<h3><u><a name="xtocid93313">The commutative property</a></u></h3>
+<h3><u><a name="xtocid93313">La propiedad conmutativa</a></u></h3>
 <p>Además y en la multiplicación, los términos pueden intercambiarse arbitrariamente, o<i>conmutado</i>:
 </p>
 <p> <img src="11020.png"/> </p>
-<h3><u><a name="xtocid93314">The distributive property</a></u></h3>
+<h3><u><a name="xtocid93314">La propiedad distributiva</a></u></h3>
 <p> <img src="11021.png"/> </p>
-<h2><u><a name="xtocid93315">Properties of exponents</a></u></h2>
-<a name="Properties, exponents"></a>
+<h2><a name="xtocid93315">Propiedades de los exponentes</a></h2>
 <p> <img src="11022.png"/> </p>
-<h2><u><a name="xtocid93316">Radicals</a></u></h2>
-<a name="Properties, radicals "></a>
-<h3><u><a name="xtocid93317">Definition of a radical</a></u></h3>
+<h2><a name="xtocid93316">Radicales</a></h2>
+<h3><u><a name="xtocid93317">Definición de radical</a></u></h3>
 <p>Cuando la gente habla de "raíz cuadrada", se refiere a un radical con raíz de 2. Esto es matemáticamente equivalente a un número elevado a la potencia de 1/2.  Es útil saber esta equivalencia cuando se utiliza una calculadora para determinar una raíz extraña.  Supongamos, por ejemplo, que necesita encontrar la raíz cuarta de un número, pero su calculadora carece de un botón o función de "raíz cuarta".  si tiene una y<sup>x</sup>función (que cualquier calculadora científica debería tener), puedes encontrar la raíz cuarta elevando ese número a la potencia 1/4, o x<sup>0.25</sup>.
 </p>
 <p> <img src="11023.png"/> </p>
 <p>Es importante recordar que al resolver para un<i>incluso</i>raíz (raíz cuadrada, raíz cuarta, etc.) de cualquier número, existen<i>two</i>respuestas válidas.  Por ejemplo, la mayoría de la gente sabe que la raíz cuadrada de nueve es tres, pero<i>negativo</i>tres también es una respuesta válida, ya que (-3)<sup>2</sup>= 9 igual que 3<sup>2</sup>= 9.</p>
-<h3><u><a name="xtocid93318">Properties of radicals</a></u></h3>
+<h3><u><a name="xtocid93318">Propiedades de los radicales</a></u></h3>
 <p> <img src="11024.png"/> </p>
-<h2><u><a name="xtocid93319">Important constants</a></u></h2>
-<a name="Constants, mathematical"></a>
-<h3><u><a name="xtocid933110">Euler's number</a></u></h3>
+<h2><a name="xtocid93319">Constantes importantes</a></h2>
+<h3><u><a name="xtocid933110">El número de Euler</a></u></h3>
 <p>La constante de Euler es un valor importante para funciones exponenciales, especialmente aplicaciones científicas que involucran desintegración (como la desintegración de una sustancia radiactiva).  Es especialmente importante en cálculo debido a sus propiedades singularmente autosemejantes de integración y diferenciación.</p>
 <pre>
 e approximately equals:
 2.71828 18284 59045 23536 02874 71352 66249 77572 47093 69996
 </pre>
 <p> <img src="11025.png"/> </p>
-<h3><u><a name="xtocid933111">Pi</a></u></h3>
+<h3><u><a name="xtocid933111">Pi (π)</a></u></h3>
 <p>Pi (π) se define como la relación entre la circunferencia de un círculo y su diámetro.</p>
 <pre>
 Pi approximately equals:
@@ -257,12 +268,12 @@ Pi approximately equals:
 <br/>
 <p>
 <b>Nota:</b>Para ambas constantes de Euler (<i>e</i>) y pi (π), los espacios que se muestran entre cada conjunto de cinco dígitos no tienen significado matemático.  Se colocan allí solo para que a sus ojos les resulte más fácil "dividir" el número en grupos de cinco dígitos al copiar manualmente.</p>
-<h2><u><a name="xtocid933112">Logarithms</a></u></h2>
-<h3><u><a name="xtocid933113">Definition of a logarithm</a></u></h3>
+<h2><a name="xtocid933112">Logaritmos</a></h2>
+<h3><u><a name="xtocid933113">Definición de logaritmo</a></u></h3>
 <a name="Logarithm"></a>
 <p> <img src="11026.png"/> </p>
 <p>"log" denota un logaritmo común (base = 10), mientras que "ln" denota un logaritmo natural (base = e).</p>
-<h3><u><a name="xtocid933114">Properties of logarithms</a></u></h3>
+<h3><u><a name="xtocid933114">Propiedades de los logaritmos</a></u></h3>
 <p> <img src="11027.png"/> </p>
 <a name="Transform function, definition of"></a>
 <p>Estas propiedades de los logaritmos resultan útiles para realizar operaciones complejas de multiplicación y división.  Son un ejemplo de algo llamado<i>función de transformación</i>, mediante el cual un tipo de operación matemática se transforma en otro tipo de operación matemática que es más sencilla de resolver.  Usando una tabla de cifras de logaritmos, se pueden multiplicar o dividir números sumando o restando sus logaritmos, respectivamente. luego buscar esa cifra del logaritmo en la tabla y ver cuál es el producto o cociente final.</p>
@@ -271,41 +282,36 @@ Pi approximately equals:
 <p> <img src="01044.png"/> </p>
 <p>Las marcas en las escalas de una regla de cálculo están espaciadas de forma logarítmica, de modo que una posición lineal de la escala o del cursor da como resultado una indicación no lineal tal como se lee en las escalas.  Sumar o restar longitudes en estas escalas logarítmicas da como resultado una indicación equivalente al producto o cociente, respectivamente, de esas longitudes.</p>
 <p>La mayoría de las reglas de cálculo también estaban equipadas con escalas especiales para funciones trigonométricas, potencias, raíces y otras funciones aritméticas útiles.</p>
-<h2><u><a name="xtocid933115">Factoring equivalencies</a></u></h2>
-<a name="Factoring"></a>
+<h2><a name="xtocid933115">Equivalencias de factorización</a></h2>
 <p> <img src="11028.png"/> </p>
-<h2><u><a name="xtocid933116">The quadratic formula</a></u></h2>
-<a name="Quadratic formula"></a>
+<h2><a name="xtocid933116">La fórmula cuadrática</a></h2>
 <p> <img src="11029.png"/> </p>
-<h2><u><a name="xtocid933117">Sequences</a></u></h2>
-<a name="Sequences"></a>
+<h2><a name="xtocid933117">Sucesiones</a></h2>
 <a name="Arithmetic sequence"></a>
 <a name="Common difference"></a>
 <a name="Difference, common"></a>
-<h3><u><a name="xtocid933118">Arithmetic sequences</a></u></h3>
+<h3><u><a name="xtocid933118">Sucesiones aritméticas</a></u></h3>
 <p>
 An <i>secuencia aritmética</i>es una serie de números obtenidos sumando (o restando) el mismo valor en cada paso.  La secuencia de conteo de un niño (1, 2, 3, 4,...) es una secuencia aritmética simple, donde<i>diferencia común</i>es 1: es decir, cada número adyacente en la secuencia difiere en un valor de uno.  Una secuencia aritmética que cuente sólo números pares (2, 4, 6, 8,...) o sólo números impares (1, 3, 5, 7, 9,...) tendría una diferencia común de 2.</p>
 <p>En la notación estándar de secuencias, una letra minúscula "a" representa un elemento (un solo número) en la secuencia.  El término "un<sub>n</sub>" se refiere al elemento en el n<sup>th</sup>paso en la secuencia.  Por ejemplo, "un<sub>3</sub>" en una secuencia aritmética de conteo par (diferencia común = 2) que comienza en 2 sería el número 6, "a<sub></sub>" representando 4 y "a<sub>1</sub>" que representa el punto inicial de la secuencia (indicado en este ejemplo como 2).</p>
 <p>La letra "A" mayúscula representa la<i>sum</i>de una secuencia aritmética.  Por ejemplo, en la misma secuencia de conteo par que comienza en 2, A<sub>4</sub>es igual a la suma de todos los elementos de un<sub>1</sub>a través de un<sub>4</sub>, que por supuesto sería 2 + 4 + 6 + 8, o 20.</p>
 <p> <img src="11030.png"/> </p>
-<h3><u><a name="xtocid933119">Geometric sequences</a></u></h3>
+<h3><u><a name="xtocid933119">Sucesiones geométricas</a></u></h3>
 <a name="Geometric sequence"></a>
 <a name="Common ratio"></a>
 <a name="Ratio, common"></a>
 <p>
 A <i>secuencia geométrica</i>, por otro lado, es una serie de números que se obtienen multiplicando (o dividiendo) por el mismo valor en cada paso.  Una secuencia binaria de peso posicional (1, 2, 4, 8, 16, 32, 64,...) es una secuencia geométrica simple, donde la<i>proporción común</i>es 2: es decir, cada número adyacente en la secuencia difiere en un<i>factor</i>de dos.</p>
 <p> <img src="11031.png"/> </p>
-<h2><u><a name="xtocid933120">Factorials</a></u></h2>
-<a name="Factorial"></a>
+<h2><a name="xtocid933120">Factoriales</a></h2>
 <a name="! (factorial)"></a>
-<h3><u><a name="xtocid933121">Definition of a factorial</a></u></h3>
+<h3><u><a name="xtocid933121">Definición de factorial</a></u></h3>
 <p>Indicado por el símbolo "!" después de un número entero; el producto de ese número entero y todos los números enteros en descenso a 1.</p>
 <p>Ejemplo de factorial:</p>
 <p> <img src="11032.png"/> </p>
-<h3><u><a name="xtocid933122">Strange factorials</a></u></h3>
+<h3><u><a name="xtocid933122">Factoriales especiales</a></u></h3>
 <p> <img src="11033.png"/> </p>
-<h2><u><a name="xtocid933123">Solving simultaneous equations</a></u></h2>
-<a name="Simultaneous equations"></a>
+<h2><a name="xtocid933123">Resolución de sistemas de ecuaciones</a></h2>
 <a name="Systems of linear equations"></a>
 <p>los términos<i>ecuaciones simultáneas</i> and <i>sistemas de ecuaciones</i>se refieren a condiciones en las que dos o más variables desconocidas están relacionadas entre sí a través de un número igual de ecuaciones.  Considere el siguiente ejemplo:</p>
 <p> <img src="11068.png"/> </p>
@@ -313,7 +319,7 @@ A <i>secuencia geométrica</i>, por otro lado, es una serie de números que se o
 <p> <img src="11069.png"/> </p>
 <p>Cada línea es en realidad un continuo de puntos que representan posibles<tt>x</tt> and <tt>y</tt>pares de soluciones para cada ecuación.  Cada ecuación, por separado, tiene un número infinito de pares ordenados (<tt>x</tt>,<tt>y</tt>) soluciones.  Sólo hay un punto donde las dos funciones lineales<tt>x + y = 24</tt> and <tt>2x - y = -6</tt>se cruzan (donde una de sus muchas soluciones independientes funciona para ambas ecuaciones), y ahí es donde<tt>x</tt>es igual a un valor de 6 y<tt>y</tt>es igual a un valor de 18.</p>
 <p>Sin embargo, por lo general, representar gráficamente no es una forma muy eficiente de determinar el conjunto de soluciones simultáneas para dos o más ecuaciones.  Es especialmente impráctico para sistemas de tres o más variables.  En un sistema de tres variables, por ejemplo, la solución se encontraría mediante la intersección de tres planos en un espacio de coordenadas tridimensional, lo que no es un escenario fácil de visualizar.</p>
-<h3><u><a name="xtocid933124">Substitution method</a></u></h3>
+<h3><u><a name="xtocid933124">Método de sustitución</a></u></h3>
 <a name="Substitution method, simultaneous equations"></a>
 <p>Existen varias técnicas algebraicas para resolver ecuaciones simultáneas.  Quizás lo más fácil de comprender sea el<i>sustitución</i>método.  Tomemos, por ejemplo, nuestro problema de ejemplo de dos variables:</p>
 <p> <img src="11068.png"/> </p>
@@ -348,7 +354,7 @@ A <i>secuencia geométrica</i>, por otro lado, es una serie de números que se o
 </p>
 <p> <img src="11081.png"/> </p>
 <p>Para terminar, hemos encontrado valores para<tt>x</tt>, <tt>y</tt>, y<tt>z</tt>de 2, 4 y 12, respectivamente, que satisfacen las tres ecuaciones.</p>
-<h3><u><a name="xtocid933125">Addition method</a></u></h3>
+<h3><u><a name="xtocid933125">Método de adición</a></u></h3>
 <a name="Addition method, simultaneous equations"></a>
 <p>Si bien el método de sustitución puede ser el más fácil de comprender a nivel conceptual, existen otros métodos de solución a nuestra disposición.  Uno de esos métodos es el llamado<i>suma</i>método, mediante el cual las ecuaciones se suman entre sí con el fin de cancelar términos variables.</p>
 <p>Tomemos nuestro sistema de dos variables utilizado para demostrar el método de sustitución:</p>
@@ -387,7 +393,7 @@ A <i>secuencia geométrica</i>, por otro lado, es una serie de números que se o
 <p> <img src="11093.png"/> </p>
 <p>Tomando la nueva ecuación<tt>13y = 52</tt>y resolviendo<tt>y</tt>(dividiendo ambos lados por<tt>13</tt>), obtenemos un valor de<tt>4</tt> for <tt>y</tt>.  Sustituyendo este valor de<tt>4</tt> for <tt>y</tt>en cualquiera de las ecuaciones de dos variables nos permite resolver para<tt>z</tt>.  Sustituyendo ambos valores de<tt>y</tt> and <tt>z</tt>en cualquiera de las ecuaciones originales de tres variables nos permite resolver<tt>x</tt>.  El resultado final (¡te ahorraré los pasos algebraicos, ya que ya deberías estar familiarizado con ellos!) es que<tt>x = 2</tt>, <tt>y = 4</tt>, y<tt>z = 12</tt>.
 </p>
-<h2><u><a name="xtocid933126">Contributors</a></u></h2>
+<h2><a name="xtocid933126">Colaboradores</a></h2>
 <p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>
 <p>
 <b>Chirvasuta Constantin</b>(2 de abril de 2003): Error señalado en la fórmula de la ecuación cuadrática.</p>
