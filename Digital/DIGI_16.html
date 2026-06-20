@@ -203,7 +203,7 @@
 <p>Cualquiera de los circuitos es capaz de sumar dos dígitos binarios.  Las "reglas" matemáticas sobre cómo sumar bits son intrínsecas a la lógica cableada de los circuitos.  Si quisiéramos realizar una operación aritmética diferente con bits binarios, como la multiplicación, tendríamos que construir otro circuito.  Los diseños de circuitos anteriores solo realizarán una función: sumar dos bits binarios.  Para obligarlos a hacer otra cosa sería necesario volver a cablear y tal vez componentes diferentes.</p>
 <p>En este sentido, los circuitos aritméticos digitales no son muy diferentes de los circuitos aritméticos analógicos (amplificadores operacionales): hacen exactamente lo que están programados para hacer, ni más ni menos.  Sin embargo, no nos limitamos a diseñar circuitos informáticos digitales de esta manera.  Es posible incorporar las "reglas" matemáticas para cualquier operación aritmética en forma de datos digitales en lugar de conexiones cableadas entre puertas.  El resultado es una flexibilidad de funcionamiento incomparable, dando lugar a un tipo completamente nuevo de dispositivo digital: el<i>computadora programable</i>.
 </p>
-<p>Si bien este capítulo no es de ninguna manera exhaustivo, proporciona lo que creo que es una mirada única e interesante a la naturaleza de los dispositivos informáticos programables, comenzando con dos dispositivos que a menudo se pasan por alto en los libros de texto introductorios:<i>memorias de la tabla de consulta</i> and <i>máquinas de estados finitos</i>.
+<p>Si bien este capítulo no es de ninguna manera exhaustivo, proporciona lo que creo que es una mirada única e interesante a la naturaleza de los dispositivos informáticos programables, comenzando con dos dispositivos que a menudo se pasan por alto en los libros de texto introductorios:<i>memorias de la tabla de consulta</i> y <i>máquinas de estados finitos</i>.
 </p>
 <h2><a name="xtocid92791">Look-up tables</a></h2>
 <p>Habiendo aprendido sobre los dispositivos de memoria digital en el último capítulo, sabemos que es posible almacenar datos binarios dentro de dispositivos de estado sólido.  Esas "celdas" de almacenamiento dentro de los dispositivos de memoria de estado sólido se pueden acceder fácilmente al controlar las líneas de "dirección" del dispositivo con los valores binarios adecuados.  Supongamos que tuviéramos un circuito de memoria ROM escrito o programado con ciertos datos, de modo que las líneas de dirección de la ROM sirvieran como entradas y las líneas de datos de la ROM sirvieran como salidas, generando la respuesta característica de una función lógica particular.  Teóricamente, podríamos programar este chip ROM para emular cualquier función lógica que quisiéramos sin tener que alterar ninguna conexión de cables o puertas.</p>
@@ -344,18 +344,18 @@ Address  -----&gt; Data            Address  -----&gt; Data
 --------------------------------------
 |        ** Control Unit **          |&lt;=========&gt; Control Bus
 |  (decodes instructions read from   | (to all devices sharing
-|  program in memory, enables flow   | address and/or data busses;
-|  of data to and from ALU, internal | arbitrates all bus communi- 
-|  registers, and external devices)  | cations)
+|  program in memory, enables flow   | address y/or data busses;
+|  of data to y from ALU, internal | arbitrates all bus communi- 
+|  registers, y external devices)  | cations)
 -------------------------------------- 
 | ** Arithmetic Logic Unit (ALU) **  |
 |    (performs all mathematical      |
-|     calculations and Boolean       |
+|     calculations y Boolean       |
 |     functions)                     |
 --------------------------------------
 |          ** Registers **           |
 |    (small read/write memories for  |&lt;=========&gt; Data Bus
-|     holding instruction codes,     | (from RAM memory and other
+|     holding instruction codes,     | (from RAM memory y other
 |     error codes, ALU data, etc;    |  external devices)
 |     includes the "accumulator")    |
 --------------------------------------

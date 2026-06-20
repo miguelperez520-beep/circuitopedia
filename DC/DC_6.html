@@ -364,12 +364,12 @@ By <i>algebraico</i>, me refiero a tener en cuenta los signos (polaridades) y la
 <p>También recuerda a los divisores de voltaje el hecho de que las corrientes derivadas son proporciones fijas de la corriente total.  A pesar de que la tensión de alimentación se ha multiplicado por cuatro, la relación entre la corriente de cualquier rama y la corriente total permanece sin cambios:</p>
 <p> <img src="10118.png"/> </p>
 <a name="Current divider formula"></a>
-<p>Por esta razón, a un circuito en paralelo se le suele llamar<i>divisor actual</i>por su capacidad para proporcionar (o dividir) la corriente total en partes fraccionarias.  Con un poco de álgebra, podemos derivar una fórmula para determinar la corriente de resistencia en paralelo dada nada más que la corriente total, la resistencia individual y la resistencia total:</p>
+<p>Por esta razón, a un circuito en paralelo se le suele llamar<i>divisor de corriente</i>por su capacidad para proporcionar (o dividir) la corriente total en partes fraccionarias.  Con un poco de álgebra, podemos derivar una fórmula para determinar la corriente de resistencia en paralelo dada nada más que la corriente total, la resistencia individual y la resistencia total:</p>
 <p> <img src="10119.png"/> </p>
-<p>La relación entre la resistencia total y la resistencia individual es la misma que la de la corriente individual (rama) y la corriente total.  Esto se conoce como el<i>fórmula divisoria actual</i>, y es un método abreviado para determinar las corrientes derivadas en un circuito paralelo cuando se conoce la corriente total.</p>
+<p>La relación entre la resistencia total y la resistencia individual es la misma que la de la corriente individual (rama) y la corriente total.  Esto se conoce como el<i>fórmula divisoria de corriente</i>, y es un método abreviado para determinar las corrientes derivadas en un circuito paralelo cuando se conoce la corriente total.</p>
 <p>Usando el circuito paralelo original como ejemplo, podemos volver a calcular las corrientes derivadas usando esta fórmula, si comenzamos por conocer la corriente total y la resistencia total:</p>
 <p> <img src="10120.png"/> </p>
-<p>Si te tomas el tiempo para comparar las dos fórmulas divisorias, verás que son notablemente similares.  Observe, sin embargo, que la relación en la fórmula del divisor de voltaje es R<sub>n</sub>(resistencia individual) dividida por R<sub>Total</sub>y cómo la razón en la fórmula divisoria actual es R<sub>Total</sub>dividido por R<sub>n</sub>:
+<p>Si te tomas el tiempo para comparar las dos fórmulas divisorias, verás que son notablemente similares.  Observe, sin embargo, que la relación en la fórmula del divisor de voltaje es R<sub>n</sub>(resistencia individual) dividida por R<sub>Total</sub>y cómo la razón en la fórmula divisoria de corriente es R<sub>Total</sub>dividido por R<sub>n</sub>:
 </p>
 <p> <img src="10121.png"/> </p>
 <p>Es bastante fácil confundir estas dos ecuaciones, obteniendo las relaciones de resistencia al revés.  Una forma de ayudar a recordar la forma adecuada es tener en cuenta que ambas razones en las ecuaciones divisorias de voltaje y corriente deben ser menores que uno.  Después de todo estos son<i>divisor</i>ecuaciones, no<i>multiplicador</i>ecuaciones!  Si la fracción está al revés, proporcionará una proporción mayor que uno, lo cual es incorrecto.  Sabiendo que la resistencia total en un circuito en serie (divisor de voltaje) es siempre mayor que cualquiera de las resistencias individuales, sabemos que la fracción para esa fórmula debe ser R<sub>n</sub>sobre R<sub>Total</sub>.  Por el contrario, sabiendo que la resistencia total en un circuito paralelo (divisor de corriente) es siempre menor que cualquiera de las resistencias individuales, sabemos que la fracción para esa fórmula debe ser R<sub>Total</sub>sobre R<sub>n</sub>.
@@ -394,20 +394,20 @@ By <i>algebraico</i>, me refiero a tener en cuenta los signos (polaridades) y la
 <p>Desde la derecha y desde abajo, tenemos dos corrientes que ingresan a la conexión de cables etiquetada como nodo 3. A la izquierda, tenemos una sola corriente que sale del nodo igual en magnitud a la suma de las dos corrientes que ingresan.  Para hacer referencia a la analogía de la plomería: siempre que no haya fugas en las tuberías, el flujo que ingresa al accesorio también debe salir del mismo.  Esto es válido para cualquier nodo ("adaptación"), sin importar cuántos flujos entren o salgan.  Matemáticamente, podemos expresar esta relación general como tal:</p>
 <p> <img src="10123.png"/> </p>
 <a name="KCL"></a>
-<p>Kirchhoff decidió expresarlo de una forma ligeramente diferente (aunque matemáticamente equivalente), llamándolo<i>La ley actual de Kirchhoff</i>(CLK):</p>
+<p>Kirchhoff decidió expresarlo de una forma ligeramente diferente (aunque matemáticamente equivalente), llamándolo<i>La ley de corriente de Kirchhoff</i>(CLK):</p>
 <p> <img src="10124.png"/> </p>
-<p>Resumida en una frase, la Ley Actual de Kirchhoff dice así:</p>
+<p>Resumida en una frase, la ley de corriente de Kirchhoff dice así:</p>
 <blockquote>
 <b>"La suma algebraica de todas las corrientes que entran y salen de un nodo debe ser igual a cero"</b>
 </blockquote>
 <p>Es decir, si asignamos un signo matemático (polaridad) a cada corriente, que indica si entran (+) o salen (-) de un nodo, podemos sumarlas para llegar a un total de cero, garantizado.</p>
 <p>Tomando nuestro nodo de ejemplo (número 3), podemos determinar la magnitud de la corriente que sale por la izquierda configurando una ecuación KCL con esa corriente como valor desconocido:</p>
 <p> <img src="10125.png"/> </p>
-<p>El signo negativo (-) en el valor de 5 miliamperios nos dice que la corriente es<i>saliendo</i>el nodo, a diferencia de las corrientes de 2 miliamperios y 3 miliamperios, que deben ser ambas positivas (y por lo tanto<i>entrando</i>el nodo).  Si negativo o positivo denota una entrada o salida actual es completamente arbitrario, siempre que sean signos opuestos para direcciones opuestas y seamos consistentes en nuestra notación, KCL funcionará.</p>
+<p>El signo negativo (-) en el valor de 5 miliamperios nos dice que la corriente es<i>saliendo</i>el nodo, a diferencia de las corrientes de 2 miliamperios y 3 miliamperios, que deben ser ambas positivas (y por lo tanto<i>entrando</i>el nodo).  Si negativo o positivo denota una entrada o salida de corriente es completamente arbitrario, siempre que sean signos opuestos para direcciones opuestas y seamos consistentes en nuestra notación, KCL funcionará.</p>
 <p>Juntas, las leyes de tensión y corriente de Kirchhoff son un par de herramientas formidables y útiles para analizar circuitos eléctricos.  Su utilidad será aún más evidente en un capítulo posterior ("Análisis de redes"), pero basta decir que estas leyes merecen ser memorizadas por el estudiante de electrónica tanto como la Ley de Ohm.</p>
 <ul>
 <li><b>REVISAR:</b></li>
-<li>Ley actual de Kirchhoff (KCL):<i>"La suma algebraica de todas las corrientes que entran y salen de un nodo debe ser igual a cero"</i></li>
+<li>ley de corriente de Kirchhoff (KCL):<i>"La suma algebraica de todas las corrientes que entran y salen de un nodo debe ser igual a cero"</i></li>
 </ul>
 <h2><a name="xtocid87524">Colaboradores</a></h2>
 <p>Los contribuyentes a este capítulo se enumeran en orden cronológico de sus contribuciones, desde el más reciente hasta el primero.  Consulte el Apéndice 2 (Lista de colaboradores) para fechas e información de contacto.</p>

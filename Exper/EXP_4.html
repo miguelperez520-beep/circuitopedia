@@ -285,16 +285,16 @@ rload2 4 3 1k
 * Sets up AC analysis at 60 Hz:
 .ac lin 1 60 60
 
-* Prints primary voltage between nodes 2 and 0:
+* Prints primary voltage between nodes 2 y 0:
 .print ac v(2,0) 
 
-* Prints (top) secondary voltage between nodes 5 and 4:
+* Prints (top) secondary voltage between nodes 5 y 4:
 .print ac v(5,4) 
 
-* Prints (bottom) secondary voltage between nodes 4 and 3:
+* Prints (bottom) secondary voltage between nodes 4 y 3:
 .print ac v(4,3) 
 
-* Prints (total) secondary voltage between nodes 5 and 3:
+* Prints (total) secondary voltage between nodes 5 y 3:
 .print ac v(5,3) 
 .end
 </pre>
@@ -1184,7 +1184,7 @@ c1 2 0 0.1u ic=6
 <p> <img src="05181.png"/> </p>
 <p>Ahora que hemos establecido cómo se crea y distribuye el ruido de CA en este circuito, exploremos cómo se<i>acoplado</i>a los hilos adyacentes del cable.  Utilice el detector de audio para medir el voltaje entre uno de los terminales del motor y uno de los cables no utilizados del cable telefónico.  El capacitor de 0.047 µF no es necesario en este ejercicio, porque de todos modos no hay voltaje de CC entre estos puntos para que el detector lo detecte:</p>
 <p> <img src="05182.png"/> </p>
-<p>El voltaje de ruido detectado aquí se debe a la capacitancia parásita entre conductores de cable adyacentes que crean una "ruta" de corriente CA entre los cables.  Recuerde que en realidad no pasa corriente<i>a través de</i>una capacitancia, pero la acción alterna de carga y descarga de una capacitancia, ya sea intencional o no, proporciona<i>alterno</i>actual una especie de camino.</p>
+<p>El voltaje de ruido detectado aquí se debe a la capacitancia parásita entre conductores de cable adyacentes que crean una "ruta" de corriente CA entre los cables.  Recuerde que en realidad no pasa corriente<i>a través de</i>una capacitancia, pero la acción alterna de carga y descarga de una capacitancia, ya sea intencional o no, proporciona a la<i>corriente alterna</i>una especie de camino.</p>
 <p>Si intentáramos conducir una señal de voltaje entre uno de los cables no utilizados y un punto común con el motor, esa señal se vería contaminada por el ruido del voltaje del motor.  Esto podría ser bastante perjudicial, dependiendo de cuánto ruido se acoplara entre los dos circuitos y de qué tan sensible fuera un circuito al ruido del otro.  Dado que el fenómeno de acoplamiento primario en este circuito es de naturaleza capacitiva, los voltajes de ruido de mayor frecuencia están más fuertemente acoplados que los voltajes de ruido de menor frecuencia.</p>
 <p>Si la señal adicional fuera una señal de CC, sin que se esperara CA en ella, podríamos mitigar el problema del ruido acoplado "desacoplando" el ruido de CA con un condensador relativamente grande conectado a través de los conductores de la señal de CC.  Utilice el condensador de 0,22 µF para este propósito, como se muestra:</p>
 <p> <img src="05183.png"/> </p>

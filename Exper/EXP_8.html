@@ -411,22 +411,22 @@
 <p>Otra característica interesante del 555 es su inmunidad al voltaje de la fuente de alimentación. Si cambiara la batería de 9 V por una de 6 V o 12, debería obtener resultados idénticos, aunque la intensidad de la luz LED cambiará.</p>
 <p>C2 en realidad no es necesario. El 555 IC tiene esta opción en caso de que el temporizador se utilice en un entorno donde la línea de suministro de energía sea ruidosa. Puedes quitarlo y no notar la diferencia. El 555 en sí es una fuente de ruido, ya que hay un período de tiempo muy breve en el que los transistores en ambos lados de la salida conducen, creando una sobretensión (medida en nanosegundos) de la fuente de alimentación.</p>
 <!--
-Figure 1 5.PNG 45015.png
-Figure 2 6.PNG 45016.png
-Figure 3 7.PNG 45017.png
-Figure 4 8.PNG 45018.png
-Figure 5 9.PNG 45019.png
+Figura 1 5.PNG 45015.png
+Figura 2 6.PNG 45016.png
+Figura 3 7.PNG 45017.png
+Figura 4 8.PNG 45018.png
+Figura 5 9.PNG 45019.png
 -->
 <br/>
 <p>
 <b>TEORÍA DE FUNCIONAMIENTO</b>
 </p>
-<p>Mirando el esquema funcional que se muestra (Figura<a href="#45013.png">  below</a>), puedes ver que el pin 7 es un transistor que va a tierra.</p>
+<p>Mirando el esquema funcional que se muestra (Figura<a href="#45013.png">a continuación</a>), puedes ver que el pin 7 es un transistor que va a tierra.</p>
 <a name="45013.png"></a>
 <p> <img src="45013.png"/> </p>
 <p><i></i></p>
 <p>Este transistor es simplemente un interruptor que normalmente conduce hasta que el pin 2 (que está conectado a través del comparador C1, que alimenta el flip-flop interno) baja, permitiendo que el capacitor Ct comience a cargarse. El pin 7 permanece apagado hasta que el voltaje en Ct se carga a 2/3 del voltaje de la fuente de alimentación, donde el temporizador expira y el transistor del pin 7 se enciende nuevamente, su estado normal en este circuito.</p>
-<p>Lo siguiente (Figura<a href="#45014.png">  below</a>) mostrará la secuencia de conmutación, siendo el rojo los voltajes más altos y el verde la tierra (0 voltios), con el espectro en el medio ya que se trata fundamentalmente de un circuito analógico.</p>
+<p>Lo siguiente (Figura<a href="#45014.png">a continuación</a>) mostrará la secuencia de conmutación, siendo el rojo los voltajes más altos y el verde la tierra (0 voltios), con el espectro en el medio ya que se trata fundamentalmente de un circuito analógico.</p>
 <a name="45014.png"></a>
 <p> <img src="45014.png"/> </p>
 <p><i>Este gráfico muestra la curva de carga a través del Ct.</i></p>
@@ -590,7 +590,7 @@ Figure 5 9.PNG 45019.png
 <li>Conozca una de las varias configuraciones del multivibrador Astable con temporizador 555</li>
 <li>Conocimiento práctico del ciclo de trabajo.</li>
 <li>Cómo manejar piezas sensibles a ESD</li>
-<li>Cómo utilizar transistores para mejorar la ganancia actual.</li>
+<li>Cómo utilizar transistores para mejorar la ganancia de corriente.</li>
 <li>Cómo usar un capacitor para duplicar voltaje con un interruptor</li>
 </ul>
 <br/>
@@ -733,9 +733,9 @@ Figure 5 9.PNG 45019.png
 <a name="45033.png"></a>
 <p> <img src="45033.png"/> </p>
 <p><i></i></p>
-<p>Enrolle el cable de manera ordenada y firme a 1" de la longitud del tornillo, clavándolo nuevamente en su lugar con superpegamento. (Figura<a href="#45033.png">  above</a>).  Puedes utilizar un taladro de velocidad variable para ayudarte con esto, siempre y cuando tengas cuidado.  Como todos los aparatos eléctricos, puede morderte.  Sujeta el cable con fuerza hasta que el pegamento se endurezca y luego comienza a enrollar una segunda capa sobre la primera.  Continúe este proceso hasta que se use todo el cable, excepto el último 1", usando el pegamento para fijar el cable de vez en cuando. Coloque el cable en la última capa de modo que el segundo cable del inductor quede en el otro extremo del tornillo, lejos del primero. Sujete esto por última vez con el pegamento. Deje secar por completo.</p>
+<p>Enrolle el cable de manera ordenada y firme a 1" de la longitud del tornillo, clavándolo nuevamente en su lugar con superpegamento. (Figura<a href="#45033.png">anterior</a>).  Puedes utilizar un taladro de velocidad variable para ayudarte con esto, siempre y cuando tengas cuidado.  Como todos los aparatos eléctricos, puede morderte.  Sujeta el cable con fuerza hasta que el pegamento se endurezca y luego comienza a enrollar una segunda capa sobre la primera.  Continúe este proceso hasta que se use todo el cable, excepto el último 1", usando el pegamento para fijar el cable de vez en cuando. Coloque el cable en la última capa de modo que el segundo cable del inductor quede en el otro extremo del tornillo, lejos del primero. Sujete esto por última vez con el pegamento. Deje secar por completo.</p>
 <p>Con cuidado, toma una cuchilla afilada y raspa el esmalte de cada extremo de los dos cables.  Estañe el cobre expuesto con el soldador y la soldadura, y ahora tendrá un inductor funcional que puede usarse en este experimento.</p>
-<p>Así es como se veía el que hice: Figura<a href="#45034.png">  below</a>.</p>
+<p>Así es como se veía el que hice: Figura<a href="#45034.png">a continuación</a>.</p>
 <a name="45034.jpg"></a>
 <p> <img src="45034.jpg"/> </p>
 <p><i></i></p>
@@ -783,7 +783,7 @@ Figure 5 9.PNG 45019.png
 <li>Conozca una de las varias configuraciones del multivibrador Astable con temporizador 555</li>
 <li>Conocimiento práctico del ciclo de trabajo.</li>
 <li>Cómo manejar piezas sensibles a ESD</li>
-<li>Cómo utilizar transistores para mejorar la ganancia actual.</li>
+<li>Cómo utilizar transistores para mejorar la ganancia de corriente.</li>
 <li>Cómo calcular la resistencia correcta para un LED</li>
 </ul>
 <br/>
@@ -803,7 +803,7 @@ Figure 5 9.PNG 45019.png
 <p>¡NOTA! Este proyecto utiliza una parte sensible a la estática, el CMOS 555. Si no utiliza protección como se describe en el Volumen 3, Capítulo 9,<i>Descarga electrostática</i>, corres el riesgo de destruirlo.</p>
 <p>El circuito mostrado en el experimento anterior,<i>CMOS 555 Intermitente LED rojo de piezas mínimas de larga duración</i>, tiene un gran inconveniente, que es la falta de control de corriente del LED.  Este experimento utiliza el mismo esquema básico del 555 y agrega controladores transistorizados para corregir esto.</p>
 <p>Las piezas utilizadas para este controlador de transistores no son críticas.  Está diseñado para cargar el TLC555 al mínimo absoluto y aún así encender Q2 por completo.  Esto es importante porque a medida que el voltaje de la batería se acerca a los 2 V, la unidad del TLC555 se reduce a sus valores mínimos.  Los transistores bipolares pueden ser buenos interruptores.</p>
-<p>Dado que los LED pueden tener tanta variación, R4 debe modificarse para que coincida con el LED específico utilizado.  La corriente está limitada a 18,5 ma con 27 Ω y un Vf (voltaje de caída directa del LED) de 2,5 V, un LED Vf de 2,1 V consumirá 33 ma y un LED Vf de 1,5 consumirá 56 ma.  Este último es demasiado actual, sin mencionar lo que eso afectaría a la duración de la batería.  Para corregir esto, utilice 47 Ω si Vf es de 2,1 V y 75 Ω si Vf es de 1,5 V, suponiendo que la corriente objetivo sea de 20 mA.</p>
+<p>Dado que los LED pueden tener tanta variación, R4 debe modificarse para que coincida con el LED específico utilizado.  La corriente está limitada a 18,5 ma con 27 Ω y un Vf (voltaje de caída directa del LED) de 2,5 V, un LED Vf de 2,1 V consumirá 33 ma y un LED Vf de 1,5 consumirá 56 ma.  Esta corriente es demasiado alta, sin mencionar lo que eso afectaría a la duración de la batería.  Para corregir esto, utilice 47 Ω si Vf es de 2,1 V y 75 Ω si Vf es de 1,5 V, suponiendo que la corriente objetivo sea de 20 mA.</p>
 <p>Puede medir Vf utilizando el puente que se muestra en rojo en la ilustración, que encenderá el LED en todo momento.  Puedes calcular el valor de R4 usando la ecuación:</p>
 
 R4 = (3V-Vf) / 0.02A

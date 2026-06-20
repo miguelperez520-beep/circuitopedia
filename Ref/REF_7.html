@@ -424,9 +424,9 @@ total power dissipation   1.67E-01  watts
 <i>All</i>Los componentes en un archivo fuente SPICE se identifican principalmente por la primera letra en cada línea respectiva.  Los caracteres que siguen a la letra de identificación se utilizan para distinguir un componente de un determinado tipo de otro del mismo tipo (r1, r2, r3, rload, rpullup, etc.) y no necesitan seguir ninguna convención de nomenclatura particular, siempre que no se utilicen más de ocho caracteres tanto en la letra de identificación del componente como en el nombre distintivo.</p>
 <a name="Component names, SPICE"></a>
 <p>Por ejemplo, suponga que está simulando un circuito digital con resistencias "pullup" y "pulldown".  el nombre<tt>pullup</tt>sería válido porque tiene siete caracteres.  el nombre<tt>desplegable</tt>, sin embargo, tiene nueve caracteres.  Esto puede causar problemas cuando SPICE interpreta la lista de redes.</p>
-<p>De hecho, puede salirse con la suya con nombres de componentes que superen los ocho caracteres en total si no hay otros componentes con nombres similares en el archivo fuente.  SPICE sólo presta atención a los primeros ocho caracteres del primer campo de cada línea, por lo que<tt>desplegable</tt>en realidad se interpreta como<tt>rpulldow</tt>ignorando la "n" al final.  Por lo tanto, SPICE considerará cualquier otra resistencia que tenga los primeros ocho caracteres en su primer campo como la misma resistencia, definida dos veces, lo que provocará un error (es decir,<tt>rpulldown1</tt> and <tt>rpulldown2</tt>se interpretaría como el mismo nombre,<tt>rpulldow</tt>).
+<p>De hecho, puede salirse con la suya con nombres de componentes que superen los ocho caracteres en total si no hay otros componentes con nombres similares en el archivo fuente.  SPICE sólo presta atención a los primeros ocho caracteres del primer campo de cada línea, por lo que<tt>desplegable</tt>en realidad se interpreta como<tt>rpulldow</tt>ignorando la "n" al final.  Por lo tanto, SPICE considerará cualquier otra resistencia que tenga los primeros ocho caracteres en su primer campo como la misma resistencia, definida dos veces, lo que provocará un error (es decir,<tt>rpulldown1</tt> y <tt>rpulldown2</tt>se interpretaría como el mismo nombre,<tt>rpulldow</tt>).
 </p>
-<p>También debe tenerse en cuenta que SPICE ignora mayúsculas y minúsculas, por lo que<tt>r1</tt> and <tt>R1</tt>son interpretados por SPICE como uno y el mismo.</p>
+<p>También debe tenerse en cuenta que SPICE ignora mayúsculas y minúsculas, por lo que<tt>r1</tt> y <tt>R1</tt>son interpretados por SPICE como uno y el mismo.</p>
 <p>SPICE permite el uso de prefijos métricos para especificar valores de componentes, lo cual es una característica muy útil.  Sin embargo, la convención de prefijo utilizada por SPICE difiere algo de los símbolos métricos estándar, principalmente debido al hecho de que las netlists están restringidas a caracteres ASCII estándar (descartando letras griegas como µ para el prefijo "micro") y que SPICE no distingue entre mayúsculas y minúsculas, por lo que "m" (que es el símbolo estándar de "milli") y "M" (que es el símbolo estándar de "Mega") se interpretan de manera idéntica.  A continuación se muestran algunos ejemplos de prefijos utilizados en las netlists de SPICE:</p>
 <a name="Metric prefixes, SPICE"></a>
 <br/>
@@ -595,7 +595,7 @@ Example:       .model m2n2907 pnp is=1.1p bf=200 nf=1.2 vaf=50
 <p>
 <tt>bf</tt>= Beta directa máxima ideal (sin unidades)</p>
 <p>
-<tt>nf</tt>= coeficiente de emisión actual directo (sin unidades)</p>
+<tt>nf</tt>= coeficiente de emisión de corriente directa (sin unidades)</p>
 <p>
 <tt>vaf</tt>= voltaje inicial directo en voltios</p>
 <p>
@@ -952,7 +952,7 @@ Example 1:     .tran 1m 50m uic
 Example 2:     .tran .5m 32m 0 .01m 
 </pre>
 <p>
-<b>Comentarios:</b>El ejemplo 1 tiene un tiempo de incremento de 1 milisegundo y un tiempo de parada de 50 milisegundos (cuando solo se especifican dos parámetros, se<i>incremento de tiempo</i> and <i>detener el tiempo</i>, respectivamente).  El ejemplo 2 tiene un tiempo de incremento de 0,5 milisegundos, un tiempo de parada de 32 milisegundos, un tiempo de inicio de 0 milisegundos (sin demora en el inicio) y un intervalo de cálculo de 0,01 milisegundos.</p>
+<b>Comentarios:</b>El ejemplo 1 tiene un tiempo de incremento de 1 milisegundo y un tiempo de parada de 50 milisegundos (cuando solo se especifican dos parámetros, se<i>incremento de tiempo</i> y <i>detener el tiempo</i>, respectivamente).  El ejemplo 2 tiene un tiempo de incremento de 0,5 milisegundos, un tiempo de parada de 32 milisegundos, un tiempo de inicio de 0 milisegundos (sin demora en el inicio) y un intervalo de cálculo de 0,01 milisegundos.</p>
 <p>El valor predeterminado para la hora de inicio es cero.  Análisis transitorio<i>siempre</i>comienza en el momento cero, pero el almacenamiento de datos solo tiene lugar entre el tiempo de inicio y el tiempo de finalización.  El intervalo de salida de datos es el tiempo de incremento, o (tiempo de parada - tiempo de inicio)/50, el que sea menor.  Sin embargo, la variable de intervalo de cálculo se puede utilizar para forzar un intervalo de cálculo más pequeño que cualquiera de los dos.  Para recuentos de intervalos totales grandes, el<tt>itl5</tt>variables en el<tt>.opciones</tt>La tarjeta puede estar configurada con un número mayor.  El "<tt>uic</tt>"La opción le dice a SPICE que "use las condiciones iniciales".</p>
 <br/>
 <a name="Plot output, SPICE"></a>
@@ -1149,7 +1149,7 @@ c1 4 7 22u
 .print ac v(4,7)
 </pre>
 <br/>
-<p>Sin embargo, si quisiéramos que SPICE midiera la<i>actual</i>a través de ese condensador, no sería tan fácil.  Las corrientes en SPICE deben especificarse en relación con una fuente de voltaje, no con cualquier componente arbitrario.  Por ejemplo:</p>
+<p>Sin embargo, si quisiéramos que SPICE midiera la<i>corriente</i>a través de ese condensador, no sería tan fácil.  Las corrientes en SPICE deben especificarse en relación con una fuente de voltaje, no con cualquier componente arbitrario.  Por ejemplo:</p>
 <p> <img src="01012.png"/> </p>
 <pre>
 c1 4 7 22u
@@ -1325,7 +1325,7 @@ time          v(1,2)
 v1 1 0 sin(0 15 60 0 0)
 rload 1 0 10k
 * change tran card to the following for better Fourier precision
-* .tran 1m 30m .01m     and include .options card:
+* .tran 1m 30m .01m     e include .options card:
 * .options itl5=30000
 .tran 1m 30m 
 .plot tran v(1) 
@@ -1534,7 +1534,7 @@ freq          v(2)
 </pre>
 <h3><u><a name="xtocid935833">Demostración de desfase de CA</a></u></h3>
 <p> <img src="01025.png"/> </p>
-<p>Las corrientes a través de cada tramo están indicadas por las caídas de voltaje a través de cada resistencia en derivación respectiva (1 amperio = 1 voltio a 1 Ω), emitida por el<tt>v(1,2)</tt> and <tt>v(1,3)</tt>términos de la<tt>.imprimir</tt>tarjeta.  La fase de las corrientes a través de cada tramo está indicada por la fase de las caídas de voltaje a través de cada resistencia en derivación respectiva, emitida por el<tt>vicepresidente(1,2)</tt> and <tt>vicepresidente(1,3)</tt>términos en el<tt>.imprimir</tt>tarjeta.</p>
+<p>Las corrientes a través de cada tramo están indicadas por las caídas de voltaje a través de cada resistencia en derivación respectiva (1 amperio = 1 voltio a 1 Ω), emitida por el<tt>v(1,2)</tt> y <tt>v(1,3)</tt>términos de la<tt>.imprimir</tt>tarjeta.  La fase de las corrientes a través de cada tramo está indicada por la fase de las caídas de voltaje a través de cada resistencia en derivación respectiva, emitida por el<tt>vicepresidente(1,2)</tt> y <tt>vicepresidente(1,3)</tt>términos en el<tt>.imprimir</tt>tarjeta.</p>
 <br/>
 <p>
 <b>Lista de redes:</b>

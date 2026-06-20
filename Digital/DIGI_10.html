@@ -253,7 +253,7 @@
 <p> <img src="04178.png"/> </p>
 <p>Cuando E = 0, las salidas de las dos puertas AND se fuerzan a 0, independientemente de los estados de S o R. En consecuencia, el circuito se comporta como si S y R fueran ambos 0, enclavando las salidas Q y no Q en sus últimos estados.  Sólo cuando se activa la entrada de habilitación (1) el pestillo responderá a las entradas S y R.  Tenga en cuenta la función idéntica en la lógica de escalera:</p>
 <p> <img src="04179.png"/> </p>
-<p>Una aplicación práctica de esto podría ser el mismo circuito de control del motor (con dos interruptores de botón normalmente abiertos para<i>comenzar</i> and <i>detener</i>), excepto con la adición de una entrada de bloqueo maestro (E) que inhabilita que ambos botones tengan control sobre el motor cuando está bajo (0).</p>
+<p>Una aplicación práctica de esto podría ser el mismo circuito de control del motor (con dos interruptores de botón normalmente abiertos para<i>comenzar</i> y <i>detener</i>), excepto con la adición de una entrada de bloqueo maestro (E) que inhabilita que ambos botones tengan control sobre el motor cuando está bajo (0).</p>
 <p>Una vez más, estos circuitos multivibradores están disponibles como dispositivos semiconductores preempaquetados y están simbolizados como tales:</p>
 <p> <img src="04180.png"/> </p>
 <p>También es común ver la entrada de habilitación designada con las letras "EN" en lugar de solo "E".</p>
@@ -342,7 +342,7 @@
 <li>Cuando se activan las entradas J y K, y se pulsa la entrada del reloj, las salidas (Q y no Q) intercambiarán estados.  Es decir, el circuito<i>palanca</i>desde un estado establecido a un estado restablecido, o viceversa.</li>
 </ul>
 <h2><a name="xtocid92236">Entradas asíncronas de flip-flop</a></h2>
-<p>Las entradas de datos normales a un flip-flop (D, S y R, o J y K) se denominan<i>sincrónico</i>entradas porque tienen efecto en las salidas (Q y no Q) solo en paso o en sincronización con las transiciones de la señal del reloj.  Estos aportes adicionales que ahora les traigo a su atención se llaman<i>asincrónico</i>porque pueden configurar o restablecer el flip-flop independientemente del estado de la señal del reloj.  Normalmente se les llama<i>programar</i> and <i>claro</i>:
+<p>Las entradas de datos normales a un flip-flop (D, S y R, o J y K) se denominan<i>sincrónico</i>entradas porque tienen efecto en las salidas (Q y no Q) solo en paso o en sincronización con las transiciones de la señal del reloj.  Estos aportes adicionales que ahora les traigo a su atención se llaman<i>asincrónico</i>porque pueden configurar o restablecer el flip-flop independientemente del estado de la señal del reloj.  Normalmente se les llama<i>programar</i> y <i>claro</i>:
 </p>
 <p> <img src="04199.png"/> </p>
 <p>Cuando se activa la entrada preestablecida, el flip-flop se configurará (Q=1, no Q=0) independientemente de cualquiera de las entradas síncronas o del reloj.  Cuando se activa la entrada de borrado, el flip-flop se restablecerá (Q=0, no Q=1), independientemente de cualquiera de las entradas síncronas o del reloj.  Entonces, ¿qué sucede si se activan las entradas preestablecidas y claras?  Sorpresa, sorpresa: obtenemos un estado no válido en la salida, donde Q y no Q van al mismo estado, ¡igual que nuestro viejo amigo, el pestillo S-R!  Las entradas preestablecidas y claras se utilizan cuando se agrupan varios flip-flops para realizar una función en una palabra binaria de varios bits, y se necesita una sola línea para configurarlos o restablecerlos todos a la vez.</p>
@@ -381,7 +381,7 @@
 <ul>
 <li><b>REVISAR:</b></li>
 <li>A <i>monoestable</i>El multivibrador tiene solo un estado de salida estable.  El otro estado de salida sólo se puede mantener temporalmente.</li>
-<li>Multivibradores monoestables, a veces llamados<i>one-shots</i>, vienen en dos variedades básicas:<i>reactivable</i> and <i>no reactivable</i>.</li>
+<li>Multivibradores monoestables, a veces llamados<i>one-shots</i>, vienen en dos variedades básicas:<i>reactivable</i> y <i>no reactivable</i>.</li>
 <li>Se pueden utilizar circuitos de un solo disparo con ajustes de tiempo muy cortos para<i>rebote</i>las señales "sucias" creadas por los contactos del interruptor mecánico.</li>
 </ul>
 <br/>

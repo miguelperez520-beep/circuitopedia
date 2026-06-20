@@ -269,7 +269,7 @@
 </p>
 <ul>
 <li>Regulación de fuente de voltaje</li>
-<li>Impulsar la capacidad actual a través de conexiones paralelas</li>
+<li>Aumentar la capacidad de corriente a través de conexiones paralelas</li>
 </ul>
 <br/>
 <p>
@@ -454,8 +454,8 @@ r3 1 0 2k
 <li>uso del amperímetro</li>
 <li>uso del ohmímetro</li>
 <li>Uso de la ley de Ohm</li>
-<li>Uso de la ley actual de Kirchhoff (KCL)</li>
-<li>Diseño actual del divisor</li>
+<li>Uso de la ley de corriente de Kirchhoff (KCL)</li>
+<li>Diseño del divisor de corriente</li>
 </ul>
 <br/>
 <p>
@@ -484,7 +484,7 @@ r3 1 0 2k
 <p>Una vez más, muestro diferentes métodos para construir el mismo circuito: placa de pruebas, regleta de terminales y "forma libre".  Experimenta con todos estos formatos constructivos y familiarízate con sus respectivas ventajas y desventajas.</p>
 <p>Seleccione tres resistencias de su surtido de resistencias y mida la resistencia de cada una con un óhmetro.  Anote estos valores de resistencia con lápiz y papel, como referencia en los cálculos de su circuito.</p>
 <p>Conecte las tres resistencias en paralelo entre sí y con la batería de 6 voltios, como se muestra en las ilustraciones.  Mida el voltaje de la batería con un voltímetro después de que se le hayan conectado las resistencias y anote también esta cifra de voltaje en un papel.  Es recomendable medir el voltaje de la batería mientras alimenta el circuito de resistencia porque este voltaje puede diferir ligeramente de una condición sin carga.</p>
-<p>Mida el voltaje en cada una de las tres resistencias.  ¿Qué notas?  En un circuito en serie,<i>actual</i>es igual en todos los componentes en un momento dado.  En un circuito paralelo,<i>Voltaje</i>es la variable común entre todos los componentes.</p>
+<p>Mida el voltaje en cada una de las tres resistencias.  ¿Qué notas?  En un circuito en serie, la<i>corriente</i>es igual en todos los componentes en un momento dado.  En un circuito paralelo,<i>Voltaje</i>es la variable común entre todos los componentes.</p>
 <p>Utilice la ley de Ohm (I=E/R) para calcular la corriente a través de cada resistencia, luego verifique este valor calculado midiendo la corriente con un amperímetro digital.  Coloque la sonda roja del amperímetro en el punto donde los extremos positivos (+) de las resistencias se conectan entre sí y levante un cable de resistencia a la vez, conectando la sonda negra del medidor al cable levantado.  De esta manera, mida la corriente de cada resistencia, observando tanto la magnitud de la corriente como la polaridad.  En estas ilustraciones, muestro un amperímetro utilizado para medir la corriente a través de R<sub>1</sub>:
 </p>
 <p> <img src="05100.png"/> </p>
@@ -505,7 +505,7 @@ r3 1 0 2k
 <p>Esta Ley también es muy útil en el análisis matemático de circuitos.  Junto con la Ley de Voltaje de Kirchhoff, nos permite generar ecuaciones que describen varias variables en un circuito, que luego pueden resolverse utilizando una variedad de técnicas matemáticas.</p>
 <a name="Current divider"></a>
 <a name="Divider, current"></a>
-<p>Ahora considere las cuatro mediciones de corriente como números positivos: los primeros tres representan la corriente a través de cada resistencia y el cuarto representa la corriente total del circuito como una suma positiva de las tres corrientes "derivadas".  Cada corriente de resistencia (rama) es una fracción o porcentaje de la corriente total.  Esta es la razón por la que un circuito de resistencia en paralelo a menudo se denomina<i>divisor actual</i>.
+<p>Ahora considere las cuatro mediciones de corriente como números positivos: los primeros tres representan la corriente a través de cada resistencia y el cuarto representa la corriente total del circuito como una suma positiva de las tres corrientes "derivadas".  Cada corriente de resistencia (rama) es una fracción o porcentaje de la corriente total.  Esta es la razón por la que un circuito de resistencia en paralelo a menudo se denomina<i>divisor de corriente</i>.
 </p>
 <p>Desconecte la batería del resto del circuito y mida la resistencia entre las resistencias en paralelo.  Puedes leer la resistencia total a lo largo<i>any</i>de los terminales de las resistencias individuales y obtener la misma indicación: será un valor menor que cualquiera de los valores de las resistencias individuales.  Esto suele sorprender a los nuevos estudiantes de electricidad: leer exactamente la misma cifra de resistencia (total) al conectar un óhmetro a través de<i>alguien</i>de un conjunto de resistencias conectadas en paralelo.  Sin embargo, tiene sentido si se consideran los puntos de un circuito paralelo en términos de similitud eléctrica.  Todos los componentes paralelos están conectados entre dos conjuntos de puntos eléctricamente comunes.  Dado que el medidor no puede distinguir entre puntos comunes entre sí mediante conexión directa, leer la resistencia a través de una resistencia es leer la resistencia de todas ellas.  Lo mismo ocurre con el voltaje, razón por la cual el voltaje de la batería se puede leer a través de cualquiera de las resistencias tan fácilmente como se puede leer directamente a través de los terminales de la batería.</p>
 <p>Si divide el voltaje de la batería (previamente medido) por esta cifra de resistencia total, debería obtener una cifra de corriente total (I=E/R) que coincida estrechamente con la cifra medida.</p>
@@ -518,7 +518,7 @@ r3 1 0 2k
 <u>Esquema con números de nodo SPICE:</u>
 </p>
 <p> <img src="05105.png"/> </p>
-<p>Los amperímetros en las simulaciones de SPICE son en realidad fuentes de voltaje cero insertadas en las trayectorias del flujo de electrones.  Notarás las fuentes de voltaje V<sub>ir1</sub>, V<sub>ir2</sub>y V<sub>ir3</sub>están configurados en 0 voltios en la lista de red.  Cuando los electrones entran por el lado negativo de una de estas baterías "ficticias" y salen por el positivo, la indicación actual de la batería será un número positivo.  En otras palabras, estas fuentes de 0 voltios deben considerarse como amperímetros con la sonda roja en el lado de la línea larga del símbolo de la batería y la sonda negra en el lado de la línea corta.</p>
+<p>Los amperímetros en las simulaciones de SPICE son en realidad fuentes de voltaje cero insertadas en las trayectorias del flujo de electrones.  Notarás las fuentes de voltaje V<sub>ir1</sub>, V<sub>ir2</sub>y V<sub>ir3</sub>están configurados en 0 voltios en la lista de red.  Cuando los electrones entran por el lado negativo de una de estas baterías "ficticias" y salen por el positivo, la indicación de corriente de la batería será un número positivo.  En otras palabras, estas fuentes de 0 voltios deben considerarse como amperímetros con la sonda roja en el lado de la línea larga del símbolo de la batería y la sonda negra en el lado de la línea corta.</p>
 <br/>
 <p>
 <u>Netlist (cree un archivo de texto que contenga el siguiente texto, textualmente):</u>
@@ -538,7 +538,7 @@ vir3 2 5 dc 0
 .end
 </pre>
 <br/>
-<p>Cuando se ejecuta, SPICE imprimirá una línea de texto que contiene cuatro cifras de corriente, la primera corriente representa el total como una cantidad negativa y las otras tres representan corrientes para las resistencias R.<sub>1</sub>, R<sub>2</sub>y R<sub>3</sub>.  Cuando se suman algebraicamente, la cifra negativa y las tres positivas formarán una suma de cero, como lo describe la Ley actual de Kirchhoff.</p>
+<p>Cuando se ejecuta, SPICE imprimirá una línea de texto que contiene cuatro cifras de corriente, la primera corriente representa el total como una cantidad negativa y las otras tres representan corrientes para las resistencias R.<sub>1</sub>, R<sub>2</sub>y R<sub>3</sub>.  Cuando se suman algebraicamente, la cifra negativa y las tres positivas formarán una suma de cero, como lo describe la ley de corriente de Kirchhoff.</p>
 <br/>
 <h2><a name="xtocid94285">El potenciómetro como divisor de tensión</a></h2>
 <p>
@@ -890,7 +890,7 @@ vir3 2 5 dc 0
 <p>
 <b>INSTRUCCIONES</b>
 </p>
-<p>Primero, debe determinar las características del movimiento de su medidor.  Lo más importante es conocer el<i>deflexión de escala completa</i>en miliamperios o microamperios.  Para determinar esto, conecte en serie el movimiento del medidor, un potenciómetro, una batería y un amperímetro digital.  Ajuste el potenciómetro hasta que el movimiento del medidor se desvíe exactamente a la escala completa.  Lea la pantalla del amperímetro para encontrar el valor actual de escala completa:</p>
+<p>Primero, debe determinar las características del movimiento de su medidor.  Lo más importante es conocer el<i>deflexión de escala completa</i>en miliamperios o microamperios.  Para determinar esto, conecte en serie el movimiento del medidor, un potenciómetro, una batería y un amperímetro digital.  Ajuste el potenciómetro hasta que el movimiento del medidor se desvíe exactamente a la escala completa.  Lea la pantalla del amperímetro para encontrar el valor de corriente de escala completa:</p>
 <p> <img src="05165.png"/> </p>
 <p>Tenga mucho cuidado de no aplicar demasiada corriente al movimiento del medidor, ya que los movimientos son dispositivos muy sensibles y se dañan fácilmente por sobrecorriente.  La mayoría de los movimientos del medidor tienen valores nominales de corriente de deflexión de escala completa de 1 mA o menos, así que elija un valor de potenciómetro lo suficientemente alto para limitar la corriente adecuadamente y comience a probar con el potenciómetro en su máxima resistencia.  Cuanto menor sea la corriente nominal de un movimiento, más sensible será.</p>
 <p>Después de determinar la clasificación de corriente a escala completa del movimiento de su medidor, debe medir con precisión su resistencia interna.  Para hacer esto, desconecte todos los componentes del circuito de prueba anterior y conecte su óhmetro digital a través de los terminales de movimiento del medidor.  Registre esta cifra de resistencia junto con la cifra de corriente a escala completa obtenida en el último procedimiento.</p>

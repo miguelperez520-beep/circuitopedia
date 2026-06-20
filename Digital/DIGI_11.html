@@ -316,7 +316,7 @@ A <i>contador sincrónico</i>, en contraste con un<i>contador asíncrono</i>, es
 <p><b>Paso 2</b></p>
 <p>El siguiente paso es diseñar un diagrama de estado. Este es un diagrama que está hecho a base de círculos y flechas y describe visualmente el funcionamiento de nuestro circuito. En términos matemáticos, este diagrama que describe el funcionamiento de nuestro circuito secuencial es una Máquina de Estados Finitos.</p>
 <p>Tenga en cuenta que esta es una máquina de estados finitos de Moore. Su salida es función únicamente de su estado actual, no de su entrada. Esto contrasta con la máquina de estados finitos de Mealy, donde la entrada afecta la salida.  En este tutorial, sólo se examinará la máquina de estados finitos de Moore.</p>
-<p>El Diagrama de Estado de nuestro circuito es el siguiente: (Figura<a href="#44001.png">  below</a>)</p>
+<p>El Diagrama de Estado de nuestro circuito es el siguiente: (Figura<a href="#44001.png">a continuación</a>)</p>
 <a name="44001.png"></a>
 <p> <img src="44001.png"/> </p>
 <p><i>Un diagrama de estado</i></p>
@@ -335,13 +335,13 @@ A <i>contador sincrónico</i>, en contraste con un<i>contador asíncrono</i>, es
 <br/>
 <p><b>Paso 3</b></p>
 <p>A continuación, reemplazamos las palabras que describen los diferentes estados del diagrama con<b>binario</b>números. Comenzamos la enumeración desde 0 que se asigna en el estado inicial. Luego continuamos la enumeración con cualquier estado que queramos, hasta que todos los estados tengan su número.</p>
-<p>El resultado se parece a esto: (Figura<a href="#44002.png">  below</a>)</p>
+<p>El resultado se parece a esto: (Figura<a href="#44002.png">a continuación</a>)</p>
 <a name="44002.png"></a>
 <p> <img src="44002.png"/> </p>
 <p><i>Un diagrama de estado con estados codificados</i></p>
 <br/>
 <p><b>Paso 4</b></p>
-<p>Después llenamos el<i>Tabla de estado</i>. Esta tabla tiene una forma muy específica. Daré la tabla de nuestro ejemplo y la usaré para explicar cómo completarla. (Figura<a href="#44003.png">  below</a>)</p>
+<p>Después llenamos el<i>Tabla de estado</i>. Esta tabla tiene una forma muy específica. Daré la tabla de nuestro ejemplo y la usaré para explicar cómo completarla. (Figura<a href="#44003.png">a continuación</a>)</p>
 <a name="44003.png"></a>
 <p> <img src="44003.png"/> </p>
 <p><i>Una tabla de estado</i></p>
@@ -361,13 +361,13 @@ A <i>contador sincrónico</i>, en contraste con un<i>contador asíncrono</i>, es
 <p>El siguiente paso es tomar esa "Máquina" teórica e implementarla en un circuito. La mayoría de las veces, esta implementación involucra Flip Flops. Esta guía está dedicada a este tipo de implementación y describirá el procedimiento tanto para D - Flip Flops como para JK - Flip Flops. T - No se incluirán las chanclas por ser demasiado similares a los dos casos anteriores.</p>
 <p>La selección del Flip Flop a utilizar es arbitraria y normalmente está determinada por factores de coste. La mejor opción es realizar ambos análisis y decidir qué tipo de Flip Flop da como resultado un número mínimo de puertas lógicas y un menor costo.</p>
 <p>Primero examinaremos cómo implementamos nuestra "Máquina" con D-Flip Flops.</p>
-<p>Necesitaremos tantas D - Flip Flops como columnas de Estado, 2 en nuestro ejemplo. Por cada Flip Flop agregaremos una columna más en nuestra tabla de Estado (Figura<a href="#44004.png">  below</a>) con el nombre de la entrada del Flip Flop, "D" para este caso. La columna que corresponde a cada Flip Flop describe<b>qué entrada debemos darle al Flip Flop para pasar del estado actual al siguiente estado</b>. Para el D - Flip Flop esto es fácil: la entrada necesaria es igual al siguiente estado. En las filas que contienen X, también completamos las X en esta columna.</p>
+<p>Necesitaremos tantas D - Flip Flops como columnas de Estado, 2 en nuestro ejemplo. Por cada Flip Flop agregaremos una columna más en nuestra tabla de Estado (Figura<a href="#44004.png">a continuación</a>) con el nombre de la entrada del Flip Flop, "D" para este caso. La columna que corresponde a cada Flip Flop describe<b>qué entrada debemos darle al Flip Flop para pasar del estado actual al siguiente estado</b>. Para el D - Flip Flop esto es fácil: la entrada necesaria es igual al siguiente estado. En las filas que contienen X, también completamos las X en esta columna.</p>
 <a name="44004.png"></a>
 <p> <img src="44004.png"/> </p>
 <p><i>Una tabla de estados con D - Excitaciones Flip Flop</i></p>
 <br/>
 <p><b>Paso 5b</b></p>
-<p>Podemos hacer los mismos pasos con JK - Flip Flops. Sin embargo, existen algunas diferencias. Un JK - Flip Flop tiene dos entradas, por lo tanto necesitamos agregar dos columnas para cada Flip Flop. El contenido de cada celda está dictado por la tabla de excitación del JK: (Figura<a href="#44005.png">  below</a>)</p>
+<p>Podemos hacer los mismos pasos con JK - Flip Flops. Sin embargo, existen algunas diferencias. Un JK - Flip Flop tiene dos entradas, por lo tanto necesitamos agregar dos columnas para cada Flip Flop. El contenido de cada celda está dictado por la tabla de excitación del JK: (Figura<a href="#44005.png">a continuación</a>)</p>
 <p>JK - Tabla de excitación Flip Flop</p>
 <p> <img src="44013.png"/> </p>
 <br/>
@@ -378,12 +378,12 @@ A <i>contador sincrónico</i>, en contraste con un<i>contador asíncrono</i>, es
 <br/>
 <p><b>Paso 6</b></p>
 <p>Estamos en la etapa final de nuestro procedimiento. Lo que queda es determinar las funciones booleanas que producen las entradas de nuestros Flip Flops y la Salida. Extraeremos una función booleana para cada entrada de Flip Flop que tengamos. Esto se puede hacer con un mapa de Karnaugh. Las variables de entrada de este mapa son las variables de estado actual.<b>así como</b>las Entradas.</p>
-<p>Dicho esto, las funciones de entrada para nuestras D - Flip Flops son las siguientes: (Figura<a href="#44006.png">  below</a>)</p>
+<p>Dicho esto, las funciones de entrada para nuestras D - Flip Flops son las siguientes: (Figura<a href="#44006.png">a continuación</a>)</p>
 <a name="44006.png"></a>
 <p> <img src="44006.png"/> </p>
 <p><i>Mapas de Karnaugh para D - Entradas Flip Flop</i></p>
 <p> <img src="44014.png"/> </p>
-<p>Si optamos por utilizar JK - Flip Flops nuestras funciones serían las siguientes: (Figura<a href="#JKff.tbl">  below</a>)</p>
+<p>Si optamos por utilizar JK - Flip Flops nuestras funciones serían las siguientes: (Figura<a href="#JKff.tbl">a continuación</a>)</p>
 <br/>
 </body>
 

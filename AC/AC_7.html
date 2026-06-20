@@ -212,7 +212,7 @@
 <a name="Coupling, signal"></a>
 <a name="Inductive coupling"></a>
 <a name="Capacitive coupling"></a>
-<p>A veces, las señales de tensión y corriente de frecuencia mixta se crean accidentalmente.  Esto puede ser el resultado de conexiones no deseadas entre circuitos, llamadas<i>enganche</i>-- posible gracias a la capacitancia parásita y/o inductancia entre los conductores de esos circuitos.  Un ejemplo clásico de fenómeno de acoplamiento se ve con frecuencia en la industria donde el cableado de señal de CC se coloca muy cerca del cableado de alimentación de CA.  La presencia cercana de altos voltajes y corrientes de CA puede causar que voltajes “extraños” queden impresos a lo largo del cableado de señal.  La capacitancia parásita formada por el aislamiento eléctrico que separa los conductores de energía de los conductores de señal puede causar que el voltaje (con respecto a la tierra) de los conductores de energía se imprima sobre los conductores de señal, mientras que la inductancia parásita formada por tendidos paralelos de alambre en el conducto puede causar que la corriente de los conductores de energía induzca voltaje electromagnéticamente a lo largo de los conductores de señal.  El resultado es una mezcla de CC y CA en la carga de señal.  El siguiente esquema muestra cómo una fuente de "ruido" de CA puede "acoplarse" a un circuito de CC a través de una inductancia mutua (M<sub>extraviado</sub>) y capacitancia (C<sub>extraviado</sub>) a lo largo de la longitud de los conductores.  (Cifra<a href="#02302.png">  below</a>)
+<p>A veces, las señales de tensión y corriente de frecuencia mixta se crean accidentalmente.  Esto puede ser el resultado de conexiones no deseadas entre circuitos, llamadas<i>enganche</i>-- posible gracias a la capacitancia parásita y/o inductancia entre los conductores de esos circuitos.  Un ejemplo clásico de fenómeno de acoplamiento se ve con frecuencia en la industria donde el cableado de señal de CC se coloca muy cerca del cableado de alimentación de CA.  La presencia cercana de altos voltajes y corrientes de CA puede causar que voltajes “extraños” queden impresos a lo largo del cableado de señal.  La capacitancia parásita formada por el aislamiento eléctrico que separa los conductores de energía de los conductores de señal puede causar que el voltaje (con respecto a la tierra) de los conductores de energía se imprima sobre los conductores de señal, mientras que la inductancia parásita formada por tendidos paralelos de alambre en el conducto puede causar que la corriente de los conductores de energía induzca voltaje electromagnéticamente a lo largo de los conductores de señal.  El resultado es una mezcla de CC y CA en la carga de señal.  El siguiente esquema muestra cómo una fuente de "ruido" de CA puede "acoplarse" a un circuito de CC a través de una inductancia mutua (M<sub>extraviado</sub>) y capacitancia (C<sub>extraviado</sub>) a lo largo de la longitud de los conductores.  (Cifra<a href="#02302.png">a continuación</a>)
 </p>
 <a name="02302.png"></a>
 <p> <img src="02302.png"/> </p>
@@ -221,19 +221,19 @@
 <a name="Shielded cable"></a>
 <a name="Cable, twisted pair"></a>
 <a name="Cable, shielded"></a>
-<p>Cuando los voltajes de CA perdidos de una fuente de “ruido” se mezclan con señales de CC conducidas a lo largo del cableado de señales, los resultados generalmente no son deseables.  Por esta razón, el cableado de alimentación y el cableado de señal de bajo nivel deben<i>siempre</i>deben enrutarse a través de conductos metálicos separados y dedicados, y las señales deben conducirse a través de un cable de “par trenzado” de 2 conductores en lugar de a través de un solo cable y conexión a tierra: (Figura<a href="#02303.png">  below</a>)
+<p>Cuando los voltajes de CA perdidos de una fuente de “ruido” se mezclan con señales de CC conducidas a lo largo del cableado de señales, los resultados generalmente no son deseables.  Por esta razón, el cableado de alimentación y el cableado de señal de bajo nivel deben<i>siempre</i>deben enrutarse a través de conductos metálicos separados y dedicados, y las señales deben conducirse a través de un cable de “par trenzado” de 2 conductores en lugar de a través de un solo cable y conexión a tierra: (Figura<a href="#02303.png">a continuación</a>)
 </p>
 <a name="02303.png"></a>
 <p> <img src="02303.png"/> </p>
 <p><i>El par trenzado blindado minimiza el ruido.</i></p>
 <a name="Shield grounding"></a>
 <p>El blindaje del cable puesto a tierra, una trenza de alambre o una lámina metálica envuelta alrededor de los dos conductores aislados, aísla ambos conductores del acoplamiento electrostático (capacitivo) al bloquear cualquier campo eléctrico externo, mientras que la proximidad paralela de los dos conductores cancela efectivamente cualquier acoplamiento electromagnético (mutuamente inductivo) porque cualquier voltaje de ruido inducido será aproximadamente igual en magnitud y opuesto en fase a lo largo de ambos conductores, anulándose entre sí en el extremo receptor para un voltaje de ruido neto (diferencial) de casi cero.  Las marcas de polaridad colocadas cerca de cada porción inductiva de la longitud del conductor de señal muestran cómo los voltajes inducidos se escalonan de tal manera que se cancelan entre sí.</p>
-<p>El acoplamiento también puede ocurrir entre dos conjuntos de conductores que transportan señales de CA, en cuyo caso ambas señales pueden “mezclarse” entre sí: (Figura<a href="#02304.png">  below</a>)
+<p>El acoplamiento también puede ocurrir entre dos conjuntos de conductores que transportan señales de CA, en cuyo caso ambas señales pueden “mezclarse” entre sí: (Figura<a href="#02304.png">a continuación</a>)
 </p>
 <a name="02304.png"></a>
 <p> <img src="02304.png"/> </p>
 <p><i>Acoplamiento de señales AC entre conductores paralelos.</i></p>
-<p>El acoplamiento es sólo un ejemplo de cómo pueden mezclarse señales de diferentes frecuencias.  Ya sea que se trate de CA mezclada con CC o de dos señales de CA que se mezclan entre sí, el acoplamiento de señales mediante inductancia parásita y capacitancia suele ser accidental y no deseado.  En otros casos, las señales de frecuencia mixta son el resultado de un diseño intencional o pueden ser una cualidad intrínseca de una señal.  Generalmente es bastante fácil crear fuentes de señales de frecuencia mixta.  Quizás la forma más sencilla sea simplemente conectar fuentes de voltaje en serie: (Figura<a href="#02109.png">  below</a>)
+<p>El acoplamiento es sólo un ejemplo de cómo pueden mezclarse señales de diferentes frecuencias.  Ya sea que se trate de CA mezclada con CC o de dos señales de CA que se mezclan entre sí, el acoplamiento de señales mediante inductancia parásita y capacitancia suele ser accidental y no deseado.  En otros casos, las señales de frecuencia mixta son el resultado de un diseño intencional o pueden ser una cualidad intrínseca de una señal.  Generalmente es bastante fácil crear fuentes de señales de frecuencia mixta.  Quizás la forma más sencilla sea simplemente conectar fuentes de voltaje en serie: (Figura<a href="#02109.png">a continuación</a>)
 </p>
 <a name="02109.png"></a>
 <p> <img src="02109.png"/> </p>
@@ -244,7 +244,7 @@
 <a name="Fundamental frequency"></a>
 <a name="Frequency, fundamental"></a>
 <a name="Chord, music"></a>
-<p>Musical<i>acordes</i>se producen combinando una frecuencia con otras frecuencias de múltiplos fraccionarios particulares de la primera.  Sin embargo, investigando un poco más, encontramos que incluso una sola nota de piano (producida por una cuerda pulsada) consta de una frecuencia predominante mezclada con varias otras frecuencias, siendo cada frecuencia un múltiplo entero de la primera (llamada<i>armonía</i>, mientras que la primera frecuencia se llama<i>fundamental</i>).  Una ilustración de estos términos se muestra en la tabla<a href="#harmonic.tbl">  below</a>con una frecuencia fundamental de 1000 Hz (una cifra arbitraria elegida para este ejemplo).</p>
+<p>Musical<i>acordes</i>se producen combinando una frecuencia con otras frecuencias de múltiplos fraccionarios particulares de la primera.  Sin embargo, investigando un poco más, encontramos que incluso una sola nota de piano (producida por una cuerda pulsada) consta de una frecuencia predominante mezclada con varias otras frecuencias, siendo cada frecuencia un múltiplo entero de la primera (llamada<i>armonía</i>, mientras que la primera frecuencia se llama<i>fundamental</i>).  Una ilustración de estos términos se muestra en la tabla<a href="#harmonic.tbl">a continuación</a>con una frecuencia fundamental de 1000 Hz (una cifra arbitraria elegida para este ejemplo).</p>
 <a name="harmonic.tbl"><p><i>For a “base” frequency of 1000 Hz:</i></p></a>
 <div class="table-wrap"><table border="1" style="background-color: #E0FFFF; ">
 <tr>
@@ -295,7 +295,7 @@
 <p>Se ha encontrado que<i>any</i>La forma de onda repetitiva no sinusoidal se puede equiparar a una combinación de voltaje CC, ondas sinusoidales y/o ondas coseno (ondas sinusoidales con un cambio de fase de 90 grados) en diversas amplitudes y frecuencias.  Esto es cierto sin importar cuán extraña o complicada pueda ser la forma de onda en cuestión.  Mientras se repita regularmente en el tiempo, es reducible a esta serie de ondas sinusoidales.  En particular, se ha descubierto que las ondas cuadradas son matemáticamente equivalentes a la suma de una onda sinusoidal a esa misma frecuencia, más una serie infinita de ondas sinusoidales de frecuencia impar-múltiple con amplitud decreciente:</p>
 <p> <img src="12093.png"/> </p>
 <p>Esta verdad sobre las formas de onda al principio puede parecer demasiado extraña para creerla.  Sin embargo, si una onda cuadrada es en realidad una serie infinita de armónicos de onda sinusoidal sumados, es lógico que podamos demostrarlo sumando varios armónicos de onda sinusoidal para producir una aproximación cercana de una onda cuadrada.  Este razonamiento no sólo es sólido, sino que se demuestra fácilmente con SPICE.</p>
-<p>El circuito que simularemos no es más que varias fuentes de voltaje CA de onda sinusoidal de las amplitudes y frecuencias adecuadas conectadas en serie.  Usaremos SPICE para trazar las formas de onda de voltaje a través de adiciones sucesivas de fuentes de voltaje, como esta: (Figura<a href="#02110.png">  below</a>)
+<p>El circuito que simularemos no es más que varias fuentes de voltaje CA de onda sinusoidal de las amplitudes y frecuencias adecuadas conectadas en serie.  Usaremos SPICE para trazar las formas de onda de voltaje a través de adiciones sucesivas de fuentes de voltaje, como esta: (Figura<a href="#02110.png">a continuación</a>)
 </p>
 <a name="02110.png"></a>
 <p> <img src="02110.png"/> </p>
@@ -317,7 +317,7 @@ r1 5 0 10k
 .plot tran v(5,0)    Plot 1st + . . . + 9th harmonics
 .end 
 </pre>
-<p>A partir de aquí narraré el análisis paso a paso, explicando qué es lo que estamos viendo.  En este primer gráfico, vemos la onda sinusoidal de frecuencia fundamental de 50 Hz por sí sola.  No es más que una forma sinusoidal pura, sin contenido armónico adicional.  Este es el tipo de forma de onda producida por una fuente de alimentación de CA ideal: (Figura<a href="#22013.png">  below</a>)
+<p>A partir de aquí narraré el análisis paso a paso, explicando qué es lo que estamos viendo.  En este primer gráfico, vemos la onda sinusoidal de frecuencia fundamental de 50 Hz por sí sola.  No es más que una forma sinusoidal pura, sin contenido armónico adicional.  Este es el tipo de forma de onda producida por una fuente de alimentación de CA ideal: (Figura<a href="#22013.png">a continuación</a>)
 </p>
 <!--time       v(1)          -1.000E+00    0.000E+00    1.000E+00 -->
 <!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
@@ -346,7 +346,7 @@ r1 5 0 10k
 <a name="22013.png"></a>
 <p> <img src="22013.png"/> </p>
 <p><i>Onda sinusoidal pura de 50 Hz.</i></p>
-<p>A continuación, vemos lo que sucede cuando esta forma de onda limpia y simple se combina con el tercer armónico (tres veces 50 Hz o 150 Hz).  De repente, ya no parece una onda sinusoidal limpia: (Figura<a href="#22014.png">  below</a>)
+<p>A continuación, vemos lo que sucede cuando esta forma de onda limpia y simple se combina con el tercer armónico (tres veces 50 Hz o 150 Hz).  De repente, ya no parece una onda sinusoidal limpia: (Figura<a href="#22014.png">a continuación</a>)
 </p>
 <!--time       v(2)          -1.000E+00    0.000E+00    1.000E+00-->
 <!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
@@ -375,7 +375,7 @@ r1 5 0 10k
 <a name="22014.png"></a>
 <p> <img src="22014.png"/> </p>
 <p><i>La suma de los armónicos 1.º (50 Hz) y 3.º (150 Hz) se aproxima a una onda cuadrada de 50 Hz.</i></p>
-<p>Los tiempos de subida y bajada entre los ciclos positivos y negativos son mucho más pronunciados ahora, y las crestas de la onda están más cerca de volverse planas como una onda cuadrada.  Observe lo que sucede cuando agregamos la siguiente frecuencia armónica impar: (Figura<a href="#22015.png">  below</a>)
+<p>Los tiempos de subida y bajada entre los ciclos positivos y negativos son mucho más pronunciados ahora, y las crestas de la onda están más cerca de volverse planas como una onda cuadrada.  Observe lo que sucede cuando agregamos la siguiente frecuencia armónica impar: (Figura<a href="#22015.png">a continuación</a>)
 </p>
 <!--time      v(3)-->
 <!--time       v(3)          -1.000E+00    0.000E+00     1.000E+00 -->
@@ -405,7 +405,7 @@ r1 5 0 10k
 <a name="22015.png"></a>
 <p> <img src="22015.png"/> </p>
 <p><i>La suma de los armónicos 1.º, 3.º y 5.º se aproxima a la onda cuadrada.</i></p>
-<p>El cambio más notable aquí es cómo las crestas de la ola se han aplanado aún más.  Hay más caídas y crestas en cada extremo de la onda, pero esas caídas y crestas tienen una amplitud más pequeña que antes.  Observe nuevamente mientras agregamos la siguiente forma de onda armónica impar a la mezcla: (Figura<a href="#22016.png">  below</a>)
+<p>El cambio más notable aquí es cómo las crestas de la ola se han aplanado aún más.  Hay más caídas y crestas en cada extremo de la onda, pero esas caídas y crestas tienen una amplitud más pequeña que antes.  Observe nuevamente mientras agregamos la siguiente forma de onda armónica impar a la mezcla: (Figura<a href="#22016.png">a continuación</a>)
 </p>
 <!--time       v(4)            -1.000E+00    0.000E+00    1.000E+00-->
 <!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
@@ -434,7 +434,7 @@ r1 5 0 10k
 <a name="22016.png"></a>
 <p> <img src="22016.png"/> </p>
 <p><i>La suma de los armónicos 1.º, 3.º, 5.º y 7.º se aproxima a la onda cuadrada.</i></p>
-<p>Aquí podemos ver la ola volviéndose más plana en cada pico.  Finalmente, sumando el noveno armónico, la quinta fuente de voltaje de onda sinusoidal en nuestro circuito, obtenemos este resultado: (Figura<a href="#22017.png">  below</a>)
+<p>Aquí podemos ver la ola volviéndose más plana en cada pico.  Finalmente, sumando el noveno armónico, la quinta fuente de voltaje de onda sinusoidal en nuestro circuito, obtenemos este resultado: (Figura<a href="#22017.png">a continuación</a>)
 </p>
 <!--time       v(5)          -1.000E+00    0.000E+00    1.000E+00-->
 <!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
@@ -480,7 +480,7 @@ r1 1 0 10k
 .end    
 </pre>
 <p>
-The <i>legumbres</i>opción en la línea netlist que describe la fuente de voltaje<tt>v1</tt>Le indica a SPICE que simule una forma de onda de “pulso” de forma cuadrada, en este caso una que sea simétrica (tiempo igual para cada medio ciclo) y que tenga una amplitud máxima de 1 voltio.  Primero trazaremos la onda cuadrada a analizar: (Figura<a href="#22018.png">  below</a>)
+The <i>legumbres</i>opción en la línea netlist que describe la fuente de voltaje<tt>v1</tt>Le indica a SPICE que simule una forma de onda de “pulso” de forma cuadrada, en este caso una que sea simétrica (tiempo igual para cada medio ciclo) y que tenga una amplitud máxima de 1 voltio.  Primero trazaremos la onda cuadrada a analizar: (Figura<a href="#22018.png">a continuación</a>)
 </p>
 <!--time       v(1)     -1         -0.5          0          0.5     1-->
 <!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
@@ -562,20 +562,20 @@ total harmonic distortion =     43.805747  percent
 <!--plot &ldquo;fourier.dat&rdquo; using 0:3 with impulses linewidth 30-->
 <!--from a command prompt on another screen -->
 <!--display fourier.eps-->
-<p>Aquí, (Figura<a href="#22019.png">  above</a>) SPICE ha dividido la forma de onda en un espectro de frecuencias sinusoidales hasta el noveno armónico, más un pequeño voltaje de CC etiquetado<tt>Componente CC</tt>.  Tuve que informar a SPICE de la frecuencia fundamental (para una onda cuadrada con un período de 20 milisegundos, esta frecuencia es de 50 Hz), para que supiera clasificar los armónicos.  Observe cuán pequeñas son las cifras para todos los armónicos pares (2.°, 4.°, 6.°, 8.°) y cómo las amplitudes de los armónicos impares disminuyen (el 1.° es el más grande, el 9.° es el más pequeño).</p>
+<p>Aquí, (Figura<a href="#22019.png">anterior</a>) SPICE ha dividido la forma de onda en un espectro de frecuencias sinusoidales hasta el noveno armónico, más un pequeño voltaje de CC etiquetado<tt>Componente CC</tt>.  Tuve que informar a SPICE de la frecuencia fundamental (para una onda cuadrada con un período de 20 milisegundos, esta frecuencia es de 50 Hz), para que supiera clasificar los armónicos.  Observe cuán pequeñas son las cifras para todos los armónicos pares (2.°, 4.°, 6.°, 8.°) y cómo las amplitudes de los armónicos impares disminuyen (el 1.° es el más grande, el 9.° es el más pequeño).</p>
 <a name="Fast Fourier Transform"></a>
 <a name="FFT"></a>
 <p>Esta misma técnica de “Transformación de Fourier” se utiliza a menudo en instrumentación de potencia computarizada, muestreando las formas de onda de CA y determinando el contenido armónico de las mismas.  Un algoritmo informático común (secuencia de pasos del programa para realizar una tarea) para esto es el<i>Transformada rápida de Fourier</i> or <i>FFT</i>función.  No es necesario preocuparse por cómo funcionan exactamente estas rutinas informáticas, pero sí ser consciente de su existencia y aplicación.</p>
 <a name="Graphic equalizer"></a>
 <a name="Equalizer, graphic"></a>
-<p>Esta misma técnica matemática utilizada en SPICE para analizar el contenido armónico de las ondas se puede aplicar al análisis técnico de la música: descomponer cualquier sonido particular en sus frecuencias de onda sinusoidal constituyentes.  De hecho, es posible que ya hayas visto un dispositivo diseñado para hacer justamente eso sin darte cuenta de lo que era.  A<i>ecualizador gráfico</i>es una pieza de equipo estéreo de alta fidelidad que controla (y a veces muestra) la naturaleza del contenido armónico de la música.  Equipado con varios mandos o palancas deslizantes, el ecualizador es capaz de atenuar (reducir) selectivamente la amplitud de determinadas frecuencias presentes en la música, para “personalizar” el sonido en beneficio del oyente.  Por lo general, habrá una pantalla de "gráfico de barras" al lado de cada palanca de control, que muestra la amplitud de cada frecuencia en particular. (Cifra<a href="#02264.png">  below</a>)
+<p>Esta misma técnica matemática utilizada en SPICE para analizar el contenido armónico de las ondas se puede aplicar al análisis técnico de la música: descomponer cualquier sonido particular en sus frecuencias de onda sinusoidal constituyentes.  De hecho, es posible que ya hayas visto un dispositivo diseñado para hacer justamente eso sin darte cuenta de lo que era.  A<i>ecualizador gráfico</i>es una pieza de equipo estéreo de alta fidelidad que controla (y a veces muestra) la naturaleza del contenido armónico de la música.  Equipado con varios mandos o palancas deslizantes, el ecualizador es capaz de atenuar (reducir) selectivamente la amplitud de determinadas frecuencias presentes en la música, para “personalizar” el sonido en beneficio del oyente.  Por lo general, habrá una pantalla de "gráfico de barras" al lado de cada palanca de control, que muestra la amplitud de cada frecuencia en particular. (Cifra<a href="#02264.png">a continuación</a>)
 </p>
 <a name="02264.png"></a>
 <p> <img src="02264.png"/> </p>
 <p><i>Ecualizador gráfico de audio de alta fidelidad.</i></p>
 <a name="Spectrum analyzer"></a>
 <a name="Analyzer, spectrum"></a>
-<p>Un dispositivo construido estrictamente para mostrar (no controlar) las amplitudes de cada rango de frecuencia para una señal de frecuencia mixta generalmente se denomina<i>analizador de espectro</i>.  El diseño de analizadores de espectro puede ser tan simple como un conjunto de circuitos de “filtro” (consulte el siguiente capítulo para obtener más detalles) diseñados para separar las diferentes frecuencias entre sí, o tan complejo como una computadora digital de propósito especial que ejecuta un algoritmo FFT para dividir matemáticamente la señal en sus componentes armónicos.  Los analizadores de espectro suelen estar diseñados para analizar señales de frecuencia extremadamente alta, como las producidas por transmisores de radio y hardware de redes informáticas.  En esa forma, a menudo tienen una apariencia similar a la de un osciloscopio: (Figura<a href="#02265.png">  below</a>)
+<p>Un dispositivo construido estrictamente para mostrar (no controlar) las amplitudes de cada rango de frecuencia para una señal de frecuencia mixta generalmente se denomina<i>analizador de espectro</i>.  El diseño de analizadores de espectro puede ser tan simple como un conjunto de circuitos de “filtro” (consulte el siguiente capítulo para obtener más detalles) diseñados para separar las diferentes frecuencias entre sí, o tan complejo como una computadora digital de propósito especial que ejecuta un algoritmo FFT para dividir matemáticamente la señal en sus componentes armónicos.  Los analizadores de espectro suelen estar diseñados para analizar señales de frecuencia extremadamente alta, como las producidas por transmisores de radio y hardware de redes informáticas.  En esa forma, a menudo tienen una apariencia similar a la de un osciloscopio: (Figura<a href="#02265.png">a continuación</a>)
 </p>
 <a name="02265.png"></a>
 <p> <img src="02265.png"/> </p>
@@ -618,7 +618,7 @@ no           (hz)     component   component    (deg)   phase (deg)
 <p> <img src="22020.png"/> </p>
 <p><i>Análisis de Fourier mejorado.</i></p>
 <!--fourier-->
-<p>Observe cómo este análisis (Figura<a href="#22020.png">  above</a>) muestra menos voltaje de componente CC y amplitudes más bajas para cada una de las ondas sinusoidales de frecuencia armónica par, todo porque dejamos que la computadora muestree más ciclos de la onda.  Una vez más, la imprecisión del primer análisis no es tanto un defecto de SPICE sino una propiedad fundamental de las ondas y del análisis de señales.</p>
+<p>Observe cómo este análisis (Figura<a href="#22020.png">anterior</a>) muestra menos voltaje de componente CC y amplitudes más bajas para cada una de las ondas sinusoidales de frecuencia armónica par, todo porque dejamos que la computadora muestree más ciclos de la onda.  Una vez más, la imprecisión del primer análisis no es tanto un defecto de SPICE sino una propiedad fundamental de las ondas y del análisis de señales.</p>
 <ul>
 <li><b>REVISAR:</b></li>
 <li>Las ondas cuadradas son equivalentes a una onda sinusoidal en la misma frecuencia (fundamental) agregada a una serie infinita de armónicos de ondas sinusoidales impares o múltiples con amplitudes decrecientes.</li>
@@ -639,7 +639,7 @@ no           (hz)     component   component    (deg)   phase (deg)
 <a name="Diode"></a>
 <a name="Half-wave rectification"></a>
 <a name="Rectification, half-wave"></a>
-<p>Una forma muy común en que se generan armónicos en un sistema de energía de CA es cuando la CA se convierte o “rectifica” en CC.  Esto generalmente se hace con componentes llamados<i>diodos</i>, que sólo permiten el paso de la corriente en una dirección.  El tipo más simple de rectificación CA/CC es<i>media onda</i>, donde un solo diodo bloquea la mitad de la corriente CA (con el tiempo) para que no pase a través de la carga. (Cifra<a href="#02111.png">  below</a>) Curiosamente, el símbolo esquemático del diodo convencional se dibuja de manera que los electrones fluyan<i>contra</i>la dirección de la punta de flecha del símbolo:</p>
+<p>Una forma muy común en que se generan armónicos en un sistema de energía de CA es cuando la CA se convierte o “rectifica” en CC.  Esto generalmente se hace con componentes llamados<i>diodos</i>, que sólo permiten el paso de la corriente en una dirección.  El tipo más simple de rectificación CA/CC es<i>media onda</i>, donde un solo diodo bloquea la mitad de la corriente CA (con el tiempo) para que no pase a través de la carga. (Cifra<a href="#02111.png">a continuación</a>) Curiosamente, el símbolo esquemático del diodo convencional se dibuja de manera que los electrones fluyan<i>contra</i>la dirección de la punta de flecha del símbolo:</p>
 <a name="02111.png"></a>
 <p> <img src="02111.png"/> </p>
 <p><i>Rectificador de media onda.</i></p>
@@ -702,7 +702,7 @@ halfwave rectifier
 <p> <img src="22021.png"/> </p>
 <p><i>Formas de onda del rectificador de media onda. V(1)+0.4 desplaza la entrada de onda sinusoidal V(1) hacia arriba para mayor claridad. Esto no es parte de la simulación.</i></p>
 <!--fourier-->
-<p>Primero, veremos cómo SPICE analiza la forma de onda fuente, un voltaje de onda sinusoidal pura: (Figura<a href="#22022.png">  below</a>)
+<p>Primero, veremos cómo SPICE analiza la forma de onda fuente, un voltaje de onda sinusoidal pura: (Figura<a href="#22022.png">a continuación</a>)
 </p>
 <pre>
 fourier components of transient response v(1)    
@@ -722,7 +722,7 @@ no         (hz)      component   component    (deg)   phase (deg)
 <a name="22022.png"></a>
 <p> <img src="22022.png"/> </p>
 <p><i>Análisis de Fourier de la entrada de onda sinusoidal.</i></p>
-<p>Observe los componentes armónicos y de CC extremadamente pequeños de esta forma de onda sinusoidal en la tabla anterior, aunque son demasiado pequeños para mostrarlos en el gráfico armónico anterior.  Idealmente, no se mostraría nada más que la frecuencia fundamental (siendo una onda sinusoidal perfecta), pero nuestras cifras de análisis de Fourier no son perfectas porque SPICE no puede darse el lujo de muestrear una forma de onda de duración infinita.  A continuación, compararemos esto con el análisis de Fourier del voltaje "rectificado" de media onda a través de la resistencia de carga: (Figura<a href="#22023.png">  below</a>)
+<p>Observe los componentes armónicos y de CC extremadamente pequeños de esta forma de onda sinusoidal en la tabla anterior, aunque son demasiado pequeños para mostrarlos en el gráfico armónico anterior.  Idealmente, no se mostraría nada más que la frecuencia fundamental (siendo una onda sinusoidal perfecta), pero nuestras cifras de análisis de Fourier no son perfectas porque SPICE no puede darse el lujo de muestrear una forma de onda de duración infinita.  A continuación, compararemos esto con el análisis de Fourier del voltaje "rectificado" de media onda a través de la resistencia de carga: (Figura<a href="#22023.png">a continuación</a>)
 </p>
 <pre>
 fourier components of transient response v(2)    
@@ -745,8 +745,8 @@ no         (hz)      component   component    (deg)    phase (deg)
 <p>Observe los armónicos pares-múltiples relativamente grandes en este análisis.  Al cortar la mitad de nuestra onda de CA, hemos introducido en nuestro circuito el equivalente de varias formas de onda sinusoidales (en realidad, coseno) de mayor frecuencia a partir de la onda sinusoidal pura original.  Tenga en cuenta también el gran componente de CC: 4,456 voltios.  Debido a que nuestra forma de onda de voltaje de CA ha sido "rectificada" (solo se le permite empujar en una dirección a través de la carga en lugar de hacia adelante y hacia atrás), se comporta mucho más como CC.</p>
 <a name="Full-wave rectification"></a>
 <a name="Rectification, full-wave"></a>
-<p>Otro método de conversión CA/CC se llama<i>onda completa</i>(Cifra<a href="#02112.png">  below</a>), que como habrás adivinado utiliza el ciclo completo de energía CA de la fuente, invirtiendo la polaridad de la mitad del ciclo CA para hacer que los electrones fluyan a través de la carga en la misma dirección todo el tiempo.<!--split for multiple refs in paragraph-->No los aburriré con detalles de cómo se hace esto exactamente, pero podemos examinar la forma de onda (Figura<a href="#22024.png">  below</a>)
-<!--split for multiple refs in paragraph-->y su análisis armónico a través de SPICE: (Figura<a href="#22025.png">  below</a>)
+<p>Otro método de conversión CA/CC se llama<i>onda completa</i>(Cifra<a href="#02112.png">a continuación</a>), que como habrás adivinado utiliza el ciclo completo de energía CA de la fuente, invirtiendo la polaridad de la mitad del ciclo CA para hacer que los electrones fluyan a través de la carga en la misma dirección todo el tiempo.<!--split for multiple refs in paragraph-->No los aburriré con detalles de cómo se hace esto exactamente, pero podemos examinar la forma de onda (Figura<a href="#22024.png">a continuación</a>)
+<!--split for multiple refs in paragraph-->y su análisis armónico a través de SPICE: (Figura<a href="#22025.png">a continuación</a>)
 </p>
 <a name="02112.png"></a>
 <p> <img src="02112.png"/> </p>
@@ -839,7 +839,7 @@ no         (hz)      component   component    (deg)   phase (deg)
 </ul>
 <h2><a name="xtocid89213">Más sobre análisis espectral</a></h2>
 <p>Análisis computarizado de Fourier, particularmente en forma de<i>FFT</i>algoritmo, es una herramienta poderosa para mejorar nuestra comprensión de las formas de onda y sus componentes espectrales relacionados.  Esta misma rutina matemática programada en el simulador SPICE como la<tt>.fourier</tt>La opción también está programada en una variedad de instrumentos de prueba electrónicos para realizar análisis de Fourier en tiempo real en señales medidas.  Esta sección está dedicada al uso de dichas herramientas y al análisis de varias formas de onda diferentes.</p>
-<p>Primero tenemos una onda sinusoidal simple a una frecuencia de 523,25 Hz.  Este valor de frecuencia particular es un tono de “C” en el teclado de un piano, una octava por encima del “C medio”.  En realidad, la señal medida para esta demostración fue creada por un teclado electrónico configurado para producir el tono de una flauta de pan, la “voz” de instrumento más cercana que pude encontrar y que se asemeja a una onda sinusoidal perfecta.  El siguiente gráfico se tomó de la pantalla de un osciloscopio y muestra la amplitud de la señal (voltaje) a lo largo del tiempo: (Figura<a href="#02279.png">  below</a>)
+<p>Primero tenemos una onda sinusoidal simple a una frecuencia de 523,25 Hz.  Este valor de frecuencia particular es un tono de “C” en el teclado de un piano, una octava por encima del “C medio”.  En realidad, la señal medida para esta demostración fue creada por un teclado electrónico configurado para producir el tono de una flauta de pan, la “voz” de instrumento más cercana que pude encontrar y que se asemeja a una onda sinusoidal perfecta.  El siguiente gráfico se tomó de la pantalla de un osciloscopio y muestra la amplitud de la señal (voltaje) a lo largo del tiempo: (Figura<a href="#02279.png">a continuación</a>)
 </p>
 <a name="02279.png"></a>
 <p> <img src="02279.png"/> </p>
@@ -847,13 +847,13 @@ no         (hz)      component   component    (deg)   phase (deg)
 <p>Vista con un osciloscopio, una onda sinusoidal parece una curva ondulada trazada horizontalmente en la pantalla.  El eje horizontal de la pantalla de este osciloscopio está marcado con la palabra "Tiempo" y una flecha que apunta en la dirección de la progresión del tiempo.  La curva en sí, por supuesto, representa el aumento y disminución cíclico del voltaje a lo largo del tiempo.</p>
 <a name="Artifact, measurement"></a>
 <p>Una observación minuciosa revela imperfecciones en la forma de la onda sinusoidal.  Desafortunadamente, esto es el resultado del equipo específico utilizado para analizar la forma de onda.  Características como éstas debidas a peculiaridades del equipo de prueba se conocen técnicamente como<i>artefactos</i>: fenómeno que existe únicamente debido a una peculiaridad del equipo utilizado para realizar el experimento.</p>
-<p>Si observamos este mismo voltaje CA en un analizador de espectro, el resultado es bastante diferente: (Figura<a href="#02280.png">  below</a>)
+<p>Si observamos este mismo voltaje CA en un analizador de espectro, el resultado es bastante diferente: (Figura<a href="#02280.png">a continuación</a>)
 </p>
 <a name="02280.png"></a>
 <p> <img src="02280.png"/> </p>
 <p><i>Display del analizador de espectro: tensión vs frecuencia.</i></p>
 <p>Como puede ver, el eje horizontal de la pantalla está marcado con la palabra "Frecuencia", que indica el dominio de esta medición.  El pico único en la curva representa el predominio de una sola frecuencia dentro del rango de frecuencias cubiertas por el ancho de la pantalla.  Si la escala de este instrumento analizador estuviera marcada con números, vería que este pico se produce a 523,25 Hz.  La altura del pico representa la amplitud de la señal (voltaje).</p>
-<p>Si mezclamos tres tonos de onda sinusoidal diferentes en el teclado electrónico (C-E-G, un acorde de do mayor) y medimos el resultado, tanto la pantalla del osciloscopio como la pantalla del analizador de espectro reflejan esta mayor complejidad: (Figura<a href="#02281.png">  below</a>)
+<p>Si mezclamos tres tonos de onda sinusoidal diferentes en el teclado electrónico (C-E-G, un acorde de do mayor) y medimos el resultado, tanto la pantalla del osciloscopio como la pantalla del analizador de espectro reflejan esta mayor complejidad: (Figura<a href="#02281.png">a continuación</a>)
 </p>
 <a name="02281.png"></a>
 <p> <img src="02281.png"/> </p>
@@ -862,20 +862,20 @@ no         (hz)      component   component    (deg)   phase (deg)
 <a name="02282.png"></a>
 <p> <img src="02282.png"/> </p>
 <p><i>Display del analizador de espectro: tres tonos.</i></p>
-<p>La visualización del espectro (dominio de frecuencia) es mucho más fácil de interpretar: cada tono está representado por su propio pico en la curva. (Cifra<a href="#02282.png">  above</a>) La diferencia de altura entre estos tres picos es otro artefacto del equipo de prueba: una consecuencia de las limitaciones del equipo utilizado para generar y analizar estas formas de onda, y no una característica necesaria del acorde musical en sí.</p>
-<p>Como se dijo antes, el dispositivo utilizado para generar estas formas de onda es un teclado electrónico: un instrumento musical diseñado para imitar los tonos de muchos instrumentos diferentes.  Se eligió la “voz” de flauta de pan para las primeras demostraciones porque se parecía más a una onda sinusoidal pura (una única frecuencia en la pantalla del analizador de espectro).  Sin embargo, otras “voces” de instrumentos musicales no son tan simples como ésta.  De hecho, el tono único producido por<i>any</i>instrumento es función de su forma de onda (o espectro de frecuencias).  Por ejemplo, veamos la señal de un tono de trompeta: (Figura<a href="#02283.png">  below</a>)
+<p>La visualización del espectro (dominio de frecuencia) es mucho más fácil de interpretar: cada tono está representado por su propio pico en la curva. (Cifra<a href="#02282.png">anterior</a>) La diferencia de altura entre estos tres picos es otro artefacto del equipo de prueba: una consecuencia de las limitaciones del equipo utilizado para generar y analizar estas formas de onda, y no una característica necesaria del acorde musical en sí.</p>
+<p>Como se dijo antes, el dispositivo utilizado para generar estas formas de onda es un teclado electrónico: un instrumento musical diseñado para imitar los tonos de muchos instrumentos diferentes.  Se eligió la “voz” de flauta de pan para las primeras demostraciones porque se parecía más a una onda sinusoidal pura (una única frecuencia en la pantalla del analizador de espectro).  Sin embargo, otras “voces” de instrumentos musicales no son tan simples como ésta.  De hecho, el tono único producido por<i>any</i>instrumento es función de su forma de onda (o espectro de frecuencias).  Por ejemplo, veamos la señal de un tono de trompeta: (Figura<a href="#02283.png">a continuación</a>)
 </p>
 <a name="02283.png"></a>
 <p> <img src="02283.png"/> </p>
 <p><i>Visualización del osciloscopio: forma de onda de un tono de trompeta.</i></p>
-<p>La frecuencia fundamental de este tono es la misma que en el primer ejemplo de flauta de pan: 523,25 Hz, una octava por encima del "do medio".  La forma de onda en sí está lejos de ser una forma de onda sinusoidal pura y simple.  Sabiendo que cualquier forma de onda no sinusoidal repetitiva es equivalente a una serie de formas de onda sinusoidales con diferentes amplitudes y frecuencias, deberíamos esperar ver múltiples picos en la pantalla del analizador de espectro: (Figura<a href="#02284.png">  below</a>)
+<p>La frecuencia fundamental de este tono es la misma que en el primer ejemplo de flauta de pan: 523,25 Hz, una octava por encima del "do medio".  La forma de onda en sí está lejos de ser una forma de onda sinusoidal pura y simple.  Sabiendo que cualquier forma de onda no sinusoidal repetitiva es equivalente a una serie de formas de onda sinusoidales con diferentes amplitudes y frecuencias, deberíamos esperar ver múltiples picos en la pantalla del analizador de espectro: (Figura<a href="#02284.png">a continuación</a>)
 </p>
 <a name="02284.png"></a>
 <p> <img src="02284.png"/> </p>
 <p><i>Espectro de un tono de trompeta.</i></p>
 <p>¡De hecho lo hacemos!  El componente de frecuencia fundamental de 523,25 Hz está representado por el pico más a la izquierda, con cada armónico sucesivo representado como su propio pico a lo largo del ancho de la pantalla del analizador.  El segundo armónico es el doble de la frecuencia de la fundamental (1046,5 Hz), el tercer armónico es el triple de la fundamental (1569,75 Hz), y así sucesivamente.  Esta pantalla sólo muestra los primeros seis armónicos, pero hay muchos más que componen este complejo tono.</p>
-<p>Al probar una voz de instrumento diferente (el acordeón) en el teclado, obtenemos un gráfico de osciloscopio (dominio del tiempo) igualmente complejo (Figura<a href="#02285.png">  below</a>) 
-<!--split for multiple refs in paragraph-->y pantalla del analizador de espectro (dominio de frecuencia): (Figura<a href="#02286.png">  below</a>)
+<p>Al probar una voz de instrumento diferente (el acordeón) en el teclado, obtenemos un gráfico de osciloscopio (dominio del tiempo) igualmente complejo (Figura<a href="#02285.png">a continuación</a>) 
+<!--split for multiple refs in paragraph-->y pantalla del analizador de espectro (dominio de frecuencia): (Figura<a href="#02286.png">a continuación</a>)
 </p>
 <a name="02285.png"></a>
 <p> <img src="02285.png"/> </p>
@@ -886,7 +886,7 @@ no         (hz)      component   component    (deg)   phase (deg)
 <p> <img src="02286.png"/> </p>
 <p><i>Espectro de tono de acordeón.</i></p>
 <p>Tenga en cuenta las diferencias en las amplitudes armónicas relativas (alturas de pico) en las pantallas de espectro para trompeta y acordeón.  Ambos tonos de instrumentos contienen armónicos desde la 1ª (fundamental) hasta la 6ª (¡y más allá!), pero las proporciones no son las mismas.  Cada instrumento tiene una “firma” armónica única en su tono.  Tengamos en cuenta que toda esta complejidad es en referencia a<i>una sola nota</i>tocado con estas dos “voces” de instrumentos.  Tocar varias notas en un acordeón, por ejemplo, crearía una mezcla de frecuencias mucho más compleja que la que se ve aquí.</p>
-<p>El poder analítico del osciloscopio y del analizador de espectro nos permite derivar reglas generales sobre formas de onda y sus espectros armónicos a partir de ejemplos de formas de onda reales.  Ya sabemos que cualquier desviación de una onda sinusoidal pura da como resultado el equivalente a una mezcla de múltiples formas de onda sinusoidales con diferentes amplitudes y frecuencias.  Sin embargo, una observación minuciosa nos permite ser más específicos que esto.  Tenga en cuenta, por ejemplo, la hora- (Figura<a href="#02287.png">  below</a>) y<!--split for multiple refs in paragraph-->dominio de la frecuencia (Figura<a href="#02288.png">  below</a>) traza una forma de onda que se aproxima a una onda cuadrada:</p>
+<p>El poder analítico del osciloscopio y del analizador de espectro nos permite derivar reglas generales sobre formas de onda y sus espectros armónicos a partir de ejemplos de formas de onda reales.  Ya sabemos que cualquier desviación de una onda sinusoidal pura da como resultado el equivalente a una mezcla de múltiples formas de onda sinusoidales con diferentes amplitudes y frecuencias.  Sin embargo, una observación minuciosa nos permite ser más específicos que esto.  Tenga en cuenta, por ejemplo, la hora- (Figura<a href="#02287.png">a continuación</a>) y<!--split for multiple refs in paragraph-->dominio de la frecuencia (Figura<a href="#02288.png">a continuación</a>) traza una forma de onda que se aproxima a una onda cuadrada:</p>
 <a name="02287.png"></a>
 <p> <img src="02287.png"/> </p>
 <p><i>Visualización en el dominio del tiempo del osciloscopio de una onda cuadrada</i></p>
@@ -895,7 +895,7 @@ no         (hz)      component   component    (deg)   phase (deg)
 <a name="02288.png"></a>
 <p> <img src="02288.png"/> </p>
 <p><i>Espectro (dominio de frecuencia) de una onda cuadrada.</i></p>
-<p>Según el análisis del espectro, esta forma de onda contiene<i>no</i>armónicos pares, solo impares.  Aunque esta pantalla no muestra frecuencias posteriores al sexto armónico, el patrón de armónicos impares en amplitud descendente continúa indefinidamente.  Esto no debería sorprendernos, ya que ya hemos visto con SPICE que una onda cuadrada se compone de una infinidad de armónicos impares.  Los tonos de trompeta y acordeón, sin embargo, contenían<i>ambos</i>armónicos pares e impares.  Esta diferencia en el contenido armónico es digna de mención.  Continuaremos nuestra investigación con un análisis de una onda triangular: (Figura<a href="#02289.png">  below</a>)
+<p>Según el análisis del espectro, esta forma de onda contiene<i>no</i>armónicos pares, solo impares.  Aunque esta pantalla no muestra frecuencias posteriores al sexto armónico, el patrón de armónicos impares en amplitud descendente continúa indefinidamente.  Esto no debería sorprendernos, ya que ya hemos visto con SPICE que una onda cuadrada se compone de una infinidad de armónicos impares.  Los tonos de trompeta y acordeón, sin embargo, contenían<i>ambos</i>armónicos pares e impares.  Esta diferencia en el contenido armónico es digna de mención.  Continuaremos nuestra investigación con un análisis de una onda triangular: (Figura<a href="#02289.png">a continuación</a>)
 </p>
 <a name="02289.png"></a>
 <p> <img src="02289.png"/> </p>
@@ -907,15 +907,15 @@ no         (hz)      component   component    (deg)   phase (deg)
 <p><i>Espectro de una onda triangular.</i></p>
 <a name="Triangle wave "></a>
 <a name="Wave, triangle"></a>
-<p>En esta forma de onda prácticamente no hay armónicos pares: (Figura<a href="#02290.png">  above</a>) the only significant frequency peaks on the spectrum analyzer display belong to odd-numbered multiples of the fundamental frequency.  Se pueden ver pequeños picos para el segundo, cuarto y sexto armónico, pero esto se debe a imperfecciones en esta forma de onda triangular en particular (una vez más, artefactos del equipo de prueba utilizado en este análisis).  A perfect triangle waveshape produces no even harmonics, just like a perfect square wave.  Al observarlo, debería resultar obvio que el espectro armónico de la onda triangular no es idéntico al espectro de la onda cuadrada: los respectivos picos armónicos tienen diferentes alturas.  However, the two different waveforms are common in their lack of even harmonics.</p>
+<p>En esta forma de onda prácticamente no hay armónicos pares: (Figura<a href="#02290.png">anterior</a>) the only significant frequency peaks on the spectrum analyzer display belong to odd-numbered multiples of the fundamental frequency.  Se pueden ver pequeños picos para el segundo, cuarto y sexto armónico, pero esto se debe a imperfecciones en esta forma de onda triangular en particular (una vez más, artefactos del equipo de prueba utilizado en este análisis).  A perfect triangle waveshape produces no even harmonics, just like a perfect square wave.  Al observarlo, debería resultar obvio que el espectro armónico de la onda triangular no es idéntico al espectro de la onda cuadrada: los respectivos picos armónicos tienen diferentes alturas.  However, the two different waveforms are common in their lack of even harmonics.</p>
 <a name="Sawtooth wave "></a>
 <a name="Wave, sawtooth"></a>
-<p>Examinemos otra forma de onda, ésta muy similar a la onda triangular, excepto que su tiempo de ascenso no es el mismo que su tiempo de caída.  conocido como un<i>onda de diente de sierra</i>, su gráfico de osciloscopio revela que tiene un nombre apropiado: (Figura<a href="#02291.png">  below</a>)
+<p>Examinemos otra forma de onda, ésta muy similar a la onda triangular, excepto que su tiempo de ascenso no es el mismo que su tiempo de caída.  conocido como un<i>onda de diente de sierra</i>, su gráfico de osciloscopio revela que tiene un nombre apropiado: (Figura<a href="#02291.png">a continuación</a>)
 </p>
 <a name="02291.png"></a>
 <p> <img src="02291.png"/> </p>
 <p><i>Visualización en el dominio del tiempo de una onda en diente de sierra.</i></p>
-<p>Cuando se traza el análisis espectral de esta forma de onda, vemos un resultado que es bastante diferente al de la onda triangular regular, ya que este análisis muestra la fuerte presencia de armónicos pares (segundo y cuarto): (Figura<a href="#02292.png">  below</a>)
+<p>Cuando se traza el análisis espectral de esta forma de onda, vemos un resultado que es bastante diferente al de la onda triangular regular, ya que este análisis muestra la fuerte presencia de armónicos pares (segundo y cuarto): (Figura<a href="#02292.png">a continuación</a>)
 </p>
 <a name="02292.png"></a>
 <p> <img src="02292.png"/> </p>
@@ -923,23 +923,23 @@ no         (hz)      component   component    (deg)   phase (deg)
 <a name="Harmonic, even vs. odd"></a>
 <a name="Harmonics and waveform symmetry"></a>
 <a name="Waveform symmetry and harmonics"></a>
-<p>La distinción entre una forma de onda que tiene armónicos pares y una que no tiene armónicos pares reside en la diferencia entre una forma de onda triangular y una forma de onda en diente de sierra.  Esa diferencia es<i>simetría</i>por encima y por debajo de la línea central horizontal de la onda.  Una forma de onda que sea simétrica por encima y por debajo de su línea central (las formas en ambos lados se reflejan entre sí con precisión) contendrá<i>no</i>armónicos pares.  (Cifra<a href="#02293.png">  below</a>) 
+<p>La distinción entre una forma de onda que tiene armónicos pares y una que no tiene armónicos pares reside en la diferencia entre una forma de onda triangular y una forma de onda en diente de sierra.  Esa diferencia es<i>simetría</i>por encima y por debajo de la línea central horizontal de la onda.  Una forma de onda que sea simétrica por encima y por debajo de su línea central (las formas en ambos lados se reflejan entre sí con precisión) contendrá<i>no</i>armónicos pares.  (Cifra<a href="#02293.png">a continuación</a>) 
 </p>
 <a name="02293.png"></a>
 <p> <img src="02293.png"/> </p>
 <p><i>Las formas de onda simétricas con respecto a su línea central del eje x contienen sólo armónicos impares.</i></p>
-<p>Las ondas cuadradas, las ondas triangulares y las ondas sinusoidales puras exhiben esta simetría y todas carecen de armónicos pares.  Las formas de onda como el tono de trompeta, el tono de acordeón y la onda de diente de sierra no son simétricas alrededor de sus líneas centrales y, por lo tanto,<i>do</i>contienen armónicos pares. (Cifra<a href="#02294.png">  below</a>)
+<p>Las ondas cuadradas, las ondas triangulares y las ondas sinusoidales puras exhiben esta simetría y todas carecen de armónicos pares.  Las formas de onda como el tono de trompeta, el tono de acordeón y la onda de diente de sierra no son simétricas alrededor de sus líneas centrales y, por lo tanto,<i>do</i>contienen armónicos pares. (Cifra<a href="#02294.png">a continuación</a>)
 </p>
 <a name="02294.png"></a>
 <p> <img src="02294.png"/> </p>
 <p><i>Las formas de onda asimétricas contienen armónicos pares.</i></p>
-<p>Este principio de simetría de línea central no debe confundirse con la simetría alrededor del<i>cero</i>línea.  En los ejemplos mostrados, la línea central horizontal de la forma de onda resulta ser cero voltios en el gráfico en el dominio del tiempo, pero esto no tiene nada que ver con el contenido armónico.  Esta regla de contenido armónico (incluso los armónicos sólo con formas de onda asimétricas) se aplica independientemente de que la forma de onda se desplace por encima o por debajo de cero voltios con un "componente de CC".  Para mayor aclaración, mostraré los mismos conjuntos de formas de onda, desplazadas con voltaje CC, y observaré que sus contenidos armónicos no cambian. (Cifra<a href="#02296.png">  below</a>)
+<p>Este principio de simetría de línea central no debe confundirse con la simetría alrededor del<i>cero</i>línea.  En los ejemplos mostrados, la línea central horizontal de la forma de onda resulta ser cero voltios en el gráfico en el dominio del tiempo, pero esto no tiene nada que ver con el contenido armónico.  Esta regla de contenido armónico (incluso los armónicos sólo con formas de onda asimétricas) se aplica independientemente de que la forma de onda se desplace por encima o por debajo de cero voltios con un "componente de CC".  Para mayor aclaración, mostraré los mismos conjuntos de formas de onda, desplazadas con voltaje CC, y observaré que sus contenidos armónicos no cambian. (Cifra<a href="#02296.png">a continuación</a>)
 
 </p>
 <a name="02296.png"></a>
 <p> <img src="02296.png"/> </p>
 <p><i>Estas formas de onda se componen exclusivamente de armónicos impares.</i></p>
-<p>Nuevamente, la cantidad de voltaje CC presente en una forma de onda no tiene nada que ver con el contenido de frecuencia armónica de esa forma de onda. (Cifra<a href="#02297.png">  below</a>)
+<p>Nuevamente, la cantidad de voltaje CC presente en una forma de onda no tiene nada que ver con el contenido de frecuencia armónica de esa forma de onda. (Cifra<a href="#02297.png">a continuación</a>)
 </p>
 <a name="02297.png"></a>
 <p> <img src="02297.png"/> </p>

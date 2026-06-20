@@ -201,7 +201,7 @@
 <b>Resistencia reactiva</b>es esencialmente<i>inercia</i>contra el movimiento de los electrones.  Está presente en cualquier lugar donde se desarrollen campos eléctricos o magnéticos en proporción al voltaje o corriente aplicados, respectivamente; pero sobre todo en condensadores e inductores.  Cuando la corriente alterna pasa por una reactancia pura, se produce una caída de voltaje de 90<sup>o</sup>desfasado con la corriente.  La reactancia está simbolizada matemáticamente por la letra "X" y se mide en la unidad de ohmios (Ω).</p>
 <p>
 <b>Impedancia</b>es una expresión integral de todas y cada una de las formas de oposición al flujo de electrones, incluidas tanto la resistencia como la reactancia.  Está presente en todos los circuitos y en todos los componentes.  Cuando la corriente alterna pasa por una impedancia, se produce una caída de voltaje que oscila entre 0<sup>o</sup>y 90<sup>o</sup>desfasado con la corriente.  La impedancia está simbolizada matemáticamente por la letra “Z” y se mide en la unidad de ohmios (Ω), en forma compleja.</p>
-<p>Resistencias perfectas (Figura<a href="#02347.png">  below</a>) poseen resistencia, pero no reactancia.<!--Split for 2-ref's in one para-->Inductores perfectos y condensadores perfectos (Figura<a href="#02347.png">  below</a>) poseen reactancia pero no resistencia.  Todos los componentes poseen impedancia y, debido a esta cualidad universal, tiene sentido traducir todos los valores de los componentes (resistencia, inductancia, capacitancia) en términos comunes de impedancia como primer paso en el análisis de un circuito de CA.</p>
+<p>Resistencias perfectas (Figura<a href="#02347.png">a continuación</a>) poseen resistencia, pero no reactancia.<!--Split for 2-ref's in one para-->Inductores perfectos y condensadores perfectos (Figura<a href="#02347.png">a continuación</a>) poseen reactancia pero no resistencia.  Todos los componentes poseen impedancia y, debido a esta cualidad universal, tiene sentido traducir todos los valores de los componentes (resistencia, inductancia, capacitancia) en términos comunes de impedancia como primer paso en el análisis de un circuito de CA.</p>
 <a name="02347.png"></a>
 <p> <img src="02347.png"/> </p>
 <p><i>Resistencia, inductor y condensador perfectos.</i></p>
@@ -212,7 +212,7 @@
 <p>Las leyes de Kirchhoff y todos los métodos y teoremas de análisis de redes también son válidos para los circuitos de CA, siempre que las cantidades se representen en forma compleja y no escalar.  Si bien esta equivalencia calificada puede ser un desafío aritmético, es conceptualmente simple y elegante.  La única diferencia real entre los cálculos de circuitos de CC y CA es con respecto a<i>fuerza</i>.  Debido a que la reactancia no disipa potencia como lo hace la resistencia, el concepto de potencia en los circuitos de CA es radicalmente diferente al de los circuitos de CC.  ¡Más sobre este tema en un capítulo posterior!</p>
 <h2><a name="xtocid89031">R, L y C en serie</a></h2>
 <a name="Analysis, series"></a>
-<p>Tomemos el siguiente circuito de ejemplo y analicémoslo: (Figura<a href="#02078.png">  below</a>)
+<p>Tomemos el siguiente circuito de ejemplo y analicémoslo: (Figura<a href="#02078.png">a continuación</a>)
 </p>
 <a name="02078.png"></a>
 <p> <img src="02078.png"/> </p>
@@ -220,7 +220,7 @@
 <p>El primer paso es determinar las reactancias (en ohmios) del inductor y el condensador.</p>
 <p> <img src="12056.png"/> </p>
 <a name="Impedance"></a>
-<p>El siguiente paso es expresar todas las resistencias y reactancias en una forma matemática común: impedancia.  (Cifra<a href="#02079.png">  below</a>) Recuerde que una reactancia inductiva se traduce en una impedancia imaginaria positiva (o una impedancia a +90<sup>o</sup>), mientras que una reactancia capacitiva se traduce en una impedancia imaginaria negativa (impedancia a -90<sup>o</sup>).  La resistencia, por supuesto, todavía se considera una impedancia puramente "real" (ángulo polar de 0<sup>o</sup>):
+<p>El siguiente paso es expresar todas las resistencias y reactancias en una forma matemática común: impedancia.  (Cifra<a href="#02079.png">a continuación</a>) Recuerde que una reactancia inductiva se traduce en una impedancia imaginaria positiva (o una impedancia a +90<sup>o</sup>), mientras que una reactancia capacitiva se traduce en una impedancia imaginaria negativa (impedancia a -90<sup>o</sup>).  La resistencia, por supuesto, todavía se considera una impedancia puramente "real" (ángulo polar de 0<sup>o</sup>):
 </p>
 <p> <img src="12057.png"/> </p>
 <p>
@@ -259,7 +259,7 @@
 <p> <img src="12064.png"/> </p>
 <p>Aparte de un pequeño error de redondeo, la suma de estas caídas de voltaje equivale a 120 voltios.  Realizado en una calculadora (conservando todos los dígitos), la respuesta que recibirá debe ser<i>exactamente</i> 120 + j0 volts.
 </p>
-<p>También podemos usar SPICE para verificar nuestras cifras para este circuito: (Figura<a href="#02080.png">  below</a>)
+<p>También podemos usar SPICE para verificar nuestras cifras para este circuito: (Figura<a href="#02080.png">a continuación</a>)
 </p>
 <a name="02080.png"></a>
 <p> <img src="02080.png"/> </p>
@@ -293,12 +293,12 @@ freq          vp(1,2)     vp(2,3)     vp(3)       ip(v1)
 </ul>
 <h2><a name="xtocid89032">R, L y C en paralelo</a></h2>
 <a name="Analysis, parallel"></a>
-<p>Podemos tomar los mismos componentes del circuito en serie y reorganizarlos en una configuración en paralelo para obtener un circuito de ejemplo sencillo: (Figura<a href="#02081.png">  below</a>)
+<p>Podemos tomar los mismos componentes del circuito en serie y reorganizarlos en una configuración en paralelo para obtener un circuito de ejemplo sencillo: (Figura<a href="#02081.png">a continuación</a>)
 </p>
 <a name="02081.png"></a>
 <p> <img src="02081.png"/> </p>
 <p><i>Ejemplo de circuito paralelo R, L y C.</i></p>
-<p>El hecho de que estos componentes estén conectados en paralelo en lugar de en serie ahora no tiene ningún efecto sobre sus impedancias individuales.  Mientras la fuente de alimentación tenga la misma frecuencia que antes, las reactancias inductiva y capacitiva no habrán cambiado en absoluto: (Figura<a href="#02082.png">  below</a>)
+<p>El hecho de que estos componentes estén conectados en paralelo en lugar de en serie ahora no tiene ningún efecto sobre sus impedancias individuales.  Mientras la fuente de alimentación tenga la misma frecuencia que antes, las reactancias inductiva y capacitiva no habrán cambiado en absoluto: (Figura<a href="#02082.png">a continuación</a>)
 </p>
 <a name="02082.png"></a>
 <p> <img src="02082.png"/> </p>
@@ -311,7 +311,7 @@ freq          vp(1,2)     vp(2,3)     vp(3)       ip(v1)
 <p> <img src="12067.png"/> </p>
 <p>Hay dos estrategias para calcular la corriente total y la impedancia total.  Primero, podríamos calcular la impedancia total a partir de todas las impedancias individuales en paralelo (Z<sub>Total</sub>= 1/(1/Z<sub>R</sub>+ 1/Z<sub>L</sub>+ 1/Z<sub>C</sub>), y luego calcule la corriente total dividiendo el voltaje de la fuente por la impedancia total (I=E/Z).  Sin embargo, resolver la ecuación de impedancia paralela con números complejos no es una tarea fácil, con todas las alternativas (1/Z).  Esto es especialmente cierto si tiene la mala suerte de no tener una calculadora que maneje números complejos y se ve obligado a hacerlo todo a mano (cambie las impedancias individuales en forma polar, luego conviértalas todas a forma rectangular para sumar, luego vuelva a convertirlas a forma polar para la inversión final, luego invierta).  La segunda forma de calcular la corriente total y la impedancia total es sumar todas las corrientes derivadas para llegar a la corriente total (la corriente total en un circuito paralelo, CA o CC, es igual a la suma de las corrientes derivadas), luego usar la Ley de Ohm para determinar la impedancia total a partir del voltaje total y la corriente total (Z=E/I).</p>
 <p> <img src="12068.png"/> </p>
-<p>Cualquiera de los métodos, realizado correctamente, proporcionará las respuestas correctas.  Intentemos analizar este circuito con SPICE y veamos qué sucede: (Figura<a href="#02083.png">  below</a>)
+<p>Cualquiera de los métodos, realizado correctamente, proporcionará las respuestas correctas.  Intentemos analizar este circuito con SPICE y veamos qué sucede: (Figura<a href="#02083.png">a continuación</a>)
 </p>
 <a name="02083.png"></a>
 <p> <img src="02083.png"/> </p>
@@ -347,7 +347,7 @@ freq          ip(vi)      ip(vir)     ip(vil)     ip(vic)
 <h2><a name="xtocid89033">R, L y C en serie-paralelo</a></h2>
 <a name="Analysis, series-parallel"></a>
 <p>Ahora que hemos visto cómo el análisis de circuitos de CA en serie y paralelo no es fundamentalmente diferente del análisis de circuitos de CC, no debería sorprender que el análisis en serie-paralelo también sea el mismo, simplemente usando números complejos en lugar de escalares para representar voltaje, corriente e impedancia.</p>
-<p>Tomemos como ejemplo este circuito en serie-paralelo: (Figura<a href="#02084.png">  below</a>)
+<p>Tomemos como ejemplo este circuito en serie-paralelo: (Figura<a href="#02084.png">a continuación</a>)
 </p>
 <a name="02084.png"></a>
 <p> <img src="02084.png"/> </p>
@@ -396,9 +396,9 @@ freq          ip(vi)      ip(vir)     ip(vil)     ip(vic)
 </p>
 <br/>
 <p> <img src="12084.png"/> </p>
-<p>Otra verificación rápida de nuestro trabajo en este momento sería ver si las cifras actuales de L--C<sub>2</sub>y R suman la corriente total.  Según la Ley Actual de Kirchhoff, deberían:</p>
+<p>Otra verificación rápida de nuestro trabajo en este momento sería ver si las cifras actuales de L--C<sub>2</sub>y R suman la corriente total.  Según la ley de corriente de Kirchhoff, deberían:</p>
 <p> <img src="12085.png"/> </p>
-<p>Desde la L y C<sub>2</sub>están conectados en serie, y dado que conocemos la corriente a través de su impedancia de combinación en serie, podemos distribuir esa cifra actual a L y C<sub>2</sub>columnas que siguen la regla de los circuitos en serie mediante la cual los componentes en serie comparten la misma corriente:</p>
+<p>Desde la L y C<sub>2</sub>están conectados en serie, y dado que conocemos la corriente a través de su impedancia de combinación en serie, podemos distribuir esa cifra de corriente a L y C<sub>2</sub>columnas que siguen la regla de los circuitos en serie mediante la cual los componentes en serie comparten la misma corriente:</p>
 <p> <img src="12086.png"/> </p>
 <p>Con un último paso (en realidad, dos cálculos), podemos completar nuestra tabla de análisis de este circuito.  Con impedancia y cifras de corriente establecidas para L y C<sub>2</sub>, lo único que tenemos que hacer es aplicar la Ley de Ohm (E=IZ) verticalmente en esas dos columnas para calcular las caídas de voltaje.</p>
 <p> <img src="12087.png"/> </p>
@@ -439,7 +439,7 @@ freq          v(5)        vp(5)       i(vilc)     ip(vilc)    C2
 freq          v(6)        vp(6)       i(vir)      ip(vir)     R
 6.000E+01     6.586E+01   4.122E+01   1.401E-01   4.122E+01
 </pre>
-<p>Cada línea del listado de salida de SPICE proporciona el voltaje, el ángulo de fase del voltaje, la corriente y el ángulo de fase actual para C<sub>1</sub>, L, C<sub>2</sub>y R, en ese orden.  Como puede ver, estas cifras coinciden con nuestras cifras calculadas manualmente en la tabla de análisis de circuitos.</p>
+<p>Cada línea del listado de salida de SPICE proporciona el voltaje, el ángulo de fase del voltaje, la corriente y el ángulo de fase de corriente para C<sub>1</sub>, L, C<sub>2</sub>y R, en ese orden.  Como puede ver, estas cifras coinciden con nuestras cifras calculadas manualmente en la tabla de análisis de circuitos.</p>
 <p>Por más desalentadora que pueda parecer una tarea como el análisis de circuitos de CA en serie-paralelo, se debe enfatizar que no hay nada realmente nuevo aquí aparte del uso de números complejos.  La Ley de Ohm (en su nueva forma de E=IZ) sigue siendo válida, al igual que las Leyes de Kirchhoff del voltaje y la corriente.  Si bien existe un mayor potencial de error humano al realizar los cálculos de números complejos necesarios, los principios y técnicas básicos de la reducción de circuitos en serie-paralelo son exactamente los mismos.</p>
 <ul>
 <li><b>REVISAR:</b></li>
@@ -456,7 +456,7 @@ freq          v(6)        vp(6)       i(vir)      ip(vir)     R
 <a name="G, symbol for conductance"></a>
 <a name="Mho, unit"></a>
 <a name="Unit, mho"></a>
-<p>Mientras que el término "resistencia" denota la cantidad de oposición a los electrones que fluyen en un circuito, "conductancia" representa la facilidad con la que los electrones pueden fluir.  La resistencia es la medida de cuánto mide un circuito.<i>resiste</i>corriente, mientras que la conductancia es la medida de cuánto fluye un circuito.<i>conduce</i>actual.  La conductancia solía medirse en la unidad de<i>mhos</i>, u “ohmios” escritos al revés.  Ahora bien, la unidad de medida adecuada es<i>siemens</i>.  Cuando se simboliza en una fórmula matemática, la letra adecuada para la conductancia es "G".</p>
+<p>Mientras que el término "resistencia" denota la cantidad de oposición a los electrones que fluyen en un circuito, "conductancia" representa la facilidad con la que los electrones pueden fluir.  La resistencia es la medida de cuánto mide un circuito.<i>resiste</i>corriente, mientras que la conductancia es la medida de cuánto fluye un circuito.<i>conduce</i>corriente.  La conductancia solía medirse en la unidad de<i>mhos</i>, u “ohmios” escritos al revés.  Ahora bien, la unidad de medida adecuada es<i>siemens</i>.  Cuando se simboliza en una fórmula matemática, la letra adecuada para la conductancia es "G".</p>
 <a name="Reactance"></a>
 <a name="X, symbol for reactance"></a>
 <a name="Ohm, unit"></a>

@@ -204,18 +204,18 @@
 <ul>
 <li><b>REVISAR:</b></li>
 <li>A <i>filtrar</i>Es un circuito de CA que separa algunas frecuencias de otras dentro de señales de frecuencia mixta.</li>
-<li>Audio<i>ecualizadores</i> and <i>redes cruzadas</i>Hay dos aplicaciones bien conocidas de los circuitos de filtro.</li>
+<li>Audio<i>ecualizadores</i> y <i>redes cruzadas</i>Hay dos aplicaciones bien conocidas de los circuitos de filtro.</li>
 <li>A <i>trama de presagio</i>es un gráfico que traza la amplitud o fase de la forma de onda en un eje y la frecuencia en el otro.</li>
 </ul>
 <h2><a name="xtocid89301">Low-pass filters</a></h2>
 <a name="Filter, low-pass"></a>
-<p>Por definición, un filtro de paso bajo es un circuito que ofrece un paso fácil a señales de baja frecuencia y un paso difícil a señales de alta frecuencia.  Hay dos tipos básicos de circuitos capaces de lograr este objetivo, y muchas variaciones de cada uno: El filtro inductivo de paso bajo en la Figura<a href="#02116.png">  below</a>
-<!--Split for two refs in one paragraph-->y el filtro capacitivo de paso bajo en la Figura<a href="#02117.png">  below</a>
+<p>Por definición, un filtro de paso bajo es un circuito que ofrece un paso fácil a señales de baja frecuencia y un paso difícil a señales de alta frecuencia.  Hay dos tipos básicos de circuitos capaces de lograr este objetivo, y muchas variaciones de cada uno: El filtro inductivo de paso bajo en la Figura<a href="#02116.png">a continuación</a>
+<!--Split for two refs in one paragraph-->y el filtro capacitivo de paso bajo en la Figura<a href="#02117.png">a continuación</a>
 </p>
 <a name="02116.png"></a>
 <p> <img src="02116.png"/> </p>
 <p><i>Filtro inductivo de paso bajo</i></p>
-<p>La impedancia del inductor aumenta al aumentar la frecuencia.  Esta alta impedancia en serie tiende a impedir que las señales de alta frecuencia lleguen a la carga.  Esto se puede demostrar con un análisis SPICE: (Figura<a href="#22026.png">  below</a>)
+<p>La impedancia del inductor aumenta al aumentar la frecuencia.  Esta alta impedancia en serie tiende a impedir que las señales de alta frecuencia lleguen a la carga.  Esto se puede demostrar con un análisis SPICE: (Figura<a href="#22026.png">a continuación</a>)
 </p>
 <pre>
 inductive lowpass filter               
@@ -255,7 +255,7 @@ rload 2 0 1k
 <a name="02117.png"></a>
 <p> <img src="02117.png"/> </p>
 <p><i>Filtro capacitivo de paso bajo.</i></p>
-<p>La impedancia del condensador disminuye al aumentar la frecuencia.  Esta baja impedancia en paralelo con la resistencia de carga tiende a cortocircuitar las señales de alta frecuencia, haciendo caer la mayor parte del voltaje a través de la resistencia en serie R.<sub>1</sub>.  (Cifra<a href="#22027.png">  below</a>)
+<p>La impedancia del condensador disminuye al aumentar la frecuencia.  Esta baja impedancia en paralelo con la resistencia de carga tiende a cortocircuitar las señales de alta frecuencia, haciendo caer la mayor parte del voltaje a través de la resistencia en serie R.<sub>1</sub>.  (Cifra<a href="#22027.png">a continuación</a>)
 </p>
 <pre>
 capacitive lowpass filter                                  
@@ -299,7 +299,7 @@ rload 2 0 1k
 <a name="Frequency, cutoff"></a>
 <p>Todos los filtros de paso bajo tienen una clasificación determinada<i>frecuencia de corte</i>.  Es decir, la frecuencia por encima de la cual el voltaje de salida cae por debajo del 70,7% del voltaje de entrada.  Este porcentaje de corte de 70,7 no es realmente arbitrario, aunque pueda parecerlo a primera vista.  En un filtro de paso bajo capacitivo/resistivo simple, es la frecuencia a la que la reactancia capacitiva en ohmios es igual a la resistencia en ohmios.  En un filtro capacitivo de paso bajo simple (una resistencia, un condensador), la frecuencia de corte viene dada por:</p>
 <p> <img src="12097.png"/> </p>
-<p>Al insertar los valores de R y C de la última simulación de SPICE en esta fórmula, llegamos a una frecuencia de corte de 45,473 Hz.  Sin embargo, cuando observamos el gráfico generado por la simulación SPICE, vemos el voltaje de carga muy por debajo del 70,7% del voltaje de la fuente (1 voltio), incluso a una frecuencia tan baja como 30 Hz, por debajo del punto de corte calculado.  ¿Qué ocurre?  El problema aquí es que la resistencia de carga de 1 kΩ afecta la respuesta de frecuencia del filtro, desviándola de lo que la fórmula nos dijo que sería.  Sin esa resistencia de carga, SPICE produce un diagrama de Bode cuyos números tienen más sentido: (Figura<a href="#22028.png">  below</a>)
+<p>Al insertar los valores de R y C de la última simulación de SPICE en esta fórmula, llegamos a una frecuencia de corte de 45,473 Hz.  Sin embargo, cuando observamos el gráfico generado por la simulación SPICE, vemos el voltaje de carga muy por debajo del 70,7% del voltaje de la fuente (1 voltio), incluso a una frecuencia tan baja como 30 Hz, por debajo del punto de corte calculado.  ¿Qué ocurre?  El problema aquí es que la resistencia de carga de 1 kΩ afecta la respuesta de frecuencia del filtro, desviándola de lo que la fórmula nos dijo que sería.  Sin esa resistencia de carga, SPICE produce un diagrama de Bode cuyos números tienen más sentido: (Figura<a href="#22028.png">a continuación</a>)
 </p>
 <pre>
 capacitive lowpass filter   
@@ -340,8 +340,8 @@ c1 2 0 7u
 <pre>
            f<sub>cutoff</sub> = 1/(2πRC) = 1/(2π(500 Ω)(7 µF)) = 45.473 Hz
 </pre>
-<p>Cuando se trata de circuitos de filtro, siempre es importante tener en cuenta que la respuesta del filtro depende de los valores de los componentes del filtro.<i>and</i>the impedance of the load.  Si una ecuación de frecuencia de corte no tiene en cuenta la impedancia de la carga, asume que no hay carga y no dará resultados precisos para un filtro de la vida real que conduce energía a una carga.</p>
-<p>Una aplicación frecuente del principio del filtro capacitivo de paso bajo es el diseño de circuitos que tienen componentes o secciones sensibles al "ruido" eléctrico.  Como se mencionó al comienzo del último capítulo, a veces las señales de CA pueden "acoplarse" de un circuito a otro mediante capacitancia (C<sub>extraviado</sub>) y/o inductancia mutua (M<sub>extraviado</sub>) entre los dos conjuntos de conductores.  Un buen ejemplo de esto son las señales de CA no deseadas (“ruido”) que quedan impresas en las líneas de alimentación de CC que alimentan circuitos sensibles: (Figura<a href="#02300.png">  below</a>)
+<p>Cuando se trata de circuitos de filtro, siempre es importante tener en cuenta que la respuesta del filtro depende de los valores de los componentes del filtro.<i>y</i>la impedancia de la carga.  Si una ecuación de frecuencia de corte no tiene en cuenta la impedancia de la carga, asume que no hay carga y no dará resultados precisos para un filtro de la vida real que conduce energía a una carga.</p>
+<p>Una aplicación frecuente del principio del filtro capacitivo de paso bajo es el diseño de circuitos que tienen componentes o secciones sensibles al "ruido" eléctrico.  Como se mencionó al comienzo del último capítulo, a veces las señales de CA pueden "acoplarse" de un circuito a otro mediante capacitancia (C<sub>extraviado</sub>) y/o inductancia mutua (M<sub>extraviado</sub>) entre los dos conjuntos de conductores.  Un buen ejemplo de esto son las señales de CA no deseadas (“ruido”) que quedan impresas en las líneas de alimentación de CC que alimentan circuitos sensibles: (Figura<a href="#02300.png">a continuación</a>)
 </p>
 <a name="02300.png"></a>
 <p> <img src="02300.png"/> </p>
@@ -349,7 +349,7 @@ c1 2 0 7u
 <p>El osciloscopio-metro de la izquierda muestra la energía "limpia" de la fuente de voltaje de CC.  Sin embargo, después del acoplamiento con la fuente de ruido de CA a través de inductancia parásita mutua y capacitancia parásita, el voltaje medido en los terminales de carga ahora es una mezcla de CA y CC, siendo la CA no deseada.  Normalmente, uno esperaría que E<sub>carga</sub>ser exactamente idéntico a E<sub>fuente</sub>, porque los conductores ininterrumpidos que los conectan deben hacer que los dos conjuntos de puntos sean eléctricamente comunes.  Sin embargo, la impedancia del conductor de potencia permite que los dos voltajes difieran, lo que significa que la magnitud del ruido puede variar en diferentes puntos del sistema de CC.</p>
 <a name="Capacitor, decoupling"></a>
 <a name="Decoupling capacitor"></a>
-<p>Si deseamos evitar que ese "ruido" llegue a la carga de CC, todo lo que debemos hacer es conectar un filtro de paso bajo cerca de la carga para bloquear cualquier señal acoplada.  En su forma más simple, esto no es más que un capacitor conectado directamente a través de los terminales de alimentación de la carga; el capacitor se comporta como una impedancia muy baja ante cualquier ruido de CA y lo cortocircuita.  Un condensador de este tipo se llama<i>condensador de desacoplamiento</i>: (Cifra<a href="#02301.png">  below</a>)
+<p>Si deseamos evitar que ese "ruido" llegue a la carga de CC, todo lo que debemos hacer es conectar un filtro de paso bajo cerca de la carga para bloquear cualquier señal acoplada.  En su forma más simple, esto no es más que un capacitor conectado directamente a través de los terminales de alimentación de la carga; el capacitor se comporta como una impedancia muy baja ante cualquier ruido de CA y lo cortocircuita.  Un condensador de este tipo se llama<i>condensador de desacoplamiento</i>: (Cifra<a href="#02301.png">a continuación</a>)
 </p>
 <a name="02301.png"></a>
 <p> <img src="02301.png"/> </p>
@@ -365,13 +365,13 @@ c1 2 0 7u
 </ul>
 <h2><a name="xtocid89302">High-pass filters</a></h2>
 <a name="Filter, high-pass"></a>
-<p>La tarea de un filtro de paso alto es justo la opuesta a la de un filtro de paso bajo: ofrecer un paso fácil de una señal de alta frecuencia y un paso difícil a una señal de baja frecuencia.  Como era de esperar, el inductivo (Figura<a href="#02119.png">  below</a>)
-<!--Split for two refs in one paragraph-->y capacitivo (Figura<a href="#02118.png">  below</a>) del filtro de paso alto son todo lo contrario de sus respectivos diseños de filtro de paso bajo:</p>
+<p>La tarea de un filtro de paso alto es justo la opuesta a la de un filtro de paso bajo: ofrecer un paso fácil de una señal de alta frecuencia y un paso difícil a una señal de baja frecuencia.  Como era de esperar, el inductivo (Figura<a href="#02119.png">a continuación</a>)
+<!--Split for two refs in one paragraph-->y capacitivo (Figura<a href="#02118.png">a continuación</a>) del filtro de paso alto son todo lo contrario de sus respectivos diseños de filtro de paso bajo:</p>
 <a name="02118.png"></a>
 <p> <img src="02118.png"/> </p>
 <p><i>Filtro capacitivo de paso alto.</i></p>
-<p>La impedancia del condensador (Figura<a href="#02118.png">  above</a>)
-<!--split for double ref-->aumenta al disminuir la frecuencia. (Cifra<a href="#22029.png">  below</a>) Esta alta impedancia en serie tiende a bloquear la carga de las señales de baja frecuencia.</p>
+<p>La impedancia del condensador (Figura<a href="#02118.png">anterior</a>)
+<!--split for double ref-->aumenta al disminuir la frecuencia. (Cifra<a href="#22029.png">a continuación</a>) Esta alta impedancia en serie tiende a bloquear la carga de las señales de baja frecuencia.</p>
 <pre>
 capacitive highpass filter    
 v1 1 0 ac 1 sin 
@@ -410,8 +410,8 @@ rload 2 0 1k
 <a name="02119.png"></a>
 <p> <img src="02119.png"/> </p>
 <p><i>Filtro inductivo de paso alto.</i></p>
-<p>La impedancia del inductor (Figura<a href="#02119.png">  above</a>)
-<!--split for double ref-->disminuye al disminuir la frecuencia. (Cifra<a href="#22030.png">  below</a>) Esta baja impedancia en paralelo tiende a impedir que las señales de baja frecuencia lleguen a la resistencia de carga.  Como consecuencia, la mayor parte del voltaje cae a través de la resistencia en serie R<sub>1</sub>.
+<p>La impedancia del inductor (Figura<a href="#02119.png">anterior</a>)
+<!--split for double ref-->disminuye al disminuir la frecuencia. (Cifra<a href="#22030.png">a continuación</a>) Esta baja impedancia en paralelo tiende a impedir que las señales de baja frecuencia lleguen a la resistencia de carga.  Como consecuencia, la mayor parte del voltaje cae a través de la resistencia en serie R<sub>1</sub>.
 </p>
 <pre>
 inductive highpass filter  
@@ -468,13 +468,13 @@ rload 2 0 1k
 </ul>
 <h2><a name="xtocid89303">Band-pass filters</a></h2>
 <a name="Filter, band-pass"></a>
-<p>Hay aplicaciones en las que es necesario filtrar una banda, una dispersión o frecuencias concretas de una gama más amplia de señales mixtas.  Se pueden diseñar circuitos de filtro para realizar esta tarea combinando las propiedades de paso bajo y paso alto en un solo filtro.  El resultado se llama<i>paso de banda</i>filtrar.  La creación de un filtro de paso de banda a partir de un filtro de paso bajo y de paso alto se puede ilustrar mediante diagramas de bloques: (Figura<a href="#02121.png">  below</a>)
+<p>Hay aplicaciones en las que es necesario filtrar una banda, una dispersión o frecuencias concretas de una gama más amplia de señales mixtas.  Se pueden diseñar circuitos de filtro para realizar esta tarea combinando las propiedades de paso bajo y paso alto en un solo filtro.  El resultado se llama<i>paso de banda</i>filtrar.  La creación de un filtro de paso de banda a partir de un filtro de paso bajo y de paso alto se puede ilustrar mediante diagramas de bloques: (Figura<a href="#02121.png">a continuación</a>)
 </p>
 <a name="02260.png"></a>
 <p> <img src="02260.png"/> </p>
 <p><i>Diagrama de bloques a nivel de sistema de un filtro de paso de banda.</i></p>
-<p>Lo que surge de la combinación en serie de estos dos circuitos de filtro es un circuito que sólo permitirá el paso de aquellas frecuencias que no sean ni demasiado altas ni demasiado bajas.  Usando componentes reales, así es como se vería un esquema típico.<a href="#02121.png">  below</a>.
-<!--split for double ref-->La respuesta del filtro de paso de banda se muestra en (Figura<a href="#22031.png">  below</a>)
+<p>Lo que surge de la combinación en serie de estos dos circuitos de filtro es un circuito que sólo permitirá el paso de aquellas frecuencias que no sean ni demasiado altas ni demasiado bajas.  Usando componentes reales, así es como se vería un esquema típico.<a href="#02121.png">a continuación</a>.
+<!--split for double ref-->La respuesta del filtro de paso de banda se muestra en (Figura<a href="#22031.png">a continuación</a>)
 </p>
 <a name="02121.png"></a>
 <p> <img src="02121.png"/> </p>
@@ -516,7 +516,7 @@ rload 3 0 1k
 <a name="22031.png"></a>
 <p> <img src="22031.png"/> </p>
 <p><i>La respuesta de un filtro de paso de banda capacitivo alcanza su punto máximo dentro de un rango de frecuencia estrecho.</i></p>
-<p>Los filtros de paso de banda también se pueden construir utilizando inductores, pero como se mencionó anteriormente, la "pureza" reactiva de los capacitores les da una ventaja de diseño.  Si tuviéramos que diseñar un filtro de paso de banda usando inductores, podría verse así en la Figura<a href="#02122.png">  below</a>.
+<p>Los filtros de paso de banda también se pueden construir utilizando inductores, pero como se mencionó anteriormente, la "pureza" reactiva de los capacitores les da una ventaja de diseño.  Si tuviéramos que diseñar un filtro de paso de banda usando inductores, podría verse así en la Figura<a href="#02122.png">a continuación</a>.
 </p>
 <a name="02122.png"></a>
 <p> <img src="02122.png"/> </p>
@@ -539,12 +539,12 @@ rload 3 0 1k
 <a name="Filter, band-reject"></a>
 <a name="Filter, band-elimination"></a>
 <a name="Filter, notch"></a>
-<p>También llamado<i>eliminacion de banda</i>, <i>rechazo de banda</i>, o<i>muesca</i>filtros, este tipo de filtro pasa todas las frecuencias por encima y por debajo de un rango particular establecido por los valores de los componentes.  No es sorprendente que pueda estar hecho de un filtro de paso bajo y un filtro de paso alto, al igual que el diseño de paso de banda, excepto que esta vez conectamos las dos secciones de filtro en paralelo entre sí en lugar de en serie. (Cifra<a href="#02261.png">  below</a>)
+<p>También llamado<i>eliminacion de banda</i>, <i>rechazo de banda</i>, o<i>muesca</i>filtros, este tipo de filtro pasa todas las frecuencias por encima y por debajo de un rango particular establecido por los valores de los componentes.  No es sorprendente que pueda estar hecho de un filtro de paso bajo y un filtro de paso alto, al igual que el diseño de paso de banda, excepto que esta vez conectamos las dos secciones de filtro en paralelo entre sí en lugar de en serie. (Cifra<a href="#02261.png">a continuación</a>)
 </p>
 <a name="02261.png"></a>
 <p> <img src="02261.png"/> </p>
 <p><i>Diagrama de bloques a nivel de sistema de un filtro supresor de banda.</i></p>
-<p>Construido con dos secciones de filtro capacitivo, se parece a (Figura<a href="#02123.png">  below</a>).
+<p>Construido con dos secciones de filtro capacitivo, se parece a (Figura<a href="#02123.png">a continuación</a>).
 </p>
 <a name="02123.png"></a>
 <p> <img src="02123.png"/> </p>
@@ -553,7 +553,7 @@ rload 3 0 1k
 <p> <img src="12098.png"/> </p>
 <p>Dadas estas proporciones de componentes, la frecuencia de rechazo máximo (la “frecuencia de muesca”) se puede calcular de la siguiente manera:</p>
 <p> <img src="12099.png"/> </p>
-<p>La impresionante capacidad de detención de banda de este filtro se ilustra en el siguiente análisis de SPICE: (Figura<a href="#22032.png">  below</a>)
+<p>La impresionante capacidad de detención de banda de este filtro se ilustra en el siguiente análisis de SPICE: (Figura<a href="#22032.png">a continuación</a>)
 </p>
 <pre>
 twin-t bandstop filter
@@ -607,12 +607,12 @@ rload 3 0 1k
 <a name="Filter, resonant"></a>
 <p>Hasta ahora, los diseños de filtros en los que nos hemos concentrado han empleado<i>cualquiera</i>condensadores<i>or</i>inductores, pero nunca ambos al mismo tiempo.  A estas alturas ya deberíamos saber que las combinaciones de L y C tenderán a resonar, y esta propiedad puede explotarse en el diseño de circuitos de filtro de paso de banda y supresión de banda.</p>
 <p>Los circuitos LC en serie brindan una impedancia mínima en resonancia, mientras que los circuitos LC (“tanque”) en paralelo brindan una impedancia máxima en su frecuencia de resonancia.  Sabiendo esto, tenemos dos estrategias básicas para diseñar filtros de paso de banda o filtros de eliminación de banda.</p>
-<p>Para los filtros de paso de banda, las dos estrategias resonantes básicas son las siguientes: serie LC para pasar una señal (Figura<a href="#02124.png">  below</a>),
-<!--split for double ref-->o LC paralelo (Figura<a href="#02125.png">  below</a>) para acortar una señal.  Los dos esquemas se contrastarán y simularán aquí:</p>
+<p>Para los filtros de paso de banda, las dos estrategias resonantes básicas son las siguientes: serie LC para pasar una señal (Figura<a href="#02124.png">a continuación</a>),
+<!--split for double ref-->o LC paralelo (Figura<a href="#02125.png">a continuación</a>) para acortar una señal.  Los dos esquemas se contrastarán y simularán aquí:</p>
 <a name="02124.png"></a>
 <p> <img src="02124.png"/> </p>
 <p><i>Filtro paso banda LC resonante serie.</i></p>
-<p>Los componentes de la serie LC pasan la señal en resonancia y bloquean las señales de cualquier otra frecuencia para que no lleguen a la carga. (Cifra<a href="#22033.png">  below</a>)
+<p>Los componentes de la serie LC pasan la señal en resonancia y bloquean las señales de cualquier otra frecuencia para que no lleguen a la carga. (Cifra<a href="#22033.png">a continuación</a>)
 </p>
 <pre>
 series resonant bandpass filter
@@ -653,12 +653,12 @@ rload 3 0 1k
 <a name="Selectivity"></a>
 <a name="Filter “selectivity”"></a>
 <p>Un par de puntos a tener en cuenta: observe cómo prácticamente no hay atenuación de la señal dentro de la “banda de paso” (el rango de frecuencias cerca del pico de voltaje de carga), a diferencia de los filtros de paso de banda hechos solo con capacitores o inductores.  Además, dado que este filtro funciona según el principio de resonancia LC en serie, cuya frecuencia de resonancia no se ve afectada por la resistencia del circuito, el valor de la resistencia de carga no sesgará la frecuencia máxima.  Sin embargo, diferentes valores para la resistencia de carga<i>voluntad</i>cambiar la “inclinación” del diagrama de Bode (la “selectividad” del filtro).</p>
-<p>El otro estilo básico de filtros de paso de banda resonantes emplea un circuito de tanque (combinación LC paralela) para evitar que las señales de frecuencia demasiado altas o demasiado bajas lleguen a la carga: (Figura<a href="#02125.png">  below</a>)
+<p>El otro estilo básico de filtros de paso de banda resonantes emplea un circuito de tanque (combinación LC paralela) para evitar que las señales de frecuencia demasiado altas o demasiado bajas lleguen a la carga: (Figura<a href="#02125.png">a continuación</a>)
 </p>
 <a name="02125.png"></a>
 <p> <img src="02125.png"/> </p>
 <p><i>Filtro paso banda resonante paralelo.</i></p>
-<p>El circuito del tanque tendrá mucha impedancia en resonancia, lo que permitirá que la señal llegue a la carga con una atenuación mínima.  Sin embargo, por debajo o por encima de la frecuencia de resonancia, el circuito del tanque tendrá una baja impedancia, lo que provocará un cortocircuito en la señal y dejará caer la mayor parte a través de la resistencia en serie R.<sub>1</sub>. (Cifra<a href="#22034.png">  below</a>)
+<p>El circuito del tanque tendrá mucha impedancia en resonancia, lo que permitirá que la señal llegue a la carga con una atenuación mínima.  Sin embargo, por debajo o por encima de la frecuencia de resonancia, el circuito del tanque tendrá una baja impedancia, lo que provocará un cortocircuito en la señal y dejará caer la mayor parte a través de la resistencia en serie R.<sub>1</sub>. (Cifra<a href="#22034.png">a continuación</a>)
 </p>
 <pre>
 parallel resonant bandpass filter            
@@ -703,13 +703,13 @@ rload 2 0 1k
 <a name="52004.jpg"></a>
 <p> <img src="52004.jpg"/> </p>
 <p><i>El condensador variable sintoniza el circuito del tanque del receptor de radio para seleccionar una entre muchas estaciones de transmisión.</i></p>
-<p>El condensador variable y el inductor de núcleo de aire que se muestran en la Figura<a href="#52004.jpg">  above</a>Fotografía de una radio simple comprende los elementos principales del filtro del circuito del tanque utilizado para discriminar la señal de una estación de radio de otra.</p>
-<p>Así como podemos usar circuitos resonantes LC en serie y paralelo para pasar solo aquellas frecuencias dentro de un cierto rango, también podemos usarlos para bloquear frecuencias dentro de un cierto rango, creando un filtro de eliminación de banda.  Nuevamente, tenemos dos estrategias principales a seguir para hacer esto: usar resonancia en serie o en paralelo.  Primero, veremos la variedad de series: (Figura<a href="#02126.png">  below</a>)
+<p>El condensador variable y el inductor de núcleo de aire que se muestran en la Figura<a href="#52004.jpg">anterior</a>Fotografía de una radio simple comprende los elementos principales del filtro del circuito del tanque utilizado para discriminar la señal de una estación de radio de otra.</p>
+<p>Así como podemos usar circuitos resonantes LC en serie y paralelo para pasar solo aquellas frecuencias dentro de un cierto rango, también podemos usarlos para bloquear frecuencias dentro de un cierto rango, creando un filtro de eliminación de banda.  Nuevamente, tenemos dos estrategias principales a seguir para hacer esto: usar resonancia en serie o en paralelo.  Primero, veremos la variedad de series: (Figura<a href="#02126.png">a continuación</a>)
 </p>
 <a name="02126.png"></a>
 <p> <img src="02126.png"/> </p>
 <p><i>Filtro de parada de banda resonante en serie.</i></p>
-<p>Cuando la combinación LC en serie alcanza la resonancia, su muy baja impedancia corta la señal y la deja caer a través de la resistencia R.<sub>1</sub>e impidiendo su paso sobre la carga. (Cifra<a href="#22035.png">  below</a>)
+<p>Cuando la combinación LC en serie alcanza la resonancia, su muy baja impedancia corta la señal y la deja caer a través de la resistencia R.<sub>1</sub>e impidiendo su paso sobre la carga. (Cifra<a href="#22035.png">a continuación</a>)
 </p>
 <pre>
 series resonant bandstop filter    
@@ -748,12 +748,12 @@ rload 2 0 1k
 <a name="22035.png"></a>
 <p> <img src="22035.png"/> </p>
 <p><i>Filtro supresor de banda resonante en serie: Frecuencia de muesca = frecuencia resonante LC (159,15 Hz).</i></p>
-<p>A continuación, examinaremos el filtro de eliminación de banda resonante paralelo: (Figura<a href="#02127.png">  below</a>)
+<p>A continuación, examinaremos el filtro de eliminación de banda resonante paralelo: (Figura<a href="#02127.png">a continuación</a>)
 </p>
 <a name="02127.png"></a>
 <p> <img src="02127.png"/> </p>
 <p><i>Filtro de parada de banda resonante paralelo.</i></p>
-<p>Los componentes LC paralelos presentan una alta impedancia en frecuencia de resonancia, bloqueando así la señal de la carga en esa frecuencia.  Por el contrario, pasa señales a la carga en cualquier otra frecuencia. (Cifra<a href="#22036.png">  below</a>)
+<p>Los componentes LC paralelos presentan una alta impedancia en frecuencia de resonancia, bloqueando así la señal de la carga en esa frecuencia.  Por el contrario, pasa señales a la carga en cualquier otra frecuencia. (Cifra<a href="#22036.png">a continuación</a>)
 </p>
 <pre>
 parallel resonant bandstop filter  
@@ -793,13 +793,13 @@ rload 2 0 1k
 <p><i>Filtro supresor de banda resonante paralelo: Frecuencia de muesca = frecuencia resonante LC (159,15 Hz).</i></p>
 <p>Una vez más, observe cómo la ausencia de una resistencia en serie genera una atenuación mínima para todas las señales deseadas (pasadas).  Por el contrario, la amplitud en la frecuencia de muesca es muy baja.  En otras palabras, se trata de un filtro muy “selectivo”.</p>
 <p>En todos estos diseños de filtros resonantes, la selectividad depende en gran medida de la "pureza" de la inductancia y capacitancia utilizadas.  Si hay alguna resistencia parásita (especialmente probable en el inductor), esto disminuirá la capacidad del filtro para discriminar frecuencias con precisión, además de introducir efectos antiresonantes que sesgarán la frecuencia pico/muesca.</p>
-<p>En este punto es necesario hacer una advertencia a quienes diseñan filtros de paso bajo y paso alto.  Después de evaluar los diseños de filtros de paso bajo y paso alto estándar RC y LR, a un estudiante se le podría ocurrir que se podría lograr un diseño mejor y más efectivo de filtro de paso bajo o paso alto combinando elementos capacitivos e inductivos como en la Figura<a href="#02128.png">  below</a>.
+<p>En este punto es necesario hacer una advertencia a quienes diseñan filtros de paso bajo y paso alto.  Después de evaluar los diseños de filtros de paso bajo y paso alto estándar RC y LR, a un estudiante se le podría ocurrir que se podría lograr un diseño mejor y más efectivo de filtro de paso bajo o paso alto combinando elementos capacitivos e inductivos como en la Figura<a href="#02128.png">a continuación</a>.
 </p>
 <a name="02128.png"></a>
 <p> <img src="02128.png"/> </p>
 <p><i>Filtro de paso bajo inductivo capacitivo.</i></p>
 <p>Los inductores deben bloquear las frecuencias altas, mientras que el capacitor también debe cortocircuitar las frecuencias altas, ambos trabajando juntos para permitir que solo las señales de baja frecuencia lleguen a la carga.</p>
-<p>Al principio, esto parece ser una buena estrategia y elimina la necesidad de una resistencia en serie.  Sin embargo, el estudiante más perspicaz reconocerá que cualquier combinación de condensadores e inductores juntos en un circuito probablemente cause efectos resonantes a una determinada frecuencia.  La resonancia, como hemos visto antes, puede provocar que sucedan cosas extrañas.  Tracemos un análisis SPICE y veamos qué sucede en un amplio rango de frecuencia: (Figura<a href="#22037.png">  below</a>)
+<p>Al principio, esto parece ser una buena estrategia y elimina la necesidad de una resistencia en serie.  Sin embargo, el estudiante más perspicaz reconocerá que cualquier combinación de condensadores e inductores juntos en un circuito probablemente cause efectos resonantes a una determinada frecuencia.  La resonancia, como hemos visto antes, puede provocar que sucedan cosas extrañas.  Tracemos un análisis SPICE y veamos qué sucede en un amplio rango de frecuencia: (Figura<a href="#22037.png">a continuación</a>)
 </p>
 <pre>
 lc lowpass filter  
@@ -839,7 +839,7 @@ rload 3 0 1k
 <a name="22037.png"></a>
 <p> <img src="22037.png"/> </p>
 <p><i>Respuesta inesperada del filtro de paso bajo LC.</i></p>
-<p>Lo que se suponía que era un filtro de paso bajo resulta ser un filtro de paso de banda con un pico alrededor de 526 Hz.  La capacitancia y la inductancia en este circuito de filtro alcanzan resonancia en ese punto, creando una gran caída de voltaje alrededor de C.<sub>1</sub>, que se ve en la carga, independientemente de L<sub>2</sub>La influencia atenuante.  ¡El voltaje de salida a la carga en este punto en realidad excede el voltaje de entrada (fuente)!  Un poco más de reflexión revela que si L<sub>1</sub>y C<sub>2</sub>están en resonancia, impondrán una carga muy pesada (impedancia muy baja) en la fuente de CA, lo que podría no ser bueno tampoco.  Realizaremos el mismo análisis nuevamente, solo que esta vez trazando C<sub>1</sub>voltaje, vm(2) en la figura<a href="#22038.png">  below</a>, y la corriente de la fuente, I(v1), junto con el voltaje de carga, vm(3):</p>
+<p>Lo que se suponía que era un filtro de paso bajo resulta ser un filtro de paso de banda con un pico alrededor de 526 Hz.  La capacitancia y la inductancia en este circuito de filtro alcanzan resonancia en ese punto, creando una gran caída de voltaje alrededor de C.<sub>1</sub>, que se ve en la carga, independientemente de L<sub>2</sub>La influencia atenuante.  ¡El voltaje de salida a la carga en este punto en realidad excede el voltaje de entrada (fuente)!  Un poco más de reflexión revela que si L<sub>1</sub>y C<sub>2</sub>están en resonancia, impondrán una carga muy pesada (impedancia muy baja) en la fuente de CA, lo que podría no ser bueno tampoco.  Realizaremos el mismo análisis nuevamente, solo que esta vez trazando C<sub>1</sub>voltaje, vm(2) en la figura<a href="#22038.png">a continuación</a>, y la corriente de la fuente, I(v1), junto con el voltaje de carga, vm(3):</p>
 <!--legend:-->
 <!--*: v(3)-->
 <!--+: v(2)-->
@@ -878,12 +878,12 @@ rload 3 0 1k
 <pre>
            Z = (L/C)<sup>1/2</sup>
 </pre>
-<p>Tomando los valores de los componentes de (Figura<a href="#02128.png">  below</a>), podemos encontrar la impedancia del filtro y la , R requerida.<sub>g</sub>y r<sub>carga</sub>para igualarlo.</p>
+<p>Tomando los valores de los componentes de (Figura<a href="#02128.png">a continuación</a>), podemos encontrar la impedancia del filtro y la , R requerida.<sub>g</sub>y r<sub>carga</sub>para igualarlo.</p>
 <pre>
                 For L= 100 mH,   C= 1µF
            Z = (L/C)<sup>1/2</sup>=((100 mH)/(1 µF))<sup>1/2</sup> = 316 Ω
 </pre>
-<p>En la figura<a href="#02517.png">  below</a>hemos agregado R<sub>g</sub>= 316 Ω al generador, y cambió la carga R<sub>carga</sub>de 1000 Ω a 316 Ω.  Tenga en cuenta que si necesitáramos manejar una carga de 1000 Ω, la relación L/C podría haberse ajustado para igualar esa resistencia.</p>
+<p>En la figura<a href="#02517.png">a continuación</a>hemos agregado R<sub>g</sub>= 316 Ω al generador, y cambió la carga R<sub>carga</sub>de 1000 Ω a 316 Ω.  Tenga en cuenta que si necesitáramos manejar una carga de 1000 Ω, la relación L/C podría haberse ajustado para igualar esa resistencia.</p>
 <a name="02517.png"></a>
 <p> <img src="02517.png"/> </p>
 <p><i>Circuito de fuente y carga combinados con filtro de paso bajo LC.</i></p>
@@ -899,14 +899,14 @@ Rload 3 0 316
 .plot ac v(3)   
 .end    
 </pre>
-<p>Cifra<a href="#22056.png">  below</a>muestra la respuesta "plana" del filtro de paso bajo LC cuando la impedancia de fuente y carga coincide con las impedancias de entrada y salida del filtro.</p>
+<p>Cifra<a href="#22056.png">a continuación</a>muestra la respuesta "plana" del filtro de paso bajo LC cuando la impedancia de fuente y carga coincide con las impedancias de entrada y salida del filtro.</p>
 <a name="22056.png"></a>
 <p> <img src="22056.png"/> </p>
 <p><i>La respuesta del filtro de paso bajo LC de impedancia adaptada es casi plana hasta la frecuencia de corte.</i></p>
 <a name="swinging choke"></a>
 <a name="choke, swinging"></a>
-<p>El punto a destacar al comparar la respuesta del filtro inigualable (Figura<a href="#22037.png">  above</a>)
-<!--split for double ref-->al filtro correspondiente (Figura<a href="#22056.png">  above</a>) es que la carga variable en el filtro produce un cambio considerable de voltaje. Esta propiedad es directamente aplicable a las fuentes de alimentación con filtro LC:<i>regulación</i>es pobre. El voltaje de la fuente de alimentación cambia con un cambio en la carga. Esto es indeseable.</p>
+<p>El punto a destacar al comparar la respuesta del filtro inigualable (Figura<a href="#22037.png">anterior</a>)
+<!--split for double ref-->al filtro correspondiente (Figura<a href="#22056.png">anterior</a>) es que la carga variable en el filtro produce un cambio considerable de voltaje. Esta propiedad es directamente aplicable a las fuentes de alimentación con filtro LC:<i>regulación</i>es pobre. El voltaje de la fuente de alimentación cambia con un cambio en la carga. Esto es indeseable.</p>
 <p>Esta mala regulación de la carga puede mitigarse mediante un<i>estrangulador oscilante</i>. Este es un<i>ahogo</i>, inductor, diseñado para<i>saturar</i>cuando una gran corriente continua lo atraviesa. Por saturar queremos decir que la corriente CC crea un nivel "demasiado" alto de flujo en el núcleo magnético, de modo que el componente CA de la corriente no puede variar el flujo. Dado que la inducción es proporcional a dΦ/dt, la fuerte corriente continua disminuye la inductancia.  La disminución de la inductancia disminuye la reactancia X.<sub>L</sub>. La disminución de la reactancia reduce la caída de voltaje a través del inductor; aumentando así el voltaje en la salida del filtro. Esto mejora la regulación de tensión respecto a cargas variables.</p>
 <p>A pesar de la resonancia no deseada, los filtros de paso bajo formados por condensadores e inductores se utilizan con frecuencia como etapas finales en fuentes de alimentación de CA/CC para filtrar el voltaje de "ondulación" de CA no deseado fuera de la CC convertida de CA.  ¿A qué se debe esto, si este diseño de filtro en particular posee un punto de resonancia potencialmente problemático?</p>
 <p>La respuesta está en la selección de los tamaños de los componentes del filtro y las frecuencias encontradas en un convertidor CA/CC (rectificador).  Lo que intentamos hacer en un filtro de fuente de alimentación de CA/CC es separar el voltaje de CC de una pequeña cantidad de voltaje de CA de frecuencia relativamente alta.  Los inductores y condensadores del filtro son generalmente bastante grandes (lo típico son varios Henrys para los inductores y miles de µF para los condensadores), lo que hace que la frecuencia de resonancia del filtro sea muy, muy baja.  CC, por supuesto, tiene una “frecuencia” de cero, por lo que no hay forma de que pueda hacer resonar un circuito LC.  La tensión de ondulación, por otro lado, es una tensión alterna no sinusoidal que consta de una frecuencia fundamental al menos dos veces la frecuencia de la tensión alterna convertida, con armónicos muchas veces mayores.  Para fuentes de alimentación enchufables que funcionan con alimentación de CA de 60 Hz (60 Hz en Estados Unidos; 50 Hz en Europa), la frecuencia más baja que verá el filtro es de 120 Hz (100 Hz en Europa), que está muy por encima de su punto de resonancia.  Por lo tanto, se evita por completo el punto de resonancia potencialmente problemático en un filtro de este tipo.</p>

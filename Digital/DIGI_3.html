@@ -222,7 +222,7 @@
 <p>Moviendo el interruptor a la otra posición, aplicamos un "0" binario a la entrada y recibimos un "1" binario en la salida:</p>
 <p> <img src="04069.png"/> </p>
 <a name="Gate, digital"></a>
-<p>Lo que hemos creado aquí con un solo transistor es un circuito generalmente conocido como<i>puerta lógica</i>, o simplemente<i>puerta</i>.  Una puerta es un tipo especial de circuito amplificador diseñado para aceptar y generar señales de voltaje correspondientes a unos y ceros binarios.  Como tales, las puertas no están diseñadas para amplificar señales analógicas (señales de voltaje<i>entre</i> 0 and full voltage).  Used together, multiple gates may be applied to the task of binary number storage (memory circuits) or manipulation (computing circuits), each gate's output representing one bit of a multi-bit binary number.  Just how this is done is a subject for a later chapter.  Right now it is important to focus on the operation of individual gates.
+<p>Lo que hemos creado aquí con un solo transistor es un circuito generalmente conocido como<i>puerta lógica</i>, o simplemente<i>puerta</i>.  Una puerta es un tipo especial de circuito amplificador diseñado para aceptar y generar señales de voltaje correspondientes a unos y ceros binarios.  Como tales, las puertas no están diseñadas para amplificar señales analógicas (señales de voltaje<i>entre</i> 0 y full voltage).  Used together, multiple gates may be applied to the task of binary number storage (memory circuits) or manipulation (computing circuits), each gate's output representing one bit of a multi-bit binary number.  Just how this is done is a subject for a later chapter.  Right now it is important to focus on the operation of individual gates.
 </p>
 <a name="Inverter gate"></a>
 <a name="NOT gate"></a>
@@ -269,12 +269,12 @@
 <a name="Steering diode"></a>
 <p>El propósito de estos diodos es "dirigir" la corriente hacia o lejos de la base del transistor Q.<sub>2</sub>, dependiendo del nivel lógico de la entrada.  Exactamente cómo estos dos diodos son capaces de "dirigir" la corriente no es exactamente obvio en la primera inspección, por lo que puede ser necesario un breve ejemplo para comprenderlo.  Supongamos que tenemos el siguiente circuito de diodo/resistencia, que representa las uniones base-emisor de los transistores Q<sub>2</sub>y q<sub>4</sub>como diodos individuales, eliminando todas las demás partes del circuito para que podamos concentrarnos en la corriente "dirigida" a través de los dos diodos consecutivos:</p>
 <p> <img src="04164.png"/> </p>
-<p>Con el interruptor de entrada en la posición "arriba" (conectado a V<sub>cc</sub>), debería ser obvio que no habrá corriente a través del diodo de dirección izquierdo de Q<sub>1</sub>, porque no hay voltaje en el diodo-interruptor-R<sub>1</sub>-Cambiar bucle para motivar el flujo de electrones.  Sin embargo, hay<i>voluntad</i>ser actual a través del diodo de dirección derecho de Q<sub>1</sub>, así como a través de Q<sub>2</sub>unión base-diodo emisor y Q<sub>4</sub>Unión base-diodo emisor:</p>
+<p>Con el interruptor de entrada en la posición "arriba" (conectado a V<sub>cc</sub>), debería ser obvio que no habrá corriente a través del diodo de dirección izquierdo de Q<sub>1</sub>, porque no hay voltaje en el diodo-interruptor-R<sub>1</sub>-Cambiar bucle para motivar el flujo de electrones.  Sin embargo, habrá corriente a través del diodo de dirección derecho de Q<sub>1</sub>, así como a través de Q<sub>2</sub>unión base-diodo emisor y Q<sub>4</sub>Unión base-diodo emisor:</p>
 <p> <img src="04165.png"/> </p>
 <p>Esto nos dice que en el circuito de puerta real, los transistores Q<sub>2</sub>y q<sub>4</sub>tendrán corriente de base, que los encenderá para conducir la corriente del colector.  El voltaje total caído entre la base de Q<sub>1</sub>(el nodo que une los dos diodos de dirección espalda con espalda) y tierra será de aproximadamente 2,1 voltios, igual a las caídas de voltaje combinadas de tres uniones PN: el diodo de dirección derecho, Q<sub>2</sub>el diodo emisor de base y Q<sub>4</sub>Diodo emisor de base.</p>
 <p>Ahora, muevamos el interruptor de entrada a la posición "abajo" y veamos qué sucede:</p>
 <p> <img src="04166.png"/> </p>
-<p>Si tuviéramos que medir la corriente en este circuito, encontraríamos que<i>all</i>de la corriente pasa por el diodo de dirección izquierdo de Q<sub>1</sub> and <i>ninguno</i>de él a través del diodo derecho.  ¿Por qué es esto?  Todavía parece que hay un camino completo para la corriente a través de Q<sub>4</sub>diodo de Q<sub>2</sub>El diodo de , el diodo derecho del par y R.<sub>1</sub>Entonces, ¿por qué no habrá corriente por ese camino?</p>
+<p>Si tuviéramos que medir la corriente en este circuito, encontraríamos que<i>all</i>de la corriente pasa por el diodo de dirección izquierdo de Q<sub>1</sub> y <i>ninguno</i>de él a través del diodo derecho.  ¿Por qué es esto?  Todavía parece que hay un camino completo para la corriente a través de Q<sub>4</sub>diodo de Q<sub>2</sub>El diodo de , el diodo derecho del par y R.<sub>1</sub>Entonces, ¿por qué no habrá corriente por ese camino?</p>
 <a name="Forward voltage, PN junction"></a>
 <a name="Voltage, forward, PN junction"></a>
 <a name="Nonlinearity, PN junction"></a>
@@ -301,12 +301,12 @@
 <a name="Current sink"></a>
 <a name="Source, current"></a>
 <a name="Sink, current"></a>
-<p>Un circuito de puerta como acabamos de analizar tiene la capacidad de manejar la corriente de salida en dos direcciones: entrada y salida.  Técnicamente esto se conoce como<i>abastecimiento</i> and <i>hundimiento</i>actual, respectivamente.  Cuando la salida de la puerta es alta, hay continuidad desde el terminal de salida a V<sub>cc</sub>a través del transistor de salida superior (Q<sub>3</sub>), permitiendo que los electrones fluyan desde tierra, a través de una carga, hacia el terminal de salida de la puerta, a través del emisor de Q<sub>3</sub>, y finalmente hasta la V<sub>cc</sub>terminal de alimentación (lado positivo de la fuente de alimentación CC):</p>
+<p>Un circuito de puerta como acabamos de analizar tiene la capacidad de manejar la corriente de salida en dos direcciones: entrada y salida.  Técnicamente esto se conoce como<i>abastecimiento</i> y <i>hundimiento</i> de corriente, respectivamente.  Cuando la salida de la puerta es alta, hay continuidad desde el terminal de salida a V<sub>cc</sub>a través del transistor de salida superior (Q<sub>3</sub>), permitiendo que los electrones fluyan desde tierra, a través de una carga, hacia el terminal de salida de la puerta, a través del emisor de Q<sub>3</sub>, y finalmente hasta la V<sub>cc</sub>terminal de alimentación (lado positivo de la fuente de alimentación CC):</p>
 <p> <img src="04081.png"/> </p>
 <p>Para simplificar este concepto, podemos mostrar la salida de un circuito de compuerta como un interruptor de doble tiro, capaz de conectar el terminal de salida a V<sub>cc</sub>o suelo, dependiendo de su estado.  Para una puerta que genera un nivel lógico "alto", la combinación de Q<sub>3</sub>saturado y Q<sub>4</sub>El corte es análogo a un interruptor de doble tiro en el modo "V".<sub>cc</sub>"posición, que proporciona un camino para la corriente a través de una carga conectada a tierra:</p>
 <p> <img src="04080.png"/> </p>
 <p>Tenga en cuenta que este interruptor de dos posiciones que se muestra dentro del símbolo de la puerta es representativo de los transistores Q<sub>3</sub>y q<sub>4</sub>conectando alternativamente el terminal de salida a V<sub>cc</sub>o tierra,<i>not</i>del interruptor mostrado anteriormente enviando una señal de entrada a la puerta!</p>
-<p>Por el contrario, cuando un circuito de compuerta envía un nivel lógico "bajo" a una carga, es análogo a que el interruptor de doble tiro se coloque en la posición "tierra".  La corriente irá en sentido contrario si la resistencia de carga se conecta a V<sub>cc</sub>: desde tierra, a través del emisor de Q<sub>4</sub>, fuera del terminal de salida, a través de la resistencia de carga, y de regreso a V<sub>cc</sub>.  En esta condición, se dice que la puerta está<i>hundimiento</i>actual:</p>
+<p>Por el contrario, cuando un circuito de compuerta envía un nivel lógico "bajo" a una carga, es análogo a que el interruptor de doble tiro se coloque en la posición "tierra".  La corriente irá en sentido contrario si la resistencia de carga se conecta a V<sub>cc</sub>: desde tierra, a través del emisor de Q<sub>4</sub>, fuera del terminal de salida, a través de la resistencia de carga, y de regreso a V<sub>cc</sub>.  En esta condición, se dice que la puerta está<i>hundiendo</i>corriente:</p>
 <p> <img src="04082.png"/> </p>
 <p>
 </p>
@@ -338,7 +338,7 @@
 <li>Los circuitos de puerta construidos con resistencias, diodos y transistores bipolares como se ilustra en esta sección se denominan<i>TTL</i>.  TTL es un acrónimo que significa<i>Lógica transistor a transistor</i>.  Existen otras metodologías de diseño utilizadas en circuitos de compuerta, algunas de las cuales utilizan transistores de efecto de campo en lugar de transistores bipolares.</li>
 <li>Se dice que una puerta es<i>abastecimiento</i>corriente cuando proporciona un camino para la corriente entre el terminal de salida y el lado positivo de la fuente de alimentación de CC (V<sub>cc</sub>).  En otras palabras, está conectando el terminal de salida al<i>fuente de energía</i>(+V).</li>
 <li>Se dice que una puerta es<i>hundimiento</i>corriente cuando proporciona un camino para la corriente entre el terminal de salida y tierra.  En otras palabras, está poniendo a tierra (hundiendo) el terminal de salida.</li>
-<li>Circuitos de puerta con<i>tótem</i>las etapas de salida son capaces de<i>fuente</i> and <i>hundir</i>actual.  Circuitos de puerta con<i>coleccionista abierto</i>las etapas de salida solo pueden absorber corriente y no generar corriente.  Las compuertas de colector abierto son prácticas cuando se usan para controlar entradas de compuerta TTL porque las entradas TTL no requieren fuente de corriente.</li>
+<li>Circuitos de puerta con<i>tótem</i>las etapas de salida son capaces de<i>fuente</i> y <i>hundir</i>corriente.  Circuitos de puerta con<i>coleccionista abierto</i>las etapas de salida solo pueden absorber corriente y no generar corriente.  Las compuertas de colector abierto son prácticas cuando se usan para controlar entradas de compuerta TTL porque las entradas TTL no requieren fuente de corriente.</li>
 </ul>
 <h2><a name="xtocid91602">La puerta "buffer" (seguidor)</a></h2>
 <p>Si tuviéramos que conectar dos puertas inversoras para que la salida de una alimentara la entrada de la otra, las dos funciones de inversión se "cancelarían" entre sí para que no hubiera inversión desde la entrada hasta la salida final:</p>
@@ -363,7 +363,7 @@
 <p> <img src="04093.png"/> </p>
 <ul>
 <li><b>REVISAR:</b></li>
-<li>Dos puertas inversoras, o NO, conectadas en "serie" para invertir y luego volver a invertir, un bit binario realiza la función de un búfer.  Las puertas de búfer simplemente sirven para amplificar la señal: tomar una fuente de señal "débil" que no es capaz de generar o absorber mucha corriente y aumentar la capacidad actual de la señal para poder controlar una carga.</li>
+<li>Dos puertas inversoras, o NO, conectadas en "serie" para invertir y luego volver a invertir, un bit binario realiza la función de un búfer.  Las puertas de búfer simplemente sirven para amplificar la señal: tomar una fuente de señal "débil" que no es capaz de generar o absorber mucha corriente y aumentar la capacidad de corriente de la señal para poder controlar una carga.</li>
 <li>Los circuitos buffer están simbolizados por un símbolo de triángulo sin "burbuja" de inversor.</li>
 <li>Los buffers, al igual que los inversores, pueden fabricarse en forma de salida de colector abierto o de salida de tótem.</li>
 </ul>
@@ -375,7 +375,7 @@
 <p>Dado que son posibles tantas combinaciones con solo unos pocos terminales de entrada, existen muchos tipos diferentes de compuertas de entrada múltiple, a diferencia de las compuertas de entrada única que solo pueden ser inversores o buffers.  En esta sección se presentará cada tipo de puerta básica, mostrando su símbolo estándar, tabla de verdad y operación práctica.  Los circuitos TTL reales de estas diferentes puertas se explorarán en secciones posteriores.</p>
 <h3><u><a name="xtocid91604">La puerta AND</a></u></h3>
 <a name="AND gate"></a>
-<p>Una de las puertas de entradas múltiples más fáciles de entender es la puerta AND, llamada así porque la salida de esta puerta será "alta" (1) si y sólo si<i>all</i>entradas (primera entrada<i>and</i>la segunda entrada<i>and</i>. . .) son "altos" (1).  Si alguna entrada está "baja" (0), se garantiza que la salida también estará en un estado "bajo".</p>
+<p>Una de las puertas de entradas múltiples más fáciles de entender es la puerta AND, llamada así porque la salida de esta puerta será "alta" (1) si y sólo si<i>all</i>entradas (primera entrada<i>y</i>la segunda entrada<i>y</i>. . .) son "altos" (1).  Si alguna entrada está "baja" (0), se garantiza que la salida también estará en un estado "bajo".</p>
 <p> <img src="04100.png"/> </p>
 <p>En caso de que se lo esté preguntando, las puertas AND se fabrican con más de tres entradas, pero esto es menos común que la variedad simple de dos entradas.</p>
 <p>La tabla de verdad de una puerta AND de dos entradas se ve así:</p>
@@ -456,9 +456,9 @@
 <p>Como lo indica la tabla de verdad, el propósito de una puerta NOR exclusiva es generar un nivel lógico "alto" (1) siempre que ambas entradas estén en los mismos niveles lógicos (ya sea 00 u 11).</p>
 <ul>
 <li><b>REVISAR:</b></li>
-<li>Regla para una puerta AND: la salida es "alta" sólo si la primera entrada<i>and</i>La segunda entrada son ambas "altas".</li>
+<li>Regla para una puerta AND: la salida es "alta" sólo si la primera entrada<i>y</i>La segunda entrada son ambas "altas".</li>
 <li>Regla para una puerta OR: la salida es "alta" si la entrada A<i>or</i>la entrada B son "altas".</li>
-<li>Regla para una puerta NAND: la salida es<i>not</i>"alto" si tanto la primera entrada<i>and</i>la segunda entrada es "alta".</li>
+<li>Regla para una puerta NAND: la salida es<i>not</i>"alto" si tanto la primera entrada<i>y</i>la segunda entrada es "alta".</li>
 <li>Regla para una puerta NOR: la salida es<i>not</i>"alto" si la primera entrada<i>or</i>la segunda entrada es "alta".</li>
 <li>Una puerta Y negativa se comporta como una puerta NOR.</li>
 <li>Una puerta O negativo se comporta como una puerta NAND.</li>
@@ -611,7 +611,7 @@
 <li><b>REVISAR:</b></li>
 <li>Las puertas lógicas CMOS están hechas de transistores IGFET (MOSFET) en lugar de transistores de unión bipolar.</li>
 <li>Las entradas de la puerta CMOS son sensibles a la electricidad estática.  Pueden resultar dañados por altos voltajes y pueden asumir cualquier nivel lógico si se dejan flotando.</li>
-<li><i>dominada</i> and <i>desplegable</i>Las resistencias se utilizan para evitar que la entrada de una puerta CMOS flote si es impulsada por una fuente de señal capaz solo de generar o absorber corriente.</li>
+<li><i>dominada</i> y <i>desplegable</i>Las resistencias se utilizan para evitar que la entrada de una puerta CMOS flote si es impulsada por una fuente de señal capaz solo de generar o absorber corriente.</li>
 <li>Las puertas CMOS disipan mucha menos energía que las puertas TTL equivalentes, pero su disipación de potencia aumenta con la frecuencia de la señal, mientras que la disipación de potencia de una puerta TTL es aproximadamente constante en una amplia gama de condiciones operativas.</li>
 <li>Las entradas de compuerta CMOS consumen mucha menos corriente que las entradas TTL, porque los MOSFET son dispositivos controlados por voltaje, no por corriente.</li>
 <li>Las puertas CMOS pueden funcionar con una gama mucho más amplia de voltajes de alimentación que TTL: normalmente de 3 a 15 voltios frente a 4,75 a 5,25 voltios para TTL.</li>
@@ -728,7 +728,7 @@
 <p> <img src="04323.png"/> </p>
 <p>Por supuesto, no habrá ningún problema con que la puerta CMOS interprete la salida "baja" de la puerta TTL, pero una señal "alta" de la puerta TTL es otra cuestión completamente distinta.  El rango de voltaje de salida garantizado de 2,7 voltios a 5 voltios de la salida de la puerta TTL no está ni cerca del rango aceptable de la puerta CMOS de 7 voltios a 10 voltios para una señal "alta".  Si utilizamos un<i>coleccionista abierto</i>Puerta TTL en lugar de una puerta de salida de tótem, sin embargo, una resistencia pullup a los 10 voltios V<sub>dd</sub>El riel de suministro elevará el voltaje de salida "alto" de la puerta TTL al voltaje de fuente de alimentación total que suministra la puerta CMOS.  Dado que una compuerta de colector abierto solo puede absorber corriente, no generar corriente, el nivel de voltaje del estado "alto" está completamente determinado por la fuente de alimentación a la que está conectada la resistencia pullup, resolviendo así claramente el problema de desajuste:</p>
 <p> <img src="04324.png"/> </p>
-<p>Debido a las excelentes características de voltaje de salida de las puertas CMOS, normalmente no hay problemas para conectar una salida CMOS a una entrada TTL.  El único problema importante es la carga actual presentada por las entradas TTL, ya que la salida CMOS debe absorber corriente para cada una de las entradas TTL mientras está en el estado "bajo".</p>
+<p>Debido a las excelentes características de voltaje de salida de las puertas CMOS, normalmente no hay problemas para conectar una salida CMOS a una entrada TTL.  El único problema importante es la carga de corriente presentada por las entradas TTL, ya que la salida CMOS debe absorber corriente para cada una de las entradas TTL mientras está en el estado "bajo".</p>
 <p>Cuando la puerta CMOS en cuestión está alimentada por una fuente de voltaje superior a 5 voltios (V<sub>cc</sub>), sin embargo, se producirá un problema.  El estado de salida "alto" de la puerta CMOS, al ser superior a 5 voltios, excederá los límites de entrada aceptables de la puerta TTL para una señal "alta".  Una solución a este problema es crear un circuito inversor de "colector abierto" utilizando un transistor NPN discreto y utilizarlo para interconectar las dos puertas:</p>
 <p> <img src="04329.png"/> </p>
 <p>La "R<sub>pull-up</sub>"La resistencia es opcional, ya que las entradas TTL asumen automáticamente un estado "alto" cuando se dejan flotando, que es lo que sucederá cuando la salida de la puerta CMOS sea "baja" y el transistor se corte. Por supuesto, una consecuencia muy importante de implementar esta solución es la inversión lógica creada por el transistor: cuando la puerta CMOS emite una señal "baja", la puerta TTL ve una entrada "alta"; y cuando la puerta CMOS emite una señal "alta", el transistor se satura y la puerta TTL ve una entrada "baja" Siempre que esta inversión se tenga en cuenta en el esquema lógico del sistema, todo estará bien.</p>
