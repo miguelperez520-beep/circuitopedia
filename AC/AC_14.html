@@ -364,7 +364,7 @@ Sin embargo, si nosotros<i>terminar</i>la línea con una resistencia de 50 Ω, l
 <p> <img src="02370.png"/> </p>
 <p><i>Línea terminada en impedancia característica.</i></p>
 <p>En esencia, una resistencia terminal que coincide con la impedancia natural de la línea de transmisión hace que la línea "parezca" infinitamente larga desde la perspectiva de la fuente, porque una resistencia tiene la capacidad de disipar energía eternamente de la misma manera que una línea de transmisión de longitud infinita es capaz de absorber energía eternamente.</p>
-<p>Las ondas reflejadas también se manifestarán si la resistencia terminal no es exactamente igual a la impedancia característica de la línea de transmisión, no solo si la línea se deja desconectada (abierta) o puenteada (en cortocircuito).  Aunque la reflexión de energía no será total con una impedancia terminal de ligero desajuste, será parcial.  Esto sucede ya sea que la resistencia terminal esté o no<i>mayor que</i> or <i>menos</i>que la impedancia característica de la línea.</p>
+<p>Las ondas reflejadas también se manifestarán si la resistencia terminal no es exactamente igual a la impedancia característica de la línea de transmisión, no solo si la línea se deja desconectada (abierta) o puenteada (en cortocircuito).  Aunque la reflexión de energía no será total con una impedancia terminal de ligero desajuste, será parcial.  Esto sucede ya sea que la resistencia terminal esté o no<i>mayor que</i> o <i>menos</i>que la impedancia característica de la línea.</p>
 <p>También pueden producirse nuevos reflejos de una onda reflejada en el<i>final de la fuente</i>de una línea de transmisión, si la impedancia interna de la fuente (impedancia equivalente de Thevenin) no es exactamente igual a la impedancia característica de la línea.  Una onda reflejada que regresa a la fuente se disipará por completo si la impedancia de la fuente coincide con la de la línea, pero se reflejará hacia el final de la línea como otra onda incidente, al menos parcialmente, si la impedancia de la fuente no coincide con la línea.  Este tipo de reflexión puede ser particularmente problemática, ya que hace que parezca que la fuente ha transmitido otro pulso.</p>
 <ul>
 <li><b>REVISAR:</b></li>
@@ -529,14 +529,14 @@ rload 3 0 999meg
 <p> <img src="02386.png"/> </p>
 <p><i>Ondas estacionarias dobles en línea de transmisión abierta de onda completa.</i></p>
 <p>De manera similar, una línea de transmisión en cortocircuito genera ondas estacionarias, aunque las asignaciones de nodo y antinodo para voltaje y corriente están invertidas: en el extremo en cortocircuito de la línea, habrá voltaje cero (nodo) y corriente máxima (antinodo).  Lo que sigue es la simulación SPICE (circuito Figura<a href="#02380.png">a continuación</a>
-<!--split for double ref-->e ilustraciones de lo que sucede (Figura<a href="#22003.png">  2nd-below</a>en resonancias) 
+<!--split for double ref-->e ilustraciones de lo que sucede (Figura<a href="#22003.png"> 2.ª figura siguiente</a>en resonancias) 
 en todas las frecuencias interesantes: 0 Hz (Figura<a href="#02388.png">a continuación</a>) ,
 <!--formerly, split for double ref-->
-250 kHz (Figure <a href="#02389.png">a continuación</a>),
+250 kHz (Figura <a href="#02389.png">a continuación</a>),
 <!--split for double ref below-->
-500 kHz (Figure <a href="#02390.png">a continuación</a>),
+500 kHz (Figura <a href="#02390.png">a continuación</a>),
 <!--split for double ref -->
-750 kHz (Figure <a href="#02391.png">a continuación</a>),
+750 kHz (Figura <a href="#02391.png">a continuación</a>),
 <!--split for double ref -->y 1 MHz (Figura<a href="#02392.png">a continuación</a>).
 <!--formerly, split for double ref-->El puente de cortocircuito se simula mediante una impedancia de carga de 1 µΩ: (Figura<a href="#02380.png">a continuación</a>)
 </p>
@@ -653,9 +653,9 @@ freq          v(1,2)      v(1)        v(2)        v(3)
 <a name="02398.png"></a>
 <p> <img src="02398.png"/> </p>
 <p><i>A f=1 MHz: entrada: V=0,5714, I=5,715 mA; final: V=0,5714, I=0,5715 mA.</i></p>
-<p>En armónicos impares de la frecuencia fundamental (250 kHz, Figura<a href="#02395.png">  3rd-above</a>
+<p>En armónicos impares de la frecuencia fundamental (250 kHz, Figura<a href="#02395.png"> 3.ª figura anterior</a>
 <!--split for double ref-->y 750 kHz, Figura<a href="#02397.png">anterior</a>)
-<!--split for double ref-->Vemos diferentes niveles de voltaje en cada extremo de la línea de transmisión, porque a esas frecuencias las ondas estacionarias terminan en un extremo en un nodo y en el otro extremo en un antinodo.  A diferencia de los ejemplos de líneas de transmisión en circuito abierto y en cortocircuito, los niveles de voltaje máximo y mínimo a lo largo de esta línea de transmisión no alcanzan los mismos valores extremos de 0% y 100% de voltaje de fuente, pero todavía tenemos puntos de voltaje "mínimo" y "máximo". (Cifra<a href="#22004.png">  6th-above</a>) Lo mismo se aplica a la corriente: si la impedancia terminal de la línea no coincide con la impedancia característica de la línea, tendremos puntos de corriente mínima y máxima en ciertas ubicaciones fijas de la línea, correspondientes a los nodos y antinodos de la onda de corriente estacionaria, respectivamente.</p>
+<!--split for double ref-->Vemos diferentes niveles de voltaje en cada extremo de la línea de transmisión, porque a esas frecuencias las ondas estacionarias terminan en un extremo en un nodo y en el otro extremo en un antinodo.  A diferencia de los ejemplos de líneas de transmisión en circuito abierto y en cortocircuito, los niveles de voltaje máximo y mínimo a lo largo de esta línea de transmisión no alcanzan los mismos valores extremos de 0% y 100% de voltaje de fuente, pero todavía tenemos puntos de voltaje "mínimo" y "máximo". (Cifra<a href="#22004.png"> 6.ª figura anterior</a>) Lo mismo se aplica a la corriente: si la impedancia terminal de la línea no coincide con la impedancia característica de la línea, tendremos puntos de corriente mínima y máxima en ciertas ubicaciones fijas de la línea, correspondientes a los nodos y antinodos de la onda de corriente estacionaria, respectivamente.</p>
 <a name="Standing wave ratio"></a>
 <a name="SWR"></a>
 <p>Una forma de expresar la gravedad de las ondas estacionarias es como una relación entre la amplitud máxima (antinodo) y la amplitud mínima (nodo), para voltaje o corriente.  Cuando una línea termina en abierto o en corto, esto<i>relación de onda estacionaria</i>, o<i>SWR</i>se valora en el infinito, ya que la amplitud mínima será cero, y cualquier valor finito dividido por cero da como resultado un cociente infinito (en realidad, “indefinido”).  En este ejemplo, con una línea de 75 Ω terminada por una impedancia de 100 Ω, la ROE será finita: 1,333, calculada tomando el voltaje de línea máximo a 250 kHz o 750 kHz (0,5714 voltios) y dividiéndolo por el voltaje de línea mínimo (0,4286 voltios).</p>

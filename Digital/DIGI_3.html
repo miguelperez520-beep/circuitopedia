@@ -222,7 +222,7 @@
 <p>Moviendo el interruptor a la otra posición, aplicamos un "0" binario a la entrada y recibimos un "1" binario en la salida:</p>
 <p> <img src="04069.png"/> </p>
 <a name="Gate, digital"></a>
-<p>Lo que hemos creado aquí con un solo transistor es un circuito generalmente conocido como<i>puerta lógica</i>, o simplemente<i>puerta</i>.  Una puerta es un tipo especial de circuito amplificador diseñado para aceptar y generar señales de voltaje correspondientes a unos y ceros binarios.  Como tales, las puertas no están diseñadas para amplificar señales analógicas (señales de voltaje<i>entre</i> 0 y full voltage).  Used together, multiple gates may be applied to the task of binary number storage (memory circuits) or manipulation (computing circuits), each gate's output representing one bit of a multi-bit binary number.  Just how this is done is a subject for a later chapter.  Right now it is important to focus on the operation of individual gates.
+<p>Lo que hemos creado aquí con un solo transistor es un circuito generalmente conocido como<i>puerta lógica</i>, o simplemente<i>puerta</i>.  Una puerta es un tipo especial de circuito amplificador diseñado para aceptar y generar señales de voltaje correspondientes a unos y ceros binarios.  Como tales, las puertas no están diseñadas para amplificar señales analógicas (señales de voltaje<i>entre</i> 0 y full voltage).  Usadas conjuntamente, múltiples puertas pueden aplicarse a la tarea de almacenamiento de números binarios (circuitos de memoria) o manipulación (circuitos de cómputo), donde la salida de cada puerta representa un bit de un número binario de varios bits. Cómo se logra esto es tema de un capítulo posterior. Por ahora es importante centrarse en el funcionamiento de las puertas individuales.
 </p>
 <a name="Inverter gate"></a>
 <a name="NOT gate"></a>
@@ -404,7 +404,7 @@
 <p>Al igual que las puertas AND, las puertas NAND se fabrican con más de dos entradas.  En tales casos, se aplica el mismo principio general: la salida será "baja" (0) si y sólo si todas las entradas son "altas" (1).  Si alguna entrada es "baja" (0), la salida pasará a "alta" (1).</p>
 <h3><u><a name="xtocid91606">La puerta OR</a></u></h3>
 <a name="OR gate"></a>
-<p>Nuestra siguiente puerta a investigar es la puerta OR, llamada así porque la salida de esta puerta será "alta" (1) si<i>any</i>de las entradas (primera entrada<i>or</i>la segunda entrada<i>or</i>. . .) son "altos" (1).  La salida de una puerta OR pasa a "baja" (0) si y sólo si todas las entradas son "bajas" (0).</p>
+<p>Nuestra siguiente puerta a investigar es la puerta OR, llamada así porque la salida de esta puerta será "alta" (1) si<i>any</i>de las entradas (primera entrada<i>o</i>la segunda entrada<i>o</i>. . .) son "altos" (1).  La salida de una puerta OR pasa a "baja" (0) si y sólo si todas las entradas son "bajas" (0).</p>
 <p> <img src="04107.png"/> </p>
 <p>La tabla de verdad de una puerta OR de dos entradas se ve así:</p>
 <p> <img src="04108.png"/> </p>
@@ -457,9 +457,9 @@
 <ul>
 <li><b>REVISAR:</b></li>
 <li>Regla para una puerta AND: la salida es "alta" sólo si la primera entrada<i>y</i>La segunda entrada son ambas "altas".</li>
-<li>Regla para una puerta OR: la salida es "alta" si la entrada A<i>or</i>la entrada B son "altas".</li>
+<li>Regla para una puerta OR: la salida es "alta" si la entrada A<i>o</i>la entrada B son "altas".</li>
 <li>Regla para una puerta NAND: la salida es<i>not</i>"alto" si tanto la primera entrada<i>y</i>la segunda entrada es "alta".</li>
-<li>Regla para una puerta NOR: la salida es<i>not</i>"alto" si la primera entrada<i>or</i>la segunda entrada es "alta".</li>
+<li>Regla para una puerta NOR: la salida es<i>not</i>"alto" si la primera entrada<i>o</i>la segunda entrada es "alta".</li>
 <li>Una puerta Y negativa se comporta como una puerta NOR.</li>
 <li>Una puerta O negativo se comporta como una puerta NAND.</li>
 <li>Regla para una puerta OR exclusiva: la salida es "alta" si los niveles lógicos de entrada son<i>diferente</i>.</li>
@@ -545,7 +545,7 @@
 <p>El uso de transistores de efecto de campo en lugar de transistores bipolares ha simplificado enormemente el diseño de la puerta del inversor.  Tenga en cuenta que la salida de esta compuerta nunca flota como es el caso del circuito TTL más simple: tiene una configuración natural de "tótem", capaz de generar y hundir corriente de carga.  La clave del elegante diseño de este circuito de puerta es la<i>complementario</i>uso de IGFET de canal P y N.  Dado que los IGFET se conocen más comúnmente como MOSFET (<b>M</b>etal-<b>O</b>xide-<b>S</b>semiconductor<b>F</b>campo<b>E</b>efecto<b>T</b>transistor), y este circuito utiliza transistores de canal P y N juntos, la clasificación general dada a circuitos de puerta como este es<i>CMOS</i>: <b>C</b>complementario<b>M</b>etál<b>O</b>xido<b>S</b>semiconductor.</p>
 <a name="Electrostatic sensitivity, CMOS"></a>
 <a name="Floating inputs, CMOS vs. TTL"></a>
-<p>Los circuitos CMOS no están afectados por las no linealidades inherentes de los transistores de efecto de campo, porque como circuitos digitales sus transistores siempre operan en cualquiera de los dos lados:<i>saturado</i> or <i>cierre</i>modos y nunca en el<i>activo</i>modo.  Sin embargo, sus entradas son sensibles a los altos voltajes generados por fuentes electrostáticas (electricidad estática), e incluso pueden activarse en estados "alto" (1) o "bajo" (0) por fuentes de voltaje espurio si se dejan flotando.  Por esta razón, no es aconsejable permitir que una entrada de puerta lógica CMOS flote bajo ninguna circunstancia.  Tenga en cuenta que esto es muy diferente del comportamiento de una puerta TTL donde una entrada flotante se interpreta de forma segura como un nivel lógico "alto" (1).</p>
+<p>Los circuitos CMOS no están afectados por las no linealidades inherentes de los transistores de efecto de campo, porque como circuitos digitales sus transistores siempre operan en cualquiera de los dos lados:<i>saturado</i> o <i>corte</i>modos y nunca en el<i>activo</i>modo.  Sin embargo, sus entradas son sensibles a los altos voltajes generados por fuentes electrostáticas (electricidad estática), e incluso pueden activarse en estados "alto" (1) o "bajo" (0) por fuentes de voltaje espurio si se dejan flotando.  Por esta razón, no es aconsejable permitir que una entrada de puerta lógica CMOS flote bajo ninguna circunstancia.  Tenga en cuenta que esto es muy diferente del comportamiento de una puerta TTL donde una entrada flotante se interpreta de forma segura como un nivel lógico "alto" (1).</p>
 <p>Esto puede causar un problema si la entrada a una puerta lógica CMOS es controlada por un interruptor de un solo paso, donde un estado tiene la entrada sólidamente conectada a V<sub>dd</sub>o tierra y el otro estado tiene la entrada flotante (no conectada a nada):</p>
 <p> <img src="04135.png"/> </p>
 <p>Además, este problema surge si una entrada de puerta CMOS está siendo controlada por un<i>coleccionista abierto</i>Puerta TTL.  Debido a que la salida de dicha puerta TTL flota cuando sube a "alto" (1), la entrada de la puerta CMOS quedará en un estado incierto:</p>
@@ -587,7 +587,7 @@
 <a name="NOR gate, CMOS"></a>
 <p>Un circuito de puerta CMOS NOR utiliza cuatro MOSFET al igual que la puerta NAND, excepto que sus transistores están dispuestos de manera diferente.  En lugar de dos paralelos<i>abastecimiento</i>transistores (superiores) conectados a V<sub>dd</sub>y dos conectados en serie<i>hundimiento</i>transistores (inferiores) conectados a tierra, la puerta NOR utiliza dos transistores fuente conectados en serie y dos transistores disipadores conectados en paralelo como este:</p>
 <p> <img src="04147.png"/> </p>
-<p>Al igual que con la puerta NAND, los transistores Q<sub>1</sub>y q<sub>3</sub>funcionan como un par complementario, al igual que los transistores Q<sub>2</sub>y q<sub>4</sub>.  Cada par está controlado por una única señal de entrada.  Si<i>cualquiera</i>entrada A<i>or</i>entrada B son "altas" (1), al menos uno de los transistores inferiores (Q<sub>3</sub>o Q<sub>4</sub>) se saturará, lo que hará que la salida sea "baja" (0).  Sólo en el caso de<i>ambos</i>Si las entradas son "bajas" (0), ambos transistores inferiores estarán en modo de corte y ambos transistores superiores estarán saturados, las condiciones necesarias para que la salida pase a "alta" (1).  Este comportamiento, por supuesto, define la función lógica NOR.</p>
+<p>Al igual que con la puerta NAND, los transistores Q<sub>1</sub>y q<sub>3</sub>funcionan como un par complementario, al igual que los transistores Q<sub>2</sub>y q<sub>4</sub>.  Cada par está controlado por una única señal de entrada.  Si<i>cualquiera</i>entrada A<i>o</i>entrada B son "altas" (1), al menos uno de los transistores inferiores (Q<sub>3</sub>o Q<sub>4</sub>) se saturará, lo que hará que la salida sea "baja" (0).  Sólo en el caso de<i>ambos</i>Si las entradas son "bajas" (0), ambos transistores inferiores estarán en modo de corte y ambos transistores superiores estarán saturados, las condiciones necesarias para que la salida pase a "alta" (1).  Este comportamiento, por supuesto, define la función lógica NOR.</p>
 <a name="OR gate, CMOS"></a>
 <p>La función OR se puede construir a partir de la puerta NOR básica agregando una etapa inversora en la salida:</p>
 <p> <img src="04148.png"/> </p>

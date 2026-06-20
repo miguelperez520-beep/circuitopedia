@@ -249,7 +249,7 @@
 </p>
 <ul>
 <li>Cuatro baterías de 6 voltios</li>
-<li>12-volt light bulb, 25 or 50 watt</li>
+<li>12-volt light bulb, 25 o 50 watt</li>
 <li>Portalámparas</li>
 </ul>
 <p>Las lámparas de 12 voltios de alto voltaje se pueden comprar en tiendas de suministros para vehículos recreativos (RV) y embarcaciones.  Los tamaños comunes son 25 vatios y 50 vatios.  Esta lámpara se utilizará como carga "pesada" para sus baterías (<i>pesado</i> load = one that draws substantial current).
@@ -1040,7 +1040,7 @@ A <i>transformador</i>es un dispositivo que normalmente se utiliza con circuitos
 <a name="Null-balance voltmeter"></a>
 <a name="Null detector"></a>
 <a name="Detector, null"></a>
-<p>¿Hay alguna manera de hacer un voltímetro "perfecto": uno que tenga una resistencia infinita y no extraiga corriente del circuito bajo prueba?  Los voltímetros de laboratorio modernos abordan este objetivo mediante el uso de circuitos "amplificadores" semiconductores, pero este método es demasiado avanzado tecnológicamente para que el estudiante o aficionado pueda duplicarlo.  Una técnica mucho más simple y antigua se llama<i>potenciométrico</i> or <i>saldo nulo</i>método.  Esto implica el uso de una fuente de voltaje ajustable para "equilibrar" el voltaje medido.  Cuando los dos voltajes son iguales, como lo indica un sensor muy sensible<i>detector nulo</i>, la fuente de voltaje ajustable se mide con un voltímetro común.  Debido a que las dos fuentes de voltaje son iguales entre sí, medir la fuente ajustable es lo mismo que medir a través del circuito de prueba, excepto que no hay error de "impacto" porque la fuente ajustable proporciona cualquier corriente que necesite el voltímetro.  En consecuencia, el circuito bajo prueba no se ve afectado, lo que permite medir su verdadera caída de voltaje.</p>
+<p>¿Hay alguna manera de hacer un voltímetro "perfecto": uno que tenga una resistencia infinita y no extraiga corriente del circuito bajo prueba?  Los voltímetros de laboratorio modernos abordan este objetivo mediante el uso de circuitos "amplificadores" semiconductores, pero este método es demasiado avanzado tecnológicamente para que el estudiante o aficionado pueda duplicarlo.  Una técnica mucho más simple y antigua se llama<i>potenciométrico</i> o <i>saldo nulo</i>método.  Esto implica el uso de una fuente de voltaje ajustable para "equilibrar" el voltaje medido.  Cuando los dos voltajes son iguales, como lo indica un sensor muy sensible<i>detector nulo</i>, la fuente de voltaje ajustable se mide con un voltímetro común.  Debido a que las dos fuentes de voltaje son iguales entre sí, medir la fuente ajustable es lo mismo que medir a través del circuito de prueba, excepto que no hay error de "impacto" porque la fuente ajustable proporciona cualquier corriente que necesite el voltímetro.  En consecuencia, el circuito bajo prueba no se ve afectado, lo que permite medir su verdadera caída de voltaje.</p>
 <p>Examine el siguiente esquema para ver cómo se implementa el método del voltímetro potenciométrico:</p>
 <p> <img src="05170.png"/> </p>
 <p>El símbolo del círculo con la palabra "nulo" escrita en su interior representa el detector nulo.  Puede ser cualquier movimiento del medidor o indicador de voltaje arbitrariamente sensible.  Su único propósito en este circuito es indicar cuando hay<i>cero</i>voltaje: cuando la fuente de voltaje ajustable (potenciómetro) es exactamente igual a la caída de voltaje en el circuito bajo prueba.  Cuanto más sensible sea este detector nulo, con mayor precisión se podrá ajustar la fuente ajustable para igualar el voltaje bajo prueba, y con mayor precisión se podrá medir ese voltaje de prueba.</p>
@@ -1076,7 +1076,7 @@ rmeter 3 0 50k
 <p>Esta simulación de SPICE muestra el voltaje real en R<sub>2</sub>del circuito de prueba, el voltaje del detector nulo y el voltaje a través de la fuente de voltaje ajustable, ya que esa fuente se ajusta de 0 voltios a 6 voltios en pasos de 0,5 voltios.  En el resultado de esta simulación, notará que el voltaje en R<sub>2</sub> <i>is</i>impactado significativamente cuando el circuito de medición está desequilibrado, volviendo a su voltaje real solo cuando hay voltaje prácticamente cero a través del detector nulo.  En ese punto, por supuesto, la fuente de voltaje ajustable está en un valor de 3.000 voltios: exactamente igual a la caída de voltaje (no afectada) del circuito de prueba.</p>
 <p>¿Cuál es la lección que se puede aprender de esta simulación?  Que un voltímetro potenciométrico evite impactar el circuito de prueba<i>solo</i>cuando está en condición de perfecto equilibrio ("nulo") con el circuito de prueba!</p>
 <br/>
-<h2><a name="xtocid942813">4-wire resistance measurement</a></h2>
+<h2><a name="xtocid942813">Medición de resistencia de 4 cables</a></h2>
 <p>
 <b>PIEZAS Y MATERIALES</b>
 </p>

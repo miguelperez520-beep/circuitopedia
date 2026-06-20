@@ -208,7 +208,7 @@
 <p>Dado que muchos de estos circuitos integrados tienen terminales de "reinicio", "habilitación" y "deshabilitación" que necesitan mantenerse en un estado "alto" o "bajo", sin mencionar el V<sub>DD</sub>(o V<sub>CC</sub>) y terminales de alimentación a tierra que requieren conexión a la fuente de alimentación, es muy útil tener ambos terminales de la fuente de alimentación fácilmente disponibles para la conexión en cualquier punto a lo largo de la longitud de la placa.</p>
 <p>La mayoría de las placas que he visto tienen estos orificios para "rieles" de fuente de alimentación, pero algunas no.  Hasta este punto, he estado ilustrando circuitos usando una placa que carece de esta característica, solo para mostrar que no es absolutamente necesario.  Sin embargo, los circuitos digitales parecen requerir más conexiones a la fuente de alimentación que otros tipos de circuitos de placa, lo que hace que esta característica sea más que una simple conveniencia.</p>
 <br/>
-<h2><a name="xtocid94671">Basic gate function</a></h2>
+<h2><a name="xtocid94671">Función básica de la puerta lógica</a></h2>
 <p>
 <b>PIEZAS Y MATERIALES</b>
 </p>
@@ -326,7 +326,7 @@
 <p>Si designamos el interruptor izquierdo como entrada "Set" y el interruptor derecho como "Reset", el LED izquierdo será la salida "Q" y el LED derecho la salida "Q-not".  Con la entrada Set "alta" (encendido) y la entrada Reset "baja", Q pasará a "alta" y Q-not pasará a "baja".  Esto se conoce como el<i>set</i>estado del circuito.  Hacer que la entrada Restablecer sea "alta" y la entrada Establecer "baja" invierte el estado de salida del circuito de bloqueo: Q "bajo" y Q-no "alto".  Esto se conoce como el<i>reiniciar</i>estado del circuito.  Si ambas entradas se colocan en el estado "bajo", las salidas Q y Q-not del circuito permanecerán en sus últimos estados, "recordando" sus configuraciones anteriores.  Esto se conoce como el<i>cerrado</i>estado del circuito.</p>
 <a name="Invalid state"></a>
 <a name="Illegal state"></a>
-<p>Debido a que las salidas han sido designadas "Q" y "Q-not", se da a entender que sus estados siempre serán complementarios (opuestos).  Por lo tanto, si sucediera algo que obligara a ambas salidas a la<i>mismo</i>estado, nos inclinaríamos a llamar a ese modo del circuito "inválido".  Esto es exactamente lo que sucederá si hacemos que las entradas Set y Reset sean "altas": tanto las salidas Q como Q-not serán forzadas al mismo estado lógico "bajo".  Esto se conoce como el<i>inválido</i> or <i>ilegal</i>estado del circuito, no porque algo haya salido mal, sino porque las salidas no han cumplido con las expectativas establecidas por sus etiquetas.</p>
+<p>Debido a que las salidas han sido designadas "Q" y "Q-not", se da a entender que sus estados siempre serán complementarios (opuestos).  Por lo tanto, si sucediera algo que obligara a ambas salidas a la<i>mismo</i>estado, nos inclinaríamos a llamar a ese modo del circuito "inválido".  Esto es exactamente lo que sucederá si hacemos que las entradas Set y Reset sean "altas": tanto las salidas Q como Q-not serán forzadas al mismo estado lógico "bajo".  Esto se conoce como el<i>inválido</i> o <i>ilegal</i>estado del circuito, no porque algo haya salido mal, sino porque las salidas no han cumplido con las expectativas establecidas por sus etiquetas.</p>
 <p>Dado que el estado "bloqueado" es una condición histerética mediante la cual se "recuerdan" los últimos estados de salida, uno podría preguntarse qué sucederá si el circuito se enciende de esta manera, con<i>no hay estado previo para sostener</i>.  Para experimentar, coloque ambos interruptores en sus posiciones de apagado, bajando las entradas Set y Reset, luego desconecte uno de los cables de la batería de la placa.  Luego, establezca y rompa rápidamente el contacto entre el cable de la batería y su punto de conexión adecuado en la placa, observando el estado de los dos LED a medida que el circuito se enciende una y otra vez:</p>
 <p> <img src="05299.png"/> </p>
 <a name="Race condition"></a>
@@ -432,7 +432,7 @@
 <p>
 <b>INSTRUCCIONES</b>
 </p>
-<p>La única diferencia entre un<i>cerrado</i> (or <i>activado</i>) pestillo y un flip-flop es que un flip-flop está habilitado solo en subida o bajada<i>borde</i>de una señal de "reloj", en lugar de durante toda la duración de una señal de habilitación "alta".  Convertir un pestillo habilitado en un flip-flop simplemente requiere que se agregue un circuito "detector de pulso" a la entrada Habilitar, de modo que el flanco de un pulso de reloj genere un breve pulso de habilitación "alto":</p>
+<p>La única diferencia entre un<i>cerrado</i> (o <i>activado</i>) pestillo y un flip-flop es que un flip-flop está habilitado solo en subida o bajada<i>borde</i>de una señal de "reloj", en lugar de durante toda la duración de una señal de habilitación "alta".  Convertir un pestillo habilitado en un flip-flop simplemente requiere que se agregue un circuito "detector de pulso" a la entrada Habilitar, de modo que el flanco de un pulso de reloj genere un breve pulso de habilitación "alto":</p>
 <p> <img src="05305.png"/> </p>
 <p>La única puerta NOR y las tres puertas inversoras crean este efecto aprovechando el tiempo de retardo de propagación de múltiples puertas en cascada.  En este experimento, utilizo tres puertas NOR con entradas en paralelo para crear tres inversores, utilizando así las cuatro puertas NOR de un circuito integrado 4001:</p>
 <p> <img src="05306.png"/> </p>
@@ -455,7 +455,7 @@
 <li>Una batería de 6 voltios</li>
 <li>10 kΩ resistor</li>
 <li>1 MΩ resistor</li>
-<li>0.1 µF capacitor (Radio Shack catalog # 272-135 or equivalent)</li>
+<li>0.1 µF capacitor (Radio Shack catalog # 272-135 o equivalente)</li>
 <li>Condensador de acoplamiento, 0,047 a 0,001 µF</li>
 <li>Diez resistencias de 470 Ω</li>
 <li>Detector de audio con auriculares.</li>
